@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d1bc83119e90db54c537721749cca1c",
+    "content-hash": "a7c14dac5ad814cf4a0278b8ae253b77",
     "packages": [
         {
             "name": "acquia/acquia-sdk-php",
@@ -2540,7 +2540,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1559138877",
+                    "datestamp": "1559137685",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6950,6 +6950,9 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "2882709 - Misnamed interface causes \"Fatal error: Cannot declare interface Drupal\\libraries\\ExternalLibrary\\Utility\\LibraryAccessorIdInterface\"": "https://www.drupal.org/files/issues/2882709-2-interface-libraryidaccessorinterface-misnamed.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -12026,6 +12029,57 @@
             }
         },
         {
+            "name": "drupal/views_autocomplete_filters",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_autocomplete_filters.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_autocomplete_filters-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "bab27febe29aa69eff5c6b3ce3125e49685a6346"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1500109743",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "vasike",
+                    "homepage": "https://www.drupal.org/user/156237"
+                }
+            ],
+            "description": "Use Autocomplete for string field filters.",
+            "homepage": "https://www.drupal.org/project/views_autocomplete_filters",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_autocomplete_filters"
+            }
+        },
+        {
             "name": "drupal/views_bulk_operations",
             "version": "3.0.0",
             "source": {
@@ -12049,7 +12103,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0",
-                    "datestamp": "1558602785",
+                    "datestamp": "1557927186",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12093,6 +12147,53 @@
                 "source": "https://git.drupalcode.org/project/views_bulk_operations",
                 "issues": "https://www.drupal.org/project/issues/views_bulk_operations?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/views-bulk-operations-vbo"
+            }
+        },
+        {
+            "name": "drupal/views_contextual_filters_or",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_contextual_filters_or.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_contextual_filters_or-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "41162d8891249206a5290a2c8ef2d0dfb5407411"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1548869880",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "m.lebedev",
+                    "homepage": "https://www.drupal.org/user/2566550"
+                }
+            ],
+            "description": "Modify views query to support OR conditions for contextual filters.",
+            "homepage": "https://www.drupal.org/project/views_contextual_filters_or",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_contextual_filters_or"
             }
         },
         {

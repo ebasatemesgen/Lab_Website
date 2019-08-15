@@ -148,7 +148,9 @@
     "npm-asset/a11y-accordion-tabs": "^0.5.0",
     "drupal/views_timelinejs": "^3.1",
     "drupal/charts": "^3.0@beta",
-    "drupal/views_data_export": "^1.0@beta"
+    "drupal/views_data_export": "^1.0@beta",
+    "drupal/views_autocomplete_filters": "^1.2",
+    "drupal/views_contextual_filters_or": "^1.1"
   },
   "repositories": {
     "drupal-packagist": {

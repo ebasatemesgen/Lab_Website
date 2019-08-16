@@ -4,7 +4,6 @@
       "2867879: include core/drupal dependency": "https://www.drupal.org/files/issues/nice_menus-js_dependency-2867879-2.patch"
     },
     "drupal/entity_embed": {
-      "2511404: allow links on embedded images": "https://www.drupal.org/files/issues/entity_embed_links-2511404-31.patch",
       "2628712: Persist classes onto the rendered entity": "https://www.drupal.org/files/issues/persist_the_classes-2628712-8.patch"
     },
     "drupal/honeypot": {
@@ -19,7 +18,7 @@
       "2695149: ContextDefinition Error": "https://www.drupal.org/files/issues/2018-04-09/2695149-11.patch"
     },
     "drupal/video_embed_field": {
-      "2913598: Provide title attribute in iframe tag for accessibility": "https://www.drupal.org/files/issues/2018-05-14/video_embed_field-title_attribute-2913598-21-8.x-2.x.patch"
+      "2913925: Retrieve title & description for videos": "https://www.drupal.org/files/issues/2019-07-17/retrieve-title-2913925-6.patch"
     },
     "drupal/paragraphs": {
       "2948778: Call to a member function id() on null": "https://www.drupal.org/files/issues/2018-04-27/2948778-call-to-a-member-function-id-in-null.patch",
@@ -40,12 +39,6 @@
     },
     "drupal/http_response_headers": {
       "2909459: Logging of header modificaton should be switched off": "https://www.drupal.org/files/issues/remove-logging-2909459-4.patch"
-    },
-    "drupal/select_or_other": {
-      "3052563: Breaks with strict validation": "https://www.drupal.org/files/issues/2019-05-03/set_type-3052563-1.patch"
-    },
-    "drupal/a11y_paragraphs_tabs": {
-      "3062815: Attach libraries when paragraph is used rather than globally": "https://www.drupal.org/files/issues/2019-06-19/attach_libraries_paragraph-3062815-2.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"

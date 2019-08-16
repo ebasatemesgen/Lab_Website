@@ -14,7 +14,7 @@
     "drupal-composer/drupal-scaffold": "^2.0.0",
     "cweagans/composer-patches": "^1.6.4",
     "acquia/acquia-sdk-php": "^0.10.8",
-    "acquia/lightning": "~3.3.1",
+    "acquia/lightning": "~4.0.4",
     "drupal/paragraphs": "1.6",
     "drupal/simplesamlphp_auth": "^3.0",
     "drupal/rules": "^3.0@alpha",

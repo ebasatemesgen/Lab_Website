@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a54c148e0565bb4122bd2509424a5886",
+    "content-hash": "7688b35ff71cf84ddcedb39ddbf323d7",
     "packages": [
         {
             "name": "acquia/acquia-sdk-php",

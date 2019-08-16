@@ -452,7 +452,8 @@
     "symlinks": {
       "vendor/kenwheeler/slick": "docroot/libraries/slick",
       "docroot/libraries/jquery.mmenu": "docroot/libraries/mmenu",
-      "vendor/ckeditor/anchor_link": "docroot/libraries/ckeditor/plugins/link"
+      "vendor/ckeditor/anchor_link": "docroot/libraries/ckeditor/plugins/link",
+      "console/language/console-en": "vendor/drupal/console-en"
     }
   }
 }

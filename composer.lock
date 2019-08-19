@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7688b35ff71cf84ddcedb39ddbf323d7",
+    "content-hash": "d6f9320d1521d02a60c9ce478e730d70",
     "packages": [
         {
             "name": "acquia/acquia-sdk-php",
@@ -6294,14 +6294,20 @@
         },
         {
             "name": "drupal/entityqueue",
-            "version": "dev-1.x",
+            "version": "1.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entityqueue.git",
-                "reference": "635b6ca54624164f5d7086854fb2942e0571de04"
+                "reference": "8.x-1.0-beta5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entityqueue-8.x-1.0-beta5.zip",
+                "reference": "8.x-1.0-beta5",
+                "shasum": "b4194b275eb36cea4b77dc267c368341fc37d455"
             },
             "require": {
-                "drupal/core": "^8.7.2"
+                "drupal/core": "~8.0"
             },
             "type": "drupal-module",
             "extra": {
@@ -6309,11 +6315,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta5+3-dev",
-                    "datestamp": "1562149387",
+                    "version": "8.x-1.0-beta5",
+                    "datestamp": "1559148188",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -6347,8 +6353,7 @@
                 "source": "http://cgit.drupalcode.org/entityqueue",
                 "issues": "https://www.drupal.org/project/issues/entityqueue",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2019-07-03T10:23:53+00:00"
+            }
         },
         {
             "name": "drupal/environment_indicator",
@@ -21009,7 +21014,7 @@
         "drupal/config_inspector": 10,
         "drupal/select_or_other": 15,
         "drupal/auto_entitylabel": 20,
-        "drupal/entityqueue": 20,
+        "drupal/entityqueue": 10,
         "drupal/acquia_purge": 10,
         "drupal/stage_file_proxy": 15,
         "onlyextart/colorbox": 20,

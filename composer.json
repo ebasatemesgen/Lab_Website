@@ -150,7 +150,8 @@
     "drupal/views_data_export": "^1.0@beta",
     "drupal/views_autocomplete_filters": "^1.2",
     "drupal/views_contextual_filters_or": "^1.1",
-    "drush/config-extra": "^1.0"
+    "drush/config-extra": "^1.0",
+    "umndrupal/acquia_api": "dev-master"
   },
   "repositories": {
     "drupal-packagist": {
@@ -387,6 +388,10 @@
           "composer/installers": "~1.0"
         }
       }
+    },
+    "api_wrapper": {
+      "type": "vcs",
+      "url": "https://github.com/umn-drupal/acquia-api-wrapper"
     }
   },
   "scripts": {

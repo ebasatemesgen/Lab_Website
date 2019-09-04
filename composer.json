@@ -77,7 +77,7 @@
     "drutiny/plugin-drupal-8": "2.x-dev",
     "bower-asset/hammerjs": "^2.0",
     "drupal/responsive_menu": "^2.5",
-    "bower-asset/jquery.mmenu": "^6.1",
+    "bower-asset/jquery.mmenu": "^7.3.3",
     "drupal/migrate_source_csv": "~3.0.0",
     "drupal/entity_print": "2.x",
     "tecnickcom/tcpdf": "~6",

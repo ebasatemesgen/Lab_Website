@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8824a6301e068bf54146e97b05e5dbc7",
+    "content-hash": "b6bc88fcf6bd499c6e02741a23a41333",
     "packages": [
         {
             "name": "acquia/acquia-sdk-php",
@@ -547,16 +547,16 @@
         },
         {
             "name": "bower-asset/jquery.mmenu",
-            "version": "v6.1.8",
+            "version": "v7.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FrDH/mmenu-js.git",
-                "reference": "8fa929ef37de5007c5d32e9588280d07d5feb359"
+                "reference": "12eb943d3e7e7293c82a4ad74f15890495456dff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FrDH/mmenu-js/zipball/8fa929ef37de5007c5d32e9588280d07d5feb359",
-                "reference": "8fa929ef37de5007c5d32e9588280d07d5feb359"
+                "url": "https://api.github.com/repos/FrDH/mmenu-js/zipball/12eb943d3e7e7293c82a4ad74f15890495456dff",
+                "reference": "12eb943d3e7e7293c82a4ad74f15890495456dff"
             },
             "require": {
                 "bower-asset/jquery": ">=1.7.0"

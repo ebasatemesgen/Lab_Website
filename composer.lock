@@ -20123,12 +20123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/umn-drupal/acquia-api-wrapper.git",
-                "reference": "8e472d6982a600f0187488c1e2c5b5b58bd9fd2d"
+                "reference": "36b7ccde67b0d671a756180f26b382084482c6a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/umn-drupal/acquia-api-wrapper/zipball/8e472d6982a600f0187488c1e2c5b5b58bd9fd2d",
-                "reference": "8e472d6982a600f0187488c1e2c5b5b58bd9fd2d",
+                "url": "https://api.github.com/repos/umn-drupal/acquia-api-wrapper/zipball/36b7ccde67b0d671a756180f26b382084482c6a2",
+                "reference": "36b7ccde67b0d671a756180f26b382084482c6a2",
                 "shasum": ""
             },
             "require": {
@@ -20152,7 +20152,7 @@
                 "source": "https://github.com/umn-drupal/acquia-api-wrapper/tree/master",
                 "issues": "https://github.com/umn-drupal/acquia-api-wrapper/issues"
             },
-            "time": "2019-08-22T19:35:28+00:00"
+            "time": "2019-09-06T17:39:00+00:00"
         },
         {
             "name": "umndrupal/drupal-deploy-scripts",

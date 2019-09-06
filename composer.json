@@ -33,7 +33,7 @@
     "umn/cog_umn": "dev-dist#final-fix404",
     "umn/umn_search": "dev-master",
     "umn/crmform": "dev-d8",
-    "umn/dors_migrate": "v2.1.5",
+    "umn/dors_migrate": "v2.2.1",
     "umn/emergency_notification": "dev-master",
     "symfony/intl": "^3.2",
     "drupal/mathjax": "^2.6",

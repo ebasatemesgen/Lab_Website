@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6bc88fcf6bd499c6e02741a23a41333",
+    "content-hash": "748fe91f433220aaab6b70a4431761e3",
     "packages": [
         {
             "name": "acquia/acquia-sdk-php",
@@ -4644,9 +4644,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "3052959 - Update 8103 does not work with Drupal 8.7": "https://www.drupal.org/files/issues/2019-05-17/3052959-12.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4657,10 +4654,6 @@
                 {
                     "name": "e0ipso",
                     "homepage": "https://www.drupal.org/user/550110"
-                },
-                {
-                    "name": "eojthebrave",
-                    "homepage": "https://www.drupal.org/user/79230"
                 }
             ],
             "description": "Declare all the consumers of your API",
@@ -20548,13 +20541,20 @@
         },
         {
             "name": "umn/dors_migrate",
-            "version": "v2.1.5",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/dors_migrate.git",
-                "reference": "d53b374a04c405b9af86e3715e8e16cf7b924ae9"
+                "reference": "892c7ed9077f34e380933e72b2ce81d4bf60fc23"
             },
             "type": "drupal-module-custom",
+            "extra": {
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
             "authors": [
                 {
                     "name": "John Starr",
@@ -20562,7 +20562,7 @@
                 }
             ],
             "description": "Drupal 8 module to import courses from DORS",
-            "time": "2019-06-20T12:21:47+00:00"
+            "time": "2019-09-06T14:26:13+00:00"
         },
         {
             "name": "umn/emergency_notification",

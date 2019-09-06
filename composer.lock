@@ -4,75 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "748fe91f433220aaab6b70a4431761e3",
+    "content-hash": "655fcc8106bc928f35e3e73752789a9e",
     "packages": [
-        {
-            "name": "acquia/acquia-sdk-php",
-            "version": "0.10.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/acquia/acquia-sdk-php.git",
-                "reference": "351b778ceae25d7e1c88643f9f0136ff7683ff38"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/acquia/acquia-sdk-php/zipball/351b778ceae25d7e1c88643f9f0136ff7683ff38",
-                "reference": "351b778ceae25d7e1c88643f9f0136ff7683ff38",
-                "shasum": ""
-            },
-            "require": {
-                "cpliakas/psolr": ">=0.4",
-                "guzzle/service": "~3.0",
-                "lstrojny/fxmlrpc": ">=0.8,<0.9",
-                "pear/net_dns2": "1.3.2",
-                "php": ">=5.3.0",
-                "symfony/filesystem": "~2.0"
-            },
-            "replace": {
-                "acquia/acquia-sdk-php-cloud-api": "self.version",
-                "acquia/acquia-sdk-php-cloud-db": "self.version",
-                "acquia/acquia-sdk-php-cloud-env": "self.version",
-                "acquia/acquia-sdk-php-cloud-memcache": "self.version",
-                "acquia/acquia-sdk-php-common": "self.version",
-                "acquia/acquia-sdk-php-env": "self.version",
-                "acquia/acquia-sdk-php-json": "self.version",
-                "acquia/acquia-sdk-php-network": "self.version",
-                "acquia/acquia-sdk-php-rest": "self.version",
-                "acquia/acquia-sdk-php-search": "self.version"
-            },
-            "require-dev": {
-                "guzzle/plugin-mock": "~3.0",
-                "pdepend/pdepend": "~1.0",
-                "phploc/phploc": "~2.0",
-                "phpmd/phpmd": "~1.0",
-                "phpunit/phpunit": "~3.0",
-                "satooshi/php-coveralls": "*",
-                "scrutinizer/ocular": "~1.0",
-                "sebastian/phpcpd": "~2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Acquia": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "See contributors",
-                    "homepage": "https://github.com/acquia/acquia-sdk-php/graphs/contributors"
-                }
-            ],
-            "description": "The Acquia SDK for PHP allows developers to build applications on top of Acquia services.",
-            "homepage": "https://github.com/acquia/acquia-sdk-php",
-            "keywords": [
-                "acquia"
-            ],
-            "time": "2015-12-29T22:28:54+00:00"
-        },
         {
             "name": "acquia/http-hmac-php",
             "version": "4.0.1",
@@ -1868,58 +1801,6 @@
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
             "time": "2017-02-14T19:40:03+00:00"
-        },
-        {
-            "name": "cpliakas/psolr",
-            "version": "0.6.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cpliakas/psolr.git",
-                "reference": "b3dff7658c88f5c56d6012c170faf215acf3c698"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cpliakas/psolr/zipball/b3dff7658c88f5c56d6012c170faf215acf3c698",
-                "reference": "b3dff7658c88f5c56d6012c170faf215acf3c698",
-                "shasum": ""
-            },
-            "require": {
-                "guzzle/service": "~3.0",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "pdepend/pdepend": "~1.0",
-                "phploc/phploc": "~2.0",
-                "phpunit/phpunit": "~3.0",
-                "satooshi/php-coveralls": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "PSolr": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Chris Pliakas",
-                    "email": "opensource@chrispliakas.com",
-                    "role": "Project Lead"
-                },
-                {
-                    "name": "See contributors",
-                    "homepage": "https://github.com/cpliakas/psolr/graphs/contributors"
-                }
-            ],
-            "description": "A PHP client for Apache Solr.",
-            "homepage": "https://github.com/cpliakas/psolr",
-            "keywords": [
-                "solr"
-            ],
-            "time": "2014-02-18T12:53:55+00:00"
         },
         {
             "name": "cweagans/composer-patches",
@@ -4644,6 +4525,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "3052959 - Update 8103 does not work with Drupal 8.7": "https://www.drupal.org/files/issues/2019-05-17/3052959-12.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4654,6 +4538,10 @@
                 {
                     "name": "e0ipso",
                     "homepage": "https://www.drupal.org/user/550110"
+                },
+                {
+                    "name": "eojthebrave",
+                    "homepage": "https://www.drupal.org/user/79230"
                 }
             ],
             "description": "Declare all the consumers of your API",
@@ -14655,364 +14543,6 @@
             "time": "2017-12-16T16:06:03+00:00"
         },
         {
-            "name": "guzzle/cache",
-            "version": "v3.9.2",
-            "target-dir": "Guzzle/Cache",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Guzzle3/cache.git",
-                "reference": "9d20d5afd4203f84893e809777ffa01e47bd4ea7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Guzzle3/cache/zipball/9d20d5afd4203f84893e809777ffa01e47bd4ea7",
-                "reference": "9d20d5afd4203f84893e809777ffa01e47bd4ea7",
-                "shasum": ""
-            },
-            "require": {
-                "guzzle/common": "self.version",
-                "php": ">=5.3.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Guzzle\\Cache": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle cache adapter component",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "Guzzle",
-                "adapter",
-                "cache",
-                "doctrine",
-                "zf"
-            ],
-            "abandoned": "guzzle/guzzle",
-            "time": "2014-01-08T21:24:51+00:00"
-        },
-        {
-            "name": "guzzle/common",
-            "version": "v3.9.2",
-            "target-dir": "Guzzle/Common",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Guzzle3/common.git",
-                "reference": "2e36af7cf2ce3ea1f2d7c2831843b883a8e7b7dc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Guzzle3/common/zipball/2e36af7cf2ce3ea1f2d7c2831843b883a8e7b7dc",
-                "reference": "2e36af7cf2ce3ea1f2d7c2831843b883a8e7b7dc",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "symfony/event-dispatcher": ">=2.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Guzzle\\Common": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Common libraries used by Guzzle",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "collection",
-                "common",
-                "event",
-                "exception"
-            ],
-            "abandoned": "guzzle/guzzle",
-            "time": "2014-08-11T04:32:36+00:00"
-        },
-        {
-            "name": "guzzle/http",
-            "version": "v3.9.2",
-            "target-dir": "Guzzle/Http",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Guzzle3/http.git",
-                "reference": "1e8dd1e2ba9dc42332396f39fbfab950b2301dc5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Guzzle3/http/zipball/1e8dd1e2ba9dc42332396f39fbfab950b2301dc5",
-                "reference": "1e8dd1e2ba9dc42332396f39fbfab950b2301dc5",
-                "shasum": ""
-            },
-            "require": {
-                "guzzle/common": "self.version",
-                "guzzle/parser": "self.version",
-                "guzzle/stream": "self.version",
-                "php": ">=5.3.2"
-            },
-            "suggest": {
-                "ext-curl": "*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Guzzle\\Http": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "HTTP libraries used by Guzzle",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "Guzzle",
-                "client",
-                "curl",
-                "http",
-                "http client"
-            ],
-            "abandoned": "guzzle/guzzle",
-            "time": "2014-08-11T04:32:36+00:00"
-        },
-        {
-            "name": "guzzle/inflection",
-            "version": "v3.9.2",
-            "target-dir": "Guzzle/Inflection",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Guzzle3/inflection.git",
-                "reference": "c3ee7d90d0674d94834b843115d07c58570fc2e4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Guzzle3/inflection/zipball/c3ee7d90d0674d94834b843115d07c58570fc2e4",
-                "reference": "c3ee7d90d0674d94834b843115d07c58570fc2e4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Guzzle\\Inflection": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle inflection component",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "Guzzle",
-                "inflection"
-            ],
-            "abandoned": "guzzle/guzzle",
-            "time": "2013-06-11T00:24:07+00:00"
-        },
-        {
-            "name": "guzzle/parser",
-            "version": "v3.9.2",
-            "target-dir": "Guzzle/Parser",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Guzzle3/parser.git",
-                "reference": "6874d171318a8e93eb6d224cf85e4678490b625c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Guzzle3/parser/zipball/6874d171318a8e93eb6d224cf85e4678490b625c",
-                "reference": "6874d171318a8e93eb6d224cf85e4678490b625c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Guzzle\\Parser": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Interchangeable parsers used by Guzzle",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "URI Template",
-                "cookie",
-                "http",
-                "message",
-                "url"
-            ],
-            "abandoned": "guzzle/guzzle",
-            "time": "2014-02-05T18:29:46+00:00"
-        },
-        {
-            "name": "guzzle/service",
-            "version": "v3.9.2",
-            "target-dir": "Guzzle/Service",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Guzzle3/service.git",
-                "reference": "583c623473b45cc3dd607ab19d9629a0a4fbb762"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Guzzle3/service/zipball/583c623473b45cc3dd607ab19d9629a0a4fbb762",
-                "reference": "583c623473b45cc3dd607ab19d9629a0a4fbb762",
-                "shasum": ""
-            },
-            "require": {
-                "guzzle/cache": "self.version",
-                "guzzle/http": "self.version",
-                "guzzle/inflection": "self.version",
-                "php": ">=5.3.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Guzzle\\Service": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle service component for abstracting RESTful web services",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "Guzzle",
-                "rest",
-                "web service",
-                "webservice"
-            ],
-            "abandoned": "guzzle/guzzle",
-            "time": "2014-04-23T20:54:52+00:00"
-        },
-        {
-            "name": "guzzle/stream",
-            "version": "v3.9.2",
-            "target-dir": "Guzzle/Stream",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Guzzle3/stream.git",
-                "reference": "60c7fed02e98d2c518dae8f97874c8f4622100f0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Guzzle3/stream/zipball/60c7fed02e98d2c518dae8f97874c8f4622100f0",
-                "reference": "60c7fed02e98d2c518dae8f97874c8f4622100f0",
-                "shasum": ""
-            },
-            "require": {
-                "guzzle/common": "self.version",
-                "php": ">=5.3.2"
-            },
-            "suggest": {
-                "guzzle/http": "To convert Guzzle request objects to PHP streams"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Guzzle\\Stream": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle stream wrapper component",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "Guzzle",
-                "component",
-                "stream"
-            ],
-            "abandoned": "guzzle/guzzle",
-            "time": "2014-05-01T21:36:02+00:00"
-        },
-        {
             "name": "guzzlehttp/guzzle",
             "version": "6.3.3",
             "source": {
@@ -16237,68 +15767,6 @@
             "time": "2019-05-05T09:22:01+00:00"
         },
         {
-            "name": "lstrojny/fxmlrpc",
-            "version": "0.8.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lstrojny/fxmlrpc.git",
-                "reference": "7b9756f5f98102be170bc798781da2eef78ab977"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lstrojny/fxmlrpc/zipball/7b9756f5f98102be170bc798781da2eef78ab977",
-                "reference": "7b9756f5f98102be170bc798781da2eef78ab977",
-                "shasum": ""
-            },
-            "require-dev": {
-                "ext-curl": "*",
-                "guzzle/guzzle": "*",
-                "kriswallsmith/buzz": "*",
-                "monolog/monolog": "*",
-                "php": ">=5.3.0",
-                "phpunit/phpunit": "3.*",
-                "psr/log": "*",
-                "zendframework/zend-http": "2.0.*",
-                "zendframework/zend-log": "2.0.*",
-                "zendframework/zendframework1": "1.*"
-            },
-            "suggest": {
-                "ext-http": "Use ext/http as HTTP client",
-                "guzzle/guzzle": "To integrate Guzzle as HTTP client",
-                "kriswallsmith/buzz": "To integrate Buzz as HTTP client",
-                "monolog/monolog": "To integrate monolog as logger",
-                "zendframework/zend-http": "To use ZF2 Zend\\Http\\Client as HTTP client",
-                "zendframework/zend-log": "To use ZF2 Zend\\Log\\Logger as a logger",
-                "zendframework/zendframework1": "To use ZF1 Zend_Http_Client as HTTP client"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "fXmlRpc": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Lars Strojny",
-                    "email": "lstrojny@php.net",
-                    "homepage": "http://usrportage.de"
-                }
-            ],
-            "description": "Fast and tiny XML/RPC client with bridges for various HTTP clients",
-            "keywords": [
-                "api",
-                "performance",
-                "rpc",
-                "xml",
-                "xmlrpc"
-            ],
-            "time": "2013-10-04T23:29:35+00:00"
-        },
-        {
             "name": "masterminds/html5",
             "version": "2.7.0",
             "source": {
@@ -16964,49 +16432,6 @@
             ],
             "description": "More info available on: http://pear.php.net/package/Console_Getopt",
             "time": "2019-02-06T16:52:33+00:00"
-        },
-        {
-            "name": "pear/net_dns2",
-            "version": "1.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mikepultz/netdns2.git",
-                "reference": "8df60379bef9c48a3f26b4d34f7ef27d828331cc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mikepultz/netdns2/zipball/8df60379bef9c48a3f26b4d34f7ef27d828331cc",
-                "reference": "8df60379bef9c48a3f26b4d34f7ef27d828331cc",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.1.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Net_DNS2": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Pultz",
-                    "email": "mike@mikepultz.com",
-                    "homepage": "http://mikepultz.com/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Native PHP5 DNS Resolver and Updater Library",
-            "homepage": "https://code.google.com/p/netdns2/",
-            "keywords": [
-                "dns",
-                "network"
-            ],
-            "time": "2013-11-28T22:34:20+00:00"
         },
         {
             "name": "pear/pear-core-minimal",
@@ -18846,26 +18271,26 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.8.50",
+            "version": "v3.4.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "7ae46872dad09dffb7fe1e93a0937097339d0080"
+                "reference": "00e3a6ddd723b8bcfe4f2a1b6f82b98eeeb51516"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/7ae46872dad09dffb7fe1e93a0937097339d0080",
-                "reference": "7ae46872dad09dffb7fe1e93a0937097339d0080",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/00e3a6ddd723b8bcfe4f2a1b6f82b98eeeb51516",
+                "reference": "00e3a6ddd723b8bcfe4f2a1b6f82b98eeeb51516",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9",
+                "php": "^5.5.9|>=7.0.8",
                 "symfony/polyfill-ctype": "~1.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -18892,7 +18317,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2018-11-11T11:18:13+00:00"
+            "time": "2019-08-20T13:31:17+00:00"
         },
         {
             "name": "symfony/finder",
@@ -20730,6 +20155,29 @@
             "time": "2019-08-22T19:35:28+00:00"
         },
         {
+            "name": "umndrupal/drupal-deploy-scripts",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalplatform/drupal-deploy-scripts.git",
+                "reference": "a69cd653654d8183ed0b99fccb97c5a17696698b"
+            },
+            "require": {
+                "symfony/filesystem": "^3.4 || ^4.0",
+                "symfony/finder": "^3.4 || ^4.0",
+                "symfony/yaml": "^3.4 || ^4.0",
+                "umndrupal/acquia_api": "dev-master"
+            },
+            "type": "library",
+            "authors": [
+                {
+                    "name": "Jim Hart",
+                    "email": "HART0554@UMN.EDU"
+                }
+            ],
+            "time": "2019-09-06T15:42:09+00:00"
+        },
+        {
             "name": "vardot/blazy",
             "version": "1.8.2.1",
             "source": {
@@ -21264,7 +20712,8 @@
         "drupal/http_response_headers": 15,
         "drupal/charts": 10,
         "drupal/views_data_export": 10,
-        "umndrupal/acquia_api": 20
+        "umndrupal/acquia_api": 20,
+        "umndrupal/drupal-deploy-scripts": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

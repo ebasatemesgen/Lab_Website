@@ -108,7 +108,6 @@
     "drutiny/http": "^2.4",
     "drutiny/acquia": "^2.4",
     "symfony/debug": "^3.4.0",
-    "drupal/console": "^1.9.1",
     "drupal/module_filter": "^3.1",
     "drupal/layout_builder_restrictions": "^2.0",
     "drupal/twig_tweak": "^2.1",
@@ -151,7 +150,8 @@
     "drupal/views_contextual_filters_or": "^1.1",
     "drush/config-extra": "^1.0",
     "umndrupal/acquia_api": "dev-master",
-    "umndrupal/drupal-deploy-scripts": "dev-master"
+    "umndrupal/drupal-deploy-scripts": "dev-master",
+    "drupal/console": "^1.9.3"
   },
   "repositories": {
     "drupal-packagist": {
@@ -461,8 +461,7 @@
     "symlinks": {
       "vendor/kenwheeler/slick": "docroot/libraries/slick",
       "docroot/libraries/jquery.mmenu": "docroot/libraries/mmenu",
-      "vendor/ckeditor/anchor_link": "docroot/libraries/ckeditor/plugins/link",
-      "console/language/console-en": "vendor/drupal/console-en"
+      "vendor/ckeditor/anchor_link": "docroot/libraries/ckeditor/plugins/link"
     }
   }
 }

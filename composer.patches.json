@@ -42,6 +42,9 @@
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"
+    },
+    "drupal/fpa": {
+      "2886896": "https://www.drupal.org/files/issues/2019-05-13/fpa-critical-error-with-strings-2886896-35.patch"
     }
   }
 }

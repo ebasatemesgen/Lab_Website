@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "768452b278b93836460a9fb537247c37",
+    "content-hash": "993c08954a87475b2e768152c4f33b65",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -6908,6 +6908,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "2886896": "https://www.drupal.org/files/issues/2019-05-13/fpa-critical-error-with-strings-2886896-35.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -20084,11 +20087,11 @@
         },
         {
             "name": "umn/dors_migrate",
-            "version": "v2.2.2",
+            "version": "v2.2.3",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/dors_migrate.git",
-                "reference": "31935a56cc332d0b86ec0afb1480da5a55ce5f08"
+                "reference": "059c6d5c956940f845e7e8a35ca23bb063293794"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -20105,7 +20108,7 @@
                 }
             ],
             "description": "Drupal 8 module to import courses from DORS",
-            "time": "2019-09-12T18:30:16+00:00"
+            "time": "2019-09-12T19:17:24+00:00"
         },
         {
             "name": "umn/emergency_notification",

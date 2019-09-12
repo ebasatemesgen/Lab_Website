@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "80f00c10fa5ac4e877cd749a036392dc",
+    "content-hash": "768452b278b93836460a9fb537247c37",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -3999,7 +3999,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha4",
-                    "datestamp": "1567786984",
+                    "datestamp": "1564677185",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -6908,9 +6908,6 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "2886896": "https://www.drupal.org/files/issues/2019-05-13/fpa-critical-error-with-strings-2886896-35.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -15548,8 +15545,8 @@
             "authors": [
                 {
                     "name": "Luís Otávio Cobucci Oblonczyk",
-                    "email": "lcobucci@gmail.com",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "lcobucci@gmail.com"
                 }
             ],
             "description": "A simple library to work with JSON Web Token and JSON Web Signature",
@@ -19957,19 +19954,19 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
+                    "role": "Lead Developer",
                     "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "homepage": "http://fabien.potencier.org"
                 },
                 {
                     "name": "Twig Team",
-                    "homepage": "https://twig.symfony.com/contributors",
-                    "role": "Contributors"
+                    "role": "Contributors",
+                    "homepage": "https://twig.symfony.com/contributors"
                 },
                 {
                     "name": "Armin Ronacher",
-                    "email": "armin.ronacher@active-4.com",
-                    "role": "Project Founder"
+                    "role": "Project Founder",
+                    "email": "armin.ronacher@active-4.com"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -20087,11 +20084,11 @@
         },
         {
             "name": "umn/dors_migrate",
-            "version": "v2.2.1",
+            "version": "v2.2.2",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/dors_migrate.git",
-                "reference": "892c7ed9077f34e380933e72b2ce81d4bf60fc23"
+                "reference": "31935a56cc332d0b86ec0afb1480da5a55ce5f08"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -20108,7 +20105,7 @@
                 }
             ],
             "description": "Drupal 8 module to import courses from DORS",
-            "time": "2019-09-06T14:26:13+00:00"
+            "time": "2019-09-12T18:30:16+00:00"
         },
         {
             "name": "umn/emergency_notification",

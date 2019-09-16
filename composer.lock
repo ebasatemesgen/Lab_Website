@@ -20226,7 +20226,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_superfish.git",
-                "reference": "974f77e0620a45b85d10d4557c1f4ba113f49f9b"
+                "reference": "d40e3ff2f4cbc2833fc583d184d416b8bac02b48"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -20236,7 +20236,7 @@
                 }
             ],
             "description": "UMN Accessibility tweaks for Superfish",
-            "time": "2019-02-28T22:04:51+00:00"
+            "time": "2019-09-09T15:54:10+00:00"
         },
         {
             "name": "umndrupal/acquia_api",

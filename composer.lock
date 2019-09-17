@@ -20031,7 +20031,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/bootstrap-umn.git",
-                "reference": "a2946fe67ffd352f79f4dea32527c3c77a041f7a"
+                "reference": "7f11820cb01e1b54cd5439fb33ee009587eee8a1"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -20044,7 +20044,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2019-08-06T18:49:53+00:00"
+            "time": "2019-09-17T19:24:31+00:00"
         },
         {
             "name": "umn/cog_umn",

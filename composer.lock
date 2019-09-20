@@ -6266,6 +6266,10 @@
             ],
             "authors": [
                 {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
                     "name": "Frans",
                     "homepage": "https://www.drupal.org/user/514222"
                 },
@@ -6724,6 +6728,9 @@
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "2986704: Incompatibility with inline entity form": "https://www.drupal.org/files/issues/2018-10-30/field_group-inline_entity_form_compatibility-2986704-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7603,14 +7610,6 @@
                 {
                     "name": "dawehner",
                     "homepage": "https://www.drupal.org/user/99340"
-                },
-                {
-                    "name": "joachim",
-                    "homepage": "https://www.drupal.org/user/107701"
-                },
-                {
-                    "name": "kaythay",
-                    "homepage": "https://www.drupal.org/user/2182186"
                 },
                 {
                     "name": "rszrama",
@@ -8552,7 +8551,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.9",
-                    "datestamp": "1568049785",
+                    "datestamp": "1568317385",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9639,7 +9638,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0",
-                    "datestamp": "1562953385",
+                    "datestamp": "1566225488",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10286,10 +10285,6 @@
                 {
                     "name": "japerry",
                     "homepage": "https://www.drupal.org/user/45640"
-                },
-                {
-                    "name": "manuel.adan",
-                    "homepage": "https://www.drupal.org/user/516420"
                 }
             ],
             "description": "Provides a way to place blocks on a custom page.",
@@ -10587,7 +10582,8 @@
                 },
                 "patches_applied": {
                     "2948778: Call to a member function id() on null": "https://www.drupal.org/files/issues/2018-04-27/2948778-call-to-a-member-function-id-in-null.patch",
-                    "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch"
+                    "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch",
+                    "2907094: Compatibility with Field Group": "https://www.drupal.org/files/issues/2019-08-04/2907094_76.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -20173,7 +20169,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "ea2ebd60fa62554273813f3e4426d37969a13564"
+                "reference": "2c7685d4040e98b07e8e26cd09eb27f217b93eeb"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -20182,7 +20178,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2019-09-13T18:01:50+00:00"
+            "time": "2019-09-20T17:35:43+00:00"
         },
         {
             "name": "umn/umn_features",

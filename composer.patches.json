@@ -3,9 +3,6 @@
     "drupal/nice_menus": {
       "2867879: include core/drupal dependency": "https://www.drupal.org/files/issues/nice_menus-js_dependency-2867879-2.patch"
     },
-    "drupal/entity_embed": {
-      "2628712: Persist classes onto the rendered entity": "https://www.drupal.org/files/issues/persist_the_classes-2628712-8.patch"
-    },
     "drupal/honeypot": {
       "2944843: Accessibility Issue Triggered": "https://www.drupal.org/files/issues/2018-08-05/honeypot-aria-hidden-on-text-field-2944843-12.patch"
     },

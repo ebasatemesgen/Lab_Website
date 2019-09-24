@@ -47,6 +47,9 @@
     },
     "drupal/field_group": {
       "2986704: Incompatibility with inline entity form": "https://www.drupal.org/files/issues/2018-10-30/field_group-inline_entity_form_compatibility-2986704-3.patch"
+    },
+    "drupal/core": {
+      "2985882: Issues between layout builder and entityField": "https://www.drupal.org/files/issues/2018-07-16/2985882-entityfield-2.patch"
     }
   }
 }

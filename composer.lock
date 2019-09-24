@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a73644db824276e5ac3835d9b1edbb59",
+    "content-hash": "99e9de904aa5f6ca88a07679a50fd130",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -596,9 +596,9 @@
             "authors": [
                 {
                     "name": "Casey McLaughlin",
+                    "role": "Developer",
                     "email": "caseyamcl@gmail.com",
-                    "homepage": "http://caseymclaughlin.com",
-                    "role": "Developer"
+                    "homepage": "http://caseymclaughlin.com"
                 }
             ],
             "description": "Simple Table-of-Contents Generator for PHP.  Generates TOCs based off H1...H6 tags",
@@ -3430,6 +3430,10 @@
                     "homepage": "https://www.drupal.org/user/765764"
                 },
                 {
+                    "name": "diqidoq",
+                    "homepage": "https://www.drupal.org/user/1001934"
+                },
+                {
                     "name": "sumitmadan",
                     "homepage": "https://www.drupal.org/user/1538790"
                 }
@@ -4222,6 +4226,10 @@
                 {
                     "name": "aspilicious",
                     "homepage": "https://www.drupal.org/user/172527"
+                },
+                {
+                    "name": "ilchovuchkov",
+                    "homepage": "https://www.drupal.org/user/3568458"
                 },
                 {
                     "name": "vijaycs85",
@@ -5052,11 +5060,15 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/csv_serialization.git",
-                "reference": "9fda2527d0e814ea222ade9ef0ce07ac36591dea"
+                "reference": "854e5e23c484a36a25cec94b54f663e3581c6e8f"
             },
             "require": {
                 "drupal/core": "^8.0.4",
                 "league/csv": "^9.1"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+                "drupal/coder": "^8.3"
             },
             "type": "drupal-module",
             "extra": {
@@ -5065,7 +5077,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.x-dev",
-                    "datestamp": "1531842524",
+                    "datestamp": "1568994784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5087,7 +5099,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/csv_serialization"
             },
-            "time": "2018-07-17T15:47:07+00:00"
+            "time": "2019-09-20T15:50:56+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -5481,11 +5493,17 @@
         },
         {
             "name": "drupal/domain_301_redirect",
-            "version": "dev-1.x",
+            "version": "1.0.0-alpha0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/domain_301_redirect.git",
-                "reference": "fd66e82fefff76fddc5968286108056cd17010a4"
+                "reference": "8.x-1.0-alpha0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/domain_301_redirect-8.x-1.0-alpha0.zip",
+                "reference": "8.x-1.0-alpha0",
+                "shasum": "7b2756cdba8ecf8af052e9a6105530c1eaa2cfa5"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -5496,17 +5514,17 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1497455342",
+                    "version": "8.x-1.0-alpha0",
+                    "datestamp": "1569004385",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -5531,11 +5549,14 @@
                 }
             ],
             "description": "Allows you to 301 redirect any domain to the main domain associated with a site.",
-            "homepage": "https://www.drupal.org/project/domain_301_redirect",
+            "homepage": "http://drupal.org/project/domain_301_redirect",
+            "keywords": [
+                "Drupal"
+            ],
             "support": {
-                "source": "https://git.drupalcode.org/project/domain_301_redirect"
-            },
-            "time": "2017-06-14T15:45:44+00:00"
+                "source": "http://cgit.drupalcode.org/domain_301_redirect",
+                "issues": "http://drupal.org/project/domain_301_redirect"
+            }
         },
         {
             "name": "drupal/dropzonejs",
@@ -5963,7 +5984,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.1",
-                    "datestamp": "1550237365",
+                    "datestamp": "1562240585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6111,9 +6132,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "2628712: Persist classes onto the rendered entity": "https://www.drupal.org/files/issues/persist_the_classes-2628712-8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6266,6 +6284,10 @@
             ],
             "authors": [
                 {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
                     "name": "Frans",
                     "homepage": "https://www.drupal.org/user/514222"
                 },
@@ -6371,7 +6393,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.6",
-                    "datestamp": "1553405885",
+                    "datestamp": "1568149685",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6422,7 +6444,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1521730685",
+                    "datestamp": "1569251888",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6724,6 +6746,9 @@
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "2986704: Incompatibility with inline entity form": "https://www.drupal.org/files/issues/2018-10-30/field_group-inline_entity_form_compatibility-2986704-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7584,7 +7609,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc1",
-                    "datestamp": "1527030784",
+                    "datestamp": "1568446684",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -8112,7 +8137,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.5",
-                    "datestamp": "1564152185",
+                    "datestamp": "1568318589",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8552,7 +8577,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.9",
-                    "datestamp": "1568049785",
+                    "datestamp": "1568317385",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8993,7 +9018,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/menu_block.git",
-                "reference": "52e1c78b2379b24aed478b6e0544ff7c89f7a5d6"
+                "reference": "6a2e5a8e83f0b8e26546aebf198d0b66ed4747c8"
             },
             "require": {
                 "drupal/core": "*"
@@ -9048,7 +9073,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/menu_block"
             },
-            "time": "2018-12-07T20:38:31+00:00"
+            "time": "2019-09-13T04:55:20+00:00"
         },
         {
             "name": "drupal/message",
@@ -9639,7 +9664,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0",
-                    "datestamp": "1562953385",
+                    "datestamp": "1566225488",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10262,7 +10287,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.0-beta3",
-                    "datestamp": "1523670484",
+                    "datestamp": "1559135889",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -10366,6 +10391,10 @@
                 {
                     "name": "See other contributors",
                     "homepage": "https://www.drupal.org/node/1072922/committers"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "tim.plunkett",
@@ -10587,7 +10616,8 @@
                 },
                 "patches_applied": {
                     "2948778: Call to a member function id() on null": "https://www.drupal.org/files/issues/2018-04-27/2948778-call-to-a-member-function-id-in-null.patch",
-                    "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch"
+                    "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch",
+                    "2907094: Compatibility with Field Group": "https://www.drupal.org/files/issues/2019-08-04/2907094_76.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -11603,7 +11633,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1549962207",
+                    "datestamp": "1559917500",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12612,11 +12642,17 @@
         },
         {
             "name": "drupal/tablefield",
-            "version": "dev-2.x",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/tablefield.git",
-                "reference": "3e4000c4cba164abda501a2e78cb91e804cca241"
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tablefield-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "f31df87ad48c43484948414760da70afa1ced8af"
             },
             "require": {
                 "drupal/core": "*"
@@ -12627,11 +12663,11 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha3+8-dev",
-                    "datestamp": "1565184784",
+                    "version": "8.x-2.1",
+                    "datestamp": "1568823337",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -12673,8 +12709,7 @@
             "homepage": "https://www.drupal.org/project/tablefield",
             "support": {
                 "source": "https://git.drupalcode.org/project/tablefield"
-            },
-            "time": "2019-08-07T13:28:44+00:00"
+            }
         },
         {
             "name": "drupal/token",
@@ -12770,7 +12805,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.4",
-                    "datestamp": "1563096785",
+                    "datestamp": "1563099329",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14475,9 +14510,9 @@
             "authors": [
                 {
                     "name": "Oscar Otero",
-                    "role": "Developer",
                     "email": "oom@oscarotero.com",
-                    "homepage": "http://oscarotero.com"
+                    "homepage": "http://oscarotero.com",
+                    "role": "Developer"
                 }
             ],
             "description": "PHP gettext manager",
@@ -16537,18 +16572,18 @@
             "authors": [
                 {
                     "name": "Greg Beaver",
-                    "email": "cellog@php.net",
-                    "role": "Helper"
+                    "role": "Helper",
+                    "email": "cellog@php.net"
                 },
                 {
                     "name": "Andrei Zmievski",
-                    "email": "andrei@php.net",
-                    "role": "Lead"
+                    "role": "Lead",
+                    "email": "andrei@php.net"
                 },
                 {
                     "name": "Stig Bakken",
-                    "email": "stig@php.net",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "stig@php.net"
                 }
             ],
             "description": "More info available on: http://pear.php.net/package/Console_Getopt",
@@ -20173,7 +20208,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "ea2ebd60fa62554273813f3e4426d37969a13564"
+                "reference": "2c7685d4040e98b07e8e26cd09eb27f217b93eeb"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -20182,7 +20217,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2019-09-13T18:01:50+00:00"
+            "time": "2019-09-20T17:35:43+00:00"
         },
         {
             "name": "umn/umn_features",
@@ -20811,7 +20846,6 @@
         "drupal/acquia_purge": 10,
         "drupal/stage_file_proxy": 15,
         "onlyextart/colorbox": 20,
-        "drupal/domain_301_redirect": 20,
         "drutiny/plugin-drupal-8": 20,
         "drupal/scheduled_updates": 15,
         "drupal/better_exposed_filters": 15,
@@ -20819,7 +20853,6 @@
         "drupal/page_manager": 10,
         "drupal/field_defaults": 5,
         "drupal/gdpr": 15,
-        "drupal/tablefield": 20,
         "drupal/fpa": 20,
         "drupal/roleassign": 15,
         "drupal/group": 5,

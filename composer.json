@@ -99,7 +99,7 @@
     "drupal/checklistapi": "^1.7",
     "drupal/siteimprove": "^1.0",
     "drupal/gdpr": "^1.0@alpha",
-    "drupal/tablefield": "2.x-dev",
+    "drupal/tablefield": "^2.1",
     "drupal/fpa": "2.x-dev",
     "drupal/menu_admin_per_menu": "^1.0",
     "drupal/roleassign": "^1.0@alpha",

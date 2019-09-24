@@ -71,7 +71,7 @@
     "drupal/memcache": "2.0-alpha7",
     "drupal/colorbox": "^1.4",
     "onlyextart/colorbox": "dev-master",
-    "drupal/domain_301_redirect": "1.x-dev",
+    "drupal/domain_301_redirect": "^1.0-alpha0",
     "drupal/views_field_formatter": "^1.5",
     "drutiny/plugin-drupal-8": "2.x-dev",
     "bower-asset/hammerjs": "^2.0",

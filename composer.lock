@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "99e9de904aa5f6ca88a07679a50fd130",
+    "content-hash": "c4c837e45e443a0a911f482714e2fcf3",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -11866,6 +11866,56 @@
             }
         },
         {
+            "name": "drupal/shs",
+            "version": "1.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/shs.git",
+                "reference": "8.x-1.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/shs-8.x-1.0-alpha4.zip",
+                "reference": "8.x-1.0-alpha4",
+                "shasum": "7c10a4ed872620ee05dbd082cc66021fc3ee3036"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupal/chosen": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha4",
+                    "datestamp": "1536746285",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "stBorchert",
+                    "homepage": "https://www.drupal.org/user/36942"
+                }
+            ],
+            "description": "Creates a simple hierarchical select widget for taxonomy fields.",
+            "homepage": "https://www.drupal.org/project/shs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/shs"
+            }
+        },
+        {
             "name": "drupal/simple_gmap",
             "version": "1.4.0",
             "source": {
@@ -13110,6 +13160,61 @@
                 "source": "https://git.drupalcode.org/project/views_bulk_operations",
                 "issues": "https://www.drupal.org/project/issues/views_bulk_operations?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/views-bulk-operations-vbo"
+            }
+        },
+        {
+            "name": "drupal/views_conditional",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_conditional.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_conditional-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "50a70b1120ab2e504485f4f9df6a8820fbb5e678"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1522043885",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "MChittenden",
+                    "homepage": "https://www.drupal.org/user/2288348"
+                },
+                {
+                    "name": "anand.toshniwal93",
+                    "homepage": "https://www.drupal.org/user/3345088"
+                },
+                {
+                    "name": "ofry",
+                    "homepage": "https://www.drupal.org/user/2740599"
+                }
+            ],
+            "description": "Allows conditional views output.",
+            "homepage": "https://www.drupal.org/project/views_conditional",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_conditional"
             }
         },
         {
@@ -20873,7 +20978,8 @@
         "drupal/charts": 10,
         "drupal/views_data_export": 10,
         "umndrupal/acquia_api": 20,
-        "umndrupal/drupal-deploy-scripts": 20
+        "umndrupal/drupal-deploy-scripts": 20,
+        "drupal/shs": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

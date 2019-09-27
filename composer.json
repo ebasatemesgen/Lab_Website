@@ -151,7 +151,9 @@
     "drush/config-extra": "^1.0",
     "umndrupal/acquia_api": "dev-master",
     "umndrupal/drupal-deploy-scripts": "dev-master",
-    "drupal/console": "^1.9.3"
+    "drupal/console": "^1.9.3",
+    "drupal/shs": "^1.0@alpha",
+    "drupal/views_conditional": "^1.0"
   },
   "repositories": {
     "drupal-packagist": {

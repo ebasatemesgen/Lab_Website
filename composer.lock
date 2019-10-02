@@ -20295,7 +20295,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "345ac2d33919d13112c6f4b94aadf4aae7c3b2d8"
+                "reference": "2ce80d5a3fe6f96b8d4b1f44ac5db5dcea2b9db0"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -20304,7 +20304,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2019-10-02T16:22:52+00:00"
+            "time": "2019-10-02T19:05:08+00:00"
         },
         {
             "name": "umn/umn_features",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4c837e45e443a0a911f482714e2fcf3",
+    "content-hash": "4ae3a5bc8f4ef5a3aac373af25d6582b",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -20240,11 +20240,11 @@
         },
         {
             "name": "umn/emergency_notification",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/emergency_notification.git",
-                "reference": "783b34b4cbbfba377dfa590ff8b7ecfba93a4a01"
+                "reference": "f3837bb0fa48f46ae30a7ccf8f7f426f650f387e"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -20254,7 +20254,7 @@
                 }
             ],
             "description": "Drupal 8 module that will post emergency messages on a page and clear the drupal and varnish cache",
-            "time": "2019-02-22T20:29:40+00:00"
+            "time": "2019-10-22T16:58:11+00:00"
         },
         {
             "name": "umn/folwell",

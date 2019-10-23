@@ -20244,7 +20244,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/emergency_notification.git",
-                "reference": "6279e659867626678f1bbca4a973d4789a041f78"
+                "reference": "d33e52fff44ae118ae68511050c4c112e0629d0e"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -20254,7 +20254,7 @@
                 }
             ],
             "description": "Drupal 8 module that will post emergency messages on a page and clear the drupal and varnish cache",
-            "time": "2019-10-23T21:39:37+00:00"
+            "time": "2019-10-23T21:59:42+00:00"
         },
         {
             "name": "umn/folwell",

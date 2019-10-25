@@ -153,7 +153,10 @@
     "umndrupal/drupal-deploy-scripts": "dev-master",
     "drupal/console": "^1.9.3",
     "drupal/shs": "^1.0@alpha",
-    "drupal/views_conditional": "^1.0"
+    "drupal/views_conditional": "^1.0",
+    "drupal/addtoany": "^1.12",
+    "drupal/views_term_hierarchy_weight_field": "^1.0",
+    "drupal/media_entity_download": "^2.0@beta"
   },
   "repositories": {
     "drupal-packagist": {

@@ -48,6 +48,9 @@
     "drupal/fpa": {
       "2886896": "https://www.drupal.org/files/issues/2019-05-13/fpa-critical-error-with-strings-2886896-35.patch"
     },
+    "drupal/media_entity_download": {
+      "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
+    },
     "drupal/field_group": {
       "2986704: Incompatibility with inline entity form": "https://www.drupal.org/files/issues/2018-10-30/field_group-inline_entity_form_compatibility-2986704-3.patch"
     }

@@ -399,7 +399,7 @@
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fengyuanchen/cropper.git",
+                "url": "git@github.com:fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -432,12 +432,12 @@
             "version": "v2.0.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hammerjs/hammer.js.git",
+                "url": "git@github.com:EightMedia/hammer.js.git",
                 "reference": "49731688380a91be07653ee2491ab48ece7952b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hammerjs/hammer.js/zipball/49731688380a91be07653ee2491ab48ece7952b5",
+                "url": "https://api.github.com/repos/EightMedia/hammer.js/zipball/49731688380a91be07653ee2491ab48ece7952b5",
                 "reference": "49731688380a91be07653ee2491ab48ece7952b5"
             },
             "type": "bower-asset"
@@ -447,7 +447,7 @@
             "version": "v7.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/highcharts/highcharts-dist.git",
+                "url": "git@github.com:highcharts/highcharts-dist.git",
                 "reference": "80fb91e3c611eab595d46ed21c943c12e107678a"
             },
             "dist": {
@@ -504,7 +504,7 @@
             "version": "v1.8.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kenwheeler/slick.git",
+                "url": "git@github.com:kenwheeler/slick.git",
                 "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
             },
             "dist": {
@@ -14587,12 +14587,12 @@
             "version": "v4.6.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/oscarotero/Gettext.git",
+                "url": "https://github.com/php-gettext/Gettext.git",
                 "reference": "70c6ff2fecd275e6ef9cdd542f55939a3d1904d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/Gettext/zipball/70c6ff2fecd275e6ef9cdd542f55939a3d1904d6",
+                "url": "https://api.github.com/repos/php-gettext/Gettext/zipball/70c6ff2fecd275e6ef9cdd542f55939a3d1904d6",
                 "reference": "70c6ff2fecd275e6ef9cdd542f55939a3d1904d6",
                 "shasum": ""
             },
@@ -20307,7 +20307,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "0b0e9ce673f3fd5b5e94caba3c42717367631354"
+                "reference": "687e6ebe1aa84a3b2a34112a923201e66a42bd40"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -20317,7 +20317,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2019-10-23T16:24:59+00:00"
+            "time": "2019-10-29T21:04:19+00:00"
         },
         {
             "name": "umn/lightning_umn",

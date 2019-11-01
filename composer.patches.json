@@ -53,6 +53,9 @@
     },
     "drupal/field_group": {
       "2986704: Incompatibility with inline entity form": "https://www.drupal.org/files/issues/2018-10-30/field_group-inline_entity_form_compatibility-2986704-3.patch"
+    },
+    "drupal/linkit": {
+      "3069481: Direct URL to media file entity broken": "https://www.drupal.org/files/issues/2019-10-22/3069481-11.patch"
     }
   }
 }

@@ -596,9 +596,9 @@
             "authors": [
                 {
                     "name": "Casey McLaughlin",
+                    "role": "Developer",
                     "email": "caseyamcl@gmail.com",
-                    "homepage": "http://caseymclaughlin.com",
-                    "role": "Developer"
+                    "homepage": "http://caseymclaughlin.com"
                 }
             ],
             "description": "Simple Table-of-Contents Generator for PHP.  Generates TOCs based off H1...H6 tags",
@@ -3481,6 +3481,10 @@
                     "homepage": "https://www.drupal.org/user/765764"
                 },
                 {
+                    "name": "diqidoq",
+                    "homepage": "https://www.drupal.org/user/1001934"
+                },
+                {
                     "name": "sumitmadan",
                     "homepage": "https://www.drupal.org/user/1538790"
                 }
@@ -4273,6 +4277,10 @@
                 {
                     "name": "aspilicious",
                     "homepage": "https://www.drupal.org/user/172527"
+                },
+                {
+                    "name": "ilchovuchkov",
+                    "homepage": "https://www.drupal.org/user/3568458"
                 },
                 {
                     "name": "vijaycs85",
@@ -6029,7 +6037,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.1",
-                    "datestamp": "1550237365",
+                    "datestamp": "1562240585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6438,7 +6446,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.6",
-                    "datestamp": "1553405885",
+                    "datestamp": "1568149685",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6489,7 +6497,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1521730685",
+                    "datestamp": "1569251888",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7654,7 +7662,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc1",
-                    "datestamp": "1527030784",
+                    "datestamp": "1568446684",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -7673,6 +7681,14 @@
                 {
                     "name": "dawehner",
                     "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "joachim",
+                    "homepage": "https://www.drupal.org/user/107701"
+                },
+                {
+                    "name": "kaythay",
+                    "homepage": "https://www.drupal.org/user/2182186"
                 },
                 {
                     "name": "rszrama",
@@ -8731,6 +8747,9 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "3069481: Direct URL to media file entity broken": "https://www.drupal.org/files/issues/2019-10-22/3069481-11.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -10386,7 +10405,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.0-beta3",
-                    "datestamp": "1523670484",
+                    "datestamp": "1559135889",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -10410,6 +10429,10 @@
                 {
                     "name": "japerry",
                     "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "manuel.adan",
+                    "homepage": "https://www.drupal.org/user/516420"
                 }
             ],
             "description": "Provides a way to place blocks on a custom page.",
@@ -10486,6 +10509,10 @@
                 {
                     "name": "See other contributors",
                     "homepage": "https://www.drupal.org/node/1072922/committers"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "tim.plunkett",
@@ -10828,7 +10855,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.11",
-                    "datestamp": "1569507486",
+                    "datestamp": "1569396485",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11734,7 +11761,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1549962207",
+                    "datestamp": "1559917500",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12956,7 +12983,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.4",
-                    "datestamp": "1563096785",
+                    "datestamp": "1563099329",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14776,9 +14803,9 @@
             "authors": [
                 {
                     "name": "Oscar Otero",
-                    "role": "Developer",
                     "email": "oom@oscarotero.com",
-                    "homepage": "http://oscarotero.com"
+                    "homepage": "http://oscarotero.com",
+                    "role": "Developer"
                 }
             ],
             "description": "PHP gettext manager",
@@ -16838,18 +16865,18 @@
             "authors": [
                 {
                     "name": "Greg Beaver",
-                    "email": "cellog@php.net",
-                    "role": "Helper"
+                    "role": "Helper",
+                    "email": "cellog@php.net"
                 },
                 {
                     "name": "Andrei Zmievski",
-                    "email": "andrei@php.net",
-                    "role": "Lead"
+                    "role": "Lead",
+                    "email": "andrei@php.net"
                 },
                 {
                     "name": "Stig Bakken",
-                    "email": "stig@php.net",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "stig@php.net"
                 }
             ],
             "description": "More info available on: http://pear.php.net/package/Console_Getopt",
@@ -17539,16 +17566,16 @@
         },
         {
             "name": "robrichards/xmlseclibs",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robrichards/xmlseclibs.git",
-                "reference": "406c68ac9124db033d079284b719958b829cb830"
+                "reference": "0a53d3c3aa87564910cae4ed01416441d3ae0db5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robrichards/xmlseclibs/zipball/406c68ac9124db033d079284b719958b829cb830",
-                "reference": "406c68ac9124db033d079284b719958b829cb830",
+                "url": "https://api.github.com/repos/robrichards/xmlseclibs/zipball/0a53d3c3aa87564910cae4ed01416441d3ae0db5",
+                "reference": "0a53d3c3aa87564910cae4ed01416441d3ae0db5",
                 "shasum": ""
             },
             "require": {
@@ -17573,7 +17600,7 @@
                 "xml",
                 "xmldsig"
             ],
-            "time": "2018-11-15T11:59:02+00:00"
+            "time": "2019-11-05T11:44:22+00:00"
         },
         {
             "name": "romaricdrigon/metayaml",
@@ -17721,16 +17748,16 @@
         },
         {
             "name": "simplesamlphp/simplesamlphp",
-            "version": "v1.17.6",
+            "version": "v1.17.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/simplesamlphp.git",
-                "reference": "381bb09e98267c406386df747378564fef499a94"
+                "reference": "67735a91063284d5ba6ee1f64c79d72ee1b8e599"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp/zipball/381bb09e98267c406386df747378564fef499a94",
-                "reference": "381bb09e98267c406386df747378564fef499a94",
+                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp/zipball/67735a91063284d5ba6ee1f64c79d72ee1b8e599",
+                "reference": "67735a91063284d5ba6ee1f64c79d72ee1b8e599",
                 "shasum": ""
             },
             "require": {
@@ -17746,7 +17773,7 @@
                 "gettext/gettext": "^4.6",
                 "jaimeperez/twig-configurable-i18n": "^2.0",
                 "php": ">=5.5",
-                "robrichards/xmlseclibs": "^3.0",
+                "robrichards/xmlseclibs": "^3.0.4",
                 "simplesamlphp/saml2": "^3.3",
                 "symfony/config": "^3.4 || ^4.0",
                 "symfony/dependency-injection": "^3.4 || ^4.0",
@@ -17809,7 +17836,7 @@
                 "sp",
                 "ws-federation"
             ],
-            "time": "2019-08-29T11:54:43+00:00"
+            "time": "2019-11-06T13:20:12+00:00"
         },
         {
             "name": "solarium/solarium",

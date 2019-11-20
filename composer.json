@@ -33,7 +33,7 @@
     "umn/umn_search": "dev-master",
     "umn/crmform": "dev-d8",
     "umn/dors_migrate": "v2.2.3",
-    "umn/emergency_notification": "dev-master",
+    "umn/emergency_notification": "dev-develop",
     "symfony/intl": "^3.2",
     "drupal/mathjax": "^2.6",
     "drupal/redirect": "^1.0@alpha",
@@ -154,7 +154,10 @@
     "drupal/console": "^1.9.3",
     "drupal/shs": "^1.0@alpha",
     "drupal/views_conditional": "^1.0",
-    "umn/d8lite_migration": "dev-master"
+    "drupal/addtoany": "^1.12",
+    "drupal/views_term_hierarchy_weight_field": "^1.0",
+    "drupal/media_entity_download": "^2.0@beta",
+    "umn/d8lite_migration": "dev-layout_builder"
   },
   "repositories": {
     "drupal-packagist": {
@@ -197,10 +200,6 @@
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/dors_migrate.git"
     },
-    "d8lite_migration": {
-      "type": "git",
-      "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git"
-    },
     "folwell": {
       "type": "git",
       "url": "git@github.umn.edu:drupalthemes/folwell.git"
@@ -220,6 +219,10 @@
     "umn_dm_storage": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git"
+    },
+    "d8lite_migrations": {
+      "type": "git",
+      "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git"
     },
     "blazy": {
       "type": "package",

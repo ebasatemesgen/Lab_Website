@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fae73c26027ed66e5eed389d44a8f1cf",
+    "content-hash": "1831367c7d6cd56b15ade0f7fa0f72e5",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -399,7 +399,7 @@
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fengyuanchen/cropper.git",
+                "url": "git@github.com:fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -417,7 +417,7 @@
             "version": "v5.5.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:enyo/dropzone.git",
+                "url": "https://github.com/enyo/dropzone.git",
                 "reference": "08b9e0a763b54a685404dea523a9c54242fbe1b9"
             },
             "dist": {
@@ -432,12 +432,12 @@
             "version": "v2.0.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hammerjs/hammer.js.git",
+                "url": "git@github.com:EightMedia/hammer.js.git",
                 "reference": "49731688380a91be07653ee2491ab48ece7952b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hammerjs/hammer.js/zipball/49731688380a91be07653ee2491ab48ece7952b5",
+                "url": "https://api.github.com/repos/EightMedia/hammer.js/zipball/49731688380a91be07653ee2491ab48ece7952b5",
                 "reference": "49731688380a91be07653ee2491ab48ece7952b5"
             },
             "type": "bower-asset"
@@ -447,7 +447,7 @@
             "version": "v7.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/highcharts/highcharts-dist.git",
+                "url": "git@github.com:highcharts/highcharts-dist.git",
                 "reference": "80fb91e3c611eab595d46ed21c943c12e107678a"
             },
             "dist": {
@@ -1800,6 +1800,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -3137,6 +3138,57 @@
             "homepage": "http://drupal.org/project/address",
             "support": {
                 "source": "https://git.drupalcode.org/project/address"
+            }
+        },
+        {
+            "name": "drupal/addtoany",
+            "version": "1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/addtoany.git",
+                "reference": "8.x-1.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.12.zip",
+                "reference": "8.x-1.12",
+                "shasum": "f66b3cb0a95b500e4802e8ff9c29af04554327d8"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.12",
+                    "datestamp": "1554702781",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "AddToAny",
+                    "homepage": "https://www.drupal.org/user/2640913"
+                },
+                {
+                    "name": "micropat",
+                    "homepage": "https://www.drupal.org/user/260224"
+                }
+            ],
+            "description": "Share buttons by AddToAny, including the AddToAny universal sharing button, Facebook, Twitter, Google+, Pinterest, and over 100 more on the <a href=\"https://www.addtoany.com/\" target=\"_blank\">AddToAny</a> platform.",
+            "homepage": "https://www.drupal.org/project/addtoany",
+            "support": {
+                "source": "https://git.drupalcode.org/project/addtoany"
             }
         },
         {
@@ -8684,6 +8736,9 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "3069481: Direct URL to media file entity broken": "https://www.drupal.org/files/issues/2019-10-22/3069481-11.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -8754,6 +8809,68 @@
             "homepage": "https://www.drupal.org/project/mathjax",
             "support": {
                 "source": "https://git.drupalcode.org/project/mathjax"
+            }
+        },
+        {
+            "name": "drupal/media_entity_download",
+            "version": "2.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_entity_download.git",
+                "reference": "8.x-2.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_entity_download-8.x-2.0-beta1.zip",
+                "reference": "8.x-2.0-beta1",
+                "shasum": "b024eca179b94ffa691296001ef9817211a157fc"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta1",
+                    "datestamp": "1527782939",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                },
+                "patches_applied": {
+                    "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "kevinquillen",
+                    "homepage": "https://www.drupal.org/user/317279"
+                },
+                {
+                    "name": "webflo",
+                    "homepage": "https://www.drupal.org/user/254778"
+                }
+            ],
+            "description": "This module provides a route for linking to media assets by URI for users to download without worrying about the actual file path.",
+            "homepage": "https://www.drupal.org/project/media_entity_download",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/media_entity_download",
+                "issues": "https://www.drupal.org/project/issues/media_entity_download"
             }
         },
         {
@@ -13488,6 +13605,66 @@
             }
         },
         {
+            "name": "drupal/views_term_hierarchy_weight_field",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_term_hierarchy_weight_field.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_term_hierarchy_weight_field-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "e2b091fbfffe6f603f6200b2cd7b9e4145b0394e"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupol/drupal-conventions": "^1.4"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1560454981",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "grumphp": {
+                    "config-default-path": "vendor/drupol/drupal-conventions/config/drupal8/grumphp.yml"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Pol Dellaiera",
+                    "homepage": "https://www.drupal.org/user/47194",
+                    "email": "pol.dellaiera@protonmail.com"
+                }
+            ],
+            "description": "This module allows you to filter or sort terms according to their hierarchical order or hierarchical depth.",
+            "homepage": "https://www.drupal.org/project/views_term_hierarchy_weight_field",
+            "keywords": [
+                "drupal",
+                "sort",
+                "taxonomy",
+                "terms"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_term_hierarchy_weight_field"
+            }
+        },
+        {
             "name": "drupal/views_timelinejs",
             "version": "3.1.0",
             "source": {
@@ -14571,12 +14748,12 @@
             "version": "v4.6.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/oscarotero/Gettext.git",
+                "url": "https://github.com/php-gettext/Gettext.git",
                 "reference": "70c6ff2fecd275e6ef9cdd542f55939a3d1904d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/Gettext/zipball/70c6ff2fecd275e6ef9cdd542f55939a3d1904d6",
+                "url": "https://api.github.com/repos/php-gettext/Gettext/zipball/70c6ff2fecd275e6ef9cdd542f55939a3d1904d6",
                 "reference": "70c6ff2fecd275e6ef9cdd542f55939a3d1904d6",
                 "shasum": ""
             },
@@ -17374,16 +17551,16 @@
         },
         {
             "name": "robrichards/xmlseclibs",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robrichards/xmlseclibs.git",
-                "reference": "406c68ac9124db033d079284b719958b829cb830"
+                "reference": "0a53d3c3aa87564910cae4ed01416441d3ae0db5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robrichards/xmlseclibs/zipball/406c68ac9124db033d079284b719958b829cb830",
-                "reference": "406c68ac9124db033d079284b719958b829cb830",
+                "url": "https://api.github.com/repos/robrichards/xmlseclibs/zipball/0a53d3c3aa87564910cae4ed01416441d3ae0db5",
+                "reference": "0a53d3c3aa87564910cae4ed01416441d3ae0db5",
                 "shasum": ""
             },
             "require": {
@@ -17408,7 +17585,7 @@
                 "xml",
                 "xmldsig"
             ],
-            "time": "2018-11-15T11:59:02+00:00"
+            "time": "2019-11-05T11:44:22+00:00"
         },
         {
             "name": "romaricdrigon/metayaml",
@@ -17556,16 +17733,16 @@
         },
         {
             "name": "simplesamlphp/simplesamlphp",
-            "version": "v1.17.6",
+            "version": "v1.17.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/simplesamlphp.git",
-                "reference": "381bb09e98267c406386df747378564fef499a94"
+                "reference": "67735a91063284d5ba6ee1f64c79d72ee1b8e599"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp/zipball/381bb09e98267c406386df747378564fef499a94",
-                "reference": "381bb09e98267c406386df747378564fef499a94",
+                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp/zipball/67735a91063284d5ba6ee1f64c79d72ee1b8e599",
+                "reference": "67735a91063284d5ba6ee1f64c79d72ee1b8e599",
                 "shasum": ""
             },
             "require": {
@@ -17581,7 +17758,7 @@
                 "gettext/gettext": "^4.6",
                 "jaimeperez/twig-configurable-i18n": "^2.0",
                 "php": ">=5.5",
-                "robrichards/xmlseclibs": "^3.0",
+                "robrichards/xmlseclibs": "^3.0.4",
                 "simplesamlphp/saml2": "^3.3",
                 "symfony/config": "^3.4 || ^4.0",
                 "symfony/dependency-injection": "^3.4 || ^4.0",
@@ -17644,7 +17821,7 @@
                 "sp",
                 "ws-federation"
             ],
-            "time": "2019-08-29T11:54:43+00:00"
+            "time": "2019-11-06T13:20:12+00:00"
         },
         {
             "name": "solarium/solarium",
@@ -20223,11 +20400,11 @@
         },
         {
             "name": "umn/d8lite_migration",
-            "version": "dev-master",
+            "version": "dev-layout_builder",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "4a363b79bbc8dd18364dd13ca13de5486d58968a"
+                "reference": "b21ccc1be0fb37c7820ca7315a17e37c62bdce13"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -20244,7 +20421,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2019-10-10T19:38:43+00:00"
+            "time": "2019-11-20T18:29:24+00:00"
         },
         {
             "name": "umn/dors_migrate",
@@ -20273,11 +20450,11 @@
         },
         {
             "name": "umn/emergency_notification",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/emergency_notification.git",
-                "reference": "783b34b4cbbfba377dfa590ff8b7ecfba93a4a01"
+                "reference": "f6976aaba5311612b5614cadc59dd7cc790fb77c"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -20287,7 +20464,7 @@
                 }
             ],
             "description": "Drupal 8 module that will post emergency messages on a page and clear the drupal and varnish cache",
-            "time": "2019-02-22T20:29:40+00:00"
+            "time": "2019-10-24T15:07:08+00:00"
         },
         {
             "name": "umn/folwell",
@@ -20334,7 +20511,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "42f93511c8b8fcca0ce3bd65463cf8b62fa9cda2"
+                "reference": "4d6631972d5ff07f4aec45c4893123e9362f79ff"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -20343,7 +20520,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2019-10-08T19:52:13+00:00"
+            "time": "2019-10-30T19:51:01+00:00"
         },
         {
             "name": "umn/umn_features",
@@ -20995,6 +21172,7 @@
         "umndrupal/acquia_api": 20,
         "umndrupal/drupal-deploy-scripts": 20,
         "drupal/shs": 15,
+        "drupal/media_entity_download": 10,
         "umn/d8lite_migration": 20
     },
     "prefer-stable": true,

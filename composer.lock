@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c88e2b95d3611170169e21f93045010",
+    "content-hash": "3fcc8becf0ffd4476dcaf02df0a99d7f",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -504,7 +504,7 @@
             "version": "v1.8.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kenwheeler/slick.git",
+                "url": "git@github.com:kenwheeler/slick.git",
                 "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
             },
             "dist": {
@@ -20399,6 +20399,31 @@
             "time": "2019-02-12T18:08:12+00:00"
         },
         {
+            "name": "umn/d8lite_migration",
+            "version": "dev-layout_builder",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
+                "reference": "9953b2dbb18049ce22e13d1913474e2b64f072d7"
+            },
+            "type": "drupal-module-custom",
+            "extra": {
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "authors": [
+                {
+                    "name": "John Starr",
+                    "email": "starr027@umn.edu"
+                }
+            ],
+            "description": "Migrate D7 Lite sites to D8",
+            "time": "2019-11-25T16:11:04+00:00"
+        },
+        {
             "name": "umn/dors_migrate",
             "version": "v2.2.3",
             "source": {
@@ -21147,7 +21172,8 @@
         "umndrupal/acquia_api": 20,
         "umndrupal/drupal-deploy-scripts": 20,
         "drupal/shs": 15,
-        "drupal/media_entity_download": 10
+        "drupal/media_entity_download": 10,
+        "umn/d8lite_migration": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

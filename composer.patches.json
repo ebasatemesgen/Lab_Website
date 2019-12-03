@@ -56,9 +56,6 @@
     },
     "drupal/linkit": {
       "3069481: Direct URL to media file entity broken": "https://www.drupal.org/files/issues/2019-10-22/3069481-11.patch"
-    },
-    "drupal/entity_embed": {
-      "3075245: Form Validation in Format Config is Too Strict for data- Attributes": "https://www.drupal.org/files/issues/2019-08-16/3075245-2.patch"
     }
   }
 }

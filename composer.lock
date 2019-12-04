@@ -504,7 +504,7 @@
             "version": "v1.8.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:kenwheeler/slick.git",
+                "url": "https://github.com/kenwheeler/slick.git",
                 "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
             },
             "dist": {
@@ -6198,6 +6198,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "3075245: Form Validation in Format Config is Too Strict for data- Attributes": "https://www.drupal.org/files/issues/2019-08-16/3075245-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -20548,7 +20551,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "434a2fc960fc867e1b758f19516e389c47a6281a"
+                "reference": "7d95127f33da6d16420ad8a81745258f0890a7ef"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -20561,7 +20564,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2019-11-22T17:05:21+00:00"
+            "time": "2019-12-04T18:14:42+00:00"
         },
         {
             "name": "umn/folwell_components",

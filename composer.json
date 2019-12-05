@@ -157,7 +157,8 @@
     "drupal/addtoany": "^1.12",
     "drupal/views_term_hierarchy_weight_field": "^1.0",
     "drupal/media_entity_download": "^2.0@beta",
-    "umn/d8lite_migration": "dev-layout_builder"
+    "umn/d8lite_migration": "dev-layout_builder",
+    "umn/cloudflare_verify": "dev-master"
   },
   "repositories": {
     "drupal-packagist": {
@@ -220,9 +221,13 @@
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git"
     },
-      "umn_d8lite_migration": {
+    "umn_d8lite_migration": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git"
+    },
+    "cloudflare_verify": {
+      "type": "git",
+      "url": "git@github.umn.edu:drupalmodules/cloudflare_verify.git"
     },
     "blazy": {
       "type": "package",

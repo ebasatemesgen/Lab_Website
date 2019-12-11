@@ -36,9 +36,6 @@
     "drupal/digitalmeasures_migrate": {
       "3050793: Digital Measures API url has changed": "https://www.drupal.org/files/issues/2019-04-25/digitalmeasures_migrate-new-api-url-3050793-1-D8_0.patch"
     },
-    "drupal/entity_reference_revisions": {
-      "3016233: Call to a member function hasTranslation() on null": "https://www.drupal.org/files/issues/2018-11-26/hastranslation-on-null-3016233-2.patch"
-    },
     "drupal/http_response_headers": {
       "2909459: Logging of header modificaton should be switched off": "https://www.drupal.org/files/issues/remove-logging-2909459-4.patch"
     },

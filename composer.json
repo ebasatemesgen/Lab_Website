@@ -115,7 +115,7 @@
     "drupal/fakeobjects": "^1.0",
     "drupal/captcha": "1.0-beta1",
     "drupal/recaptcha": "2.3",
-    "drupal/group": "^1.0@RC",
+    "drupal/group": "1.x-dev",
     "ckeditor/fakeobjects": "^4.10",
     "ckeditor/anchor_link": "^4.10",
     "umn/folwell_components": "dev-develop",

@@ -50,6 +50,9 @@
     },
     "drupal/entity_embed": {
       "3075245: Form Validation in Format Config is Too Strict for data- Attributes": "https://www.drupal.org/files/issues/2019-08-16/3075245-2.patch"
+    },
+    "drupal/group": {
+      "3068918: PHP Fatal error: Uncaught Error: Call to a member function getBaseFieldDefinitions() on null - related to GroupContentViewsData.php": "https://www.drupal.org/files/issues/2019-12-04/3068918-9.patch"
     }
   }
 }

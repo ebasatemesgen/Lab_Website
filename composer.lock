@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4bf956ddef071e02d860e02645b5d01a",
+    "content-hash": "7602d49c1340cbe16592766c8f2fc587",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -7144,17 +7144,11 @@
         },
         {
             "name": "drupal/group",
-            "version": "1.0.0-rc4",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/group.git",
-                "reference": "8.x-1.0-rc4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/group-8.x-1.0-rc4.zip",
-                "reference": "8.x-1.0-rc4",
-                "shasum": "d5d55167523a3ddccef7f66159b4c417d950d6f5"
+                "reference": "b41ee99bb41bc41068ae3bb93a680e6efb5e4c86"
             },
             "require": {
                 "drupal/core": "^8.6",
@@ -7166,12 +7160,15 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc4",
-                    "datestamp": "1563460085",
+                    "version": "8.x-1.0-rc4+7-dev",
+                    "datestamp": "1574092384",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "3068918: PHP Fatal error: Uncaught Error: Call to a member function getBaseFieldDefinitions() on null - related to GroupContentViewsData.php": "https://www.drupal.org/files/issues/2019-12-04/3068918-9.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7195,7 +7192,8 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/group",
                 "issues": "https://drupal.org/project/issues/group"
-            }
+            },
+            "time": "2019-12-03T11:56:49+00:00"
         },
         {
             "name": "drupal/h5p",
@@ -13094,7 +13092,7 @@
         },
         {
             "name": "drupal/umn_dm_migrate",
-            "version": "v1.0.1",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_migrate.git",
@@ -13119,15 +13117,15 @@
         },
         {
             "name": "drupal/umn_dm_storage",
-            "version": "v1.0.2",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git",
-                "reference": "522c2b5c484db93886a2034f1c9d4ed6d57741f3"
+                "reference": "a99df0e606ed4ac43590e9fd6beffd22f3bf3ec7"
             },
             "type": "drupal-module",
             "description": "contains the entity type configuration for Digital Measures profile and profile fragments",
-            "time": "2019-07-26T21:08:31+00:00"
+            "time": "2019-09-04T18:34:20+00:00"
         },
         {
             "name": "drupal/video_embed_field",
@@ -13819,12 +13817,16 @@
             ],
             "authors": [
                 {
-                    "name": "joekers",
-                    "homepage": "https://www.drupal.org/user/2229066"
+                    "name": "New Zeal",
+                    "homepage": "https://www.drupal.org/user/93571"
                 },
                 {
-                    "name": "kent@passingphase.nz",
-                    "homepage": "https://www.drupal.org/user/93571"
+                    "name": "jasonawant",
+                    "homepage": "https://www.drupal.org/user/589890"
+                },
+                {
+                    "name": "joekers",
+                    "homepage": "https://www.drupal.org/user/2229066"
                 },
                 {
                     "name": "seanB",
@@ -16325,12 +16327,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mehrpadin/Superfish-for-Drupal.git",
-                "reference": "9d538244eccb66e8660db8f70555ff4adabf8662"
+                "reference": "d7def64116c97f627e4fc16f4163a43df7300c88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mehrpadin/Superfish-for-Drupal/zipball/9d538244eccb66e8660db8f70555ff4adabf8662",
-                "reference": "9d538244eccb66e8660db8f70555ff4adabf8662",
+                "url": "https://api.github.com/repos/mehrpadin/Superfish-for-Drupal/zipball/d7def64116c97f627e4fc16f4163a43df7300c88",
+                "reference": "d7def64116c97f627e4fc16f4163a43df7300c88",
                 "shasum": ""
             },
             "type": "drupal-library",
@@ -16344,7 +16346,7 @@
                 "jquery",
                 "plugin"
             ],
-            "time": "2018-11-18T17:19:50+00:00"
+            "time": "2019-12-01T14:30:46+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -20679,7 +20681,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "2271cecf4acf068e772eed2d9453f205b04ca38b"
+                "reference": "b402ece50b5b762f0e2051c455bfdc06b06bb9b4"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -20689,7 +20691,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2019-11-19T21:28:48+00:00"
+            "time": "2019-12-10T21:41:33+00:00"
         },
         {
             "name": "umn/lightning_umn",
@@ -20697,7 +20699,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "a96df87eda733003ddee7dc04fdc1594feeb55c6"
+                "reference": "72514f060f2b9daf1331fb4866da8d59edf1f1b4"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -20706,7 +20708,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2019-11-25T21:38:54+00:00"
+            "time": "2019-12-11T20:14:13+00:00"
         },
         {
             "name": "umn/umn_features",
@@ -21342,7 +21344,7 @@
         "drupal/gdpr": 15,
         "drupal/fpa": 20,
         "drupal/roleassign": 15,
-        "drupal/group": 5,
+        "drupal/group": 20,
         "umn/folwell_components": 20,
         "umn/umn_superfish": 20,
         "mehrpadin/superfish": 20,

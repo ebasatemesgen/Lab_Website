@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7602d49c1340cbe16592766c8f2fc587",
+    "content-hash": "12698ace41d9b32e3b3515574a008953",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -7363,17 +7363,17 @@
         },
         {
             "name": "drupal/iframe",
-            "version": "1.10.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/iframe.git",
-                "reference": "8.x-1.10"
+                "reference": "8.x-1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/iframe-8.x-1.10.zip",
-                "reference": "8.x-1.10",
-                "shasum": "de6c3761d95edc6bec68842780f310692ef59fc2"
+                "url": "https://ftp.drupal.org/files/projects/iframe-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "07310c3f17e31d35eae438c4fe16272f5e7f519c"
             },
             "require": {
                 "drupal/core": "*"
@@ -7384,7 +7384,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.10",
+                    "version": "8.x-1.9",
                     "datestamp": "1575446881",
                     "security-coverage": {
                         "status": "covered",

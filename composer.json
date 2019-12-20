@@ -12,7 +12,7 @@
     "composer/installers": "^1.7",
     "drupal-composer/drupal-scaffold": "^2.0.0",
     "cweagans/composer-patches": "^1.6.4",
-    "acquia/lightning": "~4.1.0",
+    "acquia/lightning": "~4.1.1",
     "drupal/paragraphs": "1.6",
     "drupal/simplesamlphp_auth": "^3.0",
     "drupal/rules": "^3.0@alpha",
@@ -158,7 +158,9 @@
     "drupal/views_term_hierarchy_weight_field": "^1.0",
     "drupal/media_entity_download": "^2.0@beta",
     "umn/d8lite_migration": "dev-layout_builder",
-    "umn/cloudflare_verify": "dev-master"
+    "umn/cloudflare_verify": "dev-master",
+    "drupal/acquia_connector": "1.16.0",
+    "drupal/embed": "1.1.0"
   },
   "repositories": {
     "drupal-packagist": {

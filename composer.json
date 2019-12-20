@@ -158,7 +158,9 @@
     "drupal/views_term_hierarchy_weight_field": "^1.0",
     "drupal/media_entity_download": "^2.0@beta",
     "umn/d8lite_migration": "dev-layout_builder",
-    "umn/cloudflare_verify": "dev-master"
+    "umn/cloudflare_verify": "dev-master",
+    "drupal/acquia_connector": "1.16.0",
+    "drupal/embed": "1.1.0"
   },
   "repositories": {
     "drupal-packagist": {

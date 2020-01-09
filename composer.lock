@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b1e56909c19992918d7ddd6ca4ea2eb",
+    "content-hash": "33b8e8d5ddcbe93106f2a031a0faedd8",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -2952,7 +2952,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.16",
-                    "datestamp": "1576179185",
+                    "datestamp": "1549478497",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2965,20 +2965,12 @@
             ],
             "authors": [
                 {
-                    "name": "Dane Powell",
-                    "homepage": "https://www.drupal.org/user/339326"
-                },
-                {
                     "name": "Mark Trapp",
                     "homepage": "https://www.drupal.org/user/212019"
                 },
                 {
                     "name": "Stanislav Mixnovich",
                     "homepage": "https://www.drupal.org/user/2859977"
-                },
-                {
-                    "name": "acquia",
-                    "homepage": "https://www.drupal.org/user/1231722"
                 },
                 {
                     "name": "ayang",
@@ -2993,16 +2985,16 @@
                     "homepage": "https://www.drupal.org/user/411965"
                 },
                 {
-                    "name": "grasmash",
-                    "homepage": "https://www.drupal.org/user/455714"
-                },
-                {
                     "name": "irek02",
                     "homepage": "https://www.drupal.org/user/736644"
                 },
                 {
                     "name": "kolafson",
                     "homepage": "https://www.drupal.org/user/822402"
+                },
+                {
+                    "name": "mundanity",
+                    "homepage": "https://www.drupal.org/user/373605"
                 },
                 {
                     "name": "vlad.pavlovic",
@@ -3119,10 +3111,6 @@
                 {
                     "name": "googletorp",
                     "homepage": "https://www.drupal.org/user/386230"
-                },
-                {
-                    "name": "jsacksick",
-                    "homepage": "https://www.drupal.org/user/972218"
                 },
                 {
                     "name": "mglaman",
@@ -3481,10 +3469,6 @@
                     "homepage": "https://www.drupal.org/user/765764"
                 },
                 {
-                    "name": "diqidoq",
-                    "homepage": "https://www.drupal.org/user/1001934"
-                },
-                {
                     "name": "sumitmadan",
                     "homepage": "https://www.drupal.org/user/1538790"
                 }
@@ -3649,7 +3633,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc4",
-                    "datestamp": "1577785387",
+                    "datestamp": "1545235980",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -3873,7 +3857,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
-                    "datestamp": "1570228085",
+                    "datestamp": "1487198586",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4638,7 +4622,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.9",
-                    "datestamp": "1574140673",
+                    "datestamp": "1549832280",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4948,11 +4932,11 @@
                     "2985882: Issues between layout builder and entityField": "https://www.drupal.org/files/issues/2018-07-16/2985882-entityfield-2.patch",
                     "3040361: Moderation state views filter only works on base table entity": "https://www.drupal.org/files/issues/2019-06-12/3040361-4.patch",
                     "2472335: Support an independent max-age for 4xx responses": "https://www.drupal.org/files/issues/2019-09-13/support_an_independent_4xx_max-age--2472335--106-8.7.x.patch",
+                    "3096566 - Copy media library styles from Seven to Claro & 3096241 - Refactor image and file field widgets to improve contrib compatibility and to make their templates and preprocess functions DRY": "https://www.drupal.org/files/issues/2019-12-16/3096566-23-combined-3096241-3.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-11-27/2815221-125.patch",
                     "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2019-11-05/1356276-531-8.8.x-4.patch",
-                    "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch",
-                    "3096566 - Copy media library styles from Seven to Claro & 3096241 - Refactor image and file field widgets to improve contrib compatibility and to make their templates and preprocess functions DRY": "https://www.drupal.org/files/issues/2019-12-16/3096566-23-combined-3096241-3.patch"
+                    "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
                 }
             },
             "autoload": {
@@ -5017,10 +5001,6 @@
                 {
                     "name": "Drupal Media Team",
                     "homepage": "https://www.drupal.org/user/3260690"
-                },
-                {
-                    "name": "phenaproxima",
-                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "slashrsm",
@@ -5329,10 +5309,6 @@
                     "homepage": "https://www.drupal.org/node/3236/committers"
                 },
                 {
-                    "name": "pcambra",
-                    "homepage": "https://www.drupal.org/user/122101"
-                },
-                {
                     "name": "salvis",
                     "homepage": "https://www.drupal.org/user/82964"
                 },
@@ -5414,10 +5390,6 @@
                 {
                     "name": "miro_dietiker",
                     "homepage": "https://www.drupal.org/user/227761"
-                },
-                {
-                    "name": "phenaproxima",
-                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "realityloop",
@@ -5692,20 +5664,12 @@
                     "homepage": "https://www.drupal.org/user/3326031"
                 },
                 {
-                    "name": "banoodle",
-                    "homepage": "https://www.drupal.org/user/2375050"
-                },
-                {
                     "name": "diamondsea",
                     "homepage": "https://www.drupal.org/user/430714"
                 },
                 {
                     "name": "hmartens",
                     "homepage": "https://www.drupal.org/user/622826"
-                },
-                {
-                    "name": "jasonsavino",
-                    "homepage": "https://www.drupal.org/user/411241"
                 },
                 {
                     "name": "loopduplicate",
@@ -5754,7 +5718,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1577188383",
+                    "datestamp": "1490108883",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5801,7 +5765,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1576259580",
+                    "datestamp": "1575666184",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7633,24 +7597,12 @@
                     "homepage": "https://www.drupal.org/user/99340"
                 },
                 {
-                    "name": "geek.merlin aka axel.rutz",
-                    "homepage": "https://www.drupal.org/user/229048"
-                },
-                {
                     "name": "joachim",
                     "homepage": "https://www.drupal.org/user/107701"
                 },
                 {
-                    "name": "jsacksick",
-                    "homepage": "https://www.drupal.org/user/972218"
-                },
-                {
                     "name": "kaythay",
                     "homepage": "https://www.drupal.org/user/2182186"
-                },
-                {
-                    "name": "oknate",
-                    "homepage": "https://www.drupal.org/user/471638"
                 },
                 {
                     "name": "rszrama",
@@ -8960,7 +8912,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha2",
-                    "datestamp": "1569420787",
+                    "datestamp": "1537264380",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -9024,7 +8976,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha3",
-                    "datestamp": "1569489784",
+                    "datestamp": "1552577885",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -9346,7 +9298,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.10",
-                    "datestamp": "1576870683",
+                    "datestamp": "1567099985",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9833,7 +9785,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0",
-                    "datestamp": "1566225488",
+                    "datestamp": "1562953385",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10257,10 +10209,6 @@
             ],
             "authors": [
                 {
-                    "name": "e0ipso",
-                    "homepage": "https://www.drupal.org/user/550110"
-                },
-                {
                     "name": "mrjmd",
                     "homepage": "https://www.drupal.org/user/1800446"
                 },
@@ -10566,10 +10514,6 @@
                     "homepage": "https://www.drupal.org/node/1072922/committers"
                 },
                 {
-                    "name": "phenaproxima",
-                    "homepage": "https://www.drupal.org/user/205645"
-                },
-                {
                     "name": "tim.plunkett",
                     "homepage": "https://www.drupal.org/user/241634"
                 }
@@ -10790,7 +10734,8 @@
                 "patches_applied": {
                     "2948778: Call to a member function id() on null": "https://www.drupal.org/files/issues/2018-04-27/2948778-call-to-a-member-function-id-in-null.patch",
                     "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch",
-                    "2907094: Compatibility with Field Group": "https://www.drupal.org/files/issues/2019-08-04/2907094_76.patch"
+                    "2907094: Compatibility with Field Group": "https://www.drupal.org/files/issues/2019-08-04/2907094_76.patch",
+                    "3079627: TypeError": "https://www.drupal.org/files/issues/2019-09-06/3079627-4.paragraphs.Argument-6-passed-to-construct.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -10914,7 +10859,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.12",
-                    "datestamp": "1577477888",
+                    "datestamp": "1569507486",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11376,12 +11321,8 @@
                     "homepage": "https://www.drupal.org/node/53579/committers"
                 },
                 {
-                    "name": "ccjjmartin",
-                    "homepage": "https://www.drupal.org/user/3210801"
-                },
-                {
-                    "name": "mikeegoulding",
-                    "homepage": "https://www.drupal.org/user/2867877"
+                    "name": "hass",
+                    "homepage": "https://www.drupal.org/user/85918"
                 }
             ],
             "description": "Generates the robots.txt file dynamically and gives you the chance to edit it, on a per-site basis, from the web UI.",
@@ -12091,10 +12032,6 @@
             ],
             "authors": [
                 {
-                    "name": "jhedstrom",
-                    "homepage": "https://www.drupal.org/user/208732"
-                },
-                {
                     "name": "stBorchert",
                     "homepage": "https://www.drupal.org/user/36942"
                 }
@@ -12413,7 +12350,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1577872687",
+                    "datestamp": "1545236281",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12981,7 +12918,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.5",
-                    "datestamp": "1577708583",
+                    "datestamp": "1537557481",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13051,7 +12988,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.4",
-                    "datestamp": "1563099329",
+                    "datestamp": "1563096785",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13157,15 +13094,15 @@
         },
         {
             "name": "drupal/umn_dm_storage",
-            "version": "1.0.2",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git",
-                "reference": "a99df0e606ed4ac43590e9fd6beffd22f3bf3ec7"
+                "reference": "522c2b5c484db93886a2034f1c9d4ed6d57741f3"
             },
             "type": "drupal-module",
             "description": "contains the entity type configuration for Digital Measures profile and profile fragments",
-            "time": "2019-09-04T18:34:20+00:00"
+            "time": "2019-07-26T21:08:31+00:00"
         },
         {
             "name": "drupal/video_embed_field",
@@ -13660,7 +13597,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.3",
-                    "datestamp": "1570980057",
+                    "datestamp": "1516708985",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13672,10 +13609,6 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
-                {
-                    "name": "baikho",
-                    "homepage": "https://www.drupal.org/user/2727459"
-                },
                 {
                     "name": "manojapare",
                     "homepage": "https://www.drupal.org/user/2825053"
@@ -13857,16 +13790,12 @@
             ],
             "authors": [
                 {
-                    "name": "New Zeal",
-                    "homepage": "https://www.drupal.org/user/93571"
-                },
-                {
-                    "name": "jasonawant",
-                    "homepage": "https://www.drupal.org/user/589890"
-                },
-                {
                     "name": "joekers",
                     "homepage": "https://www.drupal.org/user/2229066"
+                },
+                {
+                    "name": "kent@passingphase.nz",
+                    "homepage": "https://www.drupal.org/user/93571"
                 },
                 {
                     "name": "seanB",
@@ -15957,8 +15886,8 @@
             "authors": [
                 {
                     "name": "Luís Otávio Cobucci Oblonczyk",
-                    "email": "lcobucci@gmail.com",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "lcobucci@gmail.com"
                 }
             ],
             "description": "A simple library to work with JSON Web Token and JSON Web Signature",
@@ -20630,11 +20559,11 @@
         },
         {
             "name": "umn/d8lite_migration",
-            "version": "dev-layout_builder",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "a59fdb18dcaa4c31eaefa9b54d4337d7ce44911e"
+                "reference": "bb15240dcf5175b2013375539a79fe1d06b0d5f5"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -20651,7 +20580,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2019-12-06T18:57:13+00:00"
+            "time": "2020-01-09T20:10:57+00:00"
         },
         {
             "name": "umn/dors_migrate",

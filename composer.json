@@ -12,7 +12,7 @@
     "composer/installers": "^1.7",
     "drupal-composer/drupal-scaffold": "^2.0.0",
     "cweagans/composer-patches": "^1.6.4",
-    "acquia/lightning": "~4.0.4",
+    "acquia/lightning": "~4.1.1",
     "drupal/paragraphs": "1.6",
     "drupal/simplesamlphp_auth": "^3.0",
     "drupal/rules": "^3.0@alpha",
@@ -58,7 +58,7 @@
     "drupal/diff": "^1.0@RC",
     "drupal/migrate_plus": "^4.0",
     "drupal/migrate_tools": "^4.0",
-    "drupal/iframe": "^1.7",
+    "drupal/iframe": "1.9",
     "drupal/metatag": "^1.1",
     "drupal/config_inspector": "^1.0@beta",
     "drupal/select_or_other": "^1.0@alpha",
@@ -115,7 +115,7 @@
     "drupal/fakeobjects": "^1.0",
     "drupal/captcha": "1.0-beta1",
     "drupal/recaptcha": "2.3",
-    "drupal/group": "^1.0@RC",
+    "drupal/group": "1.x-dev",
     "ckeditor/fakeobjects": "^4.10",
     "ckeditor/anchor_link": "^4.10",
     "umn/folwell_components": "dev-develop",
@@ -157,7 +157,10 @@
     "drupal/addtoany": "^1.12",
     "drupal/views_term_hierarchy_weight_field": "^1.0",
     "drupal/media_entity_download": "^2.0@beta",
-    "umn/d8lite_migration": "dev-layout_builder"
+    "umn/d8lite_migration": "dev-master",
+    "umn/cloudflare_verify": "dev-master",
+    "drupal/acquia_connector": "1.16.0",
+    "drupal/embed": "1.1.0"
   },
   "repositories": {
     "drupal-packagist": {
@@ -220,9 +223,13 @@
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git"
     },
-      "umn_d8lite_migration": {
+    "umn_d8lite_migration": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git"
+    },
+    "cloudflare_verify": {
+      "type": "git",
+      "url": "git@github.umn.edu:drupalmodules/cloudflare_verify.git"
     },
     "blazy": {
       "type": "package",

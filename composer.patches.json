@@ -3,9 +3,6 @@
     "drupal/nice_menus": {
       "2867879: include core/drupal dependency": "https://www.drupal.org/files/issues/nice_menus-js_dependency-2867879-2.patch"
     },
-    "drupal/honeypot": {
-      "2944843: Accessibility Issue Triggered": "https://www.drupal.org/files/issues/2018-08-05/honeypot-aria-hidden-on-text-field-2944843-12.patch"
-    },
     "drupal/menu_block": {
       "3040666: Fixed parent relative to active trail": "https://www.drupal.org/files/issues/2019-03-15/menu_block-parent_of_active_trail-3040666-2.patch",
       "2809699: Menu parent as block title": "https://www.drupal.org/files/issues/2018-10-26/menu_block-label_configuration-2809699-82.patch",
@@ -20,24 +17,19 @@
     "drupal/paragraphs": {
       "2948778: Call to a member function id() on null": "https://www.drupal.org/files/issues/2018-04-27/2948778-call-to-a-member-function-id-in-null.patch",
       "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch",
-      "2907094: Compatibility with Field Group": "https://www.drupal.org/files/issues/2019-08-04/2907094_76.patch"
+      "2907094: Compatibility with Field Group": "https://www.drupal.org/files/issues/2019-08-04/2907094_76.patch",
+      "3079627: TypeError": "https://www.drupal.org/files/issues/2019-09-06/3079627-4.paragraphs.Argument-6-passed-to-construct.patch"
     },
     "drupal/core": {
       "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",
       "1810148: Grouped exposed taxonomy term filters do not work": "https://www.drupal.org/files/issues/1810148-58.patch",
       "2924549: Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-04-04/2924549_26.patch",
       "3044211: Remove broken tempstore section storage": "https://www.drupal.org/files/issues/2019-03-28/3044211-remove-broken-tempstore-section-storage-2.patch",
-      "2985199: Extensions in Multisite Directories Not Registered When Rebuilding Cache": "https://www.drupal.org/files/issues/2019-02-04/2985199-20.drupal.Extensions-in-Multisite-Directories-Not-Registered-When-Rebuilding-Cache.patch",
+      "2985199: Extensions in Multisite Directories Not Registered When Rebuilding Cache": "https://www.drupal.org/files/issues/2019-10-05/drupal-Rebuilding_Cache-2985199-48.patch",
       "3045171: Form blocks rendered inside layout builder break save": "https://www.drupal.org/files/issues/2019-08-12/3045171-79.patch",
       "2985882: Issues between layout builder and entityField": "https://www.drupal.org/files/issues/2018-07-16/2985882-entityfield-2.patch",
       "3040361: Moderation state views filter only works on base table entity": "https://www.drupal.org/files/issues/2019-06-12/3040361-4.patch",
       "2472335: Support an independent max-age for 4xx responses": "https://www.drupal.org/files/issues/2019-09-13/support_an_independent_4xx_max-age--2472335--106-8.7.x.patch"
-    },
-    "drupal/digitalmeasures_migrate": {
-      "3050793: Digital Measures API url has changed": "https://www.drupal.org/files/issues/2019-04-25/digitalmeasures_migrate-new-api-url-3050793-1-D8_0.patch"
-    },
-    "drupal/entity_reference_revisions": {
-      "3016233: Call to a member function hasTranslation() on null": "https://www.drupal.org/files/issues/2018-11-26/hastranslation-on-null-3016233-2.patch"
     },
     "drupal/http_response_headers": {
       "2909459: Logging of header modificaton should be switched off": "https://www.drupal.org/files/issues/remove-logging-2909459-4.patch"
@@ -51,14 +43,11 @@
     "drupal/media_entity_download": {
       "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
     },
-    "drupal/field_group": {
-      "2986704: Incompatibility with inline entity form": "https://www.drupal.org/files/issues/2018-10-30/field_group-inline_entity_form_compatibility-2986704-3.patch"
-    },
-    "drupal/linkit": {
-      "3069481: Direct URL to media file entity broken": "https://www.drupal.org/files/issues/2019-10-22/3069481-11.patch"
-    },
     "drupal/entity_embed": {
       "3075245: Form Validation in Format Config is Too Strict for data- Attributes": "https://www.drupal.org/files/issues/2019-08-16/3075245-2.patch"
+    },
+    "drupal/group": {
+      "3068918: PHP Fatal error: Uncaught Error: Call to a member function getBaseFieldDefinitions() on null - related to GroupContentViewsData.php": "https://www.drupal.org/files/issues/2019-12-04/3068918-9.patch"
     }
   }
 }

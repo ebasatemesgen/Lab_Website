@@ -475,7 +475,7 @@
             "version": "3.4.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
             },
             "dist": {
@@ -20563,7 +20563,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "1f187ae4b7d341821b8097db01a960345bac081c"
+                "reference": "473e800c10c40b6695346e33b630c4eb41b188a3"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -20580,7 +20580,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2020-01-13T19:34:59+00:00"
+            "time": "2020-01-14T16:26:40+00:00"
         },
         {
             "name": "umn/dors_migrate",

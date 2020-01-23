@@ -13,7 +13,7 @@
     "drupal-composer/drupal-scaffold": "^2.0.0",
     "cweagans/composer-patches": "^1.6.4",
     "acquia/lightning": "~4.1.1",
-    "drupal/paragraphs": "1.6",
+    "drupal/paragraphs": "^1.10",
     "drupal/simplesamlphp_auth": "^3.0",
     "drupal/rules": "^3.0@alpha",
     "drupal/google_analytics": "^2.1",

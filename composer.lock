@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4b3dbaba5f1264b18302d14c6ff6502",
+    "content-hash": "6c2a385897d4c22985e9b39694012072",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -20718,11 +20718,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "ed75ff4f56837a31d7530634eb4fb75bb128762d"
+                "reference": "daeb733ac6c5dfc4594d26a2d07aa34c76c91be9"
             },
             "require": {
                 "drupal/neato": "^1.8"

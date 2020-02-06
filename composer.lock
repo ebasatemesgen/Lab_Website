@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3060f8ba6e2b953552cb517379b3339",
+    "content-hash": "41ab2047dd7739f71bffe0412478a288",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -20579,11 +20579,11 @@
         },
         {
             "name": "umn/d8lite_migration",
-            "version": "dev-layout_builder",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "a59fdb18dcaa4c31eaefa9b54d4337d7ce44911e"
+                "reference": "a4bd78bbe32da4c8699bf568f9862b036abec01b"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -20600,7 +20600,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2019-12-06T18:57:13+00:00"
+            "time": "2020-01-27T18:45:41+00:00"
         },
         {
             "name": "umn/dors_migrate",

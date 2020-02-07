@@ -31,9 +31,6 @@
       "3040361: Moderation state views filter only works on base table entity": "https://www.drupal.org/files/issues/2019-06-12/3040361-4.patch",
       "2472335: Support an independent max-age for 4xx responses": "https://www.drupal.org/files/issues/2019-09-13/support_an_independent_4xx_max-age--2472335--106-8.7.x.patch"
     },
-    "drupal/http_response_headers": {
-      "2909459: Logging of header modificaton should be switched off": "https://www.drupal.org/files/issues/remove-logging-2909459-4.patch"
-    },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"
     },

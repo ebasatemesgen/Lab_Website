@@ -159,7 +159,6 @@
     "drupal/media_entity_download": "^2.0@beta",
     "umn/d8lite_migration": "dev-master",
     "umn/cloudflare_verify": "dev-master",
-    "drupal/acquia_connector": "1.16.0",
     "drupal/embed": "1.1.0"
   },
   "repositories": {

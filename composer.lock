@@ -22140,7 +22140,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/cloudflare_verify.git",
-                "reference": "2f1a9fedb677a6294c0f747c3e6ff7ce6213fad5"
+                "reference": "d4960d185fd5826e62ec453188c8426bb4813c7c"
             },
             "require": {
                 "symfony/yaml": "~3.4.0|^4.0"
@@ -22152,7 +22152,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2020-02-11T17:49:00+00:00"
+            "time": "2020-02-11T19:06:27+00:00"
         },
         {
             "name": "umn/cog_umn",

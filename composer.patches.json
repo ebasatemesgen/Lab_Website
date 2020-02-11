@@ -9,7 +9,8 @@
       "2950943: Add links to menu parent block title": "https://www.drupal.org/files/issues/2018-10-26/menu_block-title_as_link-2950943-11.patch"
     },
     "drupal/rules": {
-      "2695149: ContextDefinition Error": "https://www.drupal.org/files/issues/2018-04-09/2695149-11.patch"
+      "2695149: ContextDefinition Error": "https://www.drupal.org/files/issues/2018-04-09/2695149-11.patch",
+      "2885740: Rules does not working unless flush cache": "https://www.drupal.org/files/issues/fixed-rules-stop-working-after-cron.patch"
     },
     "drupal/video_embed_field": {
       "2913925: Retrieve title & description for videos": "https://www.drupal.org/files/issues/2019-07-17/retrieve-title-2913925-6.patch"

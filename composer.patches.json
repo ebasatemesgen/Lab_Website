@@ -18,6 +18,9 @@
     "drupal/paragraphs": {
       "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch"
     },
+    "drupal/entity_print": {
+      "2969184: PDF generation errors with DomPDF due to drupalSettings": "https://www.drupal.org/files/issues/2020-02-15/entity_print-dompdf-2969184-13.patch"
+    },
     "drupal/core": {
       "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",
       "1810148: Grouped exposed taxonomy term filters do not work": "https://www.drupal.org/files/issues/1810148-58.patch",

@@ -159,7 +159,9 @@
     "drupal/media_entity_download": "^2.0@beta",
     "umn/d8lite_migration": "dev-master",
     "umn/cloudflare_verify": "dev-static",
-    "drupal/embed": "1.1.0"
+    "drupal/embed": "1.1.0",
+    "drupal/smart_trim": "^1.2",
+    "drupal/redirect_after_login": "^2.5"
   },
   "repositories": {
     "drupal-packagist": {

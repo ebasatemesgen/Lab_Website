@@ -161,7 +161,8 @@
     "umn/cloudflare_verify": "dev-static",
     "drupal/embed": "1.1.0",
     "drupal/smart_trim": "^1.2",
-    "drupal/redirect_after_login": "^2.5"
+    "drupal/redirect_after_login": "^2.5",
+    "drupal/contact_emails": "^1.18"
   },
   "repositories": {
     "drupal-packagist": {

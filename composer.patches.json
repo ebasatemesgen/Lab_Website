@@ -50,7 +50,8 @@
     },
     "drupal/group": {
       "3068918: PHP Fatal error: Uncaught Error: Call to a member function getBaseFieldDefinitions() on null - related to GroupContentViewsData.php": "https://www.drupal.org/files/issues/2019-12-04/3068918-9.patch",
-      "3053524: Error: Call to a member function label() on null in GroupContentEnablerBase->getContentLabel()": "https://www.drupal.org/files/issues/2019-06-06/label-on-null-3053524-6.patch"
+      "3053524: Error: Call to a member function label() on null in GroupContentEnablerBase->getContentLabel()": "https://www.drupal.org/files/issues/2019-06-06/label-on-null-3053524-6.patch",
+      "2774827: Get a token of a node's parent group to create a pathauto pattern": "https://www.drupal.org/files/issues/2020-02-21/group-gnode_tokens-2774827-62.patch"
     }
   }
 }

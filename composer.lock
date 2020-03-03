@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f59125589a7a94295938a77239a1101b",
+    "content-hash": "89eba657d78d112ac51c1f5361943a45",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -3131,6 +3131,10 @@
                     "homepage": "https://www.drupal.org/user/386230"
                 },
                 {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
                     "name": "mglaman",
                     "homepage": "https://www.drupal.org/user/2416470"
                 },
@@ -3941,7 +3945,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
-                    "datestamp": "1487198586",
+                    "datestamp": "1570228085",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4706,7 +4710,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.9",
-                    "datestamp": "1549832280",
+                    "datestamp": "1574140673",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5449,6 +5453,10 @@
                     "homepage": "https://www.drupal.org/node/3236/committers"
                 },
                 {
+                    "name": "pcambra",
+                    "homepage": "https://www.drupal.org/user/122101"
+                },
+                {
                     "name": "salvis",
                     "homepage": "https://www.drupal.org/user/82964"
                 },
@@ -5706,10 +5714,10 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha4",
-                    "datestamp": "1555407785",
+                    "datestamp": "1578497283",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5808,12 +5816,20 @@
                     "homepage": "https://www.drupal.org/user/3326031"
                 },
                 {
+                    "name": "banoodle",
+                    "homepage": "https://www.drupal.org/user/2375050"
+                },
+                {
                     "name": "diamondsea",
                     "homepage": "https://www.drupal.org/user/430714"
                 },
                 {
                     "name": "hmartens",
                     "homepage": "https://www.drupal.org/user/622826"
+                },
+                {
+                    "name": "jasonsavino",
+                    "homepage": "https://www.drupal.org/user/411241"
                 },
                 {
                     "name": "loopduplicate",
@@ -7309,7 +7325,8 @@
                 },
                 "patches_applied": {
                     "3068918: PHP Fatal error: Uncaught Error: Call to a member function getBaseFieldDefinitions() on null - related to GroupContentViewsData.php": "https://www.drupal.org/files/issues/2019-12-04/3068918-9.patch",
-                    "3053524: Error: Call to a member function label() on null in GroupContentEnablerBase->getContentLabel()": "https://www.drupal.org/files/issues/2019-06-06/label-on-null-3053524-6.patch"
+                    "3053524: Error: Call to a member function label() on null in GroupContentEnablerBase->getContentLabel()": "https://www.drupal.org/files/issues/2019-06-06/label-on-null-3053524-6.patch",
+                    "2774827: Get a token of a node's parent group to create a pathauto pattern": "https://www.drupal.org/files/issues/2020-02-21/group-gnode_tokens-2774827-62.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7616,6 +7633,10 @@
                 {
                     "name": "Drupal media CI",
                     "homepage": "https://www.drupal.org/user/3057985"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "slashrsm",
@@ -9069,7 +9090,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha2",
-                    "datestamp": "1537264380",
+                    "datestamp": "1569420787",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -9133,7 +9154,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha3",
-                    "datestamp": "1552577885",
+                    "datestamp": "1569489784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -9156,6 +9177,10 @@
                 {
                     "name": "chr.fritsch",
                     "homepage": "https://www.drupal.org/user/2103716"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "slashrsm",
@@ -9942,7 +9967,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0",
-                    "datestamp": "1562953385",
+                    "datestamp": "1566225488",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10356,7 +10381,7 @@
                     "datestamp": "1563908885",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -10365,6 +10390,10 @@
                 "GPL-2.0+"
             ],
             "authors": [
+                {
+                    "name": "e0ipso",
+                    "homepage": "https://www.drupal.org/user/550110"
+                },
                 {
                     "name": "mrjmd",
                     "homepage": "https://www.drupal.org/user/1800446"
@@ -10764,6 +10793,10 @@
                     "homepage": "https://www.drupal.org/user/48673"
                 },
                 {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
                     "name": "samuel.mortenson",
                     "homepage": "https://www.drupal.org/user/2582268"
                 },
@@ -10833,6 +10866,10 @@
                 {
                     "name": "neclimdul",
                     "homepage": "https://www.drupal.org/user/48673"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "samuel.mortenson",
@@ -12251,6 +12288,10 @@
             ],
             "authors": [
                 {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
                     "name": "stBorchert",
                     "homepage": "https://www.drupal.org/user/36942"
                 }
@@ -12310,6 +12351,53 @@
             "homepage": "https://www.drupal.org/project/simple_gmap",
             "support": {
                 "source": "https://git.drupalcode.org/project/simple_gmap"
+            }
+        },
+        {
+            "name": "drupal/simple_instagram_feed",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simple_instagram_feed.git",
+                "reference": "8.x-3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_instagram_feed-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "5327481ef37fbcb1a5ece76c4ba2f3d1dbf48934"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.2",
+                    "datestamp": "1581020768",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "awasson",
+                    "homepage": "https://www.drupal.org/user/127091"
+                }
+            ],
+            "description": "Creates a block with a dynamic Instagram Feed using https://github.com/jsanahuja/jquery.instagramFeed.",
+            "homepage": "https://www.drupal.org/project/simple_instagram_feed",
+            "support": {
+                "source": "https://git.drupalcode.org/project/simple_instagram_feed"
             }
         },
         {
@@ -13287,7 +13375,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.4",
-                    "datestamp": "1563096785",
+                    "datestamp": "1563099329",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13393,15 +13481,15 @@
         },
         {
             "name": "drupal/umn_dm_storage",
-            "version": "v1.0.2",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git",
-                "reference": "522c2b5c484db93886a2034f1c9d4ed6d57741f3"
+                "reference": "a99df0e606ed4ac43590e9fd6beffd22f3bf3ec7"
             },
             "type": "drupal-module",
             "description": "contains the entity type configuration for Digital Measures profile and profile fragments",
-            "time": "2019-07-26T21:08:31+00:00"
+            "time": "2019-09-04T18:34:20+00:00"
         },
         {
             "name": "drupal/video_embed_field",
@@ -13900,7 +13988,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.3",
-                    "datestamp": "1516708985",
+                    "datestamp": "1570980057",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13912,6 +14000,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "baikho",
+                    "homepage": "https://www.drupal.org/user/2727459"
+                },
                 {
                     "name": "manojapare",
                     "homepage": "https://www.drupal.org/user/2825053"
@@ -14093,12 +14185,16 @@
             ],
             "authors": [
                 {
-                    "name": "joekers",
-                    "homepage": "https://www.drupal.org/user/2229066"
+                    "name": "New Zeal",
+                    "homepage": "https://www.drupal.org/user/93571"
                 },
                 {
-                    "name": "kent@passingphase.nz",
-                    "homepage": "https://www.drupal.org/user/93571"
+                    "name": "jasonawant",
+                    "homepage": "https://www.drupal.org/user/589890"
+                },
+                {
+                    "name": "joekers",
+                    "homepage": "https://www.drupal.org/user/2229066"
                 },
                 {
                     "name": "seanB",
@@ -15834,6 +15930,15 @@
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
+            "name": "jsanahuja/jqueryinstagramfeed",
+            "version": "dev-master",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/master.zip"
+            },
+            "type": "drupal-library"
+        },
+        {
             "name": "kenwheeler/slick",
             "version": "1.6.1",
             "source": {
@@ -16140,8 +16245,8 @@
             "authors": [
                 {
                     "name": "Luís Otávio Cobucci Oblonczyk",
-                    "role": "Developer",
-                    "email": "lcobucci@gmail.com"
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
                 }
             ],
             "description": "A simple library to work with JSON Web Token and JSON Web Signature",
@@ -23213,7 +23318,8 @@
         "drupal/shs": 15,
         "drupal/media_entity_download": 10,
         "umn/d8lite_migration": 20,
-        "umn/cloudflare_verify": 20
+        "umn/cloudflare_verify": 20,
+        "jsanahuja/jqueryinstagramfeed": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

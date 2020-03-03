@@ -12443,6 +12443,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "2894945: Role assignment from attributes does not work when provisioning accounts": "https://www.drupal.org/files/issues/2020-02-26/simplesamlphp_auth-role_assignment-2894945-5.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -22528,7 +22531,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "49535abec604f47ea637dc12254aa58ad57ba261"
+                "reference": "dcabdc8ddb9b81f663d01d13515a853d95eba964"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -22538,7 +22541,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2020-01-07T20:05:28+00:00"
+            "time": "2020-03-03T20:32:22+00:00"
         },
         {
             "name": "umn/lightning_umn",

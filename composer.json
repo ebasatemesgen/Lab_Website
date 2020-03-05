@@ -21,7 +21,7 @@
     "drupal/radix_layouts": "^4.0",
     "drupal/back_to_top": "^1.0@beta",
     "drupal/restui": "^1.13",
-    "drupal/admin_toolbar": "^1.18",
+    "drupal/admin_toolbar": "^2.0",
     "drupal/fontyourface": "^3.0",
     "drupal/address": "^1.0@RC",
     "drupal/linkit": "^5.0",

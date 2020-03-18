@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d1895dc76c57b283af4bc3a501bc7ff",
+    "content-hash": "a6f6ba9fbe5742cbc1bc21c2014d4833",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -422,7 +422,7 @@
             "version": "v5.5.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:enyo/dropzone.git",
+                "url": "https://github.com/enyo/dropzone.git",
                 "reference": "08b9e0a763b54a685404dea523a9c54242fbe1b9"
             },
             "dist": {
@@ -470,7 +470,7 @@
             "version": "3.4.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
             },
             "dist": {
@@ -22684,6 +22684,56 @@
             "time": "2016-11-16T22:29:00+00:00"
         },
         {
+            "name": "umn/umn_folwell_group",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/umn_folwell_group",
+                "reference": "7832551472e363ae4bf2994e651d3e4da8e8a189"
+            },
+            "type": "drupal-module-custom",
+            "extra": {
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "authors": [
+                {
+                    "name": "Alina Rimbu",
+                    "email": "rimbu002@umn.edu"
+                }
+            ],
+            "description": "Enable group dependencies and create Unit-Site Identity block type",
+            "time": "2020-03-12T22:55:03+00:00"
+        },
+        {
+            "name": "umn/umn_group_google_analytics",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/umn_group_google_analytics",
+                "reference": "ba35354f4fb7cff7e64746587fa123ccc4c743d2"
+            },
+            "type": "drupal-module-custom",
+            "extra": {
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "authors": [
+                {
+                    "name": "Alina Rimbu",
+                    "email": "rimbu002@umn.edu"
+                }
+            ],
+            "description": "Adds a group Google Analytics id to all pages in a group",
+            "time": "2020-03-18T19:07:28+00:00"
+        },
+        {
             "name": "umn/umn_search",
             "version": "dev-master",
             "source": {
@@ -23319,7 +23369,9 @@
         "drupal/media_entity_download": 10,
         "umn/d8lite_migration": 20,
         "umn/cloudflare_verify": 20,
-        "jsanahuja/jqueryinstagramfeed": 20
+        "jsanahuja/jqueryinstagramfeed": 20,
+        "umn/umn_group_google_analytics": 20,
+        "umn/umn_folwell_group": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

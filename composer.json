@@ -165,7 +165,9 @@
     "drupal/contact_emails": "^1.18",
     "drupal/block_visibility_groups": "^1.3",
     "drupal/simple_instagram_feed": "^3.2",
-    "jsanahuja/jqueryinstagramfeed": "dev-master"
+    "jsanahuja/jqueryinstagramfeed": "dev-master",
+    "umn/umn_group_google_analytics": "dev-master",
+    "umn/umn_folwell_group": "dev-master"
   },
   "repositories": {
     "drupal-packagist": {
@@ -235,6 +237,14 @@
     "cloudflare_verify": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/cloudflare_verify.git"
+    },
+    "umn_group_google_analytics": {
+      "type": "git",
+      "url": "git@github.umn.edu:drupalmodules/umn_group_google_analytics"
+    },
+    "umn_folwell_group": {
+      "type": "git",
+      "url": "git@github.umn.edu:drupalmodules/umn_folwell_group"
     },
     "blazy": {
       "type": "package",

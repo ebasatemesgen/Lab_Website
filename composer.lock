@@ -22714,7 +22714,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_group_google_analytics",
-                "reference": "87f25beefad67bce69bf714b79456dcfd28e6272"
+                "reference": "90cadbae4308c631b54d0cf9bc58c9e1611c4fae"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -22731,7 +22731,7 @@
                 }
             ],
             "description": "Adds a group Google Analytics id to all pages in a group",
-            "time": "2020-03-19T15:45:46+00:00"
+            "time": "2020-03-19T15:54:54+00:00"
         },
         {
             "name": "umn/umn_search",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6f6ba9fbe5742cbc1bc21c2014d4833",
+    "content-hash": "7445009392302281e19031abdaf251e6",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -404,7 +404,7 @@
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:fengyuanchen/cropper.git",
+                "url": "https://github.com/fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -22611,11 +22611,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "967520ca50f55cce08cd6d683b724c5e30711b3f"
+                "reference": "b7b852d19a645e9b5a9630f0101459a4f4bc0374"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -22628,7 +22628,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2020-03-05T14:09:37+00:00"
+            "time": "2020-03-23T20:56:56+00:00"
         },
         {
             "name": "umn/folwell_components",

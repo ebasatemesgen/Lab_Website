@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dba7e53c7e9f27dd070baca33547afcd",
+    "content-hash": "c7632c1281a8dd200bfd54e68956547b",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -404,7 +404,7 @@
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fengyuanchen/cropper.git",
+                "url": "git@github.com:fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -422,7 +422,7 @@
             "version": "v5.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/enyo/dropzone.git",
+                "url": "git@github.com:enyo/dropzone.git",
                 "reference": "08b9e0a763b54a685404dea523a9c54242fbe1b9"
             },
             "dist": {
@@ -452,7 +452,7 @@
             "version": "v7.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/highcharts/highcharts-dist.git",
+                "url": "git@github.com:highcharts/highcharts-dist.git",
                 "reference": "6b1a03af7f26ce8ed9b62bab6a041a7f477b3f7c"
             },
             "dist": {
@@ -22575,11 +22575,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "1.2.9",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "48525a438ff756e0faddbfd3b1d3064fe5fdf75e"
+                "reference": "327e9e1d677271f51ee93a3b56f9d3cff964d74f"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -22592,7 +22592,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2020-03-27T17:29:07+00:00"
+            "time": "2020-04-02T18:45:21+00:00"
         },
         {
             "name": "umn/folwell_components",
@@ -23321,6 +23321,7 @@
         "umn/folwell_components": 20,
         "umn/umn_superfish": 20,
         "mehrpadin/superfish": 20,
+        "umn/folwell": 20,
         "drupal/h5p": 5,
         "drupal/layout_builder_modal": 20,
         "umn/bootstrap_umn": 20,

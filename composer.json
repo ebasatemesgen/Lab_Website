@@ -167,7 +167,8 @@
     "drupal/simple_instagram_feed": "^3.2",
     "jsanahuja/jqueryinstagramfeed": "dev-master",
     "umn/umn_group_google_analytics": "dev-master",
-    "umn/umn_folwell_group": "dev-master"
+    "umn/umn_folwell_group": "dev-master",
+    "drupal/unpublished_node_permissions": "^1.0"
   },
   "repositories": {
     "drupal-packagist": {

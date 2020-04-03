@@ -46,7 +46,8 @@
       "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
     },
     "drupal/entity_embed": {
-      "3075245: Form Validation in Format Config is Too Strict for data- Attributes": "https://www.drupal.org/files/issues/2019-08-16/3075245-2.patch"
+      "3075245: Form Validation in Format Config is Too Strict for data- Attributes": "https://www.drupal.org/files/issues/2019-08-16/3075245-2.patch",
+      "3077225: Logs flooded with warning messages Invalid display settings encountered":"https://www.drupal.org/files/issues/2019-08-26/3077225-reduce-invalid-config-logs.patch"
     },
     "drupal/group": {
       "3068918: PHP Fatal error: Uncaught Error: Call to a member function getBaseFieldDefinitions() on null - related to GroupContentViewsData.php": "https://www.drupal.org/files/issues/2019-12-04/3068918-9.patch",

@@ -15845,6 +15845,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -15891,6 +15892,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -22579,7 +22581,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "327e9e1d677271f51ee93a3b56f9d3cff964d74f"
+                "reference": "f3508221cdcc11b759198b3ead85f7a3ddfc7f2c"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -22592,7 +22594,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2020-04-02T18:45:21+00:00"
+            "time": "2020-04-06T16:07:24+00:00"
         },
         {
             "name": "umn/folwell_components",

@@ -22691,7 +22691,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_folwell_group",
-                "reference": "e6986acabbefb1ed94a5bfc3a1e5fdd50ed8b3a0"
+                "reference": "3e5f451268be947d10243fa3a3f602e95caae547"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -22708,7 +22708,7 @@
                 }
             ],
             "description": "Enable group dependencies and create Unit-Site Identity block type",
-            "time": "2020-04-06T22:56:19+00:00"
+            "time": "2020-04-07T18:20:39+00:00"
         },
         {
             "name": "umn/umn_group_google_analytics",

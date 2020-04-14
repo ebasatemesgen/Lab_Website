@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32e7318a29fa7a1142817f3817454978",
+    "content-hash": "a08b04686e04b1593f7d86bacd7b43d1",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -404,7 +404,7 @@
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:fengyuanchen/cropper.git",
+                "url": "https://github.com/fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -6269,7 +6269,8 @@
                     }
                 },
                 "patches_applied": {
-                    "3075245: Form Validation in Format Config is Too Strict for data- Attributes": "https://www.drupal.org/files/issues/2019-08-16/3075245-2.patch"
+                    "3075245: Form Validation in Format Config is Too Strict for data- Attributes": "https://www.drupal.org/files/issues/2019-08-16/3075245-2.patch",
+                    "3077225: Logs flooded with warning messages Invalid display settings encountered": "https://www.drupal.org/files/issues/2019-08-26/3077225-reduce-invalid-config-logs.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -14499,6 +14500,7 @@
             "keywords": [
                 "Drush"
             ],
+            "abandoned": true,
             "time": "2015-10-16T21:32:27+00:00"
         },
         {
@@ -15940,6 +15942,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -15986,6 +15989,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -22691,11 +22695,11 @@
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-develop",
+            "version": "2020.04.14",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "733cdce463b23017d23ca9756d254035b7a3f6a9"
+                "reference": "03f1c9bbf0a595e41812458fbc9442e73fbe9ec8"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -22705,7 +22709,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2020-03-23T16:53:54+00:00"
+            "time": "2020-04-06T18:54:18+00:00"
         },
         {
             "name": "umn/lightning_umn",
@@ -23413,7 +23417,6 @@
         "drupal/fpa": 20,
         "drupal/roleassign": 15,
         "drupal/group": 20,
-        "umn/folwell_components": 20,
         "umn/umn_superfish": 20,
         "mehrpadin/superfish": 20,
         "drupal/h5p": 5,

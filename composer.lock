@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd8dfe6a5dd66eaeefb4e8b3a6474a49",
+    "content-hash": "d37472c2560168880bb3004bc88be999",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -2899,7 +2899,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.9",
-                    "datestamp": "1581407046",
+                    "datestamp": "1570511584",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3106,7 +3106,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.7",
-                    "datestamp": "1582913039",
+                    "datestamp": "1559642884",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3305,7 +3305,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.6",
-                    "datestamp": "1581868106",
+                    "datestamp": "1509961084",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3945,7 +3945,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
-                    "datestamp": "1487198586",
+                    "datestamp": "1570228085",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4138,10 +4138,6 @@
                 "GPL-2.0+"
             ],
             "authors": [
-                {
-                    "name": "acquia",
-                    "homepage": "https://www.drupal.org/user/1231722"
-                },
                 {
                     "name": "aellison",
                     "homepage": "https://www.drupal.org/user/277818"
@@ -5457,6 +5453,10 @@
                     "homepage": "https://www.drupal.org/node/3236/committers"
                 },
                 {
+                    "name": "pcambra",
+                    "homepage": "https://www.drupal.org/user/122101"
+                },
+                {
                     "name": "salvis",
                     "homepage": "https://www.drupal.org/user/82964"
                 },
@@ -5714,10 +5714,10 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha4",
-                    "datestamp": "1555407785",
+                    "datestamp": "1578497283",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5816,12 +5816,20 @@
                     "homepage": "https://www.drupal.org/user/3326031"
                 },
                 {
+                    "name": "banoodle",
+                    "homepage": "https://www.drupal.org/user/2375050"
+                },
+                {
                     "name": "diamondsea",
                     "homepage": "https://www.drupal.org/user/430714"
                 },
                 {
                     "name": "hmartens",
                     "homepage": "https://www.drupal.org/user/622826"
+                },
+                {
+                    "name": "jasonsavino",
+                    "homepage": "https://www.drupal.org/user/411241"
                 },
                 {
                     "name": "loopduplicate",
@@ -5982,7 +5990,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc3",
-                    "datestamp": "1582735747",
+                    "datestamp": "1559579884",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -6249,9 +6257,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1562161679",
@@ -7706,6 +7711,10 @@
                     "homepage": "https://www.drupal.org/user/3057985"
                 },
                 {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
                     "name": "slashrsm",
                     "homepage": "https://www.drupal.org/user/744628"
                 },
@@ -7809,7 +7818,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc2",
-                    "datestamp": "1581640483",
+                    "datestamp": "1568446684",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -8127,7 +8136,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
-                    "datestamp": "1582217387",
+                    "datestamp": "1560804485",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -9157,7 +9166,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha2",
-                    "datestamp": "1537264380",
+                    "datestamp": "1569420787",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -9221,7 +9230,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha3",
-                    "datestamp": "1552577885",
+                    "datestamp": "1569489784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -9244,6 +9253,10 @@
                 {
                     "name": "chr.fritsch",
                     "homepage": "https://www.drupal.org/user/2103716"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "slashrsm",
@@ -10097,7 +10110,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0",
-                    "datestamp": "1562953385",
+                    "datestamp": "1566225488",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10923,6 +10936,10 @@
                     "homepage": "https://www.drupal.org/user/48673"
                 },
                 {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
                     "name": "samuel.mortenson",
                     "homepage": "https://www.drupal.org/user/2582268"
                 },
@@ -10994,6 +11011,10 @@
                     "homepage": "https://www.drupal.org/user/48673"
                 },
                 {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
                     "name": "samuel.mortenson",
                     "homepage": "https://www.drupal.org/user/2582268"
                 },
@@ -11049,7 +11070,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.10",
-                    "datestamp": "1581850829",
+                    "datestamp": "1572617586",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11180,7 +11201,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.14",
-                    "datestamp": "1581580826",
+                    "datestamp": "1578493983",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11733,7 +11754,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha2",
-                    "datestamp": "1582203772",
+                    "datestamp": "1454394539",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -12144,7 +12165,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.3",
-                    "datestamp": "1581606078",
+                    "datestamp": "1575044885",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12409,6 +12430,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
                 {
                     "name": "stBorchert",
                     "homepage": "https://www.drupal.org/user/36942"
@@ -12904,7 +12929,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc2",
-                    "datestamp": "1581745147",
+                    "datestamp": "1552059184",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -13599,15 +13624,15 @@
         },
         {
             "name": "drupal/umn_dm_storage",
-            "version": "v1.0.2",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git",
-                "reference": "522c2b5c484db93886a2034f1c9d4ed6d57741f3"
+                "reference": "a99df0e606ed4ac43590e9fd6beffd22f3bf3ec7"
             },
             "type": "drupal-module",
             "description": "contains the entity type configuration for Digital Measures profile and profile fragments",
-            "time": "2019-07-26T21:08:31+00:00"
+            "time": "2019-09-04T18:34:20+00:00"
         },
         {
             "name": "drupal/unpublished_node_permissions",
@@ -13807,7 +13832,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.4",
-                    "datestamp": "1582575462",
+                    "datestamp": "1580924754",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14165,7 +14190,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.3",
-                    "datestamp": "1516708985",
+                    "datestamp": "1570980057",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14177,6 +14202,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "baikho",
+                    "homepage": "https://www.drupal.org/user/2727459"
+                },
                 {
                     "name": "manojapare",
                     "homepage": "https://www.drupal.org/user/2825053"
@@ -14358,12 +14387,16 @@
             ],
             "authors": [
                 {
-                    "name": "joekers",
-                    "homepage": "https://www.drupal.org/user/2229066"
+                    "name": "New Zeal",
+                    "homepage": "https://www.drupal.org/user/93571"
                 },
                 {
-                    "name": "kent@passingphase.nz",
-                    "homepage": "https://www.drupal.org/user/93571"
+                    "name": "jasonawant",
+                    "homepage": "https://www.drupal.org/user/589890"
+                },
+                {
+                    "name": "joekers",
+                    "homepage": "https://www.drupal.org/user/2229066"
                 },
                 {
                     "name": "seanB",
@@ -16417,8 +16450,8 @@
             "authors": [
                 {
                     "name": "Luís Otávio Cobucci Oblonczyk",
-                    "role": "Developer",
-                    "email": "lcobucci@gmail.com"
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
                 }
             ],
             "description": "A simple library to work with JSON Web Token and JSON Web Signature",
@@ -22892,56 +22925,6 @@
             "time": "2016-11-16T22:29:00+00:00"
         },
         {
-            "name": "umn/umn_folwell_group",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@github.umn.edu:drupalmodules/umn_folwell_group",
-                "reference": "7832551472e363ae4bf2994e651d3e4da8e8a189"
-            },
-            "type": "drupal-module-custom",
-            "extra": {
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9"
-                    }
-                }
-            },
-            "authors": [
-                {
-                    "name": "Alina Rimbu",
-                    "email": "rimbu002@umn.edu"
-                }
-            ],
-            "description": "Enable group dependencies and create Unit-Site Identity block type",
-            "time": "2020-03-12T22:55:03+00:00"
-        },
-        {
-            "name": "umn/umn_group_google_analytics",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@github.umn.edu:drupalmodules/umn_group_google_analytics",
-                "reference": "6d4904896cc18cb1b417b4c3aac706ab40d37a34"
-            },
-            "type": "drupal-module-custom",
-            "extra": {
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9"
-                    }
-                }
-            },
-            "authors": [
-                {
-                    "name": "Alina Rimbu",
-                    "email": "rimbu002@umn.edu"
-                }
-            ],
-            "description": "Adds a group Google Analytics id to all pages in a group",
-            "time": "2020-03-19T16:00:27+00:00"
-        },
-        {
             "name": "umn/umn_search",
             "version": "dev-master",
             "source": {
@@ -23576,13 +23559,10 @@
         "drupal/media_entity_download": 10,
         "umn/d8lite_migration": 20,
         "umn/cloudflare_verify": 20,
-        "jsanahuja/jqueryinstagramfeed": 20,
-        "umn/umn_group_google_analytics": 20,
-        "umn/umn_folwell_group": 20
+        "jsanahuja/jqueryinstagramfeed": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }

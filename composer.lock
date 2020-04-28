@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e392e32fc1bbfed0e1d49494557fcf4",
+    "content-hash": "96970e180e09f8bb34430164e5918287",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -9448,7 +9448,9 @@
                     }
                 },
                 "patches_applied": {
-                    "3040666: Fixed parent relative to active trail": "https://www.drupal.org/files/issues/2019-03-15/menu_block-parent_of_active_trail-3040666-2.patch"
+                    "3040666: Fixed parent relative to active trail": "https://www.drupal.org/files/issues/2019-03-15/menu_block-parent_of_active_trail-3040666-2.patch",
+                    "2809699: Menu parent as block title": "https://www.drupal.org/files/issues/2020-04-01/menu_block_label_configuration-2809699-121.patch",
+                    "2950943: Add links to menu parent block title": "https://www.drupal.org/files/issues/2020-03-09/2950943-20.menu_block-title_as_link.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -23306,11 +23308,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "2020.04.22",
+            "version": "2020.04.28",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "7e15e816003d949f6bd38575a76fd732dd7a6b00"
+                "reference": "3968772f61e535b714bfd7989a76e7b2e54b66f1"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -23323,15 +23325,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2020-04-16T23:32:13+00:00"
+            "time": "2020-04-24T13:58:09+00:00"
         },
         {
             "name": "umn/folwell_components",
-            "version": "2020.04.22",
+            "version": "2020.04.28",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "839251cb458727b14cc8e6f79de290238765c14f"
+                "reference": "8c53419b00848f4ab91fa7c5f878aa0650d406ce"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -23341,7 +23343,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2020-04-16T23:28:39+00:00"
+            "time": "2020-04-23T23:46:08+00:00"
         },
         {
             "name": "umn/lightning_umn",

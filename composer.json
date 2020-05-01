@@ -63,7 +63,7 @@
     "drupal/config_inspector": "^1.0@beta",
     "drupal/select_or_other": "^1.0@alpha",
     "drupal/auto_entitylabel": "dev-2.x",
-    "drupal/entityqueue": "^1.0@beta",
+    "drupal/entityqueue": "1.0-beta5",
     "drupal/editor_advanced_link": "^1.4",
     "drupal/acquia_purge": "^1.0@beta",
     "drupal/stage_file_proxy": "^1.0@alpha",

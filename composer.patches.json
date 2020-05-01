@@ -16,7 +16,9 @@
       "2913925: Retrieve title & description for videos": "https://www.drupal.org/files/issues/2019-07-17/retrieve-title-2913925-6.patch"
     },
     "drupal/paragraphs": {
-      "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch"
+      "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch",
+      "3114512: Updating Paragraph gives error on update #8017": "https://www.drupal.org/files/issues/2020-03-29/3114512-14.patch"
+
     },
     "drupal/simplesamlphp_auth": {
       "2894945: Role assignment from attributes does not work when provisioning accounts": "https://www.drupal.org/files/issues/2020-02-26/simplesamlphp_auth-role_assignment-2894945-5.patch"

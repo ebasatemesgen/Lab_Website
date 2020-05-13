@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3bb11917e8df267363be5e3f41f9415",
+    "content-hash": "d1ffcabce9ab3a8d6a365154bd511c16",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -438,7 +438,7 @@
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:fengyuanchen/cropper.git",
+                "url": "https://github.com/fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -486,7 +486,7 @@
             "version": "v7.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/highcharts/highcharts-dist.git",
+                "url": "git@github.com:highcharts/highcharts-dist.git",
                 "reference": "6b1a03af7f26ce8ed9b62bab6a041a7f477b3f7c"
             },
             "dist": {
@@ -23245,7 +23245,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "a25c671ac3888c2357cd8d4e132a43688e3e3367"
+                "reference": "be2ad0e8625b44aae0e206b1ba6f81ef56186edd"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -23262,15 +23262,15 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2020-03-30T19:56:26+00:00"
+            "time": "2020-05-11T18:45:10+00:00"
         },
         {
             "name": "umn/dors_migrate",
-            "version": "v2.2.3",
+            "version": "2.2.4",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/dors_migrate.git",
-                "reference": "059c6d5c956940f845e7e8a35ca23bb063293794"
+                "reference": "b3aeea3756720f7958ec72417f17344846b580da"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -23287,7 +23287,7 @@
                 }
             ],
             "description": "Drupal 8 module to import courses from DORS",
-            "time": "2019-09-12T19:17:24+00:00"
+            "time": "2020-04-30T15:10:31+00:00"
         },
         {
             "name": "umn/emergency_notification",

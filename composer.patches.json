@@ -49,6 +49,7 @@
     },
     "drupal/entity_embed": {
       "3075245: Form Validation in Format Config is Too Strict for data- Attributes": "https://www.drupal.org/files/issues/2019-08-16/3075245-2.patch",
+      "3069448: Array to string conversion for Media Image": "https://www.drupal.org/files/issues/2019-10-18/entity-embed-array-to-string--3069448-19.patch",
       "3077225: Logs flooded with warning messages Invalid display settings encountered":"https://www.drupal.org/files/issues/2019-08-26/3077225-reduce-invalid-config-logs.patch"
     },
     "drupal/group": {

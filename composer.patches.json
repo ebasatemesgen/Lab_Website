@@ -12,6 +12,9 @@
       "2695149: ContextDefinition Error": "https://www.drupal.org/files/issues/2018-04-09/2695149-11.patch",
       "2885740: Rules does not working unless flush cache": "https://www.drupal.org/files/issues/fixed-rules-stop-working-after-cron.patch"
     },
+    "drupal/workbench_access": {
+      "3125798: PHP array warning in AccessControlHierarchyBase::disallowedOptions()": "https://www.drupal.org/files/issues/2020-04-13/3125798_workbench_access-array.patch"
+    },
     "drupal/video_embed_field": {
       "2913925: Retrieve title & description for videos": "https://www.drupal.org/files/issues/2019-07-17/retrieve-title-2913925-6.patch"
     },

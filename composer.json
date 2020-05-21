@@ -168,7 +168,8 @@
     "jsanahuja/jqueryinstagramfeed": "dev-master",
     "drupal/unpublished_node_permissions": "^1.0",
     "drupal/geofield": "^1.11",
-    "drupal/menu_breadcrumb": "^1.12"
+    "drupal/menu_breadcrumb": "^1.12",
+    "drupal/simple_sitemap": "^3.6"
   },
   "repositories": {
     "drupal-packagist": {

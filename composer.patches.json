@@ -40,7 +40,8 @@
       "3040361: Moderation state views filter only works on base table entity": "https://www.drupal.org/files/issues/2019-06-12/3040361-4.patch",
       "2472335: Support an independent max-age for 4xx responses": "https://www.drupal.org/files/issues/2019-09-13/support_an_independent_4xx_max-age--2472335--106-8.7.x.patch",
       "3008924: Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode": "https://www.drupal.org/files/issues/2019-06-20/3008924-5.patch",
-      "3056135: Viewing Layout Builder enable node fails after Workflow enabled on bundle if another node was created before enabling": "https://www.drupal.org/files/issues/2019-08-06/3056135-8.patch"
+      "3056135: Viewing Layout Builder enable node fails after Workflow enabled on bundle if another node was created before enabling": "https://www.drupal.org/files/issues/2019-08-06/3056135-8.patch",
+      "2996114: NULL given to  JSON API routing": "https://www.drupal.org/files/issues/2020-02-11/2996114-124.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"

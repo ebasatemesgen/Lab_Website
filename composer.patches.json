@@ -4,9 +4,7 @@
       "2867879: include core/drupal dependency": "https://www.drupal.org/files/issues/nice_menus-js_dependency-2867879-2.patch"
     },
     "drupal/menu_block": {
-      "3040666: Fixed parent relative to active trail": "https://www.drupal.org/files/issues/2019-03-15/menu_block-parent_of_active_trail-3040666-2.patch",
-      "2809699: Menu parent as block title": "https://www.drupal.org/files/issues/2020-04-01/menu_block_label_configuration-2809699-121.patch",
-      "2950943: Add links to menu parent block title": "https://www.drupal.org/files/issues/2020-03-09/2950943-20.menu_block-title_as_link.patch"
+      "3040666: Fixed parent relative to active trail": "https://www.drupal.org/files/issues/2019-03-15/menu_block-parent_of_active_trail-3040666-2.patch"
     },
     "drupal/rules": {
       "2695149: ContextDefinition Error": "https://www.drupal.org/files/issues/2018-04-09/2695149-11.patch",

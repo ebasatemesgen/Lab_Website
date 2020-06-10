@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e30e59eeeec5e44bdfeb9c4a3622b28c",
+    "content-hash": "8c7fd9d55b72b8d0d138e206032d9e86",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -9558,6 +9558,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "3040666: Fixed parent relative to active trail": "https://www.drupal.org/files/issues/2019-03-15/menu_block-parent_of_active_trail-3040666-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -9590,7 +9593,8 @@
             "homepage": "https://www.drupal.org/project/menu_block",
             "support": {
                 "source": "https://git.drupalcode.org/project/menu_block"
-            }
+            },
+            "time": "2020-06-08T05:22:10+00:00"
         },
         {
             "name": "drupal/menu_breadcrumb",

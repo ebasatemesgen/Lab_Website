@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "90ef9f2a6ac8b00a475e7cfa110b9d5b",
+    "content-hash": "e30e59eeeec5e44bdfeb9c4a3622b28c",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -9541,7 +9541,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/menu_block.git",
-                "reference": "390c593499"
+                "reference": "3402bb7ed3d95f529b81fac257a370901ea14ac2"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -9552,17 +9552,12 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5+14-dev",
-                    "datestamp": "1587686038",
+                    "version": "8.x-1.6+4-dev",
+                    "datestamp": "1590784929",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "3040666: Fixed parent relative to active trail": "https://www.drupal.org/files/issues/2019-03-15/menu_block-parent_of_active_trail-3040666-2.patch",
-                    "2809699: Menu parent as block title": "https://www.drupal.org/files/issues/2020-04-01/menu_block_label_configuration-2809699-121.patch",
-                    "2950943: Add links to menu parent block title": "https://www.drupal.org/files/issues/2020-03-09/2950943-20.menu_block-title_as_link.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -9595,8 +9590,7 @@
             "homepage": "https://www.drupal.org/project/menu_block",
             "support": {
                 "source": "https://git.drupalcode.org/project/menu_block"
-            },
-            "time": "2019-11-25T06:47:11+00:00"
+            }
         },
         {
             "name": "drupal/menu_breadcrumb",

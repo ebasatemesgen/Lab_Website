@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f35b89b04ae307e24105dc8fc01f4f9",
+    "content-hash": "a79443248dce2398fb8447149b8bc2e2",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -3468,9 +3468,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "3109317 - Run tests against Drupal 9": "https://www.drupal.org/files/issues/2020-05-15/autosave_form-1.1-core-version-requirement.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5104,10 +5101,10 @@
                     "3008924: Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode": "https://www.drupal.org/files/issues/2019-06-20/3008924-5.patch",
                     "3056135: Viewing Layout Builder enable node fails after Workflow enabled on bundle if another node was created before enabling": "https://www.drupal.org/files/issues/2019-08-06/3056135-8.patch",
                     "2996114: NULL given to  JSON API routing": "https://www.drupal.org/files/issues/2020-02-11/2996114-124.patch",
-                    "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
-                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-11-27/2815221-125.patch",
+                    "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2019-11-05/1356276-531-8.8.x-4.patch",
-                    "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
+                    "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch",
+                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-11-27/2815221-125.patch"
                 }
             },
             "autoload": {
@@ -23564,11 +23561,11 @@
         },
         {
             "name": "umn/dors_migrate",
-            "version": "2.2.5",
+            "version": "2.2.6",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/dors_migrate.git",
-                "reference": "9e97e011f042bebe2f92daf75c6970ddab4292cc"
+                "reference": "b23dbcafee2d01aa42763f206fb1c78c613344ea"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -23585,7 +23582,7 @@
                 }
             ],
             "description": "Drupal 8 module to import courses from DORS",
-            "time": "2020-06-11T15:48:34+00:00"
+            "time": "2020-06-15T20:00:16+00:00"
         },
         {
             "name": "umn/emergency_notification",

@@ -171,7 +171,8 @@
     "drupal/menu_breadcrumb": "^1.12",
     "drupal/simple_sitemap": "^3.6",
     "drupal/panelizer": "4.3.0",
-    "drupal/geocoder": "^3.7"
+    "drupal/geocoder": "^3.7",
+    "drupal/field_delimiter": "^1.1"
   },
   "repositories": {
     "drupal-packagist": {

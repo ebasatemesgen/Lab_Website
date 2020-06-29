@@ -4,23 +4,17 @@
       "2867879: include core/drupal dependency": "https://www.drupal.org/files/issues/nice_menus-js_dependency-2867879-2.patch"
     },
     "drupal/menu_block": {
-      "3040666: Fixed parent relative to active trail": "https://www.drupal.org/files/issues/2019-03-15/menu_block-parent_of_active_trail-3040666-2.patch",
-      "2809699: Menu parent as block title": "https://www.drupal.org/files/issues/2020-04-01/menu_block_label_configuration-2809699-121.patch",
-      "2950943: Add links to menu parent block title": "https://www.drupal.org/files/issues/2020-03-09/2950943-20.menu_block-title_as_link.patch"
+      "3040666: Fixed parent relative to active trail": "https://www.drupal.org/files/issues/2019-03-15/menu_block-parent_of_active_trail-3040666-2.patch"
     },
     "drupal/rules": {
       "2695149: ContextDefinition Error": "https://www.drupal.org/files/issues/2018-04-09/2695149-11.patch",
       "2885740: Rules does not working unless flush cache": "https://www.drupal.org/files/issues/fixed-rules-stop-working-after-cron.patch"
     },
-    "drupal/workbench_access": {
-      "3125798: PHP array warning in AccessControlHierarchyBase::disallowedOptions()": "https://www.drupal.org/files/issues/2020-04-13/3125798_workbench_access-array.patch"
-    },
     "drupal/video_embed_field": {
       "2913925: Retrieve title & description for videos": "https://www.drupal.org/files/issues/2019-07-17/retrieve-title-2913925-6.patch"
     },
     "drupal/paragraphs": {
-      "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch",
-      "3114512: Updating Paragraph gives error on update #8017": "https://www.drupal.org/files/issues/2020-03-29/3114512-14.patch"
+      "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch"
 
     },
     "drupal/simplesamlphp_auth": {
@@ -38,7 +32,6 @@
       "3045171: Form blocks rendered inside layout builder break save": "https://www.drupal.org/files/issues/2019-08-12/3045171-79.patch",
       "2985882: Issues between layout builder and entityField": "https://www.drupal.org/files/issues/2018-07-16/2985882-entityfield-2.patch",
       "3040361: Moderation state views filter only works on base table entity": "https://www.drupal.org/files/issues/2019-06-12/3040361-4.patch",
-      "2472335: Support an independent max-age for 4xx responses": "https://www.drupal.org/files/issues/2019-09-13/support_an_independent_4xx_max-age--2472335--106-8.7.x.patch",
       "3008924: Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode": "https://www.drupal.org/files/issues/2019-06-20/3008924-5.patch",
       "3056135: Viewing Layout Builder enable node fails after Workflow enabled on bundle if another node was created before enabling": "https://www.drupal.org/files/issues/2019-08-06/3056135-8.patch",
       "2996114: NULL given to  JSON API routing": "https://www.drupal.org/files/issues/2020-02-11/2996114-124.patch"

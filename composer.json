@@ -172,7 +172,8 @@
     "drupal/simple_sitemap": "^3.6",
     "drupal/panelizer": "4.3.0",
     "drupal/geocoder": "^3.7",
-    "drupal/field_delimiter": "^1.1"
+    "drupal/field_delimiter": "^1.1",
+    "umn/ckeditor_modal": "dev-master"
   },
   "repositories": {
     "drupal-packagist": {
@@ -437,6 +438,10 @@
     "deploy_scripts": {
       "type": "git",
       "url": "git@github.umn.edu:drupalplatform/drupal-deploy-scripts.git"
+    },
+    "ckeditor_modal": {
+      "type": "git",
+      "url": "git@github.umn.edu:drupalmodules/ckeditor_modal.git"
     }
   },
   "scripts": {

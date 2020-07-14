@@ -28,7 +28,7 @@
     "drupal/robotstxt": "^1.0",
     "drupal/simple_gmap": "^1.2",
     "umn/umn_features": "8.1.2",
-    "umn/lightning_umn": "^2020.07",
+    "umn/lightning_umn": "dev-develop",
     "umn/cog_umn": "dev-dist#final-fix404",
     "umn/umn_search": "dev-master",
     "umn/crmform": "dev-d8",

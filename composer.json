@@ -173,7 +173,8 @@
     "drupal/panelizer": "4.3.0",
     "drupal/geocoder": "^3.7",
     "drupal/field_delimiter": "^1.1",
-    "umn/ckeditor_modal": "dev-master"
+    "umn/ckeditor_modal": "dev-master",
+    "drupal/views_block_placement_exposed_form_defaults": "^1.0@RC"
   },
   "repositories": {
     "drupal-packagist": {

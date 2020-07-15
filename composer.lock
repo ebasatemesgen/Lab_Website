@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96b664432b26623711da444349cfc69a",
+    "content-hash": "e9619d91306451522e2901286fbf8edf",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -24181,11 +24181,11 @@
         },
         {
             "name": "umn/folwell_components",
-            "version": "2020.05.18",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "68b30d7b631fc1349d201eef6f6e2395decf2f12"
+                "reference": "1100cca26e4d57970bd0ea2a2c1f5da37896b2d2"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -24195,7 +24195,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2020-05-05T16:09:10+00:00"
+            "time": "2020-07-15T16:33:42+00:00"
         },
         {
             "name": "umn/lightning_umn",
@@ -24689,6 +24689,7 @@
         "drupal/gdpr": 15,
         "drupal/fpa": 20,
         "drupal/roleassign": 15,
+        "umn/folwell_components": 20,
         "umn/umn_superfish": 20,
         "mehrpadin/superfish": 20,
         "drupal/h5p": 5,

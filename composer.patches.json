@@ -54,6 +54,9 @@
     "drupal/group": {
       "3053524: Error: Call to a member function label() on null in GroupContentEnablerBase->getContentLabel()": "https://www.drupal.org/files/issues/2019-06-06/label-on-null-3053524-6.patch",
       "2774827: Get a token of a node's parent group to create a pathauto pattern": "https://www.drupal.org/files/issues/2020-02-21/group-gnode_tokens-2774827-62.patch"
+    },
+    "drupal/unpublished_node_permissions": {
+      "3131665: Drupal 9 compatibility": "https://www.drupal.org/files/issues/2020-04-28/3131665-2.patch"
     }
   }
 }

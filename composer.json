@@ -142,7 +142,8 @@
     "drupal/field_delimiter": "^1.1",
     "umn/ckeditor_modal": "dev-master",
     "drupal/views_block_placement_exposed_form_defaults": "^1.0@RC",
-    "umndrupal/acquia_api": "dev-9-dev"
+    "umndrupal/acquia_api": "dev-9-dev",
+    "drupal/mysql56": "^1.0"
   },
   "repositories": {
     "drupal-packagist": {

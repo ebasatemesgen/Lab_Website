@@ -125,7 +125,6 @@
     "drupal/views_autocomplete_filters": "^1.2",
     "drupal/views_contextual_filters_or": "^1.1",
     "drush/config-extra": "^1.0",
-    "umndrupal/drupal-deploy-scripts": "dev-master",
     "drupal/addtoany": "^1.12",
     "drupal/media_entity_download": "^2.0@beta",
     "umn/d8lite_migration": "dev-master",

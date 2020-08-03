@@ -101,7 +101,7 @@
     "umn/umn_superfish": "dev-master",
     "drupal/superfish": "^1.3",
     "mehrpadin/superfish": "2.x-dev",
-    "umn/folwell": "dev-develop",
+    "umn/folwell": "dev-9-dev",
     "google/charts": "45",
     "drush/drush": "^10.3",
     "drupal/layout_builder_modal": "^1.1",

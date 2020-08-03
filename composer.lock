@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd39e1d424f6c411595161e156c769e6",
+    "content-hash": "81be6d5ce23bd6be00cabd4e6445d83b",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -22205,11 +22205,11 @@
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-develop",
+            "version": "dev-9-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "557dbe94b96fccc5c5c310ed7cde7e6ddc5deae1"
+                "reference": "cbb83fe7f26b38004d75e410aca1096a4ee0c1df"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -22219,7 +22219,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2020-07-23T07:05:55+00:00"
+            "time": "2020-08-03T16:28:14+00:00"
         },
         {
             "name": "umn/lightning_umn",

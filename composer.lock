@@ -209,7 +209,7 @@
             "version": "v5.7.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/enyo/dropzone.git",
+                "url": "git@github.com:enyo/dropzone.git",
                 "reference": "78424e9c97b569e698cc9175e9bc424168219162"
             },
             "dist": {
@@ -22227,7 +22227,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "18228b50bcc6c156b46436d2d59bb46b82a6ca78"
+                "reference": "3e57ff2829f17e89a61e582bab1de70484d87654"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -22236,7 +22236,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2020-08-04T17:49:36+00:00"
+            "time": "2020-08-05T17:58:18+00:00"
         },
         {
             "name": "umn/umn_features",

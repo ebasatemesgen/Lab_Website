@@ -26,7 +26,7 @@
     "umn/umn_features": "8.1.2",
     "umn/lightning_umn": "dev-9-dev",
     "umn/cog_umn": "dev-dist#final-fix404",
-    "umn/umn_search": "dev-master",
+    "umn/umn_search": "dev-9-dev",
     "umn/crmform": "dev-d8",
     "umn/dors_migrate": "2.2.6",
     "umn/emergency_notification": "dev-develop",

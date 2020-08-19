@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a3f4f4f1139ff429a72369764cec594",
+    "content-hash": "e4fe47d5931cf65d4f65c89464187464",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -22431,11 +22431,11 @@
         },
         {
             "name": "umn/umn_superfish",
-            "version": "dev-master",
+            "version": "dev-9-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_superfish.git",
-                "reference": "d40e3ff2f4cbc2833fc583d184d416b8bac02b48"
+                "reference": "4984095db3ede89364d531adf634d77e13e20260"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -22445,7 +22445,7 @@
                 }
             ],
             "description": "UMN Accessibility tweaks for Superfish",
-            "time": "2019-09-09T15:54:10+00:00"
+            "time": "2020-08-19T16:36:27+00:00"
         },
         {
             "name": "umndrupal/acquia_api",

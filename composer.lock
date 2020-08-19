@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4fe47d5931cf65d4f65c89464187464",
+    "content-hash": "238aa53a4677b1087e50e875fc9f7404",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -7362,6 +7362,112 @@
             }
         },
         {
+            "name": "drupal/jquery_ui_tabs",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui_tabs.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_tabs-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "511ffb8258f60e7e180bed1f7447203423e58da3"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/jquery_ui": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1590102797",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI Tabs library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui_tabs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui_tabs"
+            }
+        },
+        {
+            "name": "drupal/jquery_ui_tooltip",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui_tooltip.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_tooltip-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "5a1d79d27c61a4cc80c1b256154aecfd0079d88c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/jquery_ui": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1584107978",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI Tooltip library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui_tooltip",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui_tooltip"
+            }
+        },
+        {
             "name": "drupal/jquery_ui_touch_punch",
             "version": "1.0.0",
             "source": {
@@ -13026,58 +13132,76 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.13.0",
+            "version": "6.0.0-alpha14",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "8.x-5.13"
+                "reference": "6.0.0-alpha14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.13.zip",
-                "reference": "8.x-5.13",
-                "shasum": "2dfca686adb7eea2dc1c4d96b42ea7a1e0330500"
+                "url": "https://ftp.drupal.org/files/projects/webform-6.0.0-alpha14.zip",
+                "reference": "6.0.0-alpha14",
+                "shasum": "59af458e82708992476b0f528bcd9585dbcc6461"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^8.8 || ^9",
+                "drupal/jquery_ui": "~1.0",
+                "drupal/jquery_ui_datepicker": "~1.0",
+                "drupal/jquery_ui_tabs": "~1.0",
+                "drupal/jquery_ui_tooltip": "~1.0"
             },
             "require-dev": {
-                "drupal/address": "~1.4",
+                "drupal/address": "~1.0",
                 "drupal/bootstrap": "~3.0",
                 "drupal/captcha": "~1.0",
-                "drupal/chosen": "~2.6",
-                "drupal/devel": "*",
-                "drupal/entity_print": "^2.1",
+                "drupal/clientside_validation": "~3.0",
+                "drupal/clientside_validation_jquery": "*",
+                "drupal/devel": "~3.0",
+                "drupal/entity": "~1.0",
+                "drupal/entity_print": "~2.0",
                 "drupal/gnode": "*",
-                "drupal/group": "~1.0",
-                "drupal/mailsystem": "~4.1",
-                "drupal/select2": "~1.1",
+                "drupal/group": "1.0",
+                "drupal/jquery_ui_checkboxradio": "*",
+                "drupal/lingotek": "~3.0",
+                "drupal/mailsystem": "~4.0",
+                "drupal/paragraphs": "~1.0",
+                "drupal/select2": "~1.0",
                 "drupal/smtp": "~1.0",
-                "drupal/telephone_validation": "^2.2",
-                "drupal/token": "~1.3",
+                "drupal/styleguide": "~1.0",
+                "drupal/telephone_validation": "~2.0",
+                "drupal/token": "~1.0",
+                "drupal/variationcache": "~1.0",
                 "drupal/webform_access": "*",
                 "drupal/webform_attachment": "*",
+                "drupal/webform_clientside_validation": "*",
                 "drupal/webform_devel": "*",
                 "drupal/webform_entity_print": "*",
                 "drupal/webform_group": "*",
                 "drupal/webform_node": "*",
                 "drupal/webform_options_limit": "*",
                 "drupal/webform_scheduled_email": "*",
+                "drupal/webform_share": "*",
                 "drupal/webform_ui": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.13",
-                    "datestamp": "1589661354",
+                    "version": "6.0.0-alpha14",
+                    "datestamp": "1597828848",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
                     "services": {
                         "drush.services.yml": "^9"
+                    }
+                },
+                "Issue #3110478: [Webform 8.x-6.x] Track the D9 readiness state of the Webform module's (optional) dependencies": {
+                    "require-dev": {
+                        "drupal/chosen": "~2.0"
                     }
                 }
             },
@@ -22756,7 +22880,6 @@
         "drupal/slick_extras": 10,
         "kporras07/composer-symlinks": 20,
         "drupal/block_class": 15,
-        "drupal/webform": 10,
         "drupal/diff": 5,
         "drupal/config_inspector": 10,
         "drupal/select_or_other": 20,

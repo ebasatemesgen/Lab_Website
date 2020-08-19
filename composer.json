@@ -42,7 +42,7 @@
     "kporras07/composer-symlinks": "^0.1.0@dev",
     "drupal/field_group": "^3.0",
     "drupal/block_class": "^1.0@alpha",
-    "drupal/webform": "^5.0@beta",
+    "drupal/webform": "^6.0",
     "drupal/workbench_access": "1.0.0-beta4",
     "drupal/honeypot": "^1.24",
     "drupal/diff": "^1.0@RC",

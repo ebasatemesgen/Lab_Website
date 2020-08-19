@@ -99,7 +99,6 @@
     "umn/folwell_components": "dev-9-dev",
     "umn/umn_superfish": "dev-master",
     "drupal/superfish": "^1.3",
-    "mehrpadin/superfish": "2.x-dev",
     "umn/folwell": "dev-9-dev",
     "google/charts": "45",
     "drush/drush": "^10.3",
@@ -144,7 +143,8 @@
     "umndrupal/acquia_api": "dev-9-dev",
     "drupal/mysql56": "^1.0",
     "drupal/jquery_ui_accordion": "^1.1",
-    "bower-asset/jquery.mmenu": "^8.5"
+    "bower-asset/jquery.mmenu": "^8.5",
+    "joeldbirch/superfish": "^1.7"
   },
   "repositories": {
     "drupal-packagist": {
@@ -272,6 +272,18 @@
         "version": "4.10.1",
         "dist": {
           "url": "https://download.ckeditor.com/link/releases/link_4.10.1.zip",
+          "type": "zip"
+        }
+      }
+    },
+    "superfish": {
+      "type": "package",
+      "package": {
+        "name": "joeldbirch/superfish",
+        "version": "1.7.10",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://api.github.com/repos/joeldbirch/superfish/zipball",
           "type": "zip"
         }
       }

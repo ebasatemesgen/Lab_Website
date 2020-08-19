@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c5994d505884c5b77d8425adb03d0096",
+    "content-hash": "1a3f4f4f1139ff429a72369764cec594",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -14120,6 +14120,15 @@
             "time": "2017-05-08T12:10:56+00:00"
         },
         {
+            "name": "joeldbirch/superfish",
+            "version": "1.7.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joeldbirch/superfish/zipball"
+            },
+            "type": "drupal-library"
+        },
+        {
             "name": "jsanahuja/jqueryinstagramfeed",
             "version": "dev-master",
             "dist": {
@@ -15102,16 +15111,16 @@
         },
         {
             "name": "mehrpadin/superfish",
-            "version": "2.x-dev",
+            "version": "2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mehrpadin/Superfish-for-Drupal.git",
-                "reference": "fdbd0256b9db22ec8eb9205adaf2646de2ae2e44"
+                "reference": "80a0a484b727e9fbe6b0ee609f80e10e5e158683"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mehrpadin/Superfish-for-Drupal/zipball/fdbd0256b9db22ec8eb9205adaf2646de2ae2e44",
-                "reference": "fdbd0256b9db22ec8eb9205adaf2646de2ae2e44",
+                "url": "https://api.github.com/repos/mehrpadin/Superfish-for-Drupal/zipball/80a0a484b727e9fbe6b0ee609f80e10e5e158683",
+                "reference": "80a0a484b727e9fbe6b0ee609f80e10e5e158683",
                 "shasum": ""
             },
             "type": "drupal-library",
@@ -15125,7 +15134,7 @@
                 "jquery",
                 "plugin"
             ],
-            "time": "2020-06-04T19:34:16+00:00"
+            "time": "2017-05-30T13:00:18+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -22760,7 +22769,6 @@
         "drupal/roleassign": 15,
         "umn/folwell_components": 20,
         "umn/umn_superfish": 20,
-        "mehrpadin/superfish": 20,
         "umn/folwell": 20,
         "umn/bootstrap_umn": 20,
         "drupal/http_response_headers": 15,

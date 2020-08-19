@@ -63,7 +63,6 @@
     "onlyextart/colorbox": "dev-master",
     "bower-asset/hammerjs": "^2.0",
     "drupal/responsive_menu": "^4.3",
-    "bower-asset/jquery.mmenu": "6.1.8",
     "drupal/migrate_source_csv": "^3.4",
     "drupal/entity_print": "2.x",
     "tecnickcom/tcpdf": "~6",
@@ -144,7 +143,8 @@
     "drupal/views_block_placement_exposed_form_defaults": "^1.0@RC",
     "umndrupal/acquia_api": "dev-9-dev",
     "drupal/mysql56": "^1.0",
-    "drupal/jquery_ui_accordion": "^1.1"
+    "drupal/jquery_ui_accordion": "^1.1",
+    "bower-asset/jquery.mmenu": "^8.5"
   },
   "repositories": {
     "drupal-packagist": {

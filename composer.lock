@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b5bc4e149b8e986118b38f75a358665",
+    "content-hash": "c5994d505884c5b77d8425adb03d0096",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -272,24 +272,18 @@
         },
         {
             "name": "bower-asset/jquery.mmenu",
-            "version": "v6.1.8",
+            "version": "v8.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FrDH/mmenu-js.git",
-                "reference": "8fa929ef37de5007c5d32e9588280d07d5feb359"
+                "reference": "ea3b330bfa50b22064b39442db47d2bcde29171e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FrDH/mmenu-js/zipball/8fa929ef37de5007c5d32e9588280d07d5feb359",
-                "reference": "8fa929ef37de5007c5d32e9588280d07d5feb359"
+                "url": "https://api.github.com/repos/FrDH/mmenu-js/zipball/ea3b330bfa50b22064b39442db47d2bcde29171e",
+                "reference": "ea3b330bfa50b22064b39442db47d2bcde29171e"
             },
-            "require": {
-                "bower-asset/jquery": ">=1.7.0"
-            },
-            "type": "bower-asset",
-            "license": [
-                "CC-BY-NC-4.0"
-            ]
+            "type": "bower-asset"
         },
         {
             "name": "bower-asset/slick-carousel",

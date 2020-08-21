@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6b5bca63336afc667eb405ceef04c29",
+    "content-hash": "35b1f187361066f0d56fea8f06e512b9",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -22313,11 +22313,11 @@
         },
         {
             "name": "umn/ckeditor_modal",
-            "version": "dev-master",
+            "version": "dev-9-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/ckeditor_modal.git",
-                "reference": "0110d60777d9eef43cd7d45fd62bab2dcd013d9d"
+                "reference": "c2f5cbadb6d1e6598163c2eb87005c50b8e82f8a"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -22327,7 +22327,7 @@
                 }
             ],
             "description": "Drupal 8 module that makes fields in CKEditor modal dialog clickable",
-            "time": "2020-07-02T15:52:28+00:00"
+            "time": "2020-08-21T17:57:17+00:00"
         },
         {
             "name": "umn/cloudflare_verify",
@@ -22440,11 +22440,11 @@
         },
         {
             "name": "umn/emergency_notification",
-            "version": "dev-develop",
+            "version": "dev-9-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/emergency_notification.git",
-                "reference": "f6976aaba5311612b5614cadc59dd7cc790fb77c"
+                "reference": "12d16e9add5c42c25bdbf93cf951ac1058169516"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -22454,7 +22454,7 @@
                 }
             ],
             "description": "Drupal 8 module that will post emergency messages on a page and clear the drupal and varnish cache",
-            "time": "2019-10-24T15:07:08+00:00"
+            "time": "2020-08-21T18:00:31+00:00"
         },
         {
             "name": "umn/folwell",

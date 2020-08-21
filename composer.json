@@ -144,7 +144,7 @@
     "drupal/mysql56": "^1.0",
     "drupal/jquery_ui_accordion": "^1.1",
     "bower-asset/jquery.mmenu": "^8.5",
-    "joeldbirch/superfish": "^1.7"
+    "mehrpadin/superfish": "2.x-dev"
   },
   "repositories": {
     "drupal-packagist": {

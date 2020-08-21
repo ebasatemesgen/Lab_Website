@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "238aa53a4677b1087e50e875fc9f7404",
+    "content-hash": "c6b5bca63336afc667eb405ceef04c29",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -14245,15 +14245,6 @@
             "time": "2017-05-08T12:10:56+00:00"
         },
         {
-            "name": "joeldbirch/superfish",
-            "version": "1.7.10",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/joeldbirch/superfish/zipball"
-            },
-            "type": "drupal-library"
-        },
-        {
             "name": "jsanahuja/jqueryinstagramfeed",
             "version": "dev-master",
             "dist": {
@@ -15242,16 +15233,16 @@
         },
         {
             "name": "mehrpadin/superfish",
-            "version": "2.1",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mehrpadin/Superfish-for-Drupal.git",
-                "reference": "80a0a484b727e9fbe6b0ee609f80e10e5e158683"
+                "reference": "fdbd0256b9db22ec8eb9205adaf2646de2ae2e44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mehrpadin/Superfish-for-Drupal/zipball/80a0a484b727e9fbe6b0ee609f80e10e5e158683",
-                "reference": "80a0a484b727e9fbe6b0ee609f80e10e5e158683",
+                "url": "https://api.github.com/repos/mehrpadin/Superfish-for-Drupal/zipball/fdbd0256b9db22ec8eb9205adaf2646de2ae2e44",
+                "reference": "fdbd0256b9db22ec8eb9205adaf2646de2ae2e44",
                 "shasum": ""
             },
             "type": "drupal-library",
@@ -15265,7 +15256,7 @@
                 "jquery",
                 "plugin"
             ],
-            "time": "2017-05-30T13:00:18+00:00"
+            "time": "2020-06-04T19:34:16+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -22910,7 +22901,8 @@
         "jsanahuja/jqueryinstagramfeed": 20,
         "umn/ckeditor_modal": 20,
         "drupal/views_block_placement_exposed_form_defaults": 5,
-        "umndrupal/acquia_api": 20
+        "umndrupal/acquia_api": 20,
+        "mehrpadin/superfish": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

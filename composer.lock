@@ -239,7 +239,7 @@
             "version": "v7.2.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:highcharts/highcharts-dist.git",
+                "url": "https://github.com/highcharts/highcharts-dist.git",
                 "reference": "6b1a03af7f26ce8ed9b62bab6a041a7f477b3f7c"
             },
             "dist": {
@@ -22462,7 +22462,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "c31503286449e4f688168955395f143cea9deb27"
+                "reference": "72edda738404e0cf6f7e9f217cde8d837bd95312"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -22475,7 +22475,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2020-08-20T19:59:58+00:00"
+            "time": "2020-08-28T13:54:41+00:00"
         },
         {
             "name": "umn/folwell_components",

@@ -191,7 +191,7 @@
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:fengyuanchen/cropper.git",
+                "url": "https://github.com/fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -239,7 +239,7 @@
             "version": "v7.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/highcharts/highcharts-dist.git",
+                "url": "git@github.com:highcharts/highcharts-dist.git",
                 "reference": "6b1a03af7f26ce8ed9b62bab6a041a7f477b3f7c"
             },
             "dist": {
@@ -22501,7 +22501,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "4f950cf170ebf019f10e60f846e288eb73f1ccef"
+                "reference": "ca68c352fb752eded4c78a8e8539ef85621da94f"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -22510,7 +22510,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2020-08-21T14:40:52+00:00"
+            "time": "2020-09-10T17:59:38+00:00"
         },
         {
             "name": "umn/umn_features",

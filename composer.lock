@@ -2568,7 +2568,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
-            "abandoned": "drupal / core-composer-scaffold",
+            "abandoned": "drupal/core-composer-scaffold",
             "time": "2019-03-30T10:41:38+00:00"
         },
         {
@@ -22502,7 +22502,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "ca68c352fb752eded4c78a8e8539ef85621da94f"
+                "reference": "1bf27f11569e975c1601f3122acc450a6b983555"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -22511,7 +22511,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2020-09-10T17:59:38+00:00"
+            "time": "2020-09-10T19:09:18+00:00"
         },
         {
             "name": "umn/umn_features",

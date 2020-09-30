@@ -145,7 +145,8 @@
     "bower-asset/jquery.mmenu": "^8.5",
     "mehrpadin/superfish": "2.x-dev",
     "drupal/shs": "^1.0",
-    "drupal/fontyourface": "^3.5"
+    "drupal/fontyourface": "^3.5",
+    "drupal/entity_embed": "^1.0"
   },
   "repositories": {
     "drupal-packagist": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7a1afb90a2d9de712e3290bfbf383e7",
+    "content-hash": "9d90a98c08ae4df1e53d7ebbe92d7c23",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -254,7 +254,7 @@
             "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
             },
             "dist": {
@@ -22556,24 +22556,6 @@
             "time": "2020-06-15T20:00:16+00:00"
         },
         {
-            "name": "umn/emergency_notification",
-            "version": "dev-9-dev",
-            "source": {
-                "type": "git",
-                "url": "git@github.umn.edu:drupalmodules/emergency_notification.git",
-                "reference": "12d16e9add5c42c25bdbf93cf951ac1058169516"
-            },
-            "type": "drupal-module-custom",
-            "authors": [
-                {
-                    "name": "John Starr",
-                    "email": "starr027@umn.edu"
-                }
-            ],
-            "description": "Drupal 8 module that will post emergency messages on a page and clear the drupal and varnish cache",
-            "time": "2020-08-21T18:00:31+00:00"
-        },
-        {
             "name": "umn/folwell",
             "version": "dev-9-dev",
             "source": {
@@ -22947,7 +22929,6 @@
         "umn/cog_umn": 20,
         "umn/umn_search": 20,
         "umn/crmform": 20,
-        "umn/emergency_notification": 20,
         "drupal/slick_extras": 10,
         "kporras07/composer-symlinks": 20,
         "drupal/block_class": 15,

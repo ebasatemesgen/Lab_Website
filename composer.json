@@ -29,7 +29,6 @@
     "umn/umn_search": "dev-9-dev",
     "umn/crmform": "dev-d8",
     "umn/dors_migrate": "2.2.6",
-    "umn/emergency_notification": "dev-9-dev",
     "drupal/redirect": "^1.6",
     "drupal/imagick": "^1.0",
     "drupal/slick": "^2.2",

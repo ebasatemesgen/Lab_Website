@@ -148,7 +148,8 @@
     "drupal/fontyourface": "^3.5",
     "drupal/entity_embed": "^1.0",
     "drupal/video_embed_field": "^2.0",
-    "drupal/views_infinite_scroll": "^1.6"
+    "drupal/views_infinite_scroll": "^1.6",
+    "umn/radix_layouts": "dev-master"
   },
   "repositories": {
     "drupal-packagist": {
@@ -178,6 +179,10 @@
     "umn-search": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/umn-search.git"
+    },
+    "umn-radix-layouts": {
+      "type": "git",
+      "url": "git@github.umn.edu:drupalmodules/radix_layouts.git"
     },
     "crmform": {
       "type": "git",

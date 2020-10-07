@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c7b0f1d4bcb9befb868f010251dbece",
+    "content-hash": "716659b6111f3f1c8001e4c351e24aa8",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -206,7 +206,7 @@
             "version": "v5.7.2",
             "source": {
                 "type": "git",
-                "url": "git@github.com:enyo/dropzone.git",
+                "url": "https://github.com/enyo/dropzone.git",
                 "reference": "78424e9c97b569e698cc9175e9bc424168219162"
             },
             "dist": {
@@ -22619,6 +22619,24 @@
             "time": "2020-09-10T19:09:18+00:00"
         },
         {
+            "name": "umn/radix_layouts",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/radix_layouts.git",
+                "reference": "05188299f571afeb6e3823e37ac64e2ecc932e10"
+            },
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "John Starr",
+                    "email": "starr027@umn.edu"
+                }
+            ],
+            "description": "Copy of Radix layouts until d9 radix layouts available",
+            "time": "2020-10-07T13:51:21+00:00"
+        },
+        {
             "name": "umn/umn_features",
             "version": "8.1.2",
             "source": {
@@ -22963,7 +22981,8 @@
         "umn/ckeditor_modal": 20,
         "drupal/views_block_placement_exposed_form_defaults": 5,
         "umndrupal/acquia_api": 20,
-        "mehrpadin/superfish": 20
+        "mehrpadin/superfish": 20,
+        "umn/radix_layouts": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -206,7 +206,7 @@
             "version": "v5.7.2",
             "source": {
                 "type": "git",
-                "url": "git@github.com:enyo/dropzone.git",
+                "url": "https://github.com/enyo/dropzone.git",
                 "reference": "78424e9c97b569e698cc9175e9bc424168219162"
             },
             "dist": {
@@ -22607,7 +22607,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "b217f4bd6296781627486f34d1c30aa0d10f924a"
+                "reference": "ba72da69178f5aa41c6387fe433cad7681399052"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -22616,7 +22616,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2020-10-08T15:14:02+00:00"
+            "time": "2020-10-12T16:20:16+00:00"
         },
         {
             "name": "umn/radix_layouts",

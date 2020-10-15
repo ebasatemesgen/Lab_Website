@@ -144,12 +144,16 @@
     "drupal/jquery_ui_accordion": "^1.1",
     "bower-asset/jquery.mmenu": "^8.5",
     "mehrpadin/superfish": "2.x-dev",
-    "drupal/shs": "^1.0",
+    "drupal/shs": "^1.0@alpha",
     "drupal/fontyourface": "^3.5",
     "drupal/entity_embed": "^1.0",
     "drupal/video_embed_field": "^2.0",
     "drupal/views_infinite_scroll": "^1.6",
-    "umn/radix_layouts": "dev-master"
+    "umn/radix_layouts": "dev-master",
+    "drupal/block_visibility_groups": "^1.4",
+    "drupal/views_conditional": "^1.2",
+    "drupal/field_defaults": "1.x-dev",
+    "drupal/views_field_formatter": "^1.11"
   },
   "repositories": {
     "drupal-packagist": {

@@ -156,7 +156,8 @@
     "drupal/radix_layouts": "4.x-dev@dev",
     "drupal/mathjax": "3.0.x-dev@dev",
     "drupal/jquery_ui_tabs": "^1.1",
-    "drupal/jquery_ui_tooltip": "^1.1"
+    "drupal/jquery_ui_tooltip": "^1.1",
+    "umn/umn_escape_button": "dev-master"
   },
   "repositories": {
     "drupal-packagist": {
@@ -433,6 +434,10 @@
     "ckeditor_modal": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/ckeditor_modal.git"
+    },
+    "umn_escape_button": {
+      "type": "git",
+      "url": "git@github.umn.edu:drupalmodules/umn_escape_button.git"
     }
   },
   "scripts": {

@@ -154,7 +154,8 @@
     "drupal/field_defaults": "1.x-dev",
     "drupal/views_field_formatter": "^1.11",
     "drupal/radix_layouts": "4.x-dev@dev",
-    "drupal/mathjax": "3.0.x-dev@dev"
+    "drupal/mathjax": "3.0.x-dev@dev",
+    "drupal/jquery_ui_tabs": "^1.1"
   },
   "repositories": {
     "drupal-packagist": {

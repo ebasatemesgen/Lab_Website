@@ -10237,8 +10237,8 @@
                     "dev-8.x-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.5+1-dev",
-                    "datestamp": "1585870704",
+                    "version": "8.x-4.6+1-dev",
+                    "datestamp": "1593991972",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -10605,7 +10605,7 @@
             "extra": {
                 "drupal": {
                     "version": "3.1.1",
-                    "datestamp": "1600940413",
+                    "datestamp": "1600940477",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11460,7 +11460,7 @@
             "extra": {
                 "drupal": {
                     "version": "4.1.7",
-                    "datestamp": "1602656969",
+                    "datestamp": "1604326374",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11941,6 +11941,10 @@
                     "homepage": "https://www.drupal.org/u/gbyte.co",
                     "email": "contact@gbyte.co",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "gbyte",
+                    "homepage": "https://www.drupal.org/user/2381352"
                 }
             ],
             "description": "Creates a standard conform hreflang XML sitemap of the site content and provides a framework for developing other sitemap types.",
@@ -22867,7 +22871,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "f94cf0fdc3f70df93ce8d798bcc4f0116f837c2d"
+                "reference": "669a8b59632381a326afc4037a225668dfd8501b"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -22876,7 +22880,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2020-10-15T18:30:34+00:00"
+            "time": "2020-11-16T16:42:36+00:00"
         },
         {
             "name": "umn/umn_features",

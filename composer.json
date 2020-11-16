@@ -149,11 +149,12 @@
     "drupal/entity_embed": "^1.0",
     "drupal/video_embed_field": "^2.0",
     "drupal/views_infinite_scroll": "^1.6",
-    "umn/radix_layouts": "dev-master",
     "drupal/block_visibility_groups": "^1.4",
     "drupal/views_conditional": "^1.2",
     "drupal/field_defaults": "1.x-dev",
-    "drupal/views_field_formatter": "^1.11"
+    "drupal/views_field_formatter": "^1.11",
+    "drupal/radix_layouts": "4.x-dev@dev",
+    "drupal/mathjax": "3.0.x-dev@dev"
   },
   "repositories": {
     "drupal-packagist": {
@@ -183,10 +184,6 @@
     "umn-search": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/umn-search.git"
-    },
-    "umn-radix-layouts": {
-      "type": "git",
-      "url": "git@github.umn.edu:drupalmodules/radix_layouts.git"
     },
     "crmform": {
       "type": "git",

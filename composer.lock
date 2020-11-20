@@ -188,7 +188,7 @@
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:fengyuanchen/cropper.git",
+                "url": "https://github.com/fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -22884,7 +22884,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "90cd45368a6e656bb3ad1fcd573673b5cbc641c8"
+                "reference": "e30c6a2809cbf5f68eebc5c1770e34f194af16a1"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -22901,7 +22901,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2020-10-15T13:31:34+00:00"
+            "time": "2020-11-20T20:26:50+00:00"
         },
         {
             "name": "umn/dors_migrate",

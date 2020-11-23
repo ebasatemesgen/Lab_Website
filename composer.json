@@ -161,7 +161,11 @@
     "drupal/auditfiles": "^2.11",
     "drupal/schema_metatag": "^2.1",
     "drupal/slick_entityreference": "^2.0",
-    "drupal/userprotect": "^1.1"
+    "drupal/userprotect": "^1.1",
+    "geocoder-php/mapquest-provider": "^4.1",
+    "geocoder-php/google-maps-provider": "^4.5",
+    "geocoder-php/tomtom-provider": "^4.1",
+    "geocoder-php/bing-maps-provider": "^4.1"
   },
   "repositories": {
     "drupal-packagist": {

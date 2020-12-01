@@ -23269,7 +23269,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "78705237ce47bbbb76c0ce5411a85bf4bd57f48a"
+                "reference": "09b2dda02c5c4aa34da58b9123323c3dcfdda2b5"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -23286,7 +23286,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2020-12-01T17:50:25+00:00"
+            "time": "2020-12-01T19:51:09+00:00"
         },
         {
             "name": "umn/dors_migrate",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb5d065e8bb144883bbdbd8ee807e3de",
+    "content-hash": "e71390ad774c81c1a27010b363c1e329",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -23166,6 +23166,24 @@
             "time": "2020-11-07T09:06:16+00:00"
         },
         {
+            "name": "umd/umd_footer_block",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:UMD-wwwteam/umd_footer_block.git",
+                "reference": "e95a81ffc54b4ebe3c1c66470cf3a97595fe9cd2"
+            },
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "Aaron Richner",
+                    "email": "arichner@d.umn.edu"
+                }
+            ],
+            "description": "Drupal 8 module that provides a custom footer block for UMD sites.",
+            "time": "2020-12-02T14:57:51+00:00"
+        },
+        {
             "name": "umn/bootstrap_umn",
             "version": "dev-master",
             "source": {
@@ -23737,7 +23755,8 @@
         "drupal/field_defaults": 20,
         "drupal/radix_layouts": 20,
         "drupal/mathjax": 20,
-        "umn/umn_escape_button": 20
+        "umn/umn_escape_button": 20,
+        "umd/umd_footer_block": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

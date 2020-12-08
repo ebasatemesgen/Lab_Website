@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01e30ed5d21eeb952bc5d11aabe4ad2e",
+    "content-hash": "91ed356ec8f15fe4d2a981b092d5491b",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -236,7 +236,7 @@
             "version": "v7.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/highcharts/highcharts-dist.git",
+                "url": "git@github.com:highcharts/highcharts-dist.git",
                 "reference": "4e5c8c82ad58815821de563f327de2fa3427d244"
             },
             "dist": {
@@ -254,7 +254,7 @@
             "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
             },
             "dist": {
@@ -23283,11 +23283,11 @@
         },
         {
             "name": "umn/d8lite_migration",
-            "version": "dev-right-sidebar",
+            "version": "dev-kia",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "75ac0fd9700c1739e94bd1193ea1e99303d7ce75"
+                "reference": "b145de99c5ec30410d6e07387bd03263a3139c2f"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -23304,7 +23304,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2020-12-04T14:25:18+00:00"
+            "time": "2020-12-08T19:45:56+00:00"
         },
         {
             "name": "umn/dors_migrate",

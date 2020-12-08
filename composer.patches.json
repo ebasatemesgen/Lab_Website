@@ -23,6 +23,9 @@
     "drupal/entity_print": {
       "2969184: PDF generation errors with DomPDF due to drupalSettings": "https://www.drupal.org/files/issues/2020-02-15/entity_print-dompdf-2969184-13.patch"
     },
+    "drupal/simplesamlphp_auth": {
+      "2983154: Redirect after login": "https://www.drupal.org/files/issues/2020-10-27/simplesamlphp_auth-return-to-destination-parameter-2983154-13.patch"
+    },
     "drupal/core": {
       "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",
       "1810148: Grouped exposed taxonomy term filters do not work": "https://www.drupal.org/files/issues/1810148-58.patch",

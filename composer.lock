@@ -254,7 +254,7 @@
             "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
             },
             "dist": {
@@ -12206,7 +12206,7 @@
                     }
                 },
                 "patches_applied": {
-                    "2894945: Role assignment from attributes does not work when provisioning accounts": "https://www.drupal.org/files/issues/2020-02-26/simplesamlphp_auth-role_assignment-2894945-5.patch"
+                    "2983154: Redirect after login": "https://www.drupal.org/files/issues/2020-10-27/simplesamlphp_auth-return-to-destination-parameter-2983154-13.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -23287,7 +23287,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "8138b00a517cef9059f594199272ea89c262cb25"
+                "reference": "f903b5fd7d86bfba943344d63ff226785ce77fee"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -23304,7 +23304,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2020-12-08T20:14:33+00:00"
+            "time": "2020-12-10T14:28:54+00:00"
         },
         {
             "name": "umn/dors_migrate",

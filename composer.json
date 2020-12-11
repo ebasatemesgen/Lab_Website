@@ -166,7 +166,8 @@
     "geocoder-php/google-maps-provider": "^4.5",
     "geocoder-php/tomtom-provider": "^4.1",
     "geocoder-php/bing-maps-provider": "^4.1",
-    "umd/umd_footer_block": "dev-master"
+    "umd/umd_footer_block": "dev-master",
+    "drupal/focal_point": "^1.5"
   },
   "repositories": {
     "drupal-packagist": {

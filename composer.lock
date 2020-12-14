@@ -23483,7 +23483,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn-search.git",
-                "reference": "4fe9d315343b569aa5a3c60808a45438a69b926f"
+                "reference": "0a6906dc188af834423b2d75bcbab0fb17c3730d"
             },
             "require": {
                 "components/jquery": "dev-master"
@@ -23496,7 +23496,7 @@
                 }
             ],
             "description": "UMN Search configuration module for Drupal 8",
-            "time": "2020-08-06T14:57:01+00:00"
+            "time": "2020-12-14T19:01:32+00:00"
         },
         {
             "name": "umn/umn_superfish",

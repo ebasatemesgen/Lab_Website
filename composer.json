@@ -165,7 +165,9 @@
     "geocoder-php/mapquest-provider": "^4.1",
     "geocoder-php/google-maps-provider": "^4.5",
     "geocoder-php/tomtom-provider": "^4.1",
-    "geocoder-php/bing-maps-provider": "^4.1"
+    "geocoder-php/bing-maps-provider": "^4.1",
+    "umd/umd_footer_block": "dev-master",
+    "drupal/focal_point": "^1.5"
   },
   "repositories": {
     "drupal-packagist": {
@@ -199,6 +201,10 @@
     "crmform": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/crmform"
+    },
+    "umd-footer": {
+      "type": "git",
+      "url": "git@github.umn.edu:UMD-wwwteam/umd_footer_block.git"
     },
     "dors_migrate": {
       "type": "git",

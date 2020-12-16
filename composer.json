@@ -167,7 +167,13 @@
     "geocoder-php/tomtom-provider": "^4.1",
     "geocoder-php/bing-maps-provider": "^4.1",
     "umd/umd_footer_block": "dev-master",
-    "drupal/focal_point": "^1.5"
+    "drupal/focal_point": "^1.5",
+    "drupal/config_filter": "^2.2",
+    "drupal/config_ignore": "^2.2",
+    "drupal/antibot": "^1.4",
+    "drupal/extlink": "^1.5",
+    "drupal/simplify": "^1.2",
+    "drupal/config_split": "^2.0.0"
   },
   "repositories": {
     "drupal-packagist": {

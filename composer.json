@@ -514,7 +514,7 @@
         "web-root": "./docroot"
       },
       "file-mapping": {
-        "robots.txt": false,
+        "[web-root]/robots.txt": false,
         "sites/default/default.services.yml": false,
         "sites/default/default.settings.php": false
       }

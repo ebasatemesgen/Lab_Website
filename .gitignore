@@ -3,3 +3,5 @@ bin/
 docroot/
 vendor/
 .ddev/
+/.editorconfig
+/.gitattributes

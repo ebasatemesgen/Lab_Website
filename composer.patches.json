@@ -23,6 +23,9 @@
     "drupal/entity_print": {
       "2969184: PDF generation errors with DomPDF due to drupalSettings": "https://www.drupal.org/files/issues/2020-02-15/entity_print-dompdf-2969184-13.patch"
     },
+    "drupal/auditfiles": {
+      "3183121: PHP compatibility": "https://www.drupal.org/files/issues/2021-01-17/3183121-3-php-7.3-compatibility-use-trait.patch"
+    },
     "drupal/core": {
       "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",
       "1810148: Grouped exposed taxonomy term filters do not work": "https://www.drupal.org/files/issues/1810148-58.patch",
@@ -51,6 +54,9 @@
     "drupal/group": {
       "3053524: Error: Call to a member function label() on null in GroupContentEnablerBase->getContentLabel()": "https://www.drupal.org/files/issues/2019-06-06/label-on-null-3053524-6.patch",
       "2774827: Get a token of a node's parent group to create a pathauto pattern": "https://www.drupal.org/files/issues/2020-02-21/group-gnode_tokens-2774827-62.patch"
+    },
+    "drupal/views_aggregator" : {
+      "3087112: Enumerаte * of Titles drops links": "https://www.drupal.org/files/issues/2020-03-12/enumerate_of_titles_drops_links-3087112-10.patch"
     }
   }
 }

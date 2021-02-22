@@ -205,12 +205,12 @@
             "version": "v5.7.2",
             "source": {
                 "type": "git",
-                "url": "git@github.com:enyo/dropzone.git",
+                "url": "https://github.com/dropzone/dropzone.git",
                 "reference": "78424e9c97b569e698cc9175e9bc424168219162"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/enyo/dropzone/zipball/78424e9c97b569e698cc9175e9bc424168219162",
+                "url": "https://api.github.com/repos/dropzone/dropzone/zipball/78424e9c97b569e698cc9175e9bc424168219162",
                 "reference": "78424e9c97b569e698cc9175e9bc424168219162"
             },
             "type": "bower-asset"
@@ -253,7 +253,7 @@
             "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
             },
             "dist": {
@@ -1881,20 +1881,6 @@
                 "parser",
                 "php"
             ],
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Flexer",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-05-25T17:44:05+00:00"
         },
         {
@@ -2872,6 +2858,10 @@
                 {
                     "name": "Martin Keereman",
                     "homepage": "https://www.drupal.org/u/etroid"
+                },
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
                 },
                 {
                     "name": "jkopel",
@@ -6275,7 +6265,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.5",
-                    "datestamp": "1601309657",
+                    "datestamp": "1601310226",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9166,7 +9156,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.15",
-                    "datestamp": "1607188979",
+                    "datestamp": "1611210662",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10764,6 +10754,10 @@
                     "homepage": "https://www.drupal.org/node/147903/committers"
                 },
                 {
+                    "name": "amykhailova",
+                    "homepage": "https://www.drupal.org/user/2892725"
+                },
+                {
                     "name": "diolan",
                     "homepage": "https://www.drupal.org/user/2336786"
                 },
@@ -10778,6 +10772,18 @@
                 {
                     "name": "kim.pepper",
                     "homepage": "https://www.drupal.org/user/370574"
+                },
+                {
+                    "name": "rfay",
+                    "homepage": "https://www.drupal.org/user/30906"
+                },
+                {
+                    "name": "soxofaan",
+                    "homepage": "https://www.drupal.org/user/41478"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
                 }
             ],
             "description": "Protect your website from spam and abuse while letting real people pass through with ease.",
@@ -11562,8 +11568,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4+9-dev",
-                    "datestamp": "1593783902",
+                    "version": "8.x-1.0-alpha4+10-dev",
+                    "datestamp": "1593784028",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -13619,6 +13625,10 @@
             ],
             "authors": [
                 {
+                    "name": "JayKandari",
+                    "homepage": "https://www.drupal.org/user/2876519"
+                },
+                {
                     "name": "baikho",
                     "homepage": "https://www.drupal.org/user/2727459"
                 },
@@ -13724,7 +13734,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.0-beta2",
-                    "datestamp": "1597241500",
+                    "datestamp": "1597243219",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -23332,7 +23342,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "d0c57048ea8d4d01443607fbda64c8c43be8fbb5"
+                "reference": "2a733ec7a7fcc72a06a905f50afeadf65bbebd11"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -23345,7 +23355,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2021-02-04T22:58:21+00:00"
+            "time": "2021-02-16T22:11:13+00:00"
         },
         {
             "name": "umn/folwell_components",
@@ -23931,20 +23941,6 @@
                 "doctrine",
                 "php"
             ],
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcommon",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-06-05T16:46:05+00:00"
         },
         {
@@ -24112,20 +24108,6 @@
                 "strings",
                 "uppercase",
                 "words"
-            ],
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finflector",
-                    "type": "tidelift"
-                }
             ],
             "time": "2020-05-29T07:19:59+00:00"
         },

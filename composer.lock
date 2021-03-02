@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b807032778984c4e452abe2494ca32c",
+    "content-hash": "f3c595ae6625b0e4eaee72cd00f4b0af",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2519,6 +2519,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.7",
                     "datestamp": "1582013628",
@@ -2787,6 +2790,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1579012388",
@@ -2872,6 +2878,10 @@
                 {
                     "name": "Martin Keereman",
                     "homepage": "https://www.drupal.org/u/etroid"
+                },
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
                 },
                 {
                     "name": "jkopel",
@@ -3394,7 +3404,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.11",
-                    "datestamp": "1586540246",
+                    "datestamp": "1586536891",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3494,6 +3504,9 @@
             },
             "type": "drupal-theme",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.15",
                     "datestamp": "1584454088",
@@ -3568,7 +3581,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.6",
-                    "datestamp": "1587025715",
+                    "datestamp": "1587016344",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4014,6 +4027,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.11",
                     "datestamp": "1585606458",
@@ -4370,6 +4386,7 @@
                     "3008924: Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode": "https://www.drupal.org/files/issues/2019-06-20/3008924-5.patch",
                     "2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2020-07-22/2985168-44-d9.patch",
                     "3114467: Negate form value for condition plugins should be cast to boolean in validation": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch",
+                    "2958588: Off-canvas style resets are overriding styles (especially SVGs) resulting in display issues": "https://www.drupal.org/files/issues/2021-02-02/2958588-54.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "[subprofile support] 1356276 - Allow profiles to define a base/parent profile and load them in the correct order / 2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2020-11-16/3143958-4-subprofile-support-9.1.x.patch",
                     "2031261 - Fix SQLite variable limit": "https://www.drupal.org/files/issues/2020-04-01/2031261-118.patch",
@@ -4543,6 +4560,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-2.1",
                     "datestamp": "1585251827",
@@ -4815,6 +4835,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1578322688",
@@ -5391,6 +5414,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1581284770",
@@ -5587,6 +5613,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.8",
                     "datestamp": "1583961846",
@@ -6275,7 +6304,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.5",
-                    "datestamp": "1601309657",
+                    "datestamp": "1601310226",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6317,6 +6346,58 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/fontyourface",
                 "issues": "https://drupal.org/project/issues/fontyourface"
+            }
+        },
+        {
+            "name": "drupal/fpa",
+            "version": "2.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fpa.git",
+                "reference": "8.x-2.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fpa-8.x-2.0-beta1.zip",
+                "reference": "8.x-2.0-beta1",
+                "shasum": "64a998536a762089a22d3edcde01a10ba73083f4"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-beta1",
+                    "datestamp": "1614307431",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "HakS",
+                    "homepage": "https://www.drupal.org/user/1815198"
+                },
+                {
+                    "name": "VladimirAus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                },
+                {
+                    "name": "corey.aufang",
+                    "homepage": "https://www.drupal.org/user/163737"
+                }
+            ],
+            "description": "Fast filtering on permissions administration form.",
+            "homepage": "https://www.drupal.org/project/fpa",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fpa"
             }
         },
         {
@@ -6866,6 +6947,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-2.3",
                     "datestamp": "1585408029",
@@ -9793,6 +9877,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-2.0-rc2",
                     "datestamp": "1585779664",
@@ -9814,10 +9901,6 @@
                 {
                     "name": "e0ipso",
                     "homepage": "https://www.drupal.org/user/550110"
-                },
-                {
-                    "name": "phenaproxima",
-                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "richgerdes",
@@ -11017,6 +11100,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.4",
                     "datestamp": "1585290535",
@@ -11074,6 +11160,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
                     "datestamp": "1582204691",
@@ -11236,6 +11325,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.0-beta2",
                     "datestamp": "1585777919",
@@ -11320,6 +11412,9 @@
             },
             "type": "metapackage",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.0-beta2",
                     "datestamp": "1585777919",
@@ -11673,6 +11768,10 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev",
+                    "dev-8.x-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.4",
                     "datestamp": "1585608547",
@@ -11680,9 +11779,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "branch-alias": {
-                    "dev-8.x-1.x": "1.x-dev"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -12011,6 +12107,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-3.2",
                     "datestamp": "1580423953",
@@ -12328,6 +12427,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.0-rc3",
                     "datestamp": "1581745147",
@@ -13656,6 +13758,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-3.2",
                     "datestamp": "1583652200",
@@ -23345,7 +23450,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2021-02-26T19:33:55+00:00"
+            "time": "2021-03-01T03:59:40+00:00"
         },
         {
             "name": "umn/folwell_components",
@@ -24516,7 +24621,8 @@
         "drupal/mathjax": 20,
         "umn/umn_escape_button": 20,
         "umd/umd_footer_block": 20,
-        "drupal/views_aggregator": 10
+        "drupal/views_aggregator": 10,
+        "drupal/fpa": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -180,7 +180,9 @@
     "drupal/social_media_links": "^2.7",
     "drupal/ckeditor_templates": "^1.2",
     "drupal/views_aggregator": "^1.0@beta",
-    "drupal/fpa": "^2.0@beta"
+    "drupal/fpa": "^2.0@beta",
+    "drupal/advagg": "^4.1",
+    "drupal/unpublished_node_permissions": "^1.1"
   },
   "repositories": {
     "drupal-packagist": {

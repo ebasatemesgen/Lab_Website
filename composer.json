@@ -133,7 +133,7 @@
     "drupal/redirect_after_login": "^2.5",
     "drupal/contact_emails": "^1.18",
     "drupal/simple_instagram_feed": "^3.2",
-    "jsanahuja/jqueryinstagramfeed": "dev-master",
+    "jsanahuja/jqueryinstagramfeed": "3.0.2",
     "drupal/geofield": "^1.11",
     "drupal/menu_breadcrumb": "^1.12",
     "drupal/simple_sitemap": "^3.6",
@@ -270,10 +270,10 @@
       "type": "package",
       "package": {
         "name": "jsanahuja/jqueryinstagramfeed",
-         "version": "dev-master",
+         "version": "3.0.2",
          "type": "drupal-library",
          "dist": {
-           "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/master.zip",
+           "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/3.0.2.zip",
            "type": "zip"
         }
       }

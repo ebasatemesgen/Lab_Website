@@ -15392,12 +15392,10 @@
         },
         {
             "name": "jsanahuja/jqueryinstagramfeed",
-            "version": "dev-master",
+            "version": "3.0.2",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/master.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/3.0.2.zip"
             },
             "type": "drupal-library"
         },
@@ -24050,7 +24048,6 @@
         "drupal/media_entity_download": 10,
         "umn/d8lite_migration": 20,
         "umn/cloudflare_verify": 20,
-        "jsanahuja/jqueryinstagramfeed": 20,
         "umn/ckeditor_modal": 20,
         "drupal/views_block_placement_exposed_form_defaults": 5,
         "umndrupal/acquia_api": 20,

@@ -54,7 +54,10 @@
       "2774827: Get a token of a node's parent group to create a pathauto pattern": "https://www.drupal.org/files/issues/2020-02-21/group-gnode_tokens-2774827-62.patch"
     },
     "drupal/views_aggregator" : {
-      "3087112: Enumerаte * of Titles drops links": "https://www.drupal.org/files/issues/2020-03-12/enumerate_of_titles_drops_links-3087112-10.patch"
+      "3087112: Enumerаte * of Titles drops links": "https://www.drupal.org/files/issues/2020-03-12/enumerate_of_titles_drops_links-3087112-10.patch",
+    },
+    "drupal/fpa": {
+      "3201033: entity.manager must be changed to entity_type.manager" : "https://www.drupal.org/files/issues/2021-03-01/entity_type_manager_fix.patch"
     }
   }
 }

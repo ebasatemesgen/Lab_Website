@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfa8490ce04276dc6151f8ec3ac7cb2f",
+    "content-hash": "fd1bfa1611d25f0f9c963b7d8a2ff43e",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -6450,6 +6450,48 @@
                 "source": "https://git.drupalcode.org/project/field_group",
                 "issues": "https://www.drupal.org/project/issues/field_group"
             }
+        },
+        {
+            "name": "drupal/fixed_text_link_formatter",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fixed_text_link_formatter.git",
+                "reference": "d5b84e1e816c5f676d50713934a00c709c21604e"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.5+2-dev",
+                    "datestamp": "1590581374",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "legolasbo",
+                    "homepage": "https://www.drupal.org/user/2480548"
+                }
+            ],
+            "description": "Formats a link field with a configurable fixed link text.",
+            "homepage": "https://www.drupal.org/project/fixed_text_link_formatter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fixed_text_link_formatter"
+            },
+            "time": "2020-05-27T12:09:11+00:00"
         },
         {
             "name": "drupal/focal_point",
@@ -25027,7 +25069,8 @@
         "umn/umn_escape_button": 20,
         "umd/umd_footer_block": 20,
         "drupal/views_aggregator": 10,
-        "drupal/fpa": 10
+        "drupal/fpa": 10,
+        "drupal/fixed_text_link_formatter": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

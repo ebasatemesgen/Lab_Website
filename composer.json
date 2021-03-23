@@ -183,7 +183,8 @@
     "drupal/fpa": "^2.0@beta",
     "drupal/advagg": "^4.1",
     "drupal/unpublished_node_permissions": "^1.1",
-    "drupal/fixed_text_link_formatter": "1.x-dev"
+    "drupal/fixed_text_link_formatter": "1.x-dev",
+    "drupal/comment_notify": "^1.2"
   },
   "repositories": {
     "drupal-packagist": {

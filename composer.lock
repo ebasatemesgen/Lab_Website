@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4e034fda9fc584618e0b09ea2fa5391",
+    "content-hash": "fd7638821c2a1a9fc710fdfedaf20bb4",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -24104,6 +24104,24 @@
             "time": "2020-06-15T20:00:16+00:00"
         },
         {
+            "name": "umn/fast404",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/fast404.git",
+                "reference": "29e5f7b86c964fbfac6fe6d75f7fabd88f48e296"
+            },
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "John Starr",
+                    "email": "starr027@umn.edu"
+                }
+            ],
+            "description": "Holder module for uninstalling fast404",
+            "time": "2021-03-24T18:14:22+00:00"
+        },
+        {
             "name": "umn/folwell",
             "version": "dev-9-dev",
             "source": {
@@ -25294,7 +25312,8 @@
         "umd/umd_footer_block": 20,
         "drupal/views_aggregator": 10,
         "drupal/fpa": 10,
-        "drupal/fixed_text_link_formatter": 20
+        "drupal/fixed_text_link_formatter": 20,
+        "umn/fast404": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

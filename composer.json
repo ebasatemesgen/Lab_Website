@@ -25,7 +25,7 @@
     "drupal/linkit": "^5.0",
     "drupal/robotstxt": "^1.0",
     "drupal/simple_gmap": "^3.0",
-    "umn/umn_features": "8.1.2",
+    "umn/umn_features": "9.0",
     "umn/lightning_umn": "dev-9-dev",
     "umn/cog_umn": "dev-dist#final-fix404",
     "umn/umn_search": "dev-9-dev",

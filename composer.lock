@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70dd445bfcd50f9e8c20a09df2c59d09",
+    "content-hash": "e4e034fda9fc584618e0b09ea2fa5391",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -242,7 +242,7 @@
             "version": "3.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "e786e3d9707ffd9b0dd330ca135b66344dcef85a"
             },
             "dist": {
@@ -2132,6 +2132,20 @@
                 "lexer",
                 "parser",
                 "php"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Flexer",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-05-25T17:44:05+00:00"
         },
@@ -14285,7 +14299,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.0-beta2",
-                    "datestamp": "1597243219",
+                    "datestamp": "1597241500",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -24165,11 +24179,11 @@
         },
         {
             "name": "umn/umn_features",
-            "version": "8.1.2",
+            "version": "9.0",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8-features.git",
-                "reference": "21163f467d41db88f7a0adc3d793aecbb9f82a62"
+                "reference": "6d3857309745bd62109c222c72965133d5b3dcea"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -24179,7 +24193,7 @@
                 }
             ],
             "description": "Features to set default values for UMN Sites",
-            "time": "2016-11-16T22:29:00+00:00"
+            "time": "2021-03-24T18:02:53+00:00"
         },
         {
             "name": "umn/umn_search",
@@ -24694,6 +24708,20 @@
                 "doctrine",
                 "php"
             ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcommon",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-06-05T16:46:05+00:00"
         },
         {
@@ -24861,6 +24889,20 @@
                 "strings",
                 "uppercase",
                 "words"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finflector",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-05-29T07:19:59+00:00"
         },

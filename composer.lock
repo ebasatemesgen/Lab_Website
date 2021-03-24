@@ -24134,7 +24134,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "6b614e9345bf88f0748a0cf0bfe2caba7ebb9598"
+                "reference": "7e861e028acb9f0a44c41ba480230786a444e319"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -24143,7 +24143,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2021-03-02T22:31:17+00:00"
+            "time": "2021-03-24T00:55:22+00:00"
         },
         {
             "name": "umn/umn_escape_button",

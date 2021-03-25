@@ -185,7 +185,8 @@
     "drupal/unpublished_node_permissions": "^1.1",
     "drupal/fixed_text_link_formatter": "1.x-dev",
     "drupal/comment_notify": "^1.2",
-    "umn/fast404": "dev-master"
+    "umn/fast404": "dev-master",
+    "drupal/content_moderation_notifications": "^3.3"
   },
   "repositories": {
     "drupal-packagist": {

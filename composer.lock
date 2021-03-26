@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9936bf21fbfc1c5b9af1f16d2346521e",
+    "content-hash": "0c0e58139d5e1760baf11aa766c6b17f",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -421,7 +421,7 @@
                 "type": "zip",
                 "url": "https://download.ckeditor.com/templates/releases/templates_4.16.0.zip"
             },
-            "type": "library"
+            "type": "drupal-library"
         },
         {
             "name": "clue/stream-filter",
@@ -15812,6 +15812,15 @@
                 "twitter"
             ],
             "time": "2017-05-08T12:10:56+00:00"
+        },
+        {
+            "name": "joeldbirch/superfish",
+            "version": "1.7.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joeldbirch/superfish/zipball"
+            },
+            "type": "library"
         },
         {
             "name": "jsanahuja/jqueryinstagramfeed",

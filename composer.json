@@ -187,7 +187,8 @@
     "drupal/comment_notify": "^1.2",
     "umn/fast404": "dev-master",
     "drupal/content_moderation_notifications": "^3.3",
-    "ckeditor/templates": "^4.10"
+    "ckeditor/templates": "^4.10",
+    "joeldbirch/superfish": "^1.7"
   },
   "repositories": {
     "drupal-packagist": {
@@ -327,6 +328,7 @@
       "type": "package",
       "package": {
         "name": "ckeditor/templates",
+        "type": "drupal-library",
         "version": "4.10.1",
         "dist": {
           "url": "https://download.ckeditor.com/templates/releases/templates_4.16.0.zip",
@@ -339,7 +341,6 @@
       "package": {
         "name": "joeldbirch/superfish",
         "version": "1.7.10",
-        "type": "drupal-library",
         "dist": {
           "url": "https://api.github.com/repos/joeldbirch/superfish/zipball",
           "type": "zip"
@@ -554,7 +555,9 @@
     "symlinks": {
       "vendor/kenwheeler/slick": "docroot/libraries/slick",
       "docroot/libraries/jquery.mmenu": "docroot/libraries/mmenu",
-      "vendor/ckeditor/anchor_link": "docroot/libraries/ckeditor/plugins/link"
+      "vendor/ckeditor/anchor_link": "docroot/libraries/ckeditor/plugins/link",
+      "vendor/joeldbirch/superfish/dist": "docroot/libraries/superfish/dist",
+      "vendor/joeldbirch/superfish/package.json": "docroot/libraries/superfish/package.json"
     }
   }
 }

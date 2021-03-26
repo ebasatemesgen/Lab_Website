@@ -186,7 +186,8 @@
     "drupal/fixed_text_link_formatter": "1.x-dev",
     "drupal/comment_notify": "^1.2",
     "umn/fast404": "dev-master",
-    "drupal/content_moderation_notifications": "^3.3"
+    "drupal/content_moderation_notifications": "^3.3",
+    "ckeditor/templates": "^4.10"
   },
   "repositories": {
     "drupal-packagist": {
@@ -318,6 +319,17 @@
         "version": "4.10.1",
         "dist": {
           "url": "https://download.ckeditor.com/link/releases/link_4.10.1.zip",
+          "type": "zip"
+        }
+      }
+    },
+    "ckeditor_templates": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/templates",
+        "version": "4.10.1",
+        "dist": {
+          "url": "https://download.ckeditor.com/templates/releases/templates_4.16.0.zip",
           "type": "zip"
         }
       }

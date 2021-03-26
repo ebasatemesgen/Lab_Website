@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "76a73c8c0fe39fcabfa2d1ccf4f87d05",
+    "content-hash": "9936bf21fbfc1c5b9af1f16d2346521e",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -413,6 +413,15 @@
                 "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.10.1.zip"
             },
             "type": "drupal-library"
+        },
+        {
+            "name": "ckeditor/templates",
+            "version": "4.10.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/templates/releases/templates_4.16.0.zip"
+            },
+            "type": "library"
         },
         {
             "name": "clue/stream-filter",

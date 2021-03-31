@@ -24422,6 +24422,24 @@
             "time": "2020-12-14T19:01:32+00:00"
         },
         {
+            "name": "umn/umn_self_help_guides",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/umn_self_help_guides.git",
+                "reference": "9f7e8090e23f8e6a48adc383e80e6516474cf1da"
+            },
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "Chamil Amarakoon",
+                    "email": "amara060@umn.edu"
+                }
+            ],
+            "description": "Module Package for adding Self Help Guide content to UMN websites.",
+            "time": "2021-03-31T15:49:22+00:00"
+        },
+        {
             "name": "umn/umn_superfish",
             "version": "dev-9-dev",
             "source": {
@@ -25500,7 +25518,8 @@
         "drupal/views_aggregator": 10,
         "drupal/fpa": 10,
         "drupal/fixed_text_link_formatter": 20,
-        "umn/fast404": 20
+        "umn/fast404": 20,
+        "umn/umn_self_help_guides": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

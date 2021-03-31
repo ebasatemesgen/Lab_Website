@@ -190,7 +190,8 @@
     "ckeditor/templates": "^4.10",
     "joeldbirch/superfish": "^1.7",
     "drupal/views_term_hierarchy_weight_field": "^1.1",
-    "drupal/file_download": "^1.5"
+    "drupal/file_download": "^1.5",
+    "umn/umn_self_help_guides": "dev-master"
   },
   "repositories": {
     "drupal-packagist": {
@@ -490,7 +491,11 @@
     "umn_escape_button": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/umn_escape_button.git"
-    }
+    },
+    "umn_self_help_guides": {
+      "type": "git",
+      "url": "git@github.umn.edu:drupalmodules/umn_self_help_guides.git"
+    }	    
   },
   "scripts": {
     "post-install-cmd": [

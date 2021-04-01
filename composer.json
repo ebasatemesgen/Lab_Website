@@ -191,7 +191,8 @@
     "joeldbirch/superfish": "^1.7",
     "drupal/views_term_hierarchy_weight_field": "^1.1",
     "drupal/file_download": "^1.5",
-    "umn/umn_self_help_guides": "dev-master"
+    "umn/umn_self_help_guides": "dev-master",
+    "drupal/token_filter": "^1.2"
   },
   "repositories": {
     "drupal-packagist": {

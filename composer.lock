@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e7e9da5336ac83d18868969875ef54b",
+    "content-hash": "35733764d07357aae8c8ad9c2fcd9004",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -24500,6 +24500,24 @@
             "time": "2021-03-24T00:55:22+00:00"
         },
         {
+            "name": "umn/slick_media",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/slick_media.git",
+                "reference": "0586899b83ba2b974d219f1d94f79515c10b1202"
+            },
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "John Starr",
+                    "email": "starr027@umn.edu"
+                }
+            ],
+            "description": "Holder module for uninstalling slick media",
+            "time": "2021-04-07T18:55:32+00:00"
+        },
+        {
             "name": "umn/umn_escape_button",
             "version": "dev-master",
             "source": {
@@ -24591,6 +24609,24 @@
             ],
             "description": "UMN Accessibility tweaks for Superfish",
             "time": "2020-08-19T16:36:27+00:00"
+        },
+        {
+            "name": "umn/upgrade_status",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/upgrade_status.git",
+                "reference": "f5ffb05da07b2fb68616bb0c1b888801a3a21c76"
+            },
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "John Starr",
+                    "email": "starr027@umn.edu"
+                }
+            ],
+            "description": "Holder module for uninstalling upgrade status",
+            "time": "2021-04-07T18:54:01+00:00"
         },
         {
             "name": "umndrupal/acquia_api",
@@ -25655,7 +25691,9 @@
         "drupal/fixed_text_link_formatter": 20,
         "umn/fast404": 20,
         "umn/umn_self_help_guides": 20,
-        "drupal/libraries": 10
+        "drupal/libraries": 10,
+        "umn/slick_media": 20,
+        "umn/upgrade_status": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

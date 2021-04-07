@@ -193,7 +193,9 @@
     "drupal/file_download": "^1.5",
     "umn/umn_self_help_guides": "dev-master",
     "drupal/token_filter": "^1.2",
-    "drupal/libraries": "^3.0@beta"
+    "drupal/libraries": "^3.0@beta",
+    "umn/slick_media": "dev-master",
+    "umn/upgrade_status": "dev-master"
   },
   "repositories": {
     "drupal-packagist": {
@@ -211,6 +213,14 @@
     "fast404": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/fast404.git"
+    },
+    "upgrade_status": {
+      "type": "git",
+      "url": "git@github.umn.edu:drupalmodules/upgrade_status.git"
+    },
+    "slick_media": {
+      "type": "git",
+      "url": "git@github.umn.edu:drupalmodules/slick_media.git"
     },
     "lightning_umn": {
       "type": "git",

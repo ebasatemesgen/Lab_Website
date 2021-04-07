@@ -190,7 +190,8 @@
     "ckeditor/templates": "^4.10",
     "joeldbirch/superfish": "^1.7",
     "drupal/views_term_hierarchy_weight_field": "^1.1",
-    "drupal/file_download": "^1.5"
+    "drupal/file_download": "^1.5",
+    "drupal/libraries": "^3.0@beta"
   },
   "repositories": {
     "drupal-packagist": {

@@ -196,7 +196,8 @@
     "drupal/libraries": "^3.0@beta",
     "umn/slick_media": "dev-master",
     "umn/upgrade_status": "dev-master",
-    "drupal/entity_reference_revisions": "^1.9"
+    "drupal/entity_reference_revisions": "^1.9",
+    "drupal/scn": "^1.5"
   },
   "repositories": {
     "drupal-packagist": {

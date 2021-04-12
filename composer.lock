@@ -24449,7 +24449,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "46e79128ed6e89b796ae78f9abb0970f5f07c8a5"
+                "reference": "c26040da8fda277cf296ac20efe73acf46ab075c"
             },
             "require": {
                 "drupal/neato": "^1.8"

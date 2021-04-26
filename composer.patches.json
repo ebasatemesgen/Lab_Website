@@ -23,7 +23,11 @@
     "drupal/entity_print": {
       "2969184: PDF generation errors with DomPDF due to drupalSettings": "https://www.drupal.org/files/issues/2020-02-15/entity_print-dompdf-2969184-13.patch"
     },
+    "drupal/auditfiles": {
+      "3183121: PHP compatibility": "https://www.drupal.org/files/issues/2021-01-17/3183121-3-php-7.3-compatibility-use-trait.patch"
+    },
     "drupal/core": {
+      "2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2020-12-01/cannot-use-relationship-2457999-259.patch",
       "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",
       "1810148: Grouped exposed taxonomy term filters do not work": "https://www.drupal.org/files/issues/1810148-58.patch",
       "2924549: Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-04-04/2924549_26.patch",
@@ -31,13 +35,12 @@
       "2985882: Issues between layout builder and entityField": "https://www.drupal.org/files/issues/2018-07-16/2985882-entityfield-2.patch",
       "3008924: Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode": "https://www.drupal.org/files/issues/2019-06-20/3008924-5.patch",
       "2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2020-07-22/2985168-44-d9.patch",
-      "3114467: Negate form value for condition plugins should be cast to boolean in validation": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch"
+      "3114467: Negate form value for condition plugins should be cast to boolean in validation": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch",
+      "2828364: Default media stopped to render due to recursion protection being to protective": "https://www.drupal.org/files/issues/2018-03-22/increase_recursive_render_limit-2828364-15.patch",
+      "2893407: POST /quickedit/metadata returning HTTP 503": "https://www.drupal.org/files/issues/2020-01-09/2893407-39.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"
-    },
-    "drupal/fpa": {
-      "2886896": "https://www.drupal.org/files/issues/2019-05-13/fpa-critical-error-with-strings-2886896-35.patch"
     },
     "drupal/media_entity_download": {
       "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
@@ -50,7 +53,24 @@
     },
     "drupal/group": {
       "3053524: Error: Call to a member function label() on null in GroupContentEnablerBase->getContentLabel()": "https://www.drupal.org/files/issues/2019-06-06/label-on-null-3053524-6.patch",
-      "2774827: Get a token of a node's parent group to create a pathauto pattern": "https://www.drupal.org/files/issues/2020-02-21/group-gnode_tokens-2774827-62.patch"
+      "2774827: Get a token of a node's parent group to create a pathauto pattern": "https://www.drupal.org/files/issues/2020-02-21/group-gnode_tokens-2774827-62.patch",
+      "3112501:Add views contextual filter to get group ID from either URL or group content": "https://www.drupal.org/files/issues/2020-02-10/views-cont-filter-to-get-gid-from-url-or-group-content-3112501.patch"
+    },
+    "drupal/views_aggregator" : {
+      "3087112: Enumerаte * of Titles drops links": "https://www.drupal.org/files/issues/2020-03-12/enumerate_of_titles_drops_links-3087112-10.patch"
+    },
+    "drupal/back_to_top": {
+      "3151196: Does not work in Drupal 9: S.easing[this.easing] is not a function" : "https://www.drupal.org/files/issues/2021-03-03/3151196_fix_for_D9_no_dependencies.patch"
+    },
+    "drupal/fpa": {
+      "3201033: entity.manager must be changed to entity_type.manager" : "https://www.drupal.org/files/issues/2021-03-01/entity_type_manager_fix.patch"
+    },
+    "drupal/slick_views" : {
+      "3135699: Lots of whitespace created": "https://www.drupal.org/files/issues/2020-08-13/slick_views-removal_whitespace-3135699-13623347.patch"
+    },
+    "drupal/google_analytics" : {
+      "3178179: Support new Google Analytics 4": "https://www.drupal.org/files/issues/2020-12-01/3178179-google-analytics-4.patch"
     }
+
   }
 }

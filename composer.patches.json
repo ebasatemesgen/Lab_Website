@@ -65,9 +65,6 @@
     "drupal/fpa": {
       "3201033: entity.manager must be changed to entity_type.manager" : "https://www.drupal.org/files/issues/2021-03-01/entity_type_manager_fix.patch"
     },
-    "drupal/slick_views" : {
-      "3135699: Lots of whitespace created": "https://www.drupal.org/files/issues/2020-08-13/slick_views-removal_whitespace-3135699-13623347.patch"
-    },
     "drupal/google_analytics" : {
       "3178179: Support new Google Analytics 4": "https://www.drupal.org/files/issues/2020-12-01/3178179-google-analytics-4.patch"
     }

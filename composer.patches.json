@@ -67,7 +67,9 @@
     },
     "drupal/google_analytics" : {
       "3178179: Support new Google Analytics 4": "https://www.drupal.org/files/issues/2020-12-01/3178179-google-analytics-4.patch"
+    },
+    "drupal/conflict" : {
+      "3163662: PHP error when stored entity is not found": "https://www.drupal.org/files/issues/2020-08-05/3163662-2.patch"
     }
-
   }
 }

@@ -127,7 +127,7 @@
     "drupal/addtoany": "^1.12",
     "drupal/media_entity_download": "^2.0@beta",
     "umn/d8lite_migration": "dev-9-dev",
-    "umn/cloudflare_verify": "dev-static",
+    "umn/cloudflare_verify": "dev-9.x-dev",
     "drupal/embed": "^1.4",
     "drupal/smart_trim": "^1.2",
     "drupal/redirect_after_login": "^2.5",

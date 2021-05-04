@@ -203,12 +203,16 @@
     "drupal/ckeditorheight": "^1.8",
     "drupal/view_mode_page": "^4.0",
     "drupal/umn_dm_migrate": "2.0.2",
-    "drupal/umn_dm_storage": "2.0.2"
+    "drupal/umn_dm_storage": "2.0.2",
+    "drupal/h5p": "dev-3150110-drupal-9-readyness"
   },
   "repositories": {
     "drupal-packagist": {
       "type": "composer",
-      "url": "https://packages.drupal.org/8"
+      "url": "https://packages.drupal.org/8",
+      "exclude": [
+        "drupal/h5p"
+      ]
     },
     "asset-packagist": {
       "type": "composer",
@@ -285,6 +289,10 @@
     "cloudflare_verify": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/cloudflare_verify.git"
+    },
+    "h5p": {
+      "url": "https://git.drupalcode.org/issue/h5p-3150110.git",
+      "type": "git"
     },
     "blazy": {
       "type": "package",

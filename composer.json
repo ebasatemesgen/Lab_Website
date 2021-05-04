@@ -27,7 +27,7 @@
     "drupal/simple_gmap": "^3.0",
     "umn/umn_features": "9.0",
     "umn/lightning_umn": "dev-9-dev",
-    "umn/cog_umn": "dev-dist#final-fix404",
+    "umn/cog_umn": "dev-9.x-prod",
     "umn/umn_search": "dev-9-dev",
     "umn/crmform": "dev-d8",
     "umn/dors_migrate": "2.2.6",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "754b8eb513a8eca0fe62d190e4cc9bff",
+    "content-hash": "a88aa408bbb17482fcb0726faa8f80f5",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -24626,11 +24626,11 @@
         },
         {
             "name": "umn/cog_umn",
-            "version": "dev-dist",
+            "version": "dev-9.x-prod",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/cog-umn.git",
-                "reference": "d309412a6f1f0abdb61bece910acaf67c1cd6e38"
+                "reference": "4d55f4429d39f75c8e3e3362465981b83d5e7687"
             },
             "require": {
                 "drupal/cog": "^1.3"
@@ -24643,7 +24643,7 @@
                 }
             ],
             "description": "UMN Starter theme for Drupal 8",
-            "time": "2019-08-06T18:51:01+00:00"
+            "time": "2021-05-04T14:58:16+00:00"
         },
         {
             "name": "umn/crmform",
@@ -25976,5 +25976,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }

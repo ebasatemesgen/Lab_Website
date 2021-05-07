@@ -25647,8 +25647,9 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_self_help_guides.git",
-                "reference": "9f7e8090e23f8e6a48adc383e80e6516474cf1da"
+                "reference": "e50bdf5ef891137ee05e0bc6d796bd6c7150d125"
             },
+            "default-branch": true,
             "type": "drupal-module-custom",
             "authors": [
                 {
@@ -25657,7 +25658,7 @@
                 }
             ],
             "description": "Module Package for adding Self Help Guide content to UMN websites.",
-            "time": "2021-03-31T15:49:22+00:00"
+            "time": "2021-05-07T15:26:14+00:00"
         },
         {
             "name": "umn/umn_superfish",

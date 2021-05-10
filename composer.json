@@ -204,7 +204,8 @@
     "drupal/view_mode_page": "^4.0",
     "drupal/umn_dm_migrate": "2.0.2",
     "drupal/umn_dm_storage": "2.0.2",
-    "drupal/h5p": "dev-3150110-drupal-9-readyness"
+    "drupal/h5p": "dev-3150110-drupal-9-readyness",
+    "drupal/field_permissions": "^1.1"
   },
   "repositories": {
     "drupal-packagist": {

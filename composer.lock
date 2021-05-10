@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c0eae7985c14ee0ba855d923ff41191",
+    "content-hash": "edaf160a14503f6b102c36b71831c539",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -269,11 +269,6 @@
                 "s3",
                 "sdk"
             ],
-            "support": {
-                "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
-                "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.180.0"
-            },
             "time": "2021-05-03T20:41:22+00:00"
         },
         {
@@ -324,11 +319,6 @@
                 "s3",
                 "sdk"
             ],
-            "support": {
-                "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
-                "issues": "https://github.com/aws/aws-sdk-php-resources/issues",
-                "source": "https://github.com/awslabs/aws-sdk-php-resources/tree/master"
-            },
             "time": "2015-06-20T20:55:44+00:00"
         },
         {
@@ -336,7 +326,7 @@
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fengyuanchen/cropper.git",
+                "url": "git@github.com:fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -4615,6 +4605,9 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "3163662: PHP error when stored entity is not found": "https://www.drupal.org/files/issues/2020-08-05/3163662-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5654,7 +5647,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/digitalmeasures_migrate",
                 "issues": "https://www.drupal.org/project/issues/digitalmeasures_migrate"
-            }
+            },
+            "time": "2020-11-04T22:46:55+00:00"
         },
         {
             "name": "drupal/dropzonejs",
@@ -6917,6 +6911,70 @@
             }
         },
         {
+            "name": "drupal/field_permissions",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_permissions.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_permissions-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "11e31db94999e6871ad7633455315bc27989a7ea"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1598646882",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "mariacha1",
+                    "homepage": "https://www.drupal.org/user/2210776"
+                },
+                {
+                    "name": "markus_petrux",
+                    "homepage": "https://www.drupal.org/user/39593"
+                }
+            ],
+            "description": "The Field Permissions module allows site administrators to set field-level permissions to edit, view and create fields on any entity.",
+            "homepage": "https://www.drupal.org/project/field_permissions",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_permissions",
+                "issues": "https://www.drupal.org/project/issues/field_permissions"
+            }
+        },
+        {
             "name": "drupal/file_download",
             "version": "1.5.0",
             "source": {
@@ -7638,6 +7696,11 @@
                 "h5p/h5p-editor": "1.24.1"
             },
             "type": "drupal-module",
+            "extra": {
+                "patches_applied": {
+                    "3126374: deprecated syntax warnings": "https://www.drupal.org/files/issues/2020-12-02/2020_12_02_h5p_syntax_update.patch"
+                }
+            },
             "license": [
                 "GPL-2.0+"
             ],
@@ -9583,6 +9646,9 @@
                     "docroot/themes/contrib/{$name}": [
                         "type:drupal-theme"
                     ]
+                },
+                "patches_applied": {
+                    "3126343: Scheduler needs to maintain its base fields properly": "https://www.drupal.org/files/issues/2020-07-08/3126343-11.patch"
                 }
             },
             "autoload": {
@@ -10350,7 +10416,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/migrate_process_regex",
                 "issues": "https://www.drupal.org/project/issues/migrate_process_regex"
-            }
+            },
+            "time": "2020-11-10T16:29:17+00:00"
         },
         {
             "name": "drupal/migrate_process_s3",
@@ -10400,7 +10467,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/migrate_process_s3",
                 "issues": "https://www.drupal.org/project/issues/migrate_process_s3"
-            }
+            },
+            "time": "2020-11-04T23:58:58+00:00"
         },
         {
             "name": "drupal/migrate_process_skip",
@@ -10449,7 +10517,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/migrate_process_skip",
                 "issues": "https://www.drupal.org/project/issues/migrate_process_skip"
-            }
+            },
+            "time": "2020-11-10T17:03:48+00:00"
         },
         {
             "name": "drupal/migrate_process_trim",
@@ -10498,7 +10567,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/migrate_process_trim",
                 "issues": "https://www.drupal.org/project/issues/migrate_process_trim"
-            }
+            },
+            "time": "2020-11-05T00:05:53+00:00"
         },
         {
             "name": "drupal/migrate_process_url",
@@ -10547,7 +10617,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/migrate_process_url",
                 "issues": "https://www.drupal.org/project/issues/migrate_process_url"
-            }
+            },
+            "time": "2020-11-05T00:08:44+00:00"
         },
         {
             "name": "drupal/migrate_process_vardump",
@@ -10592,7 +10663,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/migrate_process_vardump",
                 "issues": "https://www.drupal.org/project/issues/migrate_process_vardump"
-            }
+            },
+            "time": "2020-11-10T16:44:49+00:00"
         },
         {
             "name": "drupal/migrate_process_xml",
@@ -10642,7 +10714,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/migrate_process_xml",
                 "issues": "https://www.drupal.org/project/issues/migrate_process_xml"
-            }
+            },
+            "time": "2020-11-10T16:12:19+00:00"
         },
         {
             "name": "drupal/migrate_source_csv",
@@ -16820,6 +16893,11 @@
                 "php": ">=5.3.0"
             },
             "type": "library",
+            "extra": {
+                "patches_applied": {
+                    "Fix h5p php 7.4 issue": "patches/h5pphp.patch"
+                }
+            },
             "autoload": {
                 "files": [
                     "h5p.classes.php",
@@ -16857,10 +16935,6 @@
                 "interactive",
                 "quiz"
             ],
-            "support": {
-                "issues": "https://github.com/h5p/h5p-php-library/issues",
-                "source": "https://github.com/h5p/h5p-php-library/tree/release"
-            },
             "time": "2019-10-30T10:42:15+00:00"
         },
         {
@@ -16918,10 +16992,6 @@
                 "interactive",
                 "quiz"
             ],
-            "support": {
-                "issues": "https://github.com/h5p/h5p-editor-php-library/issues",
-                "source": "https://github.com/h5p/h5p-editor-php-library/tree/1.24.1"
-            },
             "time": "2019-10-30T14:56:53+00:00"
         },
         {
@@ -18343,10 +18413,6 @@
                 "json",
                 "jsonpath"
             ],
-            "support": {
-                "issues": "https://github.com/jmespath/jmespath.php/issues",
-                "source": "https://github.com/jmespath/jmespath.php/tree/2.6.0"
-            },
             "time": "2020-07-31T21:01:56+00:00"
         },
         {
@@ -25516,7 +25582,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "03f5728dd8222dfa7a4fac52d92fbd589e86eb50"
+                "reference": "7c5d01b5323ff65669eadef84e8be42d1095c690"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -25529,7 +25595,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2021-04-29T18:42:45+00:00"
+            "time": "2021-05-03T16:53:14+00:00"
         },
         {
             "name": "umn/folwell_components",
@@ -25649,7 +25715,6 @@
                 "url": "git@github.umn.edu:drupalmodules/umn_self_help_guides.git",
                 "reference": "e50bdf5ef891137ee05e0bc6d796bd6c7150d125"
             },
-            "default-branch": true,
             "type": "drupal-module-custom",
             "authors": [
                 {
@@ -26757,5 +26822,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }

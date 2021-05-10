@@ -26,17 +26,7 @@
     "drupal/auditfiles": {
       "3183121: PHP compatibility": "https://www.drupal.org/files/issues/2021-01-17/3183121-3-php-7.3-compatibility-use-trait.patch"
     },
-    "drupal/lightning_workflow": {
-      "3126343: Scheduler needs to maintain its base fields properly": "https://www.drupal.org/files/issues/2020-07-08/3126343-11.patch"
-    },
-    "drupal/h5p": {
-      "3126374: deprecated syntax warnings": "https://www.drupal.org/files/issues/2020-12-02/2020_12_02_h5p_syntax_update.patch"
-    },
-    "h5p/h5p-core": {
-      "Fix h5p php 7.4 issue": "patches/h5pphp.patch"
-    },
     "drupal/core": {
-      "2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2020-12-01/cannot-use-relationship-2457999-259.patch",
       "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",
       "1810148: Grouped exposed taxonomy term filters do not work": "https://www.drupal.org/files/issues/1810148-58.patch",
       "2924549: Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-04-04/2924549_26.patch",
@@ -74,11 +64,12 @@
     "drupal/fpa": {
       "3201033: entity.manager must be changed to entity_type.manager" : "https://www.drupal.org/files/issues/2021-03-01/entity_type_manager_fix.patch"
     },
+    "drupal/slick_views" : {
+      "3135699: Lots of whitespace created": "https://www.drupal.org/files/issues/2020-08-13/slick_views-removal_whitespace-3135699-13623347.patch"
+    },
     "drupal/google_analytics" : {
       "3178179: Support new Google Analytics 4": "https://www.drupal.org/files/issues/2020-12-01/3178179-google-analytics-4.patch"
-    },
-    "drupal/conflict" : {
-      "3163662: PHP error when stored entity is not found": "https://www.drupal.org/files/issues/2020-08-05/3163662-2.patch"
     }
+
   }
 }

@@ -25638,8 +25638,9 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/slick_media.git",
-                "reference": "0586899b83ba2b974d219f1d94f79515c10b1202"
+                "reference": "0878907e3bf5477d4e7cbaa8c552a2c37afe8b62"
             },
+            "default-branch": true,
             "type": "drupal-module-custom",
             "authors": [
                 {
@@ -25648,7 +25649,7 @@
                 }
             ],
             "description": "Holder module for uninstalling slick media",
-            "time": "2021-04-07T18:55:32+00:00"
+            "time": "2021-05-11T15:13:02+00:00"
         },
         {
             "name": "umn/umn_escape_button",
@@ -26822,5 +26823,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }

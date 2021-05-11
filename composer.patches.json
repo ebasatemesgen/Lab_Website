@@ -26,9 +26,6 @@
     "drupal/auditfiles": {
       "3183121: PHP compatibility": "https://www.drupal.org/files/issues/2021-01-17/3183121-3-php-7.3-compatibility-use-trait.patch"
     },
-    "drupal/lightning_workflow": {
-      "3126343: Scheduler needs to maintain its base fields properly": "https://www.drupal.org/files/issues/2020-07-08/3126343-11.patch"
-    },
     "drupal/scheduled_updates": {
       "3172330: Module is not D9 compatible": "https://www.drupal.org/files/issues/2021-03-08/3172330-24.patch"
     },

@@ -207,7 +207,8 @@
     "drupal/h5p": "dev-3150110-drupal-9-readyness",
     "drupal/field_permissions": "^1.1",
     "drupal/poll": "^1.4",
-    "drupal/acquia_search": "^3.0"
+    "drupal/acquia_search": "^3.0",
+    "npm-asset/jquery-ui-touch-punch": "^0.2.3"
   },
   "repositories": {
     "drupal-packagist": {

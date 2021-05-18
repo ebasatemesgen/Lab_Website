@@ -208,7 +208,8 @@
     "drupal/field_permissions": "^1.1",
     "drupal/poll": "^1.4",
     "drupal/acquia_search": "^3.0",
-    "npm-asset/jquery-ui-touch-punch": "^0.2.3"
+    "npm-asset/jquery-ui-touch-punch": "^0.2.3",
+    "drupal/jquery_ui_checkboxradio": "^1.2"
   },
   "repositories": {
     "drupal-packagist": {

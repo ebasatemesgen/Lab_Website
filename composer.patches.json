@@ -29,6 +29,9 @@
     "drupal/scheduled_updates": {
       "3172330: Module is not D9 compatible": "https://www.drupal.org/files/issues/2021-03-08/3172330-24.patch"
     },
+    "drupal/lightning_workflow": {
+      "3126343: Scheduler needs to maintain its base fields properly": "https://www.drupal.org/files/issues/2020-07-08/3126343-11.patch"
+    },
     "drupal/h5p": {
       "3126374: deprecated syntax warnings": "https://www.drupal.org/files/issues/2020-12-02/2020_12_02_h5p_syntax_update.patch"
     },

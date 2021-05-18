@@ -206,7 +206,8 @@
     "drupal/umn_dm_storage": "2.0.2",
     "drupal/h5p": "dev-3150110-drupal-9-readyness",
     "drupal/field_permissions": "^1.1",
-    "drupal/poll": "^1.4"
+    "drupal/poll": "^1.4",
+    "drupal/acquia_search": "^3.0"
   },
   "repositories": {
     "drupal-packagist": {

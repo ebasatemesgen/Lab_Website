@@ -209,7 +209,8 @@
     "drupal/poll": "^1.4",
     "npm-asset/jquery-ui-touch-punch": "^0.2.3",
     "drupal/jquery_ui_checkboxradio": "^1.2",
-    "drupal/acquia_search": "^2.1"
+    "drupal/acquia_search": "^2.1",
+    "drupal/message": "^1.2"
   },
   "repositories": {
     "drupal-packagist": {

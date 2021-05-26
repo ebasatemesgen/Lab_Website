@@ -4942,16 +4942,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.1.7",
+            "version": "9.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "0cbed9e7b0243ccc89a3735853eedb40becf8095"
+                "reference": "2c649d5807f08f8c7945d1c6ffb4bb21d5c7849a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/0cbed9e7b0243ccc89a3735853eedb40becf8095",
-                "reference": "0cbed9e7b0243ccc89a3735853eedb40becf8095",
+                "url": "https://api.github.com/repos/drupal/core/zipball/2c649d5807f08f8c7945d1c6ffb4bb21d5c7849a",
+                "reference": "2c649d5807f08f8c7945d1c6ffb4bb21d5c7849a",
                 "shasum": ""
             },
             "require": {
@@ -5143,24 +5143,6 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
-                },
-                "patches_applied": {
-                    "2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2020-12-01/cannot-use-relationship-2457999-259.patch",
-                    "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",
-                    "1810148: Grouped exposed taxonomy term filters do not work": "https://www.drupal.org/files/issues/1810148-58.patch",
-                    "2924549: Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-04-04/2924549_26.patch",
-                    "2985199: Extensions in Multisite Directories Not Registered When Rebuilding Cache": "https://www.drupal.org/files/issues/2019-10-05/drupal-Rebuilding_Cache-2985199-48.patch",
-                    "2985882: Issues between layout builder and entityField": "https://www.drupal.org/files/issues/2018-07-16/2985882-entityfield-2.patch",
-                    "3008924: Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode": "https://www.drupal.org/files/issues/2019-06-20/3008924-5.patch",
-                    "2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2020-07-22/2985168-44-d9.patch",
-                    "3114467: Negate form value for condition plugins should be cast to boolean in validation": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch",
-                    "2828364: Default media stopped to render due to recursion protection being to protective": "https://www.drupal.org/files/issues/2018-03-22/increase_recursive_render_limit-2828364-15.patch",
-                    "2893407: POST /quickedit/metadata returning HTTP 503": "https://www.drupal.org/files/issues/2020-01-09/2893407-39.patch",
-                    "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
-                    "[subprofile support] 1356276 - Allow profiles to define a base/parent profile and load them in the correct order / 2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2020-12-15/3143958-6-subprofile-support-9.1.x.patch",
-                    "REMOVE: 2031261 - Fix SQLite variable limit": "https://www.drupal.org/files/issues/2020-04-01/2031261-118.patch",
-                    "REMOVE: Allow installation profile to be changed from Lightning during config sync": "https://www.drupal.org/files/issues/2021-01-21/3143958-12-change-profile-config-sync-9.1.x.patch",
-                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-11-27/2815221-125.patch"
                 }
             },
             "autoload": {
@@ -5205,7 +5187,10 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2021-04-20T23:05:22+00:00"
+            "support": {
+                "source": "https://github.com/drupal/core/tree/9.1.9"
+            },
+            "time": "2021-05-25T09:18:28+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",

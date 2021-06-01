@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74054b02d68ca42515e8fb461703f193",
+    "content-hash": "4aa322b60221165088ca0c74c73d67bd",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -377,7 +377,7 @@
             "version": "3.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "e786e3d9707ffd9b0dd330ca135b66344dcef85a"
             },
             "dist": {
@@ -5143,6 +5143,25 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
+                },
+                "patches_applied": {
+                    "2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2020-12-01/cannot-use-relationship-2457999-259.patch",
+                    "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",
+                    "1810148: Grouped exposed taxonomy term filters do not work": "https://www.drupal.org/files/issues/1810148-58.patch",
+                    "2924549: Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-04-04/2924549_26.patch",
+                    "2985199: Extensions in Multisite Directories Not Registered When Rebuilding Cache": "https://www.drupal.org/files/issues/2019-10-05/drupal-Rebuilding_Cache-2985199-48.patch",
+                    "2985882: Issues between layout builder and entityField": "https://www.drupal.org/files/issues/2018-07-16/2985882-entityfield-2.patch",
+                    "3008924: Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode": "https://www.drupal.org/files/issues/2019-06-20/3008924-5.patch",
+                    "2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2020-07-22/2985168-44-d9.patch",
+                    "3114467: Negate form value for condition plugins should be cast to boolean in validation": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch",
+                    "2828364: Default media stopped to render due to recursion protection being to protective": "https://www.drupal.org/files/issues/2018-03-22/increase_recursive_render_limit-2828364-15.patch",
+                    "2893407: POST /quickedit/metadata returning HTTP 503": "https://www.drupal.org/files/issues/2020-01-09/2893407-39.patch",
+                    "3039185  Allow field blocks to display the configuration label when set in Layout Builder": "https://www.drupal.org/files/issues/2020-04-17/allow-field-blocks-to-display-label-in-layout-builder-3039185-22.patch",
+                    "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
+                    "[subprofile support] 1356276 - Allow profiles to define a base/parent profile and load them in the correct order / 2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2020-12-15/3143958-6-subprofile-support-9.1.x.patch",
+                    "REMOVE: 2031261 - Fix SQLite variable limit": "https://www.drupal.org/files/issues/2020-04-01/2031261-118.patch",
+                    "REMOVE: Allow installation profile to be changed from Lightning during config sync": "https://www.drupal.org/files/issues/2021-01-21/3143958-12-change-profile-config-sync-9.1.x.patch",
+                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-11-27/2815221-125.patch"
                 }
             },
             "autoload": {
@@ -5187,9 +5206,6 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "support": {
-                "source": "https://github.com/drupal/core/tree/9.1.9"
-            },
             "time": "2021-05-25T09:18:28+00:00"
         },
         {
@@ -9760,6 +9776,9 @@
                     "docroot/themes/contrib/{$name}": [
                         "type:drupal-theme"
                     ]
+                },
+                "patches_applied": {
+                    "3126343: Scheduler needs to maintain its base fields properly": "https://www.drupal.org/files/issues/2020-07-08/3126343-11.patch"
                 }
             },
             "autoload": {
@@ -13294,6 +13313,9 @@
                 },
                 "branch-alias": {
                     "dev-8.x-1.x": "1.x-dev"
+                },
+                "patches_applied": {
+                    "Issue 3029421: Remove handler schema/fieldtypes checking": "https://www.drupal.org/files/issues/2020-06-05/3029421-4-Remove-check-on-Acquia-Search.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -17401,10 +17423,6 @@
                 "psr-17",
                 "psr-7"
             ],
-            "support": {
-                "issues": "https://github.com/http-interop/http-factory-guzzle/issues",
-                "source": "https://github.com/http-interop/http-factory-guzzle/tree/master"
-            },
             "time": "2018-07-31T19:32:56+00:00"
         },
         {
@@ -18406,10 +18424,6 @@
                 "stream",
                 "zip"
             ],
-            "support": {
-                "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
-                "source": "https://github.com/maennchen/ZipStream-PHP/tree/master"
-            },
             "time": "2016-09-13T10:29:17+00:00"
         },
         {
@@ -23586,6 +23600,7 @@
                     "type": "tidelift"
                 }
             ],
+            "abandoned": "use `EnglishInflector` from the String component instead",
             "time": "2021-03-17T20:31:43+00:00"
         },
         {
@@ -25760,11 +25775,11 @@
         },
         {
             "name": "umn/crmform",
-            "version": "dev-d8",
+            "version": "dev-d9",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/crmform",
-                "reference": "ad6a2ab07848680f811419e8aaa9b00fa1b4fc2d"
+                "reference": "f1196d9ca371a4905b2b7ab3922a0e4526c2e76d"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -25774,7 +25789,7 @@
                 }
             ],
             "description": "Drupal 8 module for rendering/posting CRM forms in Drupal sites",
-            "time": "2021-03-03T03:21:12+00:00"
+            "time": "2021-06-01T22:45:25+00:00"
         },
         {
             "name": "umn/d8lite_migration",
@@ -27090,5 +27105,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }

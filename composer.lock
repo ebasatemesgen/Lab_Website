@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "deb92a0878382120dafbc4fb2c959426",
+    "content-hash": "a73b349d5c52ee35c9d4731147cc32d8",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -14822,6 +14822,61 @@
             }
         },
         {
+            "name": "drupal/twitter_api_block",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/twitter_api_block.git",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twitter_api_block-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "dda91ba19f070dbf67720fcd370b0d2809ea70ce"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "j7mbo/twitter-api-php": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0",
+                    "datestamp": "1618899839",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "patches_applied": {
+                    "3107146: Placing the block through Layout Builder fails": "https://www.drupal.org/files/issues/2021-05-14/twitter_api_block-3107146-8.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Matthieu SCARSET",
+                    "homepage": "http://matthieuscarset.com",
+                    "email": "m@matthieuscarset.com"
+                }
+            ],
+            "description": "Add a custom block to display your tweets in Drupal.",
+            "homepage": "http://drupal.org/project/twitter_api_block",
+            "keywords": [
+                "Drupal",
+                "Drupal Block",
+                "Twitter",
+                "Twitter API"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/twitter_api_block"
+            }
+        },
+        {
             "name": "drupal/umn_dm_import",
             "version": "2.0.2",
             "source": {
@@ -25926,7 +25981,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "7b9c660df6fb1c685ad5f2418f19ad69ae37f8c2"
+                "reference": "c2930de523f273abb7244716df732e2c0f671fa8"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -25935,7 +25990,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2021-05-18T16:42:58+00:00"
+            "time": "2021-06-02T16:42:12+00:00"
         },
         {
             "name": "umn/slick_media",
@@ -27127,5 +27182,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }

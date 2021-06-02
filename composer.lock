@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4aa322b60221165088ca0c74c73d67bd",
+    "content-hash": "deb92a0878382120dafbc4fb2c959426",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -14822,6 +14822,28 @@
             }
         },
         {
+            "name": "drupal/umn_dm_import",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:hinte019/umn_dm_import.git",
+                "reference": "240f3313c628085e6f1916650d8583b29cab7a66"
+            },
+            "require": {
+                "drupal/core": "^9",
+                "drupal/umn_dm_migrate": "^2.0.2"
+            },
+            "type": "drupal-module",
+            "authors": [
+                {
+                    "name": "Brandt Hinterberg",
+                    "email": "hinte019@umn.edu"
+                }
+            ],
+            "description": "Set up Digital Measures profiles to be imported periodically, or preform a manual import.",
+            "time": "2021-04-29T21:39:35+00:00"
+        },
+        {
             "name": "drupal/umn_dm_migrate",
             "version": "2.0.2",
             "source": {
@@ -27105,5 +27127,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }

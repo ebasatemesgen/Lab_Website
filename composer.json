@@ -210,7 +210,8 @@
     "npm-asset/jquery-ui-touch-punch": "^0.2.3",
     "drupal/jquery_ui_checkboxradio": "^1.2",
     "drupal/acquia_search": "^2.1",
-    "drupal/message": "^1.2"
+    "drupal/message": "^1.2",
+    "drupal/umn_dm_import": "2.0.2"
   },
   "repositories": {
     "drupal-packagist": {
@@ -287,6 +288,10 @@
     "umn_dm_storage": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git"
+    },
+    "umn_dm_import": {
+      "type": "git",
+      "url": "git@github.umn.edu:hinte019/umn_dm_import.git"
     },
     "umn_d8lite_migration": {
       "type": "git",

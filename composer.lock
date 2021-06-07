@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a73b349d5c52ee35c9d4731147cc32d8",
+    "content-hash": "6965bbd1e7a287f5331cb1de9864311a",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -25889,11 +25889,11 @@
         },
         {
             "name": "umn/dors_migrate",
-            "version": "2.2.6",
+            "version": "2.2.10",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/dors_migrate.git",
-                "reference": "b23dbcafee2d01aa42763f206fb1c78c613344ea"
+                "reference": "99a6cf2678030e6cdc2228180af852af5fe67d76"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -25910,7 +25910,7 @@
                 }
             ],
             "description": "Drupal 8 module to import courses from DORS",
-            "time": "2020-06-15T20:00:16+00:00"
+            "time": "2021-06-07T15:56:05+00:00"
         },
         {
             "name": "umn/fast404",

@@ -25893,7 +25893,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/dors_migrate.git",
-                "reference": "1558266147040e2586a8660036269e443a39f4b2"
+                "reference": "5985a79570d0579135683e8aa3ff2bb2bc79aa80"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -25910,7 +25910,7 @@
                 }
             ],
             "description": "Drupal 8 module to import courses from DORS",
-            "time": "2021-06-07T19:56:02+00:00"
+            "time": "2021-06-15T20:42:53+00:00"
         },
         {
             "name": "umn/fast404",

@@ -29,7 +29,7 @@
     "umn/lightning_umn": "dev-9-dev",
     "umn/cog_umn": "dev-9.x-prod",
     "umn/umn_search": "dev-9-dev",
-    "umn/crmform": "dev-d8",
+    "umn/crmform": "dev-d9",
     "umn/dors_migrate": "2.2.6",
     "drupal/redirect": "^1.6",
     "drupal/imagick": "^1.0",
@@ -209,7 +209,10 @@
     "drupal/poll": "^1.4",
     "npm-asset/jquery-ui-touch-punch": "^0.2.3",
     "drupal/jquery_ui_checkboxradio": "^1.2",
-    "drupal/acquia_search": "^2.1"
+    "drupal/acquia_search": "^2.1",
+    "drupal/message": "^1.2",
+    "drupal/umn_dm_import": "2.0.2",
+    "drupal/twitter_api_block": "^3.0"
   },
   "repositories": {
     "drupal-packagist": {
@@ -286,6 +289,10 @@
     "umn_dm_storage": {
       "type": "git",
       "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git"
+    },
+    "umn_dm_import": {
+      "type": "git",
+      "url": "git@github.umn.edu:hinte019/umn_dm_import.git"
     },
     "umn_d8lite_migration": {
       "type": "git",

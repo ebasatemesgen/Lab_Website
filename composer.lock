@@ -377,7 +377,7 @@
             "version": "3.6.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "e786e3d9707ffd9b0dd330ca135b66344dcef85a"
             },
             "dist": {
@@ -2692,7 +2692,7 @@
             "extra": {
                 "drupal": {
                     "version": "2.1.25",
-                    "datestamp": "1621272022",
+                    "datestamp": "1621272160",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -27177,5 +27177,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }

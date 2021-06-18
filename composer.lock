@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b48aaba86e24102566702351ae025776",
+    "content-hash": "eed5cf38787c4013230a1cc079e7a709",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -14920,11 +14920,11 @@
         },
         {
             "name": "drupal/umn_dm_import",
-            "version": "2.0.2",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:hinte019/umn_dm_import.git",
-                "reference": "240f3313c628085e6f1916650d8583b29cab7a66"
+                "reference": "efabb33b570130e644bf94b0f76b680332bf0170"
             },
             "require": {
                 "drupal/core": "^9",
@@ -14938,15 +14938,15 @@
                 }
             ],
             "description": "Set up Digital Measures profiles to be imported periodically, or preform a manual import.",
-            "time": "2021-04-29T21:39:35+00:00"
+            "time": "2021-06-16T23:58:20+00:00"
         },
         {
             "name": "drupal/umn_dm_migrate",
-            "version": "2.0.2",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_migrate.git",
-                "reference": "233addd72735c5167275ccc87941d2785999d5e1"
+                "reference": "82e88dc377c3ec2d6c0659ba79a424ad278997d4"
             },
             "require": {
                 "drupal/core": "^8.8 | ^9",
@@ -14963,19 +14963,19 @@
             },
             "type": "drupal-module",
             "description": "Contains migrations and configuration for migrating Profiles from Digital Measures into a Drupal site.",
-            "time": "2021-03-03T20:59:45+00:00"
+            "time": "2021-06-17T00:28:54+00:00"
         },
         {
             "name": "drupal/umn_dm_storage",
-            "version": "2.0.2",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git",
-                "reference": "1ece3e2df54d7e48294de1bc0530b42c6a856c21"
+                "reference": "213f4313c722d3a314e04b85335d6a6dbe42332e"
             },
             "type": "drupal-module",
             "description": "contains the entity type configuration for Digital Measures profile and profile fragments",
-            "time": "2021-04-29T17:59:35+00:00"
+            "time": "2021-06-16T23:48:02+00:00"
         },
         {
             "name": "drupal/unpublished_node_permissions",

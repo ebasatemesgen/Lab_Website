@@ -213,7 +213,8 @@
     "drupal/message": "^1.2",
     "drupal/umn_dm_import": "2.1.0",
     "drupal/twitter_api_block": "^3.0",
-    "drupal/limited_field_widgets": "^2.0"
+    "drupal/limited_field_widgets": "^2.0",
+    "drupal/imagemagick": "^3.2"
   },
   "repositories": {
     "drupal-packagist": {

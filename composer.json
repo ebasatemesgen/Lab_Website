@@ -214,7 +214,11 @@
     "drupal/umn_dm_import": "2.1.0",
     "drupal/twitter_api_block": "^3.0",
     "drupal/limited_field_widgets": "^2.0",
-    "drupal/imagemagick": "^3.2"
+    "drupal/imagemagick": "^3.2",
+    "jgallen23/toc": "^0.3.2",
+    "drupal/toc_js": "^2.0",
+    "drupal/paragraphs_features": "^1.11",
+    "drupal/smart_date": "^3.3"
   },
   "repositories": {
     "drupal-packagist": {
@@ -518,6 +522,17 @@
         }
       }
     },
+    "toc": {
+      "type": "package",
+      "package": {
+        "name": "jgallen23/toc",
+        "version": "0.3.2",
+        "dist": {
+          "url": "https://github.com/jgallen23/toc/archive/refs/heads/greenkeeper/update-all.zip",
+          "type": "zip"
+        }
+      }
+    },
     "api_wrapper": {
       "type": "vcs",
       "url": "https://github.com/umn-drupal/acquia-api-wrapper"
@@ -603,6 +618,7 @@
     "enable-patching": true,
     "symlinks": {
       "vendor/kenwheeler/slick": "docroot/libraries/slick",
+      "vendor/jgallen23/toc/dist": "docroot/libraries/toc",
       "docroot/libraries/jquery.mmenu": "docroot/libraries/mmenu",
       "vendor/ckeditor/anchor_link": "docroot/libraries/ckeditor/plugins/link",
       "vendor/joeldbirch/superfish/dist": "docroot/libraries/superfish/dist",

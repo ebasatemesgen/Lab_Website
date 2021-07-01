@@ -26731,7 +26731,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "75c00df56c0dce7f208d751dbf550cdf856f6790"
+                "reference": "47cec93e16382ce0795eebe7274bf783a38b14e6"
             },
             "type": "drupal-profile-custom",
             "authors": [

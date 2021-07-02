@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbf4cb24885be633b8a17d7b51ad0122",
+    "content-hash": "2d218235b96174b69a60b1967aed10f6",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -26620,11 +26620,11 @@
         },
         {
             "name": "umn/d8lite_migration",
-            "version": "dev-hillmyergroup",
+            "version": "dev-publication",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "d11c3dea0485c242a1b301358f1d381e80d20a0d"
+                "reference": "593959a35950c66c0016687996532d602f321920"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -26641,7 +26641,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2021-07-01T18:26:29+00:00"
+            "time": "2021-07-02T14:16:50+00:00"
         },
         {
             "name": "umn/dors_migrate",
@@ -26731,7 +26731,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "75c00df56c0dce7f208d751dbf550cdf856f6790"
+                "reference": "47cec93e16382ce0795eebe7274bf783a38b14e6"
             },
             "type": "drupal-profile-custom",
             "authors": [

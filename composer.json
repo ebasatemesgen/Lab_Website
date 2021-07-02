@@ -556,11 +556,9 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
       "Kporras07\\ComposerSymlinks\\ScriptHandler::createSymlinks"
     ],
     "post-update-cmd": [
-      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
       "Kporras07\\ComposerSymlinks\\ScriptHandler::createSymlinks"
     ]
   },

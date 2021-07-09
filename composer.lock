@@ -26713,7 +26713,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "3214d6e8c1c10fdbea9877774e3d57c5887e777f"
+                "reference": "283e2ea8b48c00723302ff2d1b31d0af61ed4897"
             },
             "type": "drupal-module-custom",
             "authors": [

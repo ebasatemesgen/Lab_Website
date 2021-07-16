@@ -87,6 +87,9 @@
     },
     "drupal/twitter_api_block": {
       "3107146: Placing the block through Layout Builder fails": "https://www.drupal.org/files/issues/2021-05-14/twitter_api_block-3107146-8.patch"
+    },
+    "drupal/tablefield": {
+      "3163841: Undefined index: caption": "https://www.drupal.org/files/issues/2020-08-10/tablefield-empty-caption-notice-2.patch"
     }
   }
 }

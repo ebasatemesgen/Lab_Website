@@ -218,7 +218,8 @@
     "drupal/paragraphs_features": "^1.11",
     "drupal/smart_date": "^3.3",
     "drupal/search_api_solr_multilingual": "^3.1",
-    "drupal/acquia_search": "^3.0"
+    "drupal/acquia_search": "^3.0",
+    "drupal/view_mode_switch": "^2.0"
   },
   "repositories": {
     "drupal-packagist": {

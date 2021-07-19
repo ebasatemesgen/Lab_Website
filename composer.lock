@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61ef802fd8dac3f47d781526c8ee7abe",
+    "content-hash": "baf1b334ff9d2f4d131467568a0bcc35",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -332,8 +332,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/fengyuanchen/cropper/zipball/30c58b29ee21010e17e58ebab165fbd84285c685",
-                "reference": "30c58b29ee21010e17e58ebab165fbd84285c685",
-                "shasum": null
+                "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "type": "bower-asset",
             "license": [
@@ -351,8 +350,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/EightMedia/hammer.js/zipball/49731688380a91be07653ee2491ab48ece7952b5",
-                "reference": "49731688380a91be07653ee2491ab48ece7952b5",
-                "shasum": null
+                "reference": "49731688380a91be07653ee2491ab48ece7952b5"
             },
             "type": "bower-asset"
         },
@@ -367,8 +365,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/highcharts/highcharts-dist/zipball/4e5c8c82ad58815821de563f327de2fa3427d244",
-                "reference": "4e5c8c82ad58815821de563f327de2fa3427d244",
-                "shasum": null
+                "reference": "4e5c8c82ad58815821de563f327de2fa3427d244"
             },
             "type": "bower-asset",
             "license": [
@@ -386,8 +383,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/e786e3d9707ffd9b0dd330ca135b66344dcef85a",
-                "reference": "e786e3d9707ffd9b0dd330ca135b66344dcef85a",
-                "shasum": null
+                "reference": "e786e3d9707ffd9b0dd330ca135b66344dcef85a"
             },
             "type": "bower-asset",
             "license": [
@@ -405,8 +401,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/FrDH/mmenu-js/zipball/ea3b330bfa50b22064b39442db47d2bcde29171e",
-                "reference": "ea3b330bfa50b22064b39442db47d2bcde29171e",
-                "shasum": null
+                "reference": "ea3b330bfa50b22064b39442db47d2bcde29171e"
             },
             "type": "bower-asset"
         },
@@ -421,8 +416,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/kenwheeler/slick/zipball/0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee",
-                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee",
-                "shasum": null
+                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
             },
             "require": {
                 "bower-asset/jquery": ">=1.7"
@@ -542,9 +536,7 @@
             "version": "4.10.1",
             "dist": {
                 "type": "zip",
-                "url": "https://download.ckeditor.com/link/releases/link_4.10.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://download.ckeditor.com/link/releases/link_4.10.1.zip"
             },
             "type": "library"
         },
@@ -553,9 +545,7 @@
             "version": "4.10.1",
             "dist": {
                 "type": "zip",
-                "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.10.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.10.1.zip"
             },
             "type": "drupal-library"
         },
@@ -564,9 +554,7 @@
             "version": "4.10.1",
             "dist": {
                 "type": "zip",
-                "url": "https://download.ckeditor.com/templates/releases/templates_4.16.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://download.ckeditor.com/templates/releases/templates_4.16.0.zip"
             },
             "type": "drupal-library"
         },
@@ -2572,47 +2560,45 @@
         },
         {
             "name": "drupal/acquia_search",
-            "version": "3.0.4",
+            "version": "2.1.25",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acquia_search.git",
-                "reference": "3.0.4"
+                "reference": "2.1.25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_search-3.0.4.zip",
-                "reference": "3.0.4",
-                "shasum": "cc6fc6fb47a58159ee9e33325bdfdc197bc493b6"
+                "url": "https://ftp.drupal.org/files/projects/acquia_search-2.1.25.zip",
+                "reference": "2.1.25",
+                "shasum": "8ee2944ea7ef38fff6e0324f79025ab215399a06"
             },
             "require": {
+                "cweagans/composer-patches": "^1.6.7",
+                "drupal/acquia_connector": "^3",
                 "drupal/core": "^8.9 || ^9",
-                "drupal/search_api_solr": "^4.1.12",
+                "drupal/search_api": "^1.17",
+                "drupal/search_api_solr": "^1.9",
+                "drupal/search_api_solr_multilingual": "1.3",
                 "http-interop/http-factory-guzzle": "^1.0",
                 "php-http/guzzle6-adapter": "^2.0"
-            },
-            "conflict": {
-                "drupal/acquia_connector": "<3",
-                "drupal/search_api_solr_multilingual": "<3"
-            },
-            "require-dev": {
-                "drush/drush": "^10.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.4",
-                    "datestamp": "1623949113",
+                    "version": "2.1.25",
+                    "datestamp": "1621272160",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^10"
+                "enable-patching": true,
+                "patches": {
+                    "drupal/search_api_solr_multilingual": {
+                        "Issue 3029421: Remove handler schema/fieldtypes checking": "https://www.drupal.org/files/issues/2020-06-05/3029421-4-Remove-check-on-Acquia-Search.patch"
                     }
                 }
             },
@@ -2642,7 +2628,7 @@
                     "homepage": "https://www.drupal.org/user/49851"
                 }
             ],
-            "description": "Provides integration between your Drupal site and Acquia's hosted search service.",
+            "description": "Provides integration between your Drupal site and Acquia's hosted search service",
             "homepage": "https://www.drupal.org/project/acquia_search",
             "support": {
                 "source": "https://git.drupalcode.org/project/acquia_search"
@@ -13409,71 +13395,56 @@
         },
         {
             "name": "drupal/search_api_solr",
-            "version": "4.2.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_solr.git",
-                "reference": "4.2.0"
+                "reference": "8.x-1.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api_solr-4.2.0.zip",
-                "reference": "4.2.0",
-                "shasum": "ebdd5e5fdb0169207f544e2e5600bb8bc566f420"
+                "url": "https://ftp.drupal.org/files/projects/search_api_solr-8.x-1.11.zip",
+                "reference": "8.x-1.11",
+                "shasum": "5ceae0889e19c512307eebbedcc3145f8cdf55ad"
             },
             "require": {
-                "composer/semver": "^1.0|^3.0",
-                "consolidation/annotated-command": "^2.12|^4.1",
-                "drupal/core": "^8.8 || ^9",
-                "drupal/search_api": "~1.17",
-                "ext-dom": "*",
-                "ext-json": "*",
-                "ext-simplexml": "*",
-                "laminas/laminas-stdlib": "^3.2",
-                "maennchen/zipstream-php": "^1.2|^2.0",
-                "php": "^7.3|^8.0",
-                "solarium/solarium": "^6.1.3"
+                "drupal/core": "^8.9 || ^9",
+                "drupal/search_api": "^1.19",
+                "solarium/solarium": "^6.0"
             },
             "conflict": {
-                "drupal/acquia_search_solr": "<1.0.0-beta8",
-                "drupal/search_api_solr_multilingual": "<3.0.0"
+                "drupal/acquia_connector": "<3.0",
+                "drupal/acquia_search_solr": "*",
+                "drupal/search_api_pantheon": "<1.1"
             },
             "require-dev": {
-                "drupal/devel": "^4.0",
                 "drupal/facets": "1.x-dev",
                 "drupal/geofield": "1.x-dev",
                 "drupal/search_api_autocomplete": "1.x-dev",
                 "drupal/search_api_location": "1.x-dev",
-                "drupal/search_api_spellcheck": "3.x-dev",
-                "monolog/monolog": "^1.25",
-                "phayes/geophp": "^1.2"
+                "phayes/geophp": "dev-master"
             },
             "suggest": {
                 "drupal/facets": "Provides facetted search.",
-                "drupal/search_api_autocomplete": "Provides auto complete for search boxes.",
-                "drupal/search_api_location": "Provides location searches.",
-                "drupal/search_api_solr_nlp": "Highly recommended! Provides Solr field types based on natural language processing (NLP).",
-                "drupal/search_api_spellcheck": "Provides spell checking and 'Did You Mean?'."
+                "drupal/search_api_solr_multilingual": "Highly recommended if installation is multilingual or uses a language different than English."
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.2.0",
-                    "datestamp": "1624552136",
+                    "version": "8.x-1.11",
+                    "datestamp": "1622736934",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9"
-                    }
+                "branch-alias": {
+                    "dev-8.x-1.x": "1.x-dev"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -13506,41 +13477,45 @@
             "support": {
                 "source": "http://git.drupal.org/project/search_api_solr.git",
                 "issues": "https://www.drupal.org/project/issues/search_api_solr",
-                "chat": "https://drupalchat.me/channel/search"
+                "irc": "irc://irc.freenode.org/drupal-search-api"
             }
         },
         {
             "name": "drupal/search_api_solr_multilingual",
-            "version": "3.1.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_solr_multilingual.git",
-                "reference": "8.x-3.1"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api_solr_multilingual-8.x-3.1.zip",
-                "reference": "8.x-3.1",
-                "shasum": "56aea2ce9b7f3dceac5eca7147bf66120f50b71e"
+                "url": "https://ftp.drupal.org/files/projects/search_api_solr_multilingual-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "57a9e0ce9f9bace2651a38bae18ae71c1522743f"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
-                "drupal/search_api_solr": ">=3.0.0"
+                "drupal/core": "^8.9 || ^9",
+                "drupal/search_api_solr": "^1.8",
+                "maennchen/zipstream-php": "0.4.*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.1",
-                    "datestamp": "1586971671",
+                    "version": "8.x-1.3",
+                    "datestamp": "1613390509",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "1.x-dev"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -13552,7 +13527,7 @@
                     "homepage": "https://www.drupal.org/user/124705"
                 }
             ],
-            "description": "Provides the transition to search_api_solr 4.x.",
+            "description": "Offers an implementation of the Search API that uses an Apache Solr server for indexing content.",
             "homepage": "https://www.drupal.org/project/search_api_solr_multilingual",
             "support": {
                 "source": "https://git.drupalcode.org/project/search_api_solr_multilingual"
@@ -17355,9 +17330,7 @@
             "version": "45",
             "dist": {
                 "type": "file",
-                "url": "https://www.gstatic.com/charts/loader.js",
-                "reference": null,
-                "shasum": null
+                "url": "https://www.gstatic.com/charts/loader.js"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -17822,9 +17795,7 @@
             "version": "6.1.0",
             "dist": {
                 "type": "file",
-                "url": "https://code.highcharts.com/6.1.0/highcharts-3d.js",
-                "reference": null,
-                "shasum": null
+                "url": "https://code.highcharts.com/6.1.0/highcharts-3d.js"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -17839,9 +17810,7 @@
             "version": "6.1.0",
             "dist": {
                 "type": "file",
-                "url": "https://code.highcharts.com/6.1.0/modules/accessibility.js",
-                "reference": null,
-                "shasum": null
+                "url": "https://code.highcharts.com/6.1.0/modules/accessibility.js"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -17856,9 +17825,7 @@
             "version": "6.1.0",
             "dist": {
                 "type": "file",
-                "url": "https://code.highcharts.com/6.1.0/modules/export-data.js",
-                "reference": null,
-                "shasum": null
+                "url": "https://code.highcharts.com/6.1.0/modules/export-data.js"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -17873,9 +17840,7 @@
             "version": "6.1.0",
             "dist": {
                 "type": "file",
-                "url": "https://code.highcharts.com/6.1.0/modules/exporting.js",
-                "reference": null,
-                "shasum": null
+                "url": "https://code.highcharts.com/6.1.0/modules/exporting.js"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -17890,9 +17855,7 @@
             "version": "6.1.0",
             "dist": {
                 "type": "file",
-                "url": "https://code.highcharts.com/6.1.0/highcharts.js",
-                "reference": null,
-                "shasum": null
+                "url": "https://code.highcharts.com/6.1.0/highcharts.js"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -17907,9 +17870,7 @@
             "version": "6.1.0",
             "dist": {
                 "type": "file",
-                "url": "https://code.highcharts.com/6.1.0/highcharts-more.js",
-                "reference": null,
-                "shasum": null
+                "url": "https://code.highcharts.com/6.1.0/highcharts-more.js"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -17921,28 +17882,28 @@
         },
         {
             "name": "http-interop/http-factory-guzzle",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/http-interop/http-factory-guzzle.git",
-                "reference": "34861658efb9899a6618cef03de46e2a52c80fc0"
+                "reference": "f69b581de4a224b534484c5b777a73cad3412074"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/http-interop/http-factory-guzzle/zipball/34861658efb9899a6618cef03de46e2a52c80fc0",
-                "reference": "34861658efb9899a6618cef03de46e2a52c80fc0",
+                "url": "https://api.github.com/repos/http-interop/http-factory-guzzle/zipball/f69b581de4a224b534484c5b777a73cad3412074",
+                "reference": "f69b581de4a224b534484c5b777a73cad3412074",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/psr7": "^1.4.2",
+                "guzzlehttp/psr7": "^1.4.2||^2.0",
                 "psr/http-factory": "^1.0"
             },
             "provide": {
                 "psr/http-factory-implementation": "^1.0"
             },
             "require-dev": {
-                "http-interop/http-factory-tests": "^0.5",
-                "phpunit/phpunit": "^6.5"
+                "http-interop/http-factory-tests": "^0.9",
+                "phpunit/phpunit": "^8.5"
             },
             "type": "library",
             "autoload": {
@@ -17967,7 +17928,11 @@
                 "psr-17",
                 "psr-7"
             ],
-            "time": "2018-07-31T19:32:56+00:00"
+            "support": {
+                "issues": "https://github.com/http-interop/http-factory-guzzle/issues",
+                "source": "https://github.com/http-interop/http-factory-guzzle/tree/1.1.0"
+            },
+            "time": "2021-07-19T15:00:13+00:00"
         },
         {
             "name": "j7mbo/twitter-api-php",
@@ -18024,9 +17989,7 @@
             "version": "0.3.2",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/jgallen23/toc/archive/refs/heads/greenkeeper/update-all.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/jgallen23/toc/archive/refs/heads/greenkeeper/update-all.zip"
             },
             "type": "library"
         },
@@ -18035,9 +17998,7 @@
             "version": "1.7.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joeldbirch/superfish/zipball",
-                "reference": null,
-                "shasum": null
+                "url": "https://api.github.com/repos/joeldbirch/superfish/zipball"
             },
             "type": "library"
         },
@@ -18046,9 +18007,7 @@
             "version": "3.0.2",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/3.0.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/3.0.2.zip"
             },
             "type": "drupal-library"
         },
@@ -18943,29 +18902,24 @@
         },
         {
             "name": "maennchen/zipstream-php",
-            "version": "2.1.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maennchen/ZipStream-PHP.git",
-                "reference": "c4c5803cc1f93df3d2448478ef79394a5981cc58"
+                "reference": "89e0cdb3c9ecabef4da988852003781a7802afb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/c4c5803cc1f93df3d2448478ef79394a5981cc58",
-                "reference": "c4c5803cc1f93df3d2448478ef79394a5981cc58",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/89e0cdb3c9ecabef4da988852003781a7802afb7",
+                "reference": "89e0cdb3c9ecabef4da988852003781a7802afb7",
                 "shasum": ""
             },
             "require": {
-                "myclabs/php-enum": "^1.5",
-                "php": ">= 7.1",
-                "psr/http-message": "^1.0",
-                "symfony/polyfill-mbstring": "^1.0"
+                "ext-mbstring": "*",
+                "php": ">= 5.6"
             },
             "require-dev": {
-                "ext-zip": "*",
-                "guzzlehttp/guzzle": ">= 6.3",
-                "mikey179/vfsstream": "^1.6",
-                "phpunit/phpunit": ">= 7.5"
+                "phpunit/phpunit": "4.3.*"
             },
             "type": "library",
             "autoload": {
@@ -18983,16 +18937,12 @@
                     "email": "pabs@pablotron.org"
                 },
                 {
-                    "name": "Jonatan Männchen",
-                    "email": "jonatan@maennchen.ch"
-                },
-                {
                     "name": "Jesse Donat",
                     "email": "donatj@gmail.com"
                 },
                 {
-                    "name": "András Kolesár",
-                    "email": "kolesar@kolesar.hu"
+                    "name": "Jonatan Männchen",
+                    "email": "jonatan@maennchen.ch"
                 }
             ],
             "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
@@ -19000,7 +18950,11 @@
                 "stream",
                 "zip"
             ],
-            "time": "2020-05-30T13:11:16+00:00"
+            "support": {
+                "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
+                "source": "https://github.com/maennchen/ZipStream-PHP/tree/master"
+            },
+            "time": "2016-09-13T10:29:17+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -19318,52 +19272,6 @@
             "time": "2021-06-14T00:11:39+00:00"
         },
         {
-            "name": "myclabs/php-enum",
-            "version": "1.8.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/myclabs/php-enum.git",
-                "reference": "b942d263c641ddb5190929ff840c68f78713e937"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/b942d263c641ddb5190929ff840c68f78713e937",
-                "reference": "b942d263c641ddb5190929ff840c68f78713e937",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": "^7.3 || ^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.5",
-                "squizlabs/php_codesniffer": "1.*",
-                "vimeo/psalm": "^4.6.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MyCLabs\\Enum\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP Enum contributors",
-                    "homepage": "https://github.com/myclabs/php-enum/graphs/contributors"
-                }
-            ],
-            "description": "PHP Enum implementation",
-            "homepage": "http://github.com/myclabs/php-enum",
-            "keywords": [
-                "enum"
-            ],
-            "time": "2021-07-05T08:18:36+00:00"
-        },
-        {
             "name": "nikic/php-parser",
             "version": "v4.10.5",
             "source": {
@@ -19420,9 +19328,7 @@
             "version": "0.5.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/a11y-accordion-tabs/-/a11y-accordion-tabs-0.5.0.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/a11y-accordion-tabs/-/a11y-accordion-tabs-0.5.0.tgz"
             },
             "type": "npm-asset",
             "extra": {
@@ -19439,9 +19345,7 @@
             "version": "5.9.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/dropzone/-/dropzone-5.9.2.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/dropzone/-/dropzone-5.9.2.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -19453,9 +19357,7 @@
             "version": "4.7.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/fontawesome/-/fontawesome-4.7.2.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/fontawesome/-/fontawesome-4.7.2.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -19467,9 +19369,7 @@
             "version": "0.2.3",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/jquery-ui-touch-punch/-/jquery-ui-touch-punch-0.2.3.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/jquery-ui-touch-punch/-/jquery-ui-touch-punch-0.2.3.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -20703,6 +20603,10 @@
                 "psr",
                 "psr-14"
             ],
+            "support": {
+                "issues": "https://github.com/php-fig/event-dispatcher/issues",
+                "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
+            },
             "time": "2019-01-08T18:20:26+00:00"
         },
         {
@@ -22990,6 +22894,10 @@
                 "search",
                 "solr"
             ],
+            "support": {
+                "issues": "https://github.com/solariumphp/solarium/issues",
+                "source": "https://github.com/solariumphp/solarium/tree/6.1.4"
+            },
             "time": "2021-07-06T10:45:42+00:00"
         },
         {
@@ -27219,5 +27127,6 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
 }

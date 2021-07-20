@@ -622,7 +622,8 @@
       "docroot/libraries/jquery.mmenu": "docroot/libraries/mmenu",
       "vendor/ckeditor/anchor_link": "docroot/libraries/ckeditor/plugins/link",
       "vendor/joeldbirch/superfish/dist": "docroot/libraries/superfish/dist",
-      "vendor/joeldbirch/superfish/package.json": "docroot/libraries/superfish/package.json"
+      "vendor/joeldbirch/superfish/package.json": "docroot/libraries/superfish/package.json",
+      "vendor/phayes/geophp":"docroot/modules/contrib/geofield/lib/phayes-geophp/v1.2"
     }
   }
 }

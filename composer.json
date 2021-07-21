@@ -220,7 +220,8 @@
     "drupal/view_mode_switch": "^2.0",
     "drupal/search_api_solr": "^1.10",
     "drupal/acquia_search": "^2.1",
-    "drupal/svg_image": "^1.14"
+    "drupal/svg_image": "^1.14",
+    "drupal/entity_update": "^2.0@RC"
   },
   "repositories": {
     "drupal-packagist": {

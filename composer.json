@@ -78,7 +78,6 @@
     "npm-asset/fontawesome": "^4.7",
     "drupal/menu_block": "1.x-dev",
     "drupal/permissions_by_term": "^3.1",
-    "drupal/search_api_solr": "^1.10",
     "drupal/easy_breadcrumb": "^1.8",
     "drupal/semanticviews": "^2.2",
     "drupal/checklistapi": "^1.7",
@@ -209,7 +208,6 @@
     "drupal/poll": "^1.4",
     "npm-asset/jquery-ui-touch-punch": "^0.2.3",
     "drupal/jquery_ui_checkboxradio": "^1.2",
-    "drupal/acquia_search": "^2.1",
     "drupal/message": "^1.2",
     "drupal/umn_dm_import": "2.1.0",
     "drupal/twitter_api_block": "^3.0",
@@ -218,7 +216,12 @@
     "jgallen23/toc": "^0.3.2",
     "drupal/toc_js": "^2.0",
     "drupal/paragraphs_features": "^1.11",
-    "drupal/smart_date": "^3.3"
+    "drupal/smart_date": "^3.3",
+    "drupal/view_mode_switch": "^2.0",
+    "drupal/search_api_solr": "^1.10",
+    "drupal/acquia_search": "^2.1",
+    "drupal/svg_image": "^1.14",
+    "drupal/entity_update": "^2.0@RC"
   },
   "repositories": {
     "drupal-packagist": {
@@ -620,7 +623,8 @@
       "docroot/libraries/jquery.mmenu": "docroot/libraries/mmenu",
       "vendor/ckeditor/anchor_link": "docroot/libraries/ckeditor/plugins/link",
       "vendor/joeldbirch/superfish/dist": "docroot/libraries/superfish/dist",
-      "vendor/joeldbirch/superfish/package.json": "docroot/libraries/superfish/package.json"
+      "vendor/joeldbirch/superfish/package.json": "docroot/libraries/superfish/package.json",
+      "vendor/phayes/geophp":"docroot/modules/contrib/geofield/lib/phayes-geophp/v1.2"
     }
   }
 }

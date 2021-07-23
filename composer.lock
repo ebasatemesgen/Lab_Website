@@ -27028,7 +27028,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "cf0235069cdaefba59fcf93e5a1b818aaed1cfe0"
+                "reference": "1a5132dd462c409e897a3cadcce1930f53b47d84"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -27037,7 +27037,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2021-07-20T16:07:23+00:00"
+            "time": "2021-07-23T16:58:30+00:00"
         },
         {
             "name": "umn/slick_media",
@@ -28265,5 +28265,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

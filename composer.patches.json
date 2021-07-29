@@ -52,7 +52,7 @@
       "3039185  Allow field blocks to display the configuration label when set in Layout Builder": "https://www.drupal.org/files/issues/2020-04-17/allow-field-blocks-to-display-label-in-layout-builder-3039185-22.patch",
       "2885370: SystemMainBlock::build does not always return array": "https://www.drupal.org/files/issues/systemmainblock_build-2885370-3.patch",
       "2325899: UI fatal caused by views argument handlers no longer can provide their own default argument handling": "https://www.drupal.org/files/issues/2021-06-28/2325899-169-9.3-169.patch",
-      "3053881: Reverting entity revisions that contain custom blocks erroneously triggers EntityChangedConstraint" : "https://www.drupal.org/files/issues/2021-06-11/3053881-49.patch"
+      "3053881: Reverting entity revisions that contain custom blocks erroneously triggers EntityChangedConstraint" : "https://www.drupal.org/files/issues/2021-06-03/3053881-47.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"

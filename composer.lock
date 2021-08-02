@@ -27010,7 +27010,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "ddd899dd702c362f09a8829d6dfd9561781ba3e0"
+                "reference": "d15e097fec3960bfa9928a9a40c3bf311b17a7c1"
             },
             "type": "drupal-module-custom",
             "authors": [

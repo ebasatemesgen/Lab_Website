@@ -14,7 +14,7 @@
   "require": {
     "composer/installers": "^1.7",
     "cweagans/composer-patches": "^1.6.4",
-    "acquia/lightning": "~5.1.8",
+    "acquia/lightning": "~5.2.1",
     "drupal/paragraphs": "^1.10",
     "drupal/simplesamlphp_auth": "^3.0",
     "drupal/google_analytics": "^3.1",

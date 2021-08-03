@@ -1,0 +1,15 @@
+diff --git a/composer.json b/composer.json
+index 83c582c1..c8b76afc 100644
+--- a/composer.json
++++ b/composer.json
+@@ -5,8 +5,8 @@
+   "homepage": "http://drupal.org/project/h5p",
+   "license": "GPL-2.0+",
+   "require": {
+-    "h5p/h5p-core": "1.24.2",
+-    "h5p/h5p-editor": "1.24.3"
++    "h5p/h5p-core": "1.24.0",
++    "h5p/h5p-editor": "1.24.1"
+   },
+   "minimum-stability": "RC"
+ }

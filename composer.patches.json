@@ -35,12 +35,6 @@
     "drupal/lightning_workflow": {
       "3126343: Scheduler needs to maintain its base fields properly": "https://www.drupal.org/files/issues/2020-07-08/3126343-11.patch"
     },
-    "drupal/h5p": {
-      "3126374: deprecated syntax warnings": "https://www.drupal.org/files/issues/2020-12-02/2020_12_02_h5p_syntax_update.patch"
-    },
-    "h5p/h5p-core": {
-      "Fix h5p php 7.4 issue": "patches/h5pphp.patch"
-    },
     "drupal/core": {
       "2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2020-12-01/cannot-use-relationship-2457999-259.patch",
       "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",

@@ -202,7 +202,7 @@
     "drupal/ckeditorheight": "^1.8",
     "drupal/view_mode_page": "^4.0",
     "drupal/umn_dm_migrate": "2.1.0",
-    "drupal/umn_dm_storage": "2.1.0",
+    "drupal/umn_dm_storage": "2.1.1",
     "drupal/h5p": "dev-3150110-drupal-9-readyness",
     "drupal/field_permissions": "^1.1",
     "drupal/poll": "^1.4",

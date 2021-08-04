@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb5ee161cec353b0b4adb0690c4f5895",
+    "content-hash": "a6ea5f0965d36937ad186e899c7266b6",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -15612,15 +15612,15 @@
         },
         {
             "name": "drupal/umn_dm_storage",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git",
-                "reference": "213f4313c722d3a314e04b85335d6a6dbe42332e"
+                "reference": "3aca6ac75725bf37a81646b6153757f3b561fdc9"
             },
             "type": "drupal-module",
             "description": "contains the entity type configuration for Digital Measures profile and profile fragments",
-            "time": "2021-06-16T23:48:02+00:00"
+            "time": "2021-08-03T20:24:20+00:00"
         },
         {
             "name": "drupal/unpublished_node_permissions",

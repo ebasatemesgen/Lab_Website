@@ -35,6 +35,9 @@
     "drupal/lightning_workflow": {
       "3126343: Scheduler needs to maintain its base fields properly": "https://www.drupal.org/files/issues/2020-07-08/3126343-11.patch"
     },
+    "drupal/redirect_after_login": {
+      "3214949: Headers have already been sent after upgrade to Drupal 9.2": "https://www.drupal.org/files/issues/2021-06-20/3214949.patch"
+    },
     "drupal/core": {
       "2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2020-12-01/cannot-use-relationship-2457999-259.patch",
       "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",

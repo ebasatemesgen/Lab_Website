@@ -100,6 +100,9 @@
     },
     "drupal/contact_storage": {
       "3191567: Undefined index notice": "https://www.drupal.org/files/issues/2021-01-12/3191567-9.patch"
+    },
+    "drupal/entity_reference_revisions": {
+      "2568187: Improve EntityReferenceRevisionsItem::generateSampleValue to be recursion-safe and devel_generate compatible": "https://www.drupal.org/files/issues/2021-04-05/2568187-recursion_limit-51.patch"
     }
   }
 }

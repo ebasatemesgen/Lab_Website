@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a33a0867ea85ff1f08b291d52cbd82d4",
+    "content-hash": "8c99bf93aa9b2a6e5726e74ce7f8d301",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -7311,6 +7311,59 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_permissions",
                 "issues": "https://www.drupal.org/project/issues/field_permissions"
+            }
+        },
+        {
+            "name": "drupal/file_delete",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/file_delete.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/file_delete-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "d62822374b8866a92719a3bc854562d0b1ad38dc"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/coder": "^8.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1582059332",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Eom",
+                    "homepage": "https://www.drupal.org/user/3458427",
+                    "email": "jonnyeom@gmail.com"
+                }
+            ],
+            "description": "Provides the ability to easily delete files within Drupal administration.",
+            "homepage": "https://www.drupal.org/project/file_delete",
+            "keywords": [
+                "Drupal",
+                "File"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/file_delete",
+                "issues": "https://www.drupal.org/project/issues/file_delete"
             }
         },
         {

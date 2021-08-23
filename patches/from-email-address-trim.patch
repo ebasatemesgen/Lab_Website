@@ -1,0 +1,13 @@
+diff --git a/vendor/symfony/mime/Address.php b/vendor/symfony/mime/Address.php
+index ae83efd73e..b6db1910ca 100644
+--- a/vendor/symfony/mime/Address.php
++++ b/vendor/symfony/mime/Address.php
+@@ -49,7 +49,7 @@ public function __construct(string $address, string $name = '')
+             self::$validator = new EmailValidator();
+         }
+ 
+-        $this->address = trim($address);
++        $this->address = trim(str_replace([">", "<"], '', $address));
+         $this->name = trim(str_replace(["\n", "\r"], '', $name));
+ 
+         if (!self::$validator->isValid($this->address, class_exists(MessageIDValidation::class) ? new MessageIDValidation() : new RFCValidation())) {

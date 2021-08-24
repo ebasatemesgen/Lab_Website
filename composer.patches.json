@@ -58,7 +58,8 @@
       "3053881: Reverting entity revisions that contain custom blocks erroneously triggers EntityChangedConstraint" : "https://www.drupal.org/files/issues/2021-06-03/3053881-47.patch",
       "2893407: POST /quickedit/metadata returning HTTP 503" : "https://www.drupal.org/files/issues/2021-06-07/2893407-47.patch",
       "3103422: Potential for recrsion in EntityReferenceItem::generateSampleValue() with circular entity references": "https://www.drupal.org/files/issues/2019-12-27/potential_for_recurs-3103422-2.patch",
-      "1650930: Use READ COMMITTED by default for MySQL transactions": "https://www.drupal.org/files/issues/2021-06-11/1650930_131.patch"
+      "1650930: Use READ COMMITTED by default for MySQL transactions": "https://www.drupal.org/files/issues/2021-06-11/1650930_131.patch",
+      "3121395: Fatal error after add Main page content block layout builder": "https://www.drupal.org/files/issues/2020-03-21/3121395-fix-fatal-error-after-add-Main-page-content-block.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9eeca1bd121dee2a7dacf2876f3e6562",
+    "content-hash": "9398cf675a75f7d0fab2cba0cb3f1963",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -12593,6 +12593,58 @@
             "homepage": "https://www.drupal.org/project/paragraphs_features",
             "support": {
                 "source": "https://git.drupalcode.org/project/paragraphs_features"
+            }
+        },
+        {
+            "name": "drupal/path_file",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/path_file.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/path_file-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "f61e339d6829a8da0997e4738e442d58b0f7140e"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1627934339",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dtraft",
+                    "homepage": "https://www.drupal.org/user/3237305"
+                },
+                {
+                    "name": "miedward",
+                    "homepage": "https://www.drupal.org/user/126511"
+                },
+                {
+                    "name": "peezy",
+                    "homepage": "https://www.drupal.org/user/367215"
+                }
+            ],
+            "description": "Creates a new content type which can will render a file at the given path.",
+            "homepage": "https://www.drupal.org/project/path_file",
+            "support": {
+                "source": "https://git.drupalcode.org/project/path_file"
             }
         },
         {

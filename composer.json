@@ -96,10 +96,10 @@
     "drupal/group": "^1.0",
     "ckeditor/fakeobjects": "^4.10",
     "ckeditor/anchor_link": "^4.10",
-    "umn/folwell_components": "dev-9-dev",
+    "umn/folwell_components": "dev-9.x-components-build",
     "umn/umn_superfish": "dev-9-dev",
     "drupal/superfish": "^1.3",
-    "umn/folwell": "dev-9-dev",
+    "umn/folwell": "dev-9.x-folwell-build",
     "google/charts": "45",
     "drush/drush": "^10.3",
     "drupal/layout_builder_modal": "^1.1",
@@ -222,7 +222,11 @@
     "drupal/acquia_search": "^2.1",
     "drupal/svg_image": "^1.14",
     "drupal/entity_update": "^2.0@RC",
-    "drupal/content_lock": "^2.2"
+    "drupal/content_lock": "^2.2",
+    "drupal/migrate_file_to_media": "^2.0",
+    "drupal/quick_node_clone": "^1.14",
+    "drupal/file_delete": "^1.0",
+    "drupal/path_file": "^1.1"
   },
   "repositories": {
     "drupal-packagist": {

@@ -125,7 +125,7 @@
     "drush/config-extra": "^1.0",
     "drupal/addtoany": "^1.12",
     "drupal/media_entity_download": "^2.0@beta",
-    "umn/d8lite_migration": "dev-conference",
+    "umn/d8lite_migration": "dev-cbitg",
     "umn/cloudflare_verify": "dev-9.x-dev",
     "drupal/embed": "^1.4",
     "drupal/smart_trim": "^1.2",

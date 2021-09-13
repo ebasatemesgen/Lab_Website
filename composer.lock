@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9398cf675a75f7d0fab2cba0cb3f1963",
+    "content-hash": "376ce6b93a8e3c10b0a2f99409b9ea87",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -27842,11 +27842,11 @@
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-9-dev",
+            "version": "dev-9.x-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "d1a7df37b039456c6db69202381c3540b53f9588"
+                "reference": "d058e8d7193927f80f2fcf24b428e3b44495a6e3"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -27855,7 +27855,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2021-09-08T19:14:57+00:00"
+            "time": "2021-09-13T18:42:01+00:00"
         },
         {
             "name": "umn/slick_media",

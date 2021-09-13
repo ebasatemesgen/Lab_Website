@@ -117,6 +117,9 @@
     },
     "drupal/ctools": {
       "3029323: Cannot use Entity View block in Layout Builder when there is no context": "https://www.drupal.org/files/issues/2021-05-24/ctools-layout_builder_context-3029323-12.patch"
+    },
+    "drupal/viewsreference": {
+      "2938433: Add Label field formatter": "https://www.drupal.org/files/issues/2021-01-27/add_label_formatter-2938433-7.patch"
     }
   }
 }

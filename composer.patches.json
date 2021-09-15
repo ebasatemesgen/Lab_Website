@@ -38,6 +38,9 @@
     "drupal/redirect_after_login": {
       "3214949: Headers have already been sent after upgrade to Drupal 9.2": "https://www.drupal.org/files/issues/2021-06-20/3214949.patch"
     },
+    "symfony/mime": {
+      "Fix issue with brackets on email": "patches/from-email-address-trim.patch"
+    },
     "drupal/core": {
       "2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2020-12-01/cannot-use-relationship-2457999-259.patch",
       "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",
@@ -53,7 +56,12 @@
       "2885370: SystemMainBlock::build does not always return array": "https://www.drupal.org/files/issues/systemmainblock_build-2885370-3.patch",
       "2325899: UI fatal caused by views argument handlers no longer can provide their own default argument handling": "https://www.drupal.org/files/issues/2021-06-28/2325899-169-9.3-169.patch",
       "3053881: Reverting entity revisions that contain custom blocks erroneously triggers EntityChangedConstraint" : "https://www.drupal.org/files/issues/2021-06-03/3053881-47.patch",
-      "2893407: POST /quickedit/metadata returning HTTP 503" : "https://www.drupal.org/files/issues/2021-06-07/2893407-47.patch"
+      "2893407: POST /quickedit/metadata returning HTTP 503" : "https://www.drupal.org/files/issues/2021-06-07/2893407-47.patch",
+      "3103422: Potential for recrsion in EntityReferenceItem::generateSampleValue() with circular entity references": "https://www.drupal.org/files/issues/2019-12-27/potential_for_recurs-3103422-2.patch",
+      "1650930: Use READ COMMITTED by default for MySQL transactions": "https://www.drupal.org/files/issues/2021-06-11/1650930_131.patch",
+      "3121395: Fatal error after add Main page content block layout builder": "https://www.drupal.org/files/issues/2020-03-21/3121395-fix-fatal-error-after-add-Main-page-content-block.patch",
+      "2794481: Allow end date to be optional": "https://www.drupal.org/files/issues/2018-05-14/2794481-60.patch",
+      "3049332: PHP message: Error: Call to a member function getEntityTypeId() on null (Layout Builder)": "https://www.drupal.org/files/issues/2021-03-19/3049332-inline-56.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"
@@ -69,8 +77,10 @@
     },
     "drupal/group": {
       "3053524: Error: Call to a member function label() on null in GroupContentEnablerBase->getContentLabel()": "https://www.drupal.org/files/issues/2019-06-06/label-on-null-3053524-6.patch",
-      "2774827: Get a token of a node's parent group to create a pathauto pattern": "https://www.drupal.org/files/issues/2020-02-21/group-gnode_tokens-2774827-62.patch",
-      "3112501:Add views contextual filter to get group ID from either URL or group content": "https://www.drupal.org/files/issues/2020-02-10/views-cont-filter-to-get-gid-from-url-or-group-content-3112501.patch"
+      "2774827: Get a token of a node's parent group to create a pathauto pattern": "https://www.drupal.org/files/issues/2020-11-17/group-gnode_tokens-2774827-74.patch",
+      "3112501:Add views contextual filter to get group ID from either URL or group content": "https://www.drupal.org/files/issues/2020-02-10/views-cont-filter-to-get-gid-from-url-or-group-content-3112501.patch",
+      "2797793: Entities identified by strings as group content": "https://www.drupal.org/files/issues/2021-06-15/group-support_string_entity_ids-2797793-260.patch",
+      "2906085: Content moderation integration: transition permissions and latest version access": "https://www.drupal.org/files/issues/2020-09-23/2906085-80.patch"
     },
     "drupal/views_aggregator" : {
       "3087112: Enumerаte * of Titles drops links": "https://www.drupal.org/files/issues/2020-03-12/enumerate_of_titles_drops_links-3087112-10.patch"
@@ -98,6 +108,12 @@
     },
     "drupal/contact_storage": {
       "3191567: Undefined index notice": "https://www.drupal.org/files/issues/2021-01-12/3191567-9.patch"
+    },
+    "drupal/entity_reference_revisions": {
+      "2568187: Improve EntityReferenceRevisionsItem::generateSampleValue to be recursion-safe and devel_generate compatible": "https://www.drupal.org/files/issues/2021-04-05/2568187-recursion_limit-51.patch"
+    },
+    "drupal/ctools": {
+      "3029323: Cannot use Entity View block in Layout Builder when there is no context": "https://www.drupal.org/files/issues/2021-05-24/ctools-layout_builder_context-3029323-12.patch"
     }
   }
 }

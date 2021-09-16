@@ -227,7 +227,8 @@
     "drupal/quick_node_clone": "^1.14",
     "drupal/file_delete": "^1.0",
     "drupal/path_file": "^1.1",
-    "drupal/exclude_node_title": "^1.2"
+    "drupal/exclude_node_title": "^1.2",
+    "drupal/eva": "^2.1"
   },
   "repositories": {
     "drupal-packagist": {

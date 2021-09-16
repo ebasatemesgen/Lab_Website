@@ -26,7 +26,7 @@
     "drupal/robotstxt": "^1.0",
     "drupal/simple_gmap": "^3.0",
     "umn/umn_features": "9.0",
-    "umn/lightning_umn": "dev-9.x-build",
+    "umn/lightning_umn": "dev-9.x-release",
     "umn/cog_umn": "dev-9.x-prod",
     "umn/umn_search": "dev-9-dev",
     "umn/crmform": "dev-d9",

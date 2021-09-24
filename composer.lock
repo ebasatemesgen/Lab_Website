@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e423a3702f8a790864fdd89fafb90ce9",
+    "content-hash": "3826cde721175d5a32df0341541c2a55",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -27098,11 +27098,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-9.x-folwell-build",
+            "version": "2021.03.03",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "227924c6fbd20c439f380951db05798b39e9194b"
+                "reference": "2ab9a21b7cce5c61887b294fc3061ed23b526d6c"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -27115,15 +27115,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2021-09-09T15:09:27+00:00"
+            "time": "2021-02-26T16:32:51+00:00"
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-9.x-components-build",
+            "version": "2020.09.29",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "f706ec1615fdd73d7e3cd50eea8455743f2a8296"
+                "reference": "3a9fc8f8152fe1f8aa90f1e51f5e1f43ab0fec52"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -27133,7 +27133,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2021-09-13T15:58:16+00:00"
+            "time": "2020-09-28T18:55:56+00:00"
         },
         {
             "name": "umn/lightning_umn",
@@ -28378,9 +28378,7 @@
         "drupal/better_exposed_filters": 10,
         "drupal/menu_block": 20,
         "drupal/roleassign": 15,
-        "umn/folwell_components": 20,
         "umn/umn_superfish": 20,
-        "umn/folwell": 20,
         "umn/bootstrap_umn": 20,
         "drupal/http_response_headers": 15,
         "drupal/charts": 10,

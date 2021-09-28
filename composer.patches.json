@@ -61,16 +61,20 @@
       "1650930: Use READ COMMITTED by default for MySQL transactions": "https://www.drupal.org/files/issues/2021-06-11/1650930_131.patch",
       "3121395: Fatal error after add Main page content block layout builder": "https://www.drupal.org/files/issues/2020-03-21/3121395-fix-fatal-error-after-add-Main-page-content-block.patch",
       "2794481: Allow end date to be optional": "https://www.drupal.org/files/issues/2018-05-14/2794481-60.patch",
-      "3049332: PHP message: Error: Call to a member function getEntityTypeId() on null (Layout Builder)": "https://www.drupal.org/files/issues/2021-03-19/3049332-inline-56.patch"
+      "3049332: PHP message: Error: Call to a member function getEntityTypeId() on null (Layout Builder)": "https://www.drupal.org/files/issues/2021-03-19/3049332-inline-56.patch",
+      "3007424: Multiple usages of FieldPluginBase::getEntity do not check for NULL, leading to WSOD" : "https://www.drupal.org/files/issues/2020-09-03/3007424-108.patch",
+      "3020876: Contextual links of reusable content blocks are not displayed when rendering entities built via Layout Builder": "https://www.drupal.org/files/issues/2020-09-25/contextual_links_with_LB-3020876-38.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"
+    },
+    "drupal/field_group": {
+      "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-07-22/2969051-37.patch"
     },
     "drupal/media_entity_download": {
       "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
     },
     "drupal/entity_embed": {
-      "3075245: Form Validation in Format Config is Too Strict for data- Attributes": "https://www.drupal.org/files/issues/2019-08-16/3075245-2.patch",
       "3069448: Array to string conversion for Media Image": "https://www.drupal.org/files/issues/2019-10-18/entity-embed-array-to-string--3069448-19.patch",
       "3077225: Logs flooded with warning messages Invalid display settings encountered":"https://www.drupal.org/files/issues/2019-08-26/3077225-reduce-invalid-config-logs.patch",
       "3070343: Allow to add a Drupal core link with Link Widget for Image entities using Entity Embed Dialog in CKEditor": "https://www.drupal.org/files/issues/2019-11-15/link-image-media-entities-3070343-19.patch"
@@ -114,6 +118,9 @@
     },
     "drupal/ctools": {
       "3029323: Cannot use Entity View block in Layout Builder when there is no context": "https://www.drupal.org/files/issues/2021-05-24/ctools-layout_builder_context-3029323-12.patch"
+    },
+    "drupal/viewsreference": {
+      "2938433: Add Label field formatter": "https://www.drupal.org/files/issues/2021-01-27/add_label_formatter-2938433-7.patch"
     }
   }
 }

@@ -109,9 +109,6 @@
     "drupal/tablefield": {
       "3163841: Undefined index: caption": "https://www.drupal.org/files/issues/2020-08-10/tablefield-empty-caption-notice-2.patch"
     },
-    "drupal/acquia_search": {
-      "3202247: Cannot connect to solr server after upgrading Acquia Connector to 3.0.1": "https://www.drupal.org/files/issues/2021-07-01/acquia_search_3202247-8.patch"
-    },
     "drupal/contact_storage": {
       "3191567: Undefined index notice": "https://www.drupal.org/files/issues/2021-01-12/3191567-9.patch"
     },

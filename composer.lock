@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93c8abc9d684f59e87916b22ec9a959e",
+    "content-hash": "67c5ac5148bb5d7ee27ecde345019d77",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -15440,15 +15440,15 @@
         },
         {
             "name": "drupal/umn_dm_storage",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git",
-                "reference": "3aca6ac75725bf37a81646b6153757f3b561fdc9"
+                "reference": "383672d4953aa3ccf722851ee5d08801e2b146c2"
             },
             "type": "drupal-module",
             "description": "contains the entity type configuration for Digital Measures profile and profile fragments",
-            "time": "2021-08-03T20:24:20+00:00"
+            "time": "2021-10-11T21:16:49+00:00"
         },
         {
             "name": "drupal/unpublished_node_permissions",

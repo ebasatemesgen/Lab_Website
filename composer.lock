@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "67c5ac5148bb5d7ee27ecde345019d77",
+    "content-hash": "7c7f0a14d63b7a854e25497244369ee4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -15393,11 +15393,11 @@
         },
         {
             "name": "drupal/umn_dm_import",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:hinte019/umn_dm_import.git",
-                "reference": "efabb33b570130e644bf94b0f76b680332bf0170"
+                "reference": "4be19c59b791a8c71b524962253c884d76f2fa05"
             },
             "require": {
                 "drupal/core": "^9",
@@ -15411,15 +15411,15 @@
                 }
             ],
             "description": "Set up Digital Measures profiles to be imported periodically, or preform a manual import.",
-            "time": "2021-06-16T23:58:20+00:00"
+            "time": "2021-10-19T16:13:00+00:00"
         },
         {
             "name": "drupal/umn_dm_migrate",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_migrate.git",
-                "reference": "82e88dc377c3ec2d6c0659ba79a424ad278997d4"
+                "reference": "34fe26d45c8a2b40c51d3e13da21855e78a9571c"
             },
             "require": {
                 "drupal/core": "^8.8 | ^9",
@@ -15436,7 +15436,7 @@
             },
             "type": "drupal-module",
             "description": "Contains migrations and configuration for migrating Profiles from Digital Measures into a Drupal site.",
-            "time": "2021-06-17T00:28:54+00:00"
+            "time": "2021-10-12T20:44:30+00:00"
         },
         {
             "name": "drupal/umn_dm_storage",

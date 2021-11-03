@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5d0424e374c6a294f35ef9c3bf7eae9",
+    "content-hash": "b7b5f0715259cdeb7fb0c4543e9cc5b8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -15512,11 +15512,11 @@
         },
         {
             "name": "drupal/umn_dm_migrate",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_migrate.git",
-                "reference": "34fe26d45c8a2b40c51d3e13da21855e78a9571c"
+                "reference": "f981b651f22acd837ef4229b18d58002269803b9"
             },
             "require": {
                 "drupal/core": "^8.8 | ^9",
@@ -15533,19 +15533,19 @@
             },
             "type": "drupal-module",
             "description": "Contains migrations and configuration for migrating Profiles from Digital Measures into a Drupal site.",
-            "time": "2021-10-12T20:44:30+00:00"
+            "time": "2021-11-02T17:03:53+00:00"
         },
         {
             "name": "drupal/umn_dm_storage",
-            "version": "2.1.2",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git",
-                "reference": "383672d4953aa3ccf722851ee5d08801e2b146c2"
+                "reference": "747156e00cf24b46283e7669c3dac53793e633f3"
             },
             "type": "drupal-module",
             "description": "contains the entity type configuration for Digital Measures profile and profile fragments",
-            "time": "2021-10-11T21:16:49+00:00"
+            "time": "2021-11-02T17:03:18+00:00"
         },
         {
             "name": "drupal/unpublished_node_permissions",

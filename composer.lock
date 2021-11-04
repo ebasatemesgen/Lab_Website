@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b007a9c20e7a6774d36f9314d14ab6c0",
+    "content-hash": "3334666b98f377d069dad4f8980857cd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -27315,7 +27315,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "94016dfa508cfa5125d7338e761c9666a586431d"
+                "reference": "8ea3eb13754ac0582960e2c17aa9411ad15b8655"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -27328,7 +27328,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2021-11-02T20:42:28+00:00"
+            "time": "2021-11-01T15:05:01+00:00"
         },
         {
             "name": "umn/folwell_components",
@@ -27336,7 +27336,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "6fd9f50c9d1c78907e9fd1673ca2246a330fb865"
+                "reference": "f706ec1615fdd73d7e3cd50eea8455743f2a8296"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -27346,7 +27346,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2021-11-03T12:06:12+00:00"
+            "time": "2021-09-13T15:58:16+00:00"
         },
         {
             "name": "umn/lightning_umn",

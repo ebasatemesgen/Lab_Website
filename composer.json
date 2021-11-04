@@ -241,7 +241,6 @@
         "drupal/panelizer": "^5.0-beta3",
         "drupal/pendo": "^1@alpha",
         "drupal/search_api": "^1.17",
-        "drupal/instagram_lite": "^1.0",
         "drupal/seckit": "2.0"
     },
     "repositories": {

@@ -242,7 +242,8 @@
         "drupal/pendo": "^1@alpha",
         "drupal/search_api": "^1.17",
         "drupal/seckit": "2.0",
-        "drupal/purge_invalidation_form": "^2.0"
+        "drupal/purge_invalidation_form": "^2.0",
+        "drupal/masonry": "^1.2"
     },
     "repositories": {
         "drupal-packagist": {

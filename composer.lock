@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0fde777888eba5bdb4ba4a618b31c49b",
+    "content-hash": "55347fd4ad9e4e5ba0aaec10aca92c32",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -15602,11 +15602,11 @@
         },
         {
             "name": "drupal/umn_dm_import",
-            "version": "2.1.2",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:hinte019/umn_dm_import.git",
-                "reference": "331fc67620bb62e1cefcae6c561cc17229259411"
+                "reference": "218d1a0e3bfbcfa14f965bf2474d93be1a356810"
             },
             "require": {
                 "drupal/core": "^9",
@@ -15620,15 +15620,15 @@
                 }
             ],
             "description": "Set up Digital Measures profiles to be imported periodically, or preform a manual import.",
-            "time": "2021-11-09T18:06:15+00:00"
+            "time": "2021-11-24T01:40:38+00:00"
         },
         {
             "name": "drupal/umn_dm_migrate",
-            "version": "2.1.3",
+            "version": "2.1.4",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_migrate.git",
-                "reference": "d9ec5e10c42f4d031aac07ef2ac64dc14bf519a7"
+                "reference": "05013741426a9248244cb1894b8fa2165f5b71ee"
             },
             "require": {
                 "drupal/core": "^8.8 | ^9",
@@ -15645,19 +15645,19 @@
             },
             "type": "drupal-module",
             "description": "Contains migrations and configuration for migrating Profiles from Digital Measures into a Drupal site.",
-            "time": "2021-11-09T18:09:03+00:00"
+            "time": "2021-11-24T01:49:02+00:00"
         },
         {
             "name": "drupal/umn_dm_storage",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git",
-                "reference": "5a4d1fae134fe7855b0d1bf1f076c9d06ee153a0"
+                "reference": "c9a3b0d0c0f23e75228ffbed9e69aa11be210154"
             },
             "type": "drupal-module",
             "description": "contains the entity type configuration for Digital Measures profile and profile fragments",
-            "time": "2021-11-09T18:14:00+00:00"
+            "time": "2021-11-24T01:53:13+00:00"
         },
         {
             "name": "drupal/unpublished_node_permissions",
@@ -27439,7 +27439,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "a79e27a34278f5ee40495b8385a6a96aeaa20304"
+                "reference": "365c4136d509dc3ecd2e9af47c18a55bfabbc744"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -27449,7 +27449,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2021-11-10T13:16:16+00:00"
+            "time": "2021-11-20T00:18:56+00:00"
         },
         {
             "name": "umn/lightning_umn",

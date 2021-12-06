@@ -63,7 +63,6 @@
       "2794481: Allow end date to be optional": "https://www.drupal.org/files/issues/2018-05-14/2794481-60.patch",
       "3049332: PHP message: Error: Call to a member function getEntityTypeId() on null (Layout Builder)": "https://www.drupal.org/files/issues/2021-03-19/3049332-inline-56.patch",
       "3007424: Multiple usages of FieldPluginBase::getEntity do not check for NULL, leading to WSOD" : "https://www.drupal.org/files/issues/2020-09-03/3007424-108.patch",
-      "3020876: Contextual links of reusable content blocks are not displayed when rendering entities built via Layout Builder": "https://www.drupal.org/files/issues/2020-09-25/contextual_links_with_LB-3020876-38.patch",
       "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
       "1356276 - Allow profiles to define a base/parent profile and load them in the correct order / 2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2021-05-20/3143958-14-subprofile-support-9.2.x.patch"
     },
@@ -108,9 +107,6 @@
     },
     "drupal/tablefield": {
       "3163841: Undefined index: caption": "https://www.drupal.org/files/issues/2020-08-10/tablefield-empty-caption-notice-2.patch"
-    },
-    "drupal/acquia_search": {
-      "3202247: Cannot connect to solr server after upgrading Acquia Connector to 3.0.1": "https://www.drupal.org/files/issues/2021-07-01/acquia_search_3202247-8.patch"
     },
     "drupal/contact_storage": {
       "3191567: Undefined index notice": "https://www.drupal.org/files/issues/2021-01-12/3191567-9.patch"

@@ -87,9 +87,6 @@
       "2797793: Entities identified by strings as group content": "https://www.drupal.org/files/issues/2021-06-15/group-support_string_entity_ids-2797793-260.patch",
       "2906085: Content moderation integration: transition permissions and latest version access": "https://www.drupal.org/files/issues/2020-09-23/2906085-80.patch"
     },
-    "drupal/views_aggregator" : {
-      "3087112: Enumerаte * of Titles drops links": "https://www.drupal.org/files/issues/2020-03-12/enumerate_of_titles_drops_links-3087112-10.patch"
-    },
     "drupal/back_to_top": {
       "3151196: Does not work in Drupal 9: S.easing[this.easing] is not a function" : "https://www.drupal.org/files/issues/2021-03-03/3151196_fix_for_D9_no_dependencies.patch"
     },

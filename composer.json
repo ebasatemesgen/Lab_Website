@@ -243,7 +243,9 @@
         "drupal/search_api": "^1.17",
         "drupal/seckit": "2.0",
         "drupal/purge_invalidation_form": "^2.0",
-        "drupal/masonry": "^1.2"
+        "drupal/masonry": "^1.2",
+        "drupal/masonry_views": "^1.1",
+        "drupal/masonry_search": "^1.0"
     },
     "repositories": {
         "drupal-packagist": {

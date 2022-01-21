@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ade19ef520c1fbd7c9cd8b3bfa50a4b",
+    "content-hash": "2ed82e25c6eebdba6e9cdc20059c627f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7120,26 +7120,29 @@
         },
         {
             "name": "drupal/fixed_text_link_formatter",
-            "version": "dev-1.x",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/fixed_text_link_formatter.git",
-                "reference": "d5b84e1e816c5f676d50713934a00c709c21604e"
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fixed_text_link_formatter-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "3bfee04c04f31637ee4ed60a337c7d68e618f3d8"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.5+2-dev",
-                    "datestamp": "1590581374",
+                    "version": "8.x-1.6",
+                    "datestamp": "1637654844",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -7343,17 +7346,17 @@
         },
         {
             "name": "drupal/fpa",
-            "version": "2.0.0-beta1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/fpa.git",
-                "reference": "8.x-2.0-beta1"
+                "reference": "3.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/fpa-8.x-2.0-beta1.zip",
-                "reference": "8.x-2.0-beta1",
-                "shasum": "64a998536a762089a22d3edcde01a10ba73083f4"
+                "url": "https://ftp.drupal.org/files/projects/fpa-3.0.2.zip",
+                "reference": "3.0.2",
+                "shasum": "906e7bca20f423768759d6bf46b383647eb8cce5"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -7361,11 +7364,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0-beta1",
-                    "datestamp": "1614307431",
+                    "version": "3.0.2",
+                    "datestamp": "1631632749",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -7753,23 +7756,65 @@
         },
         {
             "name": "drupal/h5p",
-            "version": "dev-3150110-drupal-9-readyness",
+            "version": "2.0.0-alpha1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/h5p-3150110.git",
-                "reference": "b9b9d02c6cf42d7e7f4b6723fefc78f96630f06e"
+                "url": "https://git.drupalcode.org/project/h5p.git",
+                "reference": "2.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/h5p-2.0.0-alpha1.zip",
+                "reference": "2.0.0-alpha1",
+                "shasum": "e0919a76133085cfb57ae123ce9a39c1b7851988"
             },
             "require": {
+                "drupal/core": "^8 || ^9",
                 "h5p/h5p-core": "1.24.2",
                 "h5p/h5p-editor": "1.24.3"
             },
             "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha1",
+                    "datestamp": "1635767250",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "falcon",
+                    "homepage": "https://www.drupal.org/user/530912"
+                },
+                {
+                    "name": "icc",
+                    "homepage": "https://www.drupal.org/user/823190"
+                },
+                {
+                    "name": "otacke",
+                    "homepage": "https://www.drupal.org/user/3566173"
+                },
+                {
+                    "name": "paalj",
+                    "homepage": "https://www.drupal.org/user/1091732"
+                },
+                {
+                    "name": "thomasmars",
+                    "homepage": "https://www.drupal.org/user/3205159"
+                }
+            ],
             "description": "Drupal H5P Module.",
             "homepage": "http://drupal.org/project/h5p",
-            "time": "2021-07-30T08:19:11+00:00"
+            "support": {
+                "source": "https://git.drupalcode.org/project/h5p"
+            }
         },
         {
             "name": "drupal/honeypot",
@@ -13577,17 +13622,17 @@
         },
         {
             "name": "drupal/scn",
-            "version": "1.5.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scn.git",
-                "reference": "8.x-1.5"
+                "reference": "2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/scn-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "470a422c2e6b1796bb66c8d39b7d4ec085fa35bf"
+                "url": "https://ftp.drupal.org/files/projects/scn-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "f6a2f5c39ae4e1d9ff7f4d8b35de3bcf8c98504a"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
@@ -13595,8 +13640,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1606456007",
+                    "version": "2.0.1",
+                    "datestamp": "1641628173",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13609,14 +13654,16 @@
             ],
             "authors": [
                 {
-                    "name": "ivnish",
-                    "homepage": "https://www.drupal.org/user/3547706"
+                    "name": "Andrei Ivnitskii",
+                    "homepage": "https://www.drupal.org/u/ivnish",
+                    "role": "Maintainer"
                 }
             ],
             "description": "Notifies the site administrator by e-mail or telegram about new comments on the site.",
             "homepage": "https://www.drupal.org/project/scn",
             "support": {
-                "source": "https://git.drupalcode.org/project/scn"
+                "source": "https://git.drupalcode.org/project/scn",
+                "issues": "https://www.drupal.org/project/issues/scn"
             }
         },
         {
@@ -16024,29 +16071,29 @@
         },
         {
             "name": "drupal/views_aggregator",
-            "version": "1.0.0-beta3",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_aggregator.git",
-                "reference": "8.x-1.0-beta3"
+                "reference": "2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_aggregator-8.x-1.0-beta3.zip",
-                "reference": "8.x-1.0-beta3",
-                "shasum": "2c9c0b65b15d5327f9687a34acbbe7357252f0c8"
+                "url": "https://ftp.drupal.org/files/projects/views_aggregator-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "e8370c070fd6bd7a0e204f2650015c30d11484b8"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-beta3",
-                    "datestamp": "1642186227",
+                    "version": "2.0.1",
+                    "datestamp": "1642590952",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -28843,15 +28890,12 @@
         "drupal/radix_layouts": 20,
         "umn/umn_escape_button": 20,
         "umd/umd_footer_block": 20,
-        "drupal/views_aggregator": 10,
-        "drupal/fpa": 10,
-        "drupal/fixed_text_link_formatter": 20,
         "umn/fast404": 20,
         "umn/umn_self_help_guides": 20,
         "drupal/libraries": 10,
         "umn/slick_media": 20,
         "umn/upgrade_status": 20,
-        "drupal/h5p": 20,
+        "drupal/h5p": 15,
         "drupal/entity_update": 5,
         "drupal/pendo": 15
     },

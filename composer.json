@@ -177,11 +177,11 @@
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/social_media_links": "^2.7",
         "drupal/ckeditor_templates": "^1.2",
-        "drupal/views_aggregator": "^1.0@beta",
-        "drupal/fpa": "^2.0@beta",
+        "drupal/views_aggregator": "^2.0",
+        "drupal/fpa": "^3.0",
         "drupal/advagg": "^4.1",
         "drupal/unpublished_node_permissions": "^1.1",
-        "drupal/fixed_text_link_formatter": "1.x-dev",
+        "drupal/fixed_text_link_formatter": "^1.6",
         "drupal/comment_notify": "^1.2",
         "umn/fast404": "dev-master",
         "drupal/content_moderation_notifications": "^3.3",
@@ -195,14 +195,14 @@
         "umn/slick_media": "dev-master",
         "umn/upgrade_status": "dev-master",
         "drupal/entity_reference_revisions": "^1.9",
-        "drupal/scn": "^1.5",
+        "drupal/scn": "^2.0",
         "drupal/allowed_formats": "^1.3",
         "drupal/textarea_widget_for_text": "^1.2",
         "drupal/ckeditorheight": "^1.8",
         "drupal/view_mode_page": "^4.0",
         "drupal/umn_dm_migrate": "2.1.6",
         "drupal/umn_dm_storage": "2.1.7",
-        "drupal/h5p": "dev-3150110-drupal-9-readyness",
+        "drupal/h5p": "^2.0@alpha",
         "drupal/field_permissions": "^1.1",
         "drupal/poll": "^1.4",
         "npm-asset/jquery-ui-touch-punch": "^0.2.3",
@@ -229,7 +229,7 @@
         "drupal/exclude_node_title": "^1.2",
         "drupal/eva": "^2.1",
         "ext-dom": "*",
-        "drupal/acquia_connector": "^1.24-rc3 || ^2.0-rc1 || ^3",
+        "drupal/acquia_connector": "^3.0",
         "drupal/core": "^9.2.2",
         "drupal/inline_entity_form": "^1.0-rc7",
         "drupal/lightning_api": "^4.6",
@@ -250,10 +250,7 @@
     "repositories": {
         "drupal-packagist": {
             "type": "composer",
-            "url": "https://packages.drupal.org/8",
-            "exclude": [
-                "drupal/h5p"
-            ]
+            "url": "https://packages.drupal.org/8"
         },
         "asset-packagist": {
             "type": "composer",
@@ -334,10 +331,6 @@
         "cloudflare_verify": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/cloudflare_verify.git"
-        },
-        "h5p": {
-            "url": "https://git.drupalcode.org/issue/h5p-3150110.git",
-            "type": "git"
         },
         "blazy": {
             "type": "package",

@@ -90,9 +90,6 @@
     "drupal/back_to_top": {
       "3151196: Does not work in Drupal 9: S.easing[this.easing] is not a function" : "https://www.drupal.org/files/issues/2021-03-03/3151196_fix_for_D9_no_dependencies.patch"
     },
-    "drupal/fpa": {
-      "3201033: entity.manager must be changed to entity_type.manager" : "https://www.drupal.org/files/issues/2021-03-01/entity_type_manager_fix.patch"
-    },
     "drupal/google_analytics" : {
       "3178179: Support new Google Analytics 4": "https://www.drupal.org/files/issues/2020-12-01/3178179-google-analytics-4.patch"
     },

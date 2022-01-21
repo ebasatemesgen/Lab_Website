@@ -640,7 +640,7 @@
             "vendor/kenwheeler/slick": "docroot/libraries/slick",
             "vendor/jgallen23/toc/dist": "docroot/libraries/toc",
             "docroot/libraries/jquery.mmenu": "docroot/libraries/mmenu",
-            "vendor/ckeditor/anchor_link": "docroot/libraries/ckeditor/plugins/link",
+            "vendor/ckeditor/anchor_link": "docroot/libraries/link",
             "vendor/joeldbirch/superfish/dist": "docroot/libraries/superfish/dist",
             "vendor/joeldbirch/superfish/package.json": "docroot/libraries/superfish/package.json",
             "vendor/phayes/geophp": "docroot/modules/contrib/geofield/lib/phayes-geophp/v1.2"

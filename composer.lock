@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92413f69d6969753b79b10be7b39907e",
+    "content-hash": "c53ce157f0357c64a6d54170bf4f2b76",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -27612,7 +27612,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "d5832ffa8ad77921138b2a68bee7c2cede7f3379"
+                "reference": "276037be01c695527f3c428b6f20c9d7902e1092"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -27622,7 +27622,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2021-12-08T23:51:29+00:00"
+            "time": "2022-01-21T20:22:48+00:00"
         },
         {
             "name": "umn/lightning_umn",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ed82e25c6eebdba6e9cdc20059c627f",
+    "content-hash": "92413f69d6969753b79b10be7b39907e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -478,19 +478,19 @@
         },
         {
             "name": "ckeditor/anchor_link",
-            "version": "4.10.1",
+            "version": "4.17.1",
             "dist": {
                 "type": "zip",
-                "url": "https://download.ckeditor.com/link/releases/link_4.10.1.zip"
+                "url": "https://download.ckeditor.com/link/releases/link_4.17.1.zip"
             },
             "type": "library"
         },
         {
             "name": "ckeditor/fakeobjects",
-            "version": "4.10.1",
+            "version": "4.17.1",
             "dist": {
                 "type": "zip",
-                "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.10.1.zip"
+                "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.17.1.zip"
             },
             "type": "drupal-library"
         },

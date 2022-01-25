@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7971fb14414c3dcf28836fe7eaa13a0a",
+    "content-hash": "9fcc457044f4d3a070288a9141a1f622",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -27685,11 +27685,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-9.x-folwell-build",
+            "version": "dev-9.x-folwell-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "94016dfa508cfa5125d7338e761c9666a586431d"
+                "reference": "8ea3eb13754ac0582960e2c17aa9411ad15b8655"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -27702,15 +27702,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2021-11-02T20:42:28+00:00"
+            "time": "2021-11-01T15:05:01+00:00"
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-9.x-components-build",
+            "version": "dev-9.x-components-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "276037be01c695527f3c428b6f20c9d7902e1092"
+                "reference": "5fac7a9e1b53d28dcadc25b70ee4db13fbeb628a"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -27724,11 +27724,11 @@
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-9.x-build",
+            "version": "dev-9.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "d058e8d7193927f80f2fcf24b428e3b44495a6e3"
+                "reference": "e08bf131cf8a1722f792da78b2ded12ad143b886"
             },
             "type": "drupal-profile-custom",
             "authors": [

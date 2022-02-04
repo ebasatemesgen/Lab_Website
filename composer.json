@@ -246,7 +246,8 @@
         "drupal/masonry": "^1.2",
         "drupal/masonry_views": "^1.1",
         "drupal/masonry_search": "^1.0",
-        "maennchen/zipstream-php": "^2.0"
+        "maennchen/zipstream-php": "^2.0",
+        "drupal/crop": "^2.1"
     },
     "repositories": {
         "drupal-packagist": {

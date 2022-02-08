@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de1278a5c3141eb5a1e4d5f6eb605ded",
+    "content-hash": "c02ca24be66ab822d081db24ba0b7d07",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -18703,6 +18703,21 @@
             "time": "2021-07-21T13:50:14+00:00"
         },
         {
+            "name": "imagesloaded/imagesloaded",
+            "version": "v4.1.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/desandro/imagesloaded/archive/v4.1.4.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "imagesloaded"
+            }
+        },
+        {
             "name": "j7mbo/twitter-api-php",
             "version": "1.0.6",
             "source": {
@@ -19735,6 +19750,21 @@
                 }
             ],
             "time": "2020-05-30T13:11:16+00:00"
+        },
+        {
+            "name": "masonry/masonry",
+            "version": "v4.2.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/desandro/masonry/archive/v4.2.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "masonry"
+            }
         },
         {
             "name": "masterminds/html5",

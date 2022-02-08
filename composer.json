@@ -247,7 +247,9 @@
         "drupal/masonry_views": "^1.1",
         "drupal/masonry_search": "^1.0",
         "maennchen/zipstream-php": "^2.0",
-        "drupal/crop": "^2.1"
+        "drupal/crop": "^2.1",
+        "masonry/masonry": "^4.2",
+        "imagesloaded/imagesloaded": "^4.1"
     },
     "repositories": {
         "drupal-packagist": {
@@ -552,6 +554,42 @@
                 "dist": {
                     "url": "https://github.com/jgallen23/toc/archive/refs/heads/greenkeeper/update-all.zip",
                     "type": "zip"
+                }
+            }
+        },
+	"masonry": {
+            "type": "package",
+            "package": {
+                "name": "masonry/masonry",
+                "version": "v4.2.2",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "masonry"
+                },
+                "dist": {
+                    "url": "https://github.com/desandro/masonry/archive/v4.2.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "imagesloaded": {
+            "type": "package",
+            "package": {
+                "name": "imagesloaded/imagesloaded",
+                "version": "v4.1.4",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/desandro/imagesloaded/archive/v4.1.4.zip",
+                    "type": "zip"
+                },
+                "extra": {
+                    "installer-name": "imagesloaded"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
                 }
             }
         },

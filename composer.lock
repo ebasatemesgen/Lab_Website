@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c02ca24be66ab822d081db24ba0b7d07",
+    "content-hash": "e77e62e577c26d4247ce54489952927d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -15744,11 +15744,11 @@
         },
         {
             "name": "drupal/umn_dm_migrate",
-            "version": "2.1.6",
+            "version": "2.1.7",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_migrate.git",
-                "reference": "c03a31eeba9c8446bcffb8e49899ee201324e1df"
+                "reference": "f7bafc19c5c4f2ca38b6d219407cfbd80cb6b53e"
             },
             "require": {
                 "drupal/core": "^8.8 | ^9",
@@ -15765,7 +15765,7 @@
             },
             "type": "drupal-module",
             "description": "Contains migrations and configuration for migrating Profiles from Digital Measures into a Drupal site.",
-            "time": "2021-12-29T01:42:58+00:00"
+            "time": "2022-02-09T06:06:17+00:00"
         },
         {
             "name": "drupal/umn_dm_storage",

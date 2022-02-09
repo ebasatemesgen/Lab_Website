@@ -200,7 +200,7 @@
         "drupal/textarea_widget_for_text": "^1.2",
         "drupal/ckeditorheight": "^1.8",
         "drupal/view_mode_page": "^4.0",
-        "drupal/umn_dm_migrate": "2.1.6",
+        "drupal/umn_dm_migrate": "2.1.7",
         "drupal/umn_dm_storage": "2.1.7",
         "drupal/h5p": "^2.0@alpha",
         "drupal/field_permissions": "^1.1",

@@ -249,7 +249,9 @@
         "maennchen/zipstream-php": "^2.0",
         "drupal/crop": "^2.1",
         "masonry/masonry": "^4.2",
-        "imagesloaded/imagesloaded": "^4.1"
+        "imagesloaded/imagesloaded": "^4.1",
+        "drupal/toolbar_menu": "^2.2",
+        "drupal/views_exposed_filter_blocks": "^1.1"
     },
     "repositories": {
         "drupal-packagist": {

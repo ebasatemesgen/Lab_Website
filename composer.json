@@ -59,7 +59,7 @@
         "drupal/stage_file_proxy": "^1.0@alpha",
         "drupal/shield": "^1.1",
         "drupal/memcache": "^2.1",
-        "drupal/colorbox": "^1.4",
+        "drupal/colorbox": "^1.8",
         "onlyextart/colorbox": "dev-master",
         "bower-asset/hammerjs": "^2.0",
         "drupal/responsive_menu": "^4.3",
@@ -625,7 +625,14 @@
         ]
     },
     "config": {
-        "process-timeout": 0
+        "process-timeout": 0,
+        "allow-plugins": {
+            "simplesamlphp/composer-module-installer": true,
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "oomphinc/composer-installers-extender": true
+        }
     },
     "extra": {
         "installer-types": [

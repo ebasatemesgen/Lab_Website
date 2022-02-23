@@ -123,6 +123,9 @@
     },
     "drupal/anchor_link": {
       "3187234: Errors due to missing FakeObjects Module": "https://www.drupal.org/files/issues/2021-08-04/3187234-fakeobjects-not-installed-8.patch"
+    },
+    "drupal/shs": {
+      "3242736: Error: Using $this when not in object context": "https://www.drupal.org/files/issues/2021-10-11/3242736-1.patch"
     }
   }
 }

@@ -113,6 +113,9 @@
       "3029323: Cannot use Entity View block in Layout Builder when there is no context": "https://www.drupal.org/files/issues/2021-05-24/ctools-layout_builder_context-3029323-12.patch",
       "2657060: Add Configure Filter functionality to block views configuration": "https://www.drupal.org/files/issues/2021-12-03/2657060-151.patch"
     },
+    "drupal/search_api": {
+      "3258375: Out of memory error when used with views, metatag and memcache modules": "https://www.drupal.org/files/issues/2022-01-13/search_api-metatag-out-of-memory-3258375-2.patch"
+    },
     "drupal/viewsreference": {
       "2938433: Add Label field formatter": "https://www.drupal.org/files/issues/2021-01-27/add_label_formatter-2938433-7.patch"
     },

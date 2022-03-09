@@ -67,7 +67,8 @@
       "2868014: [PP-1] Views Date Filter Datetime Granularity Option": "https://www.drupal.org/files/issues/2021-04-26/2868014-110.patch",
       "3254245: TypeError: Argument 1 passed to FileUrlGenerator::generateString() must be of the type string, null given": "https://www.drupal.org/files/issues/2021-12-18/file-url-generator-3254245-34.patch",
       "3226117: Uncaught RfcComplianceException thrown when sending email from a site whose name contains a comma": "https://www.drupal.org/files/issues/2022-01-31/3226117-email-sending-broken-if-site-name-contains-coma.patch",
-      "3008924: https://www.drupal.org/project/drupal/issues/3008924": "https://www.drupal.org/files/issues/2021-12-09/3008924-rerolled-24.patch"
+      "3008924: Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode": "https://www.drupal.org/files/issues/2021-12-09/3008924-rerolled-24.patch",
+      "3023924: Cannot create references to/from string offsets": "https://www.drupal.org/files/issues/2019-01-04/3023924-form-8.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"
@@ -126,6 +127,9 @@
     },
     "drupal/shs": {
       "3242736: Error: Using $this when not in object context": "https://www.drupal.org/files/issues/2021-10-11/3242736-1.patch"
+    },
+    "drupal/search_api": {
+      "3258375: Out of memory error when used with views, metatag and memcache modules": "https://www.drupal.org/files/issues/2022-01-13/search_api-metatag-out-of-memory-3258375-2.patch"
     }
   }
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e6105748cb910e80080374ffafceb1f",
+    "content-hash": "c4e253e88fd0206a1a462915038cf1f6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -28295,11 +28295,11 @@
         },
         {
             "name": "umn/d8lite_migration",
-            "version": "dev-conference",
+            "version": "dev-9-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "fbe973a52a3afabd152db3953b52512713685bf2"
+                "reference": "ff8f6fc4887abb07f09244a1aab14b90db57ff59"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -28316,7 +28316,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2021-09-02T20:08:39+00:00"
+            "time": "2021-10-07T14:09:21+00:00"
         },
         {
             "name": "umn/dors_migrate",
@@ -28389,7 +28389,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "276037be01c695527f3c428b6f20c9d7902e1092"
+                "reference": "3c545fd1a2983e5b7c5eb880b450a0fe4279c1ac"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -28399,7 +28399,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-01-21T20:22:48+00:00"
+            "time": "2022-03-21T16:01:46+00:00"
         },
         {
             "name": "umn/lightning_umn",

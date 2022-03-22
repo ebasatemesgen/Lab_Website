@@ -59,7 +59,7 @@
         "drupal/stage_file_proxy": "^1.0@alpha",
         "drupal/shield": "^1.1",
         "drupal/memcache": "^2.1",
-        "drupal/colorbox": "^1.4",
+        "drupal/colorbox": "^1.8",
         "onlyextart/colorbox": "dev-master",
         "bower-asset/hammerjs": "^2.0",
         "drupal/responsive_menu": "^4.3",
@@ -124,7 +124,7 @@
         "drush/config-extra": "^1.0",
         "drupal/addtoany": "^1.12",
         "drupal/media_entity_download": "^2.0@beta",
-        "umn/d8lite_migration": "dev-9-dev",
+        "umn/d8lite_migration": "dev-conference",
         "umn/cloudflare_verify": "dev-9.x-dev",
         "drupal/embed": "^1.4",
         "drupal/smart_trim": "^1.2",
@@ -200,7 +200,7 @@
         "drupal/textarea_widget_for_text": "^1.2",
         "drupal/ckeditorheight": "^1.8",
         "drupal/view_mode_page": "^4.0",
-        "drupal/umn_dm_migrate": "2.1.6",
+        "drupal/umn_dm_migrate": "2.1.7",
         "drupal/umn_dm_storage": "2.1.7",
         "drupal/h5p": "^2.0@alpha",
         "drupal/field_permissions": "^1.1",
@@ -246,7 +246,13 @@
         "drupal/masonry": "^1.2",
         "drupal/masonry_views": "^1.1",
         "drupal/masonry_search": "^1.0",
-        "maennchen/zipstream-php": "^2.0"
+        "maennchen/zipstream-php": "^2.0",
+        "drupal/crop": "^2.1",
+        "masonry/masonry": "^4.2",
+        "imagesloaded/imagesloaded": "^4.1",
+        "drupal/toolbar_menu": "^2.2",
+        "drupal/views_exposed_filter_blocks": "^1.1",
+        "drupal/google_api_client": "^4.0"
     },
     "repositories": {
         "drupal-packagist": {
@@ -554,6 +560,42 @@
                 }
             }
         },
+	"masonry": {
+            "type": "package",
+            "package": {
+                "name": "masonry/masonry",
+                "version": "v4.2.2",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "masonry"
+                },
+                "dist": {
+                    "url": "https://github.com/desandro/masonry/archive/v4.2.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "imagesloaded": {
+            "type": "package",
+            "package": {
+                "name": "imagesloaded/imagesloaded",
+                "version": "v4.1.4",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/desandro/imagesloaded/archive/v4.1.4.zip",
+                    "type": "zip"
+                },
+                "extra": {
+                    "installer-name": "imagesloaded"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
         "api_wrapper": {
             "type": "vcs",
             "url": "https://github.com/umn-drupal/acquia-api-wrapper"
@@ -584,7 +626,14 @@
         ]
     },
     "config": {
-        "process-timeout": 0
+        "process-timeout": 0,
+        "allow-plugins": {
+            "simplesamlphp/composer-module-installer": true,
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "oomphinc/composer-installers-extender": true
+        }
     },
     "extra": {
         "installer-types": [

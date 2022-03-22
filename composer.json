@@ -62,7 +62,7 @@
         "drupal/colorbox": "^1.8",
         "onlyextart/colorbox": "dev-master",
         "bower-asset/hammerjs": "^2.0",
-        "drupal/responsive_menu": "^4.4",
+        "drupal/responsive_menu": "^4.4.x-dev",
         "drupal/migrate_source_csv": "^3.4",
         "drupal/entity_print": "2.x",
         "tecnickcom/tcpdf": "~6",

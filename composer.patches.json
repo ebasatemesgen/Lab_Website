@@ -79,6 +79,9 @@
     "drupal/media_entity_download": {
       "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
     },
+    "drupal/responsive_menu": {
+      "3212699: Setting to remove cache context": "https://www.drupal.org/files/issues/2021-10-07/responsive_menu-3212699-10.patch"
+    },
     "drupal/entity_embed": {
       "3069448: Array to string conversion for Media Image": "https://www.drupal.org/files/issues/2019-10-18/entity-embed-array-to-string--3069448-19.patch",
       "3077225: Logs flooded with warning messages Invalid display settings encountered":"https://www.drupal.org/files/issues/2019-08-26/3077225-reduce-invalid-config-logs.patch",

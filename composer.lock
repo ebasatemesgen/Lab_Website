@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c5e3f302ba20cf63b892f336da069900",
+    "content-hash": "f5a18fcb1fe3f3140fa130dcd61d35e0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -835,16 +835,16 @@
         },
         {
             "name": "composer/semver",
-            "version": "3.2.9",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "a951f614bd64dcd26137bc9b7b2637ddcfc57649"
+                "reference": "5d8e574bb0e69188786b8ef77d43341222a41a71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/a951f614bd64dcd26137bc9b7b2637ddcfc57649",
-                "reference": "a951f614bd64dcd26137bc9b7b2637ddcfc57649",
+                "url": "https://api.github.com/repos/composer/semver/zipball/5d8e574bb0e69188786b8ef77d43341222a41a71",
+                "reference": "5d8e574bb0e69188786b8ef77d43341222a41a71",
                 "shasum": ""
             },
             "require": {
@@ -896,7 +896,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/semver/issues",
-                "source": "https://github.com/composer/semver/tree/3.2.9"
+                "source": "https://github.com/composer/semver/tree/3.3.1"
             },
             "funding": [
                 {
@@ -912,7 +912,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-04T13:58:43+00:00"
+            "time": "2022-03-16T11:22:07+00:00"
         },
         {
             "name": "consolidation/annotated-command",
@@ -4673,16 +4673,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.3.8",
+            "version": "9.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "e8e3b7e5b3353f7ebf24de9d39087df75bd66afe"
+                "reference": "86b0c4496e20ae7f945e9a7f0404fafe191ab774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/e8e3b7e5b3353f7ebf24de9d39087df75bd66afe",
-                "reference": "e8e3b7e5b3353f7ebf24de9d39087df75bd66afe",
+                "url": "https://api.github.com/repos/drupal/core/zipball/86b0c4496e20ae7f945e9a7f0404fafe191ab774",
+                "reference": "86b0c4496e20ae7f945e9a7f0404fafe191ab774",
                 "shasum": ""
             },
             "require": {
@@ -4924,9 +4924,9 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.3.8"
+                "source": "https://github.com/drupal/core/tree/9.3.9"
             },
-            "time": "2022-03-16T15:34:53+00:00"
+            "time": "2022-03-21T21:21:58+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -13256,29 +13256,26 @@
         },
         {
             "name": "drupal/responsive_menu",
-            "version": "4.4.2",
+            "version": "dev-4.4.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/responsive_menu.git",
-                "reference": "4.4.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/responsive_menu-4.4.2.zip",
-                "reference": "4.4.2",
-                "shasum": "26d13cc0fa3bbaf4a4a83f0012095e01cbcc5272"
+                "reference": "021662bed64378a1db8c82cde695c4fa491f64d6"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-4.4.x": "4.4.x-dev"
+                },
                 "drupal": {
-                    "version": "4.4.2",
-                    "datestamp": "1633530566",
+                    "version": "4.4.1+5-dev",
+                    "datestamp": "1633530304",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -18683,16 +18680,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.8.3",
+            "version": "1.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "1afdd860a2566ed3c2b0b4a3de6e23434a79ec85"
+                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/1afdd860a2566ed3c2b0b4a3de6e23434a79ec85",
-                "reference": "1afdd860a2566ed3c2b0b4a3de6e23434a79ec85",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/337e3ad8e5716c15f9657bd214d16cc5e69df268",
+                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268",
                 "shasum": ""
             },
             "require": {
@@ -18773,7 +18770,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/1.8.3"
+                "source": "https://github.com/guzzle/psr7/tree/1.8.5"
             },
             "funding": [
                 {
@@ -18789,7 +18786,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-05T13:56:00+00:00"
+            "time": "2022-03-20T21:51:18+00:00"
         },
         {
             "name": "h5p/h5p-core",
@@ -28364,11 +28361,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-9.x-folwell-release",
+            "version": "dev-9.x-folwell-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "9a64e0c77a27c0570c7d33709f2bc99331cd3174"
+                "reference": "d537a8c87a49d4a7eda578acbf40498aa224a671"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -28385,11 +28382,11 @@
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-9.x-components-release",
+            "version": "dev-9.x-components-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "5fac7a9e1b53d28dcadc25b70ee4db13fbeb628a"
+                "reference": "3c545fd1a2983e5b7c5eb880b450a0fe4279c1ac"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -28399,15 +28396,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-01-21T20:22:48+00:00"
+            "time": "2022-03-21T16:01:46+00:00"
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-9.x-release",
+            "version": "dev-9.x-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "e08bf131cf8a1722f792da78b2ded12ad143b886"
+                "reference": "d058e8d7193927f80f2fcf24b428e3b44495a6e3"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -29642,6 +29639,7 @@
         "drupal/acquia_purge": 10,
         "drupal/stage_file_proxy": 15,
         "onlyextart/colorbox": 20,
+        "drupal/responsive_menu": 20,
         "drupal/scheduled_updates": 20,
         "drupal/better_exposed_filters": 10,
         "drupal/menu_block": 20,

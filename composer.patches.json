@@ -129,9 +129,6 @@
     "drupal/anchor_link": {
       "3187234: Errors due to missing FakeObjects Module": "https://www.drupal.org/files/issues/2021-08-04/3187234-fakeobjects-not-installed-8.patch"
     },
-    "drupal/shs": {
-      "3242736: Error: Using $this when not in object context": "https://www.drupal.org/files/issues/2021-10-11/3242736-1.patch"
-    },
     "drupal/search_api": {
       "3258375: Out of memory error when used with views, metatag and memcache modules": "https://www.drupal.org/files/issues/2022-01-13/search_api-metatag-out-of-memory-3258375-2.patch"
     }

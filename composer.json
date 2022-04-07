@@ -252,7 +252,8 @@
         "imagesloaded/imagesloaded": "^4.1",
         "drupal/toolbar_menu": "^2.2",
         "drupal/views_exposed_filter_blocks": "^1.1",
-        "drupal/google_api_client": "^4.0"
+        "drupal/google_api_client": "^4.0",
+        "drupal/facets": "^2.0"
     },
     "repositories": {
         "drupal-packagist": {

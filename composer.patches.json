@@ -67,7 +67,8 @@
       "2868014: [PP-1] Views Date Filter Datetime Granularity Option": "https://www.drupal.org/files/issues/2021-04-26/2868014-110.patch",
       "3254245: TypeError: Argument 1 passed to FileUrlGenerator::generateString() must be of the type string, null given": "https://www.drupal.org/files/issues/2021-12-18/file-url-generator-3254245-34.patch",
       "3226117: Uncaught RfcComplianceException thrown when sending email from a site whose name contains a comma": "https://www.drupal.org/files/issues/2022-01-31/3226117-email-sending-broken-if-site-name-contains-coma.patch",
-      "3008924: https://www.drupal.org/project/drupal/issues/3008924": "https://www.drupal.org/files/issues/2021-12-09/3008924-rerolled-24.patch"
+      "3008924: Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode": "https://www.drupal.org/files/issues/2021-12-09/3008924-rerolled-24.patch",
+      "3023924: Cannot create references to/from string offsets": "https://www.drupal.org/files/issues/2019-01-04/3023924-form-8.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"
@@ -77,6 +78,9 @@
     },
     "drupal/media_entity_download": {
       "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
+    },
+    "drupal/responsive_menu": {
+      "3212699: Setting to remove cache context": "https://www.drupal.org/files/issues/2021-10-07/responsive_menu-3212699-10.patch"
     },
     "drupal/entity_embed": {
       "3069448: Array to string conversion for Media Image": "https://www.drupal.org/files/issues/2019-10-18/entity-embed-array-to-string--3069448-19.patch",
@@ -88,7 +92,8 @@
       "2774827: Get a token of a node's parent group to create a pathauto pattern": "https://www.drupal.org/files/issues/2020-11-17/group-gnode_tokens-2774827-74.patch",
       "3112501:Add views contextual filter to get group ID from either URL or group content": "https://www.drupal.org/files/issues/2020-02-10/views-cont-filter-to-get-gid-from-url-or-group-content-3112501.patch",
       "2797793: Entities identified by strings as group content": "https://www.drupal.org/files/issues/2021-06-15/group-support_string_entity_ids-2797793-260.patch",
-      "2906085: Content moderation integration: transition permissions and latest version access": "https://www.drupal.org/files/issues/2020-09-23/2906085-80.patch"
+      "2906085: Content moderation integration: transition permissions and latest version access": "https://www.drupal.org/files/issues/2020-09-23/2906085-80.patch",
+      "3256998: Access to Revisions of Group Content is Broken": "https://www.drupal.org/files/issues/2022-02-09/group-fix-group-revisions-3256998-22_0.patch"
     },
     "drupal/back_to_top": {
       "3151196: Does not work in Drupal 9: S.easing[this.easing] is not a function" : "https://www.drupal.org/files/issues/2021-03-03/3151196_fix_for_D9_no_dependencies.patch"
@@ -126,6 +131,9 @@
     },
     "drupal/shs": {
       "3242736: Error: Using $this when not in object context": "https://www.drupal.org/files/issues/2021-10-11/3242736-1.patch"
+    },
+    "drupal/search_api": {
+      "3258375: Out of memory error when used with views, metatag and memcache modules": "https://www.drupal.org/files/issues/2022-01-13/search_api-metatag-out-of-memory-3258375-2.patch"
     }
   }
 }

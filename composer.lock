@@ -28433,7 +28433,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "afd6931ef8e51c353f886d4deaa024ef35793409"
+                "reference": "809c739a0bd4d7d5e6d457a76f25c1274e61ac67"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -28446,7 +28446,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-04-19T20:08:48+00:00"
+            "time": "2022-04-20T13:05:02+00:00"
         },
         {
             "name": "umn/folwell_components",

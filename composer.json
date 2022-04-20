@@ -124,7 +124,7 @@
         "drush/config-extra": "^1.0",
         "drupal/addtoany": "^1.12",
         "drupal/media_entity_download": "^2.0@beta",
-        "umn/d8lite_migration": "dev-content",
+        "umn/d8lite_migration": "dev-publication",
         "umn/cloudflare_verify": "dev-9.x-dev",
         "drupal/embed": "^1.4",
         "drupal/smart_trim": "^1.2",
@@ -252,7 +252,8 @@
         "imagesloaded/imagesloaded": "^4.1",
         "drupal/toolbar_menu": "^2.2",
         "drupal/views_exposed_filter_blocks": "^1.1",
-        "drupal/google_api_client": "^4.0"
+        "drupal/google_api_client": "^4.0",
+        "drupal/facets": "^2.0"
     },
     "repositories": {
         "drupal-packagist": {

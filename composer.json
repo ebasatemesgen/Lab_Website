@@ -254,7 +254,8 @@
         "drupal/views_exposed_filter_blocks": "^1.1",
         "drupal/google_api_client": "^4.0",
         "drupal/facets": "^2.0",
-        "drupal/advanced_text_formatter": "^2.1"
+        "drupal/advanced_text_formatter": "^2.1",
+        "drupal/geolocation": "^3.9"
     },
     "repositories": {
         "drupal-packagist": {

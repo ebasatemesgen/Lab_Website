@@ -1,27 +1,13 @@
-diff --git a/h5p-core/h5p-development.class.php b/h5p-core/h5p-development.class.php
-index a60262a..cae5433 100644
---- a/h5p-core/h5p-development.class.php
-+++ b/h5p-core/h5p-development.class.php
-@@ -67,7 +67,7 @@ class H5PDevelopment {
-     $contents = scandir($path);
+diff --git a/vendor/h5p/h5p-editor/h5peditor.class.php b/vendor/h5p/h5p-editor/h5peditor.class.php
+index c1a3fb5a..37a60a58 100644
+--- a/vendor/h5p/h5p-editor/h5peditor.class.php
++++ b/vendor/h5p/h5p-editor/h5peditor.class.php
+@@ -373,7 +373,7 @@ public function findEditorLibraries($machineName, $majorVersion, $minorVersion)
+    *
+    * @return array Libraries that was requested
+    */
+-  public function getLibraryData($machineName, $majorVersion, $minorVersion, $languageCode, $prefix = '', $fileDir = '', $defaultLanguage) {
++  public function getLibraryData($machineName, $majorVersion, $minorVersion, $languageCode, $prefix = '', $fileDir = '', $defaultLanguage = '') {
+     $libraryData = new stdClass();
 
-     for ($i = 0, $s = count($contents); $i < $s; $i++) {
--      if ($contents[$i]{0} === '.') {
-+      if ($contents[$i][0] === '.') {
-         continue; // Skip hidden stuff.
-       }
-
-diff --git a/h5p-core/h5p.classes.php b/h5p-core/h5p.classes.php
-index 7176ad0..6eb3c3e 100644
---- a/h5p-core/h5p.classes.php
-+++ b/h5p-core/h5p.classes.php
-@@ -2744,7 +2744,7 @@ class H5PCore {
-     foreach ($arr as $key => $val) {
-       $next = -1;
-       while (($next = strpos($key, '_', $next + 1)) !== FALSE) {
--        $key = substr_replace($key, strtoupper($key{$next + 1}), $next, 2);
-+        $key = substr_replace($key, strtoupper($key[$next + 1]), $next, 2);
-       }
-
-       $newArr[$key] = $val;
-
+     $library = $this->h5p->loadLibrary($machineName, $majorVersion, $minorVersion);

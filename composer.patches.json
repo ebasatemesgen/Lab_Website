@@ -4,7 +4,8 @@
       "2867879: include core/drupal dependency": "https://www.drupal.org/files/issues/nice_menus-js_dependency-2867879-2.patch"
     },
     "drupal/menu_block": {
-      "3040666: Fixed parent relative to active trail": "https://www.drupal.org/files/issues/2019-03-15/menu_block-parent_of_active_trail-3040666-2.patch"
+      "3040666: Fixed parent relative to active trail": "https://www.drupal.org/files/issues/2019-03-15/menu_block-parent_of_active_trail-3040666-2.patch",
+      "3280764: Empty blocks get displayed": "https://www.drupal.org/files/issues/2022-05-16/web_modules_contrib_menu_block_0.patch"
     },
     "drupal/rules": {
       "2695149: ContextDefinition Error": "https://www.drupal.org/files/issues/2018-04-09/2695149-11.patch",

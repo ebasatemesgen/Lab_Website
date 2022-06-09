@@ -44,7 +44,7 @@
         "drupal/block_class": "^1.0@alpha",
         "drupal/webform": "^6.0",
         "drupal/workbench_access": "1.0.0-beta4",
-        "drupal/honeypot": "^2.0",
+        "drupal/honeypot": "^2.1",
         "drupal/diff": "^1.0@RC",
         "drupal/migrate_plus": "^5.1",
         "drupal/migrate_tools": "^5.0",

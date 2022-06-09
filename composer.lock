@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac2a67d8337e854e161e4ed087f9c910",
+    "content-hash": "df15ce5eda1aca17abecd06936b2066a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8065,7 +8065,7 @@
             "extra": {
                 "drupal": {
                     "version": "2.1.1",
-                    "datestamp": "1653942827",
+                    "datestamp": "1654198290",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

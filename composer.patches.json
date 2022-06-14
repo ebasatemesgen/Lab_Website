@@ -12,7 +12,8 @@
       "2885740: Rules does not working unless flush cache": "https://www.drupal.org/files/issues/fixed-rules-stop-working-after-cron.patch"
     },
     "drupal/video_embed_field": {
-      "2913925: Retrieve title & description for videos": "https://www.drupal.org/files/issues/2019-07-17/retrieve-title-2913925-6.patch"
+      "2913925: Retrieve title & description for videos": "https://www.drupal.org/files/issues/2019-07-17/retrieve-title-2913925-6.patch",
+      "Automate the video embed media patch": "patches/video_embed_field_migrate.patch"
     },
     "drupal/paragraphs": {
       "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch"

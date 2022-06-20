@@ -1,0 +1,18 @@
+diff --git a/modules/video_embed_media/video_embed_media.install b/modules/video_embed_media/video_embed_media.install
+index 144423b..28474a6 100644
+--- a/modules/video_embed_media/video_embed_media.install
++++ b/modules/video_embed_media/video_embed_media.install
+@@ -30,3 +30,13 @@ function video_embed_media_install() {
+     }
+   }
+ }
++
++/**
++ * Convert from video media embed module to core media
++ */
++function video_embed_media_update_9001(&$sandbox) {
++  \Drupal::service('module_installer')->install(['vem_migrate_oembed']);
++  \Drupal::service('vem_migrate_oembed.migrate')->migrate();
++  \Drupal::service('module_installer')->uninstall(['vem_migrate_oembed']);
++  \Drupal::service('module_installer')->uninstall(['video_embed_media']);
++}

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a1f7a1a11cd91b37d99512b6f738226",
+    "content-hash": "5160be1a6b3838c6ef13ed42712e5ccd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -28932,11 +28932,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-9.x-folwell-release",
+            "version": "dev-video-styles",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "cb4f97825b9d22b20121509cbba6634246e74ab2"
+                "reference": "f121684bfc52cdc7ae84c6ff56748a31a19d8293"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -28949,15 +28949,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-06-13T14:27:35+00:00"
+            "time": "2022-06-20T16:26:30+00:00"
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-9.x-components-release",
+            "version": "dev-video-styles",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "bd27c7ce68bd52b3e0cb2fbd6ca7c91d6773268a"
+                "reference": "944dc665cd6e2801bcbb46baf5a600776871bcaa"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -28967,15 +28967,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-05-16T20:22:35+00:00"
+            "time": "2022-06-20T17:41:48+00:00"
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-9.x-release",
+            "version": "dev-9.x-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "e08bf131cf8a1722f792da78b2ded12ad143b886"
+                "reference": "d058e8d7193927f80f2fcf24b428e3b44495a6e3"
             },
             "type": "drupal-profile-custom",
             "authors": [

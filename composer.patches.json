@@ -141,7 +141,7 @@
       "3258375: Out of memory error when used with views, metatag and memcache modules": "https://www.drupal.org/files/issues/2022-01-13/search_api-metatag-out-of-memory-3258375-2.patch"
     },
     "drupal/dropzonejs": {
-      "3125682: Support chunked uploads": "https://www.drupal.org/project/dropzonejs/issues/3125682"
+      "3125682: Support chunked uploads": "https://www.drupal.org/files/issues/2022-03-29/dropzonejs-support-chuked-uploads-3125682-30.patch"
     }
   }
 }

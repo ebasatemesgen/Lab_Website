@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5160be1a6b3838c6ef13ed42712e5ccd",
+    "content-hash": "ad7b01f6a5c5a9e295963ac3d0496682",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -28863,11 +28863,11 @@
         },
         {
             "name": "umn/d8lite_migration",
-            "version": "dev-9-dev",
+            "version": "dev-publication",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "ff8f6fc4887abb07f09244a1aab14b90db57ff59"
+                "reference": "1ec1456f6ba1e63eb249d29bf4f640980626027b"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -28884,7 +28884,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2021-10-07T14:09:21+00:00"
+            "time": "2021-12-07T13:56:15+00:00"
         },
         {
             "name": "umn/dors_migrate",
@@ -28932,11 +28932,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-video-styles",
+            "version": "dev-9.x-folwell-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "f121684bfc52cdc7ae84c6ff56748a31a19d8293"
+                "reference": "e15c6188a58a5fb3c134045c01defa1106a36ceb"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -28949,15 +28949,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-06-20T16:26:30+00:00"
+            "time": "2022-06-02T20:23:42+00:00"
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-video-styles",
+            "version": "dev-9.x-components-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "944dc665cd6e2801bcbb46baf5a600776871bcaa"
+                "reference": "f8d6ea9d5f6e08e51fb40cdc82c8dc6ee6386d0d"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -28967,15 +28967,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-06-20T17:41:48+00:00"
+            "time": "2022-06-02T20:24:52+00:00"
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-9.x-build",
+            "version": "dev-9.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "d058e8d7193927f80f2fcf24b428e3b44495a6e3"
+                "reference": "e08bf131cf8a1722f792da78b2ded12ad143b886"
             },
             "type": "drupal-profile-custom",
             "authors": [

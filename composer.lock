@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad7b01f6a5c5a9e295963ac3d0496682",
+    "content-hash": "0f5947f7e15471ad0d39d124ade74b0e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -28863,11 +28863,11 @@
         },
         {
             "name": "umn/d8lite_migration",
-            "version": "dev-publication",
+            "version": "dev-conference",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "1ec1456f6ba1e63eb249d29bf4f640980626027b"
+                "reference": "fbe973a52a3afabd152db3953b52512713685bf2"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -28884,7 +28884,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2021-12-07T13:56:15+00:00"
+            "time": "2021-09-02T20:08:39+00:00"
         },
         {
             "name": "umn/dors_migrate",

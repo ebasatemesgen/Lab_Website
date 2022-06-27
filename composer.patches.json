@@ -144,7 +144,9 @@
       "3258375: Out of memory error when used with views, metatag and memcache modules": "https://www.drupal.org/files/issues/2022-01-13/search_api-metatag-out-of-memory-3258375-2.patch"
     },
     "drupal/dropzonejs": {
-      "3125682: Support chunked uploads": "https://www.drupal.org/files/issues/2022-03-29/dropzonejs-support-chuked-uploads-3125682-30.patch"
+      "3125682: Support chunked uploads": "https://www.drupal.org/files/issues/2022-03-29/dropzonejs-support-chuked-uploads-3125682-30.patch",
+      "2924425: Maximum Upload Size Causes Silent JS Error": "https://www.drupal.org/files/issues/2021-01-18/2924425-maxFileSize-22.patch",
+      "3174484: Select files button text should respect field cardinality": "https://www.drupal.org/files/issues/2022-03-29/3174484-add-media-window-and-select-button-text-should-respect-field-cardinality-4.patch"
     }
   }
 }

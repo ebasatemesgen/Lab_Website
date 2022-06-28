@@ -1,0 +1,51 @@
+diff --git a/js/recaptcha.js b/js/recaptcha.js
+new file mode 100644
+index 0000000..9d3c17f
+--- /dev/null
++++ b/js/recaptcha.js
+@@ -0,0 +1,18 @@
++(function ($, Drupal) {
++  'use strict';
++  Drupal.behaviors.reCaptchaFix = {
++    attach: function (context, settings) {
++      if (context == document) {
++         var intervalID = window.setInterval(setAccesibilityLabel, 50);
++        function setAccesibilityLabel() {
++          var textAreaCheck = document.getElementsByClassName('g-recaptcha-response');
++          if (textAreaCheck.length > 0) {
++               $(textAreaCheck).attr('aria-labelledby', 'g-recaptcha-response');
++               console.log($(textAreaCheck));
++            clearInterval(intervalID);
++          }
++        }
++      }
++    }
++  };
++})(jQuery, Drupal);
+diff --git a/recaptcha.libraries.yml b/recaptcha.libraries.yml
+new file mode 100644
+index 0000000..0c2cfe7
+--- /dev/null
++++ b/recaptcha.libraries.yml
+@@ -0,0 +1,6 @@
++recaptcha:
++  version: 1.x
++  js:
++    js/recaptcha.js: {}
++  dependencies:
++    - core/jquery
+diff --git a/recaptcha.module b/recaptcha.module
+index e49d248..deb48e8 100644
+--- a/recaptcha.module
++++ b/recaptcha.module
+@@ -222,3 +222,10 @@ function template_preprocess_recaptcha_widget_noscript(&$variables) {
+   $variables['language'] = $variables['widget']['language'];
+   $variables['url'] = Url::fromUri($variables['widget']['recaptcha_src_fallback'], ['query' => ['k' => $variables['widget']['sitekey'], 'hl' => $variables['widget']['language']], 'absolute' => TRUE])->toString();
+ }
++
++/**
++ * Implements hook_form_alter().
++ */
++function recaptcha_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
++      $form['#attached']['library'][] = 'recaptcha/recaptcha';
++}

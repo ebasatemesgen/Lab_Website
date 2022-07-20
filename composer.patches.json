@@ -19,7 +19,8 @@
 
     },
     "drupal/simplesamlphp_auth": {
-      "2894945: Role assignment from attributes does not work when provisioning accounts": "https://www.drupal.org/files/issues/2020-02-26/simplesamlphp_auth-role_assignment-2894945-5.patch"
+      "2894945: Role assignment from attributes does not work when provisioning accounts": "https://www.drupal.org/files/issues/2020-02-26/simplesamlphp_auth-role_assignment-2894945-5.patch",
+      "3112851: /saml_login requires anonymous user, but this path is a redirect destination for users logged in through SAML": "https://www.drupal.org/files/issues/2020-05-13/3112851-3.patch"
     },
     "drupal/entity_print": {
       "2969184: PDF generation errors with DomPDF due to drupalSettings": "https://www.drupal.org/files/issues/2020-02-15/entity_print-dompdf-2969184-13.patch"

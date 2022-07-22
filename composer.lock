@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d003c3bf6c5f697fe14b66d2236cf870",
+    "content-hash": "8cb68c5956120d7f88a84721a80af2f2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -29104,11 +29104,11 @@
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-9.x-components-build",
+            "version": "dev-fix-buttons",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "b9b3688f335637ae5b60dde02b922ff73eddfec1"
+                "reference": "557878ab4e3e79e9b3ebfc118812fba408979bfc"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -29118,7 +29118,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-06-20T19:59:47+00:00"
+            "time": "2022-07-14T04:05:57+00:00"
         },
         {
             "name": "umn/lightning_umn",

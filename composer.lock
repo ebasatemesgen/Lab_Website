@@ -28900,7 +28900,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:UMD-wwwteam/umd_footer_block.git",
-                "reference": "72de29b0adbc59e8cd6620e284a795631d967025"
+                "reference": "88aeff7f3756a591c8fef476a451d34870b99c62"
             },
             "default-branch": true,
             "type": "drupal-module-custom",
@@ -28911,7 +28911,7 @@
                 }
             ],
             "description": "Drupal 8 module that provides a custom footer block for UMD sites.",
-            "time": "2021-02-10T21:37:47+00:00"
+            "time": "2022-07-14T20:38:24+00:00"
         },
         {
             "name": "umn/bootstrap_umn",

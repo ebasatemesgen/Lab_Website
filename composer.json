@@ -64,7 +64,7 @@
         "bower-asset/hammerjs": "^2.0",
         "drupal/responsive_menu": "^4.4.x-dev",
         "drupal/migrate_source_csv": "^3.4",
-        "drupal/entity_print": "2.x",
+        "drupal/entity_print": "^2.6",
         "tecnickcom/tcpdf": "~6",
         "mikehaertl/phpwkhtmltopdf": "~2.1",
         "drupal/config_update": "^1.5",

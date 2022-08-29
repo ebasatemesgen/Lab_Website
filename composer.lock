@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fadb6aeadef4cf95fe0ed80c47db16a7",
+    "content-hash": "4cc59ec8edcbaa7075a0952162ab727c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -424,6 +424,21 @@
                 "source": "https://github.com/caxy/php-htmldiff/tree/v0.1.14"
             },
             "time": "2022-01-19T11:09:59+00:00"
+        },
+        {
+            "name": "chart-js/chart-js",
+            "version": "3.9.1",
+            "dist": {
+                "type": "file",
+                "url": "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "chartjs"
+            }
         },
         {
             "name": "chi-teck/drupal-code-generator",

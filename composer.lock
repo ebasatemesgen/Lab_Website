@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da2365ff8b7b91aebeca898805a4a35f",
+    "content-hash": "ea681d8e07e7ee87ae03da2faae5c38d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -437,7 +437,7 @@
             },
             "type": "drupal-library",
             "extra": {
-                "installer-name": "chart.js"
+                "installer-name": "chartjs"
             }
         },
         {

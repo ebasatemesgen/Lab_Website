@@ -107,6 +107,9 @@
     "h5p/h5p-editor": {
       "3260094: PHP 8.0 deprecated syntax warnings for h5p-editor": "patches/h5pphp.patch"
     },
+    "drupal/charts": {
+      "3306922:Donut chart doesn't work after updating to PHP 8": "https://www.drupal.org/files/issues/2022-08-30/charts-issue-3306922.patch"
+    },
     "drupal/conflict" : {
       "3163662: PHP error when stored entity is not found": "https://www.drupal.org/files/issues/2020-08-05/3163662-2.patch"
     },
@@ -154,9 +157,6 @@
     },
     "drupal/recaptcha": {
       "2213337: Missing label on recaptcha_response_field": "patches/recaptcha-2213337-missing-label-14.patch"
-    },
-    "drupal/file_delete": {
-      "3115158: Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2022-08-09/3115158-15.patch"
     }
   }
 }

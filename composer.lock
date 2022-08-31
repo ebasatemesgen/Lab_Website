@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea681d8e07e7ee87ae03da2faae5c38d",
+    "content-hash": "c5a697405af0b1601c8a242b1a672ce6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -12888,6 +12888,52 @@
             "homepage": "https://www.drupal.org/project/purge",
             "support": {
                 "source": "https://git.drupalcode.org/project/purge"
+            }
+        },
+        {
+            "name": "drupal/purge_file",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/purge_file.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/purge_file-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "d32214afae360614247bdb3d0880a4fdd0b588f4"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/purge": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1649326473",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "omarlopesino",
+                    "homepage": "https://www.drupal.org/u/omarlopesino"
+                }
+            ],
+            "description": "Purge files from external caches.",
+            "homepage": "https://www.drupal.org/project/purge_file",
+            "support": {
+                "source": "https://git.drupal.org/project/purge_file.git",
+                "issues": "https://www.drupal.org/project/issues/purge_file"
             }
         },
         {

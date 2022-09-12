@@ -59,7 +59,6 @@
       "3053881: Reverting entity revisions that contain custom blocks erroneously triggers EntityChangedConstraint" : "https://www.drupal.org/files/issues/2021-06-03/3053881-47.patch",
       "2893407: POST /quickedit/metadata returning HTTP 503" : "https://www.drupal.org/files/issues/2021-06-07/2893407-47.patch",
       "3103422: Potential for recrsion in EntityReferenceItem::generateSampleValue() with circular entity references": "https://www.drupal.org/files/issues/2019-12-27/potential_for_recurs-3103422-2.patch",
-      "1650930: Use READ COMMITTED by default for MySQL transactions": "https://www.drupal.org/files/issues/2021-06-11/1650930_131.patch",
       "3121395: Fatal error after add Main page content block layout builder": "https://www.drupal.org/files/issues/2020-03-21/3121395-fix-fatal-error-after-add-Main-page-content-block.patch",
       "2794481: Allow end date to be optional": "https://www.drupal.org/files/issues/2018-05-14/2794481-60.patch",
       "3049332: PHP message: Error: Call to a member function getEntityTypeId() on null (Layout Builder)": "https://www.drupal.org/files/issues/2021-03-19/3049332-inline-56.patch",
@@ -69,9 +68,10 @@
       "2868014: [PP-1] Views Date Filter Datetime Granularity Option": "https://www.drupal.org/files/issues/2021-04-26/2868014-110.patch",
       "3254245: TypeError: Argument 1 passed to FileUrlGenerator::generateString() must be of the type string, null given": "https://www.drupal.org/files/issues/2021-12-18/file-url-generator-3254245-34.patch",
       "3226117: Uncaught RfcComplianceException thrown when sending email from a site whose name contains a comma": "https://www.drupal.org/files/issues/2022-01-31/3226117-email-sending-broken-if-site-name-contains-coma.patch",
-      "3008924: Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode": "https://www.drupal.org/files/issues/2021-12-09/3008924-rerolled-24.patch",
       "3023924: Cannot create references to/from string offsets": "https://www.drupal.org/files/issues/2019-01-04/3023924-form-8.patch",
-      "2925890: Invalid config structures can result in exceptions when saving a config entity": "https://www.drupal.org/files/issues/2022-02-08/2925890-37.patch"
+      "2925890: Invalid config structures can result in exceptions when saving a config entity": "https://www.drupal.org/files/issues/2022-02-08/2925890-37.patch",
+      "2833650: Error when saving settings of an entity reference field": "https://www.drupal.org/files/issues/2022-07-29/2833650-42.patch",
+      "2825860: Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2022-07-27/2825860-111.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"
@@ -107,6 +107,9 @@
     "h5p/h5p-editor": {
       "3260094: PHP 8.0 deprecated syntax warnings for h5p-editor": "patches/h5pphp.patch"
     },
+    "drupal/charts": {
+      "3306922:Donut chart doesn't work after updating to PHP 8": "https://www.drupal.org/files/issues/2022-08-30/charts-issue-3306922.patch"
+    },
     "drupal/conflict" : {
       "3163662: PHP error when stored entity is not found": "https://www.drupal.org/files/issues/2020-08-05/3163662-2.patch"
     },
@@ -133,8 +136,7 @@
       "2568187: Improve EntityReferenceRevisionsItem::generateSampleValue to be recursion-safe and devel_generate compatible": "https://www.drupal.org/files/issues/2021-04-05/2568187-recursion_limit-51.patch"
     },
     "drupal/ctools": {
-      "3029323: Cannot use Entity View block in Layout Builder when there is no context": "https://www.drupal.org/files/issues/2021-05-24/ctools-layout_builder_context-3029323-12.patch",
-      "2657060: Add Configure Filter functionality to block views configuration": "https://www.drupal.org/files/issues/2021-12-03/2657060-151.patch"
+      "3029323: Cannot use Entity View block in Layout Builder when there is no context": "https://www.drupal.org/files/issues/2021-05-24/ctools-layout_builder_context-3029323-12.patch"
     },
     "drupal/viewsreference": {
       "2938433: Add Label field formatter": "https://www.drupal.org/files/issues/2021-01-27/add_label_formatter-2938433-7.patch"
@@ -155,6 +157,9 @@
     },
     "drupal/recaptcha": {
       "2213337: Missing label on recaptcha_response_field": "patches/recaptcha-2213337-missing-label-14.patch"
+    },
+    "drupal/file_delete": {
+      "3115158: Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2022-08-09/3115158-15.patch"
     }
   }
 }

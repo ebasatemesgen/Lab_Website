@@ -260,7 +260,8 @@
         "geocoder-php/mapbox-provider": "^1.4",
         "drupal/ctools": "^3.11",
         "chart-js/chart-js": "^3.9",
-        "drupal/purge_file": "^1.0"
+        "drupal/purge_file": "^1.0",
+        "drupal/override_node_options": "^2.6"
     },
     "repositories": {
         "drupal-packagist": {

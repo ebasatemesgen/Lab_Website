@@ -83,7 +83,8 @@
       "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
     },
     "drupal/responsive_menu": {
-      "3212699: Setting to remove cache context": "https://www.drupal.org/files/issues/2021-10-07/responsive_menu-3212699-10.patch"
+      "3212699: Setting to remove cache context": "https://www.drupal.org/files/issues/2021-10-07/responsive_menu-3212699-10.patch",
+      "3089650: Potential caching issue when modifying the mobile menu with hooks": "https://www.drupal.org/files/issues/2021-10-06/responsive_menu-3089650-14.patch"
     },
     "drupal/workbench_access": {
       "3284067: NOTICE: PHP message: TypeError: array_filter(): Argument #1 ($array) must be of type array, null given": "https://www.drupal.org/files/issues/2022-06-03/workbench_access-3284067.patch"
@@ -112,6 +113,9 @@
     },
     "drupal/conflict" : {
       "3163662: PHP error when stored entity is not found": "https://www.drupal.org/files/issues/2020-08-05/3163662-2.patch"
+    },
+    "drupal/moderation_sidebar" : {
+      "3264639: Can't preview a new node": "https://www.drupal.org/files/issues/2022-02-16/preview-new-node-3264639-2.patch"
     },
     "drupal/permissions_by_term": {
       "Error in PHP 8.1": "https://www.drupal.org/files/issues/2022-05-20/permissions_by_term_php8-3281599-2.patch"
@@ -148,7 +152,8 @@
       "3187234: Errors due to missing FakeObjects Module": "https://www.drupal.org/files/issues/2021-08-04/3187234-fakeobjects-not-installed-8.patch"
     },
     "drupal/search_api": {
-      "3258375: Out of memory error when used with views, metatag and memcache modules": "https://www.drupal.org/files/issues/2022-01-13/search_api-metatag-out-of-memory-3258375-2.patch"
+      "3258375: Out of memory error when used with views, metatag and memcache modules": "https://www.drupal.org/files/issues/2022-01-13/search_api-metatag-out-of-memory-3258375-2.patch",
+      "3247914: Type specific boosting processor not saving my values": "https://www.drupal.org/files/issues/2022-02-06/3247914-8--type_specific_boost_settings_not_saved.patch"
     },
     "drupal/dropzonejs": {
       "3125682: Support chunked uploads": "https://www.drupal.org/files/issues/2022-03-29/dropzonejs-support-chuked-uploads-3125682-30.patch",
@@ -157,6 +162,9 @@
     },
     "drupal/recaptcha": {
       "2213337: Missing label on recaptcha_response_field": "patches/recaptcha-2213337-missing-label-14.patch"
+    },
+    "drupal/file_delete": {
+      "3115158: Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2022-08-09/3115158-15.patch"
     }
   }
 }

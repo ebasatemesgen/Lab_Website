@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e5db106186770b00b0a4356be2d48f97",
+    "content-hash": "9da9ab901525b01e89472c447f1dbc3e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -17146,20 +17146,20 @@
         },
         {
             "name": "drupal/webform",
-            "version": "6.2.0-beta3",
+            "version": "6.1.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "6.2.0-beta3"
+                "reference": "6.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-6.2.0-beta3.zip",
-                "reference": "6.2.0-beta3",
-                "shasum": "e19d54c15ac2031ffa57f9de0a28c2eff3672663"
+                "url": "https://ftp.drupal.org/files/projects/webform-6.1.3.zip",
+                "reference": "6.1.3",
+                "shasum": "efd032eadc10a4752b9b0203152a5d20eefac175"
             },
             "require": {
-                "drupal/core": "^9.4"
+                "drupal/core": "^8.8 || ^9"
             },
             "require-dev": {
                 "drupal/address": "~1.0",
@@ -17204,16 +17204,16 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.2.0-beta3",
-                    "datestamp": "1663937872",
+                    "version": "6.1.3",
+                    "datestamp": "1644940723",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": ">=9"
+                        "drush.services.yml": "^9 || ^10"
                     }
                 }
             },
@@ -17228,13 +17228,14 @@
                     "role": "Maintainer"
                 },
                 {
+                    "name": "Alexander Trotsenko (bucefal91)",
+                    "homepage": "https://www.drupal.org/u/bucefal91",
+                    "role": "Co-maintainer"
+                },
+                {
                     "name": "Contributors",
                     "homepage": "https://www.drupal.org/node/7404/committers",
                     "role": "Contributor"
-                },
-                {
-                    "name": "Liam Morland",
-                    "homepage": "https://www.drupal.org/user/493050"
                 },
                 {
                     "name": "quicksketch",
@@ -30617,7 +30618,6 @@
         "drupal/slick_extras": 10,
         "kporras07/composer-symlinks": 20,
         "drupal/block_class": 15,
-        "drupal/webform": 10,
         "drupal/diff": 5,
         "drupal/stage_file_proxy": 15,
         "onlyextart/colorbox": 20,
@@ -30659,5 +30659,5 @@
         "ext-dom": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.1.0"
 }

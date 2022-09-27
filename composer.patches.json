@@ -74,7 +74,10 @@
       "2825860: Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2022-07-27/2825860-111.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
-      "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"
+      "arrow key wrap": "https://gist.githubusercontent.com/dk-massive/a08c7b1bdb8814d2443151e17378cae2/raw/0069fbe66580873a3b441663db4092d199445984/a11y-tabs-arrow-key-wrap.patch"
+    },
+    "drupal/a11y_paragraphs_tabs": {
+      "3191979: version 1.0.2 of matthiasott/a11y-accordion-tabs breaks all functionality": "https://www.drupal.org/files/issues/2022-08-10/fixed-spelling-in-the-tabs-wrapper-template-3191979.patch"
     },
     "drupal/field_group": {
       "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-07-22/2969051-37.patch"

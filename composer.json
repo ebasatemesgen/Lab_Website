@@ -9,7 +9,7 @@
         "drupal/devel": "^4.1",
         "phpcompatibility/php-compatibility": "^9.3",
         "squizlabs/php_codesniffer": "^3.0",
-        "kint-php/kint": "^3.3"
+        "kint-php/kint": "^4.2"
     },
     "require": {
         "composer/installers": "^1.7",
@@ -115,7 +115,7 @@
         "drupal/views_bulk_operations": "^4.0",
         "drupal/http_response_headers": "^2.0@alpha",
         "drupal/a11y_paragraphs_tabs": "^1.7",
-        "npm-asset/a11y-accordion-tabs": "^0.5.0",
+        "npm-asset/a11y-accordion-tabs": "^1.0",
         "drupal/views_timelinejs": "^4.0",
         "drupal/charts": "^3.3",
         "drupal/views_data_export": "^1.0@beta",
@@ -265,7 +265,8 @@
         "drupal/jquery_ui_touch_punch": "^1.1",
         "drupal/moderation_dashboard": "^1.0",
         "drupal/purge": "^3.4",
-        "knightlab/timeline3": "3.8.18"
+        "knightlab/timeline3": "3.8.18",
+        "drupal/layout_builder_styles": "^1.0"
     },
     "repositories": {
         "drupal-packagist": {

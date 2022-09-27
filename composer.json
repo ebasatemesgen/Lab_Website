@@ -653,10 +653,9 @@
                 "name": "knightlab/timeline3",
                 "version": "3.8.18",
                 "type": "drupal-library",
-                "source": {
-                    "url": "git@github.umn.edu:drupalmodules/timeline3.git",
-                    "type": "git",
-                    "reference": "3.8.18"
+                "dist": {
+                    "url": "https://cdn.knightlab.com/libs/timeline3/3.8.18/timeline3.zip",
+                    "type": "zip"
                 }
             }
         }

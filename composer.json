@@ -264,7 +264,8 @@
         "drupal/entity": "^1.4",
         "drupal/jquery_ui_touch_punch": "^1.1",
         "drupal/moderation_dashboard": "^1.0",
-        "drupal/purge": "^3.4"
+        "drupal/purge": "^3.4",
+        "knightlab/timeline3": "3.8.18"
     },
     "repositories": {
         "drupal-packagist": {
@@ -645,6 +646,19 @@
         "umn_self_help_guides": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/umn_self_help_guides.git"
+        },
+        "timeline3": {
+            "type": "package",
+            "package": {
+                "name": "knightlab/timeline3",
+                "version": "3.8.18",
+                "type": "drupal-library",
+                "source": {
+                    "url": "git@github.umn.edu:drupalmodules/timeline3.git",
+                    "type": "git",
+                    "reference": "3.8.18"
+                }
+            }
         }
     },
     "scripts": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8cb40529e3d61170b201a2e414614a84",
+    "content-hash": "e690045cd29966c053299ed8be1c277d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11135,20 +11135,21 @@
         },
         {
             "name": "drupal/migrate_plus",
-            "version": "5.3.0",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_plus.git",
-                "reference": "8.x-5.3"
+                "reference": "6.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-5.3.zip",
-                "reference": "8.x-5.3",
-                "shasum": "3cf6dde235d7604ee49be2986812c0ee5e2982f6"
+                "url": "https://ftp.drupal.org/files/projects/migrate_plus-6.0.0.zip",
+                "reference": "6.0.0",
+                "shasum": "cbdda92ef6c4d096a673ff391bc061e012433ecf"
             },
             "require": {
-                "drupal/core": "^9.1"
+                "drupal/core": ">=9.1",
+                "php": ">=7.4"
             },
             "require-dev": {
                 "drupal/migrate_example_advanced_setup": "*",
@@ -11161,8 +11162,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.3",
-                    "datestamp": "1650658156",
+                    "version": "6.0.0",
+                    "datestamp": "1650983140",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11591,35 +11592,36 @@
         },
         {
             "name": "drupal/migrate_tools",
-            "version": "5.1.0",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_tools.git",
-                "reference": "8.x-5.1"
+                "reference": "6.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-5.1.zip",
-                "reference": "8.x-5.1",
-                "shasum": "2c1a9d35d318a0e1de30a99fbf64bedd4e65cee1"
+                "url": "https://ftp.drupal.org/files/projects/migrate_tools-6.0.0.zip",
+                "reference": "6.0.0",
+                "shasum": "bec5a0e4fbb6ec0face6780c2ab98ffe6096188b"
             },
             "require": {
-                "drupal/core": "^9.1",
-                "drupal/migrate_plus": "^5",
-                "php": ">=7.1"
+                "drupal/core": ">=9.1",
+                "php": ">=7.4"
             },
             "require-dev": {
-                "drupal/migrate_source_csv": "^3.0",
-                "drush/drush": "^10"
+                "drupal/migrate_plus": ">=5",
+                "drupal/migrate_source_csv": ">=3",
+                "drush/drush": ">=11"
             },
             "suggest": {
-                "drush/drush": "^9 || ^10"
+                "drupal/migrate_plus": ">=5",
+                "drush/drush": ">=11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.1",
-                    "datestamp": "1640378500",
+                    "version": "6.0.0",
+                    "datestamp": "1651240616",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11627,7 +11629,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9 || ^10"
+                        "drush.services.yml": ">=9"
                     }
                 }
             },
@@ -16075,16 +16077,16 @@
         },
         {
             "name": "drupal/umn_dm_migrate",
-            "version": "2.1.7",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_migrate.git",
-                "reference": "f7bafc19c5c4f2ca38b6d219407cfbd80cb6b53e"
+                "reference": "56783e491d8ba08f5ff89057b54df640e20d624f"
             },
             "require": {
                 "drupal/core": "^8.8 | ^9",
                 "drupal/digitalmeasures_migrate": "2.0.x-dev",
-                "drupal/migrate_plus": "^5.1",
+                "drupal/migrate_plus": "^6.0",
                 "drupal/migrate_process_regex": "2.0.x-dev",
                 "drupal/migrate_process_s3": "2.0.x-dev",
                 "drupal/migrate_process_skip": "2.0.x-dev",
@@ -16092,11 +16094,11 @@
                 "drupal/migrate_process_url": "2.0.x-dev",
                 "drupal/migrate_process_vardump": "2.0.x-dev",
                 "drupal/migrate_process_xml": "2.0.x-dev",
-                "drupal/migrate_tools": "^5.0"
+                "drupal/migrate_tools": "^6.0"
             },
             "type": "drupal-module",
             "description": "Contains migrations and configuration for migrating Profiles from Digital Measures into a Drupal site.",
-            "time": "2022-02-09T06:06:17+00:00"
+            "time": "2022-09-28T19:07:26+00:00"
         },
         {
             "name": "drupal/umn_dm_storage",

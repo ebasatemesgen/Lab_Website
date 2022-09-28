@@ -113,9 +113,6 @@
     "drupal/conflict" : {
       "3163662: PHP error when stored entity is not found": "https://www.drupal.org/files/issues/2020-08-05/3163662-2.patch"
     },
-    "drupal/moderation_sidebar" : {
-      "3264639: Can't preview a new node": "https://www.drupal.org/files/issues/2022-02-16/preview-new-node-3264639-2.patch"
-    },
     "drupal/permissions_by_term": {
       "Error in PHP 8.1": "https://www.drupal.org/files/issues/2022-05-20/permissions_by_term_php8-3281599-2.patch"
     },
@@ -160,9 +157,6 @@
     },
     "drupal/recaptcha": {
       "2213337: Missing label on recaptcha_response_field": "patches/recaptcha-2213337-missing-label-14.patch"
-    },
-    "drupal/file_delete": {
-      "3115158: Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2022-08-09/3115158-15.patch"
     }
   }
 }

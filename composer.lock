@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "130c72f09a9dabecbb937513ec2fcfca",
+    "content-hash": "47607e172c7f4d75886cdc331b1061f7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -12726,17 +12726,17 @@
         },
         {
             "name": "drupal/permissions_by_term",
-            "version": "3.1.19",
+            "version": "3.1.17",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/permissions_by_term.git",
-                "reference": "3.1.19"
+                "reference": "3.1.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.19.zip",
-                "reference": "3.1.19",
-                "shasum": "854232a8d2500ee86e3cc36bf5973ba3e4c653b8"
+                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.17.zip",
+                "reference": "3.1.17",
+                "shasum": "a392ff9bccbbc2218be2a035017a15782e1150e0"
             },
             "require": {
                 "drupal/core": "^9.0",
@@ -12745,8 +12745,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.19",
-                    "datestamp": "1662572201",
+                    "version": "3.1.17",
+                    "datestamp": "1641214540",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12760,16 +12760,16 @@
             "authors": [
                 {
                     "name": "Peter Majmesku",
-                    "homepage": "https://www.drupal.org/user/1529744",
+                    "homepage": "https://www.drupal.org/user/786132",
                     "email": "majmesku@publicplan.de"
                 },
                 {
-                    "name": "Peter Majmesku",
-                    "homepage": "https://www.drupal.org/user/786132"
+                    "name": "SaschaHannes",
+                    "homepage": "https://www.drupal.org/user/3536189"
                 },
                 {
-                    "name": "Wassilissa Elrich",
-                    "homepage": "https://www.drupal.org/user/3729479"
+                    "name": "marcoliver",
+                    "homepage": "https://www.drupal.org/user/1529744"
                 }
             ],
             "description": "Restricts access to nodes by taxonomy terms in relation to users and their roles.",
@@ -12888,52 +12888,6 @@
             "homepage": "https://www.drupal.org/project/purge",
             "support": {
                 "source": "https://git.drupalcode.org/project/purge"
-            }
-        },
-        {
-            "name": "drupal/purge_file",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/purge_file.git",
-                "reference": "1.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/purge_file-1.0.0.zip",
-                "reference": "1.0.0",
-                "shasum": "d32214afae360614247bdb3d0880a4fdd0b588f4"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/purge": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.0.0",
-                    "datestamp": "1649326473",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "omarlopesino",
-                    "homepage": "https://www.drupal.org/u/omarlopesino"
-                }
-            ],
-            "description": "Purge files from external caches.",
-            "homepage": "https://www.drupal.org/project/purge_file",
-            "support": {
-                "source": "https://git.drupal.org/project/purge_file.git",
-                "issues": "https://www.drupal.org/project/issues/purge_file"
             }
         },
         {
@@ -29157,11 +29111,11 @@
         },
         {
             "name": "umn/d8lite_migration",
-            "version": "dev-9-dev",
+            "version": "dev-pharmacy",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/d8lite-migrations.git",
-                "reference": "ff8f6fc4887abb07f09244a1aab14b90db57ff59"
+                "reference": "975a72bc1c49cacb6ae00fa982d4734789f5a9eb"
             },
             "type": "drupal-module-custom",
             "extra": {
@@ -29178,7 +29132,7 @@
                 }
             ],
             "description": "Migrate D7 Lite sites to D8",
-            "time": "2021-10-07T14:09:21+00:00"
+            "time": "2022-09-28T15:43:03+00:00"
         },
         {
             "name": "umn/dors_migrate",
@@ -29226,11 +29180,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-9.x-folwell-build",
+            "version": "dev-9.x-folwell-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "cd9010d48b878b70b357a06a76c92ca86f842e23"
+                "reference": "c127802ac043b946c5b0d31d0a2f2ca19a6440d7"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -29243,15 +29197,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-08-31T15:03:52+00:00"
+            "time": "2022-07-25T19:12:27+00:00"
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-9.x-components-build",
+            "version": "dev-9.x-components-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "95bf3a00d8ec9c85a0429b9e99862dde86848b70"
+                "reference": "8fa3122262fc15ef7122d2379fa6d5992272e177"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -29261,15 +29215,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-09-12T15:55:37+00:00"
+            "time": "2022-08-03T18:38:41+00:00"
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-9.x-build",
+            "version": "dev-9.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "2e1b77f4297cb46b8138a3b0350d7597787efa93"
+                "reference": "ad907f69b636c88909d40026c54bb58ff7f6dd67"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -29278,7 +29232,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2022-09-08T14:56:02+00:00"
+            "time": "2022-06-27T18:18:02+00:00"
         },
         {
             "name": "umn/slick_media",

@@ -265,7 +265,6 @@
         "drupal/jquery_ui_touch_punch": "^1.1",
         "drupal/moderation_dashboard": "^1.0",
         "drupal/purge": "^3.4",
-        "knightlab/timeline3": "3.8.18",
         "drupal/layout_builder_styles": "^1.0"
     },
     "repositories": {

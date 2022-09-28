@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f1b4c045235072c10f62c12f7a6ee84",
+    "content-hash": "7770f1090c6c48359e7d6152b3ba7573",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -19470,16 +19470,6 @@
                 "source": "https://github.com/Alexander2Leb/slick/tree/1.6.1"
             },
             "time": "2017-03-31T12:40:41+00:00"
-        },
-        {
-            "name": "knightlab/timeline3",
-            "version": "3.8.18",
-            "source": {
-                "type": "git",
-                "url": "git@github.umn.edu:drupalmodules/timeline3.git",
-                "reference": "3.8.18"
-            },
-            "type": "drupal-library"
         },
         {
             "name": "kporras07/composer-symlinks",

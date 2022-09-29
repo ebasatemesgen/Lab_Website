@@ -21,7 +21,7 @@
         "drupal/restui": "^1.13",
         "drupal/admin_toolbar": "^3.0",
         "drupal/address": "^1.0@RC",
-        "drupal/linkit": "^5.0",
+        "drupal/linkit": "^6.0@beta",
         "drupal/robotstxt": "^1.0",
         "drupal/simple_gmap": "^3.0",
         "umn/umn_features": "9.0",
@@ -46,8 +46,8 @@
         "drupal/workbench_access": "^1.1",
         "drupal/honeypot": "^2.1",
         "drupal/diff": "^1.0@RC",
-        "drupal/migrate_plus": "^5.1",
-        "drupal/migrate_tools": "^5.0",
+        "drupal/migrate_plus": "^6.0",
+        "drupal/migrate_tools": "^6.0",
         "drupal/iframe": "^2.10",
         "drupal/metatag": "^1.10",
         "drupal/config_inspector": "^2.0",
@@ -103,13 +103,13 @@
         "drush/drush": "^10.3",
         "drupal/layout_builder_modal": "^1.1",
         "drupal/google_tag": "^1.1",
-        "bower-asset/highcharts": "^7.1",
-        "highcharts/highcharts": "6.1.0",
-        "highcharts/more": "6.1.0",
-        "highcharts/exporting": "6.1.0",
-        "highcharts/export-data": "6.1.0",
-        "highcharts/accessibility": "6.1.0",
-        "highcharts/3d": "6.1.0",
+        "bower-asset/highcharts": "^10",
+        "highcharts/highcharts": "^10.0",
+        "highcharts/more": "^10.0",
+        "highcharts/exporting": "^10.0",
+        "highcharts/export-data": "^10.0",
+        "highcharts/accessibility": "^10.0",
+        "highcharts/3d": "^10.0",
         "umn/bootstrap_umn": "dev-master",
         "drupal/environment_indicator": "^4.0",
         "drupal/views_bulk_operations": "^4.0",
@@ -131,7 +131,7 @@
         "drupal/redirect_after_login": "^2.5",
         "drupal/contact_emails": "^1.18",
         "drupal/simple_instagram_feed": "^3.2",
-        "jsanahuja/jqueryinstagramfeed": "3.0.2",
+        "jsanahuja/jqueryinstagramfeed": "^3.0",
         "drupal/geofield": "^1.11",
         "drupal/menu_breadcrumb": "^1.12",
         "drupal/simple_sitemap": "^4.0",
@@ -200,7 +200,7 @@
         "drupal/textarea_widget_for_text": "^1.2",
         "drupal/ckeditorheight": "^1.8",
         "drupal/view_mode_page": "^4.0",
-        "drupal/umn_dm_migrate": "2.1.7",
+        "drupal/umn_dm_migrate": "^2.0",
         "drupal/umn_dm_storage": "2.1.7",
         "drupal/h5p": "^2.0@alpha",
         "drupal/field_permissions": "^1.1",
@@ -369,10 +369,10 @@
             "type": "package",
             "package": {
                 "name": "jsanahuja/jqueryinstagramfeed",
-                "version": "3.0.2",
+                "version": "3.0.4",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/3.0.2.zip",
+                    "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/3.0.4.zip",
                     "type": "zip"
                 }
             }
@@ -382,11 +382,11 @@
             "package": {
                 "name": "gdsmith/easing",
                 "type": "drupal-library",
-                "version": "1.4.1",
+                "version": "1.4.2",
                 "source": {
                     "url": "https://github.com/gdsmith/jquery.easing.git",
                     "type": "git",
-                    "reference": "1.4.1"
+                    "reference": "1.4.2"
                 }
             }
         },
@@ -395,9 +395,9 @@
             "package": {
                 "name": "ckeditor/fakeobjects",
                 "type": "drupal-library",
-                "version": "4.17.1",
+                "version": "4.20.0",
                 "dist": {
-                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.17.1.zip",
+                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.20.0.zip",
                     "type": "zip"
                 }
             }
@@ -406,9 +406,9 @@
             "type": "package",
             "package": {
                 "name": "ckeditor/anchor_link",
-                "version": "4.17.1",
+                "version": "4.20.0",
                 "dist": {
-                    "url": "https://download.ckeditor.com/link/releases/link_4.17.1.zip",
+                    "url": "https://download.ckeditor.com/link/releases/link_4.20.0.zip",
                     "type": "zip"
                 }
             }
@@ -418,9 +418,9 @@
             "package": {
                 "name": "ckeditor/templates",
                 "type": "drupal-library",
-                "version": "4.10.1",
+                "version": "4.20.0",
                 "dist": {
-                    "url": "https://download.ckeditor.com/templates/releases/templates_4.16.0.zip",
+                    "url": "https://download.ckeditor.com/templates/releases/templates_4.20.0.zip",
                     "type": "zip"
                 }
             }
@@ -476,13 +476,13 @@
             "type": "package",
             "package": {
                 "name": "highcharts/highcharts",
-                "version": "6.1.0",
+                "version": "10.2.1",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "highcharts"
                 },
                 "dist": {
-                    "url": "https://code.highcharts.com/6.1.0/highcharts.js",
+                    "url": "https://code.highcharts.com/10.2.1/highcharts.js",
                     "type": "file"
                 },
                 "require": {
@@ -494,13 +494,13 @@
             "type": "package",
             "package": {
                 "name": "highcharts/more",
-                "version": "6.1.0",
+                "version": "10.2.1",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "highcharts_more"
                 },
                 "dist": {
-                    "url": "https://code.highcharts.com/6.1.0/highcharts-more.js",
+                    "url": "https://code.highcharts.com/10.2.1/highcharts-more.js",
                     "type": "file"
                 },
                 "require": {
@@ -512,13 +512,13 @@
             "type": "package",
             "package": {
                 "name": "highcharts/exporting",
-                "version": "6.1.0",
+                "version": "10.2.1",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "highcharts_exporting"
                 },
                 "dist": {
-                    "url": "https://code.highcharts.com/6.1.0/modules/exporting.js",
+                    "url": "https://code.highcharts.com/10.2.1/modules/exporting.js",
                     "type": "file"
                 },
                 "require": {
@@ -530,13 +530,13 @@
             "type": "package",
             "package": {
                 "name": "highcharts/export-data",
-                "version": "6.1.0",
+                "version": "10.2.1",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "highcharts_export-data"
                 },
                 "dist": {
-                    "url": "https://code.highcharts.com/6.1.0/modules/export-data.js",
+                    "url": "https://code.highcharts.com/10.2.1/modules/export-data.js",
                     "type": "file"
                 },
                 "require": {
@@ -548,13 +548,13 @@
             "type": "package",
             "package": {
           "name": "highcharts/accessibility",
-                "version": "6.1.0",
+                "version": "10.2.1",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "highcharts_accessibility"
                 },
                 "dist": {
-                    "url": "https://code.highcharts.com/6.1.0/modules/accessibility.js",
+                    "url": "https://code.highcharts.com/10.2.1/modules/accessibility.js",
                     "type": "file"
                 },
                 "require": {
@@ -566,13 +566,13 @@
             "type": "package",
             "package": {
                 "name": "highcharts/3d",
-                "version": "6.1.0",
+                "version": "10.2.1",
                 "type": "drupal-library",
                 "extra": {
                     "installer-name": "highcharts_3d"
                 },
                 "dist": {
-                    "url": "https://code.highcharts.com/6.1.0/highcharts-3d.js",
+                    "url": "https://code.highcharts.com/10.2.1/highcharts-3d.js",
                     "type": "file"
                 },
                 "require": {

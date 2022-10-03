@@ -74,7 +74,10 @@
       "2825860: Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2022-07-27/2825860-111.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
-      "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"
+      "arrow key wrap": "https://raw.github.umn.edu/gist/djk/e72d7e8a0942e00a317258ddd0c81a4e/raw/22b724aa688e8971db9b51f35a729e78036b1cfe/a11y-tabs-arrow-key-wrap.patch?token=AAAGGTFD6GBVGRZ7OZ2O4E3DHRZPU"
+    },
+    "drupal/a11y_paragraphs_tabs": {
+      "3191979: version 1.0.2 of matthiasott/a11y-accordion-tabs breaks all functionality": "https://www.drupal.org/files/issues/2022-08-10/fixed-spelling-in-the-tabs-wrapper-template-3191979.patch"
     },
     "drupal/field_group": {
       "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-07-22/2969051-37.patch"
@@ -85,9 +88,6 @@
     "drupal/responsive_menu": {
       "3212699: Setting to remove cache context": "https://www.drupal.org/files/issues/2021-10-07/responsive_menu-3212699-10.patch",
       "3089650: Potential caching issue when modifying the mobile menu with hooks": "https://www.drupal.org/files/issues/2021-10-06/responsive_menu-3089650-14.patch"
-    },
-    "drupal/workbench_access": {
-      "3284067: NOTICE: PHP message: TypeError: array_filter(): Argument #1 ($array) must be of type array, null given": "https://www.drupal.org/files/issues/2022-06-03/workbench_access-3284067.patch"
     },
     "drupal/entity_embed": {
       "3069448: Array to string conversion for Media Image": "https://www.drupal.org/files/issues/2019-10-18/entity-embed-array-to-string--3069448-19.patch",
@@ -123,9 +123,6 @@
     "drupal/auto_entitylabel": {
       "3201476: ResaveBatch doesn't work for custom entity types": "https://www.drupal.org/files/issues/2021-04-21/3201476-4.patch",
       "3065687: Integration with Layout Builder for custom block types": "https://www.drupal.org/files/issues/2021-07-21/auto_entitylabel-layout_builder_component_title-3065687-16.patch"
-    },
-    "drupal/twitter_api_block": {
-      "3107146: Placing the block through Layout Builder fails": "https://www.drupal.org/files/issues/2021-05-14/twitter_api_block-3107146-8.patch"
     },
     "drupal/quick_node_clone": {
       "3183249: Nested paragraph support": "https://www.drupal.org/files/issues/2020-11-18/quick_node_clone-3183249-2.patch",

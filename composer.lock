@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31eb123b93c580f332cbe7ff03080bcf",
+    "content-hash": "c615d597bdca312ffa4977b6c97e6b63",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -29598,7 +29598,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "bc2e338a9f1eaed238531b27feead63623e8f529"
+                "reference": "6fb432eb5482c112f9ed128398d6385d13a1d8e0"
             },
             "default-branch": true,
             "type": "drupal-module-custom",
@@ -29626,7 +29626,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2022-09-08T14:56:02+00:00"
+            "time": "2022-10-04T21:02:12+00:00"
         },
         {
             "name": "umn/slick_media",

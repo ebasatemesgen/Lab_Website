@@ -74,7 +74,7 @@
       "2825860: Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2022-07-27/2825860-111.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
-      "arrow key wrap": "https://raw.github.umn.edu/gist/djk/e72d7e8a0942e00a317258ddd0c81a4e/raw/22b724aa688e8971db9b51f35a729e78036b1cfe/a11y-tabs-arrow-key-wrap.patch?token=AAAGGTFD6GBVGRZ7OZ2O4E3DHRZPU"
+      "arrow key wrap": "patches/a11y-tabs-arrow-key-wrap.patch"
     },
     "drupal/a11y_paragraphs_tabs": {
       "3191979: version 1.0.2 of matthiasott/a11y-accordion-tabs breaks all functionality": "https://www.drupal.org/files/issues/2022-08-10/fixed-spelling-in-the-tabs-wrapper-template-3191979.patch"

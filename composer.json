@@ -266,7 +266,8 @@
         "drupal/jquery_ui_touch_punch": "^1.1",
         "drupal/moderation_dashboard": "^1.0",
         "drupal/purge": "^3.4",
-        "drupal/layout_builder_styles": "^1.0"
+        "drupal/layout_builder_styles": "^1.0",
+        "drupal/node_read_time": "^1.6"
     },
     "repositories": {
         "drupal-packagist": {

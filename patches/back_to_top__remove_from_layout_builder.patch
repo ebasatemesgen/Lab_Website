@@ -1,0 +1,25 @@
+diff --git a/back_to_top.module b/back_to_top.module
+index 19e67c3..9225e0c 100644
+--- a/back_to_top.module
++++ b/back_to_top.module
+@@ -98,17 +98,18 @@ function back_to_top_page_attachments(array &$attachments) {
+ /**
+  * Check adminpage.
+  *
+- * Check if page viewed is in admin section or a node/edit for possible option
++ * Check if page viewed is in admin section, a node/edit, or layout builder form for possible option
+  * to not include javascript and css in that case.
+  */
+ function is_adminpage() {
+   $route = \Drupal::routeMatch()->getRouteObject();
++  $is_layout_builder = $route && method_exists($route, 'getOption') && $route->getOption('_layout_builder');
+   $is_admin = \Drupal::service('router.admin_context')->isAdminRoute($route);
+ 
+   // Alter for admin prevent check.
+   \Drupal::moduleHandler()->alter('back_to_top_admin_prevent', $is_admin);
+ 
+-  return $is_admin;
++  return ($is_admin || $is_layout_builder);
+ }
+ 
+ /**

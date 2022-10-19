@@ -71,10 +71,14 @@
       "3023924: Cannot create references to/from string offsets": "https://www.drupal.org/files/issues/2019-01-04/3023924-form-8.patch",
       "2925890: Invalid config structures can result in exceptions when saving a config entity": "https://www.drupal.org/files/issues/2022-02-08/2925890-37.patch",
       "2833650: Error when saving settings of an entity reference field": "https://www.drupal.org/files/issues/2022-07-29/2833650-42.patch",
-      "2825860: Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2022-07-27/2825860-111.patch"
+      "2825860: Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2022-07-27/2825860-111.patch",
+      "2876094: Linking an image creates an empty paragraph tag in CKEditor": "https://www.drupal.org/files/issues/2021-08-09/2876094-38.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
-      "arrow key wrap": "https://gist.githubusercontent.com/hart0554/781d915620f6c8f6d9ab2fc2b2922c7b/raw/8fe77d69298c8d6fe098adcfb7994b522252bd87/a11y-accordion-tabs-arrow-wrap.patch"
+      "arrow key wrap": "patches/a11y-tabs-arrow-key-wrap.patch"
+    },
+    "drupal/a11y_paragraphs_tabs": {
+      "3191979: version 1.0.2 of matthiasott/a11y-accordion-tabs breaks all functionality": "https://www.drupal.org/files/issues/2022-08-10/fixed-spelling-in-the-tabs-wrapper-template-3191979.patch"
     },
     "drupal/field_group": {
       "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-07-22/2969051-37.patch"
@@ -83,10 +87,8 @@
       "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
     },
     "drupal/responsive_menu": {
-      "3212699: Setting to remove cache context": "https://www.drupal.org/files/issues/2021-10-07/responsive_menu-3212699-10.patch"
-    },
-    "drupal/workbench_access": {
-      "3284067: NOTICE: PHP message: TypeError: array_filter(): Argument #1 ($array) must be of type array, null given": "https://www.drupal.org/files/issues/2022-06-03/workbench_access-3284067.patch"
+      "3212699: Setting to remove cache context": "https://www.drupal.org/files/issues/2021-10-07/responsive_menu-3212699-10.patch",
+      "3089650: Potential caching issue when modifying the mobile menu with hooks": "https://www.drupal.org/files/issues/2021-10-06/responsive_menu-3089650-14.patch"
     },
     "drupal/entity_embed": {
       "3069448: Array to string conversion for Media Image": "https://www.drupal.org/files/issues/2019-10-18/entity-embed-array-to-string--3069448-19.patch",
@@ -99,10 +101,12 @@
       "3112501:Add views contextual filter to get group ID from either URL or group content": "https://www.drupal.org/files/issues/2020-02-10/views-cont-filter-to-get-gid-from-url-or-group-content-3112501.patch",
       "2797793: Entities identified by strings as group content": "https://www.drupal.org/files/issues/2021-06-15/group-support_string_entity_ids-2797793-260.patch",
       "2906085: Content moderation integration: transition permissions and latest version access": "https://www.drupal.org/files/issues/2020-09-23/2906085-80.patch",
-      "3256998: Access to Revisions of Group Content is Broken": "https://www.drupal.org/files/issues/2022-02-09/group-fix-group-revisions-3256998-22_0.patch"
+      "3256998: Access to Revisions of Group Content is Broken": "https://www.drupal.org/files/issues/2022-02-09/group-fix-group-revisions-3256998-22_0.patch",
+      "3305840: WSOD Error when editing group type permissions": "https://www.drupal.org/files/issues/2022-08-25/group-3294949-2.patch"
     },
     "drupal/back_to_top": {
-      "3151196: Does not work in Drupal 9: S.easing[this.easing] is not a function" : "https://www.drupal.org/files/issues/2021-03-03/3151196_fix_for_D9_no_dependencies.patch"
+      "3151196: Does not work in Drupal 9: S.easing[this.easing] is not a function" : "https://www.drupal.org/files/issues/2021-03-03/3151196_fix_for_D9_no_dependencies.patch",
+      "remove from layout builder pages": "patches/back_to_top__remove_from_layout_builder.patch"
     },
     "h5p/h5p-editor": {
       "3260094: PHP 8.0 deprecated syntax warnings for h5p-editor": "patches/h5pphp.patch"
@@ -113,6 +117,9 @@
     "drupal/conflict" : {
       "3163662: PHP error when stored entity is not found": "https://www.drupal.org/files/issues/2020-08-05/3163662-2.patch"
     },
+    "drupal/moderation_sidebar" : {
+      "3264639: Can't preview a new node": "https://www.drupal.org/files/issues/2022-02-16/preview-new-node-3264639-2.patch"
+    },
     "drupal/permissions_by_term": {
       "Error in PHP 8.1": "https://www.drupal.org/files/issues/2022-05-20/permissions_by_term_php8-3281599-2.patch"
     },
@@ -120,11 +127,9 @@
       "3201476: ResaveBatch doesn't work for custom entity types": "https://www.drupal.org/files/issues/2021-04-21/3201476-4.patch",
       "3065687: Integration with Layout Builder for custom block types": "https://www.drupal.org/files/issues/2021-07-21/auto_entitylabel-layout_builder_component_title-3065687-16.patch"
     },
-    "drupal/twitter_api_block": {
-      "3107146: Placing the block through Layout Builder fails": "https://www.drupal.org/files/issues/2021-05-14/twitter_api_block-3107146-8.patch"
-    },
     "drupal/quick_node_clone": {
-      "3183249: Nested paragraph support": "https://www.drupal.org/files/issues/2020-11-18/quick_node_clone-3183249-2.patch"
+      "3183249: Nested paragraph support": "https://www.drupal.org/files/issues/2020-11-18/quick_node_clone-3183249-2.patch",
+      "3100117: Inline blocks from layout builder not cloned properly": "https://www.drupal.org/files/issues/2022-07-17/3100117-28.patch"
     },
     "drupal/tablefield": {
       "3163841: Undefined index: caption": "https://www.drupal.org/files/issues/2020-08-10/tablefield-empty-caption-notice-2.patch"
@@ -148,15 +153,22 @@
       "3187234: Errors due to missing FakeObjects Module": "https://www.drupal.org/files/issues/2021-08-04/3187234-fakeobjects-not-installed-8.patch"
     },
     "drupal/search_api": {
-      "3258375: Out of memory error when used with views, metatag and memcache modules": "https://www.drupal.org/files/issues/2022-01-13/search_api-metatag-out-of-memory-3258375-2.patch"
+      "3258375: Out of memory error when used with views, metatag and memcache modules": "https://www.drupal.org/files/issues/2022-01-13/search_api-metatag-out-of-memory-3258375-2.patch",
+      "3247914: Type specific boosting processor not saving my values": "https://www.drupal.org/files/issues/2022-02-06/3247914-8--type_specific_boost_settings_not_saved.patch"
     },
     "drupal/dropzonejs": {
       "3125682: Support chunked uploads": "https://www.drupal.org/files/issues/2022-03-29/dropzonejs-support-chuked-uploads-3125682-30.patch",
       "2924425: Maximum Upload Size Causes Silent JS Error": "https://www.drupal.org/files/issues/2021-01-18/2924425-maxFileSize-22.patch",
       "3174484: Select files button text should respect field cardinality": "https://www.drupal.org/files/issues/2022-03-29/3174484-add-media-window-and-select-button-text-should-respect-field-cardinality-4.patch"
     },
+    "drupal/content_moderation_notifications": {
+      "3188443: isable the site email address breaks the workflow even using Adhoc recipients": "https://www.drupal.org/files/issues/2022-09-06/add_emails_to_recipients-3188443-11.patch"
+    },
     "drupal/recaptcha": {
       "2213337: Missing label on recaptcha_response_field": "patches/recaptcha-2213337-missing-label-14.patch"
+    },
+    "drupal/file_delete": {
+      "3115158: Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2022-08-09/3115158-15.patch"
     }
   }
 }

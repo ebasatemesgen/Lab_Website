@@ -72,7 +72,8 @@
       "2925890: Invalid config structures can result in exceptions when saving a config entity": "https://www.drupal.org/files/issues/2022-02-08/2925890-37.patch",
       "2833650: Error when saving settings of an entity reference field": "https://www.drupal.org/files/issues/2022-07-29/2833650-42.patch",
       "2825860: Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2022-07-27/2825860-111.patch",
-      "2876094: Linking an image creates an empty paragraph tag in CKEditor": "https://www.drupal.org/files/issues/2021-08-09/2876094-38.patch"
+      "2876094: Linking an image creates an empty paragraph tag in CKEditor": "https://www.drupal.org/files/issues/2021-08-09/2876094-38.patch",
+      "3131055: Wrapping drupal-media image in a link produces empty P tags after image": "https://www.drupal.org/files/issues/2021-04-19/ckeditor-p-tag-added-to-media-3131055-17.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "patches/a11y-tabs-arrow-key-wrap.patch"

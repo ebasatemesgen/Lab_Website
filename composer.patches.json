@@ -112,6 +112,9 @@
     "h5p/h5p-editor": {
       "3260094: PHP 8.0 deprecated syntax warnings for h5p-editor": "patches/h5pphp.patch"
     },
+    "drupal/h5p": {
+      "3194707: Files disappear in H5P editor": "https://www.drupal.org/files/issues/2021-01-26/h5p-fix-keeping-h5p-content-id-3194707-0.patch"
+    },
     "drupal/charts": {
       "3306922:Donut chart doesn't work after updating to PHP 8": "https://www.drupal.org/files/issues/2022-08-30/charts-issue-3306922.patch"
     },

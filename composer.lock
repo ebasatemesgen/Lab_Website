@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1766bb966e4c209fdd1b309ed4290c5",
+    "content-hash": "22ceab1361983a59e99d24aa2e5a5da5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -29771,11 +29771,11 @@
         },
         {
             "name": "umn/umn_superfish",
-            "version": "dev-9-dev",
+            "version": "dev-once",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_superfish.git",
-                "reference": "4984095db3ede89364d531adf634d77e13e20260"
+                "reference": "840e73b0c2a8f22d17b5d22f267118e09d984c6e"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -29785,7 +29785,7 @@
                 }
             ],
             "description": "UMN Accessibility tweaks for Superfish",
-            "time": "2020-08-19T16:36:27+00:00"
+            "time": "2022-11-09T15:56:44+00:00"
         },
         {
             "name": "umn/upgrade_status",
@@ -30923,5 +30923,5 @@
         "ext-dom": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }

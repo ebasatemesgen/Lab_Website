@@ -29622,7 +29622,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "89a203ad01f48b4ced1358152476dc365398ac6f"
+                "reference": "cd5ef8187080f144dea86940c6432e39beac2000"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -29635,7 +29635,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-10-31T20:54:20+00:00"
+            "time": "2022-11-09T21:21:04+00:00"
         },
         {
             "name": "umn/folwell_components",
@@ -29643,7 +29643,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "89ce6bea171f3b9182cd5443ff9a5039d96eabb4"
+                "reference": "a19879de89b790cb4d4ecff568eb2c9c435edd65"
             },
             "default-branch": true,
             "type": "drupal-module-custom",
@@ -29654,7 +29654,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-10-27T20:38:16+00:00"
+            "time": "2022-09-09T17:58:47+00:00"
         },
         {
             "name": "umn/lightning_umn",
@@ -30923,5 +30923,5 @@
         "ext-dom": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }

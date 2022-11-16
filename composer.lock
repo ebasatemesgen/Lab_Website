@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9edaaecade6678c29179ba823d18a360",
+    "content-hash": "9dd04f6e00caf47250740624f3c4a635",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -15792,6 +15792,51 @@
             }
         },
         {
+            "name": "drupal/time_range",
+            "version": "9.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/time_range.git",
+                "reference": "9.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/time_range-9.0.0.zip",
+                "reference": "9.0.0",
+                "shasum": "c632541969fdff3710193f1aac3adf67c9b72563"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "9.0.0",
+                    "datestamp": "1591500668",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dravenk",
+                    "homepage": "https://www.drupal.org/user/3452417"
+                }
+            ],
+            "description": "Provides the form widget to fill in time range.",
+            "homepage": "https://github.com/DravenK/time-range.git",
+            "support": {
+                "source": "https://github.com/DravenK/time-range.git",
+                "issues": "https://github.com/DravenK/time-range/issues"
+            }
+        },
+        {
             "name": "drupal/toc_js",
             "version": "2.0.1",
             "source": {
@@ -30974,5 +31019,5 @@
         "ext-dom": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.1.0"
 }

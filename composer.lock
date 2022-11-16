@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dd04f6e00caf47250740624f3c4a635",
+    "content-hash": "80277ae170f09685908b5b194cba0b1c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -29714,11 +29714,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-9.x-folwell-release",
+            "version": "dev-9.x-folwell-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "f9918420ea5c531a41cb1d3f88c055199761b875"
+                "reference": "375175769b8e509b9298053f8859061019c6b383"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -29731,17 +29731,16 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-11-10T17:51:09+00:00"
+            "time": "2022-10-31T19:35:33+00:00"
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-9.x-components-release",
+            "version": "dev-9.x-components-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "c45a7d8b7890bc228b8a802dc85c1316e83c42fb"
+                "reference": "a19879de89b790cb4d4ecff568eb2c9c435edd65"
             },
-            "default-branch": true,
             "type": "drupal-module-custom",
             "authors": [
                 {
@@ -29750,7 +29749,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-11-15T20:01:56+00:00"
+            "time": "2022-09-09T17:58:47+00:00"
         },
         {
             "name": "umn/lightning_umn",
@@ -31019,5 +31018,5 @@
         "ext-dom": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }

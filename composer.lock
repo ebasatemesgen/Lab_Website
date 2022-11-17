@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "80277ae170f09685908b5b194cba0b1c",
+    "content-hash": "24848f38d99281d4ba568a0480551230",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -29735,11 +29735,11 @@
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-9.x-components-build",
+            "version": "dev-info-stat-block",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "a19879de89b790cb4d4ecff568eb2c9c435edd65"
+                "reference": "bca95b2aa702fe0abea9f29b095b8224d638020a"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -29749,15 +29749,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-09-09T17:58:47+00:00"
+            "time": "2022-11-17T17:58:09+00:00"
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-9.x-release",
+            "version": "dev-info-stat-block",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "50c40ab0fcc696baecd01f1225f1471f98f8bece"
+                "reference": "09401a977583d64effb55e1e9015f25880212961"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -29766,7 +29766,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2022-10-04T20:45:45+00:00"
+            "time": "2022-11-17T18:06:18+00:00"
         },
         {
             "name": "umn/slick_media",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24848f38d99281d4ba568a0480551230",
+    "content-hash": "9dd04f6e00caf47250740624f3c4a635",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -29714,11 +29714,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-9.x-folwell-build",
+            "version": "dev-9.x-folwell-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "1dd959a38e72bfbdeed383ab04031fa19cb175f1"
+                "reference": "f9918420ea5c531a41cb1d3f88c055199761b875"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -29731,16 +29731,17 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-11-17T18:03:05+00:00"
+            "time": "2022-11-10T17:51:09+00:00"
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-info-stat-block",
+            "version": "dev-9.x-components-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "bca95b2aa702fe0abea9f29b095b8224d638020a"
+                "reference": "d75ba3e56439a9f2f1701a2a283865e77221dadf"
             },
+            "default-branch": true,
             "type": "drupal-module-custom",
             "authors": [
                 {
@@ -29749,11 +29750,11 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-11-17T17:58:09+00:00"
+            "time": "2022-11-17T18:44:55+00:00"
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-info-stat-block",
+            "version": "dev-9.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",

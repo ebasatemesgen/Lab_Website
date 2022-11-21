@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dd04f6e00caf47250740624f3c4a635",
+    "content-hash": "50dcfbf8311642447f5c5982710f0ee5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -29754,11 +29754,11 @@
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-9.x-release",
+            "version": "dev-9.x-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "09401a977583d64effb55e1e9015f25880212961"
+                "reference": "50c40ab0fcc696baecd01f1225f1471f98f8bece"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -29767,7 +29767,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2022-11-17T18:06:18+00:00"
+            "time": "2022-10-04T20:45:45+00:00"
         },
         {
             "name": "umn/slick_media",

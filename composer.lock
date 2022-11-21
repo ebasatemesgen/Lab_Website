@@ -29718,7 +29718,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "1dd959a38e72bfbdeed383ab04031fa19cb175f1"
+                "reference": "7116c218c9d7794dd0b223a9a423856cc95304b1"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -29731,7 +29731,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-11-17T18:03:05+00:00"
+            "time": "2022-11-21T16:24:51+00:00"
         },
         {
             "name": "umn/folwell_components",
@@ -29739,7 +29739,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "a19879de89b790cb4d4ecff568eb2c9c435edd65"
+                "reference": "471e3a89b7e836c763140c7abb99d056a52a1df5"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -29749,7 +29749,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-09-09T17:58:47+00:00"
+            "time": "2022-11-21T16:23:35+00:00"
         },
         {
             "name": "umn/lightning_umn",
@@ -29757,7 +29757,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "50c40ab0fcc696baecd01f1225f1471f98f8bece"
+                "reference": "d59c3f1ef5e6de11b164b33f0d70b881167d31bb"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -29766,7 +29766,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2022-10-04T20:45:45+00:00"
+            "time": "2022-11-21T16:26:43+00:00"
         },
         {
             "name": "umn/slick_media",

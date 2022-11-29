@@ -73,13 +73,14 @@
       "2833650: Error when saving settings of an entity reference field": "https://www.drupal.org/files/issues/2022-07-29/2833650-42.patch",
       "2825860: Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2022-07-27/2825860-111.patch",
       "2876094: Linking an image creates an empty paragraph tag in CKEditor": "https://www.drupal.org/files/issues/2021-08-09/2876094-38.patch",
-      "3131055: Wrapping drupal-media image in a link produces empty P tags after image": "https://www.drupal.org/files/issues/2021-04-19/ckeditor-p-tag-added-to-media-3131055-17.patch"
+      "3131055: Wrapping drupal-media image in a link produces empty P tags after image": "https://www.drupal.org/files/issues/2021-04-19/ckeditor-p-tag-added-to-media-3131055-17.patch",
+      "3306167: Update to tabbable v6.0.1": "patches/3320370-update-tabbable-to-601-d94x.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "patches/a11y-tabs-arrow-key-wrap.patch"
     },
     "drupal/a11y_paragraphs_tabs": {
-      "3191979: version 1.0.2 of matthiasott/a11y-accordion-tabs breaks all functionality": "https://www.drupal.org/files/issues/2022-08-10/fixed-spelling-in-the-tabs-wrapper-template-3191979.patch"
+      "3191979: version 1.0.2 of matthiasott/a11y-accordion-tabs breaks all functionality": "https://www.drupal.org/files/issues/2022-10-28/fixed-spelling-in-the-tabs-wrapper-template-3191979--10.patch"
     },
     "drupal/field_group": {
       "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-07-22/2969051-37.patch"
@@ -94,7 +95,7 @@
     "drupal/entity_embed": {
       "3069448: Array to string conversion for Media Image": "https://www.drupal.org/files/issues/2019-10-18/entity-embed-array-to-string--3069448-19.patch",
       "3077225: Logs flooded with warning messages Invalid display settings encountered":"https://www.drupal.org/files/issues/2019-08-26/3077225-reduce-invalid-config-logs.patch",
-      "3070343: Allow to add a Drupal core link with Link Widget for Image entities using Entity Embed Dialog in CKEditor": "https://www.drupal.org/files/issues/2019-11-15/link-image-media-entities-3070343-19.patch"
+      "3070343: Allow to add a Drupal core link with Link Widget for Image entities using Entity Embed Dialog in CKEditor": "https://www.drupal.org/files/issues/2022-10-21/entity_embed-link_image_media_entities-3070343-27.patch"
     },
     "drupal/group": {
       "3053524: Error: Call to a member function label() on null in GroupContentEnablerBase->getContentLabel()": "https://www.drupal.org/files/issues/2019-06-06/label-on-null-3053524-6.patch",
@@ -111,6 +112,9 @@
     },
     "h5p/h5p-editor": {
       "3260094: PHP 8.0 deprecated syntax warnings for h5p-editor": "patches/h5pphp.patch"
+    },
+    "drupal/h5p": {
+      "3194707: Files disappear in H5P editor": "https://www.drupal.org/files/issues/2021-01-26/h5p-fix-keeping-h5p-content-id-3194707-0.patch"
     },
     "drupal/charts": {
       "3306922:Donut chart doesn't work after updating to PHP 8": "https://www.drupal.org/files/issues/2022-08-30/charts-issue-3306922.patch"
@@ -153,23 +157,22 @@
     "drupal/anchor_link": {
       "3187234: Errors due to missing FakeObjects Module": "https://www.drupal.org/files/issues/2021-08-04/3187234-fakeobjects-not-installed-8.patch"
     },
-    "drupal/search_api": {
-      "3258375: Out of memory error when used with views, metatag and memcache modules": "https://www.drupal.org/files/issues/2022-01-13/search_api-metatag-out-of-memory-3258375-2.patch",
-      "3247914: Type specific boosting processor not saving my values": "https://www.drupal.org/files/issues/2022-02-06/3247914-8--type_specific_boost_settings_not_saved.patch"
-    },
     "drupal/dropzonejs": {
       "3125682: Support chunked uploads": "https://www.drupal.org/files/issues/2022-03-29/dropzonejs-support-chuked-uploads-3125682-30.patch",
       "2924425: Maximum Upload Size Causes Silent JS Error": "https://www.drupal.org/files/issues/2021-01-18/2924425-maxFileSize-22.patch",
       "3174484: Select files button text should respect field cardinality": "https://www.drupal.org/files/issues/2022-03-29/3174484-add-media-window-and-select-button-text-should-respect-field-cardinality-4.patch"
-    },
-    "drupal/content_moderation_notifications": {
-      "3188443: isable the site email address breaks the workflow even using Adhoc recipients": "https://www.drupal.org/files/issues/2022-09-06/add_emails_to_recipients-3188443-11.patch"
     },
     "drupal/recaptcha": {
       "2213337: Missing label on recaptcha_response_field": "patches/recaptcha-2213337-missing-label-14.patch"
     },
     "drupal/file_delete": {
       "3115158: Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2022-08-09/3115158-15.patch"
+    },
+    "drupal/content_moderation_notifications": {
+      "3188443: Disable the site email address breaks the workflow even using Adhoc recipients": "https://www.drupal.org/files/issues/2022-11-10/add_emails_to_recipients-3188443-15.patch"
+    },
+    "drupal/twitter_api_block": {
+      "3107146: Placing the block through Layout Builder fails": "https://www.drupal.org/files/issues/2021-05-14/twitter_api_block-3107146-8.patch"
     }
   }
 }

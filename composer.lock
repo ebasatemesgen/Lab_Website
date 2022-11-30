@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9caeba97248a001a5fbb852d7f87b660",
+    "content-hash": "05554bc5d7badfcbcee7fdcd61c52739",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -29775,7 +29775,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_superfish.git",
-                "reference": "3a70631a983532cdb2687e00f3696e72cd6b2fab"
+                "reference": "4984095db3ede89364d531adf634d77e13e20260"
             },
             "type": "drupal-module-custom",
             "authors": [

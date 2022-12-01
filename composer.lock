@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c542b53746e59d26151ddf24156bce2",
+    "content-hash": "50dcfbf8311642447f5c5982710f0ee5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -29714,11 +29714,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-9.x-folwell-build",
+            "version": "dev-9.x-folwell-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "7116c218c9d7794dd0b223a9a423856cc95304b1"
+                "reference": "e5728ef4ca2cdc42a2aa3e4b233670cef10163e3"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -29731,16 +29731,17 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-11-21T16:24:51+00:00"
+            "time": "2022-12-01T16:53:16+00:00"
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-9.x-components-build",
+            "version": "dev-9.x-components-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "471e3a89b7e836c763140c7abb99d056a52a1df5"
+                "reference": "49c2aaffec050618349e43248a05e09f252246ec"
             },
+            "default-branch": true,
             "type": "drupal-module-custom",
             "authors": [
                 {
@@ -29749,7 +29750,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-11-21T16:23:35+00:00"
+            "time": "2022-11-17T19:28:06+00:00"
         },
         {
             "name": "umn/lightning_umn",

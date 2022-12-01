@@ -271,7 +271,7 @@
         "drupal/views_bulk_edit": "^2.7",
         "drupal/workbench_menu_access": "^1.3",
         "drupal/oembed_providers": "^2.1",
-        "drupal/time_range": "^9.0"
+        "drupal/time_range": "^2.0"
     },
     "repositories": {
         "drupal-packagist": {

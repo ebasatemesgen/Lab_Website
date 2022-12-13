@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05554bc5d7badfcbcee7fdcd61c52739",
+    "content-hash": "9012789723542d3bfefb041bcad57964",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11916,6 +11916,57 @@
             }
         },
         {
+            "name": "drupal/oembed_providers",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/oembed_providers.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/oembed_providers-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "5724ce92547ec59adf9f7c67d587201109d0a1eb"
+            },
+            "require": {
+                "drupal/core": "^9.0|^10.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1657923466",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Burge",
+                    "homepage": "https://www.drupal.org/u/chris-burge",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Allows site builders and developers to manage oEmbed providers.",
+            "homepage": "https://drupal.org/project/oembed_providers",
+            "keywords": [
+                "Drupal",
+                "Media",
+                "oEmbed"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/oembed_providers",
+                "issues": "https://www.drupal.org/project/issues/oembed_providers"
+            }
+        },
+        {
             "name": "drupal/openapi",
             "version": "2.0.0",
             "source": {
@@ -15738,6 +15789,51 @@
             "homepage": "https://www.drupal.org/project/textarea_widget_for_text",
             "support": {
                 "source": "https://git.drupalcode.org/project/textarea_widget_for_text"
+            }
+        },
+        {
+            "name": "drupal/time_range",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/time_range.git",
+                "reference": "2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/time_range-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "cba57c92bae0fda8a1fc7690ade0f3bce9e8b425"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.1",
+                    "datestamp": "1656671002",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dravenk",
+                    "homepage": "https://www.drupal.org/user/3452417"
+                }
+            ],
+            "description": "Provides the form widget to fill in time range.",
+            "homepage": "https://github.com/DravenK/time-range.git",
+            "support": {
+                "source": "https://github.com/DravenK/time-range.git",
+                "issues": "https://github.com/DravenK/time-range/issues"
             }
         },
         {
@@ -29622,7 +29718,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "f9918420ea5c531a41cb1d3f88c055199761b875"
+                "reference": "e5728ef4ca2cdc42a2aa3e4b233670cef10163e3"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -29635,7 +29731,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-11-10T17:51:09+00:00"
+            "time": "2022-12-01T16:53:16+00:00"
         },
         {
             "name": "umn/folwell_components",
@@ -29643,7 +29739,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "c45a7d8b7890bc228b8a802dc85c1316e83c42fb"
+                "reference": "7570a80d469a66786e3d4734bac8ee6002719444"
             },
             "default-branch": true,
             "type": "drupal-module-custom",
@@ -29654,15 +29750,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-11-15T20:01:56+00:00"
+            "time": "2022-12-01T18:43:31+00:00"
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-9.x-release",
+            "version": "dev-9.x-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "50c40ab0fcc696baecd01f1225f1471f98f8bece"
+                "reference": "d59c3f1ef5e6de11b164b33f0d70b881167d31bb"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -29671,7 +29767,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2022-10-04T20:45:45+00:00"
+            "time": "2022-11-21T16:26:43+00:00"
         },
         {
             "name": "umn/slick_media",
@@ -29785,7 +29881,7 @@
                 }
             ],
             "description": "UMN Accessibility tweaks for Superfish",
-            "time": "2022-11-09T20:02:03+00:00"
+            "time": "2020-08-19T16:36:27+00:00"
         },
         {
             "name": "umn/upgrade_status",

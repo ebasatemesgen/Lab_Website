@@ -19,7 +19,7 @@
         "drupal/google_analytics": "^4.0",
         "drupal/back_to_top": "^2.0.0",
         "drupal/restui": "^1.13",
-        "drupal/admin_toolbar": "^3.0",
+        "drupal/admin_toolbar": "^3.3",
         "drupal/address": "^1.0@RC",
         "drupal/linkit": "^6.0@beta",
         "drupal/robotstxt": "^1.0",

@@ -167,9 +167,6 @@
     "drupal/recaptcha": {
       "2213337: Missing label on recaptcha_response_field": "patches/recaptcha-2213337-missing-label-14.patch"
     },
-    "drupal/file_delete": {
-      "3115158: Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2022-08-09/3115158-15.patch"
-    },
     "drupal/content_moderation_notifications": {
       "3188443: Disable the site email address breaks the workflow even using Adhoc recipients": "https://www.drupal.org/files/issues/2022-11-10/add_emails_to_recipients-3188443-15.patch"
     },

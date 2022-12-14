@@ -8112,28 +8112,28 @@
         },
         {
             "name": "drupal/h5p",
-            "version": "2.0.0-alpha2",
+            "version": "2.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/h5p.git",
-                "reference": "2.0.0-alpha2"
+                "reference": "2.0.0-alpha3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/h5p-2.0.0-alpha2.zip",
-                "reference": "2.0.0-alpha2",
-                "shasum": "613598a7363993f21a11f9bd794ed0d87ba9e87d"
+                "url": "https://ftp.drupal.org/files/projects/h5p-2.0.0-alpha3.zip",
+                "reference": "2.0.0-alpha3",
+                "shasum": "50db2b5622abe5b25431bcd9fef1f06dd1afaa71"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
-                "h5p/h5p-core": "1.24.2",
+                "h5p/h5p-core": "1.24.4",
                 "h5p/h5p-editor": "1.24.4"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-alpha2",
-                    "datestamp": "1642679836",
+                    "version": "2.0.0-alpha3",
+                    "datestamp": "1671040448",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -8145,6 +8145,10 @@
                 "GPL-2.0+"
             ],
             "authors": [
+                {
+                    "name": "catch",
+                    "homepage": "https://www.drupal.org/user/35733"
+                },
                 {
                     "name": "falcon",
                     "homepage": "https://www.drupal.org/user/530912"
@@ -19374,16 +19378,16 @@
         },
         {
             "name": "h5p/h5p-core",
-            "version": "1.24.2",
+            "version": "1.24.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/h5p/h5p-php-library.git",
-                "reference": "db3da7a1441ae6c9ffacbb8110f41758c85beaa0"
+                "reference": "52b1ae5556d0f846b004f8cedc01a1a3cea7bdf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/h5p/h5p-php-library/zipball/db3da7a1441ae6c9ffacbb8110f41758c85beaa0",
-                "reference": "db3da7a1441ae6c9ffacbb8110f41758c85beaa0",
+                "url": "https://api.github.com/repos/h5p/h5p-php-library/zipball/52b1ae5556d0f846b004f8cedc01a1a3cea7bdf8",
+                "reference": "52b1ae5556d0f846b004f8cedc01a1a3cea7bdf8",
                 "shasum": ""
             },
             "require": {
@@ -19429,9 +19433,9 @@
             ],
             "support": {
                 "issues": "https://github.com/h5p/h5p-php-library/issues",
-                "source": "https://github.com/h5p/h5p-php-library/tree/wp-1.15.2"
+                "source": "https://github.com/h5p/h5p-php-library/tree/1.24.4"
             },
-            "time": "2021-04-22T09:30:45+00:00"
+            "time": "2022-12-14T11:44:31+00:00"
         },
         {
             "name": "h5p/h5p-editor",

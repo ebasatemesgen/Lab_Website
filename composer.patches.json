@@ -173,6 +173,9 @@
     },
     "drupal/twitter_api_block": {
       "3107146: Placing the block through Layout Builder fails": "https://www.drupal.org/files/issues/2021-05-14/twitter_api_block-3107146-8.patch"
+    },
+    "drupal/toc_js": {
+      "3284015: Accessibility test generates errors": "https://www.drupal.org/files/issues/2022-06-03/3284015-accessibility-test-generates-errors.patch"
     }
   }
 }

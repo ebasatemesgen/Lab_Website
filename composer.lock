@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9012789723542d3bfefb041bcad57964",
+    "content-hash": "6e79aa94f31af4debadb0022942c2450",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -29718,7 +29718,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "e5728ef4ca2cdc42a2aa3e4b233670cef10163e3"
+                "reference": "124f573945e2acbf0d6bd01ffa54dbebb64e9999"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -29731,7 +29731,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-12-01T16:53:16+00:00"
+            "time": "2022-12-16T04:37:21+00:00"
         },
         {
             "name": "umn/folwell_components",
@@ -29739,7 +29739,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "7570a80d469a66786e3d4734bac8ee6002719444"
+                "reference": "a9409315f531b43e967a79c3b7aa7a6ac5ce1c01"
             },
             "default-branch": true,
             "type": "drupal-module-custom",
@@ -29750,15 +29750,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-12-01T18:43:31+00:00"
+            "time": "2022-11-17T22:14:03+00:00"
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-9.x-build",
+            "version": "dev-9.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "d59c3f1ef5e6de11b164b33f0d70b881167d31bb"
+                "reference": "abc818b4582f00fa68fb132809f192da4307401e"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -29767,7 +29767,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2022-11-21T16:26:43+00:00"
+            "time": "2022-12-09T03:32:27+00:00"
         },
         {
             "name": "umn/slick_media",

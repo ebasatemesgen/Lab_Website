@@ -740,7 +740,7 @@
         "symlinks": {
             "vendor/kenwheeler/slick": "docroot/libraries/slick",
             "vendor/jgallen23/toc/dist": "docroot/libraries/toc",
-            "docroot/libraries/bower-asset/jquery.mmenu": "docroot/libraries/mmenu",
+            "vendor/bower-asset/jquery.mmenu": "docroot/libraries/mmenu",
             "vendor/ckeditor/anchor_link": "docroot/libraries/link",
             "vendor/joeldbirch/superfish/dist": "docroot/libraries/superfish/dist",
             "vendor/joeldbirch/superfish/package.json": "docroot/libraries/superfish/package.json",

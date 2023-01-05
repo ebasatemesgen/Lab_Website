@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0942ba719d1e103dfe4dba94ea0b02f1",
+    "content-hash": "1cceb428a9a18f39386d1cd182fefef4",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -18169,6 +18169,46 @@
             "time": "2022-02-21T09:13:59+00:00"
         },
         {
+            "name": "enyo/dropzone",
+            "version": "v5.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dropzone/dropzone-packagist.git",
+                "reference": "286b2dc1f1195bd12169e4c9d5f91cfbe46e245f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dropzone/dropzone-packagist/zipball/286b2dc1f1195bd12169e4c9d5f91cfbe46e245f",
+                "reference": "286b2dc1f1195bd12169e4c9d5f91cfbe46e245f",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matias Meno",
+                    "email": "m@tias.me",
+                    "homepage": "http://www.yesmeno.com"
+                }
+            ],
+            "description": "Handles drag and drop of files for you.",
+            "homepage": "http://www.dropzonejs.com",
+            "keywords": [
+                "drag and drop",
+                "dragndrop",
+                "file upload",
+                "upload"
+            ],
+            "support": {
+                "issues": "https://github.com/dropzone/dropzone-packagist/issues",
+                "source": "https://github.com/dropzone/dropzone-packagist/tree/v5.9.3"
+            },
+            "time": "2021-09-21T17:03:36+00:00"
+        },
+        {
             "name": "ezyang/htmlpurifier",
             "version": "v4.16.0",
             "source": {
@@ -18228,6 +18268,48 @@
                 "source": "https://github.com/ezyang/htmlpurifier/tree/v4.16.0"
             },
             "time": "2022-09-18T07:06:19+00:00"
+        },
+        {
+            "name": "fengyuanchen/cropper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Scalar4eg/cropper.git",
+                "reference": "ed5ee3075e5a12fd301b1843d81e12100c791aca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Scalar4eg/cropper/zipball/ed5ee3075e5a12fd301b1843d81e12100c791aca",
+                "reference": "ed5ee3075e5a12fd301b1843d81e12100c791aca",
+                "shasum": ""
+            },
+            "require": {
+                "components/jquery": ">=1.9.0"
+            },
+            "default-branch": true,
+            "type": "component",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "fengyuanchen",
+                    "homepage": "http://fengyuanchen.github.io"
+                }
+            ],
+            "description": "A simple jQuery image cropping plugin",
+            "homepage": "http://fengyuanchen.github.io/cropper/",
+            "keywords": [
+                "cropper",
+                "image",
+                "jquery"
+            ],
+            "support": {
+                "issues": "https://github.com/fengyuanchen/cropper/issues",
+                "source": "https://github.com/fengyuanchen/cropper"
+            },
+            "time": "2014-12-15T08:28:23+00:00"
         },
         {
             "name": "fileeye/mimemap",
@@ -31166,7 +31248,8 @@
         "umn/upgrade_status": 20,
         "drupal/h5p": 15,
         "drupal/entity_update": 5,
-        "drupal/pendo": 15
+        "drupal/pendo": 15,
+        "fengyuanchen/cropper": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

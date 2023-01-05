@@ -125,10 +125,6 @@
     "drupal/permissions_by_term": {
       "Error in PHP 8.1": "https://www.drupal.org/files/issues/2022-05-20/permissions_by_term_php8-3281599-2.patch"
     },
-    "drupal/auto_entitylabel": {
-      "3201476: ResaveBatch doesn't work for custom entity types": "https://www.drupal.org/files/issues/2021-04-21/3201476-4.patch",
-      "3065687: Integration with Layout Builder for custom block types": "https://www.drupal.org/files/issues/2021-07-21/auto_entitylabel-layout_builder_component_title-3065687-16.patch"
-    },
     "drupal/quick_node_clone": {
       "3183249: Nested paragraph support": "https://www.drupal.org/files/issues/2020-11-18/quick_node_clone-3183249-2.patch",
       "3100117: Inline blocks from layout builder not cloned properly": "https://www.drupal.org/files/issues/2022-07-17/3100117-28.patch"

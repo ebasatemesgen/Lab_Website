@@ -30069,7 +30069,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn-search.git",
-                "reference": "3670733cebebc929637e1e84481b78067fda9663"
+                "reference": "8bd542d708c7069de708e32892ffd84e499d41ca"
             },
             "require": {
                 "components/jquery": "dev-master"
@@ -30082,7 +30082,7 @@
                 }
             ],
             "description": "UMN Search configuration module for Drupal 8",
-            "time": "2023-01-13T19:52:51+00:00"
+            "time": "2023-01-13T20:25:08+00:00"
         },
         {
             "name": "umn/umn_self_help_guides",

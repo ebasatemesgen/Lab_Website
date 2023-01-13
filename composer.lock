@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "26f84846f67cfd02d9d63d168ece4e32",
+    "content-hash": "d5056aac66123e8ad2c2e7bb9b4d6a17",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -29957,7 +29957,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "28a460e3d31c57fcd43a10c2b61f331eca49134f"
+                "reference": "988819c1d75b2109b8ee831dcb04446d6030a6b4"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -29970,7 +29970,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-12-19T18:06:30+00:00"
+            "time": "2023-01-13T19:05:32+00:00"
         },
         {
             "name": "umn/folwell_components",
@@ -30065,11 +30065,11 @@
         },
         {
             "name": "umn/umn_search",
-            "version": "dev-9-dev",
+            "version": "dev-DRUP-489",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn-search.git",
-                "reference": "d9add6a922e676202d9e5bca1b423cd4a0b074f9"
+                "reference": "3670733cebebc929637e1e84481b78067fda9663"
             },
             "require": {
                 "components/jquery": "dev-master"
@@ -30082,7 +30082,7 @@
                 }
             ],
             "description": "UMN Search configuration module for Drupal 8",
-            "time": "2022-11-03T19:26:10+00:00"
+            "time": "2023-01-13T19:52:51+00:00"
         },
         {
             "name": "umn/umn_self_help_guides",

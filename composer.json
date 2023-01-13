@@ -27,7 +27,7 @@
         "umn/umn_features": "9.0",
         "umn/lightning_umn": "dev-9.x-build",
         "umn/cog_umn": "dev-9.x-prod",
-        "umn/umn_search": "dev-9-dev",
+        "umn/umn_search": "dev-DRUP-489",
         "umn/crmform": "dev-d9",
         "umn/dors_migrate": "dev-develop",
         "drupal/redirect": "^1.6",

@@ -16,7 +16,9 @@
     },
     "drupal/paragraphs": {
       "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch",
-      "3090200: Paragraphs do not render: access check": "https://www.drupal.org/files/issues/2020-07-08/access-controll-issue-3090200-22.patch"
+      "3090200: Paragraphs do not render: access check": "https://www.drupal.org/files/issues/2020-07-08/access-controll-issue-3090200-22.patch",
+      "3332030: Wider Paragraphs content editing form widget": "https://www.drupal.org/files/issues/2023-01-13/wider-claro-paragraphs-widget-3332030-7.patch",
+      "3161823: Paragraphs widget not constrained to container width in Claro": "https://www.drupal.org/files/issues/2020-07-29/3161823-4-set-form-element-width.patch"
 
     },
     "drupal/simplesamlphp_auth": {

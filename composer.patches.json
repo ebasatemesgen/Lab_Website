@@ -16,7 +16,9 @@
     },
     "drupal/paragraphs": {
       "2901390: Integrity constraint violation": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch",
-      "3090200: Paragraphs do not render: access check": "https://www.drupal.org/files/issues/2020-07-08/access-controll-issue-3090200-22.patch"
+      "3090200: Paragraphs do not render: access check": "https://www.drupal.org/files/issues/2020-07-08/access-controll-issue-3090200-22.patch",
+      "3332030: Wider Paragraphs content editing form widget": "https://www.drupal.org/files/issues/2023-01-13/wider-claro-paragraphs-widget-3332030-7.patch",
+      "3161823: Paragraphs widget not constrained to container width in Claro": "https://www.drupal.org/files/issues/2020-07-29/3161823-4-set-form-element-width.patch"
 
     },
     "drupal/simplesamlphp_auth": {
@@ -125,6 +127,10 @@
     },
     "drupal/permissions_by_term": {
       "Error in PHP 8.1": "https://www.drupal.org/files/issues/2022-05-20/permissions_by_term_php8-3281599-2.patch"
+    },
+    "drupal/auto_entitylabel": {
+      "3201476: ResaveBatch doesn't work for custom entity types": "https://www.drupal.org/files/issues/2021-04-21/3201476-4.patch",
+      "3065687: Integration with Layout Builder for custom block types": "https://www.drupal.org/files/issues/2021-07-21/auto_entitylabel-layout_builder_component_title-3065687-16.patch"
     },
     "drupal/quick_node_clone": {
       "3183249: Nested paragraph support": "https://www.drupal.org/files/issues/2020-11-18/quick_node_clone-3183249-2.patch",

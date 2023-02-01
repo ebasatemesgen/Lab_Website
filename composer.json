@@ -274,7 +274,8 @@
         "drupal/time_range": "^9.0",
         "drupal/config_pages": "^2.11",
         "drupal/field_redirection": "^2.2",
-        "drupal/migrate_google_sheets": "^2.0"
+        "drupal/migrate_google_sheets": "^2.0",
+        "enyo/dropzone": "^5.9"
     },
     "repositories": {
         "drupal-packagist": {

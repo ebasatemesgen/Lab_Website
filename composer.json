@@ -745,7 +745,10 @@
             "vendor/ckeditor/anchor_link": "docroot/libraries/link",
             "vendor/joeldbirch/superfish/dist": "docroot/libraries/superfish/dist",
             "vendor/joeldbirch/superfish/package.json": "docroot/libraries/superfish/package.json",
-            "vendor/phayes/geophp": "docroot/modules/contrib/geofield/lib/phayes-geophp/v1.2"
+            "vendor/phayes/geophp": "docroot/modules/contrib/geofield/lib/phayes-geophp/v1.2",
+            "vendor/enyo/dropzone": "docroot/libraries/dropzone",
+            "vendor/fengyuanchen/cropper": "docroot/libraries/cropper",
+            "vendor/npm-asset/a11y-accordion-tabs": "docroot/libraries/a11y-accordion-tabs"
         }
     }
 }

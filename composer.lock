@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92b47903f546c4961b06d3e94fb9fea2",
+    "content-hash": "b16a4c9800dabdd97d51b33a3801eb46",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -10961,26 +10961,29 @@
         },
         {
             "name": "drupal/menu_block",
-            "version": "dev-1.x",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/menu_block.git",
-                "reference": "f2b402959d5fff4668bef410bb5bf3bbc6755abb"
+                "reference": "8.x-1.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "97de632d77448ae0a974e20c2ffbe42c7ddd4633"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9.1 || ^10"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.7+5-dev",
-                    "datestamp": "1647567907",
+                    "version": "8.x-1.10",
+                    "datestamp": "1667434255",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -10994,20 +10997,20 @@
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
-                    "name": "JohnAlbin",
-                    "homepage": "https://www.drupal.org/user/32095"
-                },
-                {
-                    "name": "RenatoG",
-                    "homepage": "https://www.drupal.org/user/3326031"
-                },
-                {
                     "name": "joelpittet",
                     "homepage": "https://www.drupal.org/user/160302"
                 },
                 {
+                    "name": "JohnAlbin",
+                    "homepage": "https://www.drupal.org/user/32095"
+                },
+                {
                     "name": "kim.pepper",
                     "homepage": "https://www.drupal.org/user/370574"
+                },
+                {
+                    "name": "RenatoG",
+                    "homepage": "https://www.drupal.org/user/3326031"
                 },
                 {
                     "name": "rrrob",
@@ -31252,7 +31255,6 @@
         "onlyextart/colorbox": 20,
         "drupal/responsive_menu": 20,
         "drupal/scheduled_updates": 20,
-        "drupal/menu_block": 20,
         "drupal/roleassign": 15,
         "umn/folwell_components": 20,
         "umn/umn_superfish": 20,

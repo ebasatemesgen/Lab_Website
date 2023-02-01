@@ -44,6 +44,9 @@
     "symfony/mime": {
       "Fix issue with brackets on email": "patches/from-email-address-trim.patch"
     },
+    "drupal/cog": {
+      "spaceless is deprecated since Twig 2.7": "https://www.drupal.org/files/issues/2022-08-24/3261882-cog-security-update-15.patch"
+    },
     "drupal/core": {
       "2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2020-12-01/cannot-use-relationship-2457999-259.patch",
       "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",

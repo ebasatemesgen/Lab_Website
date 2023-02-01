@@ -29991,7 +29991,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "2c75a63edfe3b9af61cd69a15ac8f57bfbdbf12e"
+                "reference": "636f051a408ce4961d83a09ab7ec28590da56ff0"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -30004,7 +30004,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-12-19T18:10:12+00:00"
+            "time": "2023-01-23T14:45:50+00:00"
         },
         {
             "name": "umn/folwell_components",
@@ -30012,8 +30012,9 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "628aa8fce5ae11e3c507a93497160469c852488a"
+                "reference": "18244382d13a17ee83586fbc0ab2354a0de09655"
             },
+            "default-branch": true,
             "type": "drupal-module-custom",
             "authors": [
                 {
@@ -30022,7 +30023,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2022-12-16T14:42:48+00:00"
+            "time": "2023-01-11T19:29:47+00:00"
         },
         {
             "name": "umn/lightning_umn",
@@ -30030,7 +30031,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "abc818b4582f00fa68fb132809f192da4307401e"
+                "reference": "04810a8e1034924e328edf3069199a2676c34410"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -30039,7 +30040,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2022-12-09T03:32:27+00:00"
+            "time": "2023-02-01T13:10:16+00:00"
         },
         {
             "name": "umn/slick_media",

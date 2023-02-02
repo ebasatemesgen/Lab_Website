@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e265df1287d42a5772dd5327385d7dd1",
+    "content-hash": "7e1deb7289ea8f4cf7d24b8978e1dcd9",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -30026,11 +30026,11 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-9.x-folwell-release",
+            "version": "dev-9.x-folwell-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "636f051a408ce4961d83a09ab7ec28590da56ff0"
+                "reference": "c14c6e3c97f6e67bd9b3f3fc39fef0ba12fa326a"
             },
             "require": {
                 "drupal/neato": "^1.8"
@@ -30043,17 +30043,16 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2023-01-23T14:45:50+00:00"
+            "time": "2023-01-31T14:56:12+00:00"
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-9.x-components-release",
+            "version": "dev-9.x-components-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "18244382d13a17ee83586fbc0ab2354a0de09655"
+                "reference": "8eb642c4b3e440d650e426dc7d447bcd6fe12178"
             },
-            "default-branch": true,
             "type": "drupal-module-custom",
             "authors": [
                 {
@@ -30062,15 +30061,15 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2023-01-11T19:29:47+00:00"
+            "time": "2023-01-31T14:54:29+00:00"
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-9.x-release",
+            "version": "dev-9.x-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "04810a8e1034924e328edf3069199a2676c34410"
+                "reference": "5fcfc511df7c7edc16327fb4dfe39012dcadaf0a"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -30079,7 +30078,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2023-02-01T13:10:16+00:00"
+            "time": "2023-01-25T18:12:52+00:00"
         },
         {
             "name": "umn/slick_media",

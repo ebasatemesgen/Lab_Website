@@ -74,7 +74,8 @@
       "2833650: Error when saving settings of an entity reference field": "https://www.drupal.org/files/issues/2022-07-29/2833650-42.patch",
       "2825860: Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2022-07-27/2825860-111.patch",
       "3047022: Layout builder fails to assign inline block access dependencies": "https://www.drupal.org/files/issues/2021-11-16/2786735.patch",
-      "2979184: Layout builder does not protect against recursion": "https://www.drupal.org/files/issues/2022-08-24/2979184-65.patch"
+      "2979184: Layout builder does not protect against recursion": "https://www.drupal.org/files/issues/2022-08-24/2979184-65.patch",
+      "2968967: EntityReferenceItem::getRandomBundle returns key not value": "https://www.drupal.org/files/issues/2020-01-13/drupal-issue-2968967-07.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "patches/a11y-tabs-arrow-key-wrap.patch"

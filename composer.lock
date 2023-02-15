@@ -30182,7 +30182,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_superfish.git",
-                "reference": "b6c00118f3b2753456d6b454cdb3842c00f00393"
+                "reference": "c3a21a44039640a69751ebf897ae2ab40cb69b23"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -30192,7 +30192,7 @@
                 }
             ],
             "description": "UMN Accessibility tweaks for Superfish",
-            "time": "2023-02-05T18:57:37+00:00"
+            "time": "2023-02-15T19:12:14+00:00"
         },
         {
             "name": "umn/upgrade_status",

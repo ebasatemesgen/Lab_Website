@@ -174,6 +174,9 @@
     },
     "drupal/toc_js": {
       "3284015: Accessibility test generates errors": "https://www.drupal.org/files/issues/2022-06-03/3284015-accessibility-test-generates-errors.patch"
+    },
+    "drupal/superfish": {
+      "3339367: Use Once method in JS behavior": "https://www.drupal.org/files/issues/2023-02-05/3339367-use-once-method-4.patch"
     }
   }
 }

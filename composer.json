@@ -687,6 +687,9 @@
             "drupal/core-composer-scaffold": true,
             "oomphinc/composer-installers-extender": true,
             "php-http/discovery": true
+        },
+        "platform": {
+            "php": "8.0.25"
         }
     },
     "extra": {

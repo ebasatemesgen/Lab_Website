@@ -177,6 +177,9 @@
     },
     "drupal/superfish": {
       "3339367: Use Once method in JS behavior": "https://www.drupal.org/files/issues/2023-02-05/3339367-use-once-method-4.patch"
+    },
+    "drupal/lightning_media": {
+      "3300969: Passing null to parameter #1 ($haystack) of type string is deprecated": "https://www.drupal.org/files/issues/2022-07-31/lightning_media-php-81-compatibility-3300969-2.patch"
     }
   }
 }

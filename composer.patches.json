@@ -40,6 +40,9 @@
     "drupal/lightning_workflow": {
       "3126343: Scheduler needs to maintain its base fields properly": "https://www.drupal.org/files/issues/2020-07-08/3126343-11.patch"
     },
+    "drupal/entity_pager": {
+      "3337763: Improve entity pager accessibility for screen readers": "https://www.drupal.org/files/issues/2023-02-22/entity_pager-screen-reader-a11y-3337763-11-8.x-1.x.patch"
+    },
     "drupal/redirect_after_login": {
       "3214949: Headers have already been sent after upgrade to Drupal 9.2": "https://www.drupal.org/files/issues/2021-06-20/3214949.patch"
     },

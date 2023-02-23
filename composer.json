@@ -275,7 +275,8 @@
         "drupal/config_pages": "^2.11",
         "drupal/field_redirection": "^2.2",
         "drupal/migrate_google_sheets": "^2.0",
-        "enyo/dropzone": "^5.9"
+        "enyo/dropzone": "^5.9",
+        "drupal/entity_pager": "^1.0"
     },
     "repositories": {
         "drupal-packagist": {

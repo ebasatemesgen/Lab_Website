@@ -71,7 +71,6 @@
       "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
       "2868014: [PP-1] Views Date Filter Datetime Granularity Option": "https://www.drupal.org/files/issues/2021-04-26/2868014-110.patch",
       "3254245: TypeError: Argument 1 passed to FileUrlGenerator::generateString() must be of the type string, null given": "https://www.drupal.org/files/issues/2021-12-18/file-url-generator-3254245-34.patch",
-      "3226117: Uncaught RfcComplianceException thrown when sending email from a site whose name contains a comma": "https://www.drupal.org/files/issues/2022-01-31/3226117-email-sending-broken-if-site-name-contains-coma.patch",
       "3023924: Cannot create references to/from string offsets": "https://www.drupal.org/files/issues/2019-01-04/3023924-form-8.patch",
       "2925890: Invalid config structures can result in exceptions when saving a config entity": "https://www.drupal.org/files/issues/2022-02-08/2925890-37.patch",
       "2833650: Error when saving settings of an entity reference field": "https://www.drupal.org/files/issues/2022-07-29/2833650-42.patch",
@@ -119,9 +118,6 @@
     },
     "drupal/h5p": {
       "3194707: Files disappear in H5P editor": "https://www.drupal.org/files/issues/2021-01-26/h5p-fix-keeping-h5p-content-id-3194707-0.patch"
-    },
-    "drupal/charts": {
-      "3306922:Donut chart doesn't work after updating to PHP 8": "https://www.drupal.org/files/issues/2022-08-30/charts-issue-3306922.patch"
     },
     "drupal/conflict" : {
       "3163662: PHP error when stored entity is not found": "https://www.drupal.org/files/issues/2020-08-05/3163662-2.patch"

@@ -31,7 +31,7 @@
         "drupal/slick_extras": "^1.0@beta",
         "dinbror/blazy": "1.8.2",
         "gdsmith/easing": "^1.4",
-        "kporras07/composer-symlinks": "^0.1.0@dev",
+        "kporras07/composer-symlinks": "^1.1",
         "drupal/field_group": "^3.0",
         "drupal/block_class": "^2.0",
         "drupal/webform": "^6.2@beta",
@@ -69,7 +69,7 @@
         "drupal/siteimprove": "^2.0",
         "drupal/tablefield": "^2.1",
         "drupal/menu_admin_per_menu": "^1.0",
-        "symfony/cache": "^5.0",
+        "symfony/cache": "^6.2.7",
         "drupal/module_filter": "^4.0",
         "drupal/layout_builder_restrictions": "^2.0",
         "drupal/twig_tweak": "^3.1",
@@ -108,7 +108,6 @@
         "drupal/simple_sitemap": "^4.0",
         "drupal/geocoder": "^4.4",
         "drupal/views_block_placement_exposed_form_defaults": "^1.0@RC",
-        "umndrupal/acquia_api": "dev-9-dev",
         "drupal/mysql56": "^1.0",
         "drupal/jquery_ui_accordion": "^2.0",
         "bower-asset/jquery.mmenu": "^8.5",
@@ -134,7 +133,7 @@
         "drupal/extlink": "^1.5",
         "drupal/simplify": "^2.0",
         "drupal/config_split": "^2.0@RC",
-        "drupal/core-composer-scaffold": "^9.1",
+        "drupal/core-composer-scaffold": "^10.0",
         "drupal/social_media_links": "^2.7",
         "drupal/views_aggregator": "^2.0",
         "drupal/fpa": "^4.0",
@@ -171,7 +170,7 @@
         "drupal/eva": "^3.0",
         "ext-dom": "*",
         "drupal/acquia_connector": "^4.0",
-        "drupal/core": "^9.2.2",
+        "drupal/core": "^10.0.0",
         "drupal/inline_entity_form": "^1.0-rc7",
         "drupal/lightning_core": "^5.8",
         "drupal/lightning_workflow": "^3.16",
@@ -207,7 +206,8 @@
         "drupal/config_pages": "^2.11",
         "drupal/field_redirection": "^2.2",
         "enyo/dropzone": "^5.9",
-        "drupal/entity_pager": "^1.0"
+        "drupal/entity_pager": "^1.0",
+        "consolidation/site-process": "^5.2"
     },
     "repositories": {
         "drupal-packagist": {

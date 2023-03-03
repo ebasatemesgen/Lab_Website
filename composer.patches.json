@@ -28,9 +28,6 @@
     "drupal/entity_print": {
       "2969184: PDF generation errors with DomPDF due to drupalSettings": "https://www.drupal.org/files/issues/2020-02-15/entity_print-dompdf-2969184-13.patch"
     },
-    "drupal/auditfiles": {
-      "3183121: PHP compatibility": "https://www.drupal.org/files/issues/2021-01-17/3183121-3-php-7.3-compatibility-use-trait.patch"
-    },
     "drupal/scheduled_updates": {
       "3172330: Module is not D9 compatible": "https://www.drupal.org/files/issues/2021-03-08/3172330-24.patch"
     },
@@ -110,7 +107,6 @@
       "3305840: WSOD Error when editing group type permissions": "https://www.drupal.org/files/issues/2022-08-25/group-3294949-2.patch"
     },
     "drupal/back_to_top": {
-      "3151196: Does not work in Drupal 9: S.easing[this.easing] is not a function" : "https://www.drupal.org/files/issues/2021-03-03/3151196_fix_for_D9_no_dependencies.patch",
       "remove from layout builder pages": "patches/back_to_top__remove_from_layout_builder.patch"
     },
     "h5p/h5p-editor": {
@@ -127,10 +123,6 @@
     },
     "drupal/permissions_by_term": {
       "Error in PHP 8.1": "https://www.drupal.org/files/issues/2022-05-20/permissions_by_term_php8-3281599-2.patch"
-    },
-    "drupal/auto_entitylabel": {
-      "3201476: ResaveBatch doesn't work for custom entity types": "https://www.drupal.org/files/issues/2021-04-21/3201476-4.patch",
-      "3065687: Integration with Layout Builder for custom block types": "https://www.drupal.org/files/issues/2021-07-21/auto_entitylabel-layout_builder_component_title-3065687-16.patch"
     },
     "drupal/quick_node_clone": {
       "3183249: Nested paragraph support": "https://www.drupal.org/files/issues/2020-11-18/quick_node_clone-3183249-2.patch",
@@ -159,8 +151,7 @@
     },
     "drupal/dropzonejs": {
       "3125682: Support chunked uploads": "https://www.drupal.org/files/issues/2022-03-29/dropzonejs-support-chuked-uploads-3125682-30.patch",
-      "2924425: Maximum Upload Size Causes Silent JS Error": "https://www.drupal.org/files/issues/2021-01-18/2924425-maxFileSize-22.patch",
-      "3174484: Select files button text should respect field cardinality": "https://www.drupal.org/files/issues/2022-03-29/3174484-add-media-window-and-select-button-text-should-respect-field-cardinality-4.patch"
+      "2924425: Maximum Upload Size Causes Silent JS Error": "https://www.drupal.org/files/issues/2021-01-18/2924425-maxFileSize-22.patch"
     },
     "drupal/recaptcha": {
       "2213337: Missing label on recaptcha_response_field": "patches/recaptcha-2213337-missing-label-14.patch"
@@ -168,17 +159,11 @@
     "drupal/content_moderation_notifications": {
       "3188443: Disable the site email address breaks the workflow even using Adhoc recipients": "https://www.drupal.org/files/issues/2022-11-10/add_emails_to_recipients-3188443-15.patch"
     },
-    "drupal/twitter_api_block": {
-      "3107146: Placing the block through Layout Builder fails": "https://www.drupal.org/files/issues/2021-05-14/twitter_api_block-3107146-8.patch"
-    },
     "drupal/toc_js": {
       "3284015: Accessibility test generates errors": "https://www.drupal.org/files/issues/2022-06-03/3284015-accessibility-test-generates-errors.patch"
     },
     "drupal/superfish": {
       "3339367: Use Once method in JS behavior": "https://www.drupal.org/files/issues/2023-02-05/3339367-use-once-method-4.patch"
-    },
-    "drupal/lightning_media": {
-      "3300969: Passing null to parameter #1 ($haystack) of type string is deprecated": "https://www.drupal.org/files/issues/2022-07-31/lightning_media-php-81-compatibility-3300969-2.patch"
     }
   }
 }

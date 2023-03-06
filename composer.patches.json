@@ -60,7 +60,6 @@
       "2828364: Default media stopped to render due to recursion protection being to protective": "https://www.drupal.org/files/issues/2018-03-22/increase_recursive_render_limit-2828364-15.patch",
       "3039185  Allow field blocks to display the configuration label when set in Layout Builder": "https://www.drupal.org/files/issues/2020-04-17/allow-field-blocks-to-display-label-in-layout-builder-3039185-22.patch",
       "2885370: SystemMainBlock::build does not always return array": "https://www.drupal.org/files/issues/systemmainblock_build-2885370-3.patch",
-      "2893407: POST /quickedit/metadata returning HTTP 503" : "https://www.drupal.org/files/issues/2021-06-07/2893407-47.patch",
       "3103422: Potential for recrsion in EntityReferenceItem::generateSampleValue() with circular entity references": "https://www.drupal.org/files/issues/2019-12-27/potential_for_recurs-3103422-2.patch",
       "3121395: Fatal error after add Main page content block layout builder": "https://www.drupal.org/files/issues/2020-03-21/3121395-fix-fatal-error-after-add-Main-page-content-block.patch",
       "2794481: Allow end date to be optional": "https://www.drupal.org/files/issues/2018-05-14/2794481-60.patch",

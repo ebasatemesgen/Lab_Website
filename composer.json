@@ -207,7 +207,9 @@
         "ckeditor/anchor_link": "^4.20",
         "joeldbirch/superfish": "^1.7",
         "drupal/quick_node_clone": "^1.16",
-        "drupal/lightning_layout": "^2.14"
+        "drupal/lightning_layout": "^2.14",
+        "drupal/comment_notify": "^1.4",
+        "drupal/roleassign": "^2.0"
     },
     "repositories": {
         "drupal-packagist": {

@@ -205,7 +205,8 @@
         "jgallen23/toc": "^0.3.2",
         "drupal/anchor_link": "^2.6",
         "ckeditor/anchor_link": "^4.20",
-        "joeldbirch/superfish": "^1.7"
+        "joeldbirch/superfish": "^1.7",
+        "drupal/quick_node_clone": "^1.16"
     },
     "repositories": {
         "drupal-packagist": {

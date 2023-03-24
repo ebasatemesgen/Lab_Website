@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf0772ef7ea00849bc449810a442d7fe",
+    "content-hash": "43e41645701c3a8fa438d49154e66118",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -21398,6 +21398,23 @@
             "time": "2023-03-10T16:56:02+00:00"
         },
         {
+            "name": "umn/lightning_umn",
+            "version": "dev-9.x-build",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
+                "reference": "a34d114dbde2454a65ffda8f2ec26ba3dfcef66a"
+            },
+            "type": "drupal-profile-custom",
+            "authors": [
+                {
+                    "name": "Jim Hart",
+                    "email": "HART0554@UMN.EDU"
+                }
+            ],
+            "time": "2023-03-24T16:29:35+00:00"
+        },
+        {
             "name": "webflo/drupal-finder",
             "version": "1.2.2",
             "source": {
@@ -22113,7 +22130,8 @@
         "drupal/advagg": 15,
         "drupal/paragraphs_features": 10,
         "drupal/entity_update": 5,
-        "drupal/advanced_text_formatter": 5
+        "drupal/advanced_text_formatter": 5,
+        "umn/lightning_umn": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

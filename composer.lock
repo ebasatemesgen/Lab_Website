@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43e41645701c3a8fa438d49154e66118",
+    "content-hash": "5fb0fd08a79b37f75715d9e971c06be5",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -467,6 +467,56 @@
                 "source": "https://github.com/commerceguys/addressing/tree/v1.4.2"
             },
             "time": "2023-02-15T10:11:14+00:00"
+        },
+        {
+            "name": "components/jquery",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/jquery.git",
+                "reference": "e1aae44bdc763e95e49128bb78f82008714c43db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/jquery/zipball/e1aae44bdc763e95e49128bb78f82008714c43db",
+                "reference": "e1aae44bdc763e95e49128bb78f82008714c43db",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "jquery.js"
+                    ],
+                    "files": [
+                        "jquery.min.js",
+                        "jquery.min.map",
+                        "jquery.slim.js",
+                        "jquery.slim.min.js",
+                        "jquery.slim.min.map"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JS Foundation and other contributors"
+                }
+            ],
+            "description": "jQuery JavaScript Library",
+            "homepage": "http://jquery.com",
+            "support": {
+                "forum": "http://forum.jquery.com",
+                "irc": "irc://irc.freenode.org/jquery",
+                "issues": "https://github.com/jquery/jquery/issues",
+                "source": "https://github.com/jquery/jquery",
+                "wiki": "http://docs.jquery.com/"
+            },
+            "time": "2022-02-20T20:58:48+00:00"
         },
         {
             "name": "composer/installers",
@@ -21415,6 +21465,27 @@
             "time": "2023-03-24T16:29:35+00:00"
         },
         {
+            "name": "umn/umn_search",
+            "version": "dev-9-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/umn-search.git",
+                "reference": "d8890e3ab60b543b30764bb1b2f63d4d2f06f3b7"
+            },
+            "require": {
+                "components/jquery": "dev-master"
+            },
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "Jim Hart",
+                    "email": "hart0554@umn.edu"
+                }
+            ],
+            "description": "UMN Search configuration module for Drupal 8",
+            "time": "2023-03-24T18:55:49+00:00"
+        },
+        {
             "name": "webflo/drupal-finder",
             "version": "1.2.2",
             "source": {
@@ -22131,7 +22202,8 @@
         "drupal/paragraphs_features": 10,
         "drupal/entity_update": 5,
         "drupal/advanced_text_formatter": 5,
-        "umn/lightning_umn": 20
+        "umn/lightning_umn": 20,
+        "umn/umn_search": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

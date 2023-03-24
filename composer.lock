@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fb0fd08a79b37f75715d9e971c06be5",
+    "content-hash": "a368447a4c18843984b18c04942d5743",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -21423,6 +21423,24 @@
             "time": "2023-02-08T07:49:20+00:00"
         },
         {
+            "name": "umn/crmform",
+            "version": "dev-d9",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/crmform",
+                "reference": "b543a6adbfaae90e4f03d0d6ea83663202a82a1e"
+            },
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "Alina Rimbu",
+                    "email": "rimbu002@umn.edu"
+                }
+            ],
+            "description": "Drupal 8 module for rendering/posting CRM forms in Drupal sites",
+            "time": "2023-03-24T19:17:32+00:00"
+        },
+        {
             "name": "umn/dors_migrate",
             "version": "dev-3.x-dev",
             "source": {
@@ -22203,7 +22221,8 @@
         "drupal/entity_update": 5,
         "drupal/advanced_text_formatter": 5,
         "umn/lightning_umn": 20,
-        "umn/umn_search": 20
+        "umn/umn_search": 20,
+        "umn/crmform": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7247560dc6ff6c78ccddc44b0f912ed9",
+    "content-hash": "0b9f1754e37cfe3178f405410df07525",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -21713,6 +21713,24 @@
             "time": "2023-03-27T13:08:58+00:00"
         },
         {
+            "name": "umn/umn_features",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/d8-features.git",
+                "reference": "10cc88cbda13e5c33195fc87066511a624f1fe98"
+            },
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "John Starr",
+                    "email": "starr027@umn.edu"
+                }
+            ],
+            "description": "Features to set default values for UMN Sites",
+            "time": "2023-03-27T13:47:48+00:00"
+        },
+        {
             "name": "umn/umn_search",
             "version": "dev-9-dev",
             "source": {
@@ -22475,7 +22493,8 @@
         "umn/folwell": 20,
         "umn/bootstrap_umn": 20,
         "umn/umn_escape_button": 20,
-        "umn/umn_self_help_guides": 20
+        "umn/umn_self_help_guides": 20,
+        "umn/umn_features": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

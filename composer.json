@@ -213,7 +213,8 @@
         "drupal/views_data_export": "^1.3",
         "umn/lightning_umn": "dev-9.x-build",
         "umn/umn_search": "dev-9-dev",
-        "umn/crmform": "dev-d9"
+        "umn/crmform": "dev-d9",
+        "umn/folwell": "dev-9.x-folwell-release"
     },
     "repositories": {
         "drupal-packagist": {

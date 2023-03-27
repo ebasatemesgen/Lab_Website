@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b9f1754e37cfe3178f405410df07525",
+    "content-hash": "3970a8a27d65c3137a0de03a6d8c8ec6",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -21677,6 +21677,24 @@
             "time": "2023-03-27T12:10:35+00:00"
         },
         {
+            "name": "umn/folwell_components",
+            "version": "dev-9.x-components-build",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
+                "reference": "1584b0203b75c56b97ef324424b43d53a6eda0f9"
+            },
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "UMN Drupal Administrators",
+                    "email": "drupa001@umn.edu"
+                }
+            ],
+            "description": "Modular components for using Folwell theme in sites",
+            "time": "2023-03-27T16:00:19+00:00"
+        },
+        {
             "name": "umn/lightning_umn",
             "version": "dev-9.x-build",
             "source": {
@@ -22494,7 +22512,8 @@
         "umn/bootstrap_umn": 20,
         "umn/umn_escape_button": 20,
         "umn/umn_self_help_guides": 20,
-        "umn/umn_features": 20
+        "umn/umn_features": 20,
+        "umn/folwell_components": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

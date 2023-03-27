@@ -218,7 +218,8 @@
         "umn/bootstrap_umn": "dev-10.x-build",
         "umn/umn_escape_button": "dev-master",
         "umn/umn_self_help_guides": "dev-master",
-        "umn/umn_features": "dev-develop"
+        "umn/umn_features": "dev-develop",
+        "umn/folwell_components": "dev-9.x-components-build"
     },
     "repositories": {
         "drupal-packagist": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82fa1a583717205b0197a725d71069cd",
+    "content-hash": "7247560dc6ff6c78ccddc44b0f912ed9",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -21734,6 +21734,25 @@
             "time": "2023-03-24T18:55:49+00:00"
         },
         {
+            "name": "umn/umn_self_help_guides",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/umn_self_help_guides.git",
+                "reference": "8703a7db1b2ae7601a24b92506cd3577d8f7d7b7"
+            },
+            "default-branch": true,
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "Chamil Amarakoon",
+                    "email": "amara060@umn.edu"
+                }
+            ],
+            "description": "Module Package for adding Self Help Guide content to UMN websites.",
+            "time": "2023-03-27T13:35:04+00:00"
+        },
+        {
             "name": "webflo/drupal-finder",
             "version": "1.2.2",
             "source": {
@@ -22455,7 +22474,8 @@
         "umn/crmform": 20,
         "umn/folwell": 20,
         "umn/bootstrap_umn": 20,
-        "umn/umn_escape_button": 20
+        "umn/umn_escape_button": 20,
+        "umn/umn_self_help_guides": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

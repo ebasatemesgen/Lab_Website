@@ -215,7 +215,8 @@
         "umn/umn_search": "dev-9-dev",
         "umn/crmform": "dev-d9",
         "umn/folwell": "dev-9.x-folwell-release",
-        "umn/bootstrap_umn": "dev-10.x-build"
+        "umn/bootstrap_umn": "dev-10.x-build",
+        "umn/umn_escape_button": "dev-master"
     },
     "repositories": {
         "drupal-packagist": {

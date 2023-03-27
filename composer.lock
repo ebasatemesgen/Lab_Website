@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3e530de39cc9c60f0b9288f1a0e7d852",
+    "content-hash": "82fa1a583717205b0197a725d71069cd",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -21694,6 +21694,25 @@
             "time": "2023-03-24T16:29:35+00:00"
         },
         {
+            "name": "umn/umn_escape_button",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/umn_escape_button.git",
+                "reference": "be03ccfb4a45da26f96ce3a1e8aa3a20f3647df6"
+            },
+            "default-branch": true,
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "Alina Rimbu",
+                    "email": "rimbu002@umn.edu"
+                }
+            ],
+            "description": "Adds floating Quick Escape button and a banner describing the button",
+            "time": "2023-03-27T13:08:58+00:00"
+        },
+        {
             "name": "umn/umn_search",
             "version": "dev-9-dev",
             "source": {
@@ -22435,7 +22454,8 @@
         "umn/umn_search": 20,
         "umn/crmform": 20,
         "umn/folwell": 20,
-        "umn/bootstrap_umn": 20
+        "umn/bootstrap_umn": 20,
+        "umn/umn_escape_button": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

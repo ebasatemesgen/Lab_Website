@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "491ccb4fe2e56fcb9842f8479166ed87",
+    "content-hash": "3e530de39cc9c60f0b9288f1a0e7d852",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -3096,6 +3096,70 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/block_visibility_groups",
                 "issues": "https://www.drupal.org/project/issues/block_visibility_groups"
+            }
+        },
+        {
+            "name": "drupal/bootstrap",
+            "version": "3.27.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap.git",
+                "reference": "8.x-3.27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.27.zip",
+                "reference": "8.x-3.27",
+                "shasum": "3994dbbfe4b39126a324fd2e450b9f67ace23a1c"
+            },
+            "require": {
+                "drupal/core": "^9.5 || ^10",
+                "php": ">=8.1.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.27",
+                    "datestamp": "1677031723",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Carver (markcarver)",
+                    "homepage": "https://www.drupal.org/u/markcarver",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "John McCormick (neardark)",
+                    "homepage": "https://www.drupal.org/u/neardark",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Fabiano Sant'Ana (wundo)",
+                    "homepage": "https://www.drupal.org/u/wundo",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Shelane French (shelane)",
+                    "homepage": "https://www.drupal.org/u/shelane",
+                    "role": "Co-maintainer"
+                }
+            ],
+            "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "https://www.drupal.org/project/bootstrap",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap",
+                "docs": "https://drupal-bootstrap.org",
+                "issues": "https://www.drupal.org/project/issues/bootstrap",
+                "irc": "irc://irc.freenode.org/drupal-bootstrap"
             }
         },
         {
@@ -21529,6 +21593,26 @@
             "time": "2023-02-08T07:49:20+00:00"
         },
         {
+            "name": "umn/bootstrap_umn",
+            "version": "dev-10.x-build",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalthemes/bootstrap-umn.git",
+                "reference": "43238f9cc55b14c889067b9d1037f175fcfa71fc"
+            },
+            "require": {
+                "drupal/bootstrap": "^3.27"
+            },
+            "type": "drupal-theme-custom",
+            "authors": [
+                {
+                    "name": "UMN OIT Drupal Team",
+                    "email": "t3drupal@umn.edu"
+                }
+            ],
+            "time": "2023-03-27T12:55:50+00:00"
+        },
+        {
             "name": "umn/crmform",
             "version": "dev-d9",
             "source": {
@@ -22350,7 +22434,8 @@
         "umn/lightning_umn": 20,
         "umn/umn_search": 20,
         "umn/crmform": 20,
-        "umn/folwell": 20
+        "umn/folwell": 20,
+        "umn/bootstrap_umn": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

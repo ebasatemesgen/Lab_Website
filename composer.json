@@ -214,7 +214,8 @@
         "umn/lightning_umn": "dev-9.x-build",
         "umn/umn_search": "dev-9-dev",
         "umn/crmform": "dev-d9",
-        "umn/folwell": "dev-9.x-folwell-release"
+        "umn/folwell": "dev-9.x-folwell-release",
+        "umn/bootstrap_umn": "dev-10.x-build"
     },
     "repositories": {
         "drupal-packagist": {

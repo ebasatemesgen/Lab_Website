@@ -1046,6 +1046,43 @@ body {
 }
 
 
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  #sm-banner .banner-box {
+    min-width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  #sm-banner .banner-box {
+    min-width: auto;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  
+  #sm-banner .small-images img {
+    margin-bottom: 10px;
+  }
+  
+  #sm-banner .small-images img:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #sm-banner {
+    flex-direction: column;
+  }
+
+  #sm-banner .big-images,
+  #sm-banner .small-images {
+    width: 100%;
+  }
+}
+
+
 /* <!-- ******************************* End of Uper banner ******************************* --> */
 
 

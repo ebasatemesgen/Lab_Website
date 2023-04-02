@@ -993,7 +993,7 @@ body {
 #sm-banner .small-images {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex: 1;
 }
 
@@ -1046,41 +1046,57 @@ body {
 }
 
 
+/* the small blogs  */
 
-/* Responsive styles */
-@media (max-width: 1024px) {
-  #sm-banner .banner-box {
-    min-width: 450px;
-  }
+
+#sm-banner .small-banner {
+  position: relative;
+  width: 100%;
+  height: 33.3vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+  color: #fff;
+  margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
-  #sm-banner .banner-box {
-    min-width: auto;
-    width: 100%;
-    height: auto;
-    padding: 20px;
-  }
-  
-  #sm-banner .small-images img {
-    margin-bottom: 10px;
-  }
-  
-  #sm-banner .small-images img:last-child {
-    margin-bottom: 0;
-  }
+#sm-banner .small-banner h4 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 5px;
 }
 
-@media (max-width: 480px) {
-  #sm-banner {
-    flex-direction: column;
-  }
-
-  #sm-banner .big-images,
-  #sm-banner .small-images {
-    width: 100%;
-  }
+#sm-banner .small-banner span {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
+
+#sm-banner .small-banner button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  width: 120px; /* Set a specific width */
+  height: 25px; /* Set a specific height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sm-banner .small-banner:hover button {
+  background: #088178;
+  border: 1px solid #088178;
+}
+
+
+
 
 
 /* <!-- ******************************* End of Uper banner ******************************* --> */

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3970a8a27d65c3137a0de03a6d8c8ec6",
+    "content-hash": "8bbe37a9d616be183cc37a56b2db5891",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -21593,6 +21593,25 @@
             "time": "2023-02-08T07:49:20+00:00"
         },
         {
+            "name": "umd/umd_footer_block",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:UMD-wwwteam/umd_footer_block.git",
+                "reference": "92a57e00977fd6cd0165d86fda4e7a06a3fe73fb"
+            },
+            "default-branch": true,
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "Aaron Richner",
+                    "email": "arichner@d.umn.edu"
+                }
+            ],
+            "description": "Drupal 8 module that provides a custom footer block for UMD sites.",
+            "time": "2023-04-12T18:24:02+00:00"
+        },
+        {
             "name": "umn/bootstrap_umn",
             "version": "dev-10.x-build",
             "source": {
@@ -22513,7 +22532,8 @@
         "umn/umn_escape_button": 20,
         "umn/umn_self_help_guides": 20,
         "umn/umn_features": 20,
-        "umn/folwell_components": 20
+        "umn/folwell_components": 20,
+        "umd/umd_footer_block": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

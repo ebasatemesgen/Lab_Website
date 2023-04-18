@@ -220,7 +220,8 @@
         "umn/umn_self_help_guides": "dev-master",
         "umn/umn_features": "dev-develop",
         "umn/folwell_components": "dev-9.x-components-build",
-        "umd/umd_footer_block": "dev-master"
+        "umd/umd_footer_block": "dev-master",
+        "umndrupal/acquia_api": "dev-10.x-dev"
     },
     "repositories": {
         "drupal-packagist": {

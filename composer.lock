@@ -22080,12 +22080,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/umn-drupal/acquia-api-wrapper.git",
-                "reference": "5725ad475436b2bebe87d90d9cd7b9d9ba6fe56d"
+                "reference": "5b09ffc89c0c6822dbd8d4e502e24116b89cc932"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/umn-drupal/acquia-api-wrapper/zipball/5725ad475436b2bebe87d90d9cd7b9d9ba6fe56d",
-                "reference": "5725ad475436b2bebe87d90d9cd7b9d9ba6fe56d",
+                "url": "https://api.github.com/repos/umn-drupal/acquia-api-wrapper/zipball/5b09ffc89c0c6822dbd8d4e502e24116b89cc932",
+                "reference": "5b09ffc89c0c6822dbd8d4e502e24116b89cc932",
                 "shasum": ""
             },
             "require": {
@@ -22095,7 +22095,7 @@
             },
             "type": "library",
             "autoload": {
-                "psr-7": {
+                "psr-4": {
                     "Umndrupal\\acquia_api\\": "src/AcquiaApi/"
                 }
             },
@@ -22109,7 +22109,7 @@
                 "source": "https://github.com/umn-drupal/acquia-api-wrapper/tree/10.x-dev",
                 "issues": "https://github.com/umn-drupal/acquia-api-wrapper/issues"
             },
-            "time": "2023-04-18T19:46:13+00:00"
+            "time": "2023-04-19T16:07:44+00:00"
         },
         {
             "name": "webflo/drupal-finder",

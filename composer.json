@@ -224,8 +224,7 @@
         "drupal/lightning_media": "^4.10",
         "npm-asset/dropzone": "^5.9",
         "bower-asset/cropper": "^4.1",
-        "drupal/textfield_counter": "^2.1",
-        "drupal/media_revisions_ui": "^2.1"
+        "bower-asset/slick-carousel": "^1.8"
     },
     "repositories": {
         "drupal-packagist": {

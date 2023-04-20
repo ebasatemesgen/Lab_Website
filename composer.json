@@ -224,7 +224,10 @@
         "drupal/lightning_media": "^4.10",
         "npm-asset/dropzone": "^5.9",
         "bower-asset/cropper": "^4.1",
-        "bower-asset/slick-carousel": "^1.8"
+        "bower-asset/slick-carousel": "^1.8",
+        "drupal/select_or_other": "4.x-dev@dev",
+        "drupal/linkit": "^6.0@RC",
+        "drupal/aggregator": "^2.0"
     },
     "repositories": {
         "drupal-packagist": {

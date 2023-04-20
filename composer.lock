@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "998dff89b7eda09b14c356cd9013db92",
+    "content-hash": "df4140ee2fdfbb042b039e1450c5251e",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -2450,6 +2450,54 @@
             "homepage": "https://www.drupal.org/project/advanced_text_formatter",
             "support": {
                 "source": "https://git.drupalcode.org/project/advanced_text_formatter"
+            }
+        },
+        {
+            "name": "drupal/aggregator",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/aggregator.git",
+                "reference": "2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/aggregator-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "a513b7b6d9bae92f9084491057f758dc6d75184e"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10",
+                "laminas/laminas-feed": "^2.17"
+            },
+            "require-dev": {
+                "drupal/classy": "^1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.1",
+                    "datestamp": "1666403646",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Ingest RSS feeds into your Drupal site",
+            "homepage": "https://www.drupal.org/project/aggregator",
+            "support": {
+                "source": "https://git.drupalcode.org/project/aggregator"
             }
         },
         {
@@ -9242,6 +9290,68 @@
             }
         },
         {
+            "name": "drupal/linkit",
+            "version": "6.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/linkit.git",
+                "reference": "6.0.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/linkit-6.0.0-rc1.zip",
+                "reference": "6.0.0-rc1",
+                "shasum": "126069976e2a7d34cc8530c0950c75bd7f1b5d3c"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10.0.0"
+            },
+            "conflict": {
+                "drupal/core": ">=10.1"
+            },
+            "require-dev": {
+                "drupal/ckeditor": "*",
+                "drupal/imce": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "6.0.0-rc1",
+                    "datestamp": "1681070405",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Emil Stjerneman",
+                    "homepage": "https://stjerneman.com",
+                    "email": "emil@stjerneman.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "johnwebdev",
+                    "homepage": "https://www.drupal.org/user/3331569"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                }
+            ],
+            "description": "Linkit - Enriched linking experience",
+            "homepage": "http://drupal.org/project/linkit",
+            "support": {
+                "source": "http://cgit.drupalcode.org/linkit",
+                "issues": "http://drupal.org/project/linkit"
+            }
+        },
+        {
             "name": "drupal/mathjax",
             "version": "4.0.2",
             "source": {
@@ -11721,6 +11831,71 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/seckit",
                 "issues": "http://drupal.org/project/issues/seckit"
+            }
+        },
+        {
+            "name": "drupal/select_or_other",
+            "version": "dev-4.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/select_or_other.git",
+                "reference": "8c66b4d7d2169b91d9f98060c463ab25b122f8c8"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "4.0.0+24-dev",
+                    "datestamp": "1674219308",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "daften",
+                    "homepage": "https://www.drupal.org/user/176274"
+                },
+                {
+                    "name": "danielb",
+                    "homepage": "https://www.drupal.org/user/134005"
+                },
+                {
+                    "name": "haydeniv",
+                    "homepage": "https://www.drupal.org/user/149501"
+                },
+                {
+                    "name": "hmendes",
+                    "homepage": "https://www.drupal.org/user/3673677"
+                },
+                {
+                    "name": "legolasbo",
+                    "homepage": "https://www.drupal.org/user/2480548"
+                },
+                {
+                    "name": "qzmenko",
+                    "homepage": "https://www.drupal.org/user/3220037"
+                },
+                {
+                    "name": "vladbo",
+                    "homepage": "https://www.drupal.org/user/2696261"
+                }
+            ],
+            "description": "Provides a select box form element with additional option 'Other' to give a textfield.",
+            "homepage": "https://www.drupal.org/project/select_or_other",
+            "support": {
+                "source": "https://git.drupalcode.org/project/select_or_other"
             }
         },
         {
@@ -16251,6 +16426,238 @@
                 "source": "https://github.com/Alexander2Leb/slick/tree/1.6.1"
             },
             "time": "2017-03-31T12:40:41+00:00"
+        },
+        {
+            "name": "laminas/laminas-escaper",
+            "version": "2.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-escaper.git",
+                "reference": "ee7a4c37bf3d0e8c03635d5bddb5bb3184ead490"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/ee7a4c37bf3d0e8c03635d5bddb5bb3184ead490",
+                "reference": "ee7a4c37bf3d0e8c03635d5bddb5bb3184ead490",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-mbstring": "*",
+                "php": "^7.4 || ~8.0.0 || ~8.1.0 || ~8.2.0"
+            },
+            "conflict": {
+                "zendframework/zend-escaper": "*"
+            },
+            "require-dev": {
+                "infection/infection": "^0.26.6",
+                "laminas/laminas-coding-standard": "~2.4.0",
+                "maglnet/composer-require-checker": "^3.8.0",
+                "phpunit/phpunit": "^9.5.18",
+                "psalm/plugin-phpunit": "^0.17.0",
+                "vimeo/psalm": "^4.22.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Escaper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Securely and safely escape HTML, HTML attributes, JavaScript, CSS, and URLs",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "escaper",
+                "laminas"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-escaper/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-escaper/issues",
+                "rss": "https://github.com/laminas/laminas-escaper/releases.atom",
+                "source": "https://github.com/laminas/laminas-escaper"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2022-10-10T10:11:09+00:00"
+        },
+        {
+            "name": "laminas/laminas-feed",
+            "version": "2.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-feed.git",
+                "reference": "508ebef6e622f2f2ce3dd0559739ffd0dfa3b938"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/508ebef6e622f2f2ce3dd0559739ffd0dfa3b938",
+                "reference": "508ebef6e622f2f2ce3dd0559739ffd0dfa3b938",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "laminas/laminas-escaper": "^2.9",
+                "laminas/laminas-servicemanager": "^3.14.0",
+                "laminas/laminas-stdlib": "^3.6",
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0"
+            },
+            "conflict": {
+                "laminas/laminas-servicemanager": "<3.3",
+                "zendframework/zend-feed": "*"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.13.2 || ^3.6",
+                "laminas/laminas-cache-storage-adapter-memory": "^1.1.0 || ^2.1",
+                "laminas/laminas-coding-standard": "~2.4.0",
+                "laminas/laminas-db": "^2.15",
+                "laminas/laminas-http": "^2.17.0",
+                "laminas/laminas-validator": "^2.26",
+                "phpunit/phpunit": "^9.5.25",
+                "psalm/plugin-phpunit": "^0.18.0",
+                "psr/http-message": "^1.0.1",
+                "vimeo/psalm": "^5.1.0"
+            },
+            "suggest": {
+                "laminas/laminas-cache": "Laminas\\Cache component, for optionally caching feeds between requests",
+                "laminas/laminas-db": "Laminas\\Db component, for use with PubSubHubbub",
+                "laminas/laminas-http": "Laminas\\Http for PubSubHubbub, and optionally for use with Laminas\\Feed\\Reader",
+                "laminas/laminas-servicemanager": "Laminas\\ServiceManager component, for easily extending ExtensionManager implementations",
+                "laminas/laminas-validator": "Laminas\\Validator component, for validating email addresses used in Atom feeds and entries when using the Writer subcomponent",
+                "psr/http-message": "PSR-7 ^1.0.1, if you wish to use Laminas\\Feed\\Reader\\Http\\Psr7ResponseDecorator"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Feed\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides functionality for creating and consuming RSS and Atom feeds",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "atom",
+                "feed",
+                "laminas",
+                "rss"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-feed/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-feed/issues",
+                "rss": "https://github.com/laminas/laminas-feed/releases.atom",
+                "source": "https://github.com/laminas/laminas-feed"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2022-12-03T19:40:30+00:00"
+        },
+        {
+            "name": "laminas/laminas-servicemanager",
+            "version": "3.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-servicemanager.git",
+                "reference": "65910ef6a8066b0369fab77fbec9e030be59c866"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-servicemanager/zipball/65910ef6a8066b0369fab77fbec9e030be59c866",
+                "reference": "65910ef6a8066b0369fab77fbec9e030be59c866",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "laminas/laminas-stdlib": "^3.2.1",
+                "php": "~7.4.0 || ~8.0.0 || ~8.1.0",
+                "psr/container": "^1.1 || ^2.0.2"
+            },
+            "conflict": {
+                "ext-psr": "*",
+                "laminas/laminas-code": "<3.3.1",
+                "zendframework/zend-code": "<3.3.1",
+                "zendframework/zend-servicemanager": "*"
+            },
+            "provide": {
+                "psr/container-implementation": "^1.1 || ^2.0"
+            },
+            "replace": {
+                "container-interop/container-interop": "^1.2.0"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~2.3.0",
+                "laminas/laminas-container-config-test": "^0.6",
+                "mikey179/vfsstream": "^1.6.10@alpha",
+                "ocramius/proxy-manager": "^2.11",
+                "phpbench/phpbench": "^1.1",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5.5",
+                "psalm/plugin-phpunit": "^0.17.0",
+                "vimeo/psalm": "^4.8"
+            },
+            "suggest": {
+                "ocramius/proxy-manager": "ProxyManager ^2.1.1 to handle lazy initialization of services"
+            },
+            "bin": [
+                "bin/generate-deps-for-config-factory",
+                "bin/generate-factory-for-class"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/autoload.php"
+                ],
+                "psr-4": {
+                    "Laminas\\ServiceManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Factory-Driven Dependency Injection Container",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "PSR-11",
+                "dependency-injection",
+                "di",
+                "dic",
+                "laminas",
+                "service-manager",
+                "servicemanager"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-servicemanager/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-servicemanager/issues",
+                "rss": "https://github.com/laminas/laminas-servicemanager/releases.atom",
+                "source": "https://github.com/laminas/laminas-servicemanager"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2022-07-18T21:18:56+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
@@ -23383,7 +23790,9 @@
         "umn/umn_features": 20,
         "umn/folwell_components": 20,
         "umd/umd_footer_block": 20,
-        "umndrupal/acquia_api": 20
+        "umndrupal/acquia_api": 20,
+        "drupal/select_or_other": 20,
+        "drupal/linkit": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,

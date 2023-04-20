@@ -140,9 +140,6 @@
     "drupal/viewsreference": {
       "2938433: Add Label field formatter": "https://www.drupal.org/files/issues/2021-01-27/add_label_formatter-2938433-7.patch"
     },
-    "drupal/linkit": {
-      "2867647: Link it support for pages created using views" : "https://www.drupal.org/files/issues/2021-10-11/add_views_suggestions--2867647-10.patch"
-    },
     "drupal/anchor_link": {
       "3187234: Errors due to missing FakeObjects Module": "https://www.drupal.org/files/issues/2021-08-04/3187234-fakeobjects-not-installed-8.patch"
     },

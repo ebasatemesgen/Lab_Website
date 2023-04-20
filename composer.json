@@ -199,7 +199,6 @@
         "drupal/time_range": "^9.0",
         "drupal/config_pages": "^2.11",
         "drupal/field_redirection": "^2.2",
-        "enyo/dropzone": "^5.9",
         "drupal/entity_pager": "^1.0",
         "consolidation/site-process": "^5.2",
         "jgallen23/toc": "^0.3.2",
@@ -221,7 +220,12 @@
         "umn/umn_features": "dev-develop",
         "umn/folwell_components": "dev-9.x-components-build",
         "umd/umd_footer_block": "dev-master",
-        "umndrupal/acquia_api": "dev-10.x-dev"
+        "umndrupal/acquia_api": "dev-10.x-dev",
+        "drupal/lightning_media": "^4.10",
+        "npm-asset/dropzone": "^5.9",
+        "bower-asset/cropper": "^4.1",
+        "drupal/textfield_counter": "^2.1",
+        "drupal/media_revisions_ui": "^2.1"
     },
     "repositories": {
         "drupal-packagist": {

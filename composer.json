@@ -229,7 +229,8 @@
         "drupal/linkit": "^6.0@RC",
         "drupal/aggregator": "^2.0",
         "drupal/rdf": "^2.1",
-        "umn/radix_layouts": "dev-master"
+        "umn/radix_layouts": "dev-master",
+        "drupal/a11y_paragraphs_tabs": "^2.0@beta"
     },
     "repositories": {
         "drupal-packagist": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe7fab12b8f3b66c4443893e13844494",
+    "content-hash": "2f62231199f5f4a53733161989c3438e",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -23073,6 +23073,25 @@
             "time": "2023-04-18T14:06:46+00:00"
         },
         {
+            "name": "umn/field_delimiter",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/field_delimiter.git",
+                "reference": "23c570d98df0acc77bdba64a5d54628aea23407c"
+            },
+            "default-branch": true,
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "John Starr",
+                    "email": "starr027@umn.edu"
+                }
+            ],
+            "description": "Copy of field_delimiter until d10 version is available",
+            "time": "2023-04-24T18:24:07+00:00"
+        },
+        {
             "name": "umn/folwell",
             "version": "dev-9.x-folwell-release",
             "source": {
@@ -24014,7 +24033,8 @@
         "drupal/select_or_other": 20,
         "drupal/linkit": 5,
         "umn/radix_layouts": 20,
-        "drupal/a11y_paragraphs_tabs": 10
+        "drupal/a11y_paragraphs_tabs": 10,
+        "umn/field_delimiter": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

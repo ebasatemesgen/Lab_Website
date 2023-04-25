@@ -230,7 +230,8 @@
         "drupal/aggregator": "^2.0",
         "drupal/rdf": "^2.1",
         "umn/radix_layouts": "dev-master",
-        "drupal/a11y_paragraphs_tabs": "^2.0@beta"
+        "drupal/a11y_paragraphs_tabs": "^2.0@beta",
+        "umn/field_delimiter": "dev-main"
     },
     "repositories": {
         "drupal-packagist": {
@@ -248,6 +249,10 @@
         "umn-radix-layouts": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/radix_layouts.git"
+        },
+        "umn-field-delimiter": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/field_delimiter.git"
         },
         "lightning_umn": {
             "type": "git",

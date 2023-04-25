@@ -218,7 +218,7 @@
         "umn/umn_escape_button": "dev-master",
         "umn/umn_self_help_guides": "dev-master",
         "umn/umn_features": "dev-develop",
-        "umn/folwell_components": "dev-9.x-components-build",
+        "umn/folwell_components": "dev-10.x-build",
         "umd/umd_footer_block": "dev-master",
         "umndrupal/acquia_api": "dev-10.x-dev",
         "drupal/lightning_media": "^4.10",

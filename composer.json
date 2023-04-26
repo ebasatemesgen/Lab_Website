@@ -235,7 +235,8 @@
         "oomphinc/composer-installers-extender": "^2.0",
         "drupal/permissions_by_term": "^3.1",
         "drupal/shs": "^2.0@RC",
-        "drupal/auditfiles": "^4.1@beta"
+        "drupal/auditfiles": "^4.1@beta",
+        "drupal/simplesamlphp_auth": "4.x-dev@dev"
     },
     "repositories": {
         "drupal-packagist": {

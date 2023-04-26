@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d46139a1f43463d54f22361550b2e98",
+    "content-hash": "47705f03aa0487db26c15753582eecb7",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -2711,6 +2711,71 @@
             "homepage": "https://www.drupal.org/project/antibot",
             "support": {
                 "source": "https://git.drupalcode.org/project/antibot"
+            }
+        },
+        {
+            "name": "drupal/auditfiles",
+            "version": "4.1.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/auditfiles.git",
+                "reference": "4.1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/auditfiles-4.1.0-beta1.zip",
+                "reference": "4.1.0-beta1",
+                "shasum": "f83412c4dfdef2e1842853c2d2ecde0c1a267879"
+            },
+            "require": {
+                "drupal/core": "^10",
+                "php": ">=8.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.1.0-beta1",
+                    "datestamp": "1669300135",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "andyceo",
+                    "homepage": "https://www.drupal.org/user/152512"
+                },
+                {
+                    "name": "dpi",
+                    "homepage": "https://www.drupal.org/user/81431"
+                },
+                {
+                    "name": "keshav.k",
+                    "homepage": "https://www.drupal.org/user/3254066"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                },
+                {
+                    "name": "oadaeh",
+                    "homepage": "https://www.drupal.org/user/4649"
+                },
+                {
+                    "name": "Stuart Greenfield",
+                    "homepage": "https://www.drupal.org/user/54866"
+                }
+            ],
+            "description": "Allows for comparing and correcting files and file references in the files directory, in the database, and in content.",
+            "homepage": "https://www.drupal.org/project/auditfiles",
+            "support": {
+                "source": "https://git.drupalcode.org/project/auditfiles"
             }
         },
         {
@@ -11029,6 +11094,64 @@
             }
         },
         {
+            "name": "drupal/permissions_by_term",
+            "version": "3.1.22",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/permissions_by_term.git",
+                "reference": "3.1.22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.22.zip",
+                "reference": "3.1.22",
+                "shasum": "f6e04db74773c0c4093ad9284d15a057f40eddf2"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "php": ">=7.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.1.22",
+                    "datestamp": "1681402062",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Majmesku",
+                    "homepage": "https://www.drupal.org/user/3622664",
+                    "email": "majmesku@publicplan.de"
+                },
+                {
+                    "name": "niko-",
+                    "homepage": "https://www.drupal.org/user/1409266"
+                },
+                {
+                    "name": "Peter Majmesku",
+                    "homepage": "https://www.drupal.org/user/786132"
+                },
+                {
+                    "name": "sudesh.solaskar",
+                    "homepage": "https://www.drupal.org/user/3403952"
+                }
+            ],
+            "description": "Restricts access to nodes by taxonomy terms in relation to users and their roles.",
+            "homepage": "https://www.drupal.org/project/permissions_by_term",
+            "support": {
+                "source": "https://git.drupalcode.org/project/permissions_by_term"
+            }
+        },
+        {
             "name": "drupal/purge",
             "version": "3.4.0",
             "source": {
@@ -12096,6 +12219,57 @@
             "homepage": "https://www.drupal.org/project/shield",
             "support": {
                 "source": "https://git.drupalcode.org/project/shield"
+            }
+        },
+        {
+            "name": "drupal/shs",
+            "version": "2.0.0-rc4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/shs.git",
+                "reference": "2.0.0-rc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/shs-2.0.0-rc4.zip",
+                "reference": "2.0.0-rc4",
+                "shasum": "15d4d84f4c91dc9d4a304bfec8255a13b75b2195"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "require-dev": {
+                "drupal/chosen": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-rc4",
+                    "datestamp": "1681242239",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "stBorchert",
+                    "homepage": "https://www.drupal.org/user/36942"
+                }
+            ],
+            "description": "Creates a simple hierarchical select widget for taxonomy fields.",
+            "homepage": "https://www.drupal.org/project/shs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/shs"
             }
         },
         {
@@ -24091,7 +24265,9 @@
         "drupal/linkit": 5,
         "umn/radix_layouts": 20,
         "drupal/a11y_paragraphs_tabs": 10,
-        "umn/field_delimiter": 20
+        "umn/field_delimiter": 20,
+        "drupal/shs": 5,
+        "drupal/auditfiles": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

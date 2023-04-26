@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47705f03aa0487db26c15753582eecb7",
+    "content-hash": "318a01e9e2b4b57c10a68b9b8cfe4164",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -24244,7 +24244,6 @@
         "drupal/menu_breadcrumb": 15,
         "drupal/views_block_placement_exposed_form_defaults": 5,
         "mehrpadin/superfish": 20,
-        "drupal/focal_point": 15,
         "drupal/config_split": 5,
         "drupal/advagg": 15,
         "drupal/paragraphs_features": 10,

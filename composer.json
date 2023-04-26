@@ -122,7 +122,7 @@
         "geocoder-php/google-maps-provider": "^4.5",
         "geocoder-php/tomtom-provider": "^4.1",
         "geocoder-php/bing-maps-provider": "^4.1",
-        "drupal/focal_point": "^2.0@alpha",
+        "drupal/focal_point": "^2.0",
         "drupal/config_filter": "^2.2",
         "drupal/config_ignore": "^2.2",
         "drupal/antibot": "^2.0",

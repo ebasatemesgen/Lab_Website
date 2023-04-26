@@ -24653,7 +24653,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "ce3feb4c0973fe36394c32b0ba7b9893d4532ea0"
+                "reference": "bfe276c9748f285b6671dc1086593492e0f8efba"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -24662,7 +24662,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2023-04-25T19:03:00+00:00"
+            "time": "2023-04-26T14:24:28+00:00"
         },
         {
             "name": "umn/radix_layouts",

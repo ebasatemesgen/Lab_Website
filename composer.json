@@ -236,7 +236,8 @@
         "drupal/permissions_by_term": "^3.1",
         "drupal/shs": "^2.0@RC",
         "drupal/auditfiles": "^4.1@beta",
-        "drupal/simplesamlphp_auth": "4.x-dev@dev"
+        "drupal/simplesamlphp_auth": "4.x-dev@dev",
+        "drupal/poll": "^1.6"
     },
     "repositories": {
         "drupal-packagist": {

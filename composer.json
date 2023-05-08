@@ -237,7 +237,8 @@
         "drupal/shs": "^2.0@RC",
         "drupal/auditfiles": "^4.1@beta",
         "drupal/simplesamlphp_auth": "4.x-dev@dev",
-        "drupal/poll": "^1.6"
+        "drupal/poll": "^1.6",
+        "drupal/color": "^1.0"
     },
     "repositories": {
         "drupal-packagist": {

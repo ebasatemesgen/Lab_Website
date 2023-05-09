@@ -239,7 +239,8 @@
         "drupal/simplesamlphp_auth": "4.x-dev@dev",
         "drupal/poll": "^1.6",
         "drupal/color": "^1.0",
-        "drupal/jquery_ui_effects": "^2.0"
+        "drupal/jquery_ui_effects": "^2.0",
+        "drupal/samlauth": "^3.8"
     },
     "repositories": {
         "drupal-packagist": {

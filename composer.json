@@ -240,7 +240,8 @@
         "drupal/poll": "^1.6",
         "drupal/color": "^1.0",
         "drupal/jquery_ui_effects": "^2.0",
-        "drupal/samlauth": "^3.8"
+        "drupal/samlauth": "^3.8",
+        "umn/superfish": "dev-main"
     },
     "repositories": {
         "drupal-packagist": {
@@ -254,6 +255,10 @@
         "umn-features": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/d8-features.git"
+        },
+        "shadow-superfish": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/superfish.git"
         },
         "umn-radix-layouts": {
             "type": "git",

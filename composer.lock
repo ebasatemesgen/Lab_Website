@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e581269b92d03a9afe86b68ce28c1104",
+    "content-hash": "db15c2d0e6f14d152935ce9a359850ac",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -24962,6 +24962,37 @@
             "time": "2023-04-20T20:10:56+00:00"
         },
         {
+            "name": "umn/superfish",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/superfish.git",
+                "reference": "8af2dbaf433858542f5accd4e197d63eb37869b4"
+            },
+            "require": {
+                "mehrpadin/superfish": "~2.0"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mehrpadin",
+                    "homepage": "https://www.drupal.org/u/mehrpadin",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds jQuery Superfish plugin to menu blocks.",
+            "homepage": "https://www.drupal.org/project/superfish",
+            "support": {
+                "issues": "https://www.drupal.org/project/superfish",
+                "source": "https://cgit.drupalcode.org/superfish"
+            },
+            "time": "2023-05-09T13:51:32+00:00"
+        },
+        {
             "name": "umn/umn_escape_button",
             "version": "dev-master",
             "source": {
@@ -25831,7 +25862,8 @@
         "umn/field_delimiter": 20,
         "drupal/shs": 5,
         "drupal/auditfiles": 10,
-        "drupal/simplesamlphp_auth": 20
+        "drupal/simplesamlphp_auth": 20,
+        "umn/superfish": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

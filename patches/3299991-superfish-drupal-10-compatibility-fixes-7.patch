@@ -1,0 +1,96 @@
+diff --git a/js/superfish.js b/js/superfish.js
+index a99ec5d..0a98e32 100644
+--- a/js/superfish.js
++++ b/js/superfish.js
+@@ -3,6 +3,20 @@
+  * The Superfish Drupal Behavior to apply the Superfish jQuery plugin to lists.
+  */
+ 
++(function (Drupal, $, once) {
++  Drupal.behaviors.myfeature = {
++    attach(context) {
++      // The once call is wrapped in $() to allow the usual jQuery chaining.
++      const $elements =  $(once('myfeature', '[data-myfeature]', context));
++      // `$elements` is always a jQuery object.
++      $elements.each(processingCallback);
++    }
++  };
++
++  function processingCallback(index, value) {}
++}(Drupal, jQuery, once));
++
++
+ (function ($, Drupal, drupalSettings) {
+ 
+   'use strict';
+diff --git a/superfish.module b/superfish.module
+index b49ef31..86f7330 100644
+--- a/superfish.module
++++ b/superfish.module
+@@ -71,7 +71,7 @@ function superfish_library_info_build() {
+           'core/jquery',
+           'core/drupal',
+           'core/drupalSettings',
+-          'core/jquery.once',
++          'core/once',
+         ],
+       ],
+       'init' => [
+@@ -198,16 +198,10 @@ function superfish_library_path($library = 'superfish') {
+   $directory = FALSE;
+   // Ensure the Libraries API module is installed and working.
+   if (function_exists('libraries_get_path')) {
+-    $directory = libraries_get_path($library);
++    $directory = 'libraries/' . $library;
+     if ($directory) {
+       return $directory;
+     }
+-    elseif (ucfirst($library) !== $library) {
+-      $directory = libraries_get_path(ucfirst($library));
+-      if ($directory) {
+-        return $directory;
+-      }
+-    }
+   }
+   // Otherwise use the default directory.
+   if (\Drupal::hasContainer()) {
+@@ -244,17 +238,9 @@ function superfish_library_path($library = 'superfish') {
+  * Verifies Superfish library is present.
+  */
+ function superfish_library_check() {
+-  if (function_exists('libraries_get_libraries')) {
+-    $library = libraries_get_libraries();
+-    if (isset($library['superfish']) || isset($library['Superfish'])) {
+-      return TRUE;
+-    }
+-  }
+-  else {
+-    $directory = superfish_library_path();
+-    if ($directory && file_exists($directory . '/superfish.js')) {
+-      return TRUE;
+-    }
++  $directory = superfish_library_path();
++  if ($directory && file_exists($directory . '/superfish.js')) {
++    return TRUE;
+   }
+   return FALSE;
+ }
+diff --git a/templates/superfish-menu-items.html.twig b/templates/superfish-menu-items.html.twig
+index f396137..9d744ae 100644
+--- a/templates/superfish-menu-items.html.twig
++++ b/templates/superfish-menu-items.html.twig
+@@ -20,7 +20,7 @@
+ #}
+ 
+ {% set classes = [] %}
+-{% spaceless %}
++{% apply spaceless %}
+ {% for item in menu_items %}
+ 
+   {% if item.children is not empty %}
+@@ -52,4 +52,4 @@
+   </li>
+ 
+ {% endfor %}
+-{% endspaceless %}
++{% endapply %}

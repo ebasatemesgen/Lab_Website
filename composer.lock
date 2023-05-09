@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db15c2d0e6f14d152935ce9a359850ac",
+    "content-hash": "d1fc1aa4ca0b1bb66725fe1a9658951c",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -24954,6 +24954,34 @@
             "time": "2023-04-20T20:10:56+00:00"
         },
         {
+            "name": "umn/responsive_menu",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/responsive_menus.git",
+                "reference": "a53694e5d779bef121a54ac0bb70d4ab3583c942"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tancredi D'Onofrio (tanc)",
+                    "homepage": "https://www.drupal.org/u/tanc",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides a javascript based off-canvas responsive menu with depth. At wider browser widths it provides a horizontal menu capable of drop downs and flyouts",
+            "homepage": "https://drupal.org/project/responsive_menu",
+            "support": {
+                "issues": "https://drupal.org/project/issues/responsive_menu",
+                "source": "https://cgit.drupalcode.org/responsive_menu"
+            },
+            "time": "2023-05-09T18:37:20+00:00"
+        },
+        {
             "name": "umn/superfish",
             "version": "dev-main",
             "source": {
@@ -25855,7 +25883,8 @@
         "drupal/shs": 5,
         "drupal/auditfiles": 10,
         "drupal/simplesamlphp_auth": 20,
-        "umn/superfish": 20
+        "umn/superfish": 20,
+        "umn/responsive_menu": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

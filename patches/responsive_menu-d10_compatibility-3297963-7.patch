@@ -1,0 +1,51 @@
+diff --git a/responsive_menu.module b/responsive_menu.module
+index 7e48d5f..65a30a6 100644
+--- a/responsive_menu.module
++++ b/responsive_menu.module
+@@ -21,9 +21,9 @@ define('RESPONSIVE_MENU_BREAKPOINT_FILENAME', '/responsive_menu_breakpoint.css')
+ function responsive_menu_help($route_name, RouteMatchInterface $route_match) {
+   switch ($route_name) {
+     case 'responsive_menu.settings':
+-      $readme = Link::fromTextAndUrl('README.md', Url::fromUri('base:' . drupal_get_path('module', 'responsive_menu') . '/README.md'))->toRenderable();
++      $readme = Link::fromTextAndUrl('README.md', Url::fromUri('base:' . \Drupal::service('extension.list.module')->getPath('responsive_menu') . '/README.md'))->toRenderable();
+       return '<p>' . t('3rd party libraries are required to enable some of the features. See the @readme file for more information about where to download and place them.', [
+-        '@readme' => render($readme),
++        '@readme' => \Drupal::service('renderer')->render($readme),
+       ]) . '</p><p>' . t("At a minimum you need to place the 'Responsive menu mobile icon' block in a region. If you want to display a horizontal menu at a specified breakpoint then you also need to place the 'Horizontal menu' block, although this is optional.") . '</p>';
+   }
+ }
+diff --git a/src/Form/SettingsForm.php b/src/Form/SettingsForm.php
+index 1686337..35a86d0 100644
+--- a/src/Form/SettingsForm.php
++++ b/src/Form/SettingsForm.php
+@@ -313,7 +313,7 @@ class SettingsForm extends ConfigFormBase {
+     if ($values['use_breakpoint'] && empty($values['horizontal_breakpoint'])) {
+       $breakpoint_message = Link::fromTextAndUrl('breakpoint file', Url::fromUri('https://www.drupal.org/node/1803874'))->toRenderable();
+       $form_state->setErrorByName('horizontal_breakpoint', $this->t("You have chosen to use a breakpoint but you have not selected one. This may happen if your @breakpoint is not properly set up.", [
+-        '@breakpoint' => render($breakpoint_message),
++        '@breakpoint' => \Drupal::service('renderer')->render($breakpoint_message),
+       ]));
+     }
+   }
+diff --git a/tests/modules/responsive_menu_test/responsive_menu_test.info.yml b/tests/modules/responsive_menu_test/responsive_menu_test.info.yml
+index 4bd9435..74b3eae 100644
+--- a/tests/modules/responsive_menu_test/responsive_menu_test.info.yml
++++ b/tests/modules/responsive_menu_test/responsive_menu_test.info.yml
+@@ -2,6 +2,7 @@ name: 'Responsive Menu Test'
+ type: module
+ description: 'Support module for Responsive Menu tests.'
+ package: Testing
++core_version_requirement: ^8 || ^9 || ^10
+ dependencies:
+   - drupal:node
+   - drupal:filter
+diff --git a/tests/themes/responsive_menu_theme_test_nobp/responsive_menu_theme_test_nobp.info.yml b/tests/themes/responsive_menu_theme_test_nobp/responsive_menu_theme_test_nobp.info.yml
+index 9df4b0f..c513cd3 100644
+--- a/tests/themes/responsive_menu_theme_test_nobp/responsive_menu_theme_test_nobp.info.yml
++++ b/tests/themes/responsive_menu_theme_test_nobp/responsive_menu_theme_test_nobp.info.yml
+@@ -2,4 +2,5 @@ name: 'Responsive menu test theme (no breakpoints)'
+ type: theme
+ description: 'Test theme for responsive_menu module.'
+ core: 8.x
++core_version_requirement: ^8 || ^9 || ^10
+ base theme: stable

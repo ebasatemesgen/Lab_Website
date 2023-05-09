@@ -82,9 +82,9 @@
     "drupal/media_entity_download": {
       "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
     },
-    "drupal/responsive_menu": {
-      "3212699: Setting to remove cache context": "https://www.drupal.org/files/issues/2021-10-07/responsive_menu-3212699-10.patch",
-      "3089650: Potential caching issue when modifying the mobile menu with hooks": "https://www.drupal.org/files/issues/2021-10-06/responsive_menu-3089650-14.patch"
+    "umn/responsive_menu": {
+      "3089650: Potential caching issue when modifying the mobile menu with hooks": "https://www.drupal.org/files/issues/2021-10-06/responsive_menu-3089650-14.patch",
+      "3297963: Drupal 10 compatibility issues": "patches/responsive_menu-d10_compatibility-3297963-7.patch"
     },
     "drupal/entity_embed": {
       "3069448: Array to string conversion for Media Image": "https://www.drupal.org/files/issues/2019-10-18/entity-embed-array-to-string--3069448-19.patch",

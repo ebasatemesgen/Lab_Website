@@ -241,7 +241,8 @@
         "drupal/color": "^1.0",
         "drupal/jquery_ui_effects": "^2.0",
         "drupal/samlauth": "^3.8",
-        "umn/superfish": "dev-main"
+        "umn/superfish": "dev-main",
+        "umn/responsive_menu": "dev-main"
     },
     "repositories": {
         "drupal-packagist": {
@@ -259,6 +260,10 @@
         "shadow-superfish": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/superfish.git"
+        },
+        "shadow-responsive-menu": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/responsive_menus.git"
         },
         "umn-radix-layouts": {
             "type": "git",

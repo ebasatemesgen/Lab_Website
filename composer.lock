@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1fc1aa4ca0b1bb66725fe1a9658951c",
+    "content-hash": "ffd11451838285afda4d90096a3031ea",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -24817,6 +24817,24 @@
             "time": "2023-03-27T12:55:50+00:00"
         },
         {
+            "name": "umn/ckeditor_modal",
+            "version": "dev-10.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/ckeditor_modal.git",
+                "reference": "9aaabfdcbdd6bd10450b4e0b9a96f132451735a8"
+            },
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "Alina Rimbu",
+                    "email": "rimbu002@umn.edu"
+                }
+            ],
+            "description": "Drupal 8 module that makes fields in CKEditor modal dialog clickable",
+            "time": "2023-05-08T19:51:31+00:00"
+        },
+        {
             "name": "umn/crmform",
             "version": "dev-d9",
             "source": {
@@ -25884,7 +25902,8 @@
         "drupal/auditfiles": 10,
         "drupal/simplesamlphp_auth": 20,
         "umn/superfish": 20,
-        "umn/responsive_menu": 20
+        "umn/responsive_menu": 20,
+        "umn/ckeditor_modal": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

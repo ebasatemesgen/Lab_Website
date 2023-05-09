@@ -242,7 +242,8 @@
         "drupal/jquery_ui_effects": "^2.0",
         "drupal/samlauth": "^3.8",
         "umn/superfish": "dev-main",
-        "umn/responsive_menu": "dev-main"
+        "umn/responsive_menu": "dev-main",
+        "umn/ckeditor_modal": "dev-10.x-dev"
     },
     "repositories": {
         "drupal-packagist": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "838f8d3f58055a07ddbc1f93cef9a52b",
+    "content-hash": "677bdab29bf53c64d5e34b63cbffde36",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -25190,6 +25190,24 @@
             "time": "2023-03-27T13:35:04+00:00"
         },
         {
+            "name": "umn/umn_superfish",
+            "version": "dev-9-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/umn_superfish.git",
+                "reference": "3410ce117e4f4e173a3bdb4984ce5ffacee4ecea"
+            },
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "Jim Hart",
+                    "email": "hart0554@umn.edu"
+                }
+            ],
+            "description": "UMN Accessibility tweaks for Superfish",
+            "time": "2023-03-27T15:29:15+00:00"
+        },
+        {
             "name": "umndrupal/acquia_api",
             "version": "dev-10.x-dev",
             "source": {
@@ -25986,7 +26004,8 @@
         "umn/superfish": 20,
         "umn/responsive_menu": 20,
         "umn/ckeditor_modal": 20,
-        "drupal/features": 15
+        "drupal/features": 15,
+        "umn/umn_superfish": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

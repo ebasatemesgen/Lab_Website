@@ -244,7 +244,8 @@
         "umn/superfish": "dev-main",
         "umn/responsive_menu": "dev-main",
         "umn/ckeditor_modal": "dev-10.x-dev",
-        "drupal/features": "^5.0@alpha"
+        "drupal/features": "^5.0@alpha",
+        "umn/umn_superfish": "dev-9-dev"
     },
     "repositories": {
         "drupal-packagist": {

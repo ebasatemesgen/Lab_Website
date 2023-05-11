@@ -671,6 +671,9 @@
             "docroot/core": [
                 "type:drupal-core"
             ],
+            "docroot/libraries/mmenu": [
+                "bower-asset/jquery.mmenu"
+            ],
             "docroot/libraries/{$name}": [
                 "type:drupal-library",
                 "type:bower-asset",

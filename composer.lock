@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "677bdab29bf53c64d5e34b63cbffde36",
+    "content-hash": "8452f9282bef9ab124a8999521715b5b",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -25019,11 +25019,11 @@
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-10.x-build",
+            "version": "dev-10.x-saml-auth",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "6017ae3c1e72540f3810362ac7af1cb383e86b13"
+                "reference": "5e1e44907c4ef86604f8b82913ded1e6f8aa76e8"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -25032,7 +25032,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2023-04-26T18:53:17+00:00"
+            "time": "2023-05-10T19:03:40+00:00"
         },
         {
             "name": "umn/radix_layouts",

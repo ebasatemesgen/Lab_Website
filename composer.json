@@ -157,7 +157,6 @@
         "drupal/search_api_solr": "^4.2",
         "drupal/acquia_search": "^3.1",
         "drupal/svg_image": "^3.0",
-        "drupal/entity_update": "^3.0@RC",
         "drupal/content_lock": "^2.2",
         "drupal/file_delete": "^2.0",
         "drupal/exclude_node_title": "^1.2",

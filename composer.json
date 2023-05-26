@@ -80,7 +80,7 @@
         "google/charts": "45",
         "drush/drush": "^11.0",
         "drupal/layout_builder_modal": "^1.1",
-        "drupal/google_tag": "^1.1",
+        "drupal/google_tag": "^2.0",
         "bower-asset/highcharts": "^10",
         "highcharts/highcharts": "^10.0",
         "highcharts/more": "^10.0",

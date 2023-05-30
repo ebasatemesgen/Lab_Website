@@ -153,7 +153,8 @@
       "3284015: Accessibility test generates errors": "https://www.drupal.org/files/issues/2022-06-03/3284015-accessibility-test-generates-errors.patch"
     },
     "umn/superfish": {
-      "3299991: D10 compatibility patches": "patches/3299991-superfish-drupal-10-compatibility-fixes-7.patch"
+      "3299991: D10 compatibility patches": "patches/3299991-superfish-drupal-10-compatibility-fixes-7.patch",
+      "3339367: Use Once function in JS behavior": "https://www.drupal.org/files/issues/2023-02-05/3339367-use-once-method-4.patch"
     }
   }
 }

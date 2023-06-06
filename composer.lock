@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f10503bf5727dfe1420b5c6fcf3392fa",
+    "content-hash": "d1968abdfa04987e12fbb3d156839fab",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -2608,35 +2608,29 @@
         },
         {
             "name": "drupal/anchor_link",
-            "version": "2.6.0",
+            "version": "dev-3.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/anchor_link.git",
-                "reference": "8.x-2.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-2.6.zip",
-                "reference": "8.x-2.6",
-                "shasum": "deb452a7da610472a4ab3b5fbdf06904c041a225"
+                "reference": "6938068c6bcca27746ddada86f682af744d1d132"
             },
             "require": {
                 "drupal/ckeditor": "*",
-                "drupal/core": "^8 || ^9 || ^10",
+                "drupal/core": "^9 || ^10",
                 "drupal/fakeobjects": "~1.0"
             },
             "type": "drupal-module",
             "extra": {
-                "drupal": {
-                    "version": "8.x-2.6",
-                    "datestamp": "1674976179",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
                 "branch-alias": {
-                    "dev-8.x-2.x": "8.2.x-dev"
+                    "dev-3.0.x": "3.0.x-dev"
+                },
+                "drupal": {
+                    "version": "3.0.x-dev",
+                    "datestamp": "1651754052",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2654,7 +2648,7 @@
                     "homepage": "https://www.drupal.org/user/1414312"
                 }
             ],
-            "description": "This plugin module adds the better link dialog and anchor related features to CKEditor in Drupal.",
+            "description": "This plugin module adds the better link dialog and anchor related features to CKEditor in Drupal 9.",
             "homepage": "https://www.drupal.org/project/anchor_link",
             "support": {
                 "source": "http://cgit.drupalcode.org/anchor_link",
@@ -18531,16 +18525,19 @@
             ]
         },
         {
-            "name": "npm-asset/fontawesome",
-            "version": "5.6.3",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/fontawesome/-/fontawesome-5.6.3.tgz"
+            "name": "npm-asset/fortawesome--fontawesome",
+            "version": "6.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "0698449d50f2b95517562295a59d414afc68b369"
             },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/0698449d50f2b95517562295a59d414afc68b369",
+                "reference": "0698449d50f2b95517562295a59d414afc68b369"
+            },
+            "type": "npm-asset"
         },
         {
             "name": "npm-asset/jquery-ui-touch-punch",
@@ -18552,6 +18549,18 @@
             "type": "npm-asset",
             "license": [
                 "Dual licensed under the MIT or GPL Version 2 licenses."
+            ]
+        },
+        {
+            "name": "npm-asset/northernco--ckeditor5-anchor-drupal",
+            "version": "0.2.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@northernco/ckeditor5-anchor-drupal/-/ckeditor5-anchor-drupal-0.2.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
             ]
         },
         {
@@ -25855,6 +25864,7 @@
         "drupal/advagg": 15,
         "drupal/paragraphs_features": 10,
         "drupal/advanced_text_formatter": 5,
+        "drupal/anchor_link": 20,
         "umn/lightning_umn": 20,
         "umn/umn_search": 20,
         "umn/crmform": 20,

@@ -246,7 +246,8 @@
         "npm-asset/northernco--ckeditor5-anchor-drupal": "^0.2.0",
         "npm-asset/fortawesome--fontawesome": "^6.4",
         "drupal/masonry": "^2.0",
-        "drupal/purge_file": "^1.1"
+        "drupal/purge_file": "^1.1",
+        "drupal/views_field_formatter": "^4.0"
     },
     "repositories": {
         "drupal-packagist": {

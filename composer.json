@@ -244,7 +244,9 @@
         "drupal/features": "^5.0@alpha",
         "umn/umn_superfish": "dev-9-dev",
         "npm-asset/northernco--ckeditor5-anchor-drupal": "^0.2.0",
-        "npm-asset/fortawesome--fontawesome": "^6.4"
+        "npm-asset/fortawesome--fontawesome": "^6.4",
+        "drupal/masonry": "^2.0",
+        "drupal/purge_file": "^1.1"
     },
     "repositories": {
         "drupal-packagist": {

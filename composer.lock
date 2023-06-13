@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d85b018ab57ede7141746a0dcfa3d5e",
+    "content-hash": "9645c525c2cee8334543b883233a3e41",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -25005,6 +25005,29 @@
             ],
             "description": "Drupal 8 module that makes fields in CKEditor modal dialog clickable",
             "time": "2023-05-08T19:51:31+00:00"
+        },
+        {
+            "name": "umn/cog",
+            "version": "1.16",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/cog.git",
+                "reference": "7cf8eecff541d958dbb56790ac852d25e7fca219"
+            },
+            "replace": {
+                "drupal/cog": "self.version"
+            },
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "An Acquia-maintained base theme.",
+            "homepage": "https://github.com/acquia-pso/cog",
+            "support": {
+                "issues": "https://github.com/acquia-pso/cog/issues",
+                "source": "https://github.com/acquia-pso/cog"
+            },
+            "time": "2023-06-13T13:01:02+00:00"
         },
         {
             "name": "umn/crmform",

@@ -248,7 +248,8 @@
         "drupal/masonry": "^2.0",
         "drupal/purge_file": "^1.1",
         "drupal/views_field_formatter": "^4.0",
-        "drupal/migrate_file_to_media": "^2.0"
+        "drupal/migrate_file_to_media": "^2.0",
+        "umn/cog": "^1.16"
     },
     "repositories": {
         "drupal-packagist": {
@@ -652,6 +653,10 @@
                     "type": "zip"
                 }
             }
+        },
+        "cog": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/cog.git"
         }
     },
     "config": {

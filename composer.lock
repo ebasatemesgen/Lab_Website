@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbf363e64e12a0f06220b9f0b21e1eb8",
+    "content-hash": "9caa9159689ae492921f4627cca8aa29",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -6695,6 +6695,61 @@
             "homepage": "https://www.drupal.org/project/features",
             "support": {
                 "source": "https://git.drupalcode.org/project/features"
+            }
+        },
+        {
+            "name": "drupal/field_defaults",
+            "version": "2.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_defaults.git",
+                "reference": "2.0.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_defaults-2.0.0-alpha2.zip",
+                "reference": "2.0.0-alpha2",
+                "shasum": "829fa861038991643f32ec4b04da67d659bb38c0"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha2",
+                    "datestamp": "1679612171",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10 || ^11"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "b_sharpe",
+                    "homepage": "https://www.drupal.org/user/2512258"
+                }
+            ],
+            "description": "Field Defaults allows batch updating of default field values to existing content.",
+            "homepage": "https://www.drupal.org/project/field_defaults",
+            "keywords": [
+                "Content",
+                "Drupal",
+                "Fields"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_defaults",
+                "issues": "https://www.drupal.org/project/issues/field_defaults"
             }
         },
         {
@@ -27480,7 +27535,8 @@
         "umn/responsive_menu": 20,
         "umn/ckeditor_modal": 20,
         "drupal/features": 15,
-        "umn/umn_superfish": 20
+        "umn/umn_superfish": 20,
+        "drupal/field_defaults": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

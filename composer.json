@@ -250,7 +250,8 @@
         "drupal/views_field_formatter": "^4.0",
         "drupal/migrate_file_to_media": "^2.0",
         "umn/cog": "^1.16",
-        "drupal/lightning_api": "^4.10"
+        "drupal/lightning_api": "^4.10",
+        "drupal/field_defaults": "^2.0@alpha"
     },
     "repositories": {
         "drupal-packagist": {

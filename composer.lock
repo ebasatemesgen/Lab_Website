@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9caa9159689ae492921f4627cca8aa29",
+    "content-hash": "e3df42730737b616c6415975bfc7a7f9",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -3720,6 +3720,57 @@
             "homepage": "https://www.drupal.org/project/ckeditor",
             "support": {
                 "source": "https://git.drupalcode.org/project/ckeditor"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_link_styles",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_link_styles.git",
+                "reference": "1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_link_styles-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "eca74d528e1cca27bca06a9157d1b3993d84a6a2"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10",
+                "php": ">=8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.1",
+                    "datestamp": "1680015141",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Snyder",
+                    "homepage": "https://www.drupal.org/user/1988434",
+                    "email": "chris@chrissnyder.org",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides the ability to select styles (css classes) for links within CKEditor5.",
+            "homepage": "https://www.drupal.org/project/ckeditor_link_styles",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://cgit.drupalcode.org/ckeditor_link_styles",
+                "issues": "https://www.drupal.org/project/issues/ckeditor_link_styles"
             }
         },
         {
@@ -26535,7 +26586,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "7e2f7f2df129532e59cf7735dd5f9cc2dd98137f"
+                "reference": "2fa080ec7717b70f6f52dba124fd8d1c739eeb54"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -26545,7 +26596,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2023-06-23T17:57:00+00:00"
+            "time": "2023-06-27T17:16:54+00:00"
         },
         {
             "name": "umn/lightning_umn",

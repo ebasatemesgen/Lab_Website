@@ -251,7 +251,8 @@
         "drupal/migrate_file_to_media": "^2.0",
         "umn/cog": "^1.16",
         "drupal/lightning_api": "^4.10",
-        "drupal/field_defaults": "^2.0@alpha"
+        "drupal/field_defaults": "^2.0@alpha",
+        "drupal/ckeditor_link_styles": "^1.0"
     },
     "repositories": {
         "drupal-packagist": {

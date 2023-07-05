@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3a712b2932f12c7f26784554fafdbc5",
+    "content-hash": "5562bb40eac0446bd6668c3768960480",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -7700,28 +7700,28 @@
         },
         {
             "name": "drupal/group",
-            "version": "1.5.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/group.git",
-                "reference": "8.x-1.5"
+                "reference": "2.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/group-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "4b890350749ff1d388425da8343b8835847492d8"
+                "url": "https://ftp.drupal.org/files/projects/group-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "d1cfc7d06b44b776f77629d3c0657617d713dd97"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10",
+                "drupal/core": "^9.5 || ^10",
                 "drupal/entity": "^1.2",
-                "drupal/variationcache": "^1.1"
+                "drupal/flexible_permissions": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1660746007",
+                    "version": "2.1.0",
+                    "datestamp": "1685092674",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

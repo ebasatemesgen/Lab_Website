@@ -73,7 +73,7 @@
         "drupal/fakeobjects": "^1.0",
         "drupal/captcha": "^1.1",
         "drupal/recaptcha": "^3.0",
-        "drupal/group": "^1.0",
+        "drupal/group": "^2.1",
         "ckeditor/fakeobjects": "^4.10",
         "google/charts": "45",
         "drush/drush": "^11.0",

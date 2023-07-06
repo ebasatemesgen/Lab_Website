@@ -25,9 +25,6 @@
       "2894945: Role assignment from attributes does not work when provisioning accounts": "https://www.drupal.org/files/issues/2020-02-26/simplesamlphp_auth-role_assignment-2894945-5.patch",
       "3112851: /saml_login requires anonymous user, but this path is a redirect destination for users logged in through SAML": "https://www.drupal.org/files/issues/2020-05-13/3112851-3.patch"
     },
-    "drupal/entity_print": {
-      "2969184: PDF generation errors with DomPDF due to drupalSettings": "https://www.drupal.org/files/issues/2020-02-15/entity_print-dompdf-2969184-13.patch"
-    },
     "drupal/scheduled_updates": {
       "3172330: Module is not D9 compatible": "https://www.drupal.org/files/issues/2021-03-08/3172330-24.patch"
     },
@@ -50,7 +47,6 @@
       "spaceless is deprecated since Twig 2.7": "https://www.drupal.org/files/issues/2022-08-24/3261882-cog-security-update-15.patch"
     },
     "drupal/core": {
-      "2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2020-12-01/cannot-use-relationship-2457999-259.patch",
       "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",
       "1810148: Grouped exposed taxonomy term filters do not work": "https://www.drupal.org/files/issues/1810148-58.patch",
       "2924549: Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-04-04/2924549_26.patch",

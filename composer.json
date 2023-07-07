@@ -252,7 +252,8 @@
         "drupal/lightning_api": "^4.10",
         "drupal/field_defaults": "^2.0@alpha",
         "drupal/ckeditor_link_styles": "^1.0",
-        "drupal/flexible_permissions": "^1.0"
+        "drupal/flexible_permissions": "^1.0",
+        "drupal/path_redirect_import": "^2.0"
     },
     "repositories": {
         "drupal-packagist": {

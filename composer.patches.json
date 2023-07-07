@@ -148,6 +148,9 @@
     },
     "drupal/fontawesome": {
       "3274028: CKEditor 5 compatibility": "patches/3274028-fontawesome-ckeditor5-compatibility-16.patch"
+    },
+    "drupal/path_redirect_import": {
+      "33730215: Update to support path redirect import migrate_tools 6.0.2": "https://www.drupal.org/files/issues/2023-07-06/path_redirect_import-3373025.patch"
     }
   }
 }

@@ -106,7 +106,6 @@
         "drupal/jquery_ui_accordion": "^2.0",
         "bower-asset/jquery.mmenu": "^8.5",
         "mehrpadin/superfish": "2.x-dev",
-        "drupal/video_embed_field": "^2.0",
         "drupal/views_infinite_scroll": "^2.0",
         "drupal/block_visibility_groups": "^2.0",
         "drupal/views_conditional": "^1.2",

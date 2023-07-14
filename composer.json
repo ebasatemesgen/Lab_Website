@@ -252,9 +252,14 @@
         "drupal/field_defaults": "^2.0@alpha",
         "drupal/ckeditor_link_styles": "^1.0",
         "drupal/flexible_permissions": "^1.0",
-        "drupal/path_redirect_import": "^2.0"
+        "drupal/path_redirect_import": "^2.0",
+        "umn/redirect_after_login": "dev-main"
     },
     "repositories": {
+        "redirect_after_login": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/redirect_after_login.git"
+        },
         "drupal-packagist": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"

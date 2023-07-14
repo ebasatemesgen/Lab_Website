@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "570ad251ad9a94e3dece5904ba5659b4",
+    "content-hash": "57092549be1a1f42e4855d539ae17ad9",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -25789,6 +25789,30 @@
             "time": "2023-04-20T20:10:56+00:00"
         },
         {
+            "name": "umn/redirect_after_login",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/redirect_after_login.git",
+                "reference": "f654743c282b4714cb742bcbb90456a0a460bcf2"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Shamsher Alam",
+                    "homepage": "https://www.drupal.org/u/shamsher_alam",
+                    "role": "Author"
+                }
+            ],
+            "description": "Redirect user after login to a configured url",
+            "homepage": "https://drupal.org/project/redirect_after_login",
+            "time": "2023-07-14T18:43:28+00:00"
+        },
+        {
             "name": "umn/responsive_menu",
             "version": "dev-main",
             "source": {
@@ -26738,7 +26762,8 @@
         "umn/responsive_menu": 20,
         "umn/ckeditor_modal": 20,
         "umn/umn_superfish": 20,
-        "drupal/field_defaults": 15
+        "drupal/field_defaults": 15,
+        "umn/redirect_after_login": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

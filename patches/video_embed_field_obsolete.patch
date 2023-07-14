@@ -1,0 +1,12 @@
+diff --git a/video_embed_field.info.yml b/video_embed_field.info.yml
+index 02218b7..f3612be 100644
+--- a/video_embed_field.info.yml
++++ b/video_embed_field.info.yml
+@@ -1,6 +1,7 @@
+ name: Video Embed Field
+ type: module
+ description: 'Provides a field type for displaying videos from 3rd party providers such as YouTube and Vimeo.'
++lifecycle: obsolete
+ package: Video Embed Field
+ core_version_requirement: ^9.2 || ^10
+ dependencies:

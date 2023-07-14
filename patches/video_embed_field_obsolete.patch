@@ -1,12 +1,13 @@
 diff --git a/video_embed_field.info.yml b/video_embed_field.info.yml
-index 02218b7..f3612be 100644
+index 02218b7..632e489 100644
 --- a/video_embed_field.info.yml
 +++ b/video_embed_field.info.yml
-@@ -1,6 +1,7 @@
+@@ -1,6 +1,8 @@
  name: Video Embed Field
  type: module
  description: 'Provides a field type for displaying videos from 3rd party providers such as YouTube and Vimeo.'
 +lifecycle: obsolete
++lifecycle_link: https://www.drupal.org/project/video_embed_field
  package: Video Embed Field
  core_version_requirement: ^9.2 || ^10
  dependencies:

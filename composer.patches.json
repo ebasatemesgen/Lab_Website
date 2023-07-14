@@ -153,6 +153,9 @@
     },
     "drupal/path_redirect_import": {
       "33730215: Update to support path redirect import migrate_tools 6.0.2": "https://www.drupal.org/files/issues/2023-07-06/path_redirect_import-3373025.patch"
+    },
+    "drupal/embed": {
+      "3309747: CKEditor 5 compatibility": "https://www.drupal.org/files/issues/2023-06-29/3309747-CKEditor-5-compatibility-40.patch"
     }
   }
 }

@@ -130,7 +130,8 @@
     },
     "drupal/dropzonejs": {
       "3125682: Support chunked uploads": "https://www.drupal.org/files/issues/2022-03-29/dropzonejs-support-chuked-uploads-3125682-30.patch",
-      "2924425: Maximum Upload Size Causes Silent JS Error": "https://www.drupal.org/files/issues/2021-01-18/2924425-maxFileSize-22.patch"
+      "2924425: Maximum Upload Size Causes Silent JS Error": "https://www.drupal.org/files/issues/2021-01-18/2924425-maxFileSize-22.patch",
+      "3375076: Fix D10 deprecation issues": "patches/dropzone-3375076.patch"
     },
     "drupal/recaptcha": {
       "2213337: Missing label on recaptcha_response_field": "patches/recaptcha-2213337-missing-label-14.patch"

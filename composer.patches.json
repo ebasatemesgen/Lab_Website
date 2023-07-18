@@ -160,6 +160,9 @@
     },
     "drupal/smart_date": {
       "3369714: Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-06-24/smart_date.3.7.x-dev.rector.patch"
+    },
+    "drupal/view_mode_page": {
+      "3356400: Drupal 10 compatibility": "https://www.drupal.org/files/issues/2023-05-30/3356400-drupal-10-compatibility-6.patch"
     }
   }
 }

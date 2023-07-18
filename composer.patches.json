@@ -137,7 +137,8 @@
       "2213337: Missing label on recaptcha_response_field": "patches/recaptcha-2213337-missing-label-14.patch"
     },
     "drupal/content_moderation_notifications": {
-      "3188443: Disable the site email address breaks the workflow even using Adhoc recipients": "https://www.drupal.org/files/issues/2022-11-10/add_emails_to_recipients-3188443-15.patch"
+      "3188443: Disable the site email address breaks the workflow even using Adhoc recipients": "https://www.drupal.org/files/issues/2022-11-10/add_emails_to_recipients-3188443-15.patch",
+      "3347958: Fix Entity queries must explicitly set whether the query should be access checked or not in Content Moderation Notifications" : "https://www.drupal.org/files/issues/2023-03-14/3347958-2.patch"
     },
     "drupal/toc_js": {
       "3284015: Accessibility test generates errors": "https://www.drupal.org/files/issues/2022-06-03/3284015-accessibility-test-generates-errors.patch"

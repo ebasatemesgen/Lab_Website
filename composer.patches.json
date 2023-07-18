@@ -157,6 +157,9 @@
     },
    "drupal/csv_serialization": {
       "3230521: Call to deprecated method getContent()": "https://www.drupal.org/files/issues/2021-11-03/deprecated_method_getcontent-3230521-5.patch"
+    },
+    "drupal/smart_date": {
+      "3369714: Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-06-24/smart_date.3.7.x-dev.rector.patch"
     }
   }
 }

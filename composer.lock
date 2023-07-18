@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57092549be1a1f42e4855d539ae17ad9",
+    "content-hash": "2402cf2f35c51ed9c480c727339c9969",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -25715,7 +25715,7 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-10.x-build",
+            "version": "dev-10.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
@@ -25736,7 +25736,7 @@
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-10.x-build",
+            "version": "dev-10.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
@@ -25754,7 +25754,7 @@
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-10.x-build",
+            "version": "dev-10.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",

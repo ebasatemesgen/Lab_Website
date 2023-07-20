@@ -253,7 +253,8 @@
         "drupal/ckeditor_link_styles": "^1.0",
         "drupal/flexible_permissions": "^1.0",
         "drupal/path_redirect_import": "^2.0",
-        "umn/redirect_after_login": "dev-main"
+        "umn/redirect_after_login": "dev-main",
+        "drupal/media_entity_download": "^2.2"
     },
     "repositories": {
         "redirect_after_login": {

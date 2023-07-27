@@ -254,7 +254,8 @@
         "drupal/flexible_permissions": "^1.0",
         "drupal/path_redirect_import": "^2.0",
         "umn/redirect_after_login": "dev-main",
-        "drupal/media_entity_download": "^2.2"
+        "drupal/media_entity_download": "^2.2",
+        "drupal/hal": "^2.0"
     },
     "repositories": {
         "redirect_after_login": {

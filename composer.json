@@ -149,7 +149,7 @@
         "drupal/limited_field_widgets": "^2.0",
         "drupal/imagemagick": "^3.2",
         "drupal/paragraphs_features": "^2.0@beta",
-        "drupal/smart_date": "^3.3",
+        "drupal/smart_date": "^4.0",
         "drupal/view_mode_switch": "^2.0",
         "drupal/search_api_solr": "^4.2",
         "drupal/acquia_search": "^3.1",

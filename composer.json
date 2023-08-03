@@ -258,7 +258,8 @@
         "drupal/hal": "^2.0",
         "drupal/publishcontent": "^1.6",
         "umn/h5p": "dev-main",
-        "drupal/ckeditorheight": "^1.9"
+        "drupal/ckeditorheight": "^1.9",
+        "umn/ckeditor_templates": "dev-main"
     },
     "repositories": {
         "redirect_after_login": {
@@ -348,6 +349,10 @@
         "umn_dm_import": {
             "type": "git",
             "url": "git@github.umn.edu:hinte019/umn_dm_import.git"
+        },
+        "umn_ckeditor_templates": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/ckeditor_templates.git"
         },
         "blazy": {
             "type": "package",

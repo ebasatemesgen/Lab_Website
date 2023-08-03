@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a39ec88f2a13e11ddb07af3c64d0ea9",
+    "content-hash": "6eb809428e8177314f6d765f6c4f085a",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -3796,6 +3796,59 @@
             "support": {
                 "source": "https://cgit.drupalcode.org/ckeditor_link_styles",
                 "issues": "https://www.drupal.org/project/issues/ckeditor_link_styles"
+            }
+        },
+        {
+            "name": "drupal/ckeditorheight",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditorheight.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditorheight-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "28119489b4a21f39e5b31e482fdb9fdf05abf6e8"
+            },
+            "require": {
+                "drupal/ckeditor": "^1.0",
+                "drupal/core": "^9.4 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1687950399",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "anruether",
+                    "homepage": "https://www.drupal.org/user/894458"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "heliogabal",
+                    "homepage": "https://www.drupal.org/user/998658"
+                }
+            ],
+            "description": "Adjusts CKEditor height to field row setting until we have https://www.drupal.org/node/2788905.",
+            "homepage": "https://www.drupal.org/project/ckeditorheight",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditorheight"
             }
         },
         {
@@ -26996,7 +27049,8 @@
         "umn/ckeditor_modal": 20,
         "umn/umn_superfish": 20,
         "drupal/field_defaults": 15,
-        "umn/redirect_after_login": 20
+        "umn/redirect_after_login": 20,
+        "umn/h5p": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

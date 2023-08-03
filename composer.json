@@ -257,7 +257,8 @@
         "drupal/media_entity_download": "^2.2",
         "drupal/hal": "^2.0",
         "drupal/publishcontent": "^1.6",
-        "umn/h5p": "dev-main"
+        "umn/h5p": "dev-main",
+        "drupal/ckeditorheight": "^1.9"
     },
     "repositories": {
         "redirect_after_login": {

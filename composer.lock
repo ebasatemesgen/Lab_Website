@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cc42dcf19c3deeceb81ae41eb96d5ed",
+    "content-hash": "59d2f3915f517a03ea4519a042b0044b",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -26294,6 +26294,35 @@
             "time": "2023-03-27T15:29:15+00:00"
         },
         {
+            "name": "umn/views_term_hierarchy_weight_field",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/views_term_hierarchy_weight_field.git",
+                "reference": "9decf2a6cc8452c8cb6cb067b147e400110c230e"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Pol Dellaiera",
+                    "email": "pol.dellaiera@protonmail.com"
+                }
+            ],
+            "description": "This module allows you to filter or sort terms according to their hierarchical order or hierarchical depth.",
+            "homepage": "https://www.drupal.org/project/views_term_hierarchy_weight_field",
+            "keywords": [
+                "drupal",
+                "sort",
+                "taxonomy",
+                "terms"
+            ],
+            "time": "2023-08-03T14:09:48+00:00"
+        },
+        {
             "name": "umndrupal/acquia_api",
             "version": "dev-10.x-dev",
             "source": {
@@ -27092,7 +27121,8 @@
         "drupal/field_defaults": 15,
         "umn/redirect_after_login": 20,
         "umn/h5p": 20,
-        "umn/ckeditor_templates": 20
+        "umn/ckeditor_templates": 20,
+        "umn/file_download": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

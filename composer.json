@@ -260,7 +260,8 @@
         "umn/h5p": "dev-main",
         "drupal/ckeditorheight": "^1.9",
         "umn/ckeditor_templates": "dev-main",
-        "umn/file_download": "dev-main"
+        "umn/file_download": "dev-main",
+        "umn/views_term_hierarchy_weight_field": "dev-main"
     },
     "repositories": {
         "redirect_after_login": {
@@ -358,6 +359,10 @@
         "umn_file_download": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/file_download.git"
+        },
+        "umn_views_term_hierarchy_weight_field": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/views_term_hierarchy_weight_field.git"
         },
         "blazy": {
             "type": "package",

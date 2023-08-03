@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c33cee07eb35a4a24f8811c87aab584",
+    "content-hash": "1e7b740a96af84ff6c9ae792abced5c3",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -26020,7 +26020,7 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-10.x-build",
+            "version": "dev-10.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
@@ -26041,7 +26041,7 @@
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-10.x-build",
+            "version": "dev-10.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
@@ -26080,11 +26080,11 @@
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-10.x-build",
+            "version": "dev-10.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "5a25203b28a2181026fa48439ecc148f51bc3f95"
+                "reference": "7767b857a95150430680e0b53c348acdf747bd50"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -26093,7 +26093,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2023-07-28T19:43:24+00:00"
+            "time": "2023-07-27T18:56:51+00:00"
         },
         {
             "name": "umn/radix_layouts",
@@ -27138,7 +27138,8 @@
         "umn/h5p": 20,
         "umn/ckeditor_templates": 20,
         "umn/file_download": 20,
-        "umn/views_term_hierarchy_weight_field": 20
+        "umn/views_term_hierarchy_weight_field": 20,
+        "umn/semanticviews": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

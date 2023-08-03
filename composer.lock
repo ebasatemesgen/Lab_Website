@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "59d2f3915f517a03ea4519a042b0044b",
+    "content-hash": "1c33cee07eb35a4a24f8811c87aab584",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -26165,6 +26165,22 @@
                 "source": "https://cgit.drupalcode.org/responsive_menu"
             },
             "time": "2023-05-09T18:37:20+00:00"
+        },
+        {
+            "name": "umn/semanticviews",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/semanticviews.git",
+                "reference": "bbc46253825e61702ba7e1e98dcc08401ee76ad3"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Semantic Views Module.",
+            "time": "2023-08-03T18:31:44+00:00"
         },
         {
             "name": "umn/superfish",

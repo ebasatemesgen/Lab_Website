@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1bde7e61f039008540c58c3dc6f7e3cf",
+    "content-hash": "6cc42dcf19c3deeceb81ae41eb96d5ed",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -25996,6 +25996,30 @@
             "time": "2023-04-24T18:24:07+00:00"
         },
         {
+            "name": "umn/file_download",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/file_download.git",
+                "reference": "4136d3b8728da3bc62abd96a67ed042acd212ed1"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "File Download",
+            "homepage": "http://drupal.org/project/file_download",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "http://drupal.org/project/issues/file_download",
+                "source": "http://cgit.drupalcode.org/file_download"
+            },
+            "time": "2023-08-03T13:53:35+00:00"
+        },
+        {
             "name": "umn/folwell",
             "version": "dev-10.x-build",
             "source": {
@@ -27067,7 +27091,8 @@
         "umn/umn_superfish": 20,
         "drupal/field_defaults": 15,
         "umn/redirect_after_login": 20,
-        "umn/h5p": 20
+        "umn/h5p": 20,
+        "umn/ckeditor_templates": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

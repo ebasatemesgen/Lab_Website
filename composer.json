@@ -236,7 +236,6 @@
         "drupal/color": "^1.0",
         "drupal/jquery_ui_effects": "^2.0",
         "drupal/samlauth": "^3.8",
-        "umn/superfish": "dev-main",
         "umn/responsive_menu": "dev-main",
         "umn/ckeditor_modal": "dev-10.x-dev",
         "drupal/features": "^3.13",
@@ -262,7 +261,8 @@
         "umn/ckeditor_templates": "dev-main",
         "umn/file_download": "dev-main",
         "umn/views_term_hierarchy_weight_field": "dev-main",
-        "umn/semanticviews": "dev-main"
+        "umn/semanticviews": "dev-main",
+        "drupal/superfish": "^1.6"
     },
     "repositories": {
         "redirect_after_login": {
@@ -280,10 +280,6 @@
         "umn-features": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/d8-features.git"
-        },
-        "shadow-superfish": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/superfish.git"
         },
         "shadow-responsive-menu": {
             "type": "git",

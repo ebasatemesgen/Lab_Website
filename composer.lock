@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b684c1f641745f4477861f6ccec32b2",
+    "content-hash": "542159751ba66587efc1be07d89edc49",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -26157,6 +26157,22 @@
             "time": "2023-08-04T13:14:58+00:00"
         },
         {
+            "name": "umn/migrate_google_sheets",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/migrate_google_sheets.git",
+                "reference": "819be7167813836360567126bea03cb8ca0dbeec"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Source plugin to use Google Sheets JSON feed as the source for a migration",
+            "time": "2023-08-04T21:43:09+00:00"
+        },
+        {
             "name": "umn/radix_layouts",
             "version": "dev-master",
             "source": {
@@ -27168,7 +27184,8 @@
         "umn/ckeditor_templates": 20,
         "umn/file_download": 20,
         "umn/views_term_hierarchy_weight_field": 20,
-        "umn/semanticviews": 20
+        "umn/semanticviews": 20,
+        "umn/migrate_google_sheets": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

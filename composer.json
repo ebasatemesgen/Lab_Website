@@ -262,7 +262,8 @@
         "umn/file_download": "dev-main",
         "umn/views_term_hierarchy_weight_field": "dev-main",
         "umn/semanticviews": "dev-main",
-        "drupal/superfish": "^1.6"
+        "drupal/superfish": "^1.6",
+        "umn/migrate_google_sheets": " dev-main"
     },
     "repositories": {
         "redirect_after_login": {
@@ -293,9 +294,13 @@
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/h5p.git"
         },
-      "umn-semanticviews": {
+        "umn-semanticviews": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/semanticviews.git"
+        },
+        "umn-migrate_google_sheets": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/migrate_google_sheets.git"
         },
         "umn-field-delimiter": {
             "type": "git",

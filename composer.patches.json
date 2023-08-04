@@ -161,6 +161,9 @@
     },
     "drupal/view_mode_page": {
       "3356400: Drupal 10 compatibility": "https://www.drupal.org/files/issues/2023-05-30/3356400-drupal-10-compatibility-6.patch"
+    },
+    "drupal/entity_browser" : {
+      "2914385: Warning: key() expects parameter 1 to be array" : "https://www.drupal.org/files/issues/2022-04-21/entity_browser-key-2914385-12.patch"
     }
   }
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e7b740a96af84ff6c9ae792abced5c3",
+    "content-hash": "542159751ba66587efc1be07d89edc49",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -14747,6 +14747,67 @@
             }
         },
         {
+            "name": "drupal/superfish",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/superfish.git",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/superfish-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "5c3d2e88e64ce9b0c44ea0e55a5c3ec2e6bda430"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10",
+                "mehrpadin/superfish": "~2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1690322107",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mehrpadin",
+                    "homepage": "https://www.drupal.org/u/mehrpadin",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Nikolay Lobachev",
+                    "homepage": "https://www.drupal.org/u/lobsterr",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Nick Dickinson-Wilde",
+                    "homepage": "https://www.drupal.org/u/nickdickinsonwilde",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "NickDickinsonWilde",
+                    "homepage": "https://www.drupal.org/user/3094661"
+                }
+            ],
+            "description": "Adds jQuery Superfish plugin to menu blocks.",
+            "homepage": "https://www.drupal.org/project/superfish",
+            "support": {
+                "source": "https://cgit.drupalcode.org/superfish",
+                "issues": "https://www.drupal.org/project/superfish"
+            }
+        },
+        {
             "name": "drupal/svg_image",
             "version": "3.0.1",
             "source": {
@@ -26020,7 +26081,7 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-10.x-release",
+            "version": "dev-10.x-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
@@ -26041,7 +26102,7 @@
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-10.x-release",
+            "version": "dev-10.x-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
@@ -26080,7 +26141,7 @@
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-10.x-release",
+            "version": "dev-10.x-build",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
@@ -26094,6 +26155,22 @@
                 }
             ],
             "time": "2023-08-04T13:14:58+00:00"
+        },
+        {
+            "name": "umn/migrate_google_sheets",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/migrate_google_sheets.git",
+                "reference": "819be7167813836360567126bea03cb8ca0dbeec"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Source plugin to use Google Sheets JSON feed as the source for a migration",
+            "time": "2023-08-04T21:43:09+00:00"
         },
         {
             "name": "umn/radix_layouts",
@@ -26181,37 +26258,6 @@
             ],
             "description": "Semantic Views Module.",
             "time": "2023-08-03T18:31:44+00:00"
-        },
-        {
-            "name": "umn/superfish",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "git@github.umn.edu:drupalmodules/superfish.git",
-                "reference": "743b4de28e78aece8a012c22622d4aa7d37fbd34"
-            },
-            "require": {
-                "mehrpadin/superfish": "~2.0"
-            },
-            "default-branch": true,
-            "type": "drupal-module",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "mehrpadin",
-                    "homepage": "https://www.drupal.org/u/mehrpadin",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Adds jQuery Superfish plugin to menu blocks.",
-            "homepage": "https://www.drupal.org/project/superfish",
-            "support": {
-                "issues": "https://www.drupal.org/project/superfish",
-                "source": "https://cgit.drupalcode.org/superfish"
-            },
-            "time": "2023-05-09T14:13:00+00:00"
         },
         {
             "name": "umn/umn_escape_button",
@@ -27129,7 +27175,6 @@
         "umn/field_delimiter": 20,
         "drupal/shs": 5,
         "drupal/auditfiles": 10,
-        "umn/superfish": 20,
         "umn/responsive_menu": 20,
         "umn/ckeditor_modal": 20,
         "umn/umn_superfish": 20,
@@ -27139,7 +27184,8 @@
         "umn/ckeditor_templates": 20,
         "umn/file_download": 20,
         "umn/views_term_hierarchy_weight_field": 20,
-        "umn/semanticviews": 20
+        "umn/semanticviews": 20,
+        "umn/migrate_google_sheets": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

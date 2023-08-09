@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "542159751ba66587efc1be07d89edc49",
+    "content-hash": "49ab562395c56f6bfd98a02a8174ebe1",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -26081,7 +26081,7 @@
         },
         {
             "name": "umn/folwell",
-            "version": "dev-10.x-build",
+            "version": "dev-10.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
@@ -26102,11 +26102,11 @@
         },
         {
             "name": "umn/folwell_components",
-            "version": "dev-10.x-build",
+            "version": "dev-10.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "4d3c76e01f5247c0e9604b90a7e37ce6a7fa22ce"
+                "reference": "367ddf75f2ca2fe07c9ebc4f99e779697d1c8c89"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -26116,7 +26116,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2023-07-13T17:33:08+00:00"
+            "time": "2023-08-08T19:51:26+00:00"
         },
         {
             "name": "umn/h5p",
@@ -26141,11 +26141,11 @@
         },
         {
             "name": "umn/lightning_umn",
-            "version": "dev-10.x-build",
+            "version": "dev-10.x-release",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "1f467478c2fbf16a8dc57e087f32e48d29f309d1"
+                "reference": "ba34bf0afe0f67a6c087d19ee83ed369a87d775c"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -26154,7 +26154,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2023-08-04T13:14:58+00:00"
+            "time": "2023-08-08T12:38:04+00:00"
         },
         {
             "name": "umn/migrate_google_sheets",

@@ -149,7 +149,7 @@
         "drupal/limited_field_widgets": "^2.0",
         "drupal/imagemagick": "^3.2",
         "drupal/paragraphs_features": "^2.0@beta",
-        "drupal/smart_date": "^3.3",
+        "drupal/smart_date": "^4.0",
         "drupal/view_mode_switch": "^2.0",
         "drupal/search_api_solr": "^4.2",
         "drupal/acquia_search": "^3.1",
@@ -236,7 +236,6 @@
         "drupal/color": "^1.0",
         "drupal/jquery_ui_effects": "^2.0",
         "drupal/samlauth": "^3.8",
-        "umn/superfish": "dev-main",
         "umn/responsive_menu": "dev-main",
         "umn/ckeditor_modal": "dev-10.x-dev",
         "drupal/features": "^3.13",
@@ -255,7 +254,16 @@
         "drupal/path_redirect_import": "^2.0",
         "umn/redirect_after_login": "dev-main",
         "drupal/media_entity_download": "^2.2",
-        "drupal/hal": "^2.0"
+        "drupal/hal": "^2.0",
+        "drupal/publishcontent": "^1.6",
+        "umn/h5p": "dev-main",
+        "drupal/ckeditorheight": "^1.9",
+        "umn/ckeditor_templates": "dev-main",
+        "umn/file_download": "dev-main",
+        "umn/views_term_hierarchy_weight_field": "dev-main",
+        "umn/semanticviews": "dev-main",
+        "drupal/superfish": "^1.6",
+        "umn/migrate_google_sheets": " dev-main"
     },
     "repositories": {
         "redirect_after_login": {
@@ -274,10 +282,6 @@
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/d8-features.git"
         },
-        "shadow-superfish": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/superfish.git"
-        },
         "shadow-responsive-menu": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/responsive_menus.git"
@@ -285,6 +289,18 @@
         "umn-radix-layouts": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/radix_layouts.git"
+        },
+        "umn-h5p": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/h5p.git"
+        },
+        "umn-semanticviews": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/semanticviews.git"
+        },
+        "umn-migrate_google_sheets": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/migrate_google_sheets.git"
         },
         "umn-field-delimiter": {
             "type": "git",
@@ -341,6 +357,18 @@
         "umn_dm_import": {
             "type": "git",
             "url": "git@github.umn.edu:hinte019/umn_dm_import.git"
+        },
+        "umn_ckeditor_templates": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/ckeditor_templates.git"
+        },
+        "umn_file_download": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/file_download.git"
+        },
+        "umn_views_term_hierarchy_weight_field": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/views_term_hierarchy_weight_field.git"
         },
         "blazy": {
             "type": "package",

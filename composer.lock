@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c220dfc124941fb1b703cc60c5705da",
+    "content-hash": "bc7a4fd85c6c9cdbf2eeb775345deadd",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -5400,6 +5400,59 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/diff",
                 "issues": "https://www.drupal.org/project/issues/diff"
+            }
+        },
+        {
+            "name": "drupal/digitalmeasures_migrate",
+            "version": "dev-2.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/digitalmeasures_migrate.git",
+                "reference": "ea3ef9f6c457434a0faf79dd9a89909c835fe2a9"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0.x": "2.0.x-dev"
+                },
+                "drupal": {
+                    "version": "2.0.x-dev",
+                    "datestamp": "1687902892",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "hinte",
+                    "homepage": "https://www.drupal.org/user/3276368"
+                },
+                {
+                    "name": "Les Lim",
+                    "homepage": "https://www.drupal.org/user/84263"
+                },
+                {
+                    "name": "socketwench",
+                    "homepage": "https://www.drupal.org/user/65793"
+                }
+            ],
+            "description": "Provides a migration importer for Digital Measures",
+            "homepage": "https://www.drupal.org/project/digitalmeasures_migrate",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/digitalmeasures_migrate",
+                "issues": "https://www.drupal.org/project/issues/digitalmeasures_migrate"
             }
         },
         {
@@ -27435,7 +27488,8 @@
         "umn/views_term_hierarchy_weight_field": 20,
         "umn/semanticviews": 20,
         "umn/migrate_google_sheets": 20,
-        "drupal/fontyourface": 20
+        "drupal/fontyourface": 20,
+        "drupal/digitalmeasures_migrate": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

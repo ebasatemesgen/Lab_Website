@@ -242,7 +242,6 @@
         "umn/umn_superfish": "dev-9-dev",
         "npm-asset/northernco--ckeditor5-anchor-drupal": "^0.2.0",
         "npm-asset/fortawesome--fontawesome": "^6.4",
-        "drupal/masonry": "^2.0",
         "drupal/purge_file": "^1.1",
         "drupal/views_field_formatter": "^4.0",
         "drupal/migrate_file_to_media": "^2.0",
@@ -268,7 +267,8 @@
         "drupal/seo_checklist": "^5.2",
         "drupal/toc_js": "^2.1",
         "drupal/fontyourface": "3.x-dev@dev",
-        "drupal/digitalmeasures_migrate": "2.0.x-dev@dev"
+        "drupal/digitalmeasures_migrate": "2.0.x-dev@dev",
+        "drupal/masonry_views": "^4.0"
     },
     "repositories": {
         "redirect_after_login": {

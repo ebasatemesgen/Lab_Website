@@ -266,7 +266,8 @@
         "umn/migrate_google_sheets": " dev-main",
         "drupal/dynamic_entity_reference": "^3.0",
         "drupal/seo_checklist": "^5.2",
-        "drupal/toc_js": "^2.1"
+        "drupal/toc_js": "^2.1",
+        "drupal/fontyourface": "3.x-dev@dev"
     },
     "repositories": {
         "redirect_after_login": {

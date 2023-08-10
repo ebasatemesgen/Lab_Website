@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74b9e8e8351c8f351cdbb4023b81453f",
+    "content-hash": "0c220dfc124941fb1b703cc60c5705da",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -7403,6 +7403,72 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/fontawesome",
                 "issues": "https://drupal.org/project/issues/fontawesome"
+            }
+        },
+        {
+            "name": "drupal/fontyourface",
+            "version": "dev-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fontyourface.git",
+                "reference": "8e5514d3b14022a7bc98931cf625da047045bdb8"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.6+10-dev",
+                    "datestamp": "1680072330",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "BTMash",
+                    "homepage": "https://www.drupal.org/user/60422"
+                },
+                {
+                    "name": "Drave Robber",
+                    "homepage": "https://www.drupal.org/user/984338"
+                },
+                {
+                    "name": "hmendes",
+                    "homepage": "https://www.drupal.org/user/3673677"
+                },
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/user/3580850"
+                },
+                {
+                    "name": "sreynen",
+                    "homepage": "https://www.drupal.org/user/109890"
+                }
+            ],
+            "description": "Web font management tools.",
+            "homepage": "https://www.drupal.org/project/fontyourface",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/fontyourface",
+                "issues": "https://drupal.org/project/issues/fontyourface"
             }
         },
         {
@@ -27368,7 +27434,8 @@
         "umn/file_download": 20,
         "umn/views_term_hierarchy_weight_field": 20,
         "umn/semanticviews": 20,
-        "umn/migrate_google_sheets": 20
+        "umn/migrate_google_sheets": 20,
+        "drupal/fontyourface": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

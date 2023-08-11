@@ -268,7 +268,8 @@
         "drupal/toc_js": "^2.1",
         "drupal/fontyourface": "3.x-dev@dev",
         "drupal/digitalmeasures_migrate": "2.0.x-dev@dev",
-        "drupal/masonry_views": "^4.0"
+        "drupal/masonry_views": "^4.0",
+        "drupal/umn_dm_migrate": "dev-drupal-9"
     },
     "repositories": {
         "redirect_after_login": {

@@ -26473,7 +26473,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/h5p.git",
-                "reference": "8f61489d26d213a2831523d46a7c37fe48a221a0"
+                "reference": "dce4efb79ad2f7e1316de84c9cd93a454b1b0047"
             },
             "require": {
                 "h5p/h5p-core": "1.24.4",
@@ -26486,7 +26486,7 @@
             ],
             "description": "Drupal H5P Module.",
             "homepage": "http://drupal.org/project/h5p",
-            "time": "2023-08-10T21:28:08+00:00"
+            "time": "2023-08-11T15:34:19+00:00"
         },
         {
             "name": "umn/lightning_umn",

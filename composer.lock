@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4901cd73bb298fd4c10ceafa4fb049c",
+    "content-hash": "67bd2e671f690199a859b565493df357",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -16177,8 +16177,29 @@
             }
         },
         {
+            "name": "drupal/umn_dm_import",
+            "version": "2.1.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:hinte019/umn_dm_import.git",
+                "reference": "2cc5c17cca8ddffff63e5eb4c27fb981846cff22"
+            },
+            "require": {
+                "drupal/umn_dm_migrate": "^2.0.2"
+            },
+            "type": "drupal-module",
+            "authors": [
+                {
+                    "name": "Brandt Hinterberg",
+                    "email": "hinte019@umn.edu"
+                }
+            ],
+            "description": "Set up Digital Measures profiles to be imported periodically, or preform a manual import.",
+            "time": "2023-05-03T00:06:07+00:00"
+        },
+        {
             "name": "drupal/umn_dm_migrate",
-            "version": "dev-drupal-9",
+            "version": "2.1.9",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_migrate.git",
@@ -28166,8 +28187,7 @@
         "umn/semanticviews": 20,
         "umn/migrate_google_sheets": 20,
         "drupal/fontyourface": 20,
-        "drupal/digitalmeasures_migrate": 20,
-        "drupal/umn_dm_migrate": 20
+        "drupal/digitalmeasures_migrate": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

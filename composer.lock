@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "67bd2e671f690199a859b565493df357",
+    "content-hash": "f490e5cd19b67bd425388db2fa1da36c",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -15790,6 +15790,55 @@
             "homepage": "https://www.drupal.org/project/tablefield",
             "support": {
                 "source": "https://git.drupalcode.org/project/tablefield"
+            }
+        },
+        {
+            "name": "drupal/textarea_widget_for_text",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/textarea_widget_for_text.git",
+                "reference": "9589a869d43d5ba9c51ae59631cf0086523b16b0"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2+1-dev",
+                    "datestamp": "1680206425",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gnuget",
+                    "homepage": "https://www.drupal.org/user/992990"
+                },
+                {
+                    "name": "junaidpv",
+                    "homepage": "https://www.drupal.org/user/255728"
+                },
+                {
+                    "name": "mlncn",
+                    "homepage": "https://www.drupal.org/user/64383"
+                }
+            ],
+            "description": "Allows short (non-long) text fields to use the textarea widget on content entry forms.",
+            "homepage": "https://www.drupal.org/project/textarea_widget_for_text",
+            "support": {
+                "source": "https://git.drupalcode.org/project/textarea_widget_for_text"
             }
         },
         {

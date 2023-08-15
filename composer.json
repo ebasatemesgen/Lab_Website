@@ -269,7 +269,8 @@
         "drupal/fontyourface": "3.x-dev@dev",
         "drupal/digitalmeasures_migrate": "2.0.x-dev@dev",
         "drupal/masonry_views": "^4.0",
-        "drupal/umn_dm_import": "^2"
+        "drupal/umn_dm_import": "^2",
+        "drupal/textarea_widget_for_text": "^1.2"
     },
     "repositories": {
         "redirect_after_login": {

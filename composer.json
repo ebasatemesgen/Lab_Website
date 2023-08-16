@@ -270,7 +270,8 @@
         "drupal/digitalmeasures_migrate": "2.0.x-dev@dev",
         "drupal/masonry_views": "^4.0",
         "drupal/umn_dm_import": "^2",
-        "drupal/textarea_widget_for_text": "^1.2"
+        "drupal/textarea_widget_for_text": "^1.2",
+        "drupal/search_api_autocomplete": "^1.7"
     },
     "repositories": {
         "redirect_after_login": {

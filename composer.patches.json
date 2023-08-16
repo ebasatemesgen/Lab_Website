@@ -160,6 +160,9 @@
     },
     "drupal/entity_browser" : {
       "2914385: Warning: key() expects parameter 1 to be array" : "https://www.drupal.org/files/issues/2022-04-21/entity_browser-key-2914385-12.patch"
+    },
+    "drupal/samlauth" : {
+      "Fix redirect after login": "patches/samlauth_redirect.patch"
     }
   }
 }

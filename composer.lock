@@ -15357,15 +15357,15 @@
         },
         {
             "name": "drupal/umn_dm_storage",
-            "version": "2.1.7",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git",
-                "reference": "2ccbe215a7df4dfe626c2a26633a769d0cfabeb1"
+                "reference": "6eb383b4c2509ae2138d9f5270afb948f8ae669e"
             },
             "type": "drupal-module",
             "description": "contains the entity type configuration for Digital Measures profile and profile fragments",
-            "time": "2021-12-29T01:40:19+00:00"
+            "time": "2023-05-03T00:10:13+00:00"
         },
         {
             "name": "drupal/unpublished_node_permissions",

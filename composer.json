@@ -140,7 +140,7 @@
         "drupal/scn": "^2.0",
         "drupal/allowed_formats": "^2.0",
         "drupal/view_mode_page": "^4.0",
-        "drupal/umn_dm_storage": "2.1.7",
+        "drupal/umn_dm_storage": "2.1.8",
         "drupal/field_permissions": "^1.1",
         "npm-asset/jquery-ui-touch-punch": "^0.2.3",
         "drupal/jquery_ui_checkboxradio": "^2.0",

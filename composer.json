@@ -263,7 +263,8 @@
         "umn/views_term_hierarchy_weight_field": "dev-main",
         "umn/semanticviews": "dev-main",
         "drupal/superfish": "^1.6",
-        "umn/migrate_google_sheets": " dev-main"
+        "umn/migrate_google_sheets": " dev-main",
+        "drupal/seo_checklist": "^5.2"
     },
     "repositories": {
         "redirect_after_login": {

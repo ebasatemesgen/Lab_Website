@@ -151,7 +151,7 @@
       "33730215: Update to support path redirect import migrate_tools 6.0.2": "https://www.drupal.org/files/issues/2023-07-06/path_redirect_import-3373025.patch"
     },
     "drupal/embed": {
-      "3309747: CKEditor 5 compatibility": "https://www.drupal.org/files/issues/2023-06-29/3309747-CKEditor-5-compatibility-40.patch"
+      "3309747: CKEditor 5 compatibility": "https://www.drupal.org/files/issues/2023-07-26/3309747-45.patch"
     },
    "drupal/csv_serialization": {
       "3230521: Call to deprecated method getContent()": "https://www.drupal.org/files/issues/2021-11-03/deprecated_method_getcontent-3230521-5.patch"

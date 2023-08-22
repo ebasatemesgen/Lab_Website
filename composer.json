@@ -227,7 +227,6 @@
         "drupal/rdf": "^2.1",
         "umn/radix_layouts": "dev-master",
         "drupal/a11y_paragraphs_tabs": "^2.0@beta",
-        "umn/field_delimiter": "dev-main",
         "oomphinc/composer-installers-extender": "^2.0",
         "drupal/permissions_by_term": "^3.1",
         "drupal/shs": "^2.0@RC",
@@ -272,7 +271,8 @@
         "drupal/umn_dm_import": "^2",
         "drupal/textarea_widget_for_text": "^1.2",
         "drupal/search_api_autocomplete": "^1.7",
-        "drupal/media_revisions_ui": "^2.1"
+        "drupal/media_revisions_ui": "^2.1",
+        "drupal/field_delimiter": "^2.0"
     },
     "repositories": {
         "redirect_after_login": {

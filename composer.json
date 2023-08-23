@@ -272,7 +272,9 @@
         "drupal/textarea_widget_for_text": "^1.2",
         "drupal/search_api_autocomplete": "^1.7",
         "drupal/media_revisions_ui": "^2.1",
-        "drupal/field_delimiter": "^2.0"
+        "drupal/field_delimiter": "^2.0",
+        "drupal/group_content_menu": "^2.0",
+        "drupal/entitygroupfield": "^2.0@alpha"
     },
     "repositories": {
         "redirect_after_login": {

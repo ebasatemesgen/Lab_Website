@@ -274,7 +274,9 @@
         "drupal/media_revisions_ui": "^2.1",
         "drupal/field_delimiter": "^2.0",
         "drupal/group_content_menu": "^2.0",
-        "drupal/entitygroupfield": "^2.0@alpha"
+        "drupal/entitygroupfield": "^2.0@alpha",
+        "drupal/eca": "^1.1",
+        "drupal/eca_cm": "^1.0"
     },
     "repositories": {
         "redirect_after_login": {

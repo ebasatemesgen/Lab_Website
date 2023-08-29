@@ -55,7 +55,7 @@
       "3103422: Potential for recrsion in EntityReferenceItem::generateSampleValue() with circular entity references": "https://www.drupal.org/files/issues/2019-12-27/potential_for_recurs-3103422-2.patch",
       "3121395: Fatal error after add Main page content block layout builder": "https://www.drupal.org/files/issues/2020-03-21/3121395-fix-fatal-error-after-add-Main-page-content-block.patch",
       "2794481: Allow end date to be optional": "https://www.drupal.org/files/issues/2018-05-14/2794481-60.patch",
-      "3049332: PHP message: Error: Call to a member function getEntityTypeId() on null (Layout Builder)": "https://www.drupal.org/files/issues/2021-03-19/3049332-inline-56.patch",
+      "3049332: PHP message: Error: Call to a member function getEntityTypeId() on null (Layout Builder)": "https://www.drupal.org/files/issues/2021-11-23/3049332-60.patch",
       "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
       "2868014: [PP-1] Views Date Filter Datetime Granularity Option": "https://www.drupal.org/files/issues/2021-04-26/2868014-110.patch",
       "3254245: TypeError: Argument 1 passed to FileUrlGenerator::generateString() must be of the type string, null given": "https://www.drupal.org/files/issues/2021-12-18/file-url-generator-3254245-34.patch",

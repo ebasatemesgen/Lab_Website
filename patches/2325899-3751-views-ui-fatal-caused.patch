@@ -1,0 +1,1795 @@
+From 259a3cef0e7b41469cd8f524bd47e2a7bb387cdf Mon Sep 17 00:00:00 2001
+From: anairamzap-mobomo <mariana@mobomo.com>
+Date: Wed, 29 Mar 2023 13:40:05 -0300
+Subject: [PATCH 1/6] 2325899 - Reroll patch from #169 to 10.1.x
+
+---
+ .../views/argument_default/NodeChanged.php    | 111 ++++++++++++
+ .../views/argument_default/NodeCreated.php    | 111 ++++++++++++
+ .../schema/views.argument_default.schema.yml  |   4 +
+ .../views/src/Plugin/views/argument/Date.php  |  10 ++
+ .../Plugin/views/argument_default/Date.php    | 113 ++++++++++++
+ .../views.view.test_argument_default_date.yml | 169 ++++++++++++++++++
+ .../Functional/Plugin/ArgumentDefaultTest.php |  85 +++++++++
+ core/modules/views/views.post_update.php      |   7 +
+ 8 files changed, 610 insertions(+)
+ create mode 100644 core/modules/node/src/Plugin/views/argument_default/NodeChanged.php
+ create mode 100644 core/modules/node/src/Plugin/views/argument_default/NodeCreated.php
+ create mode 100644 core/modules/views/src/Plugin/views/argument_default/Date.php
+ create mode 100644 core/modules/views/tests/modules/views_test_config/test_views/views.view.test_argument_default_date.yml
+
+diff --git a/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php b/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php
+new file mode 100644
+index 000000000000..d069c8bf0ed2
+--- /dev/null
++++ b/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php
+@@ -0,0 +1,111 @@
++<?php
++
++namespace Drupal\node\Plugin\views\argument_default;
++
++use Drupal\Core\Cache\Cache;
++use Drupal\Core\Cache\CacheableDependencyInterface;
++use Drupal\Core\Datetime\DateFormatterInterface;
++use Drupal\Core\Routing\RouteMatchInterface;
++use Drupal\node\NodeInterface;
++use Drupal\views\Plugin\views\argument\Date;
++use Drupal\views\Plugin\views\argument_default\ArgumentDefaultPluginBase;
++use Symfony\Component\DependencyInjection\ContainerInterface;
++
++/**
++ * Provides the 'changed' time of the current node as default argument value.
++ *
++ * @ingroup views_argument_default_plugins
++ *
++ * @ViewsArgumentDefault(
++ *   id = "node_changed",
++ *   title = @Translation("Current node 'changed' time")
++ * )
++ */
++class NodeChanged extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
++
++  /**
++   * The route match.
++   *
++   * @var \Drupal\Core\Routing\RouteMatchInterface
++   */
++  protected $routeMatch;
++
++  /**
++   * The date formatter service.
++   *
++   * @var \Drupal\Core\Datetime\DateFormatterInterface
++   */
++  protected $dateFormatter;
++
++  /**
++   * Constructs a new NodeChanged instance.
++   *
++   * @param array $configuration
++   *   A configuration array containing information about the plugin instance.
++   * @param string $plugin_id
++   *   The plugin_id for the plugin instance.
++   * @param mixed $plugin_definition
++   *   The plugin implementation definition.
++   * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
++   *   The route match.
++   * @param \Drupal\Core\Datetime\DateFormatterInterface $date_formatter
++   *   The date formatter service.
++   */
++  public function __construct(array $configuration, $plugin_id, $plugin_definition, RouteMatchInterface $route_match, DateFormatterInterface $date_formatter) {
++    parent::__construct($configuration, $plugin_id, $plugin_definition);
++
++    $this->routeMatch = $route_match;
++    $this->dateFormatter = $date_formatter;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
++    return new static(
++      $configuration,
++      $plugin_id,
++      $plugin_definition,
++      $container->get('current_route_match'),
++      $container->get('date.formatter')
++    );
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getArgument() {
++    // Return the current node changed time if a current node can be found.
++    if (($node = $this->routeMatch->getParameter('node')) && $node instanceof NodeInterface) {
++      $argument = $this->argument;
++
++      // The Date argument handlers provide their own format strings, otherwise
++      // use a default.
++      if ($argument instanceof Date) {
++        /** @var \Drupal\views\Plugin\views\argument\Date $argument */
++        $format = $argument->getArgFormat();
++      }
++      else {
++        $format = 'Y-m-d';
++      }
++
++      return $this->dateFormatter->format($node->getChangedTime(), 'custom', $format);
++    }
++    return FALSE;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getCacheContexts() {
++    return ['url'];
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getCacheMaxAge() {
++    return Cache::PERMANENT;
++  }
++
++}
+diff --git a/core/modules/node/src/Plugin/views/argument_default/NodeCreated.php b/core/modules/node/src/Plugin/views/argument_default/NodeCreated.php
+new file mode 100644
+index 000000000000..989bc415b416
+--- /dev/null
++++ b/core/modules/node/src/Plugin/views/argument_default/NodeCreated.php
+@@ -0,0 +1,111 @@
++<?php
++
++namespace Drupal\node\Plugin\views\argument_default;
++
++use Drupal\Core\Cache\Cache;
++use Drupal\Core\Cache\CacheableDependencyInterface;
++use Drupal\Core\Datetime\DateFormatterInterface;
++use Drupal\Core\Routing\RouteMatchInterface;
++use Drupal\node\NodeInterface;
++use Drupal\views\Plugin\views\argument\Date;
++use Drupal\views\Plugin\views\argument_default\ArgumentDefaultPluginBase;
++use Symfony\Component\DependencyInjection\ContainerInterface;
++
++/**
++ * Provides the created time of the current node as default argument value.
++ *
++ * @ingroup views_argument_default_plugins
++ *
++ * @ViewsArgumentDefault(
++ *   id = "node_created",
++ *   title = @Translation("Current node 'created' time")
++ * )
++ */
++class NodeCreated extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
++
++  /**
++   * The route match.
++   *
++   * @var \Drupal\Core\Routing\RouteMatchInterface
++   */
++  protected $routeMatch;
++
++  /**
++   * The date formatter service.
++   *
++   * @var \Drupal\Core\Datetime\DateFormatterInterface
++   */
++  protected $dateFormatter;
++
++  /**
++   * Constructs a new NodeCreated instance.
++   *
++   * @param array $configuration
++   *   A configuration array containing information about the plugin instance.
++   * @param string $plugin_id
++   *   The plugin_id for the plugin instance.
++   * @param mixed $plugin_definition
++   *   The plugin implementation definition.
++   * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
++   *   The route match.
++   * @param \Drupal\Core\Datetime\DateFormatterInterface $date_formatter
++   *   The date formatter service.
++   */
++  public function __construct(array $configuration, $plugin_id, $plugin_definition, RouteMatchInterface $route_match, DateFormatterInterface $date_formatter) {
++    parent::__construct($configuration, $plugin_id, $plugin_definition);
++
++    $this->routeMatch = $route_match;
++    $this->dateFormatter = $date_formatter;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
++    return new static(
++      $configuration,
++      $plugin_id,
++      $plugin_definition,
++      $container->get('current_route_match'),
++      $container->get('date.formatter')
++    );
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getArgument() {
++    // Return the current node creation time if a current node can be found.
++    if (($node = $this->routeMatch->getParameter('node')) && $node instanceof NodeInterface) {
++      $argument = $this->argument;
++
++      // The Date argument handlers provide their own format strings, otherwise
++      // use a default.
++      if ($argument instanceof Date) {
++        /** @var \Drupal\views\Plugin\views\argument\Date $argument */
++        $format = $argument->getArgFormat();
++      }
++      else {
++        $format = 'Y-m-d';
++      }
++
++      return $this->dateFormatter->format($node->getCreatedTime(), 'custom', $format);
++    }
++    return FALSE;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getCacheContexts() {
++    return ['url'];
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getCacheMaxAge() {
++    return Cache::PERMANENT;
++  }
++
++}
+diff --git a/core/modules/views/config/schema/views.argument_default.schema.yml b/core/modules/views/config/schema/views.argument_default.schema.yml
+index 63fc23255141..223f3d22b238 100644
+--- a/core/modules/views/config/schema/views.argument_default.schema.yml
++++ b/core/modules/views/config/schema/views.argument_default.schema.yml
+@@ -4,6 +4,10 @@ views.argument_default.*:
+   type: mapping
+   label: 'Base default argument'
+ 
++views.argument_default.date:
++  type: boolean
++  label: 'Current date'
++
+ views.argument_default.fixed:
+   type: mapping
+   label: 'Fixed'
+diff --git a/core/modules/views/src/Plugin/views/argument/Date.php b/core/modules/views/src/Plugin/views/argument/Date.php
+index 502e26467972..ddb51eef9414 100644
+--- a/core/modules/views/src/Plugin/views/argument/Date.php
++++ b/core/modules/views/src/Plugin/views/argument/Date.php
+@@ -141,4 +141,14 @@ public function getFormula() {
+     return parent::getFormula();
+   }
+ 
++  /**
++   * Returns the date format used in the query in a form usable by PHP.
++   *
++   * @return string
++   *   The date format used in the query.
++   */
++  public function getArgFormat() {
++    return $this->argFormat;
++  }
++
+ }
+diff --git a/core/modules/views/src/Plugin/views/argument_default/Date.php b/core/modules/views/src/Plugin/views/argument_default/Date.php
+new file mode 100644
+index 000000000000..35540367b280
+--- /dev/null
++++ b/core/modules/views/src/Plugin/views/argument_default/Date.php
+@@ -0,0 +1,113 @@
++<?php
++
++namespace Drupal\views\Plugin\views\argument_default;
++
++use Drupal\views\Plugin\views\argument\Date as DateArgument;
++use Drupal\Core\Cache\CacheableDependencyInterface;
++use Drupal\Core\Datetime\DateFormatterInterface;
++use Symfony\Component\DependencyInjection\ContainerInterface;
++use Symfony\Component\HttpFoundation\Request;
++
++/**
++ * The current date argument default handler.
++ *
++ * @ingroup views_argument_default_plugins
++ *
++ * @ViewsArgumentDefault(
++ *   id = "date",
++ *   title = @Translation("Current date")
++ * )
++ */
++class Date extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
++
++  /**
++   * The date format to use.
++   *
++   * @var string
++   */
++  protected $dateFormat = 'Y-m-d';
++
++  /**
++   * The date formatter service.
++   *
++   * @var \Drupal\Core\Datetime\DateFormatterInterface
++   */
++  protected $dateFormatter;
++
++  /**
++   * The current Request object.
++   *
++   * @var \Symfony\Component\HttpFoundation\Request
++   */
++  protected $request;
++
++  /**
++   * Constructs a new Date instance.
++   *
++   * @param array $configuration
++   *   A configuration array containing information about the plugin instance.
++   * @param string $plugin_id
++   *   The plugin_id for the plugin instance.
++   * @param mixed $plugin_definition
++   *   The plugin implementation definition.
++   * @param \Drupal\Core\Datetime\DateFormatterInterface $date_formatter
++   *   The date formatter service.
++   * @param \Symfony\Component\HttpFoundation\Request $request
++   *   The current request.
++   */
++  public function __construct(array $configuration, $plugin_id, $plugin_definition, DateFormatterInterface $date_formatter, Request $request) {
++    parent::__construct($configuration, $plugin_id, $plugin_definition);
++
++    $this->dateFormatter = $date_formatter;
++    $this->request = $request;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
++    return new static(
++      $configuration,
++      $plugin_id,
++      $plugin_definition,
++      $container->get('date.formatter'),
++      $container->get('request_stack')->getCurrentRequest()
++    );
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getArgument() {
++    $argument = $this->argument;
++
++    // The Date argument handlers provide their own format strings, otherwise
++    // use a default.
++    if ($argument instanceof DateArgument) {
++      /** @var \Drupal\views\Plugin\views\argument\Date $argument */
++      $format = $argument->getArgFormat();
++    }
++    else {
++      $format = $this->dateFormat;
++    }
++
++    $request_time = $this->request->server->get('REQUEST_TIME');
++
++    return $this->dateFormatter->format($request_time, 'custom', $format);
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getCacheContexts() {
++    return [];
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getCacheMaxAge() {
++    return 0;
++  }
++
++}
+diff --git a/core/modules/views/tests/modules/views_test_config/test_views/views.view.test_argument_default_date.yml b/core/modules/views/tests/modules/views_test_config/test_views/views.view.test_argument_default_date.yml
+new file mode 100644
+index 000000000000..12d4e2ec42a8
+--- /dev/null
++++ b/core/modules/views/tests/modules/views_test_config/test_views/views.view.test_argument_default_date.yml
+@@ -0,0 +1,169 @@
++langcode: und
++status: true
++dependencies:
++  module:
++    - node
++id: test_argument_default_date
++label: ''
++module: views
++description: ''
++tag: ''
++base_table: node_field_data
++base_field: nid
++display:
++  default:
++    display_options:
++      access:
++        type: none
++      arguments:
++        'null':
++          default_action: default
++          default_argument_type: date
++          field: 'null'
++          id: 'null'
++          must_not_be: false
++          table: views
++          plugin_id: 'null'
++      cache:
++        type: none
++      exposed_form:
++        type: basic
++      fields:
++        title:
++          alter:
++            alter_text: false
++            ellipsis: true
++            html: false
++            make_link: false
++            strip_tags: false
++            trim: false
++            word_boundary: true
++          empty_zero: false
++          field: title
++          hide_empty: false
++          id: title
++          link_to_node: false
++          table: node_field_data
++          plugin_id: node
++          entity_type: node
++          entity_field: title
++      pager:
++        options:
++          id: 0
++          items_per_page: 10
++          offset: 0
++        type: full
++      style:
++        type: default
++      row:
++        type: fields
++    display_plugin: default
++    display_title: Master
++    id: default
++    position: 0
++  block_1:
++    display_plugin: block
++    id: block_1
++    display_title: Block
++    position: 1
++    display_options:
++      display_extenders: {  }
++      arguments:
++        created:
++          id: created
++          table: node_field_data
++          field: created
++          relationship: none
++          group_type: group
++          admin_label: ''
++          default_action: default
++          exception:
++            value: all
++            title_enable: false
++            title: All
++          title_enable: false
++          title: ''
++          default_argument_type: node_created
++          default_argument_options: {  }
++          default_argument_skip_url: false
++          summary_options:
++            base_path: ''
++            count: true
++            items_per_page: 25
++            override: false
++          summary:
++            sort_order: asc
++            number_of_records: 0
++            format: default_summary
++          specify_validation: false
++          validate:
++            type: none
++            fail: 'not found'
++          validate_options: {  }
++          entity_type: node
++          entity_field: created
++          plugin_id: date
++      defaults:
++        arguments: false
++    cache_metadata:
++      max-age: -1
++      contexts:
++        - 'languages:language_content'
++        - 'languages:language_interface'
++        - url
++        - 'user.node_grants:view'
++        - user.permissions
++      tags: {  }
++  block_2:
++    display_plugin: block
++    id: block_2
++    display_title: 'Block 2'
++    position: 2
++    display_options:
++      display_extenders: {  }
++      arguments:
++        changed:
++          id: changed
++          table: node_field_data
++          field: changed
++          relationship: none
++          group_type: group
++          admin_label: ''
++          default_action: default
++          exception:
++            value: all
++            title_enable: false
++            title: All
++          title_enable: false
++          title: ''
++          default_argument_type: node_changed
++          default_argument_options: {  }
++          default_argument_skip_url: false
++          summary_options:
++            base_path: ''
++            count: true
++            items_per_page: 25
++            override: false
++          summary:
++            sort_order: asc
++            number_of_records: 0
++            format: default_summary
++          specify_validation: false
++          validate:
++            type: none
++            fail: 'not found'
++          validate_options: {  }
++          entity_type: node
++          entity_field: changed
++          plugin_id: date
++      defaults:
++        arguments: false
++    cache_metadata:
++      max-age: -1
++      contexts:
++        - 'languages:language_content'
++        - 'languages:language_interface'
++        - url
++        - 'user.node_grants:view'
++        - user.permissions
++      tags: {  }
+diff --git a/core/modules/views/tests/src/Functional/Plugin/ArgumentDefaultTest.php b/core/modules/views/tests/src/Functional/Plugin/ArgumentDefaultTest.php
+index fc92ce624cc5..be5ed8b3e263 100644
+--- a/core/modules/views/tests/src/Functional/Plugin/ArgumentDefaultTest.php
++++ b/core/modules/views/tests/src/Functional/Plugin/ArgumentDefaultTest.php
+@@ -3,6 +3,7 @@
+ namespace Drupal\Tests\views\Functional\Plugin;
+ 
+ use Drupal\Core\Url;
++use Drupal\dynamic_page_cache\EventSubscriber\DynamicPageCacheSubscriber;
+ use Drupal\node\Entity\Node;
+ use Drupal\node\Entity\NodeType;
+ use Drupal\Tests\views\Functional\ViewTestBase;
+@@ -28,6 +29,7 @@ class ArgumentDefaultTest extends ViewTestBase {
+     'test_argument_default_current_user',
+     'test_argument_default_node',
+     'test_argument_default_query_param',
++    'test_argument_default_date',
+   ];
+ 
+   /**
+@@ -132,6 +134,41 @@ public function testArgumentDefaultFixed() {
+     $this->assertEquals($random_string, $view->args[0], 'Provided argument should be used.');
+   }
+ 
++  /**
++   * Tests current date default argument.
++   *
++   * @see \Drupal\views\Plugin\views\argument_default\Date
++   */
++  public function testArgumentDefaultDate() {
++    /** @var \Drupal\Core\Datetime\DateFormatterInterface $date_formatter */
++    $date_formatter = \Drupal::service('date.formatter');
++    $request_time = \Drupal::requestStack()->getCurrentRequest()->server->get('REQUEST_TIME');
++
++    $view = Views::getView('test_argument_default_date');
++    $view->setDisplay();
++    $view->initHandlers();
++
++    $expected = $date_formatter->format($request_time, 'custom', 'Y-m-d');
++    self::assertEquals($expected, $view->argument['null']->getDefaultArgument(), 'Current date argument should be used by default.');
++
++    // Update the View to use the Ym format argument.
++    $view = Views::getView('test_argument_default_date');
++    $view->setDisplay();
++    $view->displayHandlers->get('default')->overrideOption('arguments', [
++      'null' => [
++        'id' => 'year_month',
++        'table' => 'node_field_data',
++        'field' => 'created_year_month',
++        'plugin_id' => 'date_year_month',
++        'default_argument_type' => 'date',
++      ],
++    ]);
++    $view->initHandlers();
++
++    $expected = $date_formatter->format($request_time, 'custom', 'Ym');
++    self::assertEquals($expected, $view->argument['null']->getDefaultArgument(), 'Current date argument should be used by default.');
++  }
++
+   /**
+    * @todo Test php default argument.
+    */
+@@ -190,4 +227,52 @@ public function testArgumentDefaultQueryParameter() {
+     $this->assertEquals('page', $view->argument['type']->getDefaultArgument());
+   }
+ 
++  /**
++   * Tests the cacheability of the date argument default.
++   */
++  public function testArgumentDefaultCacheability() {
++    // Create page for testing.
++    $view = Views::getView('test_argument_default_date');
++    $view->setDisplay();
++    $view->newDisplay('page', 'Page', 'page_1');
++    $view->displayHandlers->get('page_1')->overrideOption('path', 'path-page-1');
++    $view->displayHandlers->get('page_1')->overrideOption('cache', [
++      'type' => 'time',
++      'options' => [
++        // To eliminate UNCACHEABLE from the page as is.
++        'results_lifespan' => '10000',
++      ],
++    ]);
++    $view->save();
++
++    $this->container->get('module_installer')->uninstall(['page_cache']);
++
++    // Check that the page is not cached with date argument default.
++    $this->drupalGet('path-page-1');
++    $this->assertSession()->statusCodeEquals(200);
++    self::assertEquals('UNCACHEABLE', $this->getSession()->getResponseHeader(DynamicPageCacheSubscriber::HEADER));
++    // Double check.
++    $this->drupalGet('path-page-1');
++    self::assertEquals('UNCACHEABLE', $this->getSession()->getResponseHeader(DynamicPageCacheSubscriber::HEADER));
++
++    // Change the argument to some cached option.
++    $view = Views::getView('test_argument_default_date');
++    $view->setDisplay();
++    $view->displayHandlers->get('page_1')->overrideOption('arguments', [
++      'null' => [
++        'id' => 'null',
++        'table' => 'views',
++        'field' => 'null',
++      ],
++    ]);
++    $view->save();
++
++    // Check that the page is cached without date argument default.
++    $this->drupalGet('path-page-1');
++    $this->assertSession()->statusCodeEquals(200);
++    self::assertEquals('MISS', $this->getSession()->getResponseHeader(DynamicPageCacheSubscriber::HEADER));
++    $this->drupalGet('path-page-1');
++    self::assertEquals('HIT', $this->getSession()->getResponseHeader(DynamicPageCacheSubscriber::HEADER));
++  }
++
+ }
+diff --git a/core/modules/views/views.post_update.php b/core/modules/views/views.post_update.php
+index 60e024b6e161..f533c6ca1d83 100644
+--- a/core/modules/views/views.post_update.php
++++ b/core/modules/views/views.post_update.php
+@@ -94,3 +94,10 @@ function views_post_update_fix_revision_id_part(&$sandbox = NULL): void {
+       return $view_config_updater->needsRevisionFieldHyphenFix($view);
+     });
+ }
++
++/**
++ * Clear cache to add new date default arguments.
++ */
++function views_post_update_add_date_default_arguments() {
++  // Empty update to cause a cache rebuild so that schema additions are read.
++}
+-- 
+GitLab
+
+
+From 2e8043cc19e9e017e0b208b8130f37c833bc19dc Mon Sep 17 00:00:00 2001
+From: anairamzap-mobomo <mariana@mobomo.com>
+Date: Wed, 29 Mar 2023 13:40:50 -0300
+Subject: [PATCH 2/6] 2325899 - Fix tests - Add new view for node test
+
+---
+ .../views.view.test_argument_node_date.yml    | 169 ++++++++++++++++
+ .../Views/DateArgumentDefaultTest.php         | 189 ++++++++++++++++++
+ 2 files changed, 358 insertions(+)
+ create mode 100644 core/modules/node/tests/modules/node_test_views/test_views/views.view.test_argument_node_date.yml
+ create mode 100644 core/modules/node/tests/src/Functional/Views/DateArgumentDefaultTest.php
+
+diff --git a/core/modules/node/tests/modules/node_test_views/test_views/views.view.test_argument_node_date.yml b/core/modules/node/tests/modules/node_test_views/test_views/views.view.test_argument_node_date.yml
+new file mode 100644
+index 000000000000..f826887678e4
+--- /dev/null
++++ b/core/modules/node/tests/modules/node_test_views/test_views/views.view.test_argument_node_date.yml
+@@ -0,0 +1,169 @@
++langcode: und
++status: true
++dependencies:
++  module:
++    - node
++id: test_argument_node_date
++label: ''
++module: views
++description: ''
++tag: ''
++base_table: node_field_data
++base_field: nid
++display:
++  default:
++    display_options:
++      access:
++        type: none
++      arguments:
++        'null':
++          default_action: default
++          default_argument_type: date
++          field: 'null'
++          id: 'null'
++          must_not_be: false
++          table: views
++          plugin_id: 'null'
++      cache:
++        type: none
++      exposed_form:
++        type: basic
++      fields:
++        title:
++          alter:
++            alter_text: false
++            ellipsis: true
++            html: false
++            make_link: false
++            strip_tags: false
++            trim: false
++            word_boundary: true
++          empty_zero: false
++          field: title
++          hide_empty: false
++          id: title
++          link_to_node: false
++          table: node_field_data
++          plugin_id: node
++          entity_type: node
++          entity_field: title
++      pager:
++        options:
++          id: 0
++          items_per_page: 10
++          offset: 0
++        type: full
++      style:
++        type: default
++      row:
++        type: fields
++    display_plugin: default
++    display_title: Master
++    id: default
++    position: 0
++  block_1:
++    display_plugin: block
++    id: block_1
++    display_title: Block
++    position: 1
++    display_options:
++      display_extenders: {  }
++      arguments:
++        created:
++          id: created
++          table: node_field_data
++          field: created
++          relationship: none
++          group_type: group
++          admin_label: ''
++          default_action: default
++          exception:
++            value: all
++            title_enable: false
++            title: All
++          title_enable: false
++          title: ''
++          default_argument_type: node_created
++          default_argument_options: {  }
++          default_argument_skip_url: false
++          summary_options:
++            base_path: ''
++            count: true
++            items_per_page: 25
++            override: false
++          summary:
++            sort_order: asc
++            number_of_records: 0
++            format: default_summary
++          specify_validation: false
++          validate:
++            type: none
++            fail: 'not found'
++          validate_options: {  }
++          entity_type: node
++          entity_field: created
++          plugin_id: date
++      defaults:
++        arguments: false
++    cache_metadata:
++      max-age: -1
++      contexts:
++        - 'languages:language_content'
++        - 'languages:language_interface'
++        - url
++        - 'user.node_grants:view'
++        - user.permissions
++      tags: {  }
++  block_2:
++    display_plugin: block
++    id: block_2
++    display_title: 'Block 2'
++    position: 2
++    display_options:
++      display_extenders: {  }
++      arguments:
++        changed:
++          id: changed
++          table: node_field_data
++          field: changed
++          relationship: none
++          group_type: group
++          admin_label: ''
++          default_action: default
++          exception:
++            value: all
++            title_enable: false
++            title: All
++          title_enable: false
++          title: ''
++          default_argument_type: node_changed
++          default_argument_options: {  }
++          default_argument_skip_url: false
++          summary_options:
++            base_path: ''
++            count: true
++            items_per_page: 25
++            override: false
++          summary:
++            sort_order: asc
++            number_of_records: 0
++            format: default_summary
++          specify_validation: false
++          validate:
++            type: none
++            fail: 'not found'
++          validate_options: {  }
++          entity_type: node
++          entity_field: changed
++          plugin_id: date
++      defaults:
++        arguments: false
++    cache_metadata:
++      max-age: -1
++      contexts:
++        - 'languages:language_content'
++        - 'languages:language_interface'
++        - url
++        - 'user.node_grants:view'
++        - user.permissions
++      tags: {  }
+diff --git a/core/modules/node/tests/src/Functional/Views/DateArgumentDefaultTest.php b/core/modules/node/tests/src/Functional/Views/DateArgumentDefaultTest.php
+new file mode 100644
+index 000000000000..b30daba43ad4
+--- /dev/null
++++ b/core/modules/node/tests/src/Functional/Views/DateArgumentDefaultTest.php
+@@ -0,0 +1,189 @@
++<?php
++
++namespace Drupal\Tests\node\Functional\Views;
++
++use Drupal\views\Entity\View;
++use Drupal\views\Views;
++
++/**
++ * Tests pluggable argument_default for views.
++ *
++ * @group views
++ */
++class DateArgumentDefaultTest extends NodeTestBase {
++
++  /**
++   * {@inheritdoc}
++   */
++  protected $defaultTheme = 'stark';
++
++  /**
++   * Views used by this test.
++   *
++   * @var array
++   */
++  public static $testViews = ['test_argument_node_date'];
++
++  /**
++   * Modules to enable.
++   *
++   * @var array
++   */
++  protected static $modules = ['block', 'node', 'node_test_views'];
++
++  /**
++   * The current node.
++   *
++   * @var \Drupal\node\NodeInterface
++   */
++  protected $currentNode;
++
++  /**
++   * Node with the same create time as the current node.
++   *
++   * @var \Drupal\node\NodeInterface
++   */
++  protected $sameTimeNode;
++
++  /**
++   * Node with a different create time then the current node.
++   *
++   * @var \Drupal\node\NodeInterface
++   */
++  protected $otherTimeNode;
++
++  /**
++   * The node representing the page.
++   *
++   * @var \Drupal\node\NodeInterface
++   */
++  protected $fixedTimeNode;
++
++  /**
++   * The node representing the page.
++   *
++   * @var \Drupal\node\NodeInterface
++   */
++  protected $sameMonthNode;
++
++  /**
++   * {@inheritdoc}
++   */
++  public function setUp($import_test_views = TRUE, $modules = ['node_test_views']): void {
++    parent::setUp($import_test_views, $modules);
++
++    $this->drupalCreateContentType(['type' => 'page']);
++    $this->currentNode = $this->drupalCreateNode(['type' => 'page']);
++    $this->sameTimeNode = $this->drupalCreateNode(['type' => 'page']);
++    $this->otherTimeNode = $this->drupalCreateNode([
++      'type' => 'page',
++      'created' => strtotime('-5 days'),
++      'changed' => strtotime('-5 days'),
++    ]);
++    $this->fixedTimeNode = $this->drupalCreateNode([
++      'type' => 'page',
++      'created' => strtotime('1975-05-18'),
++      'changed' => strtotime('1975-05-18'),
++    ]);
++    $this->sameMonthNode = $this->drupalCreateNode([
++      'type' => 'page',
++      'created' => strtotime('1975-05-13'),
++      'changed' => strtotime('1975-05-13'),
++    ]);
++  }
++
++  /**
++   * Test the 'Current node created time' default argument handler.
++   *
++   * @see \Drupal\node\Plugin\views\argument_default\NodeCreated
++   */
++  public function testArgumentDefaultNodeCreated() {
++    $this->drupalPlaceBlock('views_block:test_argument_node_date-block_1', ['label' => 'test_argument_node_date-block_1:1']);
++    $assert = $this->assertSession();
++
++    // Assert that only nodes with the same creation time as the current node
++    // are shown in the block.
++    $this->drupalGet($this->currentNode->toUrl());
++    $assert->pageTextContains($this->currentNode->getTitle());
++    $assert->pageTextContains($this->sameTimeNode->getTitle());
++    $assert->pageTextNotContains($this->otherTimeNode->getTitle());
++
++    // Update the View to use the Y-m format argument.
++    $view = View::load('test_argument_node_date');
++    $display = &$view->getDisplay('block_1');
++    $display['display_options']['arguments']['created']['plugin_id'] = 'date_year_month';
++    $display['display_options']['arguments']['created']['field'] = 'created_year_month';
++    $display['display_options']['arguments']['created']['id'] = 'created_year_month';
++    $view->save();
++
++    // Test that the nodes with a create date in the same month are shown.
++    $this->drupalGet($this->fixedTimeNode->toUrl());
++    $assert->pageTextContains($this->fixedTimeNode->getTitle());
++    $assert->pageTextContains($this->sameMonthNode->getTitle());
++    $assert->pageTextNotContains($this->currentNode->getTitle());
++
++    // Update the View to use the date format argument for non-date field.
++    $display['display_options']['arguments']['created']['field'] = 'title';
++    $view->save();
++
++    // Test that the nodes with a title in the same create date are shown.
++    $nodeTitleFixed = $this->drupalCreateNode(['type' => 'page', 'title' => '1975-05-18']);
++    $this->drupalGet($this->fixedTimeNode->toUrl());
++    $assert->pageTextContains($nodeTitleFixed->getTitle());
++    $assert->pageTextNotContains($this->sameMonthNode->getTitle());
++
++    // Test the getDefaultArgument() outside of node page.
++    $view = Views::getView('test_argument_node_date');
++    $view->setDisplay('block_1');
++    $view->initHandlers();
++    self::assertFalse($view->argument['created']->getDefaultArgument());
++  }
++
++  /**
++   * Test the 'Current node changed time' default argument handler.
++   *
++   * @see \Drupal\node\Plugin\views\argument_default\NodeChanged
++   */
++  public function testArgumentDefaultNodeChanged() {
++    $this->drupalPlaceBlock('views_block:test_argument_node_date-block_2', ['label' => 'test_argument_node_date-block_2:2']);
++    $assert = $this->assertSession();
++
++    // Assert that only nodes with the same changed time as the current node
++    // are shown in the block.
++    $this->drupalGet($this->currentNode->toUrl());
++    $assert->pageTextContains($this->currentNode->getTitle());
++    $assert->pageTextContains($this->sameTimeNode->getTitle());
++    $assert->pageTextNotContains($this->otherTimeNode->getTitle());
++
++    // Update the View to use the Y-m format argument.
++    $view = View::load('test_argument_node_date');
++    $display = &$view->getDisplay('block_2');
++    $display['display_options']['arguments']['changed']['plugin_id'] = 'date_year_month';
++    $display['display_options']['arguments']['changed']['field'] = 'changed_year_month';
++    $display['display_options']['arguments']['changed']['id'] = 'changed_year_month';
++    $view->save();
++
++    // Test that the nodes with a create date in the same month are shown.
++    $this->drupalGet($this->fixedTimeNode->toUrl());
++    $assert->pageTextContains($this->fixedTimeNode->getTitle());
++    $assert->pageTextContains($this->sameMonthNode->getTitle());
++    $assert->pageTextNotContains($this->currentNode->getTitle());
++
++    // Update the View to use the date format argument for non-date field.
++    $display['display_options']['arguments']['changed']['field'] = 'title';
++    $view->save();
++
++    // Test that the nodes with a title in the same create date are shown.
++    $nodeTitleFixed = $this->drupalCreateNode(['type' => 'page', 'title' => '1975-05-18']);
++    $this->drupalGet($this->fixedTimeNode->toUrl());
++    $assert->pageTextContains($nodeTitleFixed->getTitle());
++    $assert->pageTextNotContains($this->sameMonthNode->getTitle());
++
++    // Test the getDefaultArgument() outside of node page.
++    $view = Views::getView('test_argument_node_date');
++    $view->setDisplay('block_2');
++    $view->initHandlers();
++    self::assertFalse($view->argument['changed']->getDefaultArgument());
++  }
++
++}
+-- 
+GitLab
+
+
+From 25cb7a3774830632e4bc240500879715df980f58 Mon Sep 17 00:00:00 2001
+From: anairamzap-mobomo <mariana@mobomo.com>
+Date: Wed, 29 Mar 2023 14:12:45 -0300
+Subject: [PATCH 3/6] 2325899 - Apply quick changes requested in 4. 5. 6. #176
+ and #177
+
+---
+ .../views/argument_default/NodeChanged.php    |  9 +-----
+ .../views/argument_default/NodeCreated.php    |  9 +-----
+ .../Views/DateArgumentDefaultTest.php         |  4 +--
+ .../views/src/Plugin/views/argument/Date.php  |  2 +-
+ .../Plugin/views/argument_default/Date.php    | 31 +++++++------------
+ 5 files changed, 17 insertions(+), 38 deletions(-)
+
+diff --git a/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php b/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php
+index d069c8bf0ed2..4c81b6fd6f75 100644
+--- a/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php
++++ b/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php
+@@ -77,17 +77,10 @@ public static function create(ContainerInterface $container, array $configuratio
+   public function getArgument() {
+     // Return the current node changed time if a current node can be found.
+     if (($node = $this->routeMatch->getParameter('node')) && $node instanceof NodeInterface) {
+-      $argument = $this->argument;
+ 
+       // The Date argument handlers provide their own format strings, otherwise
+       // use a default.
+-      if ($argument instanceof Date) {
+-        /** @var \Drupal\views\Plugin\views\argument\Date $argument */
+-        $format = $argument->getArgFormat();
+-      }
+-      else {
+-        $format = 'Y-m-d';
+-      }
++      $format = $this->argument instanceof Date ? $this->argument->getArgFormat() : 'Y-m-d';
+ 
+       return $this->dateFormatter->format($node->getChangedTime(), 'custom', $format);
+     }
+diff --git a/core/modules/node/src/Plugin/views/argument_default/NodeCreated.php b/core/modules/node/src/Plugin/views/argument_default/NodeCreated.php
+index 989bc415b416..66e6caac930c 100644
+--- a/core/modules/node/src/Plugin/views/argument_default/NodeCreated.php
++++ b/core/modules/node/src/Plugin/views/argument_default/NodeCreated.php
+@@ -77,17 +77,10 @@ public static function create(ContainerInterface $container, array $configuratio
+   public function getArgument() {
+     // Return the current node creation time if a current node can be found.
+     if (($node = $this->routeMatch->getParameter('node')) && $node instanceof NodeInterface) {
+-      $argument = $this->argument;
+ 
+       // The Date argument handlers provide their own format strings, otherwise
+       // use a default.
+-      if ($argument instanceof Date) {
+-        /** @var \Drupal\views\Plugin\views\argument\Date $argument */
+-        $format = $argument->getArgFormat();
+-      }
+-      else {
+-        $format = 'Y-m-d';
+-      }
++      $format = $this->argument instanceof Date ? $this->argument->getArgFormat() : 'Y-m-d';
+ 
+       return $this->dateFormatter->format($node->getCreatedTime(), 'custom', $format);
+     }
+diff --git a/core/modules/node/tests/src/Functional/Views/DateArgumentDefaultTest.php b/core/modules/node/tests/src/Functional/Views/DateArgumentDefaultTest.php
+index b30daba43ad4..425ed88fdf80 100644
+--- a/core/modules/node/tests/src/Functional/Views/DateArgumentDefaultTest.php
++++ b/core/modules/node/tests/src/Functional/Views/DateArgumentDefaultTest.php
+@@ -163,7 +163,7 @@ public function testArgumentDefaultNodeChanged() {
+     $display['display_options']['arguments']['changed']['id'] = 'changed_year_month';
+     $view->save();
+ 
+-    // Test that the nodes with a create date in the same month are shown.
++    // Test that the nodes with a changed date in the same month are shown.
+     $this->drupalGet($this->fixedTimeNode->toUrl());
+     $assert->pageTextContains($this->fixedTimeNode->getTitle());
+     $assert->pageTextContains($this->sameMonthNode->getTitle());
+@@ -173,7 +173,7 @@ public function testArgumentDefaultNodeChanged() {
+     $display['display_options']['arguments']['changed']['field'] = 'title';
+     $view->save();
+ 
+-    // Test that the nodes with a title in the same create date are shown.
++    // Test that the nodes with a title in the same changed date are shown.
+     $nodeTitleFixed = $this->drupalCreateNode(['type' => 'page', 'title' => '1975-05-18']);
+     $this->drupalGet($this->fixedTimeNode->toUrl());
+     $assert->pageTextContains($nodeTitleFixed->getTitle());
+diff --git a/core/modules/views/src/Plugin/views/argument/Date.php b/core/modules/views/src/Plugin/views/argument/Date.php
+index ddb51eef9414..7b809c7bb3bd 100644
+--- a/core/modules/views/src/Plugin/views/argument/Date.php
++++ b/core/modules/views/src/Plugin/views/argument/Date.php
+@@ -147,7 +147,7 @@ public function getFormula() {
+    * @return string
+    *   The date format used in the query.
+    */
+-  public function getArgFormat() {
++  public function getArgFormat(): string {
+     return $this->argFormat;
+   }
+ 
+diff --git a/core/modules/views/src/Plugin/views/argument_default/Date.php b/core/modules/views/src/Plugin/views/argument_default/Date.php
+index 35540367b280..dfc5cb30ce20 100644
+--- a/core/modules/views/src/Plugin/views/argument_default/Date.php
++++ b/core/modules/views/src/Plugin/views/argument_default/Date.php
+@@ -2,11 +2,11 @@
+ 
+ namespace Drupal\views\Plugin\views\argument_default;
+ 
++use Drupal\Component\Datetime\TimeInterface;
+ use Drupal\views\Plugin\views\argument\Date as DateArgument;
+ use Drupal\Core\Cache\CacheableDependencyInterface;
+ use Drupal\Core\Datetime\DateFormatterInterface;
+ use Symfony\Component\DependencyInjection\ContainerInterface;
+-use Symfony\Component\HttpFoundation\Request;
+ 
+ /**
+  * The current date argument default handler.
+@@ -35,11 +35,11 @@ class Date extends ArgumentDefaultPluginBase implements CacheableDependencyInter
+   protected $dateFormatter;
+ 
+   /**
+-   * The current Request object.
++   * The time service.
+    *
+-   * @var \Symfony\Component\HttpFoundation\Request
++   * @var \Drupal\Component\Datetime\TimeInterface
+    */
+-  protected $request;
++  protected $time;
+ 
+   /**
+    * Constructs a new Date instance.
+@@ -52,14 +52,14 @@ class Date extends ArgumentDefaultPluginBase implements CacheableDependencyInter
+    *   The plugin implementation definition.
+    * @param \Drupal\Core\Datetime\DateFormatterInterface $date_formatter
+    *   The date formatter service.
+-   * @param \Symfony\Component\HttpFoundation\Request $request
+-   *   The current request.
++   * @param \Drupal\Component\Datetime\TimeInterface $time
++   *   The time service.
+    */
+-  public function __construct(array $configuration, $plugin_id, $plugin_definition, DateFormatterInterface $date_formatter, Request $request) {
++  public function __construct(array $configuration, $plugin_id, $plugin_definition, DateFormatterInterface $date_formatter, TimeInterface $time) {
+     parent::__construct($configuration, $plugin_id, $plugin_definition);
+ 
+     $this->dateFormatter = $date_formatter;
+-    $this->request = $request;
++    $this->time = $time;
+   }
+ 
+   /**
+@@ -71,7 +71,7 @@ public static function create(ContainerInterface $container, array $configuratio
+       $plugin_id,
+       $plugin_definition,
+       $container->get('date.formatter'),
+-      $container->get('request_stack')->getCurrentRequest()
++      $container->get('datetime.time')
+     );
+   }
+ 
+@@ -79,19 +79,12 @@ public static function create(ContainerInterface $container, array $configuratio
+    * {@inheritdoc}
+    */
+   public function getArgument() {
+-    $argument = $this->argument;
+ 
+     // The Date argument handlers provide their own format strings, otherwise
+     // use a default.
+-    if ($argument instanceof DateArgument) {
+-      /** @var \Drupal\views\Plugin\views\argument\Date $argument */
+-      $format = $argument->getArgFormat();
+-    }
+-    else {
+-      $format = $this->dateFormat;
+-    }
+-
+-    $request_time = $this->request->server->get('REQUEST_TIME');
++    $format = $this->argument instanceof DateArgument ? $this->argument->getArgFormat() : 'Y-m-d';
++
++    $request_time = $this->time->getRequestTime();
+ 
+     return $this->dateFormatter->format($request_time, 'custom', $format);
+   }
+-- 
+GitLab
+
+
+From 2e5f61ae7a787d6287bc1becd988f414fe8f4748 Mon Sep 17 00:00:00 2001
+From: Lennard Swaneveld <lennard@ezcompany.nl>
+Date: Tue, 18 Jul 2023 14:05:49 +0200
+Subject: [PATCH 4/6] Use constructor property promotion
+
+---
+ .../views/argument_default/NodeChanged.php    | 27 ++++---------------
+ .../Plugin/views/argument_default/Date.php    | 21 ++-------------
+ 2 files changed, 7 insertions(+), 41 deletions(-)
+
+diff --git a/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php b/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php
+index 4c81b6fd6f75..bfe898094706 100644
+--- a/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php
++++ b/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php
+@@ -23,20 +23,6 @@
+  */
+ class NodeChanged extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
+ 
+-  /**
+-   * The route match.
+-   *
+-   * @var \Drupal\Core\Routing\RouteMatchInterface
+-   */
+-  protected $routeMatch;
+-
+-  /**
+-   * The date formatter service.
+-   *
+-   * @var \Drupal\Core\Datetime\DateFormatterInterface
+-   */
+-  protected $dateFormatter;
+-
+   /**
+    * Constructs a new NodeChanged instance.
+    *
+@@ -46,22 +32,19 @@ class NodeChanged extends ArgumentDefaultPluginBase implements CacheableDependen
+    *   The plugin_id for the plugin instance.
+    * @param mixed $plugin_definition
+    *   The plugin implementation definition.
+-   * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
++   * @param \Drupal\Core\Routing\RouteMatchInterface $routeMatch
+    *   The route match.
+-   * @param \Drupal\Core\Datetime\DateFormatterInterface $date_formatter
++   * @param \Drupal\Core\Datetime\DateFormatterInterface $dateFormatter
+    *   The date formatter service.
+    */
+-  public function __construct(array $configuration, $plugin_id, $plugin_definition, RouteMatchInterface $route_match, DateFormatterInterface $date_formatter) {
++  public function __construct(array $configuration, $plugin_id, $plugin_definition, protected RouteMatchInterface $routeMatch, protected DateFormatterInterface $dateFormatter) {
+     parent::__construct($configuration, $plugin_id, $plugin_definition);
+-
+-    $this->routeMatch = $route_match;
+-    $this->dateFormatter = $date_formatter;
+   }
+ 
+   /**
+    * {@inheritdoc}
+    */
+-  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
++  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition): static {
+     return new static(
+       $configuration,
+       $plugin_id,
+@@ -74,7 +57,7 @@ public static function create(ContainerInterface $container, array $configuratio
+   /**
+    * {@inheritdoc}
+    */
+-  public function getArgument() {
++  public function getArgument(): string|bool {
+     // Return the current node changed time if a current node can be found.
+     if (($node = $this->routeMatch->getParameter('node')) && $node instanceof NodeInterface) {
+ 
+diff --git a/core/modules/views/src/Plugin/views/argument_default/Date.php b/core/modules/views/src/Plugin/views/argument_default/Date.php
+index dfc5cb30ce20..b8d28f2dd74a 100644
+--- a/core/modules/views/src/Plugin/views/argument_default/Date.php
++++ b/core/modules/views/src/Plugin/views/argument_default/Date.php
+@@ -27,20 +27,6 @@ class Date extends ArgumentDefaultPluginBase implements CacheableDependencyInter
+    */
+   protected $dateFormat = 'Y-m-d';
+ 
+-  /**
+-   * The date formatter service.
+-   *
+-   * @var \Drupal\Core\Datetime\DateFormatterInterface
+-   */
+-  protected $dateFormatter;
+-
+-  /**
+-   * The time service.
+-   *
+-   * @var \Drupal\Component\Datetime\TimeInterface
+-   */
+-  protected $time;
+-
+   /**
+    * Constructs a new Date instance.
+    *
+@@ -50,16 +36,13 @@ class Date extends ArgumentDefaultPluginBase implements CacheableDependencyInter
+    *   The plugin_id for the plugin instance.
+    * @param mixed $plugin_definition
+    *   The plugin implementation definition.
+-   * @param \Drupal\Core\Datetime\DateFormatterInterface $date_formatter
++   * @param \Drupal\Core\Datetime\DateFormatterInterface $dateFormatter
+    *   The date formatter service.
+    * @param \Drupal\Component\Datetime\TimeInterface $time
+    *   The time service.
+    */
+-  public function __construct(array $configuration, $plugin_id, $plugin_definition, DateFormatterInterface $date_formatter, TimeInterface $time) {
++  public function __construct(array $configuration, $plugin_id, $plugin_definition, protected DateFormatterInterface $dateFormatter, protected TimeInterface $time) {
+     parent::__construct($configuration, $plugin_id, $plugin_definition);
+-
+-    $this->dateFormatter = $date_formatter;
+-    $this->time = $time;
+   }
+ 
+   /**
+-- 
+GitLab
+
+
+From d4fc4a1550c4cc427cdcac36ff4054ab1bc9798f Mon Sep 17 00:00:00 2001
+From: Lennard Swaneveld <lennard@ezcompany.nl>
+Date: Tue, 18 Jul 2023 20:00:43 +0200
+Subject: [PATCH 5/6] Add base class for node date argument defaults
+
+---
+ .../views/argument_default/NodeChanged.php    | 67 +-------------
+ .../views/argument_default/NodeCreated.php    | 84 +----------------
+ .../NodeDateArgumentDefaultPluginBase.php     | 91 +++++++++++++++++++
+ 3 files changed, 97 insertions(+), 145 deletions(-)
+ create mode 100644 core/modules/node/src/Plugin/views/argument_default/NodeDateArgumentDefaultPluginBase.php
+
+diff --git a/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php b/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php
+index bfe898094706..19488f3c4d08 100644
+--- a/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php
++++ b/core/modules/node/src/Plugin/views/argument_default/NodeChanged.php
+@@ -2,14 +2,7 @@
+ 
+ namespace Drupal\node\Plugin\views\argument_default;
+ 
+-use Drupal\Core\Cache\Cache;
+-use Drupal\Core\Cache\CacheableDependencyInterface;
+-use Drupal\Core\Datetime\DateFormatterInterface;
+-use Drupal\Core\Routing\RouteMatchInterface;
+ use Drupal\node\NodeInterface;
+-use Drupal\views\Plugin\views\argument\Date;
+-use Drupal\views\Plugin\views\argument_default\ArgumentDefaultPluginBase;
+-use Symfony\Component\DependencyInjection\ContainerInterface;
+ 
+ /**
+  * Provides the 'changed' time of the current node as default argument value.
+@@ -21,67 +14,13 @@
+  *   title = @Translation("Current node 'changed' time")
+  * )
+  */
+-class NodeChanged extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
+-
+-  /**
+-   * Constructs a new NodeChanged instance.
+-   *
+-   * @param array $configuration
+-   *   A configuration array containing information about the plugin instance.
+-   * @param string $plugin_id
+-   *   The plugin_id for the plugin instance.
+-   * @param mixed $plugin_definition
+-   *   The plugin implementation definition.
+-   * @param \Drupal\Core\Routing\RouteMatchInterface $routeMatch
+-   *   The route match.
+-   * @param \Drupal\Core\Datetime\DateFormatterInterface $dateFormatter
+-   *   The date formatter service.
+-   */
+-  public function __construct(array $configuration, $plugin_id, $plugin_definition, protected RouteMatchInterface $routeMatch, protected DateFormatterInterface $dateFormatter) {
+-    parent::__construct($configuration, $plugin_id, $plugin_definition);
+-  }
+-
+-  /**
+-   * {@inheritdoc}
+-   */
+-  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition): static {
+-    return new static(
+-      $configuration,
+-      $plugin_id,
+-      $plugin_definition,
+-      $container->get('current_route_match'),
+-      $container->get('date.formatter')
+-    );
+-  }
+-
+-  /**
+-   * {@inheritdoc}
+-   */
+-  public function getArgument(): string|bool {
+-    // Return the current node changed time if a current node can be found.
+-    if (($node = $this->routeMatch->getParameter('node')) && $node instanceof NodeInterface) {
+-
+-      // The Date argument handlers provide their own format strings, otherwise
+-      // use a default.
+-      $format = $this->argument instanceof Date ? $this->argument->getArgFormat() : 'Y-m-d';
+-
+-      return $this->dateFormatter->format($node->getChangedTime(), 'custom', $format);
+-    }
+-    return FALSE;
+-  }
+-
+-  /**
+-   * {@inheritdoc}
+-   */
+-  public function getCacheContexts() {
+-    return ['url'];
+-  }
++class NodeChanged extends NodeDateArgumentDefaultPluginBase {
+ 
+   /**
+    * {@inheritdoc}
+    */
+-  public function getCacheMaxAge() {
+-    return Cache::PERMANENT;
++  protected function getNodeDateValue(NodeInterface $node): int {
++    return $node->getChangedTime();
+   }
+ 
+ }
+diff --git a/core/modules/node/src/Plugin/views/argument_default/NodeCreated.php b/core/modules/node/src/Plugin/views/argument_default/NodeCreated.php
+index 66e6caac930c..cd6f5194bc8b 100644
+--- a/core/modules/node/src/Plugin/views/argument_default/NodeCreated.php
++++ b/core/modules/node/src/Plugin/views/argument_default/NodeCreated.php
+@@ -2,14 +2,7 @@
+ 
+ namespace Drupal\node\Plugin\views\argument_default;
+ 
+-use Drupal\Core\Cache\Cache;
+-use Drupal\Core\Cache\CacheableDependencyInterface;
+-use Drupal\Core\Datetime\DateFormatterInterface;
+-use Drupal\Core\Routing\RouteMatchInterface;
+ use Drupal\node\NodeInterface;
+-use Drupal\views\Plugin\views\argument\Date;
+-use Drupal\views\Plugin\views\argument_default\ArgumentDefaultPluginBase;
+-use Symfony\Component\DependencyInjection\ContainerInterface;
+ 
+ /**
+  * Provides the created time of the current node as default argument value.
+@@ -21,84 +14,13 @@
+  *   title = @Translation("Current node 'created' time")
+  * )
+  */
+-class NodeCreated extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
+-
+-  /**
+-   * The route match.
+-   *
+-   * @var \Drupal\Core\Routing\RouteMatchInterface
+-   */
+-  protected $routeMatch;
+-
+-  /**
+-   * The date formatter service.
+-   *
+-   * @var \Drupal\Core\Datetime\DateFormatterInterface
+-   */
+-  protected $dateFormatter;
+-
+-  /**
+-   * Constructs a new NodeCreated instance.
+-   *
+-   * @param array $configuration
+-   *   A configuration array containing information about the plugin instance.
+-   * @param string $plugin_id
+-   *   The plugin_id for the plugin instance.
+-   * @param mixed $plugin_definition
+-   *   The plugin implementation definition.
+-   * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
+-   *   The route match.
+-   * @param \Drupal\Core\Datetime\DateFormatterInterface $date_formatter
+-   *   The date formatter service.
+-   */
+-  public function __construct(array $configuration, $plugin_id, $plugin_definition, RouteMatchInterface $route_match, DateFormatterInterface $date_formatter) {
+-    parent::__construct($configuration, $plugin_id, $plugin_definition);
+-
+-    $this->routeMatch = $route_match;
+-    $this->dateFormatter = $date_formatter;
+-  }
+-
+-  /**
+-   * {@inheritdoc}
+-   */
+-  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+-    return new static(
+-      $configuration,
+-      $plugin_id,
+-      $plugin_definition,
+-      $container->get('current_route_match'),
+-      $container->get('date.formatter')
+-    );
+-  }
+-
+-  /**
+-   * {@inheritdoc}
+-   */
+-  public function getArgument() {
+-    // Return the current node creation time if a current node can be found.
+-    if (($node = $this->routeMatch->getParameter('node')) && $node instanceof NodeInterface) {
+-
+-      // The Date argument handlers provide their own format strings, otherwise
+-      // use a default.
+-      $format = $this->argument instanceof Date ? $this->argument->getArgFormat() : 'Y-m-d';
+-
+-      return $this->dateFormatter->format($node->getCreatedTime(), 'custom', $format);
+-    }
+-    return FALSE;
+-  }
+-
+-  /**
+-   * {@inheritdoc}
+-   */
+-  public function getCacheContexts() {
+-    return ['url'];
+-  }
++class NodeCreated extends NodeDateArgumentDefaultPluginBase {
+ 
+   /**
+    * {@inheritdoc}
+    */
+-  public function getCacheMaxAge() {
+-    return Cache::PERMANENT;
++  protected function getNodeDateValue(NodeInterface $node): int {
++    return $node->getCreatedTime();
+   }
+ 
+ }
+diff --git a/core/modules/node/src/Plugin/views/argument_default/NodeDateArgumentDefaultPluginBase.php b/core/modules/node/src/Plugin/views/argument_default/NodeDateArgumentDefaultPluginBase.php
+new file mode 100644
+index 000000000000..37687e082702
+--- /dev/null
++++ b/core/modules/node/src/Plugin/views/argument_default/NodeDateArgumentDefaultPluginBase.php
+@@ -0,0 +1,91 @@
++<?php
++
++namespace Drupal\node\Plugin\views\argument_default;
++
++use Drupal\Core\Cache\Cache;
++use Drupal\Core\Cache\CacheableDependencyInterface;
++use Drupal\Core\Datetime\DateFormatterInterface;
++use Drupal\Core\Routing\RouteMatchInterface;
++use Drupal\node\NodeInterface;
++use Drupal\views\Plugin\views\argument\Date;
++use Drupal\views\Plugin\views\argument_default\ArgumentDefaultPluginBase;
++use Symfony\Component\DependencyInjection\ContainerInterface;
++
++/**
++ * Provides a base class for node date values.
++ */
++abstract class NodeDateArgumentDefaultPluginBase extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
++
++  /**
++   * Constructs a new NodeDateArgumentDefaultPluginBase instance.
++   *
++   * @param array $configuration
++   *   A configuration array containing information about the plugin instance.
++   * @param string $plugin_id
++   *   The plugin_id for the plugin instance.
++   * @param mixed $plugin_definition
++   *   The plugin implementation definition.
++   * @param \Drupal\Core\Routing\RouteMatchInterface $routeMatch
++   *   The route match.
++   * @param \Drupal\Core\Datetime\DateFormatterInterface $dateFormatter
++   *   The date formatter service.
++   */
++  public function __construct(array $configuration, $plugin_id, $plugin_definition, protected RouteMatchInterface $routeMatch, protected DateFormatterInterface $dateFormatter) {
++    parent::__construct($configuration, $plugin_id, $plugin_definition);
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition): static {
++    return new static(
++      $configuration,
++      $plugin_id,
++      $plugin_definition,
++      $container->get('current_route_match'),
++      $container->get('date.formatter')
++    );
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getArgument(): string|bool {
++    // Return a time value from q node if a current node can be found.
++    if (($node = $this->routeMatch->getParameter('node')) && $node instanceof NodeInterface) {
++
++      // The Date argument handlers provide their own format strings, otherwise
++      // use a default.
++      $format = $this->argument instanceof Date ? $this->argument->getArgFormat() : 'Y-m-d';
++
++      return $this->dateFormatter->format($this->getNodeDateValue($node), 'custom', $format);
++    }
++    return FALSE;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getCacheContexts() {
++    return ['url'];
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getCacheMaxAge() {
++    return Cache::PERMANENT;
++  }
++
++  /**
++   * Gets a timestamp value from the passed node.
++   *
++   * @param \Drupal\node\NodeInterface $node
++   *   The node to get the timestamp value from.
++   *
++   * @return int
++   *   A timestamp value from a node field.
++   */
++  abstract protected function getNodeDateValue(NodeInterface $node): int;
++
++}
+-- 
+GitLab
+
+
+From 3b362cc8c746d580a7b0dcbf8205a2f7c1ac0bfb Mon Sep 17 00:00:00 2001
+From: Lennard Swaneveld <lennard@ezcompany.nl>
+Date: Wed, 19 Jul 2023 16:01:17 +0200
+Subject: [PATCH 6/6] Change self:: to $this
+
+---
+ .../src/Functional/Views/DateArgumentDefaultTest.php |  4 ++--
+ .../src/Functional/Plugin/ArgumentDefaultTest.php    | 12 ++++++------
+ 2 files changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/core/modules/node/tests/src/Functional/Views/DateArgumentDefaultTest.php b/core/modules/node/tests/src/Functional/Views/DateArgumentDefaultTest.php
+index 425ed88fdf80..42aaa35e2d8b 100644
+--- a/core/modules/node/tests/src/Functional/Views/DateArgumentDefaultTest.php
++++ b/core/modules/node/tests/src/Functional/Views/DateArgumentDefaultTest.php
+@@ -136,7 +136,7 @@ public function testArgumentDefaultNodeCreated() {
+     $view = Views::getView('test_argument_node_date');
+     $view->setDisplay('block_1');
+     $view->initHandlers();
+-    self::assertFalse($view->argument['created']->getDefaultArgument());
++    $this->assertFalse($view->argument['created']->getDefaultArgument());
+   }
+ 
+   /**
+@@ -183,7 +183,7 @@ public function testArgumentDefaultNodeChanged() {
+     $view = Views::getView('test_argument_node_date');
+     $view->setDisplay('block_2');
+     $view->initHandlers();
+-    self::assertFalse($view->argument['changed']->getDefaultArgument());
++    $this->assertFalse($view->argument['changed']->getDefaultArgument());
+   }
+ 
+ }
+diff --git a/core/modules/views/tests/src/Functional/Plugin/ArgumentDefaultTest.php b/core/modules/views/tests/src/Functional/Plugin/ArgumentDefaultTest.php
+index be5ed8b3e263..29d7574a7f5b 100644
+--- a/core/modules/views/tests/src/Functional/Plugin/ArgumentDefaultTest.php
++++ b/core/modules/views/tests/src/Functional/Plugin/ArgumentDefaultTest.php
+@@ -149,7 +149,7 @@ public function testArgumentDefaultDate() {
+     $view->initHandlers();
+ 
+     $expected = $date_formatter->format($request_time, 'custom', 'Y-m-d');
+-    self::assertEquals($expected, $view->argument['null']->getDefaultArgument(), 'Current date argument should be used by default.');
++    $this->assertEquals($expected, $view->argument['null']->getDefaultArgument(), 'Current date argument should be used by default.');
+ 
+     // Update the View to use the Ym format argument.
+     $view = Views::getView('test_argument_default_date');
+@@ -166,7 +166,7 @@ public function testArgumentDefaultDate() {
+     $view->initHandlers();
+ 
+     $expected = $date_formatter->format($request_time, 'custom', 'Ym');
+-    self::assertEquals($expected, $view->argument['null']->getDefaultArgument(), 'Current date argument should be used by default.');
++    $this->assertEquals($expected, $view->argument['null']->getDefaultArgument(), 'Current date argument should be used by default.');
+   }
+ 
+   /**
+@@ -250,10 +250,10 @@ public function testArgumentDefaultCacheability() {
+     // Check that the page is not cached with date argument default.
+     $this->drupalGet('path-page-1');
+     $this->assertSession()->statusCodeEquals(200);
+-    self::assertEquals('UNCACHEABLE', $this->getSession()->getResponseHeader(DynamicPageCacheSubscriber::HEADER));
++    $this->assertEquals('UNCACHEABLE', $this->getSession()->getResponseHeader(DynamicPageCacheSubscriber::HEADER));
+     // Double check.
+     $this->drupalGet('path-page-1');
+-    self::assertEquals('UNCACHEABLE', $this->getSession()->getResponseHeader(DynamicPageCacheSubscriber::HEADER));
++    $this->assertEquals('UNCACHEABLE', $this->getSession()->getResponseHeader(DynamicPageCacheSubscriber::HEADER));
+ 
+     // Change the argument to some cached option.
+     $view = Views::getView('test_argument_default_date');
+@@ -270,9 +270,9 @@ public function testArgumentDefaultCacheability() {
+     // Check that the page is cached without date argument default.
+     $this->drupalGet('path-page-1');
+     $this->assertSession()->statusCodeEquals(200);
+-    self::assertEquals('MISS', $this->getSession()->getResponseHeader(DynamicPageCacheSubscriber::HEADER));
++    $this->assertEquals('MISS', $this->getSession()->getResponseHeader(DynamicPageCacheSubscriber::HEADER));
+     $this->drupalGet('path-page-1');
+-    self::assertEquals('HIT', $this->getSession()->getResponseHeader(DynamicPageCacheSubscriber::HEADER));
++    $this->assertEquals('HIT', $this->getSession()->getResponseHeader(DynamicPageCacheSubscriber::HEADER));
+   }
+ 
+ }
+-- 
+GitLab
+

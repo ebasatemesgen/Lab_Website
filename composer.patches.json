@@ -163,6 +163,9 @@
     },
     "drupal/samlauth" : {
       "Fix redirect after login": "patches/samlauth_redirect.patch"
+    },
+    "drupal/file_delete": {
+      "3115158: Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2022-10-10/3115158-instant-delete-25.patch"
     }
   }
 }

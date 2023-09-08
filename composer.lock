@@ -27810,7 +27810,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "8189bf3b72c923220041e6f9c9f272bbeb19b44e"
+                "reference": "73fa60101453428ac110762630ddd3d01e26e8aa"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -27819,7 +27819,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2023-09-08T13:39:40+00:00"
+            "time": "2023-09-08T18:52:40+00:00"
         },
         {
             "name": "umn/migrate_google_sheets",

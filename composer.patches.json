@@ -65,7 +65,8 @@
       "2825860: Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()": "https://www.drupal.org/files/issues/2022-07-27/2825860-111.patch",
       "3047022: Layout builder fails to assign inline block access dependencies": "https://www.drupal.org/files/issues/2021-11-16/2786735.patch",
       "2968967: EntityReferenceItem::getRandomBundle returns key not value": "https://www.drupal.org/files/issues/2020-01-13/drupal-issue-2968967-07.patch",
-      "2325899: UI fatal caused by views argument handlers no longer can provide their own default argument handling": "patches/2325899-3751-views-ui-fatal-caused.patch"
+      "2325899: UI fatal caused by views argument handlers no longer can provide their own default argument handling": "patches/2325899-3751-views-ui-fatal-caused.patch",
+      "3315678: strnatcasecmp(): Passing null to parameter #2 ($string2) of type string is deprecated": "https://www.drupal.org/files/issues/2023-01-30/categorizing_plugin_error-3315678-16.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "patches/a11y-tabs-arrow-key-wrap.patch"

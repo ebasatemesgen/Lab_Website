@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9587756903635e60857e47304e618b8a",
+    "content-hash": "ac8486589257c10722989875a2d97336",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -3588,6 +3588,54 @@
                 "source": "https://git.drupalcode.org/project/block_class",
                 "issues": "https://www.drupal.org/project/issues/block_class",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/block_exclude_pages",
+            "version": "2.1.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_exclude_pages.git",
+                "reference": "2.1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_exclude_pages-2.1.0-beta2.zip",
+                "reference": "2.1.0-beta2",
+                "shasum": "a341284569b220e7f35515f072f758d20d4b8fc1"
+            },
+            "require": {
+                "drupal/core": "^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0-beta2",
+                    "datestamp": "1682353936",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "jcontreras",
+                    "homepage": "https://www.drupal.org/user/2422356"
+                }
+            ],
+            "description": "adds an exclude pages field for blocks",
+            "homepage": "https://www.drupal.org/project/block_exclude_pages",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/block_exclude_pages",
+                "issues": "https://www.drupal.org/project/issues/block_exclude_pages"
             }
         },
         {
@@ -28853,7 +28901,8 @@
         "drupal/fontyourface": 20,
         "drupal/digitalmeasures_migrate": 20,
         "drupal/entitygroupfield": 15,
-        "drupal/http_response_headers": 5
+        "drupal/http_response_headers": 5,
+        "drupal/block_exclude_pages": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -277,7 +277,8 @@
         "drupal/entitygroupfield": "^2.0@alpha",
         "drupal/eca": "^1.1",
         "drupal/eca_cm": "^1.0",
-        "drupal/http_response_headers": "^2.0@RC"
+        "drupal/http_response_headers": "^2.0@RC",
+        "drupal/block_exclude_pages": "^2.1@beta"
     },
     "repositories": {
         "redirect_after_login": {

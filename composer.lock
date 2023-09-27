@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6b6a888510b6478d07b3a382bfb92b6",
+    "content-hash": "d355a284811eea6b19b2d49175df370c",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -4888,6 +4888,58 @@
             "homepage": "https://www.drupal.org/project/consumers",
             "support": {
                 "source": "https://git.drupalcode.org/project/consumers"
+            }
+        },
+        {
+            "name": "drupal/contact_emails",
+            "version": "1.21.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/contact_emails.git",
+                "reference": "8.x-1.21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/contact_emails-8.x-1.21.zip",
+                "reference": "8.x-1.21",
+                "shasum": "5b67681e9835350011b3577d84d96008b47d6808"
+            },
+            "require": {
+                "drupal/contact_storage": "*",
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "require-dev": {
+                "drupal/contact_storage": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.21",
+                    "datestamp": "1681541283",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "scott_euser",
+                    "homepage": "https://www.drupal.org/user/3267594"
+                }
+            ],
+            "description": "Module to handle contact emails",
+            "homepage": "https://www.drupal.org/project/contact_emails",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/contact_emails",
+                "issues": "https://www.drupal.org/project/issues/contact_emails"
             }
         },
         {

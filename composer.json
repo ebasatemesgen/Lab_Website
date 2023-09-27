@@ -279,7 +279,8 @@
         "drupal/eca_cm": "^1.0",
         "drupal/http_response_headers": "^2.0@RC",
         "drupal/block_exclude_pages": "^2.1@beta",
-        "drupal/tb_megamenu": "^3.0@alpha"
+        "drupal/tb_megamenu": "^3.0@alpha",
+        "drupal/contact_emails": "^1.21"
     },
     "repositories": {
         "redirect_after_login": {

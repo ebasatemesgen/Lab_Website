@@ -72,7 +72,8 @@
       "arrow key wrap": "patches/a11y-tabs-arrow-key-wrap.patch"
     },
     "drupal/field_group": {
-      "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-07-22/2969051-37.patch"
+      "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-07-22/2969051-37.patch",
+      "3384121: Javascript once issue in Drupal 10" :"https://www.drupal.org/files/issues/2023-09-01/3384121-javascript_once_error_D10.patch"
     },
     "drupal/media_entity_download": {
       "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"

@@ -168,6 +168,9 @@
     },
     "drupal/file_delete": {
       "3115158: Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2022-10-10/3115158-instant-delete-25.patch"
+    },
+    "drupal/bg_image_formatter": {
+      "3375638: Undefined array key height and width when using Responsive Background Image formatter": "https://www.drupal.org/files/issues/2023-09-19/undefined-array-key-3375638-4.patch"
     }
   }
 }

@@ -171,6 +171,9 @@
     },
     "drupal/bg_image_formatter": {
       "3375638: Undefined array key height and width when using Responsive Background Image formatter": "https://www.drupal.org/files/issues/2023-09-19/undefined-array-key-3375638-4.patch"
+    },
+    "drupal/search_api": {
+      "3150478 undefined index #conjunction": "https://www.drupal.org/files/issues/2021-10-22/undefined_index_conjunction-3150478-19.patch"
     }
   }
 }

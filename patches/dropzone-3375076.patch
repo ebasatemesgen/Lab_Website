@@ -39,8 +39,8 @@ index b6df253..09e55ef 100644
    if ($extension == 'dropzonejs' && \Drupal::moduleHandler()->moduleExists('libraries')) {
 -    $libraries['dropzonejs']['js'] = ['/' . libraries_get_path('dropzone') . '/dist/min/dropzone.min.js' => []];
 -    $libraries['dropzonejs']['css']['component'] = ['/' . libraries_get_path('dropzone') . '/dist/min/dropzone.min.css' => []];
-+    $libraries['dropzonejs']['js'] = [DRUPAL_ROOT . '/libraries/dropzone/dist/min/dropzone.min.js' => []];
-+    $libraries['dropzonejs']['css']['component'] = [DRUPAL_ROOT . '/libraries/dist/min/dropzone.min.css' => []];
++    $libraries['dropzonejs']['js'] = ['/libraries/dropzone/dist/min/dropzone.min.js' => []];
++    $libraries['dropzonejs']['css']['component'] = ['/libraries/dropzone/dist/min/dropzone.min.css' => []];
  
 -    if ($exif_path = libraries_get_path('exif-js')) {
 +    if ($exif_path = DRUPAL_ROOT . '/libraries/exif-js/exif.js') {

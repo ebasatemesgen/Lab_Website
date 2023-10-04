@@ -91,7 +91,8 @@
     },
     "drupal/group": {
       "3370775:2.x Update 9204 fails on some roles": "https://www.drupal.org/files/issues/2023-06-27/3370775-role-update-9204.patch",
-      "3373702:Add views contextual filter to get group ID from URL or group content 2.x": "https://www.drupal.org/files/issues/2023-07-10/3373702-2-views-cont-filter-to-get-gid-from-url-or-group-content-2.x.patch"
+      "3373702:Add views contextual filter to get group ID from URL or group content 2.x": "https://www.drupal.org/files/issues/2023-07-10/3373702-2-views-cont-filter-to-get-gid-from-url-or-group-content-2.x.patch",
+      "3016197: Group creator must complete their membership Wizard duplicates membership": "https://www.drupal.org/files/issues/2023-03-30/group_membership_duplicates-3016197-32.patch"
     },
     "drupal/group_content_menu": {
       "3224816: Starting level deeper than 1 ignores active trail, when Expand all items is enabled": "https://www.drupal.org/files/issues/2023-03-01/group_content_menu-3224816-5-expand-all-items-bugfix.patch"

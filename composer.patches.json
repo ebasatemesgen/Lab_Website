@@ -183,7 +183,7 @@
     "drupal/search_api": {
       "3150478 undefined index #conjunction": "https://www.drupal.org/files/issues/2021-10-22/undefined_index_conjunction-3150478-19.patch"
     },
-    "drupal/migrate_google_sheets": {
+    "umn/migrate_google_sheets": {
       "3304413: Incompatible with the latest migrate_plus 6.0.x": "https://www.drupal.org/files/issues/2022-08-17/migrate-google-sheets-declaration_0.patch"
     }
   }

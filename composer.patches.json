@@ -67,7 +67,8 @@
       "2968967: EntityReferenceItem::getRandomBundle returns key not value": "https://www.drupal.org/files/issues/2020-01-13/drupal-issue-2968967-07.patch",
       "2325899: UI fatal caused by views argument handlers no longer can provide their own default argument handling": "patches/2325899-3751-views-ui-fatal-caused.patch",
       "3315678: strnatcasecmp(): Passing null to parameter #2 ($string2) of type string is deprecated": "https://www.drupal.org/files/issues/2023-01-30/categorizing_plugin_error-3315678-16.patch",
-      "3390178: big_pipe sometimes fails to load blocks": "patches/big_pipe_3390178_2.patch"
+      "3390178: big_pipe sometimes fails to load blocks": "patches/big_pipe_3390178_2.patch",
+      "3361177: An empty views pager offset field can cause a PHP type error to be triggered.": "https://www.drupal.org/files/issues/2023-05-30/3361177-8.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "patches/a11y-tabs-arrow-key-wrap.patch"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "776198aab38e603f8674d12a3f42522d",
+    "content-hash": "3cdb18a4d3a7cccb1ffce412eb3bbfd1",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -14268,6 +14268,33 @@
             }
         },
         {
+            "name": "drupal/responsive_menu",
+            "version": "dev-3297964-automated-drupal-10-compatibility-fixes",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/issue/responsive_menu-3297964.git",
+                "reference": "f9a2aec0fedcd17426beed4659de29539ca85f7c"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tancredi D'Onofrio (tanc)",
+                    "homepage": "https://www.drupal.org/u/tanc",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides a javascript based off-canvas responsive menu with depth. At wider browser widths it provides a horizontal menu capable of drop downs and flyouts",
+            "homepage": "https://drupal.org/project/responsive_menu",
+            "support": {
+                "issues": "https://drupal.org/project/issues/responsive_menu",
+                "source": "https://cgit.drupalcode.org/responsive_menu"
+            },
+            "time": "2023-09-16T04:25:22+00:00"
+        },
+        {
             "name": "drupal/restui",
             "version": "1.21.0",
             "source": {
@@ -28330,34 +28357,6 @@
             "time": "2023-07-14T18:43:28+00:00"
         },
         {
-            "name": "umn/responsive_menu",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "git@github.umn.edu:drupalmodules/responsive_menus.git",
-                "reference": "a53694e5d779bef121a54ac0bb70d4ab3583c942"
-            },
-            "default-branch": true,
-            "type": "drupal-module",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Tancredi D'Onofrio (tanc)",
-                    "homepage": "https://www.drupal.org/u/tanc",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Provides a javascript based off-canvas responsive menu with depth. At wider browser widths it provides a horizontal menu capable of drop downs and flyouts",
-            "homepage": "https://drupal.org/project/responsive_menu",
-            "support": {
-                "issues": "https://drupal.org/project/issues/responsive_menu",
-                "source": "https://cgit.drupalcode.org/responsive_menu"
-            },
-            "time": "2023-05-09T18:37:20+00:00"
-        },
-        {
             "name": "umn/semanticviews",
             "version": "dev-main",
             "source": {
@@ -29288,7 +29287,7 @@
         "drupal/a11y_paragraphs_tabs": 10,
         "drupal/shs": 5,
         "drupal/auditfiles": 10,
-        "umn/responsive_menu": 20,
+        "drupal/responsive_menu": 20,
         "umn/ckeditor_modal": 20,
         "umn/umn_superfish": 20,
         "drupal/field_defaults": 15,
@@ -29312,5 +29311,5 @@
         "ext-dom": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }

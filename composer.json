@@ -235,7 +235,7 @@
         "drupal/color": "^1.0",
         "drupal/jquery_ui_effects": "^2.0",
         "drupal/samlauth": "^3.8",
-        "umn/responsive_menu": "dev-main",
+        "drupal/responsive_menu": "dev-3297964-automated-drupal-10-compatibility-fixes",
         "umn/ckeditor_modal": "dev-10.x-dev",
         "drupal/features": "^3.13",
         "umn/umn_superfish": "dev-9-dev",
@@ -291,7 +291,10 @@
         },
         "drupal-packagist": {
             "type": "composer",
-            "url": "https://packages.drupal.org/8"
+            "url": "https://packages.drupal.org/8",
+            "exclude": [
+              "drupal/responsive_menu"
+              ]
         },
         "asset-packagist": {
             "type": "composer",
@@ -319,7 +322,7 @@
         },
         "umn-migrate_google_sheets": {
             "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/migrate_google_sheets.git"
+            "url": "https://git.drupalcode.org/issue/responsive_menu-3297964.git"
         },
         "umn-field-delimiter": {
             "type": "git",

@@ -91,8 +91,7 @@
     },
     "drupal/group": {
       "3370775:2.x Update 9204 fails on some roles": "https://www.drupal.org/files/issues/2023-06-27/3370775-role-update-9204.patch",
-      "3373702:Add views contextual filter to get group ID from URL or group content 2.x": "https://www.drupal.org/files/issues/2023-07-10/3373702-2-views-cont-filter-to-get-gid-from-url-or-group-content-2.x.patch",
-      "3016197: Group creator must complete their membership Wizard duplicates membership": "patches/3016197-group-duplicate-nodes.patch"
+      "3373702:Add views contextual filter to get group ID from URL or group content 2.x": "https://www.drupal.org/files/issues/2023-07-10/3373702-2-views-cont-filter-to-get-gid-from-url-or-group-content-2.x.patch"
     },
     "drupal/group_content_menu": {
       "3224816: Starting level deeper than 1 ignores active trail, when Expand all items is enabled": "https://www.drupal.org/files/issues/2023-03-01/group_content_menu-3224816-5-expand-all-items-bugfix.patch"
@@ -134,9 +133,6 @@
     "drupal/viewsreference": {
       "2938433: Add Label field formatter": "https://www.drupal.org/files/issues/2021-01-27/add_label_formatter-2938433-7.patch"
     },
-    "drupal/anchor_link": {
-      "3206676: CKEditor 5 compatibility": "https://www.drupal.org/files/issues/2023-04-28/anchor_link-ckeditor5-compatibility-3206676-55.patch"
-    },
     "drupal/dropzonejs": {
       "3125682: Support chunked uploads": "https://www.drupal.org/files/issues/2022-03-29/dropzonejs-support-chuked-uploads-3125682-30.patch",
       "2924425: Maximum Upload Size Causes Silent JS Error": "https://www.drupal.org/files/issues/2021-01-18/2924425-maxFileSize-22.patch",
@@ -150,8 +146,7 @@
       "3347958: Fix Entity queries must explicitly set whether the query should be access checked or not in Content Moderation Notifications" : "https://www.drupal.org/files/issues/2023-03-14/3347958-2.patch"
     },
     "drupal/superfish": {
-      "3339367: Use Once function in JS behavior": "https://www.drupal.org/files/issues/2023-02-05/3339367-use-once-method-4.patch",
-      "3381818: Add URL license": "https://www.drupal.org/files/issues/2023-08-18/3381818-add-license-url-2.patch"
+      "3339367: Use Once function in JS behavior": "https://www.drupal.org/files/issues/2023-02-05/3339367-use-once-method-4.patch"
     },
     "drupal/fontawesome": {
       "3274028: CKEditor 5 compatibility": "patches/3274028-fontawesome-ckeditor5-compatibility-16.patch"

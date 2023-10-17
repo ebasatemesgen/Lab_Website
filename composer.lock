@@ -179,16 +179,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.283.3",
+            "version": "3.283.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "4cc8d6c7e856de80d9316f659c4c626d3713f6c1"
+                "reference": "a0877cbbf6062cef363145b1bd0cb1d1f6654e04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4cc8d6c7e856de80d9316f659c4c626d3713f6c1",
-                "reference": "4cc8d6c7e856de80d9316f659c4c626d3713f6c1",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a0877cbbf6062cef363145b1bd0cb1d1f6654e04",
+                "reference": "a0877cbbf6062cef363145b1bd0cb1d1f6654e04",
                 "shasum": ""
             },
             "require": {
@@ -268,9 +268,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.283.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.283.4"
             },
-            "time": "2023-10-12T18:14:56+00:00"
+            "time": "2023-10-16T18:08:25+00:00"
         },
         {
             "name": "aws/aws-sdk-php-resources",
@@ -3440,17 +3440,17 @@
         },
         {
             "name": "drupal/blazy",
-            "version": "2.20.0",
+            "version": "2.21.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "8.x-2.20"
+                "reference": "8.x-2.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-2.20.zip",
-                "reference": "8.x-2.20",
-                "shasum": "44e88e4afa2c7fb066c48d9e9f41b6319e57b45f"
+                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-2.21.zip",
+                "reference": "8.x-2.21",
+                "shasum": "60ac20ec9eff87ea688ff4c025f28d8fb07b237a"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -3461,8 +3461,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.20",
-                    "datestamp": "1696834555",
+                    "version": "8.x-2.21",
+                    "datestamp": "1697526367",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3912,17 +3912,17 @@
         },
         {
             "name": "drupal/checklistapi",
-            "version": "2.1.3",
+            "version": "2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/checklistapi.git",
-                "reference": "2.1.3"
+                "reference": "2.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/checklistapi-2.1.3.zip",
-                "reference": "2.1.3",
-                "shasum": "05c28a384044049af26a51c23c846cdd0eea9ce7"
+                "url": "https://ftp.drupal.org/files/projects/checklistapi-2.1.4.zip",
+                "reference": "2.1.4",
+                "shasum": "e4d733e0c63af0875a23ca186e644013e014fc31"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -3931,8 +3931,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.3",
-                    "datestamp": "1687522401",
+                    "version": "2.1.4",
+                    "datestamp": "1697512849",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -18371,7 +18371,7 @@
         },
         {
             "name": "drupal/webform_node",
-            "version": "6.2.0-rc1",
+            "version": "6.2.0-rc2",
             "require": {
                 "drupal/core": "^9.4 || ^10",
                 "drupal/webform": "*"
@@ -18379,8 +18379,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "6.2.0-rc1",
-                    "datestamp": "1696976940",
+                    "version": "6.2.0-rc2",
+                    "datestamp": "1697463934",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -19655,16 +19655,16 @@
         },
         {
             "name": "google/auth",
-            "version": "v1.31.0",
+            "version": "v1.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "22209fddd0c06f3f8e3cb4aade0b352aa00f9888"
+                "reference": "b88250090d834add55e4ad31f84190d51f617fca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/22209fddd0c06f3f8e3cb4aade0b352aa00f9888",
-                "reference": "22209fddd0c06f3f8e3cb4aade0b352aa00f9888",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/b88250090d834add55e4ad31f84190d51f617fca",
+                "reference": "b88250090d834add55e4ad31f84190d51f617fca",
                 "shasum": ""
             },
             "require": {
@@ -19707,9 +19707,9 @@
             "support": {
                 "docs": "https://googleapis.github.io/google-auth-library-php/main/",
                 "issues": "https://github.com/googleapis/google-auth-library-php/issues",
-                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.31.0"
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.32.0"
             },
-            "time": "2023-10-05T20:39:00+00:00"
+            "time": "2023-10-16T18:38:15+00:00"
         },
         {
             "name": "google/charts",

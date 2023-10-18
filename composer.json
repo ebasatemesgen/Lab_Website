@@ -715,6 +715,176 @@
                 }
             }
         },
+        "tabby": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "tabby/tabby",
+                "version": "12.0.3",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "tabby"
+                },
+                "dist": {
+                    "url": "https://github.com/cferdinandi/tabby/archive/refs/tags/v12.0.3.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "signature_pad": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "signature_pad/signature_pad",
+                "version": "2.3.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "signature_pad"
+                },
+                "dist": {
+                    "url": "https://github.com/szimek/signature_pad/archive/refs/tags/v2.3.0.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "progress-tracker": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "progress-tracker/progress-tracker",
+                "version": "2.0.7",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "progress-tracker"
+                },
+                "dist": {
+                    "url": "https://github.com/NigelOToole/progress-tracker/archive/refs/tags/2.0.7.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "jquery.rateit": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "jquery/rateit",
+                "version": "1.1.5",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.rateit"
+                },
+                "dist": {
+                    "url": "https://github.com/gjunge/rateit.js/archive/refs/tags/1.1.5.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "jquery.select2": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "jquery/select2",
+                "version": "4.0.13",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.select2"
+                },
+                "dist": {
+                    "url": "https://github.com/select2/select2/archive/refs/tags/4.0.13.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "jquery.textcounter": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "jquery/textcounter",
+                "version": "0.9.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.textcounter"
+                },
+                "dist": {
+                    "url": "https://github.com/ractoon/jQuery-Text-Counter/archive/refs/tags/0.9.1.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "jquery.timepicker": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "jquery/timepicker",
+                "version": "1.14.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.timepicker"
+                },
+                "dist": {
+                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/refs/tags/1.14.0.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "jquery.intl-tel-input": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "jquery/intl-tel-input",
+                "version": "17.0.19",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.intl-tel-input"
+                },
+                "dist": {
+                    "url": "https://github.com/jackocnr/intl-tel-input/archive/refs/tags/v17.0.19.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "jquery.inputmask": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "jquery/inputmask",
+                "version": "5.0.8",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.inputmask"
+                },
+                "dist": {
+                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/refs/tags/5.0.8.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "codemirror": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "codemirror/codemirror",
+                "version": "5.65.12",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "codemirror"
+                },
+                "dist": {
+                    "url": "https://github.com/components/codemirror/archive/refs/tags/5.65.12.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
         "cog": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/cog.git"

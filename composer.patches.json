@@ -66,13 +66,15 @@
       "3047022: Layout builder fails to assign inline block access dependencies": "https://www.drupal.org/files/issues/2021-11-16/2786735.patch",
       "2968967: EntityReferenceItem::getRandomBundle returns key not value": "https://www.drupal.org/files/issues/2020-01-13/drupal-issue-2968967-07.patch",
       "2325899: UI fatal caused by views argument handlers no longer can provide their own default argument handling": "patches/2325899-3751-views-ui-fatal-caused.patch",
-      "3315678: strnatcasecmp(): Passing null to parameter #2 ($string2) of type string is deprecated": "https://www.drupal.org/files/issues/2023-01-30/categorizing_plugin_error-3315678-16.patch"
+      "3315678: strnatcasecmp(): Passing null to parameter #2 ($string2) of type string is deprecated": "https://www.drupal.org/files/issues/2023-01-30/categorizing_plugin_error-3315678-16.patch",
+      "3390178: big_pipe sometimes fails to load blocks": "patches/big_pipe_3390178_2.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "patches/a11y-tabs-arrow-key-wrap.patch"
     },
     "drupal/field_group": {
-      "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-07-22/2969051-37.patch"
+      "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-07-22/2969051-37.patch",
+      "3384121: Javascript once issue in Drupal 10" :"https://www.drupal.org/files/issues/2023-09-01/3384121-javascript_once_error_D10.patch"
     },
     "drupal/media_entity_download": {
       "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
@@ -167,6 +169,12 @@
     },
     "drupal/file_delete": {
       "3115158: Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2022-10-10/3115158-instant-delete-25.patch"
+    },
+    "drupal/bg_image_formatter": {
+      "3375638: Undefined array key height and width when using Responsive Background Image formatter": "https://www.drupal.org/files/issues/2023-09-19/undefined-array-key-3375638-4.patch"
+    },
+    "drupal/search_api": {
+      "3150478 undefined index #conjunction": "https://www.drupal.org/files/issues/2021-10-22/undefined_index_conjunction-3150478-19.patch"
     }
   }
 }

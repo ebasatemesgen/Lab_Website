@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3cdb18a4d3a7cccb1ffce412eb3bbfd1",
+    "content-hash": "093a33da1fe684b2636cd5e69ad1842a",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -5351,6 +5351,65 @@
                 "source": "https://github.com/drupal/core-composer-scaffold/tree/10.1.5"
             },
             "time": "2023-04-30T16:15:32+00:00"
+        },
+        {
+            "name": "drupal/core_context",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/core_context.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/core_context-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "0cf4205e8e32df4716ef7ca917941b393c1ae2ae"
+            },
+            "require": {
+                "drupal/core": ">=8.9 <11.0.0-stable",
+                "drupal/ctools": "^3.11"
+            },
+            "conflict": {
+                "drupal/page_manager": "<4.0-beta6"
+            },
+            "require-dev": {
+                "drupal/page_manager": "^4.0-beta6"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1668558268",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "EclipseGc",
+                    "homepage": "https://www.drupal.org/user/61203"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                }
+            ],
+            "description": "Allows context values to be attached to entities in a field.",
+            "homepage": "https://www.drupal.org/project/core_context",
+            "support": {
+                "source": "https://git.drupalcode.org/project/core_context"
+            }
         },
         {
             "name": "drupal/crop",
@@ -29311,5 +29370,5 @@
         "ext-dom": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

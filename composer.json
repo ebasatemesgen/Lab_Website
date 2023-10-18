@@ -282,7 +282,8 @@
         "drupal/tb_megamenu": "^3.0@alpha",
         "drupal/contact_emails": "^1.21",
         "phpmailer/phpmailer": "^6.8",
-        "drupal/webform_group": "^2.0"
+        "drupal/webform_group": "^2.0",
+        "drupal/core_context": "^1.1"
     },
     "repositories": {
         "redirect_after_login": {

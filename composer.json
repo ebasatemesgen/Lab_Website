@@ -12,7 +12,7 @@
         "kint-php/kint": "^4.2"
     },
     "require": {
-        "composer/installers": "^1.7",
+        "composer/installers": "^2.2",
         "cweagans/composer-patches": "^1.6.4",
         "drupal/paragraphs": "^1.10",
         "drupal/back_to_top": "^3.0",
@@ -509,7 +509,7 @@
                     "type": "file"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 }
             }
         },
@@ -527,7 +527,7 @@
                     "type": "file"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 }
             }
         },
@@ -545,7 +545,7 @@
                     "type": "file"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 }
             }
         },
@@ -563,7 +563,7 @@
                     "type": "file"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 }
             }
         },
@@ -581,7 +581,7 @@
                     "type": "file"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 }
             }
         },
@@ -599,7 +599,7 @@
                     "type": "file"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 }
             }
         },
@@ -617,7 +617,7 @@
                     "type": "file"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 }
             }
         },
@@ -635,7 +635,7 @@
                     "type": "file"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 }
             }
         },
@@ -653,7 +653,7 @@
                     "type": "zip"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 }
             }
         },
@@ -671,7 +671,7 @@
                     "type": "zip"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 }
             }
         },
@@ -689,7 +689,7 @@
                     "installer-name": "imagesloaded"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 }
             }
         },

@@ -317,7 +317,7 @@
         },
         "shadow-responsive-menu": {
             "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/responsive_menus.git"
+            "url": "https://git.drupalcode.org/issue/responsive_menu-3297964.git"
         },
         "umn-radix-layouts": {
             "type": "git",

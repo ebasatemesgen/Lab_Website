@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "020deec68785d94a9617013035d08b7a",
+    "content-hash": "cc841b0fcf9bc0c33c509f44ecd3df80",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -179,16 +179,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.283.5",
+            "version": "3.283.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "848be1aefb7ab6adfe8995de07166f38ec7c1f53"
+                "reference": "54cbb4253c6add698ec429bfb6ff2168c2fd7092"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/848be1aefb7ab6adfe8995de07166f38ec7c1f53",
-                "reference": "848be1aefb7ab6adfe8995de07166f38ec7c1f53",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/54cbb4253c6add698ec429bfb6ff2168c2fd7092",
+                "reference": "54cbb4253c6add698ec429bfb6ff2168c2fd7092",
                 "shasum": ""
             },
             "require": {
@@ -268,9 +268,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.283.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.283.7"
             },
-            "time": "2023-10-17T18:12:19+00:00"
+            "time": "2023-10-18T20:16:37+00:00"
         },
         {
             "name": "aws/aws-sdk-php-resources",
@@ -3927,34 +3927,31 @@
         },
         {
             "name": "drupal/checklistapi",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/checklistapi.git",
-                "reference": "2.1.4"
+                "reference": "2.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/checklistapi-2.1.4.zip",
-                "reference": "2.1.4",
-                "shasum": "e4d733e0c63af0875a23ca186e644013e014fc31"
+                "url": "https://ftp.drupal.org/files/projects/checklistapi-2.1.5.zip",
+                "reference": "2.1.5",
+                "shasum": "9d91ecdcba1fc1d4805a6ddc06a6ba5ca8a63fc9"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
-                "php": ">=5.6.0"
+                "php": ">=7.3.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.4",
-                    "datestamp": "1697512849",
+                    "version": "2.1.5",
+                    "datestamp": "1697644052",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
                 },
                 "drush": {
                     "services": {
@@ -6307,26 +6304,29 @@
         },
         {
             "name": "drupal/embed",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/embed.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "6d2964775c3228d122cd61904786b3640fa83045"
+                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "b7ca4264be51038f947d26b6725fc0446b224f60"
             },
             "require": {
                 "drupal/core": "^9.3 | ^10"
             },
+            "require-dev": {
+                "drupal/ckeditor": "*"
+            },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1661298150",
+                    "version": "8.x-1.7",
+                    "datestamp": "1697642867",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15480,17 +15480,17 @@
         },
         {
             "name": "drupal/simple_oauth",
-            "version": "5.2.3",
+            "version": "5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/simple_oauth.git",
-                "reference": "5.2.3"
+                "reference": "5.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_oauth-5.2.3.zip",
-                "reference": "5.2.3",
-                "shasum": "9dae165101c0cff5e1f792457ec6a8eff5c1faf4"
+                "url": "https://ftp.drupal.org/files/projects/simple_oauth-5.2.4.zip",
+                "reference": "5.2.4",
+                "shasum": "19e6a7842855aa1ea1d632e91cceaba29d21a515"
             },
             "require": {
                 "drupal/consumers": "^1.14",
@@ -15506,8 +15506,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "5.2.3",
-                    "datestamp": "1670908048",
+                    "version": "5.2.4",
+                    "datestamp": "1697698824",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15515,7 +15515,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9"
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
@@ -15606,17 +15606,17 @@
         },
         {
             "name": "drupal/simplify",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/simplify.git",
-                "reference": "2.0.0"
+                "reference": "2.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simplify-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "0ac28841dbdcba19d2f46c73acd815351ae9fc28"
+                "url": "https://ftp.drupal.org/files/projects/simplify-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "1352c82327fcb174043ed253f19173e1398d4780"
             },
             "require": {
                 "drupal/core": "^9.1 || ^10"
@@ -15624,8 +15624,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1676556903",
+                    "version": "2.1.0",
+                    "datestamp": "1697627468",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -17535,17 +17535,17 @@
         },
         {
             "name": "drupal/views_autocomplete_filters",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_autocomplete_filters.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_autocomplete_filters-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "43a2de203ef7a4fdd3116394e97c7a6e23a97055"
+                "url": "https://ftp.drupal.org/files/projects/views_autocomplete_filters-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "4061cac83e39279bbf5515b8ba8f8685b27b4023"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -17553,8 +17553,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1696855914",
+                    "version": "8.x-1.7",
+                    "datestamp": "1697624365",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -19756,16 +19756,16 @@
         },
         {
             "name": "google/auth",
-            "version": "v1.32.0",
+            "version": "v1.32.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "b88250090d834add55e4ad31f84190d51f617fca"
+                "reference": "999e9ce8b9d17914f04e1718271a0a46da4de2f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/b88250090d834add55e4ad31f84190d51f617fca",
-                "reference": "b88250090d834add55e4ad31f84190d51f617fca",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/999e9ce8b9d17914f04e1718271a0a46da4de2f3",
+                "reference": "999e9ce8b9d17914f04e1718271a0a46da4de2f3",
                 "shasum": ""
             },
             "require": {
@@ -19808,9 +19808,9 @@
             "support": {
                 "docs": "https://googleapis.github.io/google-auth-library-php/main/",
                 "issues": "https://github.com/googleapis/google-auth-library-php/issues",
-                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.32.0"
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.32.1"
             },
-            "time": "2023-10-16T18:38:15+00:00"
+            "time": "2023-10-17T21:13:22+00:00"
         },
         {
             "name": "google/charts",

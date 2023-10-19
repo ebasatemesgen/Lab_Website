@@ -333,7 +333,7 @@
         },
         "umn-migrate_google_sheets": {
             "type": "git",
-            "url": "https://git.drupalcode.org/issue/responsive_menu-3297964.git"
+            "url": "git@github.umn.edu:drupalmodules/migrate_google_sheets.git"
         },
         "umn-field-delimiter": {
             "type": "git",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c4830f0c3d893987ab6c1e0676c257a",
+    "content-hash": "352d37908c0ba657f4560d3f62f00013",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -359,16 +359,16 @@
         },
         {
             "name": "bower-asset/highcharts",
-            "version": "v10.3.3",
+            "version": "v11.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/highcharts/highcharts-dist.git",
-                "reference": "e1419d8a0eebf8ea32bb9c2a1c0f7fc11aa4c188"
+                "reference": "83d105a85e52c315aad1ec675cb236e3df4561d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/highcharts/highcharts-dist/zipball/e1419d8a0eebf8ea32bb9c2a1c0f7fc11aa4c188",
-                "reference": "e1419d8a0eebf8ea32bb9c2a1c0f7fc11aa4c188"
+                "url": "https://api.github.com/repos/highcharts/highcharts-dist/zipball/83d105a85e52c315aad1ec675cb236e3df4561d7",
+                "reference": "83d105a85e52c315aad1ec675cb236e3df4561d7"
             },
             "type": "bower-asset",
             "license": [
@@ -20432,10 +20432,10 @@
         },
         {
             "name": "highcharts/3d",
-            "version": "10.2.1",
+            "version": "11.1.0",
             "dist": {
                 "type": "file",
-                "url": "https://code.highcharts.com/10.2.1/highcharts-3d.js"
+                "url": "https://code.highcharts.com/11.1.0/highcharts-3d.js"
             },
             "require": {
                 "composer/installers": "~2.0"
@@ -20447,10 +20447,10 @@
         },
         {
             "name": "highcharts/accessibility",
-            "version": "10.2.1",
+            "version": "11.1.0",
             "dist": {
                 "type": "file",
-                "url": "https://code.highcharts.com/10.2.1/modules/accessibility.js"
+                "url": "https://code.highcharts.com/11.1.0/modules/accessibility.js"
             },
             "require": {
                 "composer/installers": "~2.0"
@@ -20462,10 +20462,10 @@
         },
         {
             "name": "highcharts/export-data",
-            "version": "10.2.1",
+            "version": "11.1.0",
             "dist": {
                 "type": "file",
-                "url": "https://code.highcharts.com/10.2.1/modules/export-data.js"
+                "url": "https://code.highcharts.com/11.1.0/modules/export-data.js"
             },
             "require": {
                 "composer/installers": "~2.0"
@@ -20477,10 +20477,10 @@
         },
         {
             "name": "highcharts/exporting",
-            "version": "10.2.1",
+            "version": "11.1.0",
             "dist": {
                 "type": "file",
-                "url": "https://code.highcharts.com/10.2.1/modules/exporting.js"
+                "url": "https://code.highcharts.com/11.1.0/modules/exporting.js"
             },
             "require": {
                 "composer/installers": "~2.0"
@@ -20492,10 +20492,10 @@
         },
         {
             "name": "highcharts/highcharts",
-            "version": "10.2.1",
+            "version": "11.1.0",
             "dist": {
                 "type": "file",
-                "url": "https://code.highcharts.com/10.2.1/highcharts.js"
+                "url": "https://code.highcharts.com/11.1.0/highcharts.js"
             },
             "require": {
                 "composer/installers": "~2.0"
@@ -20507,10 +20507,10 @@
         },
         {
             "name": "highcharts/more",
-            "version": "10.2.1",
+            "version": "11.1.0",
             "dist": {
                 "type": "file",
-                "url": "https://code.highcharts.com/10.2.1/highcharts-more.js"
+                "url": "https://code.highcharts.com/11.1.0/highcharts-more.js"
             },
             "require": {
                 "composer/installers": "~2.0"

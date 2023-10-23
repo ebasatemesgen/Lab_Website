@@ -1,0 +1,36 @@
+From 92787e843434ffe42df37db49ef267fcc063397a Mon Sep 17 00:00:00 2001
+From: Abhishek Gupta <abhishek.g@virasatsolutions.com>
+Date: Wed, 4 Oct 2023 13:37:10 +0530
+Subject: [PATCH] add chenages for
+ -drupalflexiblepermissionscalculatedpermissions
+
+---
+ src/ChainPermissionCalculator.php | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+diff --git a/src/ChainPermissionCalculator.php b/src/ChainPermissionCalculator.php
+index 4c67021..5bf01bc 100644
+--- a/src/ChainPermissionCalculator.php
++++ b/src/ChainPermissionCalculator.php
+@@ -142,7 +142,17 @@ class ChainPermissionCalculator implements ChainPermissionCalculatorInterface {
+         // is allowed, however, as it might be that the calculator had nothing
+         // to say for this scope.
+         if (!empty($calculator_scopes) && (count($calculator_scopes) > 1 || reset($calculator_scopes) !== $scope)) {
+-          throw new CalculatedPermissionsScopeException(sprintf('The calculator "%s" returned permissions for scopes other than "%s".', get_class($calculator), $scope));
++          // Check if the calculator is the IndividualGroupPermissionCalculator.
++          if (get_class($calculator) === 'Drupal\group\Access\IndividualGroupPermissionCalculator') {
++            // If it is, it should return permissions only for the "individual" scope.
++            // You should investigate why it's returning permissions for other scopes.
++            // You might need to modify the behavior of this calculator.
++            // For now, we'll ignore the invalid permissions and continue.
++            continue;
++          } else {
++            // For other calculators, throw an exception.
++            throw new CalculatedPermissionsScopeException(sprintf('The calculator "%s" returned permissions for scopes other than "%s".', get_class($calculator), $scope));
++          }
+         }
+ 
+         $calculated_permissions = $calculated_permissions->merge($calculator_permissions);
+-- 
+GitLab
+

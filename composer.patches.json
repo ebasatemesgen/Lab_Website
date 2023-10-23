@@ -67,14 +67,14 @@
       "2968967: EntityReferenceItem::getRandomBundle returns key not value": "https://www.drupal.org/files/issues/2020-01-13/drupal-issue-2968967-07.patch",
       "2325899: UI fatal caused by views argument handlers no longer can provide their own default argument handling": "patches/2325899-3751-views-ui-fatal-caused.patch",
       "3315678: strnatcasecmp(): Passing null to parameter #2 ($string2) of type string is deprecated": "https://www.drupal.org/files/issues/2023-01-30/categorizing_plugin_error-3315678-16.patch",
-      "3390178: big_pipe sometimes fails to load blocks": "patches/big_pipe_3390178_2.patch"
+      "3390178: big_pipe sometimes fails to load blocks": "patches/big_pipe_3390178_2.patch",
+      "3361177: An empty views pager offset field can cause a PHP type error to be triggered.": "https://www.drupal.org/files/issues/2023-05-30/3361177-8.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "patches/a11y-tabs-arrow-key-wrap.patch"
     },
     "drupal/field_group": {
-      "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-07-22/2969051-37.patch",
-      "3384121: Javascript once issue in Drupal 10" :"https://www.drupal.org/files/issues/2023-09-01/3384121-javascript_once_error_D10.patch"
+      "2969051: HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2023-04-24/2969051-99.patch"
     },
     "drupal/media_entity_download": {
       "3057444": "https://www.drupal.org/files/issues/2019-05-27/error-on-manage-layout-3057444-2.patch"
@@ -93,6 +93,9 @@
       "3370775:2.x Update 9204 fails on some roles": "https://www.drupal.org/files/issues/2023-06-27/3370775-role-update-9204.patch",
       "3373702:Add views contextual filter to get group ID from URL or group content 2.x": "https://www.drupal.org/files/issues/2023-07-10/3373702-2-views-cont-filter-to-get-gid-from-url-or-group-content-2.x.patch"
     },
+    "drupal/group_content_menu": {
+      "3224816: Starting level deeper than 1 ignores active trail, when Expand all items is enabled": "https://www.drupal.org/files/issues/2023-03-01/group_content_menu-3224816-5-expand-all-items-bugfix.patch"
+    },
     "drupal/back_to_top": {
       "remove from layout builder pages": "patches/back_to_top__remove_from_layout_builder.patch"
     },
@@ -104,6 +107,9 @@
     },
     "drupal/conflict" : {
       "3163662: PHP error when stored entity is not found": "https://www.drupal.org/files/issues/2020-08-05/3163662-2.patch"
+    },
+    "drupal/flexible_permissions": {
+      "3380603: Drupal flexible_permissions CalculatedPermissionsScopeException": "patches/3380603-flexible-permissions.patch"
     },
     "drupal/moderation_sidebar" : {
       "3264639: Can't preview a new node": "https://www.drupal.org/files/issues/2022-02-16/preview-new-node-3264639-2.patch"
@@ -127,9 +133,6 @@
     "drupal/viewsreference": {
       "2938433: Add Label field formatter": "https://www.drupal.org/files/issues/2021-01-27/add_label_formatter-2938433-7.patch"
     },
-    "drupal/anchor_link": {
-      "3206676: CKEditor 5 compatibility": "https://www.drupal.org/files/issues/2023-04-28/anchor_link-ckeditor5-compatibility-3206676-55.patch"
-    },
     "drupal/dropzonejs": {
       "3125682: Support chunked uploads": "https://www.drupal.org/files/issues/2022-03-29/dropzonejs-support-chuked-uploads-3125682-30.patch",
       "2924425: Maximum Upload Size Causes Silent JS Error": "https://www.drupal.org/files/issues/2021-01-18/2924425-maxFileSize-22.patch",
@@ -143,17 +146,13 @@
       "3347958: Fix Entity queries must explicitly set whether the query should be access checked or not in Content Moderation Notifications" : "https://www.drupal.org/files/issues/2023-03-14/3347958-2.patch"
     },
     "drupal/superfish": {
-      "3339367: Use Once function in JS behavior": "https://www.drupal.org/files/issues/2023-02-05/3339367-use-once-method-4.patch",
-      "3381818: Add URL license": "https://www.drupal.org/files/issues/2023-08-18/3381818-add-license-url-2.patch"
+      "3339367: Use Once function in JS behavior": "https://www.drupal.org/files/issues/2023-02-05/3339367-use-once-method-4.patch"
     },
     "drupal/fontawesome": {
       "3274028: CKEditor 5 compatibility": "patches/3274028-fontawesome-ckeditor5-compatibility-16.patch"
     },
     "drupal/path_redirect_import": {
       "33730215: Update to support path redirect import migrate_tools 6.0.2": "https://www.drupal.org/files/issues/2023-07-06/path_redirect_import-3373025.patch"
-    },
-    "drupal/embed": {
-      "3309747: CKEditor 5 compatibility": "https://www.drupal.org/files/issues/2023-07-26/3309747-45.patch"
     },
    "drupal/csv_serialization": {
       "3230521: Call to deprecated method getContent()": "https://www.drupal.org/files/issues/2021-11-03/deprecated_method_getcontent-3230521-5.patch"
@@ -175,6 +174,12 @@
     },
     "drupal/search_api": {
       "3150478 undefined index #conjunction": "https://www.drupal.org/files/issues/2021-10-22/undefined_index_conjunction-3150478-19.patch"
+    },
+    "umn/migrate_google_sheets": {
+      "3304413: Incompatible with the latest migrate_plus 6.0.x": "https://www.drupal.org/files/issues/2022-08-17/migrate-google-sheets-declaration_0.patch"
+    },
+    "drupal/shs": {
+      "3357151: Use core/internal.backbone lib": "https://www.drupal.org/files/issues/2023-04-28/3357151_change_backbone_lib_001.patch"
     }
   }
 }

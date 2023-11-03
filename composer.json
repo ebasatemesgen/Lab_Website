@@ -239,7 +239,6 @@
         "umn/ckeditor_modal": "dev-10.x-dev",
         "drupal/features": "^3.13",
         "umn/umn_superfish": "dev-9-dev",
-        "npm-asset/northernco--ckeditor5-anchor-drupal": "^0.2.0",
         "npm-asset/fortawesome--fontawesome": "^6.4",
         "drupal/purge_file": "^1.1",
         "drupal/views_field_formatter": "^4.0",
@@ -294,7 +293,8 @@
         "progress-tracker/progress-tracker": "^2.0",
         "signature_pad/signature_pad": "^2.3",
         "tabby/tabby": "^12.0",
-        "drupal/search_api_spellcheck": "^4.0"
+        "drupal/search_api_spellcheck": "^4.0",
+        "drupal-library/ckeditor5-anchor-drupal": "^0.0.0"
     },
     "repositories": {
         "redirect_after_login": {
@@ -899,6 +899,18 @@
         "cog": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/cog.git"
+        },
+        "ckeditor5-anchor-drupal": {
+            "type": "package",
+            "package": {
+                "name": "drupal-library/ckeditor5-anchor-drupal",
+                "version": "0.0.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://www.drupal.org/files/issues/2023-10-25/ckeditor5-anchor-drupal_0.zip",
+                    "type": "zip"
+                }
+            }
         }
     },
     "config": {
@@ -928,7 +940,8 @@
                 "npm-asset/fortawesome--fontawesome"
             ],
             "docroot/libraries/ckeditor5-anchor-drupal": [
-                "npm-asset/northernco--ckeditor5-anchor-drupal"
+                "npm-asset/northernco--ckeditor5-anchor-drupal",
+                "drupal-library/ckeditor5-anchor-drupal"
             ],
             "docroot/libraries/{$name}": [
                 "type:drupal-library",

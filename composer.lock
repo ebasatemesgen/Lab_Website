@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4740b4cb9555d7a1a980fbbacd1a2dd8",
+    "content-hash": "fae76144e58dbe1ff3a4a2bd8f26e82b",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -2201,6 +2201,15 @@
                 }
             ],
             "time": "2023-08-10T19:36:49+00:00"
+        },
+        {
+            "name": "drupal-library/ckeditor5-anchor-drupal",
+            "version": "0.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://www.drupal.org/files/issues/2023-10-25/ckeditor5-anchor-drupal_0.zip"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "drupal/a11y_paragraphs_tabs",
@@ -22642,18 +22651,6 @@
             "type": "npm-asset",
             "license": [
                 "Dual licensed under the MIT or GPL Version 2 licenses."
-            ]
-        },
-        {
-            "name": "npm-asset/northernco--ckeditor5-anchor-drupal",
-            "version": "0.2.0",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/@northernco/ckeditor5-anchor-drupal/-/ckeditor5-anchor-drupal-0.2.0.tgz"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
             ]
         },
         {

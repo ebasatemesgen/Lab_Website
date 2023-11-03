@@ -187,6 +187,9 @@
     },
     "drupal/layout_library": {
       "3081497: Add hide the content preview option to layout editing": "https://www.drupal.org/files/issues/2019-11-07/3081497_add-hide-content-preview-02.patch"
+    },
+    "drupal/field_delimiter": {
+      "3354408: Deprecation warning: Passing null to parameter #1 ($string) of type string is deprecated": "patches/3354408-field_delimiter-deprecation-warning.patch"
     }
   }
 }

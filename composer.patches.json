@@ -90,11 +90,17 @@
       "3070343: Allow to add a Drupal core link with Link Widget for Image entities using Entity Embed Dialog in CKEditor": "https://www.drupal.org/files/issues/2023-06-15/entity_embed-link_image_media_entities-3070343-32.patch"
     },
     "drupal/group": {
+      "2774827: Get a token of a node's parent group to create a pathauto pattern": "https://www.drupal.org/files/issues/2023-02-17/group-2774827-93.patch",
       "3370775:2.x Update 9204 fails on some roles": "https://www.drupal.org/files/issues/2023-06-27/3370775-role-update-9204.patch",
-      "3373702:Add views contextual filter to get group ID from URL or group content 2.x": "https://www.drupal.org/files/issues/2023-07-10/3373702-2-views-cont-filter-to-get-gid-from-url-or-group-content-2.x.patch"
+      "3373702:Add views contextual filter to get group ID from URL or group content 2.x": "https://www.drupal.org/files/issues/2023-07-10/3373702-2-views-cont-filter-to-get-gid-from-url-or-group-content-2.x.patch",
+      "3381602: field definition empty in group_update_9203": "https://www.drupal.org/files/issues/2023-08-17/field_definition_empty-3381602-3.patch",
+      "3378653: Group Content view errors - Call to a member function on null - after upgrade to 2.1.x": "https://git.drupalcode.org/project/group/-/merge_requests/95.patch",
+      "2815971: More contexts needed": "https://www.drupal.org/files/issues/2023-06-13/group-context-2815971-46.patch"
     },
     "drupal/group_content_menu": {
-      "3224816: Starting level deeper than 1 ignores active trail, when Expand all items is enabled": "https://www.drupal.org/files/issues/2023-03-01/group_content_menu-3224816-5-expand-all-items-bugfix.patch"
+      "3224816: Starting level deeper than 1 ignores active trail, when Expand all items is enabled": "https://www.drupal.org/files/issues/2023-03-01/group_content_menu-3224816-5-expand-all-items-bugfix.patch",
+      "3209011: Active trail is cached incorrectly": "https://www.drupal.org/files/issues/2021-04-20/group_content_menu-active_trail_cache_problem-3209011-7.patch",
+      "3170013: Group Menu not visible on Node pages": "https://www.drupal.org/files/issues/2023-08-18/3170013-22.patch"
     },
     "drupal/back_to_top": {
       "remove from layout builder pages": "patches/back_to_top__remove_from_layout_builder.patch"

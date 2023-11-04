@@ -186,6 +186,9 @@
     },
     "drupal/shs": {
       "3357151: Use core/internal.backbone lib": "https://www.drupal.org/files/issues/2023-04-28/3357151_change_backbone_lib_001.patch"
+    },
+    "drupal/layout_library": {
+      "3081497: Add hide the content preview option to layout editing": "https://www.drupal.org/files/issues/2019-11-07/3081497_add-hide-content-preview-02.patch"
     }
   }
 }

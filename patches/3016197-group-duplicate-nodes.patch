@@ -1,0 +1,739 @@
+From 19393fbe5b9c2b68ebdd9460eb7892478179097c Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Ignacio=20L=C3=B3pez=20Flores?= <ignacio@factorial.io>
+Date: Thu, 14 Sep 2023 13:28:40 +0200
+Subject: [PATCH 01/12] Issue #3016197: Test that a group creator just get one
+ membership
+
+---
+ .../src/Functional/GroupCreatorWizardTest.php | 20 +++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+
+diff --git a/tests/src/Functional/GroupCreatorWizardTest.php b/tests/src/Functional/GroupCreatorWizardTest.php
+index 29b0672a..87273b25 100644
+--- a/tests/src/Functional/GroupCreatorWizardTest.php
++++ b/tests/src/Functional/GroupCreatorWizardTest.php
+@@ -41,6 +41,26 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+     $submit_button = 'Save group and membership';
+     $this->assertSession()->buttonExists($submit_button);
+     $this->assertSession()->buttonExists('Back');
++
++    // Submit the form
++    $this->submitForm([], $submit_button);
++    $this->assertSession()->statusCodeEquals(200);
++
++    // Get the group
++    $all_groups = $this->entityTypeManager->getStorage('group')->loadMultiple();
++    $this->assertCount(1, $all_groups);
++    $group = reset($all_groups);
++
++    // Check for the membership.
++    $group_relationship_storage = $this->entityTypeManager->getStorage('group_relationship');
++    $creator_relationships = $group_relationship_storage->loadByEntity($this->groupCreator, 'group_membership');
++
++    // Check the count equals one.
++    $this->assertCount(1, $creator_relationships, 'There is just one membership');
++
++    // Check the belonging group of that membership
++    $creator_relationship = reset($creator_relationships);
++    $this->assertEquals($creator_relationship->getGroupId(), $group->id(), 'Membership belongs to the group');
+   }
+ 
+   /**
+-- 
+GitLab
+
+
+From 4569f051588cf178e3f91fd4a74fa065cef44cf0 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Ignacio=20L=C3=B3pez=20Flores?= <ignacio@factorial.io>
+Date: Thu, 14 Sep 2023 13:36:48 +0200
+Subject: [PATCH 02/12] Issue #3016197: Test that a group creator to get the
+ roles we set to the group defaults
+
+---
+ .../src/Functional/GroupCreatorWizardTest.php | 20 +++++++++++++++++--
+ 1 file changed, 18 insertions(+), 2 deletions(-)
+
+diff --git a/tests/src/Functional/GroupCreatorWizardTest.php b/tests/src/Functional/GroupCreatorWizardTest.php
+index 87273b25..352ac760 100644
+--- a/tests/src/Functional/GroupCreatorWizardTest.php
++++ b/tests/src/Functional/GroupCreatorWizardTest.php
+@@ -2,6 +2,8 @@
+ 
+ namespace Drupal\Tests\group\Functional;
+ 
++use Drupal\group\PermissionScopeInterface;
++
+ /**
+  * Tests the group creator wizard.
+  *
+@@ -22,6 +24,12 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+    */
+   public function testCreatorMembershipWizard() {
+     $group_type = $this->createGroupType();
++    $group_role = $this->createGroupRole([
++      'group_type' => $group_type->id(),
++      'scope' => PermissionScopeInterface::INDIVIDUAL_ID,
++    ]);
++    $group_type->set('creator_roles', [$group_role->id()]);
++    $group_type->save();
+     $group_type_id = $group_type->id();
+ 
+     $role = $this->drupalCreateRole(["create $group_type_id group"]);
+@@ -51,16 +59,24 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+     $this->assertCount(1, $all_groups);
+     $group = reset($all_groups);
+ 
+-    // Check for the membership.
++    // Check for the membership
+     $group_relationship_storage = $this->entityTypeManager->getStorage('group_relationship');
+     $creator_relationships = $group_relationship_storage->loadByEntity($this->groupCreator, 'group_membership');
+ 
+-    // Check the count equals one.
++    // Check the count equals one
+     $this->assertCount(1, $creator_relationships, 'There is just one membership');
+ 
+     // Check the belonging group of that membership
+     $creator_relationship = reset($creator_relationships);
+     $this->assertEquals($creator_relationship->getGroupId(), $group->id(), 'Membership belongs to the group');
++
++    // Check that the roles assigned to the created member are the same as what we configured in the group defaults
++    $membership = $group->getMember($this->groupCreator);
++    $ids = [];
++    foreach ($membership->getGroupRelationship()->group_roles as $group_role_ref) {
++      $ids[] = $group_role_ref->target_id;
++    }
++    $this->assertEquals($group_type->getCreatorRoleIds(), $ids, 'Wizard set the correct creator roles');
+   }
+ 
+   /**
+-- 
+GitLab
+
+
+From 42591f0e6fdf5a9d90a517b984dd1ab3e687f020 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Ignacio=20L=C3=B3pez=20Flores?= <ignacio@factorial.io>
+Date: Tue, 19 Sep 2023 10:32:14 +0200
+Subject: [PATCH 03/12] Issue #3016197: Refactoring
+
+---
+ .../src/Functional/GroupCreatorWizardTest.php | 82 ++++++++++++-------
+ 1 file changed, 51 insertions(+), 31 deletions(-)
+
+diff --git a/tests/src/Functional/GroupCreatorWizardTest.php b/tests/src/Functional/GroupCreatorWizardTest.php
+index 352ac760..c6cfd06b 100644
+--- a/tests/src/Functional/GroupCreatorWizardTest.php
++++ b/tests/src/Functional/GroupCreatorWizardTest.php
+@@ -2,6 +2,8 @@
+ 
+ namespace Drupal\Tests\group\Functional;
+ 
++use Drupal\Core\Session\AccountInterface;
++use Drupal\group\Entity\GroupInterface;
+ use Drupal\group\PermissionScopeInterface;
+ 
+ /**
+@@ -23,21 +25,14 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+    * Tests that a group creator gets a membership using the wizard.
+    */
+   public function testCreatorMembershipWizard() {
+-    $group_type = $this->createGroupType();
++    $group_type = $this->createGroupTypeAndRole();
++
+     $group_role = $this->createGroupRole([
+       'group_type' => $group_type->id(),
+       'scope' => PermissionScopeInterface::INDIVIDUAL_ID,
+     ]);
+     $group_type->set('creator_roles', [$group_role->id()]);
+     $group_type->save();
+-    $group_type_id = $group_type->id();
+-
+-    $role = $this->drupalCreateRole(["create $group_type_id group"]);
+-    $this->groupCreator->addRole($role);
+-    $this->groupCreator->save();
+-
+-    $this->drupalGet("/group/add/$group_type_id");
+-    $this->assertSession()->statusCodeEquals(200);
+ 
+     $submit_button = 'Create ' . $group_type->label() . ' and complete your membership';
+     $this->assertSession()->buttonExists($submit_button);
+@@ -50,7 +45,7 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+     $this->assertSession()->buttonExists($submit_button);
+     $this->assertSession()->buttonExists('Back');
+ 
+-    // Submit the form
++    // Submit the membership form
+     $this->submitForm([], $submit_button);
+     $this->assertSession()->statusCodeEquals(200);
+ 
+@@ -59,16 +54,9 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+     $this->assertCount(1, $all_groups);
+     $group = reset($all_groups);
+ 
+-    // Check for the membership
+-    $group_relationship_storage = $this->entityTypeManager->getStorage('group_relationship');
+-    $creator_relationships = $group_relationship_storage->loadByEntity($this->groupCreator, 'group_membership');
+-
+-    // Check the count equals one
+-    $this->assertCount(1, $creator_relationships, 'There is just one membership');
+-
+-    // Check the belonging group of that membership
+-    $creator_relationship = reset($creator_relationships);
+-    $this->assertEquals($creator_relationship->getGroupId(), $group->id(), 'Membership belongs to the group');
++    // Check there is just one membership
++    $membership_ids = $this->loadGroupMembership($group, $this->groupCreator);
++    $this->assertCount(1, $membership_ids, 'Wizard set just one membership');
+ 
+     // Check that the roles assigned to the created member are the same as what we configured in the group defaults
+     $membership = $group->getMember($this->groupCreator);
+@@ -83,15 +71,7 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+    * Tests that a group creator gets a membership without using the wizard.
+    */
+   public function testCreatorMembershipNoWizard() {
+-    $group_type = $this->createGroupType(['creator_wizard' => FALSE]);
+-    $group_type_id = $group_type->id();
+-
+-    $role = $this->drupalCreateRole(["create $group_type_id group"]);
+-    $this->groupCreator->addRole($role);
+-    $this->groupCreator->save();
+-
+-    $this->drupalGet("/group/add/$group_type_id");
+-    $this->assertSession()->statusCodeEquals(200);
++    $group_type = $this->createGroupTypeAndRole(FALSE);
+ 
+     $submit_button = 'Create ' . $group_type->label() . ' and become a member';
+     $this->assertSession()->buttonExists($submit_button);
+@@ -102,6 +82,24 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+    * Tests that a group form is not turned into a wizard.
+    */
+   public function testNoWizard() {
++    $group_type = $this->createGroupTypeAndRole(FALSE, FALSE);
++
++    $this->assertSession()->buttonExists('Create ' . $group_type->label());
++    $this->assertSession()->buttonNotExists('Cancel');
++  }
++
++  /**
++   * Create group type and role with creation rights.
++   *
++   * @param bool $creator_wizard
++   *   The group creator must immediately complete their membership.
++   * @param bool $creator_membership
++   *   The group creator automatically receives a membership.
++   *
++   * @return \Drupal\group\Entity\GroupType
++   *   Group type.
++   */
++  protected function createGroupTypeAndRole($creator_wizard = TRUE, $creator_membership = TRUE) {
+     $group_type = $this->createGroupType([
+       'creator_membership' => FALSE,
+       'creator_wizard' => FALSE,
+@@ -114,8 +112,30 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+ 
+     $this->drupalGet("/group/add/$group_type_id");
+     $this->assertSession()->statusCodeEquals(200);
+-    $this->assertSession()->buttonExists('Create ' . $group_type->label());
+-    $this->assertSession()->buttonNotExists('Cancel');
++
++    return $group_type;
++  }
++
++  /**
++   * Membership array of a user in a group.
++   *
++   * @param GroupInterface $group
++   *   The group used to get the memberships.
++   * @param AccountInterface $account
++   *   The user account used to get the memberships.
++   *
++   * @return array|int
++   *   The memberships ids array.
++   */
++  protected function loadGroupMembership(GroupInterface $group, AccountInterface $account) {
++    $storage = $this->entityTypeManager->getStorage('group_relationship');
++
++    return $storage->getQuery()
++      ->accessCheck(FALSE)
++      ->condition('gid', $group->id())
++      ->condition('entity_id', $account->id())
++      ->condition('plugin_id', 'group_membership')
++      ->execute();
+   }
+ 
+ }
+-- 
+GitLab
+
+
+From 7d2a422ef4743eebbe9e7cbef77eabd6458dc043 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Ignacio=20L=C3=B3pez=20Flores?= <ignacio@factorial.io>
+Date: Tue, 19 Sep 2023 10:34:01 +0200
+Subject: [PATCH 04/12] Issue #3016197: Refactoring
+
+---
+ tests/src/Functional/GroupCreatorWizardTest.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/tests/src/Functional/GroupCreatorWizardTest.php b/tests/src/Functional/GroupCreatorWizardTest.php
+index c6cfd06b..77949586 100644
+--- a/tests/src/Functional/GroupCreatorWizardTest.php
++++ b/tests/src/Functional/GroupCreatorWizardTest.php
+@@ -101,8 +101,8 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+    */
+   protected function createGroupTypeAndRole($creator_wizard = TRUE, $creator_membership = TRUE) {
+     $group_type = $this->createGroupType([
+-      'creator_membership' => FALSE,
+-      'creator_wizard' => FALSE,
++      'creator_membership' => $creator_membership,
++      'creator_wizard' => $creator_wizard,
+     ]);
+     $group_type_id = $group_type->id();
+ 
+-- 
+GitLab
+
+
+From c5bb80d59c8d7b3b22ae16614546122fed427823 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Ignacio=20L=C3=B3pez=20Flores?= <ignacio@factorial.io>
+Date: Tue, 19 Sep 2023 10:35:30 +0200
+Subject: [PATCH 05/12] Issue #3016197: The wizard must set the group roles to
+ the group creator.
+
+---
+ src/Entity/Controller/GroupController.php | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/Entity/Controller/GroupController.php b/src/Entity/Controller/GroupController.php
+index 31ae758c..f2576569 100644
+--- a/src/Entity/Controller/GroupController.php
++++ b/src/Entity/Controller/GroupController.php
+@@ -120,6 +120,7 @@ class GroupController extends ControllerBase {
+       $values = [
+         'type' => $relationship_type_storage->getRelationshipTypeId($group_type->id(), 'group_membership'),
+         'entity_id' => $this->currentUser()->id(),
++        'group_roles' => $group_type->getCreatorRoleIds(),
+       ];
+       $entity = $this->entityTypeManager()->getStorage('group_relationship')->create($values);
+     }
+-- 
+GitLab
+
+
+From 1145133e81b8d97a76f9083397cf89c09d2005f0 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Ignacio=20L=C3=B3pez=20Flores?= <ignacio@factorial.io>
+Date: Tue, 19 Sep 2023 10:37:45 +0200
+Subject: [PATCH 06/12] Issue #3016197: If the wizard adds the membership,
+ postSave don't have to do it.
+
+---
+ src/Entity/Group.php | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/src/Entity/Group.php b/src/Entity/Group.php
+index 2ca7419f..29557c51 100644
+--- a/src/Entity/Group.php
++++ b/src/Entity/Group.php
+@@ -353,12 +353,13 @@ class Group extends EditorialContentEntityBase implements GroupInterface {
+     parent::postSave($storage, $update);
+ 
+     // If a new group is created and the group type is configured to grant group
+-    // creators a membership by default, add the creator as a member.
++    // creators a membership by default, add the creator as a member unless it is
++    // being created using the wizard.
+     // @todo Deprecate in 8.x-2.x in favor of a form-only approach. API-created
+     //   groups should not get this functionality because it may create
+     //   incomplete group memberships.
+     $group_type = $this->getGroupType();
+-    if ($update === FALSE && $group_type->creatorGetsMembership()) {
++    if ($update === FALSE && $group_type->creatorGetsMembership() && !$group_type->creatorMustCompleteMembership()) {
+       $values = ['group_roles' => $group_type->getCreatorRoleIds()];
+       $this->addMember($this->getOwner(), $values);
+     }
+-- 
+GitLab
+
+
+From 776b6fac14f7b4fec6ce9d9760a28c92b8239559 Mon Sep 17 00:00:00 2001
+From: Kristiaan Van den Eynde <magentix@gmail.com>
+Date: Wed, 20 Sep 2023 11:41:18 +0200
+Subject: [PATCH 07/12] Code review
+
+---
+ .../src/Functional/GroupCreatorWizardTest.php | 94 +++++++++++++------
+ 1 file changed, 67 insertions(+), 27 deletions(-)
+
+diff --git a/tests/src/Functional/GroupCreatorWizardTest.php b/tests/src/Functional/GroupCreatorWizardTest.php
+index 77949586..78b0d1f4 100644
+--- a/tests/src/Functional/GroupCreatorWizardTest.php
++++ b/tests/src/Functional/GroupCreatorWizardTest.php
+@@ -25,7 +25,10 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+    * Tests that a group creator gets a membership using the wizard.
+    */
+   public function testCreatorMembershipWizard() {
+-    $group_type = $this->createGroupTypeAndRole();
++    $group_type = $this->createGroupTypeAndRole(TRUE, TRUE);
++
++    $this->drupalGet("/group/add/{$group_type->id()}");
++    $this->assertSession()->statusCodeEquals(200);
+ 
+     $group_role = $this->createGroupRole([
+       'group_type' => $group_type->id(),
+@@ -45,37 +48,61 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+     $this->assertSession()->buttonExists($submit_button);
+     $this->assertSession()->buttonExists('Back');
+ 
+-    // Submit the membership form
+     $this->submitForm([], $submit_button);
+     $this->assertSession()->statusCodeEquals(200);
+ 
+-    // Get the group
++    // Get the group.
+     $all_groups = $this->entityTypeManager->getStorage('group')->loadMultiple();
+     $this->assertCount(1, $all_groups);
+     $group = reset($all_groups);
+ 
+-    // Check there is just one membership
+-    $membership_ids = $this->loadGroupMembership($group, $this->groupCreator);
+-    $this->assertCount(1, $membership_ids, 'Wizard set just one membership');
++    // Check there is just one membership.
++    $membership_ids = $this->loadGroupMembershipIds($group, $this->groupCreator);
++    $this->assertCount(1, $membership_ids, 'Wizard set just one membership.');
+ 
+-    // Check that the roles assigned to the created member are the same as what we configured in the group defaults
+-    $membership = $group->getMember($this->groupCreator);
++    // Check that the roles assigned to the created member are the same as what
++    // we configured in the group defaults.
+     $ids = [];
+-    foreach ($membership->getGroupRelationship()->group_roles as $group_role_ref) {
++    foreach ($group->getMember($this->groupCreator)->getGroupRelationship()->group_roles as $group_role_ref) {
+       $ids[] = $group_role_ref->target_id;
+     }
+-    $this->assertEquals($group_type->getCreatorRoleIds(), $ids, 'Wizard set the correct creator roles');
++    $this->assertEquals($group_type->getCreatorRoleIds(), $ids, 'Wizard set the correct creator roles.');
+   }
+ 
+   /**
+    * Tests that a group creator gets a membership without using the wizard.
+    */
+   public function testCreatorMembershipNoWizard() {
+-    $group_type = $this->createGroupTypeAndRole(FALSE);
++    $group_type = $this->createGroupTypeAndRole(TRUE, FALSE);
++
++    $this->drupalGet("/group/add/{$group_type->id()}");
++    $this->assertSession()->statusCodeEquals(200);
+ 
+     $submit_button = 'Create ' . $group_type->label() . ' and become a member';
+     $this->assertSession()->buttonExists($submit_button);
+     $this->assertSession()->buttonNotExists('Cancel');
++
++    $edit = ['Title' => $this->randomString()];
++    $this->submitForm($edit, $submit_button);
++
++    // Get the group.
++    $all_groups = $this->entityTypeManager->getStorage('group')->loadMultiple();
++    $this->assertCount(1, $all_groups);
++    $group = reset($all_groups);
++
++    // @todo We do not want this behavior in Group 4.0.0, we only want the
++    //   wizard to create a membership and assign roles.
++    // Check there is just one membership.
++    $membership_ids = $this->loadGroupMembershipIds($group, $this->groupCreator);
++    $this->assertCount(1, $membership_ids, 'Wizard set just one membership.');
++
++    // Check that the roles assigned to the created member are the same as what
++    // we configured in the group defaults.
++    $ids = [];
++    foreach ($group->getMember($this->groupCreator)->getGroupRelationship()->group_roles as $group_role_ref) {
++      $ids[] = $group_role_ref->target_id;
++    }
++    $this->assertEquals($group_type->getCreatorRoleIds(), $ids, 'Group::postCreate() correctly set the creator roles.');
+   }
+ 
+   /**
+@@ -84,50 +111,63 @@ class GroupCreatorWizardTest extends GroupBrowserTestBase {
+   public function testNoWizard() {
+     $group_type = $this->createGroupTypeAndRole(FALSE, FALSE);
+ 
+-    $this->assertSession()->buttonExists('Create ' . $group_type->label());
++    $this->drupalGet("/group/add/{$group_type->id()}");
++    $this->assertSession()->statusCodeEquals(200);
++
++    $submit_button = 'Create ' . $group_type->label();
++    $this->assertSession()->buttonExists($submit_button);
+     $this->assertSession()->buttonNotExists('Cancel');
++
++    $edit = ['Title' => $this->randomString()];
++    $this->submitForm($edit, $submit_button);
++
++    // Get the group.
++    $all_groups = $this->entityTypeManager->getStorage('group')->loadMultiple();
++    $this->assertCount(1, $all_groups);
++    $group = reset($all_groups);
++
++    // Check there is no membership.
++    $membership_ids = $this->loadGroupMembershipIds($group, $this->groupCreator);
++    $this->assertCount(0, $membership_ids, 'Group creation did not result in a membership.');
++    $this->assertFalse($group->getMember($this->groupCreator), 'No membership found for group creator.');
+   }
+ 
+   /**
+-   * Create group type and role with creation rights.
++   * Creates group type and role with creation rights.
+    *
+-   * @param bool $creator_wizard
+-   *   The group creator must immediately complete their membership.
+    * @param bool $creator_membership
+    *   The group creator automatically receives a membership.
++   * @param bool $creator_wizard
++   *   The group creator must immediately complete their membership.
+    *
+    * @return \Drupal\group\Entity\GroupType
+    *   Group type.
+    */
+-  protected function createGroupTypeAndRole($creator_wizard = TRUE, $creator_membership = TRUE) {
++  protected function createGroupTypeAndRole($creator_membership, $creator_wizard) {
+     $group_type = $this->createGroupType([
+       'creator_membership' => $creator_membership,
+       'creator_wizard' => $creator_wizard,
+     ]);
+-    $group_type_id = $group_type->id();
+ 
+-    $role = $this->drupalCreateRole(["create $group_type_id group"]);
++    $role = $this->drupalCreateRole(["create {$group_type->id()} group"]);
+     $this->groupCreator->addRole($role);
+     $this->groupCreator->save();
+ 
+-    $this->drupalGet("/group/add/$group_type_id");
+-    $this->assertSession()->statusCodeEquals(200);
+-
+     return $group_type;
+   }
+ 
+   /**
+-   * Membership array of a user in a group.
++   * Loads all membership IDs for a user in a group.
+    *
+    * @param GroupInterface $group
+-   *   The group used to get the memberships.
++   *   The group used to get the membership IDs.
+    * @param AccountInterface $account
+-   *   The user account used to get the memberships.
++   *   The user account used to get the membership IDs.
+    *
+-   * @return array|int
+-   *   The memberships ids array.
++   * @return int[]
++   *   The memberships IDs.
+    */
+-  protected function loadGroupMembership(GroupInterface $group, AccountInterface $account) {
++  protected function loadGroupMembershipIds(GroupInterface $group, AccountInterface $account) {
+     $storage = $this->entityTypeManager->getStorage('group_relationship');
+ 
+     return $storage->getQuery()
+-- 
+GitLab
+
+
+From 630d989716b94566d6e6ae3c8007e3b7d69776c7 Mon Sep 17 00:00:00 2001
+From: Kristiaan Van den Eynde <magentix@gmail.com>
+Date: Wed, 20 Sep 2023 14:59:00 +0200
+Subject: [PATCH 08/12] Backwards-compatible approach to avoid duplicate
+ memberships
+
+---
+ src/Entity/Group.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/src/Entity/Group.php b/src/Entity/Group.php
+index 29557c51..c83504a5 100644
+--- a/src/Entity/Group.php
++++ b/src/Entity/Group.php
+@@ -353,13 +353,13 @@ class Group extends EditorialContentEntityBase implements GroupInterface {
+     parent::postSave($storage, $update);
+ 
+     // If a new group is created and the group type is configured to grant group
+-    // creators a membership by default, add the creator as a member unless it is
+-    // being created using the wizard.
++    // creators a membership by default, add the creator as a member unless it
++    // is being created using the wizard.
+     // @todo Deprecate in 8.x-2.x in favor of a form-only approach. API-created
+     //   groups should not get this functionality because it may create
+     //   incomplete group memberships.
+     $group_type = $this->getGroupType();
+-    if ($update === FALSE && $group_type->creatorGetsMembership() && !$group_type->creatorMustCompleteMembership()) {
++    if ($update === FALSE && $group_type->creatorGetsMembership() && !$this->getMember($this->getOwner())) {
+       $values = ['group_roles' => $group_type->getCreatorRoleIds()];
+       $this->addMember($this->getOwner(), $values);
+     }
+-- 
+GitLab
+
+
+From 4ed0f7a969f39feeef77ed44ab5dfdc10f8f4efd Mon Sep 17 00:00:00 2001
+From: Kristiaan Van den Eynde <magentix@gmail.com>
+Date: Wed, 20 Sep 2023 15:35:14 +0200
+Subject: [PATCH 09/12] Revert BC fix as it will reintroduce the bug. Add some
+ changes to various test set-ups already to adjust to the new scenario
+
+---
+ src/Entity/Group.php                                | 2 +-
+ tests/src/Kernel/QueryAlter/QueryAlterTestBase.php  | 2 +-
+ tests/src/Kernel/Views/GroupViewsKernelTestBase.php | 1 +
+ 3 files changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/src/Entity/Group.php b/src/Entity/Group.php
+index c83504a5..05afaa6a 100644
+--- a/src/Entity/Group.php
++++ b/src/Entity/Group.php
+@@ -359,7 +359,7 @@ class Group extends EditorialContentEntityBase implements GroupInterface {
+     //   groups should not get this functionality because it may create
+     //   incomplete group memberships.
+     $group_type = $this->getGroupType();
+-    if ($update === FALSE && $group_type->creatorGetsMembership() && !$this->getMember($this->getOwner())) {
++    if ($update === FALSE && $group_type->creatorGetsMembership() && !$group_type->creatorMustCompleteMembership()) {
+       $values = ['group_roles' => $group_type->getCreatorRoleIds()];
+       $this->addMember($this->getOwner(), $values);
+     }
+diff --git a/tests/src/Kernel/QueryAlter/QueryAlterTestBase.php b/tests/src/Kernel/QueryAlter/QueryAlterTestBase.php
+index 23f3dcc6..1b2827c2 100644
+--- a/tests/src/Kernel/QueryAlter/QueryAlterTestBase.php
++++ b/tests/src/Kernel/QueryAlter/QueryAlterTestBase.php
+@@ -196,7 +196,7 @@ abstract class QueryAlterTestBase extends GroupKernelTestBase {
+ 
+     $definition = $this->entityTypeManager->getDefinition($this->entityTypeId);
+     $data_table = $definition->getDataTable() ?: $definition->getBaseTable();
+-    $group_type = $this->createGroupType();
++    $group_type = $this->createGroupType(['creator_wizard']);
+ 
+     if ($individual_permissions || $individual_is_admin) {
+       $group_role = $this->createGroupRole([
+diff --git a/tests/src/Kernel/Views/GroupViewsKernelTestBase.php b/tests/src/Kernel/Views/GroupViewsKernelTestBase.php
+index 141da01a..dca1e1d9 100644
+--- a/tests/src/Kernel/Views/GroupViewsKernelTestBase.php
++++ b/tests/src/Kernel/Views/GroupViewsKernelTestBase.php
+@@ -125,6 +125,7 @@ abstract class GroupViewsKernelTestBase extends ViewsKernelTestBase {
+     $group_type = $storage->create($values + [
+       'id' => $this->randomMachineName(),
+       'label' => $this->randomString(),
++      'creator_wizard' => FALSE,
+     ]);
+     $storage->save($group_type);
+     return $group_type;
+-- 
+GitLab
+
+
+From 90d08c839216f1eb2aee24cc08b9ee12a5789304 Mon Sep 17 00:00:00 2001
+From: Kristiaan Van den Eynde <magentix@gmail.com>
+Date: Wed, 20 Sep 2023 15:55:49 +0200
+Subject: [PATCH 10/12] Adjust base test classes to soften the blow for BC
+ break
+
+---
+ tests/src/Functional/GroupBrowserTestBase.php      | 1 +
+ tests/src/Kernel/GroupKernelTestBase.php           | 1 +
+ tests/src/Kernel/QueryAlter/QueryAlterTestBase.php | 2 +-
+ 3 files changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/tests/src/Functional/GroupBrowserTestBase.php b/tests/src/Functional/GroupBrowserTestBase.php
+index d2b4b744..7ee8e7bb 100644
+--- a/tests/src/Functional/GroupBrowserTestBase.php
++++ b/tests/src/Functional/GroupBrowserTestBase.php
+@@ -99,6 +99,7 @@ abstract class GroupBrowserTestBase extends BrowserTestBase {
+     $group_type = $storage->create($values + [
+       'id' => $this->randomMachineName(),
+       'label' => $this->randomString(),
++      'creator_wizard' => FALSE,
+     ]);
+     $storage->save($group_type);
+     return $group_type;
+diff --git a/tests/src/Kernel/GroupKernelTestBase.php b/tests/src/Kernel/GroupKernelTestBase.php
+index 225c1e37..bf38c158 100644
+--- a/tests/src/Kernel/GroupKernelTestBase.php
++++ b/tests/src/Kernel/GroupKernelTestBase.php
+@@ -83,6 +83,7 @@ abstract class GroupKernelTestBase extends EntityKernelTestBase {
+     $group_type = $storage->create($values + [
+       'id' => $this->randomMachineName(),
+       'label' => $this->randomString(),
++      'creator_wizard' => FALSE,
+     ]);
+     $storage->save($group_type);
+     return $group_type;
+diff --git a/tests/src/Kernel/QueryAlter/QueryAlterTestBase.php b/tests/src/Kernel/QueryAlter/QueryAlterTestBase.php
+index 1b2827c2..23f3dcc6 100644
+--- a/tests/src/Kernel/QueryAlter/QueryAlterTestBase.php
++++ b/tests/src/Kernel/QueryAlter/QueryAlterTestBase.php
+@@ -196,7 +196,7 @@ abstract class QueryAlterTestBase extends GroupKernelTestBase {
+ 
+     $definition = $this->entityTypeManager->getDefinition($this->entityTypeId);
+     $data_table = $definition->getDataTable() ?: $definition->getBaseTable();
+-    $group_type = $this->createGroupType(['creator_wizard']);
++    $group_type = $this->createGroupType();
+ 
+     if ($individual_permissions || $individual_is_admin) {
+       $group_role = $this->createGroupRole([
+-- 
+GitLab
+
+
+From 4561f019a7944d5df7841424aabfc813ce7bee3e Mon Sep 17 00:00:00 2001
+From: Kristiaan Van den Eynde <magentix@gmail.com>
+Date: Wed, 20 Sep 2023 15:56:13 +0200
+Subject: [PATCH 11/12] Adjust group type form test to accommodate new logic
+ (BC break)
+
+---
+ tests/src/Functional/GroupTypeFormTest.php | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/tests/src/Functional/GroupTypeFormTest.php b/tests/src/Functional/GroupTypeFormTest.php
+index 425dbf83..0fb20c20 100644
+--- a/tests/src/Functional/GroupTypeFormTest.php
++++ b/tests/src/Functional/GroupTypeFormTest.php
+@@ -101,7 +101,10 @@ class GroupTypeFormTest extends GroupBrowserTestBase {
+    * Tests granting the group creator a membership.
+    */
+   public function testCreatorMembership() {
+-    $edit = ['The group creator automatically becomes a member' => 1] + $this->commonValues;
++    $edit = [
++      'The group creator automatically becomes a member' => 1,
++      'Group creator must complete their membership' => 0,
++    ] + $this->commonValues;
+     $this->submitForm($edit, $this->setUpAddFormAndGetSubmitButton());
+ 
+     $group = $this->createGroup(['type' => $this->groupTypeId]);
+-- 
+GitLab
+
+
+From 9fb97884d8b31256b1fe08f54adc59e791fd7d14 Mon Sep 17 00:00:00 2001
+From: Kristiaan Van den Eynde <magentix@gmail.com>
+Date: Wed, 20 Sep 2023 16:11:33 +0200
+Subject: [PATCH 12/12] Final fixes to group type form test
+
+---
+ tests/src/Functional/GroupTypeFormTest.php | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/tests/src/Functional/GroupTypeFormTest.php b/tests/src/Functional/GroupTypeFormTest.php
+index 0fb20c20..d8f034e0 100644
+--- a/tests/src/Functional/GroupTypeFormTest.php
++++ b/tests/src/Functional/GroupTypeFormTest.php
+@@ -169,6 +169,7 @@ class GroupTypeFormTest extends GroupBrowserTestBase {
+   public function testNoAssignAdminRole() {
+     $edit = [
+       'The group creator automatically becomes a member' => 1,
++      'Group creator must complete their membership' => 0,
+       'Automatically configure an administrative role' => 1,
+       'Automatically assign this administrative role to group creators' => 0,
+     ] + $this->commonValues;
+@@ -192,6 +193,7 @@ class GroupTypeFormTest extends GroupBrowserTestBase {
+   public function testAssignAdminRole() {
+     $edit = [
+       'The group creator automatically becomes a member' => 1,
++      'Group creator must complete their membership' => 0,
+       'Automatically configure an administrative role' => 1,
+       'Automatically assign this administrative role to group creators' => 1,
+     ] + $this->commonValues;
+-- 
+GitLab
+

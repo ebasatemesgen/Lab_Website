@@ -48,7 +48,6 @@
       "1810148: Grouped exposed taxonomy term filters do not work": "https://www.drupal.org/files/issues/1810148-58.patch",
       "2924549: Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-04-04/2924549_26.patch",
       "2985199: Extensions in Multisite Directories Not Registered When Rebuilding Cache": "https://www.drupal.org/files/issues/2021-07-03/2985199-89.patch",
-      "3114467: Negate form value for condition plugins should be cast to boolean in validation": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch",
       "2828364: Default media stopped to render due to recursion protection being to protective": "https://www.drupal.org/files/issues/2018-03-22/increase_recursive_render_limit-2828364-15.patch",
       "3039185  Allow field blocks to display the configuration label when set in Layout Builder": "https://www.drupal.org/files/issues/2020-04-17/allow-field-blocks-to-display-label-in-layout-builder-3039185-22.patch",
       "2885370: SystemMainBlock::build does not always return array": "https://www.drupal.org/files/issues/systemmainblock_build-2885370-3.patch",
@@ -67,7 +66,6 @@
       "2968967: EntityReferenceItem::getRandomBundle returns key not value": "https://www.drupal.org/files/issues/2020-01-13/drupal-issue-2968967-07.patch",
       "2325899: UI fatal caused by views argument handlers no longer can provide their own default argument handling": "patches/2325899-3751-views-ui-fatal-caused.patch",
       "3315678: strnatcasecmp(): Passing null to parameter #2 ($string2) of type string is deprecated": "https://www.drupal.org/files/issues/2023-01-30/categorizing_plugin_error-3315678-16.patch",
-      "3390178: big_pipe sometimes fails to load blocks": "patches/big_pipe_3390178_2.patch",
       "3361177: An empty views pager offset field can cause a PHP type error to be triggered.": "https://www.drupal.org/files/issues/2023-05-30/3361177-8.patch"
     },
     "npm-asset/a11y-accordion-tabs": {

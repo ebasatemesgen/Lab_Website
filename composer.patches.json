@@ -185,6 +185,9 @@
     },
     "drupal/field_delimiter": {
       "3354408: Deprecation warning: Passing null to parameter #1 ($string) of type string is deprecated": "patches/3354408-field_delimiter-deprecation-warning.patch"
+    },
+    "drupal/better_exposed_filters": {
+      "2996297: Reset button does not use AJAX": "https://www.drupal.org/files/issues/2022-09-14/better_exposed_filters-reset_button_ajax_5x-2996297-74.patch"
     }
   }
 }

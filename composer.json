@@ -253,7 +253,6 @@
         "drupal/media_entity_download": "^2.2",
         "drupal/hal": "^2.0",
         "drupal/publishcontent": "^1.6",
-        "umn/h5p": "dev-main",
         "drupal/ckeditorheight": "^1.9",
         "umn/ckeditor_templates": "dev-main",
         "umn/file_download": "dev-main",
@@ -324,10 +323,6 @@
         "umn-radix-layouts": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/radix_layouts.git"
-        },
-        "umn-h5p": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/h5p.git"
         },
         "umn-semanticviews": {
             "type": "git",

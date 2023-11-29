@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e20e185662e84d5023cf76b6fff59e4",
+    "content-hash": "3b41a68a1d8a1246191f931baa9f52c8",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -8747,6 +8747,72 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/group_content_menu",
                 "issues": "https://www.drupal.org/project/issues/group_content_menu"
+            }
+        },
+        {
+            "name": "drupal/h5p",
+            "version": "2.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/h5p.git",
+                "reference": "2.0.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/h5p-2.0.0-alpha4.zip",
+                "reference": "2.0.0-alpha4",
+                "shasum": "f8124d71cdf8bcfe42fa970e5abb4e35ffd94856"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10",
+                "h5p/h5p-core": "1.24.4",
+                "h5p/h5p-editor": "1.24.4"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha4",
+                    "datestamp": "1699965281",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "catch",
+                    "homepage": "https://www.drupal.org/user/35733"
+                },
+                {
+                    "name": "falcon",
+                    "homepage": "https://www.drupal.org/user/530912"
+                },
+                {
+                    "name": "icc",
+                    "homepage": "https://www.drupal.org/user/823190"
+                },
+                {
+                    "name": "otacke",
+                    "homepage": "https://www.drupal.org/user/3566173"
+                },
+                {
+                    "name": "paalj",
+                    "homepage": "https://www.drupal.org/user/1091732"
+                },
+                {
+                    "name": "thomasmars",
+                    "homepage": "https://www.drupal.org/user/3205159"
+                }
+            ],
+            "description": "Drupal H5P Module.",
+            "homepage": "http://drupal.org/project/h5p",
+            "support": {
+                "source": "https://git.drupalcode.org/project/h5p"
             }
         },
         {
@@ -28509,27 +28575,6 @@
             "time": "2023-11-02T21:18:04+00:00"
         },
         {
-            "name": "umn/h5p",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "git@github.umn.edu:drupalmodules/h5p.git",
-                "reference": "dce4efb79ad2f7e1316de84c9cd93a454b1b0047"
-            },
-            "require": {
-                "h5p/h5p-core": "1.24.4",
-                "h5p/h5p-editor": "1.24.4"
-            },
-            "default-branch": true,
-            "type": "drupal-module",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Drupal H5P Module.",
-            "homepage": "http://drupal.org/project/h5p",
-            "time": "2023-08-11T15:34:19+00:00"
-        },
-        {
             "name": "umn/lightning_umn",
             "version": "dev-10.x-release",
             "source": {
@@ -29542,7 +29587,6 @@
         "umn/umn_superfish": 20,
         "drupal/field_defaults": 15,
         "umn/redirect_after_login": 20,
-        "umn/h5p": 20,
         "umn/ckeditor_templates": 20,
         "umn/file_download": 20,
         "umn/views_term_hierarchy_weight_field": 20,
@@ -29553,7 +29597,8 @@
         "drupal/entitygroupfield": 15,
         "drupal/http_response_headers": 5,
         "drupal/block_exclude_pages": 10,
-        "drupal/tb_megamenu": 15
+        "drupal/tb_megamenu": 15,
+        "drupal/h5p": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
@@ -29564,5 +29609,5 @@
     "platform-overrides": {
         "php": "8.1.24"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }

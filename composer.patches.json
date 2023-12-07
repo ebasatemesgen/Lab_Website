@@ -191,6 +191,9 @@
     },
     "drupal/better_exposed_filters": {
       "2996297: Reset button does not use AJAX": "https://www.drupal.org/files/issues/2022-09-14/better_exposed_filters-reset_button_ajax_5x-2996297-74.patch"
+    },
+    "drupal/stage_file_proxy": {
+      "3396633: Proxy does not work anymore": "https://www.drupal.org/files/issues/2023-11-20/3396633-16.patch"
     }
   }
 }

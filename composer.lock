@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8400471ae2460f48a2e4689c840429e2",
+    "content-hash": "d1f6e33181fccf77ef188e1017bd6931",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -28578,7 +28578,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "f4c5c7ef749ec85995cacc7251d8049c1c87d2d6"
+                "reference": "ef8b0dd9c7a085e6c45e05b501d21724452322f5"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -28587,7 +28587,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2023-10-19T19:57:17+00:00"
+            "time": "2023-11-20T16:19:34+00:00"
         },
         {
             "name": "umn/migrate_google_sheets",
@@ -29606,5 +29606,5 @@
     "platform-overrides": {
         "php": "8.1.24"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

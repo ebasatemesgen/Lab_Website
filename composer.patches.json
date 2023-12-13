@@ -194,6 +194,9 @@
     },
     "drupal/stage_file_proxy": {
       "3396633: Proxy does not work anymore": "https://www.drupal.org/files/issues/2023-11-20/3396633-16.patch"
+    },
+    "drupal/charts": {
+      "Make highcharts bypass preprocessing to avoid load order issue with aggregation": "patches/charts-libraries-bypass-preprocess.patch"
     }
   }
 }

@@ -1,0 +1,12 @@
+diff --git a/core/modules/ckeditor5/ckeditor5.ckeditor5.yml b/core/modules/ckeditor5/ckeditor5.ckeditor5.yml
+index 929992e498e27d9c4d0336587444202211eb8bfc..b6fa921e98727408acfb40df8761ddc3fc14254e 100644
+--- a/core/modules/ckeditor5/ckeditor5.ckeditor5.yml
++++ b/core/modules/ckeditor5/ckeditor5.ckeditor5.yml
+@@ -379,6 +379,7 @@ ckeditor5_list:
+     plugins:
+       - list.DocumentList
+       - list.DocumentListProperties
++      - list.AdjacentListsSupport
+     config:
+       list:
+         properties:

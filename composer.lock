@@ -28807,12 +28807,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/umn-drupal/acquia-api-wrapper.git",
-                "reference": "b382cc03dad60be3859f854ee880165799a4fef8"
+                "reference": "afadc77f635192c3d454fdb4451c99a8b6303ed8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/umn-drupal/acquia-api-wrapper/zipball/b382cc03dad60be3859f854ee880165799a4fef8",
-                "reference": "b382cc03dad60be3859f854ee880165799a4fef8",
+                "url": "https://api.github.com/repos/umn-drupal/acquia-api-wrapper/zipball/afadc77f635192c3d454fdb4451c99a8b6303ed8",
+                "reference": "afadc77f635192c3d454fdb4451c99a8b6303ed8",
                 "shasum": ""
             },
             "require": {
@@ -28836,7 +28836,7 @@
                 "source": "https://github.com/umn-drupal/acquia-api-wrapper/tree/10.x-dev",
                 "issues": "https://github.com/umn-drupal/acquia-api-wrapper/issues"
             },
-            "time": "2023-12-20T17:16:35+00:00"
+            "time": "2023-12-20T18:24:13+00:00"
         },
         {
             "name": "vardot/blazy",

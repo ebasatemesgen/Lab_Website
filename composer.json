@@ -12,442 +12,310 @@
         "kint-php/kint": "^4.2"
     },
     "require": {
-        "composer/installers": "^2.2",
-        "cweagans/composer-patches": "^1.6.4",
-        "drupal/paragraphs": "^1.10",
-        "drupal/back_to_top": "^3.0",
-        "drupal/restui": "^1.13",
-        "drupal/admin_toolbar": "^3.3",
-        "drupal/address": "^1.0@RC",
-        "drupal/robotstxt": "^1.0",
-        "umn/dors_migrate": "dev-3.x-dev",
-        "drupal/redirect": "^1.6",
-        "drupal/imagick": "^1.0",
-        "drupal/slick": "^2.2",
-        "drupal/slick_views": "^2.3",
-        "drupal/slick_paragraphs": "^2.0",
-        "kenwheeler/slick": "^1.6",
-        "drupal/slick_extras": "^1.0@beta",
-        "dinbror/blazy": "1.8.2",
-        "gdsmith/easing": "^1.4",
-        "drupal/field_group": "^3.0",
-        "drupal/block_class": "^2.0",
-        "drupal/webform": "^6.2@beta",
-        "drupal/workbench_access": "^2.0",
-        "drupal/honeypot": "^2.1",
-        "drupal/diff": "^1.0@RC",
-        "drupal/migrate_plus": "^6.0",
-        "drupal/migrate_tools": "^6.0",
-        "drupal/iframe": "^2.10",
-        "drupal/metatag": "^1.10",
-        "drupal/config_inspector": "^2.0",
-        "drupal/auto_entitylabel": "^3.0-beta2",
-        "drupal/entityqueue": "^1.0",
-        "drupal/editor_advanced_link": "^2.0",
-        "drupal/acquia_purge": "^1.3",
-        "drupal/stage_file_proxy": "^2.0",
-        "drupal/shield": "^1.1",
-        "drupal/memcache": "^2.1",
-        "drupal/colorbox": "^2.0",
-        "onlyextart/colorbox": "dev-master",
+        "algolia/places": "*",
+        "bower-asset/cropper": "^4.1",
         "bower-asset/hammerjs": "^2.0",
-        "drupal/migrate_source_csv": "^3.4",
-        "drupal/entity_print": "^2.6",
-        "tecnickcom/tcpdf": "~6",
-        "mikehaertl/phpwkhtmltopdf": "~2.1",
-        "drupal/config_update": "^2.0@alpha",
-        "drupal/viewsreference": "^2.0",
-        "drupal/views_taxonomy_term_name_depth": "^7.0",
-        "drupal/better_exposed_filters": "^6.0",
-        "drupal/fontawesome": "^2.1",
-        "drupal/menu_block": "^1.10",
-        "drupal/easy_breadcrumb": "^2.0",
-        "drupal/checklistapi": "^2.0",
-        "drupal/siteimprove": "^2.0",
-        "drupal/tablefield": "^2.1",
-        "drupal/menu_admin_per_menu": "^1.0",
-        "symfony/cache": "^6.2.7",
-        "drupal/module_filter": "^4.0",
-        "drupal/layout_builder_restrictions": "^2.0",
-        "drupal/twig_tweak": "^3.1",
-        "drupal/fakeobjects": "^1.0",
-        "drupal/captcha": "^2.0",
-        "drupal/recaptcha": "^3.0",
-        "drupal/group": "^2.1",
-        "ckeditor/fakeobjects": "^4.10",
-        "google/charts": "45",
-        "drush/drush": "^11.0",
-        "drupal/layout_builder_modal": "^1.1",
-        "drupal/google_tag": "^2.0",
         "bower-asset/highcharts": "^11",
-        "highcharts/highcharts": "^11.1",
-        "highcharts/more": "^11.1",
-        "highcharts/exporting": "^11.1",
-        "highcharts/export-data": "^11.1",
-        "highcharts/accessibility": "^11.1",
-        "highcharts/3d": "^11.1",
-        "drupal/environment_indicator": "^4.0",
-        "drupal/views_bulk_operations": "^4.0",
-        "npm-asset/a11y-accordion-tabs": "^1.0",
-        "drupal/views_timelinejs": "^4.0",
-        "drupal/charts": "^5.0",
-        "drupal/views_autocomplete_filters": "^1.2",
-        "drupal/views_contextual_filters_or": "^1.3",
-        "drupal/addtoany": "^2.0",
-        "drupal/embed": "^1.5",
-        "drupal/smart_trim": "^2.0",
-        "jsanahuja/jqueryinstagramfeed": "^3.0",
-        "drupal/geofield": "^1.11",
-        "drupal/menu_breadcrumb": "^2.0@alpha",
-        "drupal/simple_sitemap": "^4.0",
-        "drupal/geocoder": "^4.4",
-        "drupal/views_block_placement_exposed_form_defaults": "^1.0@RC",
-        "drupal/mysql56": "^1.0",
-        "drupal/jquery_ui_accordion": "^2.0",
         "bower-asset/jquery.mmenu": "^8.5",
-        "mehrpadin/superfish": "2.x-dev",
-        "drupal/views_infinite_scroll": "^2.0",
+        "bower-asset/slick-carousel": "^1.8",
+        "chart-js/chart-js": "^3.9",
+        "choices/choices": "*",
+        "ckeditor/anchor_link": "^4.20",
+        "ckeditor/fakeobjects": "^4.10",
+        "ckeditor/templates": "^4.10",
+        "codemirror/codemirror": "*",
+        "composer/installers": "^2.2",
+        "consolidation/site-process": "^5.2",
+        "cweagans/composer-patches": "^1.6.4",
+        "dinbror/blazy": "1.8.2",
+        "drupal-library/ckeditor5-anchor-drupal": "^0.0.0",
+        "drupal/a11y_paragraphs_tabs": "^2.0@beta",
+        "drupal/acquia_connector": "^4.0",
+        "drupal/acquia_purge": "^1.3",
+        "drupal/acquia_search": "^3.1",
+        "drupal/address": "^1.0@RC",
+        "drupal/addtoany": "^2.0",
+        "drupal/admin_toolbar": "^3.3",
+        "drupal/advagg": "^6.0@alpha",
+        "drupal/advanced_text_formatter": "^3.0@RC",
+        "drupal/aggregator": "^2.0",
+        "drupal/allowed_formats": "^2.0",
+        "drupal/anchor_link": "3.0.x-dev@dev",
+        "drupal/antibot": "^2.0",
+        "drupal/auditfiles": "^4.1@beta",
+        "drupal/auto_entitylabel": "^3.0-beta2",
+        "drupal/back_to_top": "^3.0",
+        "drupal/better_exposed_filters": "^6.0",
+        "drupal/block_class": "^2.0",
+        "drupal/block_exclude_pages": "^2.1@beta",
         "drupal/block_visibility_groups": "^2.0",
-        "drupal/views_conditional": "^1.2",
-        "drupal/mathjax": "^4.0",
-        "drupal/jquery_ui_tabs": "^2.0",
-        "drupal/jquery_ui_tooltip": "^2.0",
-        "drupal/schema_metatag": "^2.1",
-        "drupal/slick_entityreference": "^2.0",
-        "drupal/userprotect": "^1.1",
-        "geocoder-php/mapquest-provider": "^4.1",
-        "geocoder-php/google-maps-provider": "^4.5",
-        "geocoder-php/tomtom-provider": "^4.1",
-        "geocoder-php/bing-maps-provider": "^4.1",
-        "drupal/focal_point": "^2.0",
+        "drupal/captcha": "^2.0",
+        "drupal/charts": "^5.0",
+        "drupal/checklistapi": "^2.0",
+        "drupal/ckeditor_link_styles": "^1.0",
+        "drupal/ckeditorheight": "^1.9",
+        "drupal/color": "^1.0",
+        "drupal/colorbox": "^2.0",
+        "drupal/comment_notify": "^1.4",
         "drupal/config_filter": "^2.2",
         "drupal/config_ignore": "^2.2",
-        "drupal/antibot": "^2.0",
-        "drupal/extlink": "^1.5",
-        "drupal/simplify": "^2.0",
-        "drupal/config_split": "^2.0@RC",
-        "drupal/core-composer-scaffold": "^10.0",
-        "drupal/social_media_links": "^2.7",
-        "drupal/views_aggregator": "^2.0",
-        "drupal/fpa": "^4.0",
-        "drupal/advagg": "^6.0@alpha",
-        "drupal/unpublished_node_permissions": "^1.1",
-        "drupal/content_moderation_notifications": "^3.3",
-        "ckeditor/templates": "^4.10",
-        "drupal/token_filter": "^2.0",
-        "drupal/libraries": "^4.0",
-        "drupal/entity_reference_revisions": "^1.9",
-        "drupal/scn": "^2.0",
-        "drupal/allowed_formats": "^2.0",
-        "drupal/view_mode_page": "^4.0",
-        "drupal/umn_dm_storage": "2.1.8",
-        "drupal/field_permissions": "^1.1",
-        "npm-asset/jquery-ui-touch-punch": "^0.2.3",
-        "drupal/jquery_ui_checkboxradio": "^2.0",
-        "drupal/message": "^1.2",
-        "drupal/twitter_api_block": "^4.0",
-        "drupal/limited_field_widgets": "^2.0",
-        "drupal/imagemagick": "^3.2",
-        "drupal/paragraphs_features": "^2.0@beta",
-        "drupal/smart_date": "^4.0",
-        "drupal/view_mode_switch": "^2.0",
-        "drupal/search_api_solr": "^4.2",
-        "drupal/acquia_search": "^3.1",
-        "drupal/svg_image": "^3.0",
-        "drupal/content_lock": "^2.2",
-        "drupal/file_delete": "^2.0",
-        "drupal/exclude_node_title": "^1.2",
-        "drupal/eva": "^3.0",
-        "ext-dom": "*",
-        "drupal/acquia_connector": "^4.0",
-        "drupal/core": "^10.0.0",
-        "drupal/inline_entity_form": "^1.0-rc7",
-        "drupal/lightning_core": "^5.8",
-        "drupal/lightning_workflow": "^3.16",
-        "drupal/page_manager": "^4.0-beta6",
-        "drupal/search_api": "^1.28",
-        "drupal/seckit": "^2.0",
-        "drupal/purge_invalidation_form": "^2.0",
-        "maennchen/zipstream-php": "^2.0",
-        "drupal/crop": "^2.1",
-        "masonry/masonry": "^4.2",
-        "imagesloaded/imagesloaded": "^4.1",
-        "drupal/toolbar_menu": "^3.0",
-        "drupal/views_exposed_filter_blocks": "^1.1",
-        "drupal/google_api_client": "^4.0",
-        "drupal/facets": "^2.0",
-        "drupal/advanced_text_formatter": "^3.0@RC",
-        "drupal/geolocation": "^3.9",
-        "drupal/entity_class_formatter": "^2.0",
-        "geocoder-php/mapbox-provider": "^1.4",
-        "drupal/ctools": "^3.11",
-        "chart-js/chart-js": "^3.9",
-        "drupal/override_node_options": "^2.6",
-        "drupal/entity": "^1.4",
-        "drupal/jquery_ui_touch_punch": "^1.1",
-        "drupal/moderation_dashboard": "^1.0",
-        "drupal/purge": "^3.4",
-        "drupal/layout_builder_styles": "^2.0",
-        "drupal/node_read_time": "^1.6",
-        "drupal/views_bulk_edit": "^2.7",
-        "drupal/workbench_menu_access": "^2.0",
-        "drupal/oembed_providers": "^2.1",
-        "drupal/time_range": "^9.0",
+        "drupal/config_inspector": "^2.0",
         "drupal/config_pages": "^2.11",
-        "drupal/field_redirection": "^2.2",
-        "drupal/entity_pager": "^1.0",
-        "consolidation/site-process": "^5.2",
-        "jgallen23/toc": "^0.3.2",
-        "drupal/anchor_link": "3.0.x-dev@dev",
-        "ckeditor/anchor_link": "^4.20",
-        "joeldbirch/superfish": "^1.7",
-        "drupal/quick_node_clone": "^1.16",
-        "drupal/lightning_layout": "^2.14",
-        "drupal/comment_notify": "^1.4",
-        "drupal/roleassign": "^2.0",
-        "drupal/views_data_export": "^1.3",
-        "umn/lightning_umn": "dev-10.x-build",
-        "umn/umn_search": "dev-9-dev",
-        "umn/crmform": "dev-d9",
-        "umn/folwell": "dev-10.x-build",
-        "umn/bootstrap_umn": "dev-10.x-build",
-        "umn/umn_escape_button": "dev-master",
-        "umn/umn_self_help_guides": "dev-master",
-        "umn/umn_features": "dev-develop",
-        "umn/folwell_components": "dev-10.x-build",
-        "umd/umd_footer_block": "dev-master",
-        "umndrupal/acquia_api": "dev-10.x-dev",
-        "drupal/lightning_media": "^4.10",
-        "npm-asset/dropzone": "^5.9",
-        "bower-asset/cropper": "^4.1",
-        "bower-asset/slick-carousel": "^1.8",
-        "drupal/select_or_other": "^4.1",
-        "drupal/linkit": "^6.0@RC",
-        "drupal/aggregator": "^2.0",
-        "drupal/rdf": "^2.1",
-        "umn/radix_layouts": "dev-master",
-        "drupal/a11y_paragraphs_tabs": "^2.0@beta",
-        "oomphinc/composer-installers-extender": "^2.0",
-        "drupal/permissions_by_term": "^3.1",
-        "drupal/shs": "^2.0@RC",
-        "drupal/auditfiles": "^4.1@beta",
-        "drupal/poll": "^1.6",
-        "drupal/color": "^1.0",
-        "drupal/jquery_ui_effects": "^2.0",
-        "drupal/samlauth": "^3.8",
-        "drupal/responsive_menu": "dev-3297964-automated-drupal-10-compatibility-fixes",
-        "umn/ckeditor_modal": "dev-10.x-dev",
-        "drupal/features": "^3.13",
-        "umn/umn_superfish": "dev-9-dev",
-        "npm-asset/fortawesome--fontawesome": "^6.4",
-        "drupal/purge_file": "^1.1",
-        "drupal/views_field_formatter": "^4.0",
-        "drupal/migrate_file_to_media": "^2.0",
-        "umn/cog": "^1.16",
-        "drupal/lightning_api": "^4.10",
-        "drupal/field_defaults": "^2.0@alpha",
-        "drupal/ckeditor_link_styles": "^1.0",
-        "drupal/flexible_permissions": "^1.0",
-        "drupal/path_redirect_import": "^2.0",
-        "umn/redirect_after_login": "dev-main",
-        "drupal/media_entity_download": "^2.2",
-        "drupal/hal": "^2.0",
-        "drupal/publishcontent": "^1.6",
-        "drupal/ckeditorheight": "^1.9",
-        "umn/ckeditor_templates": "dev-main",
-        "umn/file_download": "dev-main",
-        "umn/views_term_hierarchy_weight_field": "dev-main",
-        "umn/semanticviews": "dev-main",
-        "drupal/superfish": "^1.6",
-        "umn/migrate_google_sheets": " dev-main",
-        "drupal/dynamic_entity_reference": "^3.0",
-        "drupal/seo_checklist": "^5.2",
-        "drupal/toc_js": "^2.1",
-        "drupal/fontyourface": "3.x-dev@dev",
+        "drupal/config_split": "^2.0@RC",
+        "drupal/config_update": "^2.0@alpha",
+        "drupal/contact_emails": "^1.21",
+        "drupal/content_lock": "^2.2",
+        "drupal/content_moderation_notifications": "^3.3",
+        "drupal/core": "^10.0.0",
+        "drupal/core-composer-scaffold": "^10.0",
+        "drupal/core_context": "^1.1",
+        "drupal/crop": "^2.1",
+        "drupal/ctools": "^3.11",
+        "drupal/diff": "^1.0@RC",
         "drupal/digitalmeasures_migrate": "2.0.x-dev@dev",
-        "drupal/masonry_views": "^4.0",
-        "drupal/umn_dm_import": "^2",
-        "drupal/textarea_widget_for_text": "^1.2",
-        "drupal/search_api_autocomplete": "^1.7",
-        "drupal/media_revisions_ui": "^2.1",
-        "drupal/field_delimiter": "^2.0",
-        "drupal/group_content_menu": "^2.0",
-        "drupal/entitygroupfield": "^2.0@alpha",
+        "drupal/dynamic_entity_reference": "^3.0",
+        "drupal/easy_breadcrumb": "^2.0",
         "drupal/eca": "^1.1",
         "drupal/eca_cm": "^1.0",
+        "drupal/editor_advanced_link": "^2.0",
+        "drupal/embed": "^1.5",
+        "drupal/entity": "^1.4",
+        "drupal/entity_class_formatter": "^2.0",
+        "drupal/entity_pager": "^1.0",
+        "drupal/entity_print": "^2.6",
+        "drupal/entity_reference_revisions": "^1.9",
+        "drupal/entitygroupfield": "^2.0@alpha",
+        "drupal/entityqueue": "^1.0",
+        "drupal/environment_indicator": "^4.0",
+        "drupal/eva": "^3.0",
+        "drupal/exclude_node_title": "^1.2",
+        "drupal/extlink": "^1.5",
+        "drupal/facets": "^2.0",
+        "drupal/fakeobjects": "^1.0",
+        "drupal/features": "^3.13",
+        "drupal/field_defaults": "^2.0@alpha",
+        "drupal/field_delimiter": "^2.0",
+        "drupal/field_group": "^3.0",
+        "drupal/field_permissions": "^1.1",
+        "drupal/field_redirection": "^2.2",
+        "drupal/file_delete": "^2.0",
+        "drupal/flexible_permissions": "^1.0",
+        "drupal/focal_point": "^2.0",
+        "drupal/fontawesome": "^2.1",
+        "drupal/fontyourface": "3.x-dev@dev",
+        "drupal/fpa": "^4.0",
+        "drupal/geocoder": "^4.4",
+        "drupal/geofield": "^1.11",
+        "drupal/geolocation": "^3.9",
+        "drupal/google_api_client": "^4.0",
+        "drupal/google_tag": "^2.0",
+        "drupal/group": "^2.1",
+        "drupal/group_content_menu": "^2.0",
+        "drupal/h5p": "^2.0@alpha",
+        "drupal/hal": "^2.0",
+        "drupal/honeypot": "^2.1",
         "drupal/http_response_headers": "^2.0@RC",
-        "drupal/block_exclude_pages": "^2.1@beta",
-        "drupal/tb_megamenu": "^3.0@alpha",
-        "drupal/contact_emails": "^1.21",
-        "phpmailer/phpmailer": "^6.8",
-        "drupal/webform_group": "^2.0",
-        "drupal/core_context": "^1.1",
-        "codemirror/codemirror": "^5.65",
-        "jquery/inputmask": "^5.0",
-        "jquery/intl-tel-input": "^17.0",
-        "jquery/rateit": "^1.1",
-        "jquery/select2": "^4.0",
-        "jquery/textcounter": "^0.9.1",
-        "jquery/timepicker": "^1.14",
-        "progress-tracker/progress-tracker": "^2.0",
-        "signature_pad/signature_pad": "^2.3",
-        "tabby/tabby": "^12.0",
+        "drupal/iframe": "^2.10",
+        "drupal/imagemagick": "^3.2",
+        "drupal/imagick": "^1.0",
+        "drupal/inline_entity_form": "^1.0-rc7",
+        "drupal/jquery_ui_accordion": "^2.0",
+        "drupal/jquery_ui_checkboxradio": "^2.0",
+        "drupal/jquery_ui_effects": "^2.0",
+        "drupal/jquery_ui_tabs": "^2.0",
+        "drupal/jquery_ui_tooltip": "^2.0",
+        "drupal/jquery_ui_touch_punch": "^1.1",
+        "drupal/layout_builder_modal": "^1.1",
+        "drupal/layout_builder_restrictions": "^2.0",
+        "drupal/layout_builder_styles": "^2.0",
+        "drupal/libraries": "^4.0",
+        "drupal/lightning_api": "^4.10",
+        "drupal/lightning_core": "^5.8",
+        "drupal/lightning_layout": "^2.14",
+        "drupal/lightning_media": "^4.10",
+        "drupal/lightning_workflow": "^3.16",
+        "drupal/limited_field_widgets": "^2.0",
+        "drupal/linkit": "^6.0@RC",
+        "drupal/masonry_views": "^4.0",
+        "drupal/mathjax": "^4.0",
+        "drupal/media_entity_download": "^2.2",
+        "drupal/media_revisions_ui": "^2.1",
+        "drupal/memcache": "^2.1",
+        "drupal/menu_admin_per_menu": "^1.0",
+        "drupal/menu_block": "^1.10",
+        "drupal/menu_breadcrumb": "^2.0@alpha",
+        "drupal/message": "^1.2",
+        "drupal/metatag": "^1.10",
+        "drupal/migrate_file_to_media": "^2.0",
+        "drupal/migrate_plus": "^6.0",
+        "drupal/migrate_source_csv": "^3.4",
+        "drupal/migrate_tools": "^6.0",
+        "drupal/moderation_dashboard": "^1.0",
+        "drupal/module_filter": "^4.0",
+        "drupal/mysql56": "^1.0",
+        "drupal/node_read_time": "^1.6",
+        "drupal/oembed_providers": "^2.1",
+        "drupal/override_node_options": "^2.6",
+        "drupal/page_manager": "^4.0-beta6",
+        "drupal/paragraphs": "^1.10",
+        "drupal/paragraphs_features": "^2.0@beta",
+        "drupal/path_redirect_import": "^2.0",
+        "drupal/permissions_by_term": "^3.1",
+        "drupal/poll": "^1.6",
+        "drupal/publishcontent": "^1.6",
+        "drupal/purge": "^3.4",
+        "drupal/purge_file": "^1.1",
+        "drupal/purge_invalidation_form": "^2.0",
+        "drupal/quick_node_clone": "^1.16",
+        "drupal/rdf": "^2.1",
+        "drupal/recaptcha": "^3.0",
+        "drupal/redirect": "^1.6",
+        "drupal/responsive_menu": "dev-3297964-automated-drupal-10-compatibility-fixes",
+        "drupal/restui": "^1.13",
+        "drupal/robotstxt": "^1.0",
+        "drupal/roleassign": "^2.0",
+        "drupal/samlauth": "^3.8",
+        "drupal/schema_metatag": "^2.1",
+        "drupal/scn": "^2.0",
+        "drupal/search_api": "^1.28",
+        "drupal/search_api_autocomplete": "^1.7",
+        "drupal/search_api_solr": "^4.2",
         "drupal/search_api_spellcheck": "^4.0",
-        "drupal-library/ckeditor5-anchor-drupal": "^0.0.0",
-        "drupal/h5p": "^2.0@alpha"
+        "drupal/seckit": "^2.0",
+        "drupal/select_or_other": "^4.1",
+        "drupal/seo_checklist": "^5.2",
+        "drupal/shield": "^1.1",
+        "drupal/shs": "^2.0@RC",
+        "drupal/simple_sitemap": "^4.0",
+        "drupal/simplify": "^2.0",
+        "drupal/siteimprove": "^2.0",
+        "drupal/slick": "^2.2",
+        "drupal/slick_entityreference": "^2.0",
+        "drupal/slick_extras": "^1.0@beta",
+        "drupal/slick_paragraphs": "^2.0",
+        "drupal/slick_views": "^2.3",
+        "drupal/smart_date": "^4.0",
+        "drupal/smart_trim": "^2.0",
+        "drupal/social_media_links": "^2.7",
+        "drupal/stage_file_proxy": "^2.0",
+        "drupal/superfish": "^1.6",
+        "drupal/svg_image": "^3.0",
+        "drupal/tablefield": "^2.1",
+        "drupal/tb_megamenu": "^3.0@alpha",
+        "drupal/textarea_widget_for_text": "^1.2",
+        "drupal/time_range": "^9.0",
+        "drupal/toc_js": "^2.1",
+        "drupal/token_filter": "^2.0",
+        "drupal/toolbar_menu": "^3.0",
+        "drupal/twig_tweak": "^3.1",
+        "drupal/twitter_api_block": "^4.0",
+        "drupal/umn_dm_import": "^2",
+        "drupal/umn_dm_storage": "2.1.8",
+        "drupal/unpublished_node_permissions": "^1.1",
+        "drupal/userprotect": "^1.1",
+        "drupal/view_mode_page": "^4.0",
+        "drupal/view_mode_switch": "^2.0",
+        "drupal/views_aggregator": "^2.0",
+        "drupal/views_autocomplete_filters": "^1.2",
+        "drupal/views_block_placement_exposed_form_defaults": "^1.0@RC",
+        "drupal/views_bulk_edit": "^2.7",
+        "drupal/views_bulk_operations": "^4.0",
+        "drupal/views_conditional": "^1.2",
+        "drupal/views_contextual_filters_or": "^1.3",
+        "drupal/views_data_export": "^1.3",
+        "drupal/views_exposed_filter_blocks": "^1.1",
+        "drupal/views_field_formatter": "^4.0",
+        "drupal/views_infinite_scroll": "^2.0",
+        "drupal/views_taxonomy_term_name_depth": "^7.0",
+        "drupal/views_timelinejs": "^4.0",
+        "drupal/viewsreference": "^2.0",
+        "drupal/webform": "^6.2@beta",
+        "drupal/webform_group": "^2.0",
+        "drupal/workbench_access": "^2.0",
+        "drupal/workbench_menu_access": "^2.0",
+        "drush/drush": "^11.0",
+        "ext-dom": "*",
+        "gdsmith/easing": "^1.4",
+        "geocoder-php/bing-maps-provider": "^4.1",
+        "geocoder-php/google-maps-provider": "^4.5",
+        "geocoder-php/mapbox-provider": "^1.4",
+        "geocoder-php/mapquest-provider": "^4.1",
+        "geocoder-php/tomtom-provider": "^4.1",
+        "google/charts": "45",
+        "highcharts/3d": "^11.1",
+        "highcharts/accessibility": "^11.1",
+        "highcharts/export-data": "^11.1",
+        "highcharts/exporting": "^11.1",
+        "highcharts/highcharts": "^11.1",
+        "highcharts/more": "^11.1",
+        "imagesloaded/imagesloaded": "^4.1",
+        "jgallen23/toc": "^0.3.2",
+        "joeldbirch/superfish": "^1.7",
+        "jquery/inputmask": "*",
+        "jquery/intl-tel-input": "*",
+        "jquery/rateit": "*",
+        "jquery/select2": "*",
+        "jquery/textcounter": "*",
+        "jquery/timepicker": "*",
+        "jsanahuja/jqueryinstagramfeed": "^3.0",
+        "kenwheeler/slick": "^1.6",
+        "maennchen/zipstream-php": "^2.0",
+        "masonry/masonry": "^4.2",
+        "mehrpadin/superfish": "2.x-dev",
+        "mikehaertl/phpwkhtmltopdf": "~2.1",
+        "npm-asset/a11y-accordion-tabs": "^1.0",
+        "npm-asset/dropzone": "^5.9",
+        "npm-asset/fortawesome--fontawesome": "^6.4",
+        "npm-asset/jquery-ui-touch-punch": "^0.2.3",
+        "onlyextart/colorbox": "dev-master",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "phpmailer/phpmailer": "^6.8",
+        "popperjs/popperjs": "*",
+        "progress-tracker/progress-tracker": "*",
+        "signature_pad/signature_pad": "*",
+        "symfony/cache": "^6.2.7",
+        "tabby/tabby": "*",
+        "tecnickcom/tcpdf": "~6",
+        "tippyjs/tippyjs": "*",
+        "umd/umd_footer_block": "dev-master",
+        "umn/bootstrap_umn": "dev-10.x-build",
+        "umn/ckeditor_modal": "dev-10.x-dev",
+        "umn/ckeditor_templates": "dev-main",
+        "umn/cog": "^1.16",
+        "umn/crmform": "dev-d9",
+        "umn/dors_migrate": "dev-3.x-dev",
+        "umn/file_download": "dev-main",
+        "umn/folwell": "dev-10.x-build",
+        "umn/folwell_components": "dev-10.x-build",
+        "umn/lightning_umn": "dev-10.x-build",
+        "umn/migrate_google_sheets": " dev-main",
+        "umn/radix_layouts": "dev-master",
+        "umn/redirect_after_login": "dev-main",
+        "umn/semanticviews": "dev-main",
+        "umn/umn_escape_button": "dev-master",
+        "umn/umn_features": "dev-develop",
+        "umn/umn_search": "dev-9-dev",
+        "umn/umn_self_help_guides": "dev-master",
+        "umn/umn_superfish": "dev-9-dev",
+        "umn/views_term_hierarchy_weight_field": "dev-main",
+        "umndrupal/acquia_api": "dev-10.x-dev"
     },
     "repositories": {
-        "redirect_after_login": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/redirect_after_login.git"
-        },
-        "drupal-packagist": {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8",
-            "exclude": [
-              "drupal/responsive_menu"
-              ]
-        },
-        "asset-packagist": {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        },
-        "umn-features": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/d8-features.git"
-        },
-        "shadow-responsive-menu": {
-            "type": "git",
-            "url": "https://git.drupalcode.org/issue/responsive_menu-3297964.git"
-        },
-        "umn-radix-layouts": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/radix_layouts.git"
-        },
-        "umn-semanticviews": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/semanticviews.git"
-        },
-        "umn-migrate_google_sheets": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/migrate_google_sheets.git"
-        },
-        "umn-field-delimiter": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/field_delimiter.git"
-        },
-        "lightning_umn": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git"
-        },
-        "cog-umn": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalthemes/cog-umn.git"
-        },
-        "bootstrap-umn": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalthemes/bootstrap-umn.git"
-        },
-        "umn-search": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/umn-search.git"
-        },
-        "crmform": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/crmform"
-        },
-        "umd-footer": {
-            "type": "git",
-            "url": "git@github.umn.edu:UMD-wwwteam/umd_footer_block.git"
-        },
-        "dors_migrate": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/dors_migrate.git"
-        },
-        "folwell": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalthemes/folwell.git"
-        },
-        "umn_folwell_components": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/folwell_components.git"
-        },
-        "umn_superfish": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/umn_superfish.git"
-        },
-        "umn_dm_migrate": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/umn_dm_migrate.git"
-        },
-        "umn_dm_storage": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git"
-        },
-        "umn_dm_import": {
-            "type": "git",
-            "url": "git@github.umn.edu:hinte019/umn_dm_import.git"
-        },
-        "umn_ckeditor_templates": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/ckeditor_templates.git"
-        },
-        "umn_file_download": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/file_download.git"
-        },
-        "umn_views_term_hierarchy_weight_field": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/views_term_hierarchy_weight_field.git"
-        },
-        "blazy": {
+        "algolia.places": {
+            "_webform": true,
             "type": "package",
             "package": {
-                "name": "dinbror/blazy",
+                "name": "algolia/places",
+                "version": "1.19.0",
                 "type": "drupal-library",
-                "version": "1.8.2",
-                "source": {
-                    "url": "https://github.com/dinbror/blazy.git",
-                    "type": "git",
-                    "reference": "1.8.2"
-                }
-            }
-        },
-        "jqueryinstagramfeed": {
-            "type": "package",
-            "package": {
-                "name": "jsanahuja/jqueryinstagramfeed",
-                "version": "3.0.4",
-                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "algolia.places"
+                },
                 "dist": {
-                    "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/3.0.4.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        "jquery.easing": {
-            "type": "package",
-            "package": {
-                "name": "gdsmith/easing",
-                "type": "drupal-library",
-                "version": "1.4.2",
-                "source": {
-                    "url": "https://github.com/gdsmith/jquery.easing.git",
-                    "type": "git",
-                    "reference": "1.4.2"
-                }
-            }
-        },
-        "fakeobjects": {
-            "type": "package",
-            "package": {
-                "name": "ckeditor/fakeobjects",
-                "type": "drupal-library",
-                "version": "4.20.0",
-                "dist": {
-                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.20.0.zip",
-                    "type": "zip"
-                }
+                    "url": "https://registry.npmjs.org/places.js/-/places.js-1.19.0.tgz",
+                    "type": "tar"
+                },
+                "license": "MIT"
             }
         },
         "anchor_link": {
@@ -465,6 +333,82 @@
                 }
             }
         },
+        "api_wrapper": {
+            "type": "vcs",
+            "url": "https://github.com/umn-drupal/acquia-api-wrapper"
+        },
+        "asset-packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "blazy": {
+            "type": "package",
+            "package": {
+                "name": "dinbror/blazy",
+                "type": "drupal-library",
+                "version": "1.8.2",
+                "source": {
+                    "url": "https://github.com/dinbror/blazy.git",
+                    "type": "git",
+                    "reference": "1.8.2"
+                }
+            }
+        },
+        "bootstrap-umn": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalthemes/bootstrap-umn.git"
+        },
+        "chart_js": {
+            "type": "package",
+            "package": {
+                "name": "chart-js/chart-js",
+                "version": "3.9.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "chartjs"
+                },
+                "dist": {
+                    "url": "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~2.0"
+                }
+            }
+        },
+        "choices": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "choices/choices",
+                "version": "9.0.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "choices"
+                },
+                "dist": {
+                    "url": "https://github.com/Choices-js/Choices/archive/refs/tags/v9.0.1.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "ckeditor5-anchor-drupal": {
+            "type": "package",
+            "package": {
+                "name": "drupal-library/ckeditor5-anchor-drupal",
+                "version": "0.0.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://www.drupal.org/files/issues/2023-10-25/ckeditor5-anchor-drupal_0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "ckeditor_modal": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/ckeditor_modal.git"
+        },
         "ckeditor_templates": {
             "type": "package",
             "package": {
@@ -477,20 +421,65 @@
                 }
             }
         },
-        "superfish": {
+        "codemirror": {
+            "_webform": true,
             "type": "package",
             "package": {
-                "name": "joeldbirch/superfish",
+                "name": "codemirror/codemirror",
+                "version": "5.65.12",
                 "type": "drupal-library",
                 "extra": {
-                    "installer-name": "superfish/dist"
+                    "installer-name": "codemirror"
                 },
-                "version": "1.7.10",
                 "dist": {
-                    "url": "https://api.github.com/repos/joeldbirch/superfish/zipball",
+                    "url": "https://github.com/components/codemirror/archive/refs/tags/5.65.12.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "cog": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/cog.git"
+        },
+        "cog-umn": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalthemes/cog-umn.git"
+        },
+        "crmform": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/crmform"
+        },
+        "deploy_scripts": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalplatform/drupal-deploy-scripts.git"
+        },
+        "dors_migrate": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/dors_migrate.git"
+        },
+        "drupal-packagist": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8",
+            "exclude": [
+                "drupal/responsive_menu"
+            ]
+        },
+        "fakeobjects": {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/fakeobjects",
+                "type": "drupal-library",
+                "version": "4.20.0",
+                "dist": {
+                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.20.0.zip",
                     "type": "zip"
                 }
             }
+        },
+        "folwell": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalthemes/folwell.git"
         },
         "google_charts": {
             "type": "package",
@@ -510,17 +499,71 @@
                 }
             }
         },
-        "chart_js": {
+        "highcharts_3d": {
             "type": "package",
             "package": {
-                "name": "chart-js/chart-js",
-                "version": "3.9.1",
+                "name": "highcharts/3d",
+                "version": "11.1.0",
                 "type": "drupal-library",
                 "extra": {
-                    "installer-name": "chartjs"
+                    "installer-name": "highcharts_3d"
                 },
                 "dist": {
-                    "url": "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js",
+                    "url": "https://code.highcharts.com/11.1.0/highcharts-3d.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~2.0"
+                }
+            }
+        },
+        "highcharts_accessibility": {
+            "type": "package",
+            "package": {
+                "name": "highcharts/accessibility",
+                "version": "11.1.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_accessibility"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/11.1.0/modules/accessibility.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~2.0"
+                }
+            }
+        },
+        "highcharts_export-data": {
+            "type": "package",
+            "package": {
+                "name": "highcharts/export-data",
+                "version": "11.1.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_export-data"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/11.1.0/modules/export-data.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~2.0"
+                }
+            }
+        },
+        "highcharts_exporting": {
+            "type": "package",
+            "package": {
+                "name": "highcharts/exporting",
+                "version": "11.1.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "highcharts_exporting"
+                },
+                "dist": {
+                    "url": "https://code.highcharts.com/11.1.0/modules/exporting.js",
                     "type": "file"
                 },
                 "require": {
@@ -564,114 +607,6 @@
                 }
             }
         },
-        "highcharts_exporting": {
-            "type": "package",
-            "package": {
-                "name": "highcharts/exporting",
-                "version": "11.1.0",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "highcharts_exporting"
-                },
-                "dist": {
-                    "url": "https://code.highcharts.com/11.1.0/modules/exporting.js",
-                    "type": "file"
-                },
-                "require": {
-                    "composer/installers": "~2.0"
-                }
-            }
-        },
-        "highcharts_export-data": {
-            "type": "package",
-            "package": {
-                "name": "highcharts/export-data",
-                "version": "11.1.0",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "highcharts_export-data"
-                },
-                "dist": {
-                    "url": "https://code.highcharts.com/11.1.0/modules/export-data.js",
-                    "type": "file"
-                },
-                "require": {
-                    "composer/installers": "~2.0"
-                }
-            }
-        },
-        "highcharts_accessibility": {
-            "type": "package",
-            "package": {
-          "name": "highcharts/accessibility",
-                "version": "11.1.0",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "highcharts_accessibility"
-                },
-                "dist": {
-                    "url": "https://code.highcharts.com/11.1.0/modules/accessibility.js",
-                    "type": "file"
-                },
-                "require": {
-                    "composer/installers": "~2.0"
-                }
-            }
-        },
-        "highcharts_3d": {
-            "type": "package",
-            "package": {
-                "name": "highcharts/3d",
-                "version": "11.1.0",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "highcharts_3d"
-                },
-                "dist": {
-                    "url": "https://code.highcharts.com/11.1.0/highcharts-3d.js",
-                    "type": "file"
-                },
-                "require": {
-                    "composer/installers": "~2.0"
-                }
-            }
-        },
-        "toc": {
-            "type": "package",
-            "package": {
-                "name": "jgallen23/toc",
-                "type": "drupal-library",
-                "version": "0.3.2",
-                "extra": {
-                    "installer-name": "toc"
-                },
-                "dist": {
-                    "url": "https://github.com/jgallen23/toc/archive/refs/heads/greenkeeper/update-all.zip",
-                    "type": "zip"
-                },
-                "require": {
-                    "composer/installers": "~2.0"
-                }
-            }
-        },
-	"masonry": {
-            "type": "package",
-            "package": {
-                "name": "masonry/masonry",
-                "version": "v4.2.2",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "masonry"
-                },
-                "dist": {
-                    "url": "https://github.com/desandro/masonry/archive/v4.2.2.zip",
-                    "type": "zip"
-                },
-                "require": {
-                    "composer/installers": "~2.0"
-                }
-            }
-        },
         "imagesloaded": {
             "type": "package",
             "package": {
@@ -690,84 +625,48 @@
                 }
             }
         },
-        "api_wrapper": {
-            "type": "vcs",
-            "url": "https://github.com/umn-drupal/acquia-api-wrapper"
-        },
-        "deploy_scripts": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalplatform/drupal-deploy-scripts.git"
-        },
-        "ckeditor_modal": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/ckeditor_modal.git"
-        },
-        "umn_escape_button": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/umn_escape_button.git"
-        },
-        "umn_self_help_guides": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/umn_self_help_guides.git"
-        },
-        "timeline3": {
+        "jquery.easing": {
             "type": "package",
             "package": {
-                "name": "knightlab/timeline3",
-                "version": "3.8.18",
+                "name": "gdsmith/easing",
                 "type": "drupal-library",
-                "dist": {
-                    "url": "https://cdn.knightlab.com/libs/timeline3/3.8.18/timeline3.zip",
-                    "type": "zip"
+                "version": "1.4.2",
+                "source": {
+                    "url": "https://github.com/gdsmith/jquery.easing.git",
+                    "type": "git",
+                    "reference": "1.4.2"
                 }
             }
         },
-        "tabby": {
+        "jquery.inputmask": {
             "_webform": true,
             "type": "package",
             "package": {
-                "name": "tabby/tabby",
-                "version": "12.0.3",
+                "name": "jquery/inputmask",
+                "version": "5.0.8",
                 "type": "drupal-library",
                 "extra": {
-                    "installer-name": "tabby"
+                    "installer-name": "jquery.inputmask"
                 },
                 "dist": {
-                    "url": "https://github.com/cferdinandi/tabby/archive/refs/tags/v12.0.3.zip",
+                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/refs/tags/5.0.8.zip",
                     "type": "zip"
                 },
                 "license": "MIT"
             }
         },
-        "signature_pad": {
+        "jquery.intl-tel-input": {
             "_webform": true,
             "type": "package",
             "package": {
-                "name": "signature_pad/signature_pad",
-                "version": "2.3.0",
+                "name": "jquery/intl-tel-input",
+                "version": "17.0.19",
                 "type": "drupal-library",
                 "extra": {
-                    "installer-name": "signature_pad"
+                    "installer-name": "jquery.intl-tel-input"
                 },
                 "dist": {
-                    "url": "https://github.com/szimek/signature_pad/archive/refs/tags/v2.3.0.zip",
-                    "type": "zip"
-                },
-                "license": "MIT"
-            }
-        },
-        "progress-tracker": {
-            "_webform": true,
-            "type": "package",
-            "package": {
-                "name": "progress-tracker/progress-tracker",
-                "version": "2.0.7",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "progress-tracker"
-                },
-                "dist": {
-                    "url": "https://github.com/NigelOToole/progress-tracker/archive/refs/tags/2.0.7.zip",
+                    "url": "https://github.com/jackocnr/intl-tel-input/archive/refs/tags/v17.0.19.zip",
                     "type": "zip"
                 },
                 "license": "MIT"
@@ -841,72 +740,245 @@
                 "license": "MIT"
             }
         },
-        "jquery.intl-tel-input": {
-            "_webform": true,
+        "jqueryinstagramfeed": {
             "type": "package",
             "package": {
-                "name": "jquery/intl-tel-input",
-                "version": "17.0.19",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "jquery.intl-tel-input"
-                },
-                "dist": {
-                    "url": "https://github.com/jackocnr/intl-tel-input/archive/refs/tags/v17.0.19.zip",
-                    "type": "zip"
-                },
-                "license": "MIT"
-            }
-        },
-        "jquery.inputmask": {
-            "_webform": true,
-            "type": "package",
-            "package": {
-                "name": "jquery/inputmask",
-                "version": "5.0.8",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "jquery.inputmask"
-                },
-                "dist": {
-                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/refs/tags/5.0.8.zip",
-                    "type": "zip"
-                },
-                "license": "MIT"
-            }
-        },
-        "codemirror": {
-            "_webform": true,
-            "type": "package",
-            "package": {
-                "name": "codemirror/codemirror",
-                "version": "5.65.12",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "codemirror"
-                },
-                "dist": {
-                    "url": "https://github.com/components/codemirror/archive/refs/tags/5.65.12.zip",
-                    "type": "zip"
-                },
-                "license": "MIT"
-            }
-        },
-        "cog": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/cog.git"
-        },
-        "ckeditor5-anchor-drupal": {
-            "type": "package",
-            "package": {
-                "name": "drupal-library/ckeditor5-anchor-drupal",
-                "version": "0.0.0",
+                "name": "jsanahuja/jqueryinstagramfeed",
+                "version": "3.0.4",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://www.drupal.org/files/issues/2023-10-25/ckeditor5-anchor-drupal_0.zip",
+                    "url": "https://github.com/jsanahuja/jquery.instagramFeed/archive/3.0.4.zip",
                     "type": "zip"
                 }
             }
+        },
+        "lightning_umn": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git"
+        },
+        "masonry": {
+            "type": "package",
+            "package": {
+                "name": "masonry/masonry",
+                "version": "v4.2.2",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "masonry"
+                },
+                "dist": {
+                    "url": "https://github.com/desandro/masonry/archive/v4.2.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~2.0"
+                }
+            }
+        },
+        "popperjs": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "popperjs/popperjs",
+                "version": "2.11.6",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "popperjs"
+                },
+                "dist": {
+                    "url": "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz",
+                    "type": "tar"
+                },
+                "license": "MIT"
+            }
+        },
+        "progress-tracker": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "progress-tracker/progress-tracker",
+                "version": "2.0.7",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "progress-tracker"
+                },
+                "dist": {
+                    "url": "https://github.com/NigelOToole/progress-tracker/archive/refs/tags/2.0.7.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "redirect_after_login": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/redirect_after_login.git"
+        },
+        "shadow-responsive-menu": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/issue/responsive_menu-3297964.git"
+        },
+        "signature_pad": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "signature_pad/signature_pad",
+                "version": "2.3.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "signature_pad"
+                },
+                "dist": {
+                    "url": "https://github.com/szimek/signature_pad/archive/refs/tags/v2.3.0.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "superfish": {
+            "type": "package",
+            "package": {
+                "name": "joeldbirch/superfish",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "superfish/dist"
+                },
+                "version": "1.7.10",
+                "dist": {
+                    "url": "https://api.github.com/repos/joeldbirch/superfish/zipball",
+                    "type": "zip"
+                }
+            }
+        },
+        "tabby": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "tabby/tabby",
+                "version": "12.0.3",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "tabby"
+                },
+                "dist": {
+                    "url": "https://github.com/cferdinandi/tabby/archive/refs/tags/v12.0.3.zip",
+                    "type": "zip"
+                },
+                "license": "MIT"
+            }
+        },
+        "timeline3": {
+            "type": "package",
+            "package": {
+                "name": "knightlab/timeline3",
+                "version": "3.8.18",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://cdn.knightlab.com/libs/timeline3/3.8.18/timeline3.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "tippyjs": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "tippyjs/tippyjs",
+                "version": "6.3.7",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "tippyjs"
+                },
+                "dist": {
+                    "url": "https://registry.npmjs.org/tippy.js/-/tippy.js-6.3.7.tgz",
+                    "type": "tar"
+                },
+                "license": "MIT"
+            }
+        },
+        "toc": {
+            "type": "package",
+            "package": {
+                "name": "jgallen23/toc",
+                "type": "drupal-library",
+                "version": "0.3.2",
+                "extra": {
+                    "installer-name": "toc"
+                },
+                "dist": {
+                    "url": "https://github.com/jgallen23/toc/archive/refs/heads/greenkeeper/update-all.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~2.0"
+                }
+            }
+        },
+        "umd-footer": {
+            "type": "git",
+            "url": "git@github.umn.edu:UMD-wwwteam/umd_footer_block.git"
+        },
+        "umn-features": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/d8-features.git"
+        },
+        "umn-field-delimiter": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/field_delimiter.git"
+        },
+        "umn-migrate_google_sheets": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/migrate_google_sheets.git"
+        },
+        "umn-radix-layouts": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/radix_layouts.git"
+        },
+        "umn-search": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/umn-search.git"
+        },
+        "umn-semanticviews": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/semanticviews.git"
+        },
+        "umn_ckeditor_templates": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/ckeditor_templates.git"
+        },
+        "umn_dm_import": {
+            "type": "git",
+            "url": "git@github.umn.edu:hinte019/umn_dm_import.git"
+        },
+        "umn_dm_migrate": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/umn_dm_migrate.git"
+        },
+        "umn_dm_storage": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/umn_dm_storage.git"
+        },
+        "umn_escape_button": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/umn_escape_button.git"
+        },
+        "umn_file_download": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/file_download.git"
+        },
+        "umn_folwell_components": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/folwell_components.git"
+        },
+        "umn_self_help_guides": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/umn_self_help_guides.git"
+        },
+        "umn_superfish": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/umn_superfish.git"
+        },
+        "umn_views_term_hierarchy_weight_field": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/views_term_hierarchy_weight_field.git"
         }
     },
     "config": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1f6e33181fccf77ef188e1017bd6931",
+    "content-hash": "993b123f18268abc85e3b0b40497a284",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -66,6 +66,21 @@
                 "source": "https://github.com/acquia/http-hmac-php/tree/6.1.0"
             },
             "time": "2023-05-15T20:41:16+00:00"
+        },
+        {
+            "name": "algolia/places",
+            "version": "1.19.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/places.js/-/places.js-1.19.0.tgz"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "algolia.places"
+            },
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "asm89/stack-cors",
@@ -565,6 +580,21 @@
                 "source": "https://github.com/Chi-teck/drupal-code-generator/tree/2.6.2"
             },
             "time": "2022-11-11T15:34:04+00:00"
+        },
+        {
+            "name": "choices/choices",
+            "version": "9.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/Choices-js/Choices/archive/refs/tags/v9.0.1.zip"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "choices"
+            },
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "ckeditor/anchor_link",
@@ -24281,6 +24311,21 @@
             "time": "2020-12-15T10:26:18+00:00"
         },
         {
+            "name": "popperjs/popperjs",
+            "version": "2.11.6",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "popperjs"
+            },
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "progress-tracker/progress-tracker",
             "version": "2.0.7",
             "dist": {
@@ -28254,6 +28299,21 @@
             "time": "2023-09-06T15:09:26+00:00"
         },
         {
+            "name": "tippyjs/tippyjs",
+            "version": "6.3.7",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/tippy.js/-/tippy.js-6.3.7.tgz"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "tippyjs"
+            },
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "tubalmartin/cssmin",
             "version": "v4.1.1",
             "source": {
@@ -29561,54 +29621,54 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/a11y_paragraphs_tabs": 10,
         "drupal/address": 5,
-        "umn/dors_migrate": 20,
-        "drupal/slick_extras": 10,
-        "drupal/webform": 10,
-        "drupal/diff": 5,
-        "onlyextart/colorbox": 20,
-        "drupal/config_update": 15,
-        "drupal/menu_breadcrumb": 15,
-        "drupal/views_block_placement_exposed_form_defaults": 5,
-        "mehrpadin/superfish": 20,
-        "drupal/config_split": 5,
         "drupal/advagg": 15,
-        "drupal/paragraphs_features": 10,
         "drupal/advanced_text_formatter": 5,
         "drupal/anchor_link": 20,
-        "umn/lightning_umn": 20,
-        "umn/umn_search": 20,
-        "umn/crmform": 20,
-        "umn/folwell": 20,
-        "umn/bootstrap_umn": 20,
-        "umn/umn_escape_button": 20,
-        "umn/umn_self_help_guides": 20,
-        "umn/umn_features": 20,
-        "umn/folwell_components": 20,
-        "umd/umd_footer_block": 20,
-        "umndrupal/acquia_api": 20,
-        "drupal/linkit": 5,
-        "umn/radix_layouts": 20,
-        "drupal/a11y_paragraphs_tabs": 10,
-        "drupal/shs": 5,
         "drupal/auditfiles": 10,
-        "drupal/responsive_menu": 20,
-        "umn/ckeditor_modal": 20,
-        "umn/umn_superfish": 20,
-        "drupal/field_defaults": 15,
-        "umn/redirect_after_login": 20,
-        "umn/ckeditor_templates": 20,
-        "umn/file_download": 20,
-        "umn/views_term_hierarchy_weight_field": 20,
-        "umn/semanticviews": 20,
-        "umn/migrate_google_sheets": 20,
-        "drupal/fontyourface": 20,
+        "drupal/block_exclude_pages": 10,
+        "drupal/config_split": 5,
+        "drupal/config_update": 15,
+        "drupal/diff": 5,
         "drupal/digitalmeasures_migrate": 20,
         "drupal/entitygroupfield": 15,
+        "drupal/field_defaults": 15,
+        "drupal/fontyourface": 20,
+        "drupal/h5p": 15,
         "drupal/http_response_headers": 5,
-        "drupal/block_exclude_pages": 10,
+        "drupal/linkit": 5,
+        "drupal/menu_breadcrumb": 15,
+        "drupal/paragraphs_features": 10,
+        "drupal/responsive_menu": 20,
+        "drupal/shs": 5,
+        "drupal/slick_extras": 10,
         "drupal/tb_megamenu": 15,
-        "drupal/h5p": 15
+        "drupal/views_block_placement_exposed_form_defaults": 5,
+        "drupal/webform": 10,
+        "mehrpadin/superfish": 20,
+        "onlyextart/colorbox": 20,
+        "umd/umd_footer_block": 20,
+        "umn/bootstrap_umn": 20,
+        "umn/ckeditor_modal": 20,
+        "umn/ckeditor_templates": 20,
+        "umn/crmform": 20,
+        "umn/dors_migrate": 20,
+        "umn/file_download": 20,
+        "umn/folwell": 20,
+        "umn/folwell_components": 20,
+        "umn/lightning_umn": 20,
+        "umn/migrate_google_sheets": 20,
+        "umn/radix_layouts": 20,
+        "umn/redirect_after_login": 20,
+        "umn/semanticviews": 20,
+        "umn/umn_escape_button": 20,
+        "umn/umn_features": 20,
+        "umn/umn_search": 20,
+        "umn/umn_self_help_guides": 20,
+        "umn/umn_superfish": 20,
+        "umn/views_term_hierarchy_weight_field": 20,
+        "umndrupal/acquia_api": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
@@ -29619,5 +29679,5 @@
     "platform-overrides": {
         "php": "8.1.24"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }

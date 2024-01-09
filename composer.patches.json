@@ -156,9 +156,6 @@
     "drupal/fontawesome": {
       "3274028: CKEditor 5 compatibility": "patches/3274028-fontawesome-ckeditor5-compatibility-16.patch"
     },
-    "drupal/path_redirect_import": {
-      "33730215: Update to support path redirect import migrate_tools 6.0.2": "https://www.drupal.org/files/issues/2023-07-06/path_redirect_import-3373025.patch"
-    },
    "drupal/csv_serialization": {
       "3230521: Call to deprecated method getContent()": "https://www.drupal.org/files/issues/2021-11-03/deprecated_method_getcontent-3230521-5.patch"
     },
@@ -191,9 +188,6 @@
     },
     "drupal/better_exposed_filters": {
       "2996297: Reset button does not use AJAX": "https://www.drupal.org/files/issues/2022-09-14/better_exposed_filters-reset_button_ajax_5x-2996297-74.patch"
-    },
-    "drupal/stage_file_proxy": {
-      "3396633: Proxy does not work anymore": "https://www.drupal.org/files/issues/2023-11-20/3396633-16.patch"
     },
     "drupal/charts": {
       "Make highcharts bypass preprocessing to avoid load order issue with aggregation": "patches/charts-libraries-bypass-preprocess.patch"

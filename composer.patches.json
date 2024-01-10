@@ -191,9 +191,6 @@
     },
     "drupal/charts": {
       "Make highcharts bypass preprocessing to avoid load order issue with aggregation": "patches/charts-libraries-bypass-preprocess.patch"
-    },
-    "drupal/twig_tweak": {
-      "3331977: ob_get_clean() Cannot use output buffering in output buffering display handlers": "patches/twig_tweak-buffering_error-3331977.patch"
     }
   }
 }

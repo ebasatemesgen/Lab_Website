@@ -69,7 +69,8 @@
       "3361177: An empty views pager offset field can cause a PHP type error to be triggered.": "https://www.drupal.org/files/issues/2023-05-30/3361177-8.patch",
       "2511878: Support enclosure field in Views RssFields row plugin": "https://www.drupal.org/files/issues/2023-10-16/core-support-enclosure-field-rss-2511878-64.patch",
       "3402481: Ckeditor5: Enable AdjacentListsSupport plugin": "patches/3402481-enable-adjacentlistssupport-plugin-2.patch",
-      "3272629: Media Library widget display doesn't return to first page on applying filters": "https://www.drupal.org/files/issues/2022-03-30/media_library_pager_fix.patch"
+      "3272629: Media Library widget display doesn't return to first page on applying filters": "https://www.drupal.org/files/issues/2022-03-30/media_library_pager_fix.patch",
+      "2863785: Config import creates Undefined index: uuid notice " : "https://www.drupal.org/files/issues/2023-10-30/2863785-24.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "patches/a11y-tabs-arrow-key-wrap.patch"

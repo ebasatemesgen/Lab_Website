@@ -198,6 +198,9 @@
     },
     "drupal/twig_tweak": {
       "3331977: ob_get_clean() Cannot use output buffering in output buffering display handlers": "patches/twig_tweak-buffering_error-3331977.patch"
+    },
+    "drupal/google_tag": {
+      "Adjust help text for Google Tag ID(s) field": "patches/google_tag-3409381.patch"
     }
   }
 }

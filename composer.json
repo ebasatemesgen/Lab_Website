@@ -322,7 +322,8 @@
         "drupal/openapi_jsonapi": "^3.0",
         "drupal/openapi_ui_redoc": "^1.0@RC",
         "drupal/openapi_rest": "^2.0@RC",
-        "drupal/video_embed_field": "^2.5"
+        "drupal/video_embed_field": "^2.5",
+        "drupal/entity_update": "^3.0"
     },
     "repositories": {
         "algolia.places": {

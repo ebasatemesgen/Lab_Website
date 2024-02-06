@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca97203e046ae7bcb7ff6235c5029e2f",
+    "content-hash": "27f85d39e12dc368032c154fcd9372d8",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -28740,25 +28740,6 @@
             "time": "2023-08-03T18:31:44+00:00"
         },
         {
-            "name": "umn/umn_dlite_helper",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "git@github.umn.edu:drupalmodules/umn_dlite_helper.git",
-                "reference": "c3ef0ca83239c0f637fa20e1468d6a9c2aaa13e8"
-            },
-            "default-branch": true,
-            "type": "drupal-module-custom",
-            "authors": [
-                {
-                    "name": "Chamil Amarakoon",
-                    "email": "amara060@umn.edu"
-                }
-            ],
-            "description": "Drupal Lite Helper module",
-            "time": "2024-02-01T15:40:20+00:00"
-        },
-        {
             "name": "umn/umn_escape_button",
             "version": "dev-master",
             "source": {
@@ -29712,8 +29693,7 @@
         "umn/umn_self_help_guides": 20,
         "umn/umn_superfish": 20,
         "umn/views_term_hierarchy_weight_field": 20,
-        "umndrupal/acquia_api": 20,
-        "umn/umn_dlite_helper": 20
+        "umndrupal/acquia_api": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -298,8 +298,7 @@
         "umn/umn_self_help_guides": "dev-master",
         "umn/umn_superfish": "dev-9-dev",
         "umn/views_term_hierarchy_weight_field": "dev-main",
-        "umndrupal/acquia_api": "dev-10.x-dev",
-        "umn/umn_dlite_helper": "dev-main"
+        "umndrupal/acquia_api": "dev-10.x-dev"
     },
     "repositories": {
         "algolia.places": {
@@ -980,10 +979,6 @@
         "umn_views_term_hierarchy_weight_field": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/views_term_hierarchy_weight_field.git"
-        },
-        "umn_dlite_helper": {
-            "type": "git",
-            "url": "git@github.umn.edu:drupalmodules/umn_dlite_helper.git"
         }
     },
     "config": {

@@ -43,6 +43,9 @@
     "drupal/cog": {
       "spaceless is deprecated since Twig 2.7": "https://www.drupal.org/files/issues/2022-08-24/3261882-cog-security-update-15.patch"
     },
+    "drupal/autosave_form": {
+      "3355495: PHP 8.2 deprecation issue with AutosaveFormBuilder": "https://www.drupal.org/files/issues/2023-04-20/autosave_form-dynamic-property-deprecation.patch"
+    },
     "drupal/core": {
       "2941092: Errors on non-translatable properties on image field": "https://www.drupal.org/files/issues/2018-05-23/image-dimensions-block-changing-translations-2941092-3.patch",
       "1810148: Grouped exposed taxonomy term filters do not work": "https://www.drupal.org/files/issues/1810148-58.patch",
@@ -69,7 +72,8 @@
       "3361177: An empty views pager offset field can cause a PHP type error to be triggered.": "https://www.drupal.org/files/issues/2023-05-30/3361177-8.patch",
       "2511878: Support enclosure field in Views RssFields row plugin": "https://www.drupal.org/files/issues/2023-10-16/core-support-enclosure-field-rss-2511878-64.patch",
       "3402481: Ckeditor5: Enable AdjacentListsSupport plugin": "patches/3402481-enable-adjacentlistssupport-plugin-2.patch",
-      "3272629: Media Library widget display doesn't return to first page on applying filters": "https://www.drupal.org/files/issues/2022-03-30/media_library_pager_fix.patch"
+      "3272629: Media Library widget display doesn't return to first page on applying filters": "https://www.drupal.org/files/issues/2022-03-30/media_library_pager_fix.patch",
+      "2863785: Config import creates Undefined index: uuid notice " : "https://www.drupal.org/files/issues/2023-10-30/2863785-24.patch"
     },
     "npm-asset/a11y-accordion-tabs": {
       "arrow key wrap": "patches/a11y-tabs-arrow-key-wrap.patch"
@@ -191,6 +195,15 @@
     },
     "drupal/charts": {
       "Make highcharts bypass preprocessing to avoid load order issue with aggregation": "patches/charts-libraries-bypass-preprocess.patch"
+    },
+    "drupal/twig_tweak": {
+      "3331977: ob_get_clean() Cannot use output buffering in output buffering display handlers": "patches/twig_tweak-buffering_error-3331977.patch"
+    },
+    "drupal/google_tag": {
+      "Adjust help text for Google Tag ID(s) field": "patches/google_tag-3409381.patch"
+    },
+    "drupal/facets": {
+      "PHP 8.2 compatibility for the 2.0.x branch": "https://www.drupal.org/files/issues/2023-08-16/3336646-function-is-deprecated.patch"
     }
   }
 }

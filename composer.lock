@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "993b123f18268abc85e3b0b40497a284",
+    "content-hash": "449db7d6ed6b31ffa8a5539cc362f4ed",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -28869,12 +28869,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/umn-drupal/acquia-api-wrapper.git",
-                "reference": "19e7cdbeee0057150c8d10cbdf063ddab6067066"
+                "reference": "6aa874491473b59ca5c254faad3186d9dc7244b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/umn-drupal/acquia-api-wrapper/zipball/19e7cdbeee0057150c8d10cbdf063ddab6067066",
-                "reference": "19e7cdbeee0057150c8d10cbdf063ddab6067066",
+                "url": "https://api.github.com/repos/umn-drupal/acquia-api-wrapper/zipball/6aa874491473b59ca5c254faad3186d9dc7244b1",
+                "reference": "6aa874491473b59ca5c254faad3186d9dc7244b1",
                 "shasum": ""
             },
             "require": {
@@ -28898,7 +28898,7 @@
                 "source": "https://github.com/umn-drupal/acquia-api-wrapper/tree/10.x-dev",
                 "issues": "https://github.com/umn-drupal/acquia-api-wrapper/issues"
             },
-            "time": "2024-02-13T19:21:03+00:00"
+            "time": "2024-02-15T14:40:16+00:00"
         },
         {
             "name": "vardot/blazy",
@@ -29702,7 +29702,7 @@
     },
     "platform-dev": [],
     "platform-overrides": {
-        "php": "8.1.24"
+        "php": "8.2.11"
     },
     "plugin-api-version": "2.6.0"
 }

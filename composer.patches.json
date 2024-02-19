@@ -32,7 +32,8 @@
       "2753899: Allow hiding of country on address field": "https://www.drupal.org/files/issues/2019-02-21/hide_domestic_country_2753899-20.patch"
     },
     "drupal/lightning_workflow": {
-      "3126343: Scheduler needs to maintain its base fields properly": "https://www.drupal.org/files/issues/2020-07-08/3126343-11.patch"
+      "3126343: Scheduler needs to maintain its base fields properly": "https://www.drupal.org/files/issues/2020-07-08/3126343-11.patch",
+      "fix php8.2 deprecation issues": "patches/lightning_workflow_php_8.2.patch"
     },
     "drupal/entity_pager": {
       "3337763: Improve entity pager accessibility for screen readers": "https://www.drupal.org/files/issues/2023-02-22/entity_pager-screen-reader-a11y-3337763-11-8.x-1.x.patch"

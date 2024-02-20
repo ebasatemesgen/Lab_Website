@@ -28614,7 +28614,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "9c39a88d34f5a5d8f7f603ed75416ec38957b6a7"
+                "reference": "cda8cc3e5032e9bc83b5cef2579ee64905aae96d"
             },
             "require": {
                 "drupal/classy": "^1.0"

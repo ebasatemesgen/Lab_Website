@@ -159,7 +159,7 @@
       "3339367: Use Once function in JS behavior": "https://www.drupal.org/files/issues/2023-02-05/3339367-use-once-method-4.patch"
     },
     "drupal/fontawesome": {
-      "3274028: CKEditor 5 compatibility": "patches/3274028-fontawesome-ckeditor5-compatibility-16.patch"
+      "3274028: CKEditor 5 compatibility": "patches/3274028-fontawesome-ckeditor5-compatibility-umn-1.patch"
     },
    "drupal/csv_serialization": {
       "3230521: Call to deprecated method getContent()": "https://www.drupal.org/files/issues/2021-11-03/deprecated_method_getcontent-3230521-5.patch"

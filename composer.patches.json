@@ -129,10 +129,12 @@
       "3352168: Conflict with the Group Node module" : "https://www.drupal.org/files/issues/2023-04-13/quick-node-clone-3352168-groups-v2_0.patch"
     },
     "drupal/tablefield": {
-      "3163841: Undefined index: caption": "https://www.drupal.org/files/issues/2020-08-10/tablefield-empty-caption-notice-2.patch"
+      "3163841: Undefined index: caption": "https://www.drupal.org/files/issues/2020-08-10/tablefield-empty-caption-notice-2.patch",
+      "3397688: PHP 8.2 has deprecated the creation of dynamic properties": "https://www.drupal.org/files/issues/2023-12-21/tablefield-php8.2-deprecated-creation-of-dynamic-properties-3397688-9.patch"
     },
     "drupal/contact_storage": {
-      "3191567: Undefined index notice": "https://www.drupal.org/files/issues/2021-01-12/3191567-9.patch"
+      "3191567: Undefined index notice": "https://www.drupal.org/files/issues/2021-01-12/3191567-9.patch",
+      "3053497: Error while field storage definition": "https://www.drupal.org/files/issues/2022-10-19/contact_storage.patch"
     },
     "drupal/entity_reference_revisions": {
       "2568187: Improve EntityReferenceRevisionsItem::generateSampleValue to be recursion-safe and devel_generate compatible": "https://www.drupal.org/files/issues/2021-04-05/2568187-recursion_limit-51.patch"

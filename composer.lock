@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6b1c2baaa38273bd2790a4f07a92be8",
+    "content-hash": "00f2518b51deaa027d7b7302e4f64bee",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -12459,17 +12459,17 @@
         },
         {
             "name": "drupal/migrate_tools",
-            "version": "6.0.2",
+            "version": "6.0.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_tools.git",
-                "reference": "6.0.2"
+                "reference": "6.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_tools-6.0.2.zip",
-                "reference": "6.0.2",
-                "shasum": "9d6346306e52a6741f3eb52e32caaa95a2752ad0"
+                "url": "https://ftp.drupal.org/files/projects/migrate_tools-6.0.4.zip",
+                "reference": "6.0.4",
+                "shasum": "63c571aefece96b199ce8b8f90da648186502be4"
             },
             "require": {
                 "drupal/core": ">=9.1",
@@ -12487,8 +12487,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.0.2",
-                    "datestamp": "1694604959",
+                    "version": "6.0.4",
+                    "datestamp": "1707330330",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13687,17 +13687,17 @@
         },
         {
             "name": "drupal/path_redirect_import",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/path_redirect_import.git",
-                "reference": "2.0.8"
+                "reference": "2.0.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/path_redirect_import-2.0.8.zip",
-                "reference": "2.0.8",
-                "shasum": "a1fb1fe44bf657228d099576874ade5e6065c414"
+                "url": "https://ftp.drupal.org/files/projects/path_redirect_import-2.0.9.zip",
+                "reference": "2.0.9",
+                "shasum": "c33d0f9cb1323bdf28432ba67af750f324a2d4c9"
             },
             "require": {
                 "drupal/core": ">=9.1",
@@ -13712,8 +13712,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.8",
-                    "datestamp": "1701853731",
+                    "version": "2.0.9",
+                    "datestamp": "1707311721",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -28614,7 +28614,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalthemes/folwell.git",
-                "reference": "cda8cc3e5032e9bc83b5cef2579ee64905aae96d"
+                "reference": "9c39a88d34f5a5d8f7f603ed75416ec38957b6a7"
             },
             "require": {
                 "drupal/classy": "^1.0"
@@ -28872,12 +28872,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/umn-drupal/acquia-api-wrapper.git",
-                "reference": "3f8a868d84f256e762797dd8c490ac8a3656099e"
+                "reference": "6aa874491473b59ca5c254faad3186d9dc7244b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/umn-drupal/acquia-api-wrapper/zipball/3f8a868d84f256e762797dd8c490ac8a3656099e",
-                "reference": "3f8a868d84f256e762797dd8c490ac8a3656099e",
+                "url": "https://api.github.com/repos/umn-drupal/acquia-api-wrapper/zipball/6aa874491473b59ca5c254faad3186d9dc7244b1",
+                "reference": "6aa874491473b59ca5c254faad3186d9dc7244b1",
                 "shasum": ""
             },
             "require": {
@@ -28901,7 +28901,7 @@
                 "source": "https://github.com/umn-drupal/acquia-api-wrapper/tree/10.x-dev",
                 "issues": "https://github.com/umn-drupal/acquia-api-wrapper/issues"
             },
-            "time": "2024-01-09T14:46:30+00:00"
+            "time": "2024-02-15T14:40:16+00:00"
         },
         {
             "name": "vardot/blazy",
@@ -29705,7 +29705,7 @@
     },
     "platform-dev": [],
     "platform-overrides": {
-        "php": "8.1.24"
+        "php": "8.2.11"
     },
     "plugin-api-version": "2.6.0"
 }

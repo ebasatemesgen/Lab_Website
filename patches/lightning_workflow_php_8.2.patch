@@ -1,0 +1,13 @@
+diff --git a/modules/lightning_scheduler/lightning_scheduler.services.yml b/modules/lightning_scheduler/lightning_scheduler.services.yml
+index 7c4ba57..afe5f58 100644
+--- a/modules/lightning_scheduler/lightning_scheduler.services.yml
++++ b/modules/lightning_scheduler/lightning_scheduler.services.yml
+@@ -26,8 +26,3 @@ services:
+     arguments:
+       - '@request_stack'
+       - '@state'
+-    # Workaround for serializing decorated services. Remove when either
+-    # https://www.drupal.org/project/drupal/issues/2896993 or
+-    # https://www.drupal.org/project/drupal/issues/2531564 are fixed.
+-    properties:
+-      _serviceId: datetime.time

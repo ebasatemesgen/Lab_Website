@@ -228,7 +228,7 @@
         "drupal/webform_group": "^2.0",
         "drupal/workbench_access": "^2.0",
         "drupal/workbench_menu_access": "^2.0",
-        "drush/drush": "^11.0",
+        "drush/drush": "^12.0",
         "ext-dom": "*",
         "gdsmith/easing": "^1.4",
         "geocoder-php/bing-maps-provider": "^4.1",

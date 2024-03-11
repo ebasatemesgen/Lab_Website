@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da93bf563056c6b1fdcd27c96eeab3a2",
+    "content-hash": "1cfeb1f7cf36096b7e9112ab45939005",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -28411,7 +28411,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalprofiles/lightning_umn.git",
-                "reference": "735c96b6aea20d8e5b8e745801b659cbb3afed7c"
+                "reference": "9c3d8be4271743b915e907ec30da16d07c78fb92"
             },
             "type": "drupal-profile-custom",
             "authors": [
@@ -28420,7 +28420,7 @@
                     "email": "HART0554@UMN.EDU"
                 }
             ],
-            "time": "2024-01-09T18:20:53+00:00"
+            "time": "2024-02-27T15:02:24+00:00"
         },
         {
             "name": "umn/migrate_google_sheets",
@@ -28496,6 +28496,25 @@
             ],
             "description": "Semantic Views Module.",
             "time": "2023-08-03T18:31:44+00:00"
+        },
+        {
+            "name": "umn/umn_dlite_helper",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/umn_dlite_helper.git",
+                "reference": "dfa90acd2b79570d8af31b15591aaa2196e6fc9c"
+            },
+            "default-branch": true,
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "Chamil Amarakoon",
+                    "email": "amara060@umn.edu"
+                }
+            ],
+            "description": "Drupal Lite Helper module",
+            "time": "2024-03-11T12:37:46+00:00"
         },
         {
             "name": "umn/umn_escape_button",
@@ -29434,7 +29453,8 @@
         "drupal/layout_library": 10,
         "drupal/layout_builder_st": 15,
         "drupal/openapi_ui_redoc": 5,
-        "drupal/openapi_rest": 5
+        "drupal/openapi_rest": 5,
+        "umn/umn_dlite_helper": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

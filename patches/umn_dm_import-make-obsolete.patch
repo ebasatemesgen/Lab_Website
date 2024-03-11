@@ -1,0 +1,10 @@
+diff --git a/umn_dm_import.info.yml b/umn_dm_import.info.yml
+index 7169284..65ec0e7 100644
+--- a/umn_dm_import.info.yml
++++ b/umn_dm_import.info.yml
+@@ -7,3 +7,5 @@ core_version_requirement: ^9.3 || ^10
+ version: '2.1.4'
+ dependencies:
+   - drupal:umn_dm_migrate
++lifecycle: obsolete
++lifecycle_link: https://www.drupal.org/about/core/policies/core-change-policies/deprecated-and-obsolete-modules-and-themes#s-entity-reference

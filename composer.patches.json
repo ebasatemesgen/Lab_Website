@@ -210,6 +210,15 @@
     },
     "drupal/content_lock": {
       "Fix PHP 8.2+ deprecation notices": "https://www.drupal.org/files/issues/2023-05-22/3343964-5.patch"
+    },
+    "drupal/umn_dm_import": {
+      "Make module obsolete": "patches/umn_dm_import-make-obsolete.patch"
+    },
+    "drupal/umn_dm_migrate": {
+      "Make module obsolete": "patches/umn_dm_migrate-make-obsolete.patch"
+    },
+    "drupal/umn_dm_storage": {
+      "Make module obsolete": "patches/umn_dm_storage-make-obsolete.patch"
     }
   }
 }

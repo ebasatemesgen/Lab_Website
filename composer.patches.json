@@ -219,6 +219,9 @@
     },
     "drupal/umn_dm_storage": {
       "Make module obsolete": "patches/umn_dm_storage-make-obsolete.patch"
-    }
+    },
+    "drupal/digitalmeasures_migrate": {
+      "Make module obsolete": "patches/digitalmeasures_migrate-make-obsolete.patch"
+    } 
   }
 }

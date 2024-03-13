@@ -1,0 +1,10 @@
+diff --git a/digitalmeasures_migrate.info.yml b/digitalmeasures_migrate.info.yml
+index 1a53ab1..82348cc 100644
+--- a/digitalmeasures_migrate.info.yml
++++ b/digitalmeasures_migrate.info.yml
+@@ -5,3 +5,5 @@ core_version_requirement: ^9.3 || ^10
+ package: 'Digital Measures'
+ dependencies:
+   - drupal:migrate_plus
++lifecycle: obsolete
++lifecycle_link: https://www.drupal.org/about/core/policies/core-change-policies/deprecated-and-obsolete-modules-and-themes#s-entity-reference

@@ -143,7 +143,9 @@
       "3029323: Cannot use Entity View block in Layout Builder when there is no context": "https://www.drupal.org/files/issues/2021-05-24/ctools-layout_builder_context-3029323-12.patch"
     },
     "drupal/viewsreference": {
-      "2938433: Add Label field formatter": "https://www.drupal.org/files/issues/2021-01-27/add_label_formatter-2938433-7.patch"
+      "2938433: Add Label field formatter": "https://www.drupal.org/files/issues/2021-01-27/add_label_formatter-2938433-7.patch",
+      "3423648: unserialize() of NULL deprecation returns to ViewsReferenceFieldFormatter": "https://www.drupal.org/files/issues/2024-02-28/3423648-unserialize-of-null-4.patch",
+      "3402036: Configuration schema for Enable extra settings (title,pagination,...) incorrect": "https://www.drupal.org/files/issues/2024-03-08/configuration-schema-for-views-reference-field-settings-3402036-14.patch"
     },
     "drupal/dropzonejs": {
       "3125682: Support chunked uploads": "https://www.drupal.org/files/issues/2022-03-29/dropzonejs-support-chuked-uploads-3125682-30.patch",
@@ -222,6 +224,6 @@
     },
     "drupal/digitalmeasures_migrate": {
       "Make module obsolete": "patches/digitalmeasures_migrate-make-obsolete.patch"
-    } 
+    }
   }
 }

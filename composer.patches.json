@@ -33,7 +33,8 @@
     },
     "drupal/lightning_workflow": {
       "fix php8.2 deprecation issues": "patches/lightning_workflow_php_8.2.patch",
-      "3419284: SQL error after upgrade to V 4.0": "patches/lightning_scheduler.patch"
+      "3419284: SQL error after upgrade to V 4.0": "patches/lightning_scheduler.patch",
+      "Update the lightning_scheduler module's dependencies to better match the Drupal lite installation profile.": "patches/lightning_scheduler_dependencies.patch"
     },
     "drupal/entity_pager": {
       "3337763: Improve entity pager accessibility for screen readers": "https://www.drupal.org/files/issues/2023-02-22/entity_pager-screen-reader-a11y-3337763-11-8.x-1.x.patch"

@@ -1,0 +1,18 @@
+diff --git a/modules/lightning_scheduler/lightning_scheduler.info.yml b/modules/lightning_scheduler/lightning_scheduler.info.yml
+index 6c62221..69da875 100644
+--- a/modules/lightning_scheduler/lightning_scheduler.info.yml
++++ b/modules/lightning_scheduler/lightning_scheduler.info.yml
+@@ -7,8 +7,11 @@ configure: lightning_scheduler.settings
+ dependencies:
+   - drupal:content_moderation
+   - drupal:datetime
++  - moderation_dashboard
++  - moderation_sidebar
++  - lightning_workflow
+ 
+ # Information added by Drupal.org packaging script on 2023-01-10
+ version: '4.0.0'
+ project: 'lightning_workflow'
+-datestamp: 1673384324
++datestamp: 1673384324
+\ No newline at end of file

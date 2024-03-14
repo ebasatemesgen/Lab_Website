@@ -225,6 +225,9 @@
     },
     "drupal/digitalmeasures_migrate": {
       "Make module obsolete": "patches/digitalmeasures_migrate-make-obsolete.patch"
+    },
+    "drupal/lightning_media": {
+      "3380259: hook_field_widget_WIDGET_TYPE_form_alter is deprecated ": "patches/lightning_media_3380259.patch"
     }
   }
 }

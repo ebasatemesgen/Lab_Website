@@ -1,0 +1,10 @@
+diff --git a/umn_dm_storage.info.yml b/umn_dm_storage.info.yml
+index d48e321..601ad9b 100644
+--- a/umn_dm_storage.info.yml
++++ b/umn_dm_storage.info.yml
+@@ -9,3 +9,5 @@ libraries:
+ dependencies:
+   - drupal:telephone
+   - drupal:datetime_range
++lifecycle: obsolete
++lifecycle_link: https://www.drupal.org/about/core/policies/core-change-policies/deprecated-and-obsolete-modules-and-themes#s-entity-reference

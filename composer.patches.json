@@ -114,7 +114,8 @@
       "3260094: PHP 8.0 deprecated syntax warnings for h5p-editor": "patches/h5pphp.patch"
     },
     "drupal/h5p": {
-      "3194707: Files disappear in H5P editor": "https://www.drupal.org/files/issues/2021-01-26/h5p-fix-keeping-h5p-content-id-3194707-0.patch"
+      "3194707: Files disappear in H5P editor": "https://www.drupal.org/files/issues/2021-01-26/h5p-fix-keeping-h5p-content-id-3194707-0.patch",
+      "3199600: Trying to access array offset on value of type bool in Drupal/h5p/H5PDrupal/H5PDrupal->libraryHasUpgrade()" : "patches/h5p_3199600.patch"
     },
     "drupal/conflict" : {
       "3163662: PHP error when stored entity is not found": "https://www.drupal.org/files/issues/2020-08-05/3163662-2.patch"

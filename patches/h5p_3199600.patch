@@ -1,0 +1,15 @@
+diff --git a/src/H5PDrupal/H5PDrupal.php b/src/H5PDrupal/H5PDrupal.php
+index d1a6eb0..b37d7d6 100644
+--- a/src/H5PDrupal/H5PDrupal.php
++++ b/src/H5PDrupal/H5PDrupal.php
+@@ -1405,6 +1405,10 @@ class H5PDrupal implements \H5PFrameworkInterface {
+    * Implements libraryHasUpgrade
+    */
+   public function libraryHasUpgrade($library) {
++    if (!is_array($library)) {
++      return FALSE;
++    }
++    
+     return !!\Drupal::database()->query(
+       "SELECT library_id
+          FROM {h5p_libraries}

@@ -323,7 +323,8 @@
         "drupal/openapi_ui_redoc": "^1.0@RC",
         "drupal/openapi_rest": "^2.0@RC",
         "drupal/video_embed_field": "^2.5",
-        "umn/umn_dlite_helper": "dev-main"
+        "umn/umn_dlite_helper": "dev-main",
+        "drupal/search_api_exclude_entity": "^2.0"
     },
     "repositories": {
         "algolia.places": {

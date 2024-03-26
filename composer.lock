@@ -28454,7 +28454,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/folwell_components.git",
-                "reference": "1c494c503f90cfc1fc4bbf0969bfbb06e30f0e50"
+                "reference": "2ba04b4ff3e45373fe53b8ac877fad8ff0767ae7"
             },
             "type": "drupal-module-custom",
             "authors": [
@@ -28464,7 +28464,7 @@
                 }
             ],
             "description": "Modular components for using Folwell theme in sites",
-            "time": "2024-03-26T12:44:34+00:00"
+            "time": "2024-03-21T19:07:50+00:00"
         },
         {
             "name": "umn/lightning_umn",

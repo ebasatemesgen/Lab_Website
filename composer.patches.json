@@ -230,6 +230,9 @@
     },
     "drupal/lightning_media": {
       "3380259: hook_field_widget_WIDGET_TYPE_form_alter is deprecated ": "patches/lightning_media_3380259.patch"
+    },
+    "drupal/views_block_placement_exposed_form_defaults": {
+      "3219438: Warning: Invalid argument supplied for foreach()": "https://www.drupal.org/files/issues/2021-06-17/views_block_placement_exposed_form_defaults_fix_array_warning.patch"
     }
   }
 }

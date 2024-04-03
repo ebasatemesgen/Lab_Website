@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "16d698dad66552c383be338b312395d3",
+    "content-hash": "10bcfcd9282a0c37b077b19cbd04ba4a",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -28498,6 +28498,25 @@
             ],
             "description": "Source plugin to use Google Sheets JSON feed as the source for a migration",
             "time": "2023-08-04T21:43:09+00:00"
+        },
+        {
+            "name": "umn/migrate_status_notification",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.umn.edu:drupalmodules/migrate_status_notification.git",
+                "reference": "ac6b6dd4c0a29e5559b1667d154a2955132bd4f4"
+            },
+            "default-branch": true,
+            "type": "drupal-module-custom",
+            "authors": [
+                {
+                    "name": "UMN Drupal Administrators",
+                    "email": "drupa001@umn.edu"
+                }
+            ],
+            "description": "Module to determine if a migration failed and send notification",
+            "time": "2024-04-03T12:34:35+00:00"
         },
         {
             "name": "umn/radix_layouts",

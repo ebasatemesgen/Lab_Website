@@ -325,7 +325,8 @@
         "drupal/video_embed_field": "^2.5",
         "umn/umn_dlite_helper": "dev-main",
         "drupal/search_api_exclude_entity": "^2.0",
-        "drupal/recaptcha_v3": "^2.0"
+        "drupal/recaptcha_v3": "^2.0",
+        "umn/migrate_status_notification": "dev-main"
     },
     "repositories": {
         "algolia.places": {
@@ -435,6 +436,10 @@
         "ckeditor_modal": {
             "type": "git",
             "url": "git@github.umn.edu:drupalmodules/ckeditor_modal.git"
+        },
+        "migrate_status_notification": {
+            "type": "git",
+            "url": "git@github.umn.edu:drupalmodules/migrate_status_notification.git"
         },
         "ckeditor_templates": {
             "type": "package",

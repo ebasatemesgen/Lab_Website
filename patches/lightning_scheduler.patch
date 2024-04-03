@@ -1,0 +1,168 @@
+diff --git a/modules/lightning_scheduler/lightning_scheduler.module b/modules/lightning_scheduler/lightning_scheduler.module
+index e8f5e7a..f16e695 100644
+--- a/modules/lightning_scheduler/lightning_scheduler.module
++++ b/modules/lightning_scheduler/lightning_scheduler.module
+@@ -16,6 +16,8 @@ use Drupal\Core\Field\FieldStorageDefinitionInterface;
+ use Drupal\Core\Update\UpdateKernel;
+ use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
+ use Drupal\lightning_scheduler\Plugin\Field\FieldWidget\ModerationStateWidget;
++use Drupal\workflows\Entity\Workflow;
++use Drupal\workflows\WorkflowInterface;
+ 
+ /**
+  * Implements hook_library_info_alter().
+@@ -88,29 +90,9 @@ function lightning_scheduler_cron() {
+  * Implements hook_entity_base_field_info().
+  */
+ function lightning_scheduler_entity_base_field_info(EntityTypeInterface $entity_type) {
+-  $fields = [];
+-  /** @var \Drupal\content_moderation\ModerationInformationInterface $moderation_info */
+-  $moderation_info = Drupal::service('content_moderation.moderation_information');
+-
+-  if ($moderation_info->canModerateEntitiesOfEntityType($entity_type)) {
+-    $fields['scheduled_transition_date'] = BaseFieldDefinition::create('datetime')
+-      ->setDisplayConfigurable('view', FALSE)
+-      ->setDisplayConfigurable('form', FALSE)
+-      ->setLabel(t('Scheduled transition date'))
+-      ->setTranslatable(TRUE)
+-      ->setRevisionable(TRUE)
+-      ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED);
+-
+-    $fields['scheduled_transition_state'] = BaseFieldDefinition::create('string')
+-      ->setDisplayConfigurable('view', FALSE)
+-      ->setDisplayConfigurable('form', FALSE)
+-      ->setLabel(t('Scheduled transition state'))
+-      ->setTranslatable(TRUE)
+-      ->setRevisionable(TRUE)
+-      ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED);
++  if (_lightning_scheduler_is_valid_entity_type($entity_type->id())) {
++    return _get_lightning_scheduler_base_field_definitions();
+   }
+-
+-  return $fields;
+ }
+ 
+ /**
+@@ -134,3 +116,121 @@ function lightning_scheduler_entity_presave($entity) {
+     unset($entity->existingRevisionId);
+   }
+ }
++
++/**
++* Implements hook_ENTITY_TYPE_insert().
++*/
++function lightning_scheduler_workflow_insert(WorkflowInterface $entity) {
++  $entity_definition_update_manager = \Drupal::entityDefinitionUpdateManager();
++  $workflow_plugin = $entity->getTypePlugin();
++  if ($workflow_plugin instanceof ContentModeration) {
++    // Install our base field definitions for every moderated entity type.
++    foreach ($workflow_plugin->getEntityTypes() as $entity_type_id) {
++      foreach (_get_lightning_scheduler_base_field_definitions() as $field_name => $field_storage_definition) {
++        if (!$entity_definition_update_manager->getFieldStorageDefinition($field_name, $entity_type_id)) {
++          $entity_definition_update_manager->installFieldStorageDefinition($field_name, $entity_type_id, 'lightning_scheduler', $field_storage_definition);
++        }
++      }
++    }
++  }
++}
++
++/**
++ * Implements hook_ENTITY_TYPE_update().
++ */
++function lightning_scheduler_workflow_update(WorkflowInterface $entity) {
++  $entity_type_manager = \Drupal::entityTypeManager();
++  $entity_definition_update_manager = \Drupal::entityDefinitionUpdateManager();
++  /** @var \Drupal\content_moderation\ModerationInformationInterface $moderation_information */
++  $moderation_information = \Drupal::service('content_moderation.moderation_information');
++
++  // Either install our base field definitions for entity types that are now
++  // moderated, or remove them for those that are not moderated anymore.
++  foreach ($entity_type_manager->getDefinitions() as $entity_type_id => $entity_type) {
++    if ($moderation_information->isModeratedEntityType($entity_type)) {
++      foreach (_get_lightning_scheduler_base_field_definitions() as $field_name => $field_storage_definition) {
++        if (!$entity_definition_update_manager->getFieldStorageDefinition($field_name, $entity_type_id)) {
++          $entity_definition_update_manager->installFieldStorageDefinition($field_name, $entity_type_id, 'lightning_scheduler', $field_storage_definition);
++        }
++      }
++    }
++    else {
++      foreach (array_keys(_get_lightning_scheduler_base_field_definitions()) as $field_name) {
++        if ($field_storage_definition = $entity_definition_update_manager->getFieldStorageDefinition($field_name, $entity_type_id)) {
++          $entity_definition_update_manager->uninstallFieldStorageDefinition($field_storage_definition);
++        }
++      }
++    }
++  }
++}
++
++/**
++ * Implements hook_ENTITY_TYPE_delete().
++ */
++function lightning_scheduler_workflow_delete(WorkflowInterface $entity) {
++  $entity_definition_update_manager = \Drupal::entityDefinitionUpdateManager();
++  $workflow_plugin = $entity->getTypePlugin();
++  if ($workflow_plugin instanceof ContentModeration) {
++    // Remove our base field definitions for every entity type that was
++    // moderated.
++    foreach ($workflow_plugin->getEntityTypes() as $entity_type_id) {
++      foreach (array_keys(_get_lightning_scheduler_base_field_definitions()) as $field_name) {
++        if ($field_storage_definition = $entity_definition_update_manager->getFieldStorageDefinition($field_name, $entity_type_id)) {
++          $entity_definition_update_manager->uninstallFieldStorageDefinition($field_storage_definition);
++        }
++      }
++    }
++  }
++}
++
++/**
++ * Gets the base field definitions required by this module.
++ *
++ * @return \Drupal\Core\Field\BaseFieldDefinition[]
++ *   An array of base field definitions, keyed by their field name.
++ */
++function _get_lightning_scheduler_base_field_definitions() {
++  
++  $fields = [];
++  $fields['scheduled_transition_date'] = BaseFieldDefinition::create('datetime')
++    ->setDisplayConfigurable('view', FALSE)
++    ->setDisplayConfigurable('form', FALSE)
++    ->setLabel(t('Scheduled transition date'))
++    ->setTranslatable(TRUE)
++    ->setRevisionable(TRUE)
++    ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED);
++
++  $fields['scheduled_transition_state'] = BaseFieldDefinition::create('string')
++    ->setDisplayConfigurable('view', FALSE)
++    ->setDisplayConfigurable('form', FALSE)
++    ->setLabel(t('Scheduled transition state'))
++    ->setTranslatable(TRUE)
++    ->setRevisionable(TRUE)
++    ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED);
++  return $fields;
++}
++
++/**
++   * Determines if this is a valid entity type with selected bundles in any workflow
++   *
++   * @param string $entity_type_id
++   *   Entity type id
++   *
++   * @return bool
++   * 
++   **/
++
++function _lightning_scheduler_is_valid_entity_type(String $entity_type_id) : bool {
++	$is_valid_entity_type =  FALSE;
++	$workflows = Workflow::loadMultipleByType('content_moderation');
++	if (empty(!$workflows)) { 
++	  foreach($workflows as $workflow) {
++		  $workflow_plugin = $workflow->getTypePlugin();
++		  if (!empty($workflow_plugin->getBundlesForEntityType($entity_type_id))) {
++        $is_valid_entity_type =  TRUE;
++			  break;
++		  }
++	  }
++  }
++  return $is_valid_entity_type;
++}
+\ No newline at end of file

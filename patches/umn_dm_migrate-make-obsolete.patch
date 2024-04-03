@@ -1,0 +1,10 @@
+diff --git a/umn_dm_migrate.info.yml b/umn_dm_migrate.info.yml
+index 8924861..7f1e075 100644
+--- a/umn_dm_migrate.info.yml
++++ b/umn_dm_migrate.info.yml
+@@ -15,3 +15,5 @@ dependencies:
+   - drupal:migrate_process_url
+   - drupal:migrate_process_xml
+   - drupal:umn_dm_storage
++lifecycle: obsolete
++lifecycle_link: https://www.drupal.org/about/core/policies/core-change-policies/deprecated-and-obsolete-modules-and-themes#s-entity-reference

@@ -1,0 +1,16 @@
+diff --git a/lightning_media.module b/lightning_media.module
+index 0c53516..124a885 100644
+--- a/lightning_media.module
++++ b/lightning_media.module
+@@ -81,9 +81,9 @@ function lightning_media_field_widget_settings_summary_alter(array &$summary, ar
+ }
+ 
+ /**
+- * Implements hook_field_widget_form_alter().
++ * Implements hook_field_widget_single_element_form_alter().
+  */
+-function lightning_media_field_widget_form_alter(array &$element, FormStateInterface $form_state, array $context) {
++function lightning_media_field_widget_single_element_form_alter(array &$element, FormStateInterface $form_state, array $context) {
+   if ($context['widget'] instanceof ImageWidget) {
+     ImageWidgetHelper::alter($element, $context['widget']);
+   }

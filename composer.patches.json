@@ -32,8 +32,9 @@
       "2753899: Allow hiding of country on address field": "https://www.drupal.org/files/issues/2019-02-21/hide_domestic_country_2753899-20.patch"
     },
     "drupal/lightning_workflow": {
-      "3126343: Scheduler needs to maintain its base fields properly": "https://www.drupal.org/files/issues/2020-07-08/3126343-11.patch",
-      "fix php8.2 deprecation issues": "patches/lightning_workflow_php_8.2.patch"
+      "fix php8.2 deprecation issues": "patches/lightning_workflow_php_8.2.patch",
+      "3419284: SQL error after upgrade to V 4.0": "patches/lightning_scheduler.patch",
+      "Update the lightning_scheduler module's dependencies to better match the Drupal lite installation profile.": "patches/lightning_scheduler_dependencies.patch"
     },
     "drupal/entity_pager": {
       "3337763: Improve entity pager accessibility for screen readers": "https://www.drupal.org/files/issues/2023-02-22/entity_pager-screen-reader-a11y-3337763-11-8.x-1.x.patch"
@@ -129,10 +130,12 @@
       "3352168: Conflict with the Group Node module" : "https://www.drupal.org/files/issues/2023-04-13/quick-node-clone-3352168-groups-v2_0.patch"
     },
     "drupal/tablefield": {
-      "3163841: Undefined index: caption": "https://www.drupal.org/files/issues/2020-08-10/tablefield-empty-caption-notice-2.patch"
+      "3163841: Undefined index: caption": "https://www.drupal.org/files/issues/2020-08-10/tablefield-empty-caption-notice-2.patch",
+      "3397688: PHP 8.2 has deprecated the creation of dynamic properties": "https://www.drupal.org/files/issues/2023-12-21/tablefield-php8.2-deprecated-creation-of-dynamic-properties-3397688-9.patch"
     },
     "drupal/contact_storage": {
-      "3191567: Undefined index notice": "https://www.drupal.org/files/issues/2021-01-12/3191567-9.patch"
+      "3191567: Undefined index notice": "https://www.drupal.org/files/issues/2021-01-12/3191567-9.patch",
+      "3053497: Error while field storage definition": "https://www.drupal.org/files/issues/2022-10-19/contact_storage.patch"
     },
     "drupal/entity_reference_revisions": {
       "2568187: Improve EntityReferenceRevisionsItem::generateSampleValue to be recursion-safe and devel_generate compatible": "https://www.drupal.org/files/issues/2021-04-05/2568187-recursion_limit-51.patch"
@@ -141,7 +144,9 @@
       "3029323: Cannot use Entity View block in Layout Builder when there is no context": "https://www.drupal.org/files/issues/2021-05-24/ctools-layout_builder_context-3029323-12.patch"
     },
     "drupal/viewsreference": {
-      "2938433: Add Label field formatter": "https://www.drupal.org/files/issues/2021-01-27/add_label_formatter-2938433-7.patch"
+      "2938433: Add Label field formatter": "https://www.drupal.org/files/issues/2021-01-27/add_label_formatter-2938433-7.patch",
+      "3423648: unserialize() of NULL deprecation returns to ViewsReferenceFieldFormatter": "https://www.drupal.org/files/issues/2024-02-28/3423648-unserialize-of-null-4.patch",
+      "3402036: Configuration schema for Enable extra settings (title,pagination,...) incorrect": "https://www.drupal.org/files/issues/2024-03-08/configuration-schema-for-views-reference-field-settings-3402036-14.patch"
     },
     "drupal/dropzonejs": {
       "3125682: Support chunked uploads": "https://www.drupal.org/files/issues/2022-03-29/dropzonejs-support-chuked-uploads-3125682-30.patch",
@@ -159,7 +164,7 @@
       "3339367: Use Once function in JS behavior": "https://www.drupal.org/files/issues/2023-02-05/3339367-use-once-method-4.patch"
     },
     "drupal/fontawesome": {
-      "3274028: CKEditor 5 compatibility": "patches/3274028-fontawesome-ckeditor5-compatibility-16.patch"
+      "3274028: CKEditor 5 compatibility": "patches/3274028-fontawesome-ckeditor5-compatibility-umn-1.patch"
     },
    "drupal/csv_serialization": {
       "3230521: Call to deprecated method getContent()": "https://www.drupal.org/files/issues/2021-11-03/deprecated_method_getcontent-3230521-5.patch"
@@ -208,6 +213,21 @@
     },
     "drupal/content_lock": {
       "Fix PHP 8.2+ deprecation notices": "https://www.drupal.org/files/issues/2023-05-22/3343964-5.patch"
+    },
+    "drupal/umn_dm_import": {
+      "Make module obsolete": "patches/umn_dm_import-make-obsolete.patch"
+    },
+    "drupal/umn_dm_migrate": {
+      "Make module obsolete": "patches/umn_dm_migrate-make-obsolete.patch"
+    },
+    "drupal/umn_dm_storage": {
+      "Make module obsolete": "patches/umn_dm_storage-make-obsolete.patch"
+    },
+    "drupal/digitalmeasures_migrate": {
+      "Make module obsolete": "patches/digitalmeasures_migrate-make-obsolete.patch"
+    },
+    "drupal/lightning_media": {
+      "3380259: hook_field_widget_WIDGET_TYPE_form_alter is deprecated ": "patches/lightning_media_3380259.patch"
     }
   }
 }

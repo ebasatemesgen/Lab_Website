@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c533a67b90d5ee135846677cd3c3315a",
+    "content-hash": "fa86290750021b806b8763570e34f0a5",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -17448,17 +17448,17 @@
         },
         {
             "name": "drupal/unpublished_node_permissions",
-            "version": "1.5.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/unpublished_node_permissions.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/unpublished_node_permissions-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "13964763eb6029f9ae92cfa6a0852e4af56f2e5a"
+                "url": "https://ftp.drupal.org/files/projects/unpublished_node_permissions-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "dded3f30cf25ce95e3c3775a003983adf562ad60"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9 || ^10"
@@ -17466,8 +17466,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1708606148",
+                    "version": "8.x-1.4",
+                    "datestamp": "1708607254",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

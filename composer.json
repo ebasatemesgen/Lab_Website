@@ -206,7 +206,7 @@
         "drupal/twitter_api_block": "^4.0",
         "drupal/umn_dm_import": "^2",
         "drupal/umn_dm_storage": "2.1.8",
-        "drupal/unpublished_node_permissions": "^1.1",
+        "drupal/unpublished_node_permissions": "1.4.0",
         "drupal/userprotect": "^1.1",
         "drupal/view_mode_page": "^4.0",
         "drupal/view_mode_switch": "^2.0",

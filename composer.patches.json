@@ -114,7 +114,8 @@
       "3260094: PHP 8.0 deprecated syntax warnings for h5p-editor": "patches/h5pphp.patch"
     },
     "drupal/h5p": {
-      "3194707: Files disappear in H5P editor": "https://www.drupal.org/files/issues/2021-01-26/h5p-fix-keeping-h5p-content-id-3194707-0.patch"
+      "3194707: Files disappear in H5P editor": "https://www.drupal.org/files/issues/2021-01-26/h5p-fix-keeping-h5p-content-id-3194707-0.patch",
+      "3199600: Trying to access array offset on value of type bool in Drupal/h5p/H5PDrupal/H5PDrupal->libraryHasUpgrade()" : "patches/h5p_3199600.patch"
     },
     "drupal/conflict" : {
       "3163662: PHP error when stored entity is not found": "https://www.drupal.org/files/issues/2020-08-05/3163662-2.patch"
@@ -126,8 +127,7 @@
       "3264639: Can't preview a new node": "https://www.drupal.org/files/issues/2022-02-16/preview-new-node-3264639-2.patch"
     },
     "drupal/quick_node_clone": {
-      "3183249: Nested paragraph support": "https://www.drupal.org/files/issues/2020-11-18/quick_node_clone-3183249-2.patch",
-      "3352168: Conflict with the Group Node module" : "https://www.drupal.org/files/issues/2023-04-13/quick-node-clone-3352168-groups-v2_0.patch"
+      "3183249: Nested paragraph support": "https://www.drupal.org/files/issues/2020-11-18/quick_node_clone-3183249-2.patch"
     },
     "drupal/tablefield": {
       "3163841: Undefined index: caption": "https://www.drupal.org/files/issues/2020-08-10/tablefield-empty-caption-notice-2.patch",
@@ -164,7 +164,8 @@
       "3339367: Use Once function in JS behavior": "https://www.drupal.org/files/issues/2023-02-05/3339367-use-once-method-4.patch"
     },
     "drupal/fontawesome": {
-      "3274028: CKEditor 5 compatibility": "patches/3274028-fontawesome-ckeditor5-compatibility-umn-1.patch"
+      "3274028: CKEditor 5 compatibility": "patches/3274028-fontawesome-ckeditor5-compatibility-umn-1.patch",
+      "3382648: Update to version 6.4.2": "https://www.drupal.org/files/issues/2023-08-22/update_to_6_4_2-3382648-2.patch"
     },
    "drupal/csv_serialization": {
       "3230521: Call to deprecated method getContent()": "https://www.drupal.org/files/issues/2021-11-03/deprecated_method_getcontent-3230521-5.patch"
@@ -187,9 +188,6 @@
     "umn/migrate_google_sheets": {
       "3304413: Incompatible with the latest migrate_plus 6.0.x": "https://www.drupal.org/files/issues/2022-08-17/migrate-google-sheets-declaration_0.patch"
     },
-    "drupal/shs": {
-      "3357151: Use core/internal.backbone lib": "https://www.drupal.org/files/issues/2023-04-28/3357151_change_backbone_lib_001.patch"
-    },
     "drupal/layout_library": {
       "3081497: Add hide the content preview option to layout editing": "https://www.drupal.org/files/issues/2019-11-07/3081497_add-hide-content-preview-02.patch"
     },
@@ -199,17 +197,8 @@
     "drupal/better_exposed_filters": {
       "2996297: Reset button does not use AJAX": "https://www.drupal.org/files/issues/2022-09-14/better_exposed_filters-reset_button_ajax_5x-2996297-74.patch"
     },
-    "drupal/charts": {
-      "Make highcharts bypass preprocessing to avoid load order issue with aggregation": "patches/charts-libraries-bypass-preprocess.patch"
-    },
     "drupal/twig_tweak": {
       "3331977: ob_get_clean() Cannot use output buffering in output buffering display handlers": "patches/twig_tweak-buffering_error-3331977.patch"
-    },
-    "drupal/google_tag": {
-      "Adjust help text for Google Tag ID(s) field": "patches/google_tag-3409381.patch"
-    },
-    "drupal/facets": {
-      "PHP 8.2 compatibility for the 2.0.x branch": "https://www.drupal.org/files/issues/2023-08-16/3336646-function-is-deprecated.patch"
     },
     "drupal/content_lock": {
       "Fix PHP 8.2+ deprecation notices": "https://www.drupal.org/files/issues/2023-05-22/3343964-5.patch"
@@ -228,6 +217,9 @@
     },
     "drupal/lightning_media": {
       "3380259: hook_field_widget_WIDGET_TYPE_form_alter is deprecated ": "patches/lightning_media_3380259.patch"
+    },
+    "drupal/views_block_placement_exposed_form_defaults": {
+      "3219438: Warning: Invalid argument supplied for foreach()": "https://www.drupal.org/files/issues/2021-06-17/views_block_placement_exposed_form_defaults_fix_array_warning.patch"
     }
   }
 }

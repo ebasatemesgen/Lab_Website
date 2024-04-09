@@ -28532,7 +28532,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.umn.edu:drupalmodules/migrate_status_notification.git",
-                "reference": "ac6b6dd4c0a29e5559b1667d154a2955132bd4f4"
+                "reference": "5139869f5622819798d70eba5877ae78db6404e3"
             },
             "default-branch": true,
             "type": "drupal-module-custom",
@@ -28543,7 +28543,7 @@
                 }
             ],
             "description": "Module to determine if a migration failed and send notification",
-            "time": "2024-04-03T12:34:35+00:00"
+            "time": "2024-04-09T12:33:40+00:00"
         },
         {
             "name": "umn/radix_layouts",

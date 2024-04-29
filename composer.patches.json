@@ -28,6 +28,9 @@
     "drupal/scheduled_updates": {
       "3172330: Module is not D9 compatible": "https://www.drupal.org/files/issues/2021-03-08/3172330-24.patch"
     },
+    "drupal/easy_breadcrumb": {
+      "Fix redirect loop": "patches/easy_breadcrumb_redirect.patch"
+    },
     "drupal/address": {
       "2753899: Allow hiding of country on address field": "https://www.drupal.org/files/issues/2019-02-21/hide_domestic_country_2753899-20.patch"
     },

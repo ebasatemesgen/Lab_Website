@@ -1,0 +1,34 @@
+diff --git a/src/EasyBreadcrumbBuilder.php b/src/EasyBreadcrumbBuilder.php
+index a6c9d9c..f0446d9 100644
+--- a/src/EasyBreadcrumbBuilder.php
++++ b/src/EasyBreadcrumbBuilder.php
+@@ -898,21 +898,23 @@ class EasyBreadcrumbBuilder implements BreadcrumbBuilderInterface {
+     // redirect module doesn't include it.
+     if ($this->moduleHandler->moduleExists('redirect') && $this->config->get(EasyBreadcrumbConstants::FOLLOW_REDIRECTS)) {
+       $redirect_path = $path;
+-      if (!empty($redirect_path) && $redirect_path[0] === '/') {
++      if ($redirect_path[0] === '/') {
+         $redirect_path = substr($redirect_path, 1);
+       }
+       $language_prefix = $this->languageManager->getCurrentLanguage()->getId();
+       if (strpos($redirect_path, "$language_prefix/") === 0) {
+         $redirect_path = substr($redirect_path, strlen("$language_prefix/"));
+       }
+-      /** @var \Drupal\redirect\Entity\Redirect $redirect */
+-      if ($redirect = \Drupal::service('redirect.repository')
+-        ->findMatchingRedirect($redirect_path, [], $this->languageManager->getCurrentLanguage()
+-          ->getId())) {
++      $redirects = \Drupal::service('redirect.repository')
++        ->findBySourcePath($redirect_path);
++      if (!empty($redirects)) {
++        // Take the first redirect if we have multiple, there should normally
++        // only be one redirect for a source.
++        /** @var \Drupal\redirect\Entity\Redirect $redirect */
++        $redirect = current($redirects);
+         $path = $redirect->getRedirectUrl()->toString();
+       }
+     }
+-
+     // @todo Use the RequestHelper once https://www.drupal.org/node/2090293 is
+     // fixed.
+     // The path in the request should start with a slash.

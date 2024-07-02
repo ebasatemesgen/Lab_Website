@@ -1,0 +1,118 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update functions for Lightning Media Image.
+ */
+
+use Drupal\Core\Archiver\Tar;
+use GuzzleHttp\RequestOptions;
+
+/**
+ * Implements hook_install().
+ */
+function lightning_media_image_install() {
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  $module_exists = [\Drupal::moduleHandler(), 'moduleExists'];
+
+  // Grants image browser access to the creator content role and the
+  // media_creator and media_manager roles.
+  if ($module_exists('lightning_roles')) {
+    lightning_media_image_modules_installed(['lightning_roles']);
+  }
+
+  if ($module_exists('image_widget_crop')) {
+    // Use the cropping widgets for every form display of the Image media type.
+    $form_displays = \Drupal::entityTypeManager()
+      ->getStorage('entity_form_display')
+      ->loadByProperties([
+        'targetEntityType' => 'media',
+        'bundle' => 'image',
+      ]);
+
+    /** @var \Drupal\Core\Entity\Display\EntityFormDisplayInterface $form_display */
+    foreach ($form_displays as $form_display) {
+      $component = $form_display->getComponent('field_media_image');
+
+      if ($component && $component['type'] == 'image_image') {
+        $component['type'] = 'image_widget_crop';
+        $component['settings']['crop_list'] = ['freeform'];
+        $component['settings']['show_crop_area'] = TRUE;
+        $form_display->setComponent('field_media_image', $component)->save();
+      }
+    }
+
+    // Try to use a local copy of Cropper over the CDN-hosted fallback.
+    $cropper_path = Drupal::service('library.libraries_directory_file_finder')
+      ->find('cropper/dist');
+
+    if ($cropper_path) {
+      Drupal::configFactory()
+        ->getEditable('image_widget_crop.settings')
+        ->set('settings.library_url', "$cropper_path/cropper.min.js")
+        ->set('settings.css_url', "$cropper_path/cropper.min.css")
+        ->save();
+    }
+  }
+}
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function lightning_media_image_update_last_removed(): int {
+  return 8007;
+}
+
+/**
+ * Downloads the Cropper JavaScript library if needed.
+ */
+function lightning_media_image_update_9001(array &$sandbox) {
+  // We only need Cropper if Image Widget Crop is installed.
+  if (!Drupal::moduleHandler()->moduleExists('image_widget_crop')) {
+    return;
+  }
+
+  // If the Cropper library is already available, there's nothing to do.
+  $dir = Drupal::service('library.libraries_directory_file_finder')
+    ->find('cropper');
+  if ($dir) {
+    return;
+  }
+
+  // Allow the destination directory to be overridden in tests.
+  $destination = $sandbox[__FUNCTION__] ?? Drupal::root() . '/libraries';
+
+  // Ensure the destination exists and is writable, or abort the update.
+  /** @var \Drupal\Core\File\FileSystemInterface $file_system */
+  $file_system = Drupal::service('file_system');
+  $ready = $file_system->prepareDirectory($destination, $file_system::CREATE_DIRECTORY | $file_system::MODIFY_PERMISSIONS);
+  if (empty($ready)) {
+    return t('The Cropper JavaScript library cannot be downloaded because %dir is not writable and could not be created.', [
+      '%dir' => $destination,
+    ]);
+  }
+
+  $file = $file_system->tempnam($file_system->getTempDirectory(), 'cropper');
+  if (empty($file)) {
+    return t('The Cropper JavaScript library cannot be downloaded because a temporary file could not be created.');
+  }
+
+  Drupal::httpClient()
+    ->request('GET', 'https://github.com/fengyuanchen/cropper/archive/refs/tags/v2.3.4.tar.gz', [
+      RequestOptions::SINK => $file,
+    ]);
+
+  $archiver = new Tar($file);
+  $archiver->extract($destination);
+  rename("$destination/cropper-2.3.4", "$destination/cropper");
+  $file_system->delete($file);
+
+  $destination .= '/cropper';
+  return t('The Cropper JavaScript library was installed in %destination. Remember to add it to your version control system.', [
+    '%destination' => $destination,
+  ]);
+}

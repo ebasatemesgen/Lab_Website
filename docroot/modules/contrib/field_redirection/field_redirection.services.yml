@@ -1,0 +1,7 @@
+services:
+  field_redirection.result_builder:
+    class: Drupal\field_redirection\FieldRedirectionResultBuilder
+    arguments:
+      - '@path.matcher'
+      - '@token'
+      - '@state'

@@ -1,0 +1,13 @@
+{
+  "name": "drupal/field_delimiter",
+  "description": "Provides extra field formatter settings to specify delimiters for multi-value fields.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "homepage": "https://drupal.org/project/field_delimiter",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/field_delimiter",
+    "source": "https://git.drupalcode.org/project/field_delimiter"
+  },
+  "require": {}
+}

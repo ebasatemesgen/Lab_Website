@@ -1,0 +1,228 @@
+<?php
+
+/**
+ * @file
+ * Widgets settings alter.
+ */
+
+use Drupal\Core\Field\FieldDefinitionInterface;
+use Drupal\Core\Field\FieldStorageDefinitionInterface;
+use Drupal\Core\Field\WidgetInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function limited_field_widgets_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the entity_clone module.
+    case 'help.page.limited_field_widgets':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provide extra limit settings for unlimited field widgets.') . '</p>';
+      return $output;
+
+    default:
+      return;
+
+  }
+}
+
+/**
+ * Implements hook_field_widget_third_party_settings_form().
+ */
+function limited_field_widgets_field_widget_third_party_settings_form(WidgetInterface $plugin, FieldDefinitionInterface $field_definition, $form_mode, $form, FormStateInterface $form_state) {
+  if ($field_definition->getFieldStorageDefinition()->getCardinality() === FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED) {
+    return [
+      'limit_values' => [
+        '#type' => 'number',
+        '#title' => t('Limit values'),
+        '#description' => t('Set to "0" for show all values'),
+        '#default_value' => $plugin->getThirdPartySetting('limited_field_widgets', 'limit_values') ?: 0,
+        '#min' => 0,
+        '#required' => TRUE,
+      ],
+    ];
+  }
+
+  return [];
+}
+
+/**
+ * Implements hook_field_widget_complete_form_alter().
+ */
+function limited_field_widgets_field_widget_complete_form_alter(array &$field_widget_complete_form, FormStateInterface $form_state, array $context) {
+  $limit = $context['widget']->getThirdPartySetting('limited_field_widgets', 'limit_values') ?: 0;
+  $has_child = FALSE;
+  if (!empty($limit) && !$form_state->isProgrammed()) {
+    if (empty($field_widget_complete_form['widget']['#max_delta']) && !empty($field_widget_complete_form['widget']['target_id'])) {
+      $value = &$field_widget_complete_form['widget']['target_id'];
+    }
+    else {
+      $value = &$field_widget_complete_form['widget'];
+    }
+
+    // Re-count max_delta manual for paragraphs.
+    if (!empty($field_widget_complete_form['widget']['#paragraphs_widget']) && !empty($field_widget_complete_form['widget']['#max_delta'])) {
+      $field_widget_complete_form['widget']['#max_delta'] = 0;
+      $first_element_index = _limited_field_widgets_find_min_numeric_index($field_widget_complete_form['widget']);
+      foreach (array_filter($field_widget_complete_form['widget'], 'is_int', ARRAY_FILTER_USE_KEY) as $key => $val) {
+        if ($key > $first_element_index && $key > $field_widget_complete_form['widget']['#max_delta']) {
+          $field_widget_complete_form['widget']['#max_delta'] += 1;
+          $has_child = TRUE;
+        }
+      }
+    }
+
+    if (
+      !empty($value['#type'])
+      && (
+        in_array($value['#type'], ['select', 'checkboxes'])
+        || ($value['#type'] == 'entity_autocomplete' && !empty($value['#tags']))
+      )
+    ) {
+      if ($limit == 1) {
+        switch ($value['#type']) {
+          case 'checkboxes':
+            $value['#type'] = 'radios';
+            if (!empty($value['#default_value']) && is_array($value['#default_value'])) {
+              $value['#default_value'] = array_shift($value['#default_value']);
+            }
+            break;
+
+          case 'select':
+            $value['#multiple'] = FALSE;
+            if (!empty($value['#default_value']) && is_array($value['#default_value'])) {
+              $value['#default_value'] = array_shift($value['#default_value']);
+            }
+            break;
+        }
+      }
+      $value['#limit'] = $limit;
+      $value['#element_validate'][] = '_limited_field_widgets_limit_validation';
+    }
+    else {
+      // Skip empty fields.
+      if (!empty($value['#field_name'])) {
+        $field_name = $value['#field_name'];
+        $input = $form_state->getUserInput();
+
+        foreach (array_filter($value, 'is_int', ARRAY_FILTER_USE_KEY) as $key => $val) {
+          $has_child = TRUE;
+          if (
+            !empty($input[$field_name])
+            && array_key_exists($key, $input[$field_name])
+            && empty($input[$field_name][$key])
+          ) {
+            unset($value[$key]);
+            $value['#max_delta'] += -1;
+          }
+        }
+      }
+
+      if (
+        $context['widget']->getPluginId() == 'media_library_widget'
+        && !empty($field_widget_complete_form['widget']['selection'])
+      ) {
+        $children = array_filter($value['selection'], 'is_int', ARRAY_FILTER_USE_KEY);
+        if (count($children) >= $limit) {
+          foreach ($children as $key => $val) {
+            if ($key >= $limit) {
+              unset($value['selection'][$key]);
+            }
+          }
+          $value['open_button']['#access'] = FALSE;
+        }
+        else {
+          $value['open_button']['#access'] = TRUE;
+        }
+      }
+      elseif ($context['widget']->getPluginId() == 'file_generic') {
+        $children = Element::children($value);
+        if (count($children) >= $limit) {
+          foreach ($children as $key => $val) {
+            if ($key >= $limit) {
+              unset($value[$key]);
+            }
+            else {
+              $value['#file_upload_delta'] = $key;
+            }
+          }
+        }
+      }
+      elseif (isset($value['#max_delta'])) {
+        $max = $limit - 1;
+        if ($value['#max_delta'] >= $max && $has_child) {
+          $value['add_more']['#access'] = FALSE;
+
+          $value['#max_delta'] = 0;
+          $delta = 0;
+          $first_element_index = _limited_field_widgets_find_min_numeric_index($value);
+          foreach (array_filter($value, 'is_int', ARRAY_FILTER_USE_KEY) as $key => $val) {
+            if ($key > $first_element_index) {
+              $delta += 1;
+              if ($delta > $max) {
+                unset($value[$key]);
+              }
+              else {
+                $value['#max_delta'] = $key;
+              }
+            }
+          }
+        }
+        else {
+          $value['add_more']['#access'] = TRUE;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Detect first child key.
+ */
+function _limited_field_widgets_find_min_numeric_index(array $values) {
+  if (!empty($values) && is_array($values)) {
+    $elements_array = array_filter($values, 'is_int', ARRAY_FILTER_USE_KEY);
+    if (!empty($elements_array)) {
+      return min(array_keys($elements_array));
+    }
+  }
+  return 0;
+}
+
+/**
+ * Extra validation function.
+ */
+function _limited_field_widgets_limit_validation(array $element, FormStateInterface $form_state) {
+  if ($element['#type'] == 'entity_autocomplete' && !empty($element['#tags'])) {
+    $values = explode(',', $element['#value']);
+  }
+  else {
+    if (is_array($element['#value'])) {
+      $values = array_values($element['#value']);
+    }
+    else {
+      $values = [$element['#value']];
+    }
+  }
+
+  $index = array_search('_none', $values, TRUE);
+  if ($index !== FALSE) {
+    unset($values[$index]);
+  }
+
+  if (count($values) > $element['#limit']) {
+    $form_state->setError(
+      $element,
+      t('%name: this field cannot hold more than @count values.',
+        [
+          '%name' => $element['#title'],
+          '@count' => $element['#limit'],
+        ]
+      )
+    );
+  }
+}

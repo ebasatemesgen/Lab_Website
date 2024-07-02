@@ -1,0 +1,9 @@
+{
+    "name": "drupal/toc_js",
+    "type": "drupal-module",
+    "description": "Toc.js module integrate the jQuery plugin TOC.js into Drupal.",
+    "homepage": "https://drupal.org/project/toc_js",
+    "license": "GPL-2.0-or-later"
+
+}
+

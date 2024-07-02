@@ -1,0 +1,147 @@
+################
+# DrupalCI GitLabCI template
+#
+# Gitlab-ci.yml to replicate DrupalCI testing for Contrib
+#
+# With thanks to:
+#   * The GitLab Acceleration Initiative participants
+#   * DrupalSpoons
+################
+
+################
+# Guidelines
+#
+# This template is designed to give any Contrib maintainer everything they need to test, without requiring modification. It is also designed to keep up to date with Core Development automatically through the use of include files that can be centrally maintained.
+#
+# However, you can modify this template if you have additional needs for your project.
+################
+
+################
+# Includes
+#
+# Additional configuration can be provided through includes.
+# One advantage of include files is that if they are updated upstream, the changes affect all pipelines using that include.
+#
+# Includes can be overridden by re-declaring anything provided in an include, here in gitlab-ci.yml
+# https://docs.gitlab.com/ee/ci/yaml/includes.html#override-included-configuration-values
+################
+
+include:
+  ################
+  # DrupalCI includes:
+  # As long as you include this, any future includes added by the Drupal Association will be accessible to your pipelines automatically.
+  # View these include files at https://git.drupalcode.org/project/gitlab_templates/
+  ################
+  - project: $_GITLAB_TEMPLATES_REPO
+    ref: $_GITLAB_TEMPLATES_REF
+    file:
+      - '/includes/include.drupalci.main.yml'
+      # EXPERIMENTAL: For Drupal 7, remove the above line and uncomment the below.
+      # - '/includes/include.drupalci.main-d7.yml'
+      - '/includes/include.drupalci.variables.yml'
+      - '/includes/include.drupalci.workflows.yml'
+
+.phpstan-base:
+  stage: validate
+  rules:
+    - when: on_success
+  needs:
+    - composer
+  script:
+    # If present, use PHPStan configuration neon file.
+    - |
+      export PHPSTAN_CONFIGURATION=""
+      [[ -f $_WEB_ROOT/modules/custom/$CI_PROJECT_NAME/phpstan.neon ]] && export PHPSTAN_CONFIGURATION="--configuration=$_WEB_ROOT/modules/custom/$CI_PROJECT_NAME/phpstan.neon"
+    - php vendor/bin/phpstan --version
+    # Rely on PHPStan caching to execute analysis multiple times without performance drawback.
+    # Output a copy in junit.
+    - php vendor/bin/phpstan analyze $_WEB_ROOT/modules/custom/$CI_PROJECT_NAME $PHPSTAN_CONFIGURATION --error-format=junit > junit.xml || true
+    # Output a copy in GitLab code quality format.
+    - php vendor/bin/phpstan analyze $_WEB_ROOT/modules/custom/$CI_PROJECT_NAME $PHPSTAN_CONFIGURATION --no-progress --error-format=gitlab > phpstan-quality-report.json || true
+    # Output a copy in plain text for human logs.
+    - php vendor/bin/phpstan analyze $_WEB_ROOT/modules/custom/$CI_PROJECT_NAME $PHPSTAN_CONFIGURATION --no-progress || EXIT_CODE=$?
+    # Generate a new baseline. Allow empty baseline to ensure that artifact exists.
+    - |
+      echo "Generating an PHPStan baseline file (available as job artifact) that can be included in the project. If the project already has one, you might need to manually merge them."
+      php vendor/bin/phpstan analyze $_WEB_ROOT/modules/custom/$CI_PROJECT_NAME $PHPSTAN_CONFIGURATION --no-progress --generate-baseline --allow-empty-baseline || true
+    # Ensure paths in artifacts are git-relative.
+    - sed -i "s#$_WEB_ROOT/modules/custom/$CI_PROJECT_NAME/##" junit.xml phpstan-baseline.neon phpstan-quality-report.json || true
+    - exit $EXIT_CODE
+  allow_failure: true
+  artifacts:
+    expose_as: phpstan
+    when: always
+    expire_in: 6 mos
+    reports:
+      codequality: phpstan-quality-report.json
+      junit: junit.xml
+    name: artifacts-$CI_PIPELINE_ID-$CI_JOB_NAME_SLUG
+    paths:
+      - junit.xml
+      - phpstan-baseline.neon
+      - phpstan-quality-report.json
+
+################
+# Pipeline configuration variables
+#
+# These are the variables provided to the Run Pipeline form that a user may want to override.
+#
+# Docs at https://git.drupalcode.org/project/gitlab_templates/-/blob/1.0.x/includes/include.drupalci.variables.yml
+################
+variables:
+  SKIP_ESLINT: '1'
+  SKIP_STYLELINT: '1'
+
+###################################################################################
+#
+#                                        *
+#                                       /(
+#                                      ((((,
+#                                    /(((((((
+#                                   ((((((((((*
+#                                ,(((((((((((((((
+#                              ,(((((((((((((((((((
+#                            ((((((((((((((((((((((((*
+#                         *(((((((((((((((((((((((((((((
+#                       ((((((((((((((((((((((((((((((((((*
+#                    *((((((((((((((((((  .((((((((((((((((((
+#                  ((((((((((((((((((.       /(((((((((((((((((*
+#                /(((((((((((((((((            .(((((((((((((((((,
+#             ,((((((((((((((((((                 ((((((((((((((((((
+#           .((((((((((((((((((((                   .(((((((((((((((((
+#          (((((((((((((((((((((((                     ((((((((((((((((/
+#        (((((((((((((((((((((((((((/                    ,(((((((((((((((*
+#      .((((((((((((((/  /(((((((((((((.                   ,(((((((((((((((
+#     *((((((((((((((      ,(((((((((((((/                   *((((((((((((((.
+#    ((((((((((((((,          /(((((((((((((.                  ((((((((((((((,
+#   (((((((((((((/              ,(((((((((((((*                 ,(((((((((((((,
+#  *(((((((((((((                .(((((((((((((((                ,(((((((((((((
+#  ((((((((((((/                /((((((((((((((((((.              ,((((((((((((/
+# (((((((((((((              *(((((((((((((((((((((((*             *((((((((((((
+# (((((((((((((            ,(((((((((((((..(((((((((((((           *((((((((((((
+# ((((((((((((,          /((((((((((((*      /((((((((((((/         ((((((((((((
+# (((((((((((((        /((((((((((((/          (((((((((((((*       ((((((((((((
+# (((((((((((((/     /((((((((((((               ,((((((((((((,    *((((((((((((
+#  ((((((((((((((  *(((((((((((/                   *((((((((((((.  ((((((((((((/
+#  *((((((((((((((((((((((((((,                      /(((((((((((((((((((((((((
+#   (((((((((((((((((((((((((                         ((((((((((((((((((((((((,
+#   .(((((((((((((((((((((((/                         ,(((((((((((((((((((((((
+#     ((((((((((((((((((((((/                         ,(((((((((((((((((((((/
+#      *(((((((((((((((((((((                         (((((((((((((((((((((,
+#       ,(((((((((((((((((((((,                      ((((((((((((((((((((/
+#         ,(((((((((((((((((((((*                  /((((((((((((((((((((
+#            ((((((((((((((((((((((,           ,/((((((((((((((((((((,
+#              ,(((((((((((((((((((((((((((((((((((((((((((((((((((
+#                 .(((((((((((((((((((((((((((((((((((((((((((((
+#                     .((((((((((((((((((((((((((((((((((((,.
+#                          .,(((((((((((((((((((((((((.
+#
+###################################################################################
+
+npm-test:
+  stage: test
+  script:
+    # Change directory to the project root folder
+    - cd $CI_PROJECT_DIR/$_WEB_ROOT/modules/custom/$CI_PROJECT_NAME/js
+    - npm i
+    - npm run-script test

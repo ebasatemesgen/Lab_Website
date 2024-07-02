@@ -1,0 +1,17 @@
+{
+  "name": "vani",
+  "version": "1.0.0",
+  "description": "* INTRODUCTION  * THEME FEATURES  * THEME REGIONS  * REQUIREMENTS  * INSTALLATION  * CONFIGURATION  * FAQ  * MAINTAINERS  * DEMO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.4"
+  }
+}

@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update functions for Lightning Media Instagram.
+ */
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function lightning_media_instagram_update_last_removed(): int {
+  return 8003;
+}

@@ -1,0 +1,7 @@
+lightning_scheduler.settings:
+  path: '/admin/config/system/lightning/scheduler'
+  defaults:
+    _title: Lightning Scheduler
+    _form: '\Drupal\lightning_scheduler\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

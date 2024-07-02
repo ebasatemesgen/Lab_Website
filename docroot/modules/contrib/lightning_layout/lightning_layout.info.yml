@@ -1,0 +1,13 @@
+name: 'Lightning Layout'
+core_version_requirement: '^9.3 || ^10'
+type: module
+description: 'Provides the tools to take control of your layout.'
+package: Lightning
+dependencies:
+  - drupal:block
+  - drupal:layout_builder
+
+# Information added by Drupal.org packaging script on 2023-02-12
+version: '3.0.1'
+project: 'lightning_layout'
+datestamp: 1676166329

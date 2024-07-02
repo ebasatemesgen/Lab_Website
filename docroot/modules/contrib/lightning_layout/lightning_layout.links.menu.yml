@@ -1,0 +1,5 @@
+lightning_layout.settings:
+  title: 'Lightning Layout'
+  description: 'Configure Lightning Layout settings.'
+  parent: system.admin_config_content
+  route_name: lightning_layout.settings

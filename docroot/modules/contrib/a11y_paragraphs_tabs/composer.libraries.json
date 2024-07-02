@@ -1,0 +1,49 @@
+{
+  "name": "drupal/a11y_paragraphs_tabs",
+  "require": {
+    "matthiasott/a11y-accordion-tabs": "^1.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-1.x": "1.x-dev"
+    },
+    "drupal": {
+      "version": "8.x-1.10+1-dev",
+      "datestamp": "1586964829",
+      "security-coverage": {
+        "status": "not-covered",
+        "message": "Dev releases are not covered by Drupal security advisories."
+      }
+    }
+  },
+  "notification-url": "https://packages.drupal.org/8/downloads",
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "authors": [
+    {
+      "name": "hmartens",
+      "homepage": "https://www.drupal.org/user/622826"
+    }
+  ],
+  "description": "Adds a paragraph component/type for Tabs that comply to Accessibility (A11Y) standards.",
+  "homepage": "https://www.drupal.org/project/a11y_paragraphs_tabs",
+  "support": {
+    "source": "https://git.drupalcode.org/project/a11y_paragraphs_tabs"
+  },
+  "repositories": {
+    "matthiasott/a11y-accordion-tabs": {
+      "type": "package",
+      "package": {
+        "name": "matthiasott/a11y-accordion-tabs",
+        "version": "1.0.2",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/matthiasott/a11y-accordion-tabs/archive/refs/tags/v1.0.2.zip",
+          "type": "tar"
+        },
+        "license": "MIT"
+      }
+    }
+  }
+}

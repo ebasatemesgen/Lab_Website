@@ -1,0 +1,13 @@
+name: Workbench Menu Access
+type: module
+description: Adds Workbench Access controls to menus.
+core_version_requirement: ^9.1 || ^10
+configure: workbench_menu_access.admin
+package: Workbench
+dependencies:
+  - workbench_access:workbench_access
+
+# Information added by Drupal.org packaging script on 2023-01-11
+version: '2.0.0'
+project: 'workbench_menu_access'
+datestamp: 1673474309

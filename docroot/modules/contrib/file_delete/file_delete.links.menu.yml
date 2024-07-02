@@ -1,0 +1,5 @@
+file_delete.settings:
+  title: 'File Delete Settings'
+  description: 'Configure the File Delete module.'
+  route_name: file_delete.settings
+  parent: system.admin_config_media

@@ -1,0 +1,13 @@
+name: Audit Files
+type: module
+description: Allows for comparing and correcting files and file references in the "files" directory, in the database, and in content.
+core_version_requirement: '^10.0'
+package: File
+configure: auditfiles.configuration
+dependencies:
+  - drupal:file
+
+# Information added by Drupal.org packaging script on 2023-11-30
+version: '4.1.0-beta2'
+project: 'auditfiles'
+datestamp: 1701347467

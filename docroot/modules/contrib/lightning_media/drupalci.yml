@@ -1,0 +1,36 @@
+build:
+  assessment:
+    testing:
+      container_command.commit-checks:
+        commands:
+          - cp -R ./vendor/enyo/dropzone libraries
+          - curl -L --output slick.tar.gz https://github.com/kenwheeler/slick/archive/refs/tags/1.8.0.tar.gz
+          - tar -x -z -f slick.tar.gz -C libraries
+          - mv ./libraries/slick-1.8.0 ./libraries/slick
+          - curl -L --output cropper.tar.gz https://github.com/fengyuanchen/cropper/archive/refs/tags/v4.1.0.tar.gz
+          - tar -x -z -f cropper.tar.gz -C libraries
+          - mv ./libraries/cropper-4.1.0 ./libraries/cropper
+      run_tests.standard:
+        types: 'Simpletest,PHPUnit-Unit,PHPUnit-Kernel,PHPUnit-Functional'
+        testgroups: '--all'
+        color: true
+        die-on-fail: false
+        keep-results: true
+        keep-results-table: false
+        verbose: false
+        concurrency: 0
+        halt-on-fail: false
+        repeat: 1
+        suppress-deprecations: true
+      run_tests.js:
+        concurrency: 1
+        types: PHPUnit-FunctionalJavascript
+        testgroups: '--all'
+        color: true
+        die-on-fail: false
+        keep-results: true
+        keep-results-table: false
+        verbose: false
+        halt-on-fail: false
+        repeat: 1
+        suppress-deprecations: true

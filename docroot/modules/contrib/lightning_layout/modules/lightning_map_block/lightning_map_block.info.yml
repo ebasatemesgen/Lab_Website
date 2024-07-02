@@ -1,0 +1,14 @@
+name: 'Map block'
+package: Lightning
+core_version_requirement: '^9.3 || ^10'
+type: module
+description: 'Provides a block type which embeds a Google map.'
+dependencies:
+  - drupal:block_content
+  - lightning_layout:lightning_layout
+  - simple_gmap:simple_gmap
+
+# Information added by Drupal.org packaging script on 2023-02-12
+version: '3.0.1'
+project: 'lightning_layout'
+datestamp: 1676166329

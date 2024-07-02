@@ -1,0 +1,48 @@
+<?php
+
+use Drupal\Core\Archiver\Tar;
+use GuzzleHttp\RequestOptions;
+
+/**
+ * Downloads the Slick JavaScript library if needed.
+ */
+function lightning_media_slideshow_update_9001(array &$sandbox) {
+  // If the Slick library is already available, there's nothing to do.
+  $dir = slick_libraries_get_path('slick') ?: slick_libraries_get_path('slick-carousel') ?: slick_libraries_get_path('accessible-slick');
+  if ($dir) {
+    return;
+  }
+
+  // Allow the destination directory to be overridden in tests.
+  $destination = $sandbox[__FUNCTION__] ?? Drupal::root() . '/libraries';
+
+  // Ensure the destination exists and is writable, or abort the update.
+  /** @var \Drupal\Core\File\FileSystemInterface $file_system */
+  $file_system = Drupal::service('file_system');
+  $ready = $file_system->prepareDirectory($destination, $file_system::CREATE_DIRECTORY | $file_system::MODIFY_PERMISSIONS);
+  if (empty($ready)) {
+    return t('The Slick JavaScript library cannot be downloaded because %dir is not writable and could not be created.', [
+      '%dir' => $destination,
+    ]);
+  }
+
+  $file = $file_system->tempnam($file_system->getTempDirectory(), 'slick');
+  if (empty($file)) {
+    return t('The Slick JavaScript library cannot be downloaded because a temporary file could not be created.');
+  }
+
+  Drupal::httpClient()
+    ->request('GET', 'https://github.com/kenwheeler/slick/archive/refs/tags/1.8.0.tar.gz', [
+      RequestOptions::SINK => $file,
+    ]);
+
+  $archiver = new Tar($file);
+  $archiver->extract($destination);
+  rename("$destination/slick-1.8.0", "$destination/slick-carousel");
+  $file_system->delete($file);
+
+  $destination .= '/slick-carousel';
+  return t('The Slick JavaScript library was installed in %destination. Remember to add it to your version control system.', [
+    '%destination' => $destination,
+  ]);
+}

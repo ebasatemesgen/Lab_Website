@@ -1,0 +1,46 @@
+{
+  "name": "drupal/unpublished_node_permissions",
+  "description": "Creates permisisons per node content type to control access to unpublished nodes per content type.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "keywords": ["Drupal"],
+  "homepage": "https://www.drupal.org/project/unpublished_node_permissions",
+  "authors": [
+    {
+      "name": "Wietze Eilander (Islanderweedy)",
+      "homepage": "https://www.drupal.org/u/islanderweedy",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Frans van der Meer (Frans)",
+      "homepage": "https://www.drupal.org/u/frans",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Fabien Gutknecht (Fabsgugu)",
+      "homepage": "https://www.drupal.org/u/fabsgugu",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Jeroen Bobbeldijk (jeroen.b)",
+      "homepage": "https://www.drupal.org/u/jeroenb",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Matthias Glastra (matglas86)",
+      "homepage": "https://www.drupal.org/u/matglas86",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Viktor Holovachek (AstonVictor)",
+      "homepage": "https://www.drupal.org/u/astonvictor",
+      "role": "Maintainer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/unpublished_node_permissions",
+    "source": "https://git.drupalcode.org/project/unpublished_node_permissions"
+  },
+  "require": { }
+}

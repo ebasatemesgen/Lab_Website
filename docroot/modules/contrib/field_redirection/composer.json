@@ -1,0 +1,21 @@
+{
+  "name": "drupal/field_redirection",
+  "description": "Provides a field formatter to redirect the page to a URL. Requires Link module.",
+  "type": "drupal-module",
+  "license": "GPL-2.0+",
+  "keywords": ["Drupal"],
+  "homepage": "https://www.drupal.org/project/field_redirection",
+  "authors": [
+    {
+      "name": "See contributors",
+      "homepage": "https://www.drupal.org/node/1207654/committers",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/field_redirection",
+    "source": "http://cgit.drupalcode.org/field_redirection"
+  },
+  "require": { }
+}

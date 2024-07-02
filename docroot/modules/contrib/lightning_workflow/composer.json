@@ -1,0 +1,29 @@
+{
+    "name": "drupal/lightning_workflow",
+    "type": "drupal-module",
+    "description": "Tools to improve your content workflow.",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/lightning_core": "^6"
+    },
+    "require-dev": {
+        "drupal/autosave_form": "^1.2",
+        "drupal/ctools": "^3.6",
+        "drupal/diff": "^1",
+        "drupal/inline_entity_form": "^1",
+        "drupal/moderation_dashboard": "^1",
+        "drupal/moderation_sidebar": "^1.2",
+        "drupal/quickedit": "^1"
+    },
+    "conflict": {
+        "drupal/autosave_form": "<1.2",
+        "drupal/moderation_sidebar": "<1.2"
+    },
+    "suggest": {
+        "drupal/autosave_form": "Provides an autosave feature for all forms, including entity forms.",
+        "drupal/conflict": "Provides a UI to resolve conflicts when an entity is edited by two people at the same time.",
+        "drupal/diff": "Adds a tab displaying all added/changed/deleted words between revisions.",
+        "drupal/moderation_dashboard": "Provides a per-user dashboard for managing moderated content.",
+        "drupal/moderation_sidebar": "Provides an off-canvas menu to moderate the current entity."
+    }
+}

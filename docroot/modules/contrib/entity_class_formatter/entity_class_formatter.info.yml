@@ -1,0 +1,12 @@
+name: Entity Class Formatter
+type: module
+description: Apply class on the entity if it's field is using this formatter.
+core_version_requirement: ^9 || ^10
+package: Field types
+dependencies:
+  - drupal:field
+
+# Information added by Drupal.org packaging script on 2022-10-20
+version: '2.0.0'
+project: 'entity_class_formatter'
+datestamp: 1666232129

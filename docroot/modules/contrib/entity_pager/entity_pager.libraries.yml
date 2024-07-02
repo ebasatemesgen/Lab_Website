@@ -1,0 +1,4 @@
+entity-pager:
+  css:
+    component:
+      css/entity-pager.css: {}

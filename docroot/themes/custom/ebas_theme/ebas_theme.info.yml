@@ -1,0 +1,18 @@
+name: 'Ebasa Theme'
+type: theme
+description: 'This is the custom theme for the Professor Maria Gini Website made by Ebasa.'
+base theme: classy
+screenshots: 'screenshot.png'
+package: 'Ebasa'
+core_version_requirement: ^9 || ^10
+libraries:
+  - ebas_theme/global-styling
+  - ebas_theme/global-scripts
+  - ebas_theme/swiper
+regions:
+  header: 'Header'
+  mainnavigation: 'Main Navigation'
+  right_navigation: 'Right Navigation'
+  content: 'Main Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'

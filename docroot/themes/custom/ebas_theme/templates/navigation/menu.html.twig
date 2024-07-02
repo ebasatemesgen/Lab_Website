@@ -1,0 +1,24 @@
+{% import _self as menus %}
+
+<div class="center">
+  <ul id="navbar">
+    {{ menus.menu_links(items, attributes, 0) }}
+    <a href="#" id="close"><i class="far fa-times"></i></a>
+  </ul>
+</div>
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    <ul{% if menu_level == 0 %}{{ attributes }}{% endif %}>
+      {% for item in items %}
+        <li{{ item.attributes.addClass(item.in_active_trail ? 'active' : '') }}>
+          {{ link(item.title, item.url) }}
+          {% if item.below %}
+            {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

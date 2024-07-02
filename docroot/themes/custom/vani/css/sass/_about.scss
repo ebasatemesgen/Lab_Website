@@ -1,0 +1,219 @@
+/* ********************************************************** */
+/* ************** This is for the section velow the banner **************** */
+
+/* ********************************************************** */
+
+
+.grid-container {
+    padding: 0;
+    max-width: 88.8888888889rem;
+    margin: auto;
+    /* margin-bottom: 10%; */
+    box-shadow: 0 0 6.6666666667rem 0 rgba(0,0,0,.1);
+  }
+  
+  .grid-x {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .grid-margin-x {
+    margin-left: -.5555555556rem;
+    margin-right: -.5555555556rem;
+  }
+  
+  .grid-margin-x > .cell {
+    width: calc(100% - 1.1111111111rem);
+    margin-left: .5555555556rem;
+    margin-right: .5555555556rem;
+  }
+  
+  .cell {
+    flex: 0 0 auto;
+    min-height: 0;
+    min-width: 0;
+    width: 100%;
+  }
+  .umn-main {
+    background-color: #fff;
+  }
+  
+  .umn-background-switch > :nth-child(2n + 1) {
+    background-color: #faf7f5;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .umn-background-switch > :nth-child(2n + 2) {
+    background-color: #fff;
+  }
+  .umn-container {
+    max-width: 57.1111111111rem;
+    margin: auto;
+    padding: 0 1.1111111111rem;
+  }
+  
+  @media screen and (min-width: 106.6666666667em) {
+    .umn-container {
+        max-width: 71.6666666667rem;
+    }
+  }
+  
+  .umn-bg-support-5 {
+    background-color: #fff;
+  }
+  
+  .umn-text-primary-1 {
+    color: #d1a000;
+  }
+  
+  .umn-pv-3 {
+    padding: 3rem 0;
+  }
+  
+  .umn-ph-m-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .umn-ph-xl-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  
+  
+  
+  /* Title styling */
+  .umn-h2 {
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+    color: #333;
+    text-align: left;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .umn-mb-l-6 {
+    margin-bottom: 6rem;
+  }
+  
+  
+  .umn-rich-text p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Paragraph styling */
+  .umn-large-text {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    text-align: justify;
+  }
+  
+  /* Highlighted text styling */
+  .umn-highlight {
+    color: #d1a000;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+  }
+  
+  /* Icon styling */
+  .umn-icon-block i {
+    font-size: 2.5rem;
+    color: #d1a000;
+    margin-bottom: 1rem;
+  }
+  
+  /* About Us text styling */
+  .umn-metadata span {
+    font-size: 4.5rem;
+    color: #d1a000;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .umn-color-switch {
+    background-color: #e5e5e5;
+  }
+  
+  .umn-skip-primary {
+    color: #333;
+  }
+  
+  .umn-card {
+    display: block;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s;
+  }
+  
+  .umn-card-shadow {
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .umn-cta {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .umn-mt-n-12 { 
+    z-index: 10001; 
+    position: relative;
+  } 
+  
+  @media print, screen and (min-width: 42.6666666667em){ 
+  .umn-mt-n-12 { 
+    margin-top: -3.3333333333rem;
+  } 
+  }   
+  
+  .umn-text-support-4 {
+    color: #737373;
+  }
+  
+  .umn-p-6 {
+    padding: 1.5rem;
+  }
+  
+  .umn-pt-5 {
+    padding-top: 1.25rem;
+  }
+  
+  .umn-pb-5 {
+    padding-bottom: 1.25rem;
+  }
+  
+  .umn-h2-light {
+    font-weight: 300;
+  }
+  
+  .umn-dynamic-text-color {
+    color: #0073e6;
+  }
+  
+  .umn-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #0073e6;
+  }
+  
+  .umn-link i {
+    margin-left: 0.5rem;
+  }
+  
+  
+  
+  
+  
+  

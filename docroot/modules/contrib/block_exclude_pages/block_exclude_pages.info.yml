@@ -1,0 +1,10 @@
+name: Block Exclude Pages
+type: module
+description: Adds an exclude pages filter for blocks
+core_version_requirement: ^10
+package: Filters
+
+# Information added by Drupal.org packaging script on 2024-02-29
+version: '2.1.0'
+project: 'block_exclude_pages'
+datestamp: 1709240171

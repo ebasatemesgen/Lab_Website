@@ -1,0 +1,16 @@
+
+Slick Paragraphs 8.x-2.0-dev, 2021-12-17
+----------------------------------------
+- Updated to Slick:2.7 and Blazy:2.10+.
+
+Slick Paragraphs 8.x-2.0-dev, 2021-12-17
+----------------------------------------
+- Added Drupal ^10.
+
+Slick Paragraphs 8.x-2.0-dev, 2019-01-13
+----------------------------------------
+- Issue #3048148 by ikeigenwijs: composer needs added requirement of paragraphs.
+
+Slick Paragraphs 8.x-2.0-dev, 2019-03-01
+----------------------------------------
+- Initial commit to integrate with core Media.

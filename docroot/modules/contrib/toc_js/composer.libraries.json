@@ -1,0 +1,41 @@
+{
+  "name": "drupal/toc_js",
+  "description": "Build a hierarchical table of contents from header tags present on a page with the toc.js library.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "homepage": "https://www.drupal.org/project/toc_js",
+  "authors": [
+    {
+      "name": "flocondetoile",
+      "homepage": "https://www.drupal.org/u/flocondetoile",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/toc_js",
+    "source": "https://git.drupalcode.org/project/toc_js"
+  },
+  "repositories": {
+    "tocjs": {
+      "type": "package",
+      "package": {
+        "name": "jgallen23/toc",
+        "version": "0.3.2",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "toc"
+        },
+        "dist": {
+          "url": "https://github.com/jgallen23/toc/archive/greenkeeper/update-all.zip",
+          "type": "zip"
+        },
+        "license": "MIT"
+      }
+    }
+  },
+  "require": {
+    "composer/installers": "*",
+    "jgallen23/toc": "*"
+  }
+}

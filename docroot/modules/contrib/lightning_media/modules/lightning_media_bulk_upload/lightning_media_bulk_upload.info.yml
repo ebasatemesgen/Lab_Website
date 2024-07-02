@@ -1,0 +1,13 @@
+name: 'Bulk Media Upload'
+core_version_requirement: '^9.3 || ^10'
+type: module
+description: 'Provides a form to upload many media items at once.'
+package: Lightning
+dependencies:
+  - dropzonejs:dropzonejs
+  - lightning_media:lightning_media
+
+# Information added by Drupal.org packaging script on 2023-01-10
+version: '5.0.0'
+project: 'lightning_media'
+datestamp: 1673384213

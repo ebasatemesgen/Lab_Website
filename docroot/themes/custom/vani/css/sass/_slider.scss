@@ -1,0 +1,1108 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons+Outlined:400&display=swap'); /* Material Icons Outlined */
+/* ******************** style for the texts *****************************88 */
+/* ******************** style for the texts *****************************88 */
+/* html:not(.aem-AuthorLayer-Edit):not(.aem-AuthorLayer-Preview) #content-about  { 
+    min-height: calc(100vh - 18rem);
+}  */
+
+#content-about h1 { 
+    border: 0; 
+    font-size: 100%; 
+    margin: 0; 
+    padding: 0;
+} 
+
+#content-about h1 { 
+    font-weight: normal;
+} 
+
+@media only screen{ 
+  #content-about h1 { 
+    font-size: 2rem; 
+    line-height: 1.2;
+  } 
+}     
+
+@media only screen and (min-width: 768px){ 
+  #content-about h1 { 
+    font-size: 2.5rem;
+  } 
+}     
+
+@media only screen{ 
+  #content-about h1 { 
+    margin-bottom: 1.25rem;
+  } 
+}     
+
+@media only screen and (min-width: 768px){ 
+  #content-about h1 { 
+    margin-bottom: 1.5rem;
+  } 
+}     
+
+
+
+
+.screenreader { 
+  left: -999rem; 
+  overflow: hidden; 
+  position: absolute; 
+  width: 1rem;
+} 
+
+.screenreader { 
+  display: inline; 
+  height: 0; 
+  left: -9999px; 
+  position: absolute; 
+  top: -9999px; 
+  width: 0;
+} 
+
+.site-content__wrapper { 
+  display: flex; 
+  flex: 0 1 auto; 
+  flex-flow: row wrap; 
+  margin-left: -0.5rem; 
+  margin-right: -0.5rem;
+  justify-content: center;
+} 
+
+#overviewContainer { 
+  padding-bottom: 4.375rem; 
+  position: relative; 
+  z-index: 30;
+} 
+
+#overviewContainer { 
+  background-color: rgba(255,255,255,0); 
+  padding-top: 0;
+} 
+
+.carousel { 
+  position: relative;
+} 
+
+  
+
+.site-content--homepage .site-content__homepage-main  { 
+  display: flex; 
+  flex: 0 1 auto; 
+  flex-flow: row wrap; 
+  flex-basis: 100%; 
+  max-width: 100%;
+} 
+
+.carousel-container { 
+  flex: 1; 
+  max-width: 87.25rem; 
+  position: relative; 
+  width: 100%;
+  overflow: hidden;
+} 
+
+@media only screen{ 
+.col-xs-12 { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 100%; 
+  max-width: 100%;
+} 
+}     
+
+@media only screen and (min-width: 1024px){ 
+.col-lg-9 { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 75%; 
+  max-width: 75%;
+} 
+}     
+
+.content-main { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 100%; 
+  max-width: 100%;
+} 
+
+.content-main  { 
+  flex-grow: 1;
+} 
+
+@media only screen{ 
+.site-content--homepage .content-main  { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 100%; 
+  max-width: 100%;
+} 
+}     
+
+@media only screen and (min-width: 1024px){ 
+.site-content--homepage .content-main  { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 75%; 
+  max-width: 75%;
+} 
+}     
+
+@media only screen and (min-width: 1024px){ 
+.col-lg-3 { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 25%; 
+  max-width: 25%;
+} 
+}     
+
+/* This part fixes the side part where the image and text box is cropped out */
+
+.carousel { 
+  position: relative;
+} 
+
+@media only screen{ 
+.carousel { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 100%; 
+  max-width: 100%;
+} 
+}     
+
+.site-content--homepage .site-content__homepage-main  { 
+  display: flex; 
+  flex: 0 1 auto; 
+  flex-flow: row wrap; 
+  flex-basis: 100%; 
+  max-width: 100%;
+} 
+
+.carousel-container { 
+  flex: 1; 
+  max-width: 87.25rem; 
+  position: relative; 
+  width: 100%;
+} 
+
+@media only screen{ 
+.col-xs-12 { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 100%; 
+  max-width: 100%;
+} 
+}     
+
+@media only screen and (min-width: 1024px){ 
+.col-lg-9 { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 75%; 
+  max-width: 75%;
+} 
+}     
+
+.content-main { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 100%; 
+  max-width: 100%;
+} 
+
+.content-main  { 
+  flex-grow: 1;
+} 
+
+@media only screen{ 
+.site-content--homepage .content-main  { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 100%; 
+  max-width: 100%;
+} 
+}     
+
+@media only screen and (min-width: 1024px){ 
+.site-content--homepage .content-main  { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 75%; 
+  max-width: 75%;
+} 
+}     
+
+aside { 
+  border: 0; 
+  font-size: 100%; 
+  margin: 0; 
+  padding: 0;
+} 
+
+aside { 
+  display: block;
+} 
+
+aside { 
+  min-height: .0625rem;
+} 
+
+@media only screen and (min-width: 1024px){ 
+.col-lg-3 { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 25%; 
+  max-width: 25%;
+} 
+}     
+
+.content-sidebar  { 
+  flex-grow: 1;
+} 
+
+@media only screen{ 
+.site-content--homepage .content-sidebar  { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 100%; 
+  max-width: 100%;
+} 
+}     
+
+@media only screen and (min-width: 1024px){ 
+.site-content--homepage .content-sidebar  { 
+  padding-left: .5rem; 
+  padding-right: .5rem; 
+  box-sizing: border-box; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  flex-basis: 25%; 
+  max-width: 25%;
+} 
+}     
+
+@media only screen{ 
+.content-sidebar h1  { 
+  font-size: 1.5rem; 
+  line-height: 1.3;
+} 
+}     
+
+@media only screen and (min-width: 768px){ 
+.content-sidebar h1  { 
+  font-size: 2rem; 
+  line-height: 1.2;
+} 
+}     
+
+@media only screen{ 
+.content-sidebar h1  { 
+  margin-bottom: 1.25rem;
+} 
+}     
+
+@media only screen and (min-width: 768px){ 
+.content-sidebar h1  { 
+  margin-bottom: 1.5rem;
+} 
+}     
+
+.content-sidebar .basecomponent  { 
+  margin-bottom: 0; 
+  margin-top: 0;
+} 
+
+
+/**************************************** Unti this part ***********************/
+
+
+
+
+.carousel_wrapper { 
+  display: flex; 
+  flex-direction: column-reverse; 
+  margin-bottom: 1.25rem; 
+  position: relative;
+} 
+
+   
+
+a { 
+  border: 0; 
+  font-size: 100%; 
+  margin: 0; 
+  padding: 0;
+  color: inherit; 
+  cursor: pointer; 
+  text-decoration: none;
+} 
+
+a,a:hover,a:active { 
+  color: inherit; 
+  cursor: pointer; 
+  text-decoration: none;
+} 
+
+
+.carousel_autoplay-container { 
+  display: none;
+} 
+
+@media only screen and (min-width: 768px){ 
+.carousel_autoplay-container { 
+  display: block; 
+  position: relative; 
+  width: 100%;
+} 
+}     
+
+@media only screen and (min-width: 1024px){ 
+.carousel_autoplay-container { 
+  width: 60%; 
+  z-index: 1;
+} 
+}     
+
+.carousel_wrapper .carousel_autoplay-container  { 
+  bottom: -10px; 
+  z-index: 2;
+} 
+
+.carousel_control { 
+  display: flex; 
+  justify-content: space-between; 
+  margin-top: calc(24.935% - 20px); 
+  padding: 0 1rem; 
+  position: absolute; 
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  width: 100%; 
+  z-index: 2;
+} 
+
+@media only screen and (min-width: 768px){ 
+.carousel_control { 
+  padding: 0 1.5rem;
+} 
+}     
+
+@media only screen and (min-width: 1024px){ 
+.carousel_control { 
+  margin-top: 0; 
+  padding: 0 3rem; 
+  right: .25rem; 
+  top: calc(50% - 44px - 20px); 
+  width: 85%;
+} 
+}     
+
+button { 
+  border: 0; 
+  cursor: pointer; 
+  font-family: "DINPro",helvetica,arial,sans-serif;
+} 
+
+.carousel_autoplay { 
+  background-color: rgba(0,0,0,0); 
+  background-position: 50% 50%; 
+  background-repeat: no-repeat; 
+  background-size: 2.5rem 2.5rem; 
+  bottom: 1.5rem; 
+  color: #fff; 
+  height: 2.5rem; 
+  padding: 0; 
+  position: absolute; 
+  right: 1.5rem; 
+  width: 2.5rem;
+} 
+
+@media only screen and (min-width: 1024px){ 
+.carousel_autoplay { 
+  bottom: 48px; 
+  right: 2rem;
+} 
+}     
+
+.carousel_control .carousel_control-prev  { 
+  align-items: center; 
+  background-color: #fff; 
+  border-radius: 50%; 
+  box-shadow: 0 0 0 .25rem rgba(34,34,34,.2); 
+  cursor: pointer; 
+  display: flex; 
+  height: 2.5rem; 
+  justify-content: center; 
+  text-align: center; 
+  width: 2.5rem; 
+  z-index: 1;
+} 
+
+.carousel_control .carousel_control-next  { 
+  align-items: center; 
+  background-color: #fff; 
+  border-radius: 50%; 
+  box-shadow: 0 0 0 .25rem rgba(34,34,34,.2); 
+  cursor: pointer; 
+  display: flex; 
+  height: 2.5rem; 
+  justify-content: center; 
+  text-align: center; 
+  width: 2.5rem; 
+  z-index: 1;
+} 
+
+.swiper { 
+  margin-left: 0; 
+  margin-right: 0; 
+  position: relative; 
+  overflow: hidden; 
+  list-style: none; 
+  padding: 0; 
+  z-index: 1;
+} 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pointer-events { 
+  touch-action: pan-y;
+} 
+
+.button { 
+  align-items: center; 
+  background-color: #222; 
+  border: .0625rem solid #222; 
+  border-radius: .125rem; 
+  color: #fff; 
+  display: flex; 
+  font-family: "DINPro",helvetica,arial,sans-serif; 
+  font-size: 1rem; 
+  font-weight: 500; 
+  justify-content: center; 
+  overflow: hidden; 
+  padding: .875rem 2rem .8125rem; 
+  position: relative; 
+  text-decoration: none; 
+  transition: .3s; 
+  transition-duration: 80ms; 
+  transition-property: color,background-color,border-color; 
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+} 
+
+
+
+.button:not(:disabled):hover { 
+  background-color: #000; 
+  border-color: #000; 
+  color: #fff; 
+  cursor: pointer;
+} 
+
+@media only screen{ 
+.fullwidth-image { 
+  margin-bottom: 0.75rem;
+} 
+}     
+
+@media only screen and (min-width: 768px){ 
+.fullwidth-image { 
+  margin-bottom: 1rem;
+} 
+}     
+
+.is-first > :first-child  { 
+  margin-top: 0 !important;
+} 
+
+
+
+
+span { 
+  border: 0; 
+  font-size: 100%; 
+  margin: 0; 
+  padding: 0;
+} 
+
+.material-icons { 
+  direction: ltr; 
+  display: inline-block; 
+  font-family: "Material Icons Outlined"; 
+  font-feature-settings: "liga"; 
+  font-size: 1.5rem; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+  font-style: normal; 
+  font-weight: normal; 
+  letter-spacing: normal; 
+  line-height: 1; 
+  text-rendering: optimizelegibility; 
+  text-transform: none; 
+  white-space: nowrap; 
+  word-wrap: normal;
+} 
+
+.carousel_autoplay .material-icons  { 
+  font-size: 40px;
+} 
+
+.carousel_control .carousel_control-prev .material-icons  { 
+  font-size: 32px;
+} 
+
+.carousel_control .carousel_control-next .material-icons  { 
+  font-size: 32px;
+} 
+
+.swiper-wrapper { 
+  position: relative; 
+  width: 100%; 
+  height: 100%; 
+  z-index: 1; 
+  display: flex; 
+  transition-property: transform; 
+  box-sizing: content-box;
+  transition: transform 0.3s ease-in-out;
+} 
+
+.swiper-pagination { 
+  position: absolute; 
+  text-align: center; 
+  transition: 300ms opacity; 
+  transform: translate3d(0, 0, 0); 
+  z-index: 10;
+} 
+
+.swiper-horizontal > .swiper-pagination-bullets ,.swiper-pagination-bullets.swiper-pagination-horizontal { 
+  bottom: 10px; 
+  left: 0; 
+  width: 100%;
+} 
+
+.carousel_wrapper .swiper-pagination-bullets ,.carousel_wrapper .swiper-pagination-bullets.swiper-pagination-horizontal  { 
+  bottom: 42px;
+} 
+
+@media only screen and (min-width: 1024px){ 
+.carousel_wrapper .swiper-pagination-bullets ,.carousel_wrapper .swiper-pagination-bullets.swiper-pagination-horizontal  { 
+  max-width: 60%;
+} 
+}     
+
+.swiper .swiper-notification  { 
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  pointer-events: none; 
+  opacity: 0; 
+  z-index: -1000;
+}     
+
+figure { 
+  border: 0; 
+  font-size: 100%; 
+  margin: 0; 
+  padding: 0;
+  display: block;
+} 
+
+.fullwidth-image figure  { 
+  position: relative; 
+  width: 100%;
+} 
+
+.swiper-slide { 
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0; 
+  width: 100%; /* Each slide should take the full width */
+  margin-right: 0; /* No margin between slides, spacing is handled by Swiper */
+  box-sizing: border-box;
+  height: 100%; 
+  position: relative; 
+  transition-property: transform;
+} 
+
+.carousel_wrapper .swiper-slide  { 
+  display: flex; 
+  flex-direction: column;
+} 
+
+.swiper-backface-hidden .swiper-slide  { 
+  transform: translateZ(0); 
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+} 
+
+.swiper-pagination-bullet { 
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px)); 
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px)); 
+  display: inline-block; 
+  border-radius: 50%; 
+  background: var(--swiper-pagination-bullet-inactive-color, #000); 
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+} 
+
+.swiper-pagination-clickable .swiper-pagination-bullet  { 
+  cursor: pointer;
+} 
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet ,.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet  { 
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+} 
+
+.carousel_wrapper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet  { 
+  background-color: #e2e2e2; 
+  border-radius: 0; 
+  height: 2px; 
+  margin: 0 .5rem; 
+  position: relative; 
+  width: 4rem;
+} 
+
+.carousel_wrapper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet::before { 
+  bottom: -15px; 
+  content: ""; 
+  left: -10px; 
+  position: absolute; 
+  right: -10px; 
+  top: -15px; 
+  z-index: 40;
+} 
+
+.carousel_wrapper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:hover { 
+  background-color: #fff; 
+  opacity: 1;
+} 
+
+.swiper-pagination-bullet-active { 
+  opacity: var(--swiper-pagination-bullet-opacity, 1); 
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+} 
+
+.carousel_wrapper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active  { 
+  height: 6px; 
+  margin-bottom: -1.5px;
+} 
+
+.fullwidth-image a  { 
+  cursor: pointer; 
+  display: block; 
+  position: relative;
+} 
+
+/* We Change the background color to UMN maroon or gold based on what we think is right */
+.carousel--umn-maroon {
+  background: #7A0019; /* Example UMN Maroon color */
+}
+
+.carousel--umn-gold {
+  background: #FFCC33; /* Example UMN Gold color */
+}
+
+/* Adjusting the padding and margin to flip the direction */
+.carousel_label { 
+  color: #fff; 
+  height: 100%; 
+  padding: 61px 1.5rem 2.5rem; 
+  width: 100%;
+  text-align: right; /* Align text to the right */
+} 
+
+@media only screen and (min-width: 768px){ 
+  .carousel_label { 
+    padding: 2rem 1.5rem 88px;
+  } 
+}     
+
+@media only screen and (min-width: 1024px){ 
+  .carousel_label { 
+    bottom: 0; 
+    margin-bottom: 1rem; 
+    margin-top: -9rem; 
+    max-height: 258px; 
+    max-width: 60%; 
+    padding: 1.5rem 1.5rem 88px 4rem; /* Flip padding for opposite direction */
+  } 
+}     
+
+.carousel_wrapper .carousel_label  { 
+  height: 258px;
+} 
+
+.carousel_wrapper .carouselSlide  { 
+  order: -1;
+} 
+
+
+
+.fullwidth-image img  { 
+  height: auto;
+} 
+
+.fullwidth-image img:not(.cq-list-placeholder)  { 
+  width: 100%;
+} 
+     
+
+a,a:hover { 
+  color: inherit; 
+  cursor: pointer; 
+  text-decoration: none;
+} 
+
+/* ********** This 4 tags are for the text section in the blue in about section */
+
+.carousel_info-text > *  { 
+  margin: 0;
+  color: #fff;
+} 
+
+@media only screen{ 
+.carousel_info-text > *  { 
+  font-size: 1rem; 
+  line-height: 1.5;
+} 
+}     
+
+@media only screen and (min-width: 768px){ 
+.carousel_info-text > *  { 
+  font-size: 1.125rem;
+} 
+}     
+
+@media only screen and (min-width: 1024px){ 
+.carousel_info-text > *  { 
+  -webkit-box-orient: vertical; 
+  display: -webkit-box; 
+  -webkit-line-clamp: 2; 
+  line-clamp: 2; 
+  max-height: 3.5rem; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+} 
+}     
+
+/* ************ This is for the image for the carousel Image, loads the image here */
+.carousel_image-container {
+position: relative;
+width: 100%;
+height:  auto;
+background-size: cover;
+background-position: center;
+z-index: -1;
+padding-top: 0; 
+} 
+.carousel_info-title, .carousel_info-text {
+  width: 100%;
+  padding: 20px;
+}
+@media only screen and (min-width: 1024px){ 
+.carousel_image-container { 
+  left: 15%; 
+  /* margin-bottom: 88px;  */
+  padding-top: 42.389%; 
+  width: 85%;
+} 
+}
+.carousel_info-title { 
+  margin: 0 0 .75rem;
+} 
+
+.carousel_image-container > .fullwidth-image  { 
+  position: absolute; 
+  right: 0; 
+  top: 0; 
+  width: 100%; 
+  z-index: -1;
+} 
+
+.carousel_wrapper .swiper-slide-next .carousel_label  { 
+  opacity: 0;
+} 
+
+.slide1 {
+background-image: url('../images/Maria_Gini.jpeg');
+}
+
+.slide2 {
+background-image: url('../images/Maria_Gini.jpeg');
+}
+.slide3 {
+background-image: url('../images/Maria_Gini.jpeg');
+}
+.slide4 {
+background-image: url('../images/Maria_Gini.jpeg');
+}
+.slide5 {
+background-image: url('../images/Maria_Gini.jpeg');
+}
+
+
+
+
+
+
+
+
+/* Container settings for articles list */
+  /* UMN Themed Style for the Articles List - Minimalist Black and White */
+  .contextual-region {
+    display: flex; /* Establishes a flex container to align children horizontally */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 30px; /* Space between the cards */
+    padding: 20px; /* Padding around the entire container */
+    /* background-color: #f0f0f0; Light grey background for the container */
+  }
+  .article-list{
+    margin-top: 10%;
+    background-color: #faf7f5;
+    
+  }
+
+  .views-row {
+    flex: 1 1 calc(33.333% - 30px); /* Each row takes up one third of the container width minus the gap */
+    display: flex; /* Makes the views-row a flex container too */
+    flex-direction: column; /* Aligns children elements (fields) vertically */
+    background-color: #fff; /* White background for each card */
+    border: 1px solid #ddd; /* Light grey border for a subtle distinction */
+    padding: 20px;
+    border-radius: 0; /* Sharp corners for the cards */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    height: auto; /* Auto height based on content */
+  }
+
+
+
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .views-row {
+      flex: 1 1 100%; /* Full width on smaller screens */
+    }
+  }
+
+
+  /* Styling for the views-row-fields container */
+.views-row-fields {
+  display: flex; /* Aligns child elements in a row */
+  flex-direction: column; /* Stacks content vertically */
+  gap: 15px; /* Space between elements */
+  padding: 20px; /* Padding around the content */
+  background-color: #f8f9fa; /* Light background color */
+  border-left: 5px solid #ffcc33; /* Blue border on the left for emphasis */
+  margin: 20px 0; /* Space around each article block */
+}
+
+/* Styling for the title within views-row-fields */
+.views-field-title h3 {
+  font-size: 1.5rem; /* Larger font size for headers */
+  color: #333; /* Dark color for better readability */
+  font-family: 'Arial', sans-serif; /* Consistent typography */
+  margin-bottom: 0; /* Removes default margin */
+}
+
+.views-field-title h3 a {
+  color: #7a0019; /* Ensures link color matches the UMN theme */
+  text-decoration: none; /* No underline to keep it clean */
+}
+
+.views-field-title h3 a:hover {
+  text-decoration: underline; /* Underline on hover for interaction */
+}
+
+/* Styling for the body content */
+.views-field-body .field-content {
+  font-size: 0.95rem; /* Smaller font size for body to make it less crowded */
+  line-height: 1.7; /* Increased line height for readability */
+  color: #666; /* Soft grey color for the text */
+  font-family: 'Arial', sans-serif; /* Maintains consistency across the design */
+}
+
+/* Styling for the 'Read more' link */
+.views-field-view-node .field-content a {
+  font-weight: bold; /* Makes the link bold */
+  color: #7a0019; /* Dark blue, easier on the eyes and thematic */
+  padding: 10px 15px; /* Padding for better clickability */
+  background-color: #e9ecef; /* Light grey background for the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  display: inline-block; /* Ensures the background and padding are applied correctly */
+}
+
+.views-field-view-node .field-content a:hover {
+  background-color: #dfe2e6; /* Darker background on hover */
+  text-decoration: none; /* No underline to keep it clean */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .views-row-fields {
+    flex-direction: column; /* Stacks the fields vertically on small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ******************** style for the texts for Projects *****************************88 */
+.project {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.project-header {
+  background-color: #f7f7f7;
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.project-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.project-body {
+  display: flex;
+  padding: 16px;
+}
+
+.project-image {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.project-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.project-details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-text {
+  flex-grow: 1;
+  margin-bottom: 16px;
+}
+
+.project-text p {
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.project-link {
+  align-self: flex-start;
+}
+
+.project-link a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.project-link a:hover {
+  background-color: #0056b3;
+}
+
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 20px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+  }
+  
+  button.white {
+    font-size: 143x;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+  }
+  
+

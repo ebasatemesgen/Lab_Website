@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="My Coding Standard">
+  <file>./src</file>
+  <file>./tests</file>
+  <file>./auditfiles.module</file>
+  <rule ref="PreviousNextDrupal" />
+  <arg name="report" value="full"/>
+
+  <!-- Ignore. This will change soon. -->
+  <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectStrictTypesFormat">
+    <severity>0</severity>
+  </rule>
+</ruleset>

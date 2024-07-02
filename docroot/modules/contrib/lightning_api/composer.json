@@ -1,0 +1,25 @@
+{
+    "name": "drupal/lightning_api",
+    "type": "drupal-module",
+    "description": "Progressive decoupling? No problem.",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/lightning_core": "^6"
+    },
+    "require-dev": {
+        "drupal/openapi_jsonapi": "^3",
+        "drupal/openapi_ui_redoc": "^1",
+        "drupal/simple_oauth": "^5.2"
+    },
+    "conflict": {
+        "drupal/consumers": "<1.14",
+        "drupal/openapi_jsonapi": "<3",
+        "drupal/simple_oauth": "<5.2"
+    },
+    "suggest": {
+        "drupal/openapi_jsonapi": "Integrates with the Open API module to generate definitions for JSON:API.",
+        "drupal/openapi_ui_redoc": "Provides the ReDoc library for displaying the OpenAPI specifications of a Drupal site.",
+        "drupal/openapi_ui_swagger": "Provides the Swagger UI library for displaying the OpenAPI specifications of a Drupal site.",
+        "drupal/simple_oauth": "Implements the OAuth 2.0 authorization framework."
+    }
+}

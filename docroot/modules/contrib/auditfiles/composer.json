@@ -1,0 +1,42 @@
+{
+    "name": "drupal/auditfiles",
+    "description": "Allows for comparing and correcting files and file references in the files directory, in the database, and in content.",
+    "type": "drupal-module",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.1",
+        "drupal/core": "^10"
+    },
+    "require-dev": {
+        "composer/installers": "^2",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1",
+        "drupal/core-dev": "^10.0",
+        "phpstan/extension-installer": "^1.3",
+        "phpstan/phpstan": "^1.11",
+        "phpstan/phpstan-deprecation-rules": "*",
+        "phpstan/phpstan-phpunit": "^1.3@stable",
+        "phpstan/phpstan-strict-rules": "^1@stable",
+        "previousnext/coding-standard": "^0.1.2"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "php-http/discovery": true,
+            "composer/installers": true
+        }
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ]
+        }
+    }
+}

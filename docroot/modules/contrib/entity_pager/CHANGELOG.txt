@@ -1,0 +1,5 @@
+ * For a list of changes and fixes for your version, please visit:
+   https://www.drupal.org/project/entity_pager/releases
+
+ * For API change records, please visit:
+   https://www.drupal.org/list-changes/entity_pager

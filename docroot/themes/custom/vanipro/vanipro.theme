@@ -1,0 +1,142 @@
+<?php
+/**
+ * @file
+ * Contains vanipro theme override and preprocess functions.
+ */
+
+/**
+ * Sanitise input urls.
+ */
+function santise_val_url($url) {
+	if ($url != '') {
+
+		// Sanitise (remove all illegal characters) from url.
+		$url = filter_var($url, FILTER_SANITIZE_URL);
+
+		// Validate url.
+		if (filter_var($url, FILTER_VALIDATE_URL) == TRUE) {
+			$url = $url;
+		} else {
+			$url = '#';
+		}
+		return $url;
+	}
+}
+
+/**
+ * Define variables for theme settings.
+ */
+function vanipro_preprocess_page(array &$variables) {
+	$config = \Drupal::config('system.site');
+	$variables['site_name'] = $config->get('name');
+	$variables['site_slogan'] = $config->get('slogan');
+	$variables['preloader_option'] = theme_get_setting('preloader_option', 'vanipro');
+	$variables['animated_content'] = theme_get_setting('animated_content', 'vanipro');
+	$variables['sticky_header_option'] = theme_get_setting('sticky_header_option', 'vanipro');
+	$variables['header_circle'] = theme_get_setting('header_circle', 'vanipro');
+	$variables['animated_sidebar_option'] = theme_get_setting('animated_sidebar_option', 'vanipro');
+	$variables['slider_show'] = theme_get_setting('slider_show', 'vanipro');
+	$variables['slider_circle'] = theme_get_setting('slider_circle', 'vanipro');
+	$variables['slider_code_source'] = theme_get_setting('slider_code_source', 'vanipro');
+	$variables['slider_code'] = theme_get_setting('slider_code', 'vanipro');
+	$variables['all_icons_show'] = theme_get_setting('all_icons_show', 'vanipro');
+	$variables['facebook_url'] = santise_val_url(theme_get_setting('facebook_url', 'vanipro'));
+	$variables['twitter_url'] = santise_val_url(theme_get_setting('twitter_url', 'vanipro'));
+	$variables['instagram_url'] = santise_val_url(theme_get_setting('instagram_url', 'vanipro'));
+	$variables['linkedin_url'] = santise_val_url(theme_get_setting('linkedin_url', 'vanipro'));
+	$variables['youtube_url'] = santise_val_url(theme_get_setting('youtube_url', 'vanipro'));
+	$variables['vimeo_url'] = santise_val_url(theme_get_setting('vimeo_url', 'vanipro'));
+  $variables['telegram_url'] = santise_val_url(theme_get_setting('telegram_url', 'vanipro'));
+  $variables['whatsapp_url'] = santise_val_url(theme_get_setting('whatsapp_url', 'vanipro'));
+  $variables['github_url'] = santise_val_url(theme_get_setting('github_url', 'vanipro'));
+	$variables['vk_url'] = santise_val_url(theme_get_setting('vk_url', 'vanipro'));
+	$variables['social_new_icon_code'] = theme_get_setting('social_new_icon_code', 'vanipro');
+	$variables['page_share_all'] = theme_get_setting('page_share_all', 'vanipro');
+	$variables['page_share_front'] = theme_get_setting('page_share_front', 'vanipro');
+	$variables['page_share_page'] = theme_get_setting('page_share_page', 'vanipro');
+	$variables['page_share_article'] = theme_get_setting('page_share_article', 'vanipro');
+	$variables['page_share_book'] = theme_get_setting('page_share_book', 'vanipro');
+	$variables['page_share_other'] = theme_get_setting('page_share_other', 'vanipro');
+	$variables['scrolltotop_on'] = theme_get_setting('scrolltotop_on', 'vanipro');
+	$variables['copyright_text'] = theme_get_setting('copyright_text', 'vanipro');
+	$variables['copyright_text_custom'] = theme_get_setting('copyright_text_custom', 'vanipro');
+	$variables['cookie_message'] = theme_get_setting('cookie_message', 'vanipro');
+	$variables['cookie_expire'] = theme_get_setting('cookie_expire', 'vanipro');
+	$variables['cookie_message_custom'] = theme_get_setting('cookie_message_custom', 'vanipro');
+	$variables['font_icon_fontawesome'] = theme_get_setting('font_icon_fontawesome', 'vanipro');
+	$variables['fontawesome_five'] = theme_get_setting('fontawesome_five', 'vanipro');
+	$variables['fontawesome_six'] = theme_get_setting('fontawesome_six', 'vanipro');
+	$variables['font_icon_material'] = theme_get_setting('font_icon_material', 'vanipro');
+	$variables['bootstrapicons'] = theme_get_setting('bootstrapicons');
+	// sidebar
+	$variables['front_sidebar'] = theme_get_setting('front_sidebar', 'vanipro');
+}
+
+/**
+ * Node preprocess.
+ */
+function vanipro_preprocess_node(array &$variables) {
+	$variables['node_author_pic'] = theme_get_setting('node_author_pic', 'vanipro');
+	$variables['node_tags'] = theme_get_setting('node_tags', 'vanipro');
+}
+
+/* *
+ * Comment preprocess.
+ */
+function vanipro_preprocess_comment(array &$variables) {
+	$variables['comment_user_pic'] = theme_get_setting('comment_user_pic', 'vanipro');
+}
+
+/**
+ * Html preprocess for vanipro theme.
+ */
+function vanipro_preprocess_html(&$variables) {
+	$variables['base_path'] = base_path();
+	$variables['google_font'] = theme_get_setting('google_font');
+	$variables['insert_head'] = theme_get_setting('insert_head', 'vanipro');
+	$variables['head_code'] = theme_get_setting('head_code', 'vanipro');
+	$variables['insert_body_start'] = theme_get_setting('insert_body_start', 'vanipro');
+	$variables['body_start_code'] = theme_get_setting('body_start_code', 'vanipro');
+	$variables['insert_body_end'] = theme_get_setting('insert_body_end', 'vanipro');
+	$variables['body_end_code'] = theme_get_setting('body_end_code', 'vanipro');
+	$variables['styling'] = theme_get_setting('styling', 'vanipro');
+	$variables['styling_code'] = theme_get_setting('styling_code', 'vanipro');
+	$variables['slider_time'] = theme_get_setting('slider_time', 'vanipro');
+	$variables['slider_dots'] = theme_get_setting('slider_dots', 'vanipro');
+	$variables['slider_nav'] = theme_get_setting('slider_nav', 'vanipro');
+
+  // color
+  $variables['color_scheme'] = theme_get_setting('color_scheme');
+  $variables['color_primary'] = theme_get_setting('color_primary');
+  $variables['color_secondary'] = theme_get_setting('color_secondary');
+	$variables['bg_body'] = theme_get_setting('bg_body');
+	$variables['block_bg'] = theme_get_setting('block_bg');
+  $variables['bg_header_top'] = theme_get_setting('bg_header_top');
+	$variables['bg_footer'] = theme_get_setting('bg_footer');
+	$variables['color_footer'] = theme_get_setting('color_footer');
+	$variables['color_footer_line'] = theme_get_setting('color_footer_line');
+  $variables['color_light'] = theme_get_setting('color_light');
+  $variables['color_border'] = theme_get_setting('color_border');
+  $variables['color_text'] = theme_get_setting('color_text');
+  $variables['color_heading'] = theme_get_setting('color_heading');
+	$variables['color_circle_one'] = theme_get_setting('color_circle_one');
+	$variables['color_circle_two'] = theme_get_setting('color_circle_two');
+	$variables['color_circle_three'] = theme_get_setting('color_circle_three');
+	$variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+}
+
+/**
+ * Add current page to breadcrumb.
+ */
+function vanipro_preprocess_breadcrumb(&$variables) {
+	$request = \Drupal::request();
+	$route_match = \Drupal::routeMatch();
+	$page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+	if (!empty($page_title)) {
+		$variables['breadcrumb'][] = [
+			'text' => $page_title,
+		];
+		// Add cache context based on url.
+		$variables['#cache']['contexts'][] = 'url';
+	}
+}

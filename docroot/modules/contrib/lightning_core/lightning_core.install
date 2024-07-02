@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update functions for Lightning Core.
+ */
+
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Implements hook_requirements().
+ */
+function lightning_core_requirements() {
+  $requirements = [];
+
+  $profile = Drupal::installProfile();
+  $profile = Drupal::service('extension.list.profile')->get($profile);
+
+  if (isset($profile->info['base profile'])) {
+    $requirements['lightning_core_base_profile'] = [
+      'title' => t('Base profile'),
+      'value' => $profile->info['base profile'],
+    ];
+  }
+  return $requirements;
+}
+
+/**
+ * Implements hook_install().
+ */
+function lightning_core_install() {
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  // Ensure our Token-specific modifications take effect if Token is already
+  // installed.
+  if (Drupal::moduleHandler()->moduleExists('token')) {
+    lightning_core_modules_installed(['token']);
+  }
+}
+
+/**
+ * Removes the lightning_core.versions config.
+ */
+function lightning_core_update_9001(): void {
+  Drupal::configFactory()
+    ->getEditable('lightning_core.versions')
+    ->delete();
+}
+
+/**
+ * Uninstalls the standalone Acquia Telemetry module.
+ */
+function lightning_core_update_9002(): TranslatableMarkup {
+  Drupal::service('module_installer')->uninstall(['acquia_telemetry']);
+
+  return t("The Acquia Telemetry module has been uninstalled. You can remove it from your project's composer.json with <code>composer remove drupal/acquia_telemetry-acquia_telemetry</code>");
+}
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function lightning_core_update_last_removed(): int {
+  return 8008;
+}

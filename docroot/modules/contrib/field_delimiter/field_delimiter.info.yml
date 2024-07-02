@@ -1,0 +1,13 @@
+name: Field Delimiter
+type: module
+description: Provides extra field formatter settings to specify delimiters for multi-value fields.
+core_version_requirement: '>=8'
+package: Field Formatters
+
+dependencies:
+ - drupal:field
+
+# Information added by Drupal.org packaging script on 2023-06-22
+version: '2.0.1'
+project: 'field_delimiter'
+datestamp: 1687470685

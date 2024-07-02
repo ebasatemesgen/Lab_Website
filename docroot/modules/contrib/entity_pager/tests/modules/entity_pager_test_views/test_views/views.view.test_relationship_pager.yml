@@ -1,0 +1,86 @@
+status: true
+dependencies:
+  module:
+    - entity_pager
+    - node
+    - user
+id: test_relationship_pager
+module: views
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_options:
+      style:
+        type: entity_pager
+        options:
+          relationship: uid_1
+          link_next: 'next >'
+          link_prev: '< prev'
+          display_all: true
+          link_all_url: '<front>'
+          link_all_text: 'Node [node:nid]'
+          display_count: true
+          circular_paging: false
+          show_disabled_links: true
+          log_performance: true
+      row:
+        type: fields
+      fields:
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: uid_1
+          group_type: group
+          type: number_integer
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: uid_1
+          group_type: group
+          order: ASC
+          granularity: second
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+      relationships:
+        uid:
+          id: uid
+          table: node_field_data
+          field: uid
+          group_type: group
+          required: true
+          entity_type: node
+          entity_field: uid
+          plugin_id: standard
+        uid_1:
+          id: uid_1
+          table: users_field_data
+          field: uid
+          relationship: uid
+          group_type: group
+          required: true
+          entity_type: user
+          entity_field: uid
+          plugin_id: standard
+      arguments:
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          default_action: default
+          default_argument_type: node
+          entity_type: node
+          entity_field: nid
+          plugin_id: node_nid
+  block_1:
+    display_plugin: block
+    id: block_1

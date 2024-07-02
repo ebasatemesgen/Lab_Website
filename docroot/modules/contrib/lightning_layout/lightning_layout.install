@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains installation and update routines for Lightning Layout.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function lightning_layout_install() {
+  // React to other modules possibly being installed already.
+  if (Drupal::moduleHandler()->moduleExists('lightning_roles')) {
+    lightning_layout_modules_installed(['lightning_roles']);
+  }
+}
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function lightning_layout_update_last_removed(): int {
+  return 8013;
+}

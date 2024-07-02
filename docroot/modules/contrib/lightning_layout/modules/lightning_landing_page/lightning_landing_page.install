@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Contains installation and update routines for Lightning Landing Page.
+ */
+
+use Drupal\layout_builder\Entity\LayoutEntityDisplayInterface;
+
+/**
+ * Implements hook_install().
+ */
+function lightning_landing_page_install() {
+  if (Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  $display = Drupal::service('entity_display.repository')
+    ->getViewDisplay('node', 'landing_page', 'full');
+  if (!($display instanceof LayoutEntityDisplayInterface)) {
+    throw new \InvalidArgumentException('Expected the ' . $display->label() . ' display to support Layout Builder.');
+  }
+  $display->setOverridable()->save();
+
+  $modules = array_filter(['lightning_search', 'menu_ui'], [Drupal::moduleHandler(), 'moduleExists']);
+  if ($modules) {
+    lightning_landing_page_modules_installed($modules);
+  }
+}

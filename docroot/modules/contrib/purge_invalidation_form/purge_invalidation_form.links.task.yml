@@ -1,0 +1,4 @@
+purge_invalidation_form.invalidation_form:
+  title: 'Purge Invalidation Form'
+  route_name: purge_invalidation_form.invalidation_form
+  base_route: system.performance_settings

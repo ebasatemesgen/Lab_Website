@@ -1,0 +1,19 @@
+{
+  "name": "onlyextart/colorbox",
+  "version": "1.x-dev",
+  "description": "Drupal 8. Plugin in the root libraries folder (/libraries).",
+  "type": "drupal-library",
+  "main": "colorbox/jquery.colorbox.js",
+  "keywords": [
+    "colorbox",
+    "Slick colorbox"
+  ],
+  "author": "Yury Vasdiliyan <yuraextart@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onlyextart/colorbox.git"
+  },
+
+  "license": "MIT",
+  "homepage": "https://github.com/onlyextart/colorbox.git"
+}

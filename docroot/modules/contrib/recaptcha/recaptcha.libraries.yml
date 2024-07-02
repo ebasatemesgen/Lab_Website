@@ -1,0 +1,6 @@
+recaptcha:
+  version: 1.x
+  js:
+    js/recaptcha.js: {}
+  dependencies:
+    - core/jquery

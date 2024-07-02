@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * Contains installation and update functions for Lightning Media Bulk Upload.
+ */
+
+use Drupal\Core\Archiver\Tar;
+use GuzzleHttp\RequestOptions;
+
+/**
+ * Implements hook_install().
+ */
+function lightning_media_bulk_upload_install() {
+  user_role_grant_permissions('media_creator', ['dropzone upload files']);
+}
+
+/**
+ * Downloads the Dropzone JavaScript library if needed.
+ */
+function lightning_media_bulk_upload_update_9001(array &$sandbox) {
+  // If the Dropzone library is already available, there's nothing to do.
+  $dir = Drupal::service('library.libraries_directory_file_finder')
+    ->find('dropzone');
+  if ($dir) {
+    return;
+  }
+
+  // Allow the destination directory to be overridden in tests.
+  $destination = $sandbox[__FUNCTION__] ?? Drupal::root() . '/libraries';
+
+  // Ensure the destination exists and is writable, or abort the update.
+  /** @var \Drupal\Core\File\FileSystemInterface $file_system */
+  $file_system = Drupal::service('file_system');
+  $ready = $file_system->prepareDirectory($destination, $file_system::CREATE_DIRECTORY | $file_system::MODIFY_PERMISSIONS);
+  if (empty($ready)) {
+    return t('The Dropzone JavaScript library cannot be downloaded because %dir is not writable and could not be created.', [
+      '%dir' => $destination,
+    ]);
+  }
+
+  $file = $file_system->tempnam($file_system->getTempDirectory(), 'dropzone');
+  if (empty($file)) {
+    return t('The Dropzone JavaScript library cannot be downloaded because a temporary file could not be created.');
+  }
+
+  Drupal::httpClient()
+    ->request('GET', 'https://github.com/dropzone/dropzone-packagist/archive/refs/tags/v5.7.3.tar.gz', [
+      RequestOptions::SINK => $file,
+    ]);
+
+  $archiver = new Tar($file);
+  $archiver->extract($destination);
+  rename("$destination/dropzone-packagist-5.7.3", "$destination/dropzone");
+  $file_system->delete($file);
+
+  $destination .= '/dropzone';
+  return t('The Dropzone JavaScript library was installed in %destination. Remember to add it to your version control system.', [
+    '%destination' => $destination,
+  ]);
+}

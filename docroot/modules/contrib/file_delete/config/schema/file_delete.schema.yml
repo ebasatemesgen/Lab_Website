@@ -1,0 +1,10 @@
+file_delete.settings:
+  type: config_object
+  label: 'File Delete settings'
+  mapping:
+    force_delete:
+      type: boolean
+      label: 'Forces Deletes'
+    instant_delete:
+      type: boolean
+      label: 'Instant Deletes'

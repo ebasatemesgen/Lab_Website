@@ -1,0 +1,15 @@
+name: Views Block Placement Exposed Form Defaults Test Config
+description: 'Config for testing the module.'
+type: module
+package: Testing
+dependencies:
+  - views
+  - node
+  - taxonomy
+  - block
+  - views_block_placement_exposed_form_defaults
+
+# Information added by Drupal.org packaging script on 2022-11-18
+version: '8.x-1.0-rc4'
+project: 'views_block_placement_exposed_form_defaults'
+datestamp: 1668804670

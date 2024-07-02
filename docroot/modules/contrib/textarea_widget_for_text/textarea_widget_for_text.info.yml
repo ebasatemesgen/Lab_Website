@@ -1,0 +1,12 @@
+name: Textarea Widget For Text Fields
+type: module
+description: Allows short (non-long) text fields to use the textarea widget on content entry forms.
+core_version_requirement: ^8 || ^9 || ^10
+package: Field types
+dependencies:
+  - drupal:text
+
+# Information added by Drupal.org packaging script on 2023-11-13
+version: '8.x-1.3'
+project: 'textarea_widget_for_text'
+datestamp: 1699891370

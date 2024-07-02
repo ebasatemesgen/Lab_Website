@@ -1,0 +1,47 @@
+<?php
+
+use Drupal\image\Entity\ImageStyle;
+use Drupal\image\ImageEffectInterface;
+use Drupal\imagick\Plugin\ImageEffect\ConvertImageEffect;
+
+/**
+ * Implements hook_requirements().
+ */
+function imagick_requirements($phase) {
+  $requirements = [];
+
+  // Set a status message when the extension is not available
+  if (!extension_loaded('imagick')) {
+    $requirements['not_installed'] = [
+      'title' => 'ImageMagick PHP extension',
+      'value' => t('Not installed'),
+      'severity' => REQUIREMENT_ERROR,
+      'description' => t('The Imagick image toolkit requires that the Imagick extension for PHP is installed and configured properly. For more information see <a href=":url">PHP\'s ImageMagick documentation</a>.', [':url' => 'http://php.net/manual/book.imagick.php']),
+    ];
+  }
+
+  return $requirements;
+}
+
+/**
+ * Update all convert effect operations.
+ */
+function imagick_update_8001() {
+  $styles = ImageStyle::loadMultiple();
+
+  /** @var ImageStyle $style */
+  foreach ($styles as $style) {
+    /** @var ImageEffectInterface $effect */
+    foreach ($style->getEffects() as $effect) {
+      if ($effect instanceof ConvertImageEffect) {
+        // Update configuration
+        $config = $effect->getConfiguration();
+        $config['data']['format'] = strtolower($config['data']['format']);
+
+        // Save the effect
+        $effect->setConfiguration($config);
+        $style->save();
+      }
+    }
+  }
+}

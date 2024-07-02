@@ -1,0 +1,18 @@
+{
+    "name": "drupal/limited_field_widgets",
+    "description": "Provide extra limit settings for unlimited field widgets.",
+    "license": "GPL-2.0+",
+    "type": "drupal-module",
+    "keywords": [
+        "Drupal"
+    ],
+    "homepage": "https://www.drupal.org/project/limited_field_widgets",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/limited_field_widgets",
+        "source": "http://cgit.drupalcode.org/limited_field_widgets"
+    },
+    "require": {
+        "drupal/core": ">=9.2"
+    },
+    "minimum-stability": "dev"
+}

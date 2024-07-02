@@ -1,0 +1,4 @@
+administer workbench menu access:
+  description: 'Administer access control settings for Workbench Menu Access.'
+  title: 'Administer Workbench Menu Access configuration'
+  restrict access: TRUE

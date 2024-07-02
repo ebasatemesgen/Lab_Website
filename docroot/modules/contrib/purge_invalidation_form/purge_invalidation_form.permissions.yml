@@ -1,0 +1,4 @@
+purge_invalidation_form purge invalidation:
+  title: 'Purge Invalidation Form.'
+  description: 'Use Purge Invalidation Form.'
+  restrict access: true

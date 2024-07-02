@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Contains install, uninstall, and update hooks for Lightning Media Audio.
+ */
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function lightning_media_audio_update_last_removed(): int {
+  return 8001;
+}

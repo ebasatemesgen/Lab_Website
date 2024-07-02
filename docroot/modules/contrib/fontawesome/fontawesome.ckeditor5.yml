@@ -1,0 +1,18 @@
+fontawesome_drupalfontawesome:
+  ckeditor5:
+    plugins:
+      - drupalfontawesome.FontAwesome
+  drupal:
+    label: Fontawesome
+    library: fontawesome/fontawesome.ckeditor5.plugin
+    admin_library: fontawesome/fontawesome.ckeditor5.plugin.admin
+    toolbar_items:
+      fontawesome:
+        label: Fontawesome
+    elements:
+      - <i>
+      - <i class>
+      - <i data-fa-transform>
+      - <span>
+      - <span class>
+      - <span data-fa-transform>

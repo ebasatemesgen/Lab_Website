@@ -1,0 +1,11 @@
+<div class="sliding-sidebar animated-panel-from-right">
+  <div class="sliding-sidebar-container block-section">
+    <div class="close-animated-sidebar">x</div>
+      {% if page.sidebar_sliding %}
+        {{ page.sidebar_sliding }}
+      {% else %}
+        <p>Please add some content in <a href="{{ base_path }}admin/structure/block">Animated Sidebar</a> block region. For more information please refer to this tutorial page:</p>
+        <p><a href="https://www.drupar.com/vanipro-documentation/animated-sidebar" target="_blank">Add content in animated sidebar</a></p>
+      {% endif %}<!-- /page.sidebar_sliding -->
+  </div>
+</div> <!-- /.sliding-sidebar -->

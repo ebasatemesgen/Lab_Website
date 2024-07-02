@@ -1,0 +1,12 @@
+name: 'Unpublished Node Permissions'
+type: module
+description: 'Creates permissions per node content type to control access to unpublished nodes per content type.'
+core_version_requirement: ^8.9 || ^9 || ^10
+dependencies:
+  - 'drupal:node'
+package: 'Custom'
+
+# Information added by Drupal.org packaging script on 2023-11-28
+version: '8.x-1.4'
+project: 'unpublished_node_permissions'
+datestamp: 1701175928

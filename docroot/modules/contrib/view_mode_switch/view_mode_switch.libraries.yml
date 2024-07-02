@@ -1,0 +1,5 @@
+field_ui.icons:
+  version: 1.0
+  css:
+    theme:
+      css/field_ui.icons.theme.css: { weight: 10 }

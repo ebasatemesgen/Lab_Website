@@ -1,0 +1,14 @@
+name: 'Media Slideshow'
+core_version_requirement: '^9.3 || ^10'
+type: module
+description: 'Provides the ability to create slideshows and carousels of media items.'
+package: Lightning
+dependencies:
+  - drupal:block_content
+  - lightning_media:lightning_media
+  - slick_entityreference:slick_entityreference
+
+# Information added by Drupal.org packaging script on 2023-01-10
+version: '5.0.0'
+project: 'lightning_media'
+datestamp: 1673384213

@@ -1,0 +1,16 @@
+name: Slick Paragraphs
+type: module
+description: 'Provides Slick Carousel integration with Paragraphs.'
+core_version_requirement: ^8.8 || ^9 || ^10
+package: Slick
+dependencies:
+  - paragraphs:paragraphs
+  - slick:slick (>= 2.10)
+
+# Add a fake version so local drush and Git checkouts do not fail dependencies.
+# version: 8.x-2.x
+
+# Information added by Drupal.org packaging script on 2023-09-23
+version: '8.x-2.4'
+project: 'slick_paragraphs'
+datestamp: 1695462499

@@ -1,0 +1,99 @@
+# Global stylings. These CSS files will be loaded on every pages.
+global-styling:
+  version: 9.1
+  css:
+    theme:
+      css/style.css: {}
+      css/slider.css: {}
+
+# Global Javascripts. These will be loaded on every pages.
+global-scripts:
+  version: 9.1
+  js:
+    js/slider.js: {}
+    js/vanipro.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+
+# Animated content when in view
+animated-content:
+  version: 9.1
+  css:
+    component:
+      css/animate.css: {}
+
+# cookiealert script
+cookiealert-scripts:
+  version: 1.0
+  js:
+    js/cookiealert.js: {}
+
+# FontAwesome
+fontawesome:
+  version: 4.7.0
+  css:
+    component:
+      css/font-awesome.css: {}
+
+# FontAwesome 5
+fontawesome5:
+  version: 5.15.4
+  css:
+    component:
+      css/fontawesome5.css: {weight: -10}
+
+
+# FontAwesome 6
+fontawesome6:
+  version: 6.1.2
+  css:
+    component:
+      css/fontawesome6.css: {weight: -10}
+
+# Bootstrap Icons v1.9.1
+bootstrap-icons:
+  version: 1.9.1
+  css:
+    component:
+      css/bootstrap-icons.css: {}
+
+# Google Material Icons
+material:
+  version: 3.0.1
+  css:
+    component:
+      css/material.css: {}
+
+# Book
+book:
+  version: VERSION
+  css:
+    component:
+      css/book.css: {}
+
+# maintenance page
+maintenance:
+  version: 1.0
+  css:
+    theme:
+      css/maintenance.css: {}
+
+# Theme settings
+theme-settings:
+  version: 1.0
+  css:
+    theme:
+      css/theme-settings.css: {}
+
+# Google Fonts from CDN
+googlefontscdn:
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap: { type: external }
+
+# Google Fonts from local
+googlefontslocal:
+  css:
+    theme:
+      css/font.css: {}

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Entity Pager module.
+ */
+
+/**
+ * Update entity_pager configuration in existing views.
+ */
+function entity_pager_update_8101() {
+  $config_factory = \Drupal::configFactory();
+  $views = $config_factory->listAll('views.view.');
+
+  foreach ($views as $view) {
+    $config = $config_factory->getEditable($view);
+    $displays = $config->get('display');
+    $save = FALSE;
+
+    foreach ($displays as $display_id => $display) {
+      $style = $display['display_options']['style'];
+      if ($style['type'] == 'entity_pager' && isset($style['options']['next_prev'])) {
+        $style_options = array_merge($style['options'], $style['options']['next_prev']);
+        unset($style_options['next_prev']);
+        $displays[$display_id]['display_options']['style']['options'] = $style_options;
+        $save = TRUE;
+      }
+    }
+
+    if ($save) {
+      $config->set('display', $displays);
+      $config->save(TRUE);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.sidebar .block {
+  padding: 1rem;
+  background: var(--content-bg);
+  margin-bottom: 2rem;
+  border-radius: 6px;
+}
+.sidebar .block-title {
+  line-height: 1;
+  padding-bottom: 0.3rem;
+}
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--content-border-color);
+}
+
+/* Extended pro */
+.sidebar-circle-one,
+.sidebar-circle-two {
+  position: absolute;
+  border-radius: 50%;
+}
+.sidebar-circle-one {
+  background: var(--circle-one);
+  width: 30px;
+  height: 30px;
+  top: 38px;
+  right: 20px;
+}
+.sidebar-circle-two {
+  background: var(--circle-two);
+  width: 42px;
+  height: 42px;
+  top: 20px;
+  right: 36px;
+}
+
+
+

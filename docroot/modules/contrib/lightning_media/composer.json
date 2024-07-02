@@ -1,0 +1,44 @@
+{
+    "name": "drupal/lightning_media",
+    "type": "drupal-module",
+    "description": "Slick media handling for Lightning. So cool you'll make the A/C jealous.",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/lightning_core": "^6"
+    },
+    "require-dev": {
+        "drupal/ckeditor": "^1",
+        "drupal/dropzonejs": "^2.1",
+        "drupal/entity_browser": "^2.3",
+        "drupal/image_widget_crop": "^2.1",
+        "drupal/inline_entity_form": "^1.0-rc7",
+        "drupal/media_entity_instagram": "^3",
+        "drupal/media_entity_twitter": "^2.5",
+        "drupal/pathauto": "^1",
+        "drupal/slick_entityreference": "^2",
+        "drupal/embed": "^1",
+        "enyo/dropzone": "^5.7.4",
+        "vardot/blazy": "^1.8"
+    },
+    "suggest": {
+        "drupal/dropzonejs": "Required for Lightning Media Bulk Upload, which provides an easy way to upload multiple media files at once.",
+        "drupal/entity_browser": "Used by Lightning Media Image to improve image fields.",
+        "drupal/image_widget_crop": "Adds cropping functionality to Lightning Media Image.",
+        "drupal/inline_entity_form": "Allows entity browsers to create media items from file uploads and embed codes.",
+        "drupal/media_entity_instagram": "Required for Lightning Media Instagram, which provides an Instagram media type.",
+        "drupal/media_entity_twitter": "Required for Lightning Media Twitter, which provides a tweet media type.",
+        "drupal/slick_entityreference": "Required for Lightning Media Slideshow, which provides a simple carousel media type.",
+        "enyo/dropzone": "Provides a JavaScript library required by the DropzoneJS module.",
+        "vardot/blazy": "Provides a JavaScript library required by the Slick module."
+    },
+    "conflict": {
+        "drupal/dropzonejs": "<2.1",
+        "drupal/entity_browser": "<2.3",
+        "drupal/image_widget_crop": "<2.1",
+        "drupal/inline_entity_form": "<1.0-rc7",
+        "drupal/media_entity": "*",
+        "drupal/media_entity_instagram": "<3",
+        "drupal/media_entity_twitter": "<2.5",
+        "drupal/slick_entityreference": "<2"
+    }
+}

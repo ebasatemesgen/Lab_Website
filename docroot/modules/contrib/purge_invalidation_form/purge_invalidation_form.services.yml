@@ -1,0 +1,7 @@
+services:
+  logger.channel.purge_invalidation_form:
+    parent: logger.channel_base
+    arguments: ['purge_invalidation_form']
+  purge_invalidation_form.invalidation_manager:
+    class: \Drupal\purge_invalidation_form\InvalidationManager
+    arguments: ['@purge.invalidation.factory', '@purge.processors', '@purge.purgers']

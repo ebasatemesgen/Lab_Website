@@ -1,0 +1,60 @@
+{#
+  /**
+  
+  This is for the non front page 
+  */
+#}
+
+
+
+<div class="non-landing-page">
+  <section id="headering" class="header-non-landing">
+    {{ page.header }}
+    <div class="center non-landing-center"> 
+      {{ page.mainnavigation }}
+    </div>
+    <div class="right non-landing-right">
+      {{ page.right_navigation }}
+    </div>
+    <div id="mobile" class="mobile-non-landing">
+      <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+</div>
+
+
+<div class="container">
+  {{ page.primary_menu }}
+  {{ page.secondary_menu }}
+  {{ page.breadcrumb }}
+  {{ page.highlighted }}
+  {{ page.help }}
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+
+    <div class="layout-content">
+      {{ page.content }}
+    </div>
+
+    {% if page.sidebar_first %}
+      <aside class="layout-sidebar-first" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+
+    {% if page.sidebar_second %}
+      <aside class="layout-sidebar-second" role="complementary">
+        {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+</div>

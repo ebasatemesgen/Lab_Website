@@ -1,0 +1,21 @@
+{% include '@vani/template-parts/header.html.twig' %}
+<div id="main-wrapper" class="main-wrapper">
+  <div class="container">
+  <div class="main-container">
+    <main id="main" class="page-content">
+
+
+
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+      {% include '@vani/template-parts/content_top.html.twig' %}
+      <div class="node-content">
+        {{ page.content }}
+      </div>
+      {% include '@vani/template-parts/content_bottom.html.twig' %}
+    </main>
+    {% include '@vani/template-parts/sidebar_left.html.twig' %}
+    {% include '@vani/template-parts/sidebar_right.html.twig' %}
+  </div> {# /.main-container #}
+  </div> {# /.container #}
+</div>{# /main-wrapper #}
+{% include '@vani/template-parts/footer.html.twig' %}

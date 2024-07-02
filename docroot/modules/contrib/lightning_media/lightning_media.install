@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update functions for Lightning Media.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function lightning_media_install() {
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  user_role_grant_permissions('anonymous', ['view media']);
+  user_role_grant_permissions('authenticated', ['view media']);
+
+  // Grant the creator content role permission to use the rich_text format and
+  // the media browser.
+  if (\Drupal::moduleHandler()->moduleExists('lightning_roles')) {
+    lightning_media_modules_installed(['lightning_roles']);
+  }
+}
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function lightning_media_update_last_removed(): int {
+  return 8022;
+}

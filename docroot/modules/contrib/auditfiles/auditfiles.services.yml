@@ -1,0 +1,76 @@
+services:
+  auditfiles.config:
+    class: Drupal\auditfiles\Services\AuditFilesConfig
+    arguments:
+      - '@config.factory'
+
+  auditfiles.exclusions:
+    class: Drupal\auditfiles\Services\AuditFilesExclusions
+    arguments:
+      - '@auditfiles.config'
+      - '@stream_wrapper_manager'
+      - '@file_system'
+
+  auditfiles.audit_listener:
+    class: Drupal\auditfiles\AuditFilesListener
+    arguments:
+      - '@database'
+      - '@file_system'
+      - '@file.mime_type.guesser'
+      - '@datetime.time'
+      - '@entity_type.manager'
+    tags:
+      - { name: event_subscriber }
+
+  auditfiles.auditor.not_in_database:
+    class: Drupal\auditfiles\Auditor\AuditFilesNotInDatabase
+    arguments:
+      - '@auditfiles.config'
+      - '@auditfiles.exclusions'
+      - '@database'
+      - '@file_system'
+
+  auditfiles.auditor.not_on_server:
+    class: Drupal\auditfiles\Auditor\AuditFilesNotOnServer
+    arguments:
+      - '@auditfiles.config'
+      - '@database'
+      - '@file_system'
+
+  auditfiles.auditor.managed_not_used:
+    class: Drupal\auditfiles\Auditor\AuditFilesManagedNotUsed
+    arguments:
+      - '@auditfiles.config'
+      - '@database'
+
+  auditfiles.auditor.used_not_managed:
+    class: Drupal\auditfiles\Auditor\AuditFilesUsedNotManaged
+    arguments:
+      - '@auditfiles.config'
+      - '@database'
+
+  auditfiles.auditor.used_not_referenced:
+    class: Drupal\auditfiles\Auditor\AuditFilesUsedNotReferenced
+    arguments:
+      - '@auditfiles.config'
+      - '@database'
+      - '@entity_field.manager'
+      - '@entity_type.manager'
+      - '@file_url_generator'
+
+  auditfiles.auditor.referenced_not_used:
+    class: Drupal\auditfiles\Auditor\AuditFilesReferencedNotUsed
+    arguments:
+      - '@auditfiles.config'
+      - '@database'
+      - '@entity_field.manager'
+
+  auditfiles.auditor.merge_file_references:
+    class: Drupal\auditfiles\Auditor\AuditFilesMergeFileReferences
+    arguments:
+      - '@auditfiles.config'
+      - '@database'
+      - '@file_system'
+      - '@entity_type.manager'
+    tags:
+      - { name: event_subscriber }

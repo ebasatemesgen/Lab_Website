@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update functions for unpublished_node_permissions.
+ */
+
+/**
+ * Rebuild all grants for unpublished nodes.
+ */
+function unpublished_node_permissions_update_8001() {
+  node_access_rebuild(TRUE);
+}

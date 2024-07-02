@@ -1,0 +1,13 @@
+name: Views Block Placement Exposed Form Defaults
+description: 'Set default values of the views exposed form when placing views blocks into a page or layouts.'
+core_version_requirement: ^8 || ^9 || ^10
+type: module
+
+dependencies:
+  - drupal:views
+  - drupal:block
+
+# Information added by Drupal.org packaging script on 2022-11-18
+version: '8.x-1.0-rc4'
+project: 'views_block_placement_exposed_form_defaults'
+datestamp: 1668804670

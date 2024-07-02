@@ -1,0 +1,17 @@
+{% if node.getType == 'page' %}
+  {% if page_share_page %}
+    {% include '@vanipro/template-parts/share-node.html.twig' %}
+  {% endif %}
+{% elseif node.getType == 'article' %}
+  {% if page_share_article %}
+    {% include '@vanipro/template-parts/share-node.html.twig' %}
+  {% endif %}
+{% elseif node.getType == 'book' %}
+  {% if page_share_book %}
+    {% include '@vanipro/template-parts/share-node.html.twig' %}
+  {% endif %}
+{% else %}
+  {% if page_share_other %}
+    {% include '@vanipro/template-parts/share-node.html.twig' %}
+  {% endif %}
+{% endif %}

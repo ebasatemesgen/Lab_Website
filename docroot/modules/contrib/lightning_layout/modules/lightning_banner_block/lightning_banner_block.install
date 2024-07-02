@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Contains installation and update hooks.
+ */
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function lightning_banner_block_update_last_removed(): int {
+  return 8001;
+}

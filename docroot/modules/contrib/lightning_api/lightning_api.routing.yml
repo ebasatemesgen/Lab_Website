@@ -1,0 +1,16 @@
+lightning_api.settings:
+  path: '/admin/config/system/lightning/api'
+  defaults:
+    _title: API
+    _form: '\Drupal\lightning_api\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+lightning_api.generate_keys:
+  path: '/admin/config/system/lightning/api/keys'
+  defaults:
+    _title: Generate keys
+    _form: '\Drupal\lightning_api\Form\OAuthKeyForm'
+  requirements:
+    _permission: 'administer simple_oauth entities'
+    _module_dependencies: 'simple_oauth'

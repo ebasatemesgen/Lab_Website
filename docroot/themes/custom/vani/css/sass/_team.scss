@@ -1,0 +1,300 @@
+/* Base container styling */
+.unique-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main Team Title Styling */
+.unique-title-section {
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+}
+
+.unique-main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 10px; /* Space for underline */
+    display: inline-block; /* Necessary for the line to fit content width */
+    position: relative;
+    z-index: 1; /* Ensures text is above the pseudo-element */
+}
+
+.unique-main-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%; /* Width of the underline */
+    height: 3px; /* Thickness of the underline */
+    background-color: #17bebb; /* Color of the underline */
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.unique-main-title:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+/* Section Heading Styling */
+.unique-section-title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.unique-section-heading {
+    font-size: 28px;
+    font-weight: 600;
+    color: #4a4a4a;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Space for underline */
+}
+
+.unique-section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Full width of the text */
+    height: 2px; /* Thickness of the underline */
+    background-color: #17bebb; /* Color of the underline */
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.unique-section-heading:hover::after {
+    opacity: 1; /* Full color on hover */
+}
+
+
+/* Principal Investigator Card Styles */
+.unique-pi-row {
+    display: flex;
+    justify-content: center; /* Center the PI card */
+    margin: 40px 0; /* Provide ample space around the PI card */
+}
+
+.unique-pi-col {
+    flex: 0 0 60%; /* Adjust width to make the card stand out */
+    max-width: 60%; /* Ensure the card is not too wide on larger screens */
+}
+
+.unique-pi {
+    background-color: #f8f9fa; /* Slightly off-white background for emphasis */
+    border: 1px solid #dee2e6; /* Subtle border */
+    border-radius: 20px; /* Smoothed corners for a modern look */
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Stronger shadow for depth */
+    transition: all 0.3s ease-in-out;
+    position: relative; /* For possible pseudo-elements or decorations */
+}
+
+.unique-pi:hover {
+    transform: scale(1.03); /* Gentle scale effect on hover */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.20);
+}
+
+.unique-pic {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set height equal to the width to maintain a square */
+    border-radius: 50%; /* This creates a circular shape */
+    overflow: hidden; /* Ensures no part of the image spills outside the border */
+    margin: 0 auto 20px; /* Center the image horizontally and add spacing below */
+    position: relative; /* Ensures proper stacking if using z-index elsewhere */
+    border: 5px solid #fff; /* Optional: adds a white border around the image */
+}
+.unique-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the area */
+    display: block;
+}
+
+.unique-pi-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Tighter spacing for name */
+}
+
+.unique-pi-title {
+    font-size: 18px;
+    color: #6c757d; /* Subdued color for title */
+    margin-bottom: 15px;
+}
+
+.unique-pi-bio {
+    font-size: 16px; /* Readable text size */
+    color: #495057; /* Darker grey for better readability */
+    margin-bottom: 20px;
+}
+
+.unique-links a {
+    font-size: 20px; /* Larger icons for better interaction */
+    color: #007bff; /* Bright blue to stand out */
+    margin-right: 15px;
+}
+
+.unique-links a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: none; /* No underline to maintain clean look */
+}
+
+
+
+
+
+.unique-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.unique-col {
+    flex: 0 0 33.33%; /* Use 33.33% for three items per row */
+    max-width: 33.33%; /* Use 33.33% for three items per row */
+    padding: 10px;
+}   
+.unique-team-member {
+    background-color: #fff; /* White background for the card */
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.unique-team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
+
+
+.unique-team-member {
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.unique-team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.unique-research, .unique-bio {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.unique-links {
+    margin-top: 10px;
+}
+
+.unique-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #17bebb;
+    text-decoration: none;
+}
+
+.unique-links a:hover {
+    text-decoration: underline;
+}
+
+
+.unique-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.unique-post {
+    color: #17bebb;
+    font-size: 15px;
+}
+
+.unique-links {
+    margin-top: 10px;
+}
+
+.unique-icon {
+    font-size: 20px; /* Icon size can be adjusted here */
+    color: #17bebb;
+    margin-right: 10px;
+}
+
+.unique-icon:hover {
+    color: #0a6d9d;
+    text-decoration: none; /* Removes underline from icons on hover */
+}
+
+
+/* Background styling for the entire unique container */
+.unique-container {
+    background: linear-gradient(to right, #ffffff 0%, #f4f4f4 100%); /* Subtle gradient background */
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06); /* Soft shadow for depth */
+    border-radius: 8px; /* Slightly rounded corners for a smoother look */
+    margin: 20px auto; /* Centering and adding margin */
+}
+
+/* Specific styling for Principal Investigator section */
+
+
+/* Styling for team members section for consistency with a subtle differentiation */
+.unique-row {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white to see the container's gradient */
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 12px; /* Consistent rounded corners */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05); /* Lighter shadow than the PI section */
+}
+
+/* Enhanced visual separation with titles */
+.unique-section-title {
+    padding: 10px 20px;
+    margin: -20px -20px 20px -20px; /* Overlaps the section edges */
+}
+
+
+/* Principal Investigator Image Styling */
+.unique-pi .unique-pic {
+    width: 250px; /* Larger size for PI */
+    height: 250px; /* Maintain aspect ratio for a perfect circle */
+    margin-bottom: 20px; /* Adequate spacing between the image and the text */
+}
+
+
+/* Team Member Image Styling */
+.unique-team-member .unique-pic {
+    width: 150px; /* Optimal size for team members */
+    height: 150px; /* Maintain aspect ratio for a perfect circle */
+    margin-bottom: 15px; /* Spacing between image and text */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .unique-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .unique-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

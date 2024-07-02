@@ -1,0 +1,43 @@
+<section id="hero">
+  <div class="overlay">
+      <h1>Next Generation </h1>
+        <h2>Robotics Laboratory</h2> 
+      <p>Our research encompasses Artificial Intelligence, Machine Learning, and Robotics with a focus on autonomous systems, multi-agent systems, and swarm robotics.</p>
+
+  </div>
+</section>
+
+<section class="slider clear">
+{% if slider_circle %}
+  <div class="header-cicle header-cicle1"></div>
+  <div class="header-cicle header-cicle3"></div>
+  <div class="header-cicle header-cicle4"></div>
+  <div class="header-cicle header-cicle6"></div>
+  <div class="header-cicle header-cicle7"></div>
+  <div class="header-cicle header-cicle8"></div>
+  <div class="header-cicle header-cicle10"></div>
+  <div class="header-cicle header-cicle2"></div>
+  <div class="header-cicle header-cicle5"></div>
+  <div class="header-cicle header-cicle9"></div>
+{% endif %}
+  <div class="container">
+
+
+
+    <div class="owl-carousel home-slider">
+      {% if slider_code_source == 'code_from_settings' %}
+        {% if slider_code != '' %}
+          {{ slider_code | striptags('<div>,<span>,<ul>,<ol>,<li>,<p>,<a>,<img>,<video>,<h1>,<h2>,<h3>,<h4>,<h5>,<h6>,<em>,<strong>,<mark>,<br>,<button>,<i>,<source>,<hr>') | raw }}
+        {% else %}
+          {% include '@vanipro/template-parts/slider-default.html.twig' %}
+        {% endif %}     
+      {% elseif slider_code_source == 'code_from_block' %}
+        {% if page.home_slider %}
+          {{ page.home_slider }}
+        {% else %}
+          {% include '@vanipro/template-parts/slider-default.html.twig' %}
+        {% endif %}       
+      {% endif %}
+    </div> <!--/.home-slider -->
+  </div> <!--/.container -->
+</section>

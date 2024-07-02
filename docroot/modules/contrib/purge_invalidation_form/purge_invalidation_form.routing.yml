@@ -1,0 +1,9 @@
+purge_invalidation_form.invalidation_form:
+  path: '/admin/config/development/performance/purge-invalidation-form'
+  defaults:
+    _form: '\Drupal\purge_invalidation_form\Form\InvalidationForm'
+    _title: 'Purge Invalidation Form'
+  requirements:
+    _permission: 'purge_invalidation_form purge invalidation'
+  options:
+    _admin_route: TRUE

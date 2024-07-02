@@ -1,0 +1,94 @@
+{% include '@vani/template-parts/header-top-blocks.html.twig' %}
+<header class="header">
+  <div class="header-circle header-circle1"></div>
+  <div class="header-circle header-circle3"></div>
+  <div class="header-circle header-circle4"></div>
+  <div class="header-circle header-circle6"></div>
+  <div class="header-circle header-circle7"></div>
+  <div class="header-circle header-circle8"></div>
+  <div class="header-circle header-circle10"></div>
+  {% if is_front and slider_show %}
+  <div class="header-circle header-circle2"></div>
+  <div class="header-circle header-circle5"></div>
+  <div class="header-circle header-circle9"></div>
+  {% endif %}
+  <div class="container">
+    <div class="header-main">
+
+      {# Site Branding #}
+      {% if page.site_branding %}
+        <div class="left site-brand">
+          {{ page.site_branding }}
+        </div> <!-- /.site-branding -->
+      {% endif %}
+
+      {# Primary Menu (center) #}
+      {# Mobile Menu Toggle #}
+
+      <div class="mobile-menu"><i class="icon-menu"></i></div> {# mobile-menu #}
+      <div class="close-mobile-menu">x</div>
+
+      {# Primary and Secondary Menus #}
+      <div class="header-menus">
+        <div class="menu-wrap">
+          {% if page.primary_menu %}
+            <div class="primary-menu-wrapper">
+              {{ page.primary_menu.vani_main_menu }}
+            </div>
+          {% endif %}
+          {% if page.primary_menu.vani_customnavigationlinks %}
+            <div class="custom-navigation-links">
+              {{ page.primary_menu.vani_customnavigationlinks }}
+            </div>
+          {% endif %}
+        </div>       
+      </div> <!-- /.header-menus -->
+
+    
+
+    
+
+      {# Search Box (Right) #}
+      {% if page.search_box %}
+        <div class="right header-main-right">
+          <div class="mobile-menu"><i class="icon-menu"></i></div> {# mobile-menu #}
+         
+          {% include '@vani/template-parts/search.html.twig' %}
+        </div> <!-- /.header-right -->
+      {% endif %}
+
+
+    </div><!-- /header-main -->
+  </div><!-- /container -->
+
+  {% if is_front and slider_show %}
+
+  {# ****************************** This is the hero section of the header. #}
+      <section id="hero">
+        <div class="overlay">
+            <h1>Next Generation </h1>
+              <h2>Robotics Laboratory</h2> 
+            <p>Our research encompasses Artificial Intelligence, Machine Learning, and Robotics with a focus on autonomous systems, multi-agent systems, and swarm robotics.</p>
+      
+        </div>
+      </section>
+
+    {% include '@vani/template-parts/slider.html.twig' %}
+  {% elseif not is_front %}
+    {% include '@vani/template-parts/page_header.html.twig' %}
+  {% endif %}
+</header>
+
+{# {% include '@vani/template-parts/highlighted.html.twig' %} #}
+
+
+
+
+
+
+
+
+
+
+
+

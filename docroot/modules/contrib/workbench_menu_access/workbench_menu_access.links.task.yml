@@ -1,0 +1,10 @@
+workbench_menu_access.admin:
+  title: 'Menu access'
+  route_name: workbench_menu_access.admin
+  base_route: entity.access_scheme.collection
+  weight: 40
+workbench_menu_access.form:
+  title: 'Workbench menu access'
+  route_name: workbench_menu_access.form
+  base_route: entity.menu.edit_form
+  weight: 40

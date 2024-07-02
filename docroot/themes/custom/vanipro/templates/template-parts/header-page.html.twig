@@ -1,0 +1,20 @@
+{% if page.page_header %}
+<header class="header">
+  {% if header_circle %}
+    <div class="header-cicle header-cicle1"></div>
+    <div class="header-cicle header-cicle3"></div>
+    <div class="header-cicle header-cicle4"></div>
+    <div class="header-cicle header-cicle6"></div>
+    <div class="header-cicle header-cicle7"></div>
+    <div class="header-cicle header-cicle8"></div>
+    <div class="header-cicle header-cicle10"></div>
+  {% endif %}
+  <section id="page-header">
+    <div class="container">
+      <div class="page-header">
+        {{ page.page_header }}
+      </div>
+    </div><!-- /.container -->
+  </section>
+</header>
+{% endif %}

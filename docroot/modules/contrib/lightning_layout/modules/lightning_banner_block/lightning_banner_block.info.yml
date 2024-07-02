@@ -1,0 +1,17 @@
+name: 'Banner block'
+package: Lightning
+core_version_requirement: '^9.3 || ^10'
+type: module
+description: 'Provides a block type which contains a single large image and optional link.'
+dependencies:
+  - bg_image_formatter:bg_image_formatter
+  - drupal:block_content
+  - drupal:image
+  - drupal:link
+  - lightning_layout:lightning_layout
+  - token:token
+
+# Information added by Drupal.org packaging script on 2023-02-12
+version: '3.0.1'
+project: 'lightning_layout'
+datestamp: 1676166329

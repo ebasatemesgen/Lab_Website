@@ -1,0 +1,119 @@
+<?php
+
+/**
+ * @file
+ * Contains layout functionality for Lightning.
+ */
+
+use Drupal\block_content\BlockContentInterface;
+use Drupal\Core\Entity\Entity\EntityViewMode;
+use Drupal\Core\Field\EntityReferenceFieldItemListInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_modules_installed().
+ */
+function lightning_layout_modules_installed(array $modules) {
+  // Don't do anything during config sync.
+  if (Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  if (in_array('lightning_roles', $modules, TRUE)) {
+    Drupal::service('lightning.content_roles')->grantPermissions('creator', [
+      'configure any layout',
+    ]);
+  }
+}
+
+/**
+ * Implements hook_block_content_delete().
+ */
+function lightning_layout_block_content_delete(BlockContentInterface $block_content) {
+  Drupal::service('block_content.uuid_lookup')->delete($block_content->uuid());
+}
+
+/**
+ * Implements hook_block_alter().
+ */
+function lightning_layout_block_alter(array &$blocks) {
+  $allow = Drupal::config('lightning_layout.settings')->get('entity_blocks');
+
+  if ($allow) {
+    // Suppress all entity_block derivatives for entity types that are not
+    // explicitly allowed.
+    $plugins = preg_grep('/^entity_block:/', array_keys($blocks));
+    foreach ($plugins as $plugin_id) {
+      if (!in_array(substr($plugin_id, 13), $allow, TRUE)) {
+        unset($blocks[$plugin_id]);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function lightning_layout_form_entity_view_display_edit_form_alter(array &$form, FormStateInterface $form_state) {
+  $form['#process'][] = 'lightning_layout_tweak_layout_builder_ui';
+}
+
+/**
+ * Tweaks the Layout Builder stuff on an entity view display form.
+ *
+ * @param array $element
+ *   The form element containing Layout Builder's entity view display options.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The current form state.
+ *
+ * @return array
+ *   The processed element.
+ */
+function lightning_layout_tweak_layout_builder_ui(array $element, FormStateInterface $form_state) {
+  /** @var \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display */
+  $display = $form_state->getFormObject()->getEntity();
+
+  $layout_builder_enabled = $display->getThirdPartySetting('layout_builder', 'enable', FALSE);
+
+  // Check if this display is for an internal view mode.
+  $view_mode = EntityViewMode::load($display->getTargetEntityTypeId() . '.' . $display->getMode());
+  if ($view_mode) {
+    $internal = $view_mode->getThirdPartySetting('lightning_core', 'internal');
+    if ($internal) {
+      // If it's not already applied, don't allow Layout Builder.
+      $element['layout']['#access'] = $layout_builder_enabled;
+
+      // Inform the user what's up.
+      Drupal::messenger()->addWarning(t('This display is internal and will not be seen by normal users.'));
+    }
+  }
+
+  return $element;
+}
+
+/**
+ * Implements template_preprocess_block().
+ */
+function lightning_layout_preprocess_block(array &$variables) {
+  // We need to check for the presence of the actual block content entity,
+  // because it might not exist. For example, if the inline block was deployed
+  // in config, but the block content was not -- which is entirely likely, since
+  // core has no mechanism to deploy content -- we'll try to call uuid() on
+  // NULL, which is a fatal error.
+  if ($variables['base_plugin_id'] === 'inline_block' && isset($variables['content']['#block_content'])) {
+    $variables['attributes']['data-inline-block-uuid'] = $variables['content']['#block_content']->uuid();
+  }
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function lightning_layout_field_widget_single_element_form_alter(array &$element, FormStateInterface &$form_state, $context) {
+  $items = isset($context['items']) ? $context['items'] : NULL;
+
+  // Hide the Layout field's select widget if it only has the default "none"
+  // option.
+  if ($items instanceof EntityReferenceFieldItemListInterface && $items->getName() === 'layout_selection' && isset($element['#type']) && $element['#type'] === 'select' && count($element['#options']) === 1) {
+    $element['#access'] = FALSE;
+  }
+}

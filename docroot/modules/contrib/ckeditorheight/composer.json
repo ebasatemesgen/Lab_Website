@@ -1,0 +1,9 @@
+{
+    "name": "drupal/ckeditorheight",
+    "description": "Adjusts CKEditor height to field row setting until we have https://www.drupal.org/node/2788905.",
+    "type": "drupal-module",
+    "require": {
+        "drupal/ckeditor": "^1.0"
+    },
+    "license": "GPL-2.0-or-later"
+}

@@ -1,0 +1,29 @@
+global-styling:
+  version: 10.1.3
+  css:
+    base:
+      'css/custom-styles.css': {}
+
+custom-node-129:
+  version: 1.0.0
+  css:
+    theme:
+      '/themes/custom/ebas_theme/css/custom-node-129.css': {}
+
+global-scripts:
+  version: 10.1.3
+  js:
+    'js/custom-scripts.js': {}
+  dependencies:
+    - core/drupal
+    - core/once
+
+swiper:
+  css:
+    theme:
+      https://unpkg.com/swiper/swiper-bundle.min.css: {}
+  js:
+    https://unpkg.com/swiper/swiper-bundle.min.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

@@ -1,0 +1,54 @@
+section#headering.header-non-landing {
+  background-color: red !important; /* Red background for the navigation */
+  padding: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+section#headering.header-non-landing .center {
+  flex-grow: 1 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+section#headering.header-non-landing .right {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+}
+
+section#headering.header-non-landing #navbar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+section#headering.header-non-landing #navbar li {
+  list-style: none !important;
+  padding: 0 20px !important;
+}
+
+section#headering.header-non-landing #navbar li a {
+  text-decoration: none !important;
+  color: white !important; /* Adjust the color if necessary */
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  transition: 0.3s ease !important;
+}
+
+section#headering.header-non-landing #navbar li a:hover,
+section#headering.header-non-landing #navbar li.active a {
+  color: yellow !important; /* Adjust the hover color if necessary */
+}
+
+#mobile a {
+  color: white !important;
+}
+
+#bar {
+  color: white !important;
+}

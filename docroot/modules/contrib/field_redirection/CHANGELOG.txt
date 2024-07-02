@@ -1,0 +1,39 @@
+Field_Redirection 8.x-2.x-dev, 2022-xx-xx
+-----------------------------------------
+#1361806 by DamienMcKenna, Anybody: Redirects during cron.
+#2672870 by jwilson3, marthinal, heshanlk, DamienMcKenna, ultimike, larowlan:
+  Support File field type.
+
+
+Field_Redirection 8.x-2.1, 2021-11-24
+-------------------------------------
+#2672868 by DamienMcKenna: Add Entity Reference field type support.
+
+
+Field_Redirection 8.x-2.0, 2020-05-22
+-------------------------------------
+#3129751 by marcusml, jwilson3, matt_paz, Nebel54, UlfG: PHP Syntax error in
+  formatter.
+#3130917 by DamienMcKenna: Fix D9 tests in 8.x-1.x.
+By DamienMcKenna: Updated credits in README.txt.
+
+
+Field_Redirection 8.x-2.0-rc1, 2020-04-03
+-----------------------------------------
+By ultimike: Initial port.
+#2846142 by mparker17: Simplify HTTP Status Code options.
+#2846146 by mparker17: <front> not properly escaped, does not appear in
+  description text.
+#2844449 by nehakhadke: $this->t() should be used instead of t().
+#2844453 by nehakhadke: Remove @file tag docblock from all the .php files.
+#2907126 by DamienMcKenna: Replace long array() syntax with short [] syntax.
+By DamienMcKenna: Correct spelling of project name.
+#3029464 by chipway: Update Dependencies to new Format in .info.yml.
+#3123929 by DamienMcKenna: Add core_version_requirements line to info file for
+  D9 compatibility.
+#2672864 by larowlan, ultimike: Figure out if we need to handle $options, query,
+  and fragment in D8 version (Link field types).
+#3123944 by DamienMcKenna: Code cleanup.
+#3123929 by DamienMcKenna: Removed 'core' value from info.yml file.
+#2780977 by DamienMcKenna, acbramley, larowlan, jibran, jasonawant, mparker17:
+  Add some test coverage, misc fixes to redirection system.

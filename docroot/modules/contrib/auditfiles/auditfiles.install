@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Installation hooks for Audit Files.
+ */
+
+declare(strict_types=1);
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function auditfiles_update_last_removed(): int {
+  return 8003;
+}

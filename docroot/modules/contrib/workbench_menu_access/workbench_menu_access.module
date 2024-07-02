@@ -1,0 +1,242 @@
+<?php
+
+/**
+ * @file
+ * Workbench Menu Access module.
+ */
+
+use Drupal\Core\Url;
+use Drupal\Core\Access\AccessResultReasonInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\system\MenuInterface;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function workbench_menu_access_entity_type_build(array &$entity_types): void {
+  if (isset($entity_types['menu'])) {
+    $original = $entity_types['menu']->getHandlerClass('access');
+    $entity_types['menu']->setHandlerClass('access-original', $original);
+    $entity_types['menu']->setHandlerClass('access', 'Drupal\workbench_menu_access\WorkbenchMenuAccessControlHandler');
+  }
+  if (isset($entity_types['menu_link_content'])) {
+    $original = $entity_types['menu_link_content']->getHandlerClass('access');
+    $entity_types['menu_link_content']->setHandlerClass('access-original', $original);
+    $entity_types['menu_link_content']->setHandlerClass('access', 'Drupal\workbench_menu_access\WorkbenchMenuLinkContentAccessControlHandler');
+  }
+}
+
+/**
+ * Alter menu forms.
+ *
+ * @param array $form
+ *   A Drupal form array.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The current form state.
+ * @param string $form_id
+ *   The form id.
+ */
+function workbench_menu_access_form_alter(array &$form, FormStateInterface $form_state, $form_id): void {
+  // menu_link_content_menu_link_content_form.
+  if ($form_id === 'menu_link_content_menu_link_content_form' ||
+      $form_id === 'menu_link_edit' ||
+      $form_id === 'menu_link_content_menu_link_content_delete_form') {
+    $operation = ($form_id === 'menu_link_content_menu_link_content_delete_form') ? 'delete' : 'update';
+    workbench_menu_access_alter_menu_link_forms($form, $form_state, $form_id, $operation);
+  }
+}
+
+/**
+ * Alter the menu link content forms.
+ *
+ * @param array $form
+ *   A Drupal form array.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The current form state.
+ * @param string $form_id
+ *   The form id.
+ * @param string $operation
+ *   The operation being performed.
+ */
+function workbench_menu_access_alter_menu_link_forms(array &$form, FormStateInterface $form_state, $form_id, $operation): void {
+  $object = $form_state->getFormObject();
+  // There are multiple paths to a menu link form, and not all of them load a
+  // menu_link_content entity. We care about parents.
+  $menu_key = NULL;
+  if (method_exists($object, 'getEntity') && !$object->getEntity()->isNew()) {
+    $menu_link = $object->getEntity();
+    $account = \Drupal::currentUser();
+    /** @var \Drupal\workbench_menu_access\WorkbenchMenuLinkContentAccessControlHandler $handler */
+    $handler = \Drupal::entityTypeManager()->getAccessControlHandler('menu_link_content');
+    $access_result = $handler->accessCheck($menu_link, $operation, $account);
+    if (!$access_result->isAllowed()) {
+      throw new AccessDeniedHttpException($access_result instanceof AccessResultReasonInterface ? $access_result->getReason() : t('Access denied'));
+    }
+  }
+  else {
+    $parent = $form['menu_parent']['#default_value'] ?? NULL;
+    if ($parent) {
+      $elements = explode(':', $parent);
+      $menu_key = $elements[0];
+    }
+    // If the user cannot access the parent menu, access is denied.
+    if (!is_null($menu_key)) {
+      $menu = \Drupal::entityTypeManager()->getStorage('menu')->load($menu_key);
+      if ($menu instanceof MenuInterface) {
+        $account = \Drupal::currentUser();
+        /** @var \Drupal\workbench_menu_access\WorkbenchMenuAccessControlHandler $handler */
+        $handler = \Drupal::entityTypeManager()->getAccessControlHandler('menu');
+        $access_result = $handler->accessCheck($menu, $operation, $account);
+        if (!$access_result->isAllowed()) {
+          throw new AccessDeniedHttpException($access_result instanceof AccessResultReasonInterface ? $access_result->getReason() : "access denied");
+        }
+      }
+    }
+  }
+  if ($form_id != 'menu_link_content_menu_link_content_delete_form') {
+    $form['menu_parent'] = workbench_menu_access_reduce_options($form['menu_parent']);
+  }
+}
+
+/**
+ * Ensures that menu options are correct for the current user.
+ *
+ * @param array $element
+ *   The form element being reduced.
+ *
+ * @return array
+ *   The form element array.
+ */
+function workbench_menu_access_reduce_options(array $element) {
+  static $menus;
+  $options = [];
+  $last = NULL;
+  foreach ($element['#options'] as $key => $value) {
+    $elements = explode(':', $key);
+    $menu_key = $elements[0];
+    if ($menu_key !== $last) {
+      $menu = \Drupal::entityTypeManager()->getStorage('menu')->load($menu_key);
+    }
+    $account = \Drupal::currentUser();
+    if ($menu instanceof MenuInterface) {
+      // Cache the menu check for performance.
+      $check_id = $menu->id() . ':' . $account->id();
+      if (!isset($menus[$check_id])) {
+        /** @var \Drupal\workbench_menu_access\WorkbenchMenuAccessControlHandler $handler */
+        $handler = \Drupal::entityTypeManager()->getAccessControlHandler('menu');
+        $menus[$check_id] = $handler->accessCheck($menu, 'update', $account)->isAllowed();
+      }
+      if ($menus[$check_id]) {
+        $options[$key] = $value;
+      }
+    }
+    $last = $menu_key;
+  }
+  $element['#options'] = $options;
+
+  return $element;
+}
+
+/**
+ * Alter the node form.
+ *
+ * @param array $form
+ *   A Drupal form array.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The current form state.
+ * @param string $form_id
+ *   The form id.
+ */
+function workbench_menu_access_form_node_form_alter(array &$form, FormStateInterface $form_state, $form_id): void {
+  if (isset($form['menu']['link']['menu_parent'])) {
+    // @phpstan-ignore-next-line
+    $node = $form_state->getFormObject()->getEntity();
+    $default = $form['menu']['link']['menu_parent']['#default_value'];
+    $form['menu']['link']['menu_parent'] = workbench_menu_access_reduce_options($form['menu']['link']['menu_parent']);
+    // If no options, hide the field entirely.
+    if (count($form['menu']['link']['menu_parent']['#options']) === 0) {
+      $form['menu']['#access'] = FALSE;
+    }
+    $enabled = $form['menu']['enabled']['#default_value'];
+    // If editing a node in a non-accessible menu, print a notice and hide.
+    // Note that the default menu might not be set, so this check cares if the
+    // menu link is already enabled.
+    if (!$node->isNew() && $enabled && !isset($form['menu']['link']['menu_parent']['#options'][$default])) {
+      $form['menu']['#description'] = t('You may not edit the menu this content is assigned to.');
+      $form['menu']['enabled']['#access'] = FALSE;
+      $form['menu']['link']['#access'] = FALSE;
+    }
+  }
+}
+
+/**
+ * Adds entity operations.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ *   The entity being handled.
+ *
+ * @return array
+ *   An array of operation definitions.
+ */
+function workbench_menu_access_entity_operation(EntityInterface $entity) {
+  $operations = [];
+  if ($entity->getEntityTypeId() !== 'menu') {
+    return $operations;
+  }
+  $params = ['menu' => $entity->id()];
+  if (\Drupal::currentUser()->hasPermission('administer workbench menu access')) {
+    $operations['access'] = [
+      'title' => t('Access settings'),
+      'url' => Url::fromRoute('workbench_menu_access.form', $params),
+      'weight' => 20,
+    ];
+  }
+  return $operations;
+}
+
+/**
+ * Help page text.
+ *
+ * @param string $route_name
+ *   The route name.
+ * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
+ *   The route matcher service.
+ *
+ * @return string
+ *   An HTML string.
+ */
+function workbench_menu_access_help($route_name, RouteMatchInterface $route_match) {
+  $output = '';
+  switch ($route_name) {
+    case 'help.page.workbench_menu_access':
+      $readme = __DIR__ . '/README.md';
+      $text = file_get_contents($readme);
+
+      // If the Markdown module is installed, use it to render the README.
+      if ($text !== FALSE && \Drupal::moduleHandler()->moduleExists('markdown') === TRUE) {
+        $filter_manager = \Drupal::service('plugin.manager.filter');
+        $settings = \Drupal::configFactory()->get('markdown.settings')->getRawData();
+        $config = ['settings' => $settings];
+        /** @var \Drupal\filter\Plugin\FilterInterface $filter */
+        $filter = $filter_manager->createInstance('markdown', $config);
+        $output = $filter->process($text, 'en');
+      }
+      // Else the Markdown module is not installed output the README as text.
+      elseif ($text !== FALSE) {
+        $output = '<pre>' . $text . '</pre>';
+      }
+
+      // Add a link to the Drupal.org project.
+      $output .= '<p>';
+      $output .= t('Visit the <a href=":project_link">Workbench Menu Access project page</a> on Drupal.org for more information.', [
+        ':project_link' => 'https://www.drupal.org/project/workbench_menu_access',
+      ]);
+      $output .= '</p>';
+      break;
+  }
+
+  return $output;
+}

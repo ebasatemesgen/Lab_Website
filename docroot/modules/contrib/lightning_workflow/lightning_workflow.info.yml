@@ -1,0 +1,13 @@
+name: 'Lightning Workflow'
+core_version_requirement: '^9.0.6 || ^10'
+type: module
+description: 'Tools to improve your content workflow.'
+package: Lightning
+dependencies:
+  - drupal:content_moderation
+  - drupal:node
+
+# Information added by Drupal.org packaging script on 2023-01-10
+version: '4.0.0'
+project: 'lightning_workflow'
+datestamp: 1673384324

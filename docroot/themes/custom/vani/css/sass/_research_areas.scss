@@ -1,0 +1,66 @@
+/* Research Areas section */
+#research-areas {
+  background-color: #ffffff; /* White background */
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.ra-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ra-box {
+  width: 30%;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 1px solid #7a0019; /* Maroon border */
+  margin: 15px 0;
+  background-color: #fff; /* White background for contrast */
+}
+
+.ra-box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.ra-box img {
+  width: 100%;  /* Full width of the container */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Cover the designated area without distorting */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.ra-box h6 {
+  font-size: 18px;
+  display:    block;
+  padding: 10px 10px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #fff; /* White text */
+  background-color: #7a0019; /* Maroon background */
+  margin-top: 12px; /* Increased top margin to relax spacing */;
+  margin-bottom: 12px; /* Increased bottom margin to relax spacing */
+}
+
+
+@media (max-width: 768px) {
+  .ra-box {
+    width: 100%; /* Full width boxes on small devices */
+    margin: 10px 0; /* Reduced margin for tighter mobile layout */
+    padding: 20px 10px; /* Adjusted padding for smaller screens */
+  }
+  #research-areas {
+    padding: 20px 0; /* Reduced section padding for smaller screens */
+  }
+  .ra-box h6 {
+    font-size: 16px; /* Slightly smaller font size for mobile */
+    padding: 8px 8px; /* Smaller padding */
+  }
+}

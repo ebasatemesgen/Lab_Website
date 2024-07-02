@@ -1,0 +1,28 @@
+field.formatter.settings.views_field_formatter:
+  type: mapping
+  label: 'View formatter settings.'
+  mapping:
+    view:
+      type: string
+      label: 'View'
+    arguments:
+      type: sequence
+      label: 'Arguments'
+      sequence:
+        type: mapping
+        mapping:
+          checked:
+            type: boolean
+            label: 'Checked'
+          weight:
+            type: integer
+            label: 'Weight'
+    hide_empty:
+      type: boolean
+      label: 'Hide empty views'
+    multiple:
+      type: boolean
+      label: 'Multiple'
+    implode_character:
+      type: string
+      label: 'Implode with this character'

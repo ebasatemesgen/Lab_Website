@@ -1,0 +1,256 @@
+/* Sidebar
+--------------------------------*/
+.sidebar .block {
+  padding: 1rem;
+  background: var(--content-bg);
+  margin-bottom: 2rem;
+  border-radius: 6px;
+}
+.sidebar .block-title {
+  background: url(../images/circle.svg) no-repeat top right;
+  background-size: contain;
+  line-height: 1;
+  padding-bottom: 0.3rem;
+}
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--content-border-color);
+}
+
+
+
+
+/* Home Page */
+
+
+#hero {
+  background-image: url("../images/maria_bg.gif"); /* Replace with your desired background image */
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  z-index: 10; /* Add this line */
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the last value (0.5) to change the transparency level */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 80px;
+  padding-top: 0%;
+  z-index: -1; 
+}
+
+.overlay h4 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.overlay h2 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.overlay h1 {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.overlay p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.overlay button {
+  background-color: #088178;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.overlay button:hover {
+  background-color: #066a5a;
+}
+
+
+@media (max-width:799px){
+  .section-p1 {
+    padding: 40px 40px;
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 60px,rgba(0,0,0,0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+  #navbar.active{
+    right: 0px;
+  }
+  #navbar li{
+    margin-bottom: 25px;
+  }
+  #mobile{
+    display: flex;
+    align-items: center;
+  }
+  #mobile i{
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+  #lg-bag{
+    display: none;
+  }
+  #hero{
+    height: 90vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+
+  #feature{
+    justify-content: center;
+  }
+  #feature .fe-box{
+    margin: 15px 15px;
+  }
+  #product1 .pro-container{
+    justify-content: center; 
+  }
+  #product1 .pro{
+    margin: 15px;
+  }
+  #banner {
+    height: 20vh;
+  }
+  #sm-banner .banner-box{
+    min-width: 100%;
+    height: 30vh;
+  }
+  #banner3 {
+    padding: 0 40px;
+  }
+  #banner3 .banner-box{
+    width: 28%;
+  }
+
+  #newsletter .form{
+    width: 70%
+  }
+
+}
+
+@media (max-width:477px){
+  #header {
+    padding: 10px 30px;
+  }
+  .overlay h1 {
+    font-size: 28px;
+  }
+  .overlay h2 {
+    font-size: 20px;
+  }
+  .overlay p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  #hero{
+    padding: 0 20px;
+    background-position: 55%;
+  }
+  .overlay {
+    padding: 0 20px;
+  }
+  #feature{
+    justify-content: space-between;
+  }
+  #feature .fe-box{
+    width:155px;
+    margin: 0 0 15px 0;
+  }
+
+  #product1 .pro{
+    width:100%;
+  }
+  #banner {
+    height: 40vh;
+  }
+   
+  #sm-banner .banner-box{
+    height: 40vh;
+  }
+  #sm-banner .banner-box2{
+    margin-top: 20px;
+  }
+  #banner3 {
+    padding: 0 20px;
+  }
+  #banner3 .banner-box {
+    width: 100%;
+  }
+  #newsletter {
+    padding: 40px 20px;
+  }
+  #newsletter .form{
+    width: 100%
+  }
+  footer .copyright{
+    text-align: start;
+  }
+
+}
+
+
+.bg-media-49532dca-7cf3-4bc8-b3ec-e609ee5eb0c5 {
+  background-image: url('path_to_image_resolved_from_UUID');
+}
+.bg-media-another-uuid {
+  background-image: url('path_to_another_image_resolved_from_UUID');
+}

@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Installs default settings for the File Delete module.
+ */
+
+/**
+ * Instant delete config.
+ */
+function file_delete_install() {
+  $config_factory = \Drupal::configFactory();
+  $config = $config_factory->getEditable('file_delete.settings');
+  if (empty($config->get('instant_delete'))) {
+    $config->set('instant_delete', FALSE);
+    $config->save(TRUE);
+  }
+  if (empty($config->get('force_delete'))) {
+    $config->set('force_delete', FALSE);
+    $config->save(TRUE);
+  }
+}

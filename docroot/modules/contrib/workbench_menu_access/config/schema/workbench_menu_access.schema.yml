@@ -1,0 +1,20 @@
+# Schema for configuration files of the Workbench Menu Access module.
+
+workbench_menu_access.settings:
+  type: config_object
+  label: 'Workbench Menu Access settings'
+  mapping:
+    access_scheme:
+      type: string
+      label: 'Access scheme'
+
+system.menu.*.third_party.workbench_menu_access:
+  type: mapping
+  label: 'Menu access control settings'
+  mapping:
+    access_scheme:
+      type: sequence
+      label: 'Access scheme'
+      sequence:
+        type: string
+        label: 'Scheme'

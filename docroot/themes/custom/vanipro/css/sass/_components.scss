@@ -1,0 +1,59 @@
+/* Navigation */
+.menu {
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  position: relative;
+}
+.submenu {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main -> Admin Tabs */
+ul.page-tabs {
+  display: flex;
+  margin: 0 0 0.6rem 0;
+  padding: 0;
+  border-bottom: 1px solid var(--border-color);
+  list-style: none;
+}
+.page-tabs li {
+  padding: 0;
+  border-right: 2px solid #ffffff;
+}
+.page-tabs li a {
+  padding: 4px 10px;
+  background: var(--border-color);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.page-tabs li.active-page-tab a,
+.page-tabs li a:hover {
+  background: var(--theme-color);
+  color: #ffffff;
+}
+/* Footer -> Scroll To Top. */
+.scrolltop {
+  position: fixed;
+  display: none;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  place-content: center;
+  border-radius: 50%;
+  background: var(--theme-color);
+  color: #ffffff;
+  z-index: 20;
+  cursor: pointer;
+}
+.scrolltop-icon {
+  border-radius: 50%;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.scrolltop:hover {
+  background: var(--theme-color-two);
+}

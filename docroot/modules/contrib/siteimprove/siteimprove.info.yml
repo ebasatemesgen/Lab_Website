@@ -1,0 +1,11 @@
+name: Siteimprove Plugin
+type: module
+description: 'Siteimprove allows users to continuously test, fix and optimize their work through actionable content and analytics insights.'
+core_version_requirement: ^9.2 || ^10
+package: Siteimprove
+configure: siteimprove.settings_form
+
+# Information added by Drupal.org packaging script on 2024-01-04
+version: '2.0.2'
+project: 'siteimprove'
+datestamp: 1704376528

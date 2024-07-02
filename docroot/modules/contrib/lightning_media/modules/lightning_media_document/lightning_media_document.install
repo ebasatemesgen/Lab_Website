@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update hooks for Lightning Media Document.
+ */
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function lightning_media_document_update_last_removed(): int {
+  return 8002;
+}

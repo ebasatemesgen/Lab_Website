@@ -1,0 +1,8 @@
+services:
+  lightning_api.request_subscriber:
+    class: '\Drupal\lightning_api\RequestSubscriber'
+    arguments:
+      - '@current_route_match'
+      - '@class_resolver'
+    tags:
+      - { name: event_subscriber }

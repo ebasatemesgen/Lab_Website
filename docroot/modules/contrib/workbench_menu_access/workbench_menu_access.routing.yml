@@ -1,0 +1,14 @@
+workbench_menu_access.admin:
+  path: '/admin/config/workflow/workbench_access/menu_settings'
+  defaults:
+    _form: '\Drupal\workbench_menu_access\Form\WorkbenchMenuAccessSettingsForm'
+    _title: 'Workbench menu access'
+  requirements:
+    _permission: 'administer workbench menu access'
+workbench_menu_access.form:
+  path: '/admin/structure/menu/manage/{menu}/access'
+  defaults:
+    _form: '\Drupal\workbench_menu_access\Form\WorkbenchMenuAccessMenuForm'
+    _title_callback: '\Drupal\workbench_menu_access\Form\WorkbenchMenuAccessMenuForm::menuTitle'
+  requirements:
+    _permission: 'administer workbench menu access'

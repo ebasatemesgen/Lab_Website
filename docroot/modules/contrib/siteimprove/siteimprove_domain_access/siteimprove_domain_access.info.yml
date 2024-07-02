@@ -1,0 +1,14 @@
+name: Siteimprove Domain Access
+type: module
+description: 'Add Domain Access support in the Siteimprove Plugin. Currently support using domains from Domain Access as Siteimprove frontend domains.'
+core_version_requirement: ^9.2 || ^10
+package: Siteimprove
+configure: siteimprove.settings_form
+dependencies:
+  - siteimprove:siteimprove
+  - domain:domain_access
+
+# Information added by Drupal.org packaging script on 2024-01-04
+version: '2.0.2'
+project: 'siteimprove'
+datestamp: 1704376528

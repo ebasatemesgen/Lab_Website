@@ -1,0 +1,29 @@
+{
+  "name": "drupal/contact_emails",
+  "type": "drupal-module",
+  "description": "Module to handle contact emails",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/contact_emails",
+  "authors": [
+    {
+      "name": "Scott Euser (scott_euser)",
+      "homepage": "https://www.drupal.org/u/scott_euser",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Viktor Holovachek (AstonVictor)",
+      "homepage": "https://www.drupal.org/u/astonvictor",
+      "role": "Maintainer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/contact_emails",
+    "source": "https://git.drupalcode.org/project/contact_emails"
+  },
+  "require": { },
+  "require-dev": {
+    "drupal/contact_storage": "*"
+  }
+}

@@ -1,0 +1,30 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Drupal\Core\Form {
+  interface FormStateInterface {
+
+    /**
+     * @param string $name
+     * @param \Drupal\Core\StringTranslation\TranslatableMarkup|string $message
+     * @return $this
+     */
+    public function setErrorByName(string $name, \Drupal\Core\StringTranslation\TranslatableMarkup|string $message = ''): static;
+
+    /**
+     * @param array<mixed> $element
+     * @param \Drupal\Core\StringTranslation\TranslatableMarkup|string $message
+     * @return $this
+     */
+    public function setError(array &$element, \Drupal\Core\StringTranslation\TranslatableMarkup|string $message = ''): static;
+  }
+}
+
+namespace Drupal\Core\StringTranslation {
+
+  class TranslatableMarkup {
+
+  }
+
+}

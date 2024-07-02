@@ -1,0 +1,16 @@
+name: 'Lightning Core'
+core_version_requirement: '^9.3 || ^10'
+type: module
+package: Lightning
+description: 'Shared functionality for the Lightning distribution.'
+configure: lightning_core.settings
+dependencies:
+  - drupal:node
+  - drupal:path
+  - drupal:text
+  - drupal:user
+
+# Information added by Drupal.org packaging script on 2023-01-10
+version: '6.0.0'
+project: 'lightning_core'
+datestamp: 1673383964

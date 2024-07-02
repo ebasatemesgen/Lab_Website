@@ -1,0 +1,14 @@
+name: Simple Hierarchical Select
+type: module
+description: 'Creates a simple hierarchical select widget for taxonomy fields.'
+configure: shs.term_data
+dependencies:
+  - drupal:system (>=9.5)
+  - drupal:taxonomy
+core_version_requirement: ^9 || ^10
+package: User interface
+
+# Information added by Drupal.org packaging script on 2024-03-26
+version: '2.0.0-rc11'
+project: 'shs'
+datestamp: 1711424680

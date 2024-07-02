@@ -1,0 +1,5 @@
+view unpublished content:
+  title: 'View any unpublished content'
+
+permission_callbacks:
+  - \Drupal\unpublished_node_permissions\UnpublishedNodePermissions::nodeTypePermissions

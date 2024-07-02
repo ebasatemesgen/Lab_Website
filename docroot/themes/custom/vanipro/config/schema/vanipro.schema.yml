@@ -1,0 +1,5 @@
+# Schema for the configuration files of the VaniPro theme.
+
+vanipro.settings:
+  type: theme_settings
+  label: 'Vani Settings'

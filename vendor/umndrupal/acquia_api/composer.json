@@ -1,0 +1,19 @@
+{
+  "name": "umndrupal/acquia_api",
+  "require": {
+    "league/oauth2-client": "^2.7",
+    "symfony/serializer": "^6.2",
+    "symfony/property-access": "^6.2"
+  },
+  "authors": [
+    {
+      "name": "Jim Hart",
+      "email": "HART0554@UMN.EDU"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Umndrupal\\acquia_api\\": "src/AcquiaApi/"
+    }
+  }
+}

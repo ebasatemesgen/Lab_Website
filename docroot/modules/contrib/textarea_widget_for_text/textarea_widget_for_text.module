@@ -1,0 +1,36 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function textarea_widget_for_text_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.textarea_widget_for_text':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('<b>Allow text fields to use the multiline text area widget on content entry forms.</b>') . '</p>';
+      $output .= '<p>' . t('Nothing about a regular, "short" text field with a limit of 255 or 500 or even 2,000 characters logically requires that it be entered in an input field of only one line.') . '</p>';
+      $output .= '<p>' . t('Drupal by default will only give you a widget allowing text entry to be done on one line though. This module removes that restriction. With this module enabled, you can use the textarea widget on a regular text field.') . '</p>';
+      $output .= '<h3>' . t('Doing without this module') . '</h3>';
+      $output .= '<p>' . t('If you don\'t want to rely on this module, you can stick this code in your own custom module or profile, changing \'example\' to your module\'s name:') . '</p>';
+      $output .= '<code>' . t('function example_field_widget_info_alter(&$info) {</br>
+        $info["text_textarea"]["field_types"][] = "text";</br>
+        $info["string_textarea"]["field_types"][] = "string"</br>
+      }') . '</code>';
+      return $output;
+  }
+}
+
+/**
+ * @file
+ * Allows the text_textarea widget to be used by the text field.
+ */
+
+/**
+ * Implements hook_field_widget_info_alter().
+ */
+function textarea_widget_for_text_field_widget_info_alter(array &$info) {
+  $info['text_textarea']['field_types'][] = 'text';
+  $info['string_textarea']['field_types'][] = 'string';
+}

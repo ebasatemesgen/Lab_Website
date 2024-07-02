@@ -1,0 +1,5 @@
+lightning_media.settings:
+  title: 'Lightning Media'
+  description: 'Configure Lightning Media settings.'
+  parent: system.admin_config_media
+  route_name: lightning_media.settings

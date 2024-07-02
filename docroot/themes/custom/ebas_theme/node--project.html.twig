@@ -1,0 +1,18 @@
+<div class="project">
+  <div class="project-header">
+    <h2>{{ label }}</h2>
+  </div>
+  <div class="project-body">
+    <div class="project-image">
+      {{ content.field_project_image }}
+    </div>
+    <div class="project-details">
+      <div class="project-text">
+        {{ content.field_project_text }}
+      </div>
+      <div class="project-link">
+        <a href="{{ content.field_project_link.url }}" target="_blank">{{ content.field_project_link.title }}</a>
+      </div>
+    </div>
+  </div>
+</div>

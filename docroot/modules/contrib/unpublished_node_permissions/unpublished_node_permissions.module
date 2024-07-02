@@ -1,0 +1,88 @@
+<?php
+
+/**
+ * @file
+ * Contains unpublished_node_permissions.module.
+ */
+
+use Drupal\Core\Session\AccountInterface;
+use Drupal\node\Entity\NodeType;
+use Drupal\node\NodeInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function unpublished_node_permissions_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.unpublished_node_permissions':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Creates permisisons per node content type to control access to unpublished nodes per content type.') . '</p>';
+
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_node_access_records().
+ */
+function unpublished_node_permissions_node_access_records(NodeInterface $node) {
+  $grants = [];
+
+  if (!$node->isPublished()) {
+    $grants[] = [
+      'realm' => "view_unpublished_{$node->getType()}_node",
+      'gid' => 1,
+      'grant_view' => 1,
+      'grant_update' => 0,
+      'grant_delete' => 0,
+    ];
+
+    $grants[] = [
+      'realm' => 'view_unpublished_any',
+      'gid' => 1,
+      'grant_view' => 1,
+      'grant_update' => 0,
+      'grant_delete' => 0,
+    ];
+
+    $grants[] = [
+      'realm' => 'view_unpublished_author',
+      'gid' => $node->getOwnerId(),
+      'grant_view' => 1,
+      'grant_update' => 0,
+      'grant_delete' => 0,
+    ];
+  }
+
+  return $grants;
+}
+
+/**
+ * Implements hook_node_grants().
+ */
+function unpublished_node_permissions_node_grants(AccountInterface $account, $operation) {
+  $grants = [];
+
+  if ('view' != $operation) {
+    return $grants;
+  }
+
+  /** @var \Drupal\node\NodeTypeInterface $type */
+  foreach (NodeType::loadMultiple() as $type) {
+    if ($account->hasPermission("view {$type->id()} unpublished content")) {
+      $grants["view_unpublished_{$type->id()}_node"] = [1];
+    }
+  }
+
+  if ($account->hasPermission('view unpublished content')) {
+    $grants['view_unpublished_any'] = [1];
+  }
+
+  if ($account->hasPermission('view own unpublished content')) {
+    $grants['view_unpublished_author'] = [$account->id()];
+  }
+
+  return $grants;
+}

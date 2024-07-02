@@ -1,0 +1,7 @@
+contact_emails.settings:
+  type: config_object
+  label: 'Contact Email settings'
+  mapping:
+    allow_charset_utf_8:
+      type: boolean
+      label: 'Allow Charset UTF-8'

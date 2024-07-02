@@ -1,0 +1,75 @@
+entity_browser.browser.widget.dropzonejs:
+  type: mapping
+  label: 'DropzoneJS widget configuration'
+  mapping:
+    submit_text:
+      type: text
+      label: 'Submit button text'
+    auto_select:
+      type: boolean
+      label: 'Automatically submit selection'
+    upload_location:
+      type: string
+      label: 'Upload location'
+    dropzone_description:
+      type: text
+      label: 'Dropzone drag-n-drop zone text'
+    max_filesize:
+      type: string
+      label: 'Maximum size of files'
+    extensions:
+      type: string
+      label: 'Allowed file extensions'
+    clientside_resize:
+      type: boolean
+      label: 'Use clientside resize'
+    resize_width:
+      type: integer
+      label: 'Maximum width'
+    resize_height:
+      type: integer
+      label: 'Maximum height'
+    resize_quality:
+      type: float
+      label: 'Resize quality'
+    resize_method:
+      type: string
+      label: 'Method used for resizing'
+    thumbnail_method:
+      type: string
+      label: 'Method used for generating the thumbnail'
+    chunking:
+      type: boolean
+      label: 'Enable chunked uploads'
+    force_chunking:
+      type: boolean
+      label: 'Force each upload to be chunked, even if the file size is below chunk_size'
+    chunk_size:
+      type: integer
+      label: 'The chunk size in bytes'
+    parallel_chunk_uploads:
+      type: boolean
+      label: 'Upload multiple chunks in parallel'
+    retry_chunks:
+      type: boolean
+      label: 'Whether a chunk upload should be retried if it fails'
+    retry_chunks_limit:
+      type: integer
+      label: 'Number of times a chunk upload should be retried'
+
+entity_browser.browser.widget.dropzonejs_media_entity:
+  type: entity_browser.browser.widget.dropzonejs
+  label: 'Media Entity DropzoneJS widget configuration'
+  mapping:
+    media_type:
+      type: string
+      label: 'Media type'
+
+
+entity_browser.browser.widget.dropzonejs_media_entity_inline_entity_form:
+  type: entity_browser.browser.widget.dropzonejs_media_entity
+  label: 'Media Entity DropzoneJS with edit widget configuration'
+  mapping:
+    form_mode:
+      type: string
+      label: 'Form mode'

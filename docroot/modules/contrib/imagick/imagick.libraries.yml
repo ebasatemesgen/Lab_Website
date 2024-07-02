@@ -1,0 +1,22 @@
+colorpicker:
+  version: VERSION
+  js:
+    js/imagick.colorpicker.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - imagick/farbtastic
+matrix:
+  version: VERSION
+  css:
+    theme:
+      css/imagick.matrix.css: {}
+farbtastic:
+  remote: https://github.com/mattfarina/farbtastic
+  version: VERSION
+  license:
+    name: MIT
+    url: https://github.com/mattfarina/farbtastic/blob/master/LICENSE.txt
+    gpl-compatible: true
+  js:
+    https://github.com/mattfarina/farbtastic/blob/master/src/farbtastic.js: { type: external }

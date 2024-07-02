@@ -1,0 +1,25 @@
+label[for="edit-vanipro"] {
+  background: #222222;
+  width: 100%;
+  padding: 18px 0;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 8px;
+}
+/* Fieldset */
+.fieldset__label {
+	background-color: #eef4fb;
+}
+fieldset.set-default-fieldset,
+details.set-default-fieldset {
+	background-color: #ffeaa7;
+}
+fieldset.info-fieldset,
+details.info-fieldset {
+	background-color: #bbd9ff;
+	border: 1px solid #2e86de;
+}
+mark {
+  padding: 0.5rem;
+  border-radius: 6px;
+}

@@ -1,0 +1,10 @@
+name: Field Redirection
+type: module
+description: Provides a field formatter to redirect the page to a URL. Work with the Link module and reference fields.
+core_version_requirement: ^9 || ^10
+package: Field types
+
+# Information added by Drupal.org packaging script on 2022-11-18
+version: '8.x-2.2'
+project: 'field_redirection'
+datestamp: 1668806018
